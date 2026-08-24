@@ -1,13 +1,13 @@
 # BakeStack — Context
 
 ## Status
-active — recipes.json/tips.json parsers done, EN→LT glossary done.
+active — recipes_lt.json/tips_lt.json translation done and user-verified.
 GitHub repo live and public: https://github.com/gerimantas/BakeStack
 (renamed from local "Receptai" this session; old local folder at
 `C:\Users\retco\Projects\Receptai` is stale/unused — could not be deleted
 mid-session, locked by another process; safe to remove by hand).
 
-Next session: start at "Next tasks" below, step 1 (LT translation pass).
+Next session: start at "Next tasks" below, step 1 (site build).
 
 ## What this project is
 BakeStack: a recipe/pastry-tips database and calculator, starting from
@@ -170,12 +170,18 @@ before investing in that.
   pre-generated once (not live/API-based), same reasoning as the static
   data pipeline: no backend to call a translation API from.
 - Volume units (tsp/tbsp/cup) shown with an ml conversion alongside the
-  original unit, in both languages — not replaced by it. E.g. "1 tsp
-  vanilla extract" displays as "1 tsp (5 ml)". Conversion table:
-  tsp=5ml, tbsp=15ml, cup=240ml (US cup, approximate — flag as such in
-  the UI). Gram amounts already in the source are shown as-is; no
-  cup/tbsp-to-gram conversion (that depends on ingredient density, not
-  a fixed factor, so it's not attempted).
+  original unit, in both languages — not replaced by it. ml is the
+  primary/larger display value, original unit shown smaller in
+  parentheses below it. E.g. "1 tsp vanilla extract" displays as
+  "5 ml (1 tsp)". Conversion table: tsp=5ml, tbsp=15ml, cup=240ml (US
+  cup, approximate — flag as such in the UI). Gram amounts already in
+  the source are shown as-is; no cup/tbsp-to-gram conversion (that
+  depends on ingredient density, not a fixed factor, so it's not
+  attempted). Implemented in the data: every `ingredients[]` entry
+  whose source `unit` was tsp/tbsp/cup/cups now also carries an
+  `amount_ml` field (number or `{min,max}` for ranges) alongside the
+  untouched original `amount`/`unit` — both `recipes.json` and
+  `recipes_lt.json` carry this field identically.
 - Ingredient unit price field is a placeholder for later — not building
   cost calculation yet, but the `ingredients` JSON shape (separate
   amount/unit/name) is chosen specifically so it can be added later
@@ -349,17 +355,18 @@ before investing in that.
   Full detail in Archive entry below.
 - 2026-08-24: EN→LT glossary built and fully web-verified (214 terms,
   0 missing/extra vs tags.json). Full detail in Archive entry below.
+- 2026-08-25: recipes_lt.json (74) + tips_lt.json (363) translation
+  complete, structural diff clean, user-verified against a sample.
+  tsp/tbsp/cup converted to ml (new `amount_ml` field, original
+  amount/unit untouched) in both recipes.json and recipes_lt.json.
+  Full detail in Archive entry below.
 
 ## Next tasks
-1. Generate the LT translation pass for both JSON files (titles,
-   ingredients, steps, tip text) plus the UI string dictionary, using
-   `glossary.json`; run the structural diff check; user spot-checks a
-   sample.
-2. Design + build the static site (list + detail + servings
+1. Design + build the static site (list + detail + servings
    recalculation + tips search + related-tips linking + EN/LT toggle +
    unit ml display). Run the `hallmark` skill for visual design first —
-   deferred until real data (recipes.json/tips.json) exists, so design
-   decisions aren't made against an empty/guessed data shape.
+   real data (recipes_lt.json/tips_lt.json) now exists, so design
+   decisions can be made against the actual data shape.
 
 ## Archive
 
@@ -433,3 +440,51 @@ python scripts/verify_tips.py Patarimai.md tips.json
 but no translated JSON exists yet. ~145 of the 214 glossary terms were confirmed
 correct via targeted search but not exhaustively cross-checked against multiple
 sources each (time/scope trade-off, noted in the decision entry above).
+
+### Session 2026-08-25 — LT translation pass complete (recipes_lt.json, tips_lt.json)
+
+Translated all 74 recipes and 363 tips from `recipes.json`/`tips.json` into
+`recipes_lt.json`/`tips_lt.json`, using `glossary.json` terminology. Ran via 8
+parallel background agents (4 chunks of recipes, 4 chunks of tips) — first batch hit
+a session token-limit mid-run and 4 of 8 agents failed before writing output; the
+4 that had already written valid JSON were kept, the other 4 re-run after the limit
+reset. All 8 final chunk outputs merged into the two output files.
+
+**Structural QA**: automated diff confirmed recipe count (74), ingredient count per
+recipe (1146 total), step count per recipe (649 total), and tip count (363) all
+match EN↔LT exactly; zero amount/unit/tag mismatches. One cosmetic issue found and
+fixed: a translated tip (`SHELF LIFE OF FROSTING`) had extra blank lines splitting
+what was a single bullet list in the source — collapsed back to match.
+
+**User spot-check**: built an HTML comparison page (4 full recipes + 2 full tips,
+EN|LT side by side, all ingredients/steps shown — not a truncated excerpt) as a
+Claude Artifact for review. User approved the translation quality and terminology
+after two rounds of design fixes on the review page itself (unrelated to the
+translated data).
+
+**Unit display decision revised**: the existing CONTEXT.md plan (tsp/tbsp/cup shown
+alongside an ml conversion) was confirmed still correct in principle, but the
+*display order* changed based on user feedback during spot-check — ml is now the
+primary/larger value, original tsp/tbsp/cup shown smaller in parentheses beneath it
+(previously undefined which one led). Implemented directly in the data: every
+`ingredients[]` entry with `unit` originally tsp/tbsp/cup/cups now carries an
+`amount_ml` field (tsp=5ml, tbsp=15ml, cup=240ml) alongside the untouched original
+`amount`/`unit` — both `recipes.json` and `recipes_lt.json` gained this field
+identically (122 ingredient entries affected).
+
+**Bug found and fixed during conversion**: one ingredient ("rock salt" in `RECIPE
+FOR BANANA CUPCAKES WITH RUM`) had a range amount with `min > max` — traced to the
+source itself writing `1/3–1/4 tsp. rock salt` (descending order, atypical for this
+document), which the original parser preserved literally instead of normalizing.
+Fixed by swapping to `min: 0.25, max: 0.333` in both `recipes.json` and
+`recipes_lt.json`, with matching `amount_ml`.
+
+**Code:** `recipes_lt.json`, `tips_lt.json` (new, generated output); `recipes.json`
+(gained `amount_ml` field on tsp/tbsp/cup entries, one min/max range fix — ingredient
+names/amounts otherwise untouched).
+**Entry point:** translation was agent-generated, not script-generated — no
+re-runnable command; re-running would require re-dispatching the same 8-chunk agent
+prompt structure (see this session's conversation for the exact prompts if the
+translation ever needs redoing).
+**Not measured:** the static site itself hasn't started — `hallmark` skill run for
+visual design is the next task now that real translated data exists.
