@@ -48,7 +48,8 @@ before investing in that.
    from lines like "300 g blueberries"; lines without a parseable
    quantity, e.g. "a pinch of salt", get `amount: null` and stay
    display-only), `steps: []`, `tags: []` (auto-derived from title +
-   ingredient names, from a shared vocabulary — see Decisions).
+   ingredient names, from a shared vocabulary — see Decisions),
+   `image: null` (placeholder — see Photos note below).
 
    **Parse coverage checked**: roughly 5-10% of ingredient lines
    genuinely have no quantity in the source ("a pinch of salt", "Nutella
@@ -59,6 +60,14 @@ before investing in that.
    bullet-prefixed lines like "•500 g mascarpone") are parseable with a
    real parser handling those forms — expect ~90-95% coverage, not the
    ~70% a naive "number+unit only" regex gets.
+
+   **Range quantities** ("300–400 g red lentils", "150–200 g"): checked
+   the source — a real, common pattern (~20-45 occurrences depending on
+   dash-character counting), not a rare edge case. `amount` becomes
+   `{min, max}` instead of a single number when the source gives a
+   range; the multiplier scales both ends ("300–400 g" × 2 = "600–800
+   g"), keeping it a range rather than collapsing to one number, since
+   the range itself is information the source author chose to give.
 
    `category` and `tags` are two separate axes, not one flat pile —
    checked the titles: almost every one names both a **format** (cupcake,
@@ -114,6 +123,14 @@ before investing in that.
      spelling-only case.
 
 ### Site features needed (not yet built)
+- **Mobile-first responsive layout from the start**, not a later
+  retrofit. Ties directly to the earlier stated goal of eventually using
+  this on Android/iOS (before deciding on the Telegram bot direction) —
+  building responsive now is cheaper than reworking a desktop-only
+  layout once real usage on a phone is expected.
+- **Dark/light theme**: defaults to the OS/browser preference
+  (`prefers-color-scheme`), with a manual toggle so the user can
+  override it regardless of system setting.
 - Recipe list with category/keyword filter.
 - Recipe detail page: ingredients with a **multiplier** (0.5x, 1x, 1.5x,
   2x, 3x, ...) that scales every ingredient amount proportionally. Not a
@@ -157,6 +174,15 @@ before investing in that.
   cost calculation yet, but the `ingredients` JSON shape (separate
   amount/unit/name) is chosen specifically so it can be added later
   without reshaping the data again.
+- **Photos**: source text frequently references photos/carousel that
+  existed on the original Instagram posts ("swipe through the carousel
+  and enjoy...") but no actual image files came with the .docx exports.
+  `image: null` reserved on every recipe/tip record now so a photo can
+  be attached later (by filename/path) without another JSON reshape.
+  Not fetching or attaching any images in this phase — no image files
+  exist to attach yet, and the referencing text in the recipe body is
+  left as-is (that's the original author's writing, not something to
+  edit out).
 - Ingredients with no parseable quantity (`amount: null`, ~5-10% of
   lines — "a pinch of salt" etc.) are displayed as plain text, untouched
   by the multiplier, with no "missing data" warning styling — this is
@@ -255,6 +281,29 @@ before investing in that.
   cheap — the alternative is a visible, confusing mismatch between the
   scaled ingredient list and a stale number in the instructions for
   those specific recipes.
+- 2026-08-24: Mobile-first responsive layout from the first build, not
+  a later retrofit. Reason: ties directly to the stated eventual goal
+  of using this on Android/iOS — building responsive now is cheaper
+  than reworking a desktop-only layout once real phone usage matters.
+  (Renamed project to BakeStack around the same time, reflecting the
+  same shift from "convert two docs" to "build the actual app".)
+- 2026-08-24: Dark/light theme follows the OS preference by default,
+  with a manual override toggle. Reason: standard expectation for a
+  personal-use app opened at various times of day; a toggle covers the
+  case where the user wants to override the system default.
+- 2026-08-24: Range-quantity ingredients ("300–400 g") scale both ends
+  of the range with the multiplier, rather than collapsing to a single
+  averaged number. Reason: checked the source — ranges are common
+  (~20-45 occurrences), not rare; the author chose to give a range on
+  purpose (e.g. "however much fits"), and averaging would silently
+  discard that intent.
+- 2026-08-24: Reserve `image: null` on every recipe/tip record now,
+  don't attach any images yet. Reason: source text references photos
+  that existed on the original Instagram posts but no image files came
+  with the .docx exports — nothing to attach in this phase — but the
+  field shape is settled now (same reasoning as the price-field
+  placeholder) so attaching photos later doesn't require another data
+  reshape.
 
 ## Next tasks
 1. Design the tag vocabulary (ingredients + techniques) shared by both
