@@ -1,7 +1,16 @@
 # BakeStack — Context
 
 ## Status
-active
+active — planning complete, no code written yet for the dashboard itself.
+GitHub repo live and public: https://github.com/gerimantas/BakeStack
+(renamed from local "Receptai" this session; old local folder at
+`C:\Users\retco\Projects\Receptai` is stale/unused — could not be deleted
+mid-session, locked by another process; safe to remove by hand).
+
+Next session: start at "Next tasks" below, step 1 (tag vocabulary) — the
+plan in this file is complete enough to implement directly, no further
+discussion needed unless something in the plan turns out to be wrong
+once real parsing starts.
 
 ## What this project is
 BakeStack: a recipe/pastry-tips database and calculator, starting from
