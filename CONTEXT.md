@@ -9,6 +9,8 @@ mid-session, locked by another process; safe to remove by hand).
 
 Next session: start at "Next tasks" below, step 1 (site build).
 
+Session S2 closed 2026-08-25.
+
 ## What this project is
 BakeStack: a recipe/pastry-tips database and calculator, starting from
 two Instagram-recipe-export Word documents (pastry/baking recipes and
