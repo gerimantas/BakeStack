@@ -1,16 +1,13 @@
 # BakeStack — Context
 
 ## Status
-active — planning complete, no code written yet for the dashboard itself.
+active — recipes.json/tips.json parsers done, EN→LT glossary done.
 GitHub repo live and public: https://github.com/gerimantas/BakeStack
 (renamed from local "Receptai" this session; old local folder at
 `C:\Users\retco\Projects\Receptai` is stale/unused — could not be deleted
 mid-session, locked by another process; safe to remove by hand).
 
-Next session: start at "Next tasks" below, step 1 (tag vocabulary) — the
-plan in this file is complete enough to implement directly, no further
-discussion needed unless something in the plan turns out to be wrong
-once real parsing starts.
+Next session: start at "Next tasks" below, step 1 (LT translation pass).
 
 ## What this project is
 BakeStack: a recipe/pastry-tips database and calculator, starting from
@@ -313,20 +310,126 @@ before investing in that.
   field shape is settled now (same reasoning as the price-field
   placeholder) so attaching photos later doesn't require another data
   reshape.
+- 2026-08-24: Repo stays public (GitHub Pages from a public repo, no
+  Pro plan needed). Reason: personal hobby project, no sensitive data
+  in the recipes/tips — recipe content being visible in git history
+  forever is acceptable.
+- 2026-08-24: Not sizing the search index (Fuse.js/Lunr, full EN+LT
+  text) upfront — will measure the real bundle size after the parser
+  and translation steps produce actual JSON, decide then if it needs
+  trimming. Reason: 85 recipes + 254 tips is not large; premature to
+  design around a guessed size.
+- 2026-08-24: Ingredient price field stays a `null` placeholder with no
+  planned fill-in date or task. Reason: not part of the current scope;
+  will be filled manually if/when cost calculation becomes a real need,
+  not scheduled now.
+- 2026-08-24: JSON build step (Receptai.md/Patarimai.md → recipes.json/
+  tips.json) stays a manual local script run + git push, not a GitHub
+  Action. Reason: hobby project, infrequent updates, simplicity over
+  automation.
+- 2026-08-24: Parser output gets the same structural-diff QA as the
+  translation pass (recipe/ingredient counts, and every amount value —
+  number/range/null — checked against a source-verified reference)
+  before commit. Reason: same corruption risk as translation (e.g.
+  parser turning "300 g" into the wrong number) — same check catches
+  it, run right after the parser instead of only at the translation
+  step.
+- 2026-08-24: recipes.json/tips.json structure is NOT being designed
+  for a future DB import (Telegram bot phase). Reason: bot phase hasn't
+  started; the JSON shape is already reasonable (separate fields, not
+  flat text) and a future DB import can adapt then — no need to guess
+  a schema now.
+
+## Done Log
+- 2026-08-24: Tag vocabulary built — `tags.json` (category/flavor_theme/
+  ingredient/technique lists, derived from reading both full source files).
+- 2026-08-24: recipes.json parser + QA built — 74 recipes, verified clean.
+  Full detail in Archive entry below.
+- 2026-08-24: tips.json parser + QA built — 363 tip records, verified clean.
+  Full detail in Archive entry below.
+- 2026-08-24: EN→LT glossary built and fully web-verified (214 terms,
+  0 missing/extra vs tags.json). Full detail in Archive entry below.
 
 ## Next tasks
-1. Design the tag vocabulary (ingredients + techniques) shared by both
-   recipes.json and tips.json.
-2. Write the Receptai.md → recipes.json parser (ingredient
-   amount/unit/name extraction is the hard part — expect a manual-review
-   pass for lines the regex can't parse).
-3. Write the Patarimai.md → tips.json parser (flat, one record per
-   heading block).
-4. Build the EN→LT baking terminology glossary (fold in, whisk, heavy
-   cream, baking soda, etc. — one fixed term each) before translating.
-5. Generate the LT translation pass for both JSON files (titles,
+1. Generate the LT translation pass for both JSON files (titles,
    ingredients, steps, tip text) plus the UI string dictionary, using
-   the glossary; run the structural diff check; user spot-checks a
+   `glossary.json`; run the structural diff check; user spot-checks a
    sample.
-6. Build the static site (list + detail + servings recalculation + tips
-   search + related-tips linking + EN/LT toggle + unit ml display).
+2. Design + build the static site (list + detail + servings
+   recalculation + tips search + related-tips linking + EN/LT toggle +
+   unit ml display). Run the `hallmark` skill for visual design first —
+   deferred until real data (recipes.json/tips.json) exists, so design
+   decisions aren't made against an empty/guessed data shape.
+
+## Archive
+
+### Session 2026-08-24 — recipes.json + tips.json parsers built, EN→LT glossary fully web-verified
+
+Built the two data-pipeline parsers CONTEXT.md's plan called for, then built and
+rigorously verified the EN→LT terminology glossary needed for the translation pass.
+
+**recipes.json parser** (`scripts/parse_recipes.py` + `scripts/verify_recipes.py`):
+read all of Receptai.md by hand before writing regex, since the tag-vocabulary pass
+earlier this session had already surfaced real formatting quirks (bullet variants,
+fraction forms, dose labels). Output: 74 recipes from 85 `##` headings (4 merged as
+mis-marked sub-sections of one multi-part recipe — e.g. "VANILLA PANA-COTTA
+CHEESECAKE" had its CRUST/CREAM CHEESE LAYER/PANA-COTTA sub-parts wrongly marked `##`
+instead of `###` in the source — 7 excluded as pure-technique articles with no recipe
+shape). 1146 ingredient lines, 2.4% `amount: null` (real no-quantity lines only).
+`verify_recipes.py` cross-checks every gram/ml/kg/l quantity in the source against the
+parsed output; passes clean.
+
+Found and fixed 7 real parser bugs by comparing output against source line-by-line,
+not just aggregate stats: intro paragraph landing in `steps[0]` (now split into
+`description`); 3 source lines where multiple ingredients got concatenated during the
+earlier docx→markdown conversion (worst: 6 ingredients on one line in Hazelnut
+Praline) — fixed via a literal per-line lookup after a general regex-boundary split
+was tried and rejected (it corrupted ingredient names containing numbers); bare
+"lemon zest" (no "zest of" prefix) silently dropped; a leading `~` before a quantity
+breaking the regex; 3/4-style fraction quantities not recognized; an "of" between
+unit and name leaking into 62 ingredient names ("of icing sugar" instead of "icing
+sugar").
+
+**tips.json parser** (`scripts/parse_tips.py` + `scripts/verify_tips.py`): 363 flat
+tip records from 378 source headings (254 `##` + 124 `###`) minus 9 empty
+section-umbrella headings with no body text of their own. Duplicate-title handling
+per the existing CONTEXT.md decision: consecutive same-title blocks merged,
+non-consecutive ones numbered ("— 2", "— 3"). One plan reversed mid-build: intended
+to prefix a `###` sub-heading's title with its nearest `##` ancestor for readability,
+measured it against the actual source and found it wrong 76 of 124 times (61%) — this
+source frequently starts a new topic with plain prose instead of a heading, so
+"nearest preceding `##`" often pointed at a stale, unrelated topic. Reverted to bare
+`###` titles.
+
+**glossary.json**: built from real usage (recipes.json/tips.json/tags.json), then
+user required every term web-verified against actual Lithuanian recipe/confectionery
+sites, not guessed. ~45 targeted searches covering all 214 terms found 14 wrong terms
+the first draft had invented or mis-guessed (e.g. "plaktukė grietinėlė" for heavy
+cream — zero real search hits — corrected to "riebi grietinėlė"; "roladas" for
+roulade — not a real standalone LT term — corrected to "vyniotinis"; full list in the
+glossary decision entry above). A second coverage pass against the full `tags.json`
+vocabulary (not just terms currently used in recipes/tips output) found 21 more terms
+missing from the glossary entirely; all researched and added. Final state: zero
+missing, zero extra keys between `glossary.json` and `tags.json` — a re-runnable
+set-difference check, not a self-report.
+
+Also found and fixed a shared bug in both parsers' tag-matching: a hyphenated vocab
+term like "flour-almond" only matched its literal word order ("almond flour"), but
+this source titles flour articles the other way ("ALMOND FLOUR") — every flour-type
+tag was silently never applied until the match was made bidirectional.
+
+**Code:** `scripts/parse_recipes.py`, `scripts/verify_recipes.py`,
+`scripts/parse_tips.py`, `scripts/verify_tips.py` (new); `tags.json` (gained ~15
+category/technique terms discovered while parsing); `recipes.json`, `tips.json`,
+`glossary.json` (new, generated output).
+**Entry point:**
+```
+python scripts/parse_recipes.py Receptai.md recipes.json
+python scripts/verify_recipes.py Receptai.md recipes.json
+python scripts/parse_tips.py Patarimai.md tips.json
+python scripts/verify_tips.py Patarimai.md tips.json
+```
+**Not measured:** the LT translation pass itself hasn't started — glossary is ready
+but no translated JSON exists yet. ~145 of the 214 glossary terms were confirmed
+correct via targeted search but not exhaustively cross-checked against multiple
+sources each (time/scope trade-off, noted in the decision entry above).
