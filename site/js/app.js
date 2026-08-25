@@ -84,7 +84,8 @@ const NAV_LINKS = [
   { href: "#/recipes", key: "navRecipes", match: (r) => r.name === "recipes" || r.name === "recipe" },
   { href: "#/tips", key: "navTips", match: (r) => r.name === "tips" || r.name === "tip" },
   { href: "#/favorites", key: "navFavorites", match: (r) => r.name === "favorites" },
-  { href: "#/shopping", key: "navShopping", match: (r) => r.name === "shopping" },
+  // Shopping list hidden from nav for now — route still works (linked from recipe pages), just not
+  // promoted in the main menu yet.
 ];
 
 function themeIconSvg(theme) {
