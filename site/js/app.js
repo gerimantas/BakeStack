@@ -29,6 +29,15 @@ function iconCheck() { return `<svg viewBox="0 0 24 24" aria-hidden="true"><path
 function iconBack() { return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>`; }
 function iconChef() { return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21h12M8 21V13a4 4 0 018 0v8M4 10a4 4 0 014-4c.3-1.7 1.8-3 3.8-3S15.7 4.3 16 6a4 4 0 014 4c0 1.5-.9 2.7-2.1 3.3"/></svg>`; }
 
+/** Recipe card image slot — omitted entirely when the recipe has no photo yet
+ * (the `image` field is reserved but not yet populated for any recipe), so
+ * cards render compact instead of reserving empty placeholder space. Once a
+ * recipe gets a real `image`, only that card switches to the photo layout. */
+function recipeCardMedia(recipe, extra) {
+  if (!recipe.image) return "";
+  return `<div class="recipe-card__media">${iconChef()}${extra || ""}</div>`;
+}
+
 function esc(s) {
   return String(s ?? "").replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
@@ -317,12 +326,11 @@ function wireSearchDropdown() {
 
 function recipeCard(recipe, lang, query) {
   const fav = isFavorite("recipe", recipe.id);
+  const favBtn = `<button class="fav-btn recipe-card__fav" data-fav-recipe="${recipe.id}" aria-pressed="${fav}" aria-label="${t(lang, fav ? "unsaveFavorite" : "saveFavorite")}">${iconHeart(fav)}</button>`;
   return `
-  <a class="recipe-card" href="#/recipe/${recipe.id}">
-    <div class="recipe-card__media">
-      ${iconChef()}
-      <button class="fav-btn recipe-card__fav" data-fav-recipe="${recipe.id}" aria-pressed="${fav}" aria-label="${t(lang, fav ? "unsaveFavorite" : "saveFavorite")}">${iconHeart(fav)}</button>
-    </div>
+  <a class="recipe-card ${recipe.image ? "" : "recipe-card--no-media"}" href="#/recipe/${recipe.id}">
+    ${recipeCardMedia(recipe, favBtn)}
+    ${!recipe.image ? favBtn : ""}
     <div class="recipe-card__body">
       <span class="recipe-card__cat">${esc(tagLabel(lang, "category", recipe.category))}</span>
       <h3 class="recipe-card__title">${highlight(recipe.title, query)}</h3>
@@ -346,7 +354,10 @@ function renderRecipesView(lang, params) {
   const category = params.get("cat") || "";
   const tag = params.get("tag") || "";
 
-  const categories = [...new Set(all.map((r) => r.category).filter(Boolean))].sort();
+  const groupDict = STRINGS[lang]?.categoryGroups || STRINGS.en.categoryGroups;
+  // curated display order, not alphabetical or by count — biggest/most-searched-for types first
+  const groupOrder = ["cupcake", "cheesecake", "cakes-loaf", "cinnamon-roll", "tea-cake", "tiramisu-zephyr", "cookies-brownies", "pies-pastry", "savory", "ganache", "components-fillings"];
+  const categoryGroups = groupOrder.filter((g) => all.some((r) => r.categoryGroup === g));
   const flavorTags = (store.tags?.flavor_theme || []).filter((tg) => all.some((r) => r.tags?.includes(tg)));
 
   let filtered = all;
@@ -354,10 +365,16 @@ function renderRecipesView(lang, params) {
     const q = query.toLowerCase();
     filtered = filtered.filter((r) => r.title.toLowerCase().includes(q) || (r.tags || []).some((tg) => tg.includes(q)));
   }
-  if (category) filtered = filtered.filter((r) => r.category === category);
+  if (category) filtered = filtered.filter((r) => r.categoryGroup === category);
   if (tag) filtered = filtered.filter((r) => (r.tags || []).includes(tag));
 
-  const chip = (label, active, href) => `<button class="chip" data-nav="${href}" aria-pressed="${active}">${esc(label)}</button>`;
+  // Counts reflect the OTHER active filter (so picking a Type doesn't hide Flavor counts, and vice versa),
+  // but not the chip's own filter — that would collapse every non-selected chip to a same/lower count.
+  const byOtherTag = tag ? all.filter((r) => (r.tags || []).includes(tag)) : all;
+  const byOtherCategory = category ? all.filter((r) => r.categoryGroup === category) : all;
+
+  const chip = (label, count, active, href) =>
+    `<button class="chip" data-nav="${href}" aria-pressed="${active}">${esc(label)} <span class="chip__count">${count}</span></button>`;
 
   return `
   <div class="container">
@@ -369,16 +386,16 @@ function renderRecipesView(lang, params) {
       <span class="filter-label">${t(lang, "filterType")}</span>
       <div class="filters">
         <div class="filter-group">
-          ${chip(t(lang, "allTypes"), !category, `#/recipes?${withParam(params, "cat", "")}`)}
-          ${categories.map((c) => chip(tagLabel(lang, "category", c), category === c, `#/recipes?${withParam(params, "cat", c)}`)).join("")}
+          ${chip(t(lang, "allTypes"), byOtherTag.length, !category, `#/recipes?${withParam(params, "cat", "")}`)}
+          ${categoryGroups.map((g) => chip(groupDict[g] || g, byOtherTag.filter((r) => r.categoryGroup === g).length, category === g, `#/recipes?${withParam(params, "cat", g)}`)).join("")}
         </div>
       </div>
     </div>
     ${flavorTags.length ? `<div class="filter-block">
       <span class="filter-label">${t(lang, "filterFlavor")}</span>
       <div class="filters"><div class="filter-group">
-        ${chip(t(lang, "allTypes"), !tag, `#/recipes?${withParam(params, "tag", "")}`)}
-        ${flavorTags.slice(0, 14).map((tg) => chip(tagLabel(lang, "flavor_theme", tg), tag === tg, `#/recipes?${withParam(params, "tag", tg)}`)).join("")}
+        ${chip(t(lang, "allTypes"), byOtherCategory.length, !tag, `#/recipes?${withParam(params, "tag", "")}`)}
+        ${flavorTags.slice(0, 14).map((tg) => chip(tagLabel(lang, "flavor_theme", tg), byOtherCategory.filter((r) => (r.tags || []).includes(tg)).length, tag === tg, `#/recipes?${withParam(params, "tag", tg)}`)).join("")}
       </div></div>
     </div>` : ""}
     ${filtered.length ? `<div class="recipe-grid">${filtered.map((r) => recipeCard(r, lang, query)).join("")}</div>`
@@ -452,15 +469,33 @@ function renderRecipeDetail(lang, id) {
   </div>`;
 }
 
+// A recipe's categoryGroup maps to the tip topic(s) most relevant to making
+// that kind of dessert — e.g. a cheesecake recipe should surface cheesecake
+// tips before a tip that merely happens to share generic ingredient tags
+// (butter, sugar, milk) with it. Not every group has a matching topic; those
+// fall through to tag-overlap ranking alone.
+const CATEGORY_GROUP_TO_TOPICS = {
+  cheesecake: ["cheesecake"],
+  ganache: ["frostings-ganache"],
+  "components-fillings": ["frostings-ganache"],
+  "cakes-loaf": ["sponge-pastry"],
+  "tea-cake": ["sponge-pastry"],
+  "cinnamon-roll": ["sponge-pastry"],
+  "pies-pastry": ["sponge-pastry"],
+};
+
 function findRelatedTips(recipe, lang, limit) {
   const tags = new Set(recipe.tags || []);
-  if (!tags.size) return [];
-  return getTips(lang)
-    .map((tip) => ({ tip, overlap: (tip.tags || []).filter((tg) => tags.has(tg)).length }))
-    .filter((x) => x.overlap > 0)
-    .sort((a, b) => b.overlap - a.overlap)
-    .slice(0, limit)
-    .map((x) => x.tip);
+  const relevantTopics = new Set(CATEGORY_GROUP_TO_TOPICS[recipe.categoryGroup] || []);
+  const scored = getTips(lang)
+    .map((tip) => ({
+      tip,
+      topicMatch: relevantTopics.has(tip.topic) ? 1 : 0,
+      overlap: (tip.tags || []).filter((tg) => tags.has(tg)).length,
+    }))
+    .filter((x) => x.topicMatch || x.overlap > 0)
+    .sort((a, b) => b.topicMatch - a.topicMatch || b.overlap - a.overlap);
+  return scored.slice(0, limit).map((x) => x.tip);
 }
 
 /** Full search results page — reached via Enter or "Show all N results" from the nav dropdown.
@@ -503,16 +538,35 @@ function renderSearchView(lang, params) {
 function renderTipsView(lang, params) {
   const all = getTips(lang);
   const query = (params.get("q") || "").trim();
+  const topic = params.get("topic") || "";
+
   let filtered = all;
   if (query) {
     const q = query.toLowerCase();
     filtered = filtered.filter((tp) => tp.title.toLowerCase().includes(q) || tp.text.toLowerCase().includes(q) || (tp.tags || []).some((tg) => tg.includes(q)));
   }
+  if (topic) filtered = filtered.filter((tp) => tp.topic === topic);
+
+  const topicDict = STRINGS[lang]?.topics || STRINGS.en.topics;
+  // preserve a fixed, curated order rather than sorting alphabetically or by count
+  const topicOrder = ["ingredients", "techniques", "flavor-pairing", "cheesecake", "frostings-ganache", "sponge-pastry", "troubleshooting", "storage"];
+  const topicOptions = topicOrder
+    .filter((tp) => all.some((r) => r.topic === tp))
+    .map((tp) => `<option value="${tp}" ${topic === tp ? "selected" : ""}>${esc(topicDict[tp] || tp)}</option>`)
+    .join("");
+
   return `
   <div class="container">
     <div class="page-head">
       <h1>${t(lang, "navTips")}</h1>
       <span class="page-head__count">${t(lang, "tipsCount", filtered.length)}</span>
+    </div>
+    <div class="filter-block">
+      <label class="filter-label" for="tip-topic-select">${t(lang, "filterTopic")}</label>
+      <select id="tip-topic-select" data-nav-select data-nav-param="topic">
+        <option value="">${t(lang, "allTypes")}</option>
+        ${topicOptions}
+      </select>
     </div>
     ${filtered.length ? `<div class="tip-list">${filtered.slice(0, 100).map((tp) => tipCard(tp, lang, query)).join("")}</div>`
       : `<div class="empty-state"><h2>${t(lang, "noResults")}</h2><p>${t(lang, "noResultsHint")}</p></div>`}
@@ -558,7 +612,8 @@ function renderFavoritesView(lang) {
 }
 
 function renderShoppingView(lang) {
-  const all = getRecipes(lang);
+  const favoriteIds = new Set(getFavoriteIds("recipe"));
+  const all = getRecipes(lang).filter((r) => favoriteIds.has(r.id));
   const pickedIds = Object.keys(appState.shoppingPicks);
   const pickedItems = pickedIds
     .map((id) => ({ recipe: getRecipeById(lang, id), multiplier: appState.shoppingPicks[id] }))
@@ -566,7 +621,7 @@ function renderShoppingView(lang) {
   const list = pickedItems.length ? buildShoppingList(pickedItems) : [];
 
   const listHtml = list.length
-    ? `<ul>${list.map((item) => `<li><span>${esc(item.name)}</span><span class="amt">${item.isText ? "" : formatAmount(item.amount) + (item.unit ? " " + esc(item.unit) : "")}</span></li>`).join("")}</ul>`
+    ? `<ul>${list.map((item) => `<li><span>${esc(item.name)}</span><span class="amt">${item.isText ? "" : (item.isApprox ? "~" : "") + formatAmount(item.amount) + (item.unit ? " " + esc(item.unit) : "")}</span></li>`).join("")}</ul>`
     : `<p style="color:var(--color-muted);font-size:var(--text-sm)">${t(lang, "shoppingListEmpty")}</p>`;
 
   return `
@@ -574,13 +629,13 @@ function renderShoppingView(lang) {
     <div>
       <div class="page-head"><h1>${t(lang, "navShopping")}</h1></div>
       <p style="color:var(--color-muted);font-size:var(--text-sm);margin-bottom:var(--space-lg)">${t(lang, "shoppingListHint")}</p>
-      <div class="recipe-grid">
+      ${all.length ? `<div class="recipe-grid">
         ${all.map((r) => {
           const picked = isPicked(r.id);
-          return `<div class="recipe-card" style="position:relative">
+          return `<div class="recipe-card ${r.image ? "" : "recipe-card--no-media"}" style="position:relative">
             <button class="pick-checkbox" data-pick="${r.id}" role="checkbox" aria-checked="${picked}" aria-label="${esc(r.title)}">${iconCheck()}</button>
             <a href="#/recipe/${r.id}" style="text-decoration:none;color:inherit;display:contents">
-              <div class="recipe-card__media">${iconChef()}</div>
+              ${recipeCardMedia(r)}
               <div class="recipe-card__body">
                 <span class="recipe-card__cat">${esc(tagLabel(lang, "category", r.category))}</span>
                 <h3 class="recipe-card__title">${esc(r.title)}</h3>
@@ -588,10 +643,13 @@ function renderShoppingView(lang) {
             </a>
           </div>`;
         }).join("")}
-      </div>
+      </div>` : `<div class="empty-state"><h2>${t(lang, "shoppingListNoFavorites")}</h2><p>${t(lang, "shoppingListNoFavoritesHint")}</p></div>`}
     </div>
     <aside class="panel shopping-list-panel">
-      <h2>${t(lang, "shoppingListTitle")}</h2>
+      <div class="shopping-list-panel__head">
+        <h2>${t(lang, "shoppingListTitle")}</h2>
+        <span class="shopping-list-panel__date">${new Date().toLocaleDateString(lang === "lt" ? "lt-LT" : "en-US", { day: "numeric", month: "long", year: "numeric" })}</span>
+      </div>
       <div id="shopping-list-body">${listHtml}</div>
       ${list.length ? `<div class="recipe-actions">
         <button class="btn" id="copy-list-btn">${t(lang, "copyList")}</button>
@@ -700,6 +758,15 @@ function wireEvents(route) {
 
   document.querySelectorAll("[data-nav]").forEach((el) => {
     el.addEventListener("click", () => { location.hash = el.dataset.nav; });
+  });
+
+  document.querySelectorAll("[data-nav-select]").forEach((el) => {
+    el.addEventListener("change", () => {
+      const currentParams = new URLSearchParams(location.hash.split("?")[1] || "");
+      const path = location.hash.split("?")[0];
+      const withVal = withParam(currentParams, el.dataset.navParam, el.value);
+      location.hash = withVal ? `${path}?${withVal}` : path;
+    });
   });
 
   const main = document.getElementById("main");

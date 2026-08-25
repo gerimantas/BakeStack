@@ -374,6 +374,20 @@ img { max-width: 100%; display: block; }
   flex-wrap: wrap;
   gap: var(--space-xs);
 }
+.filter-block select {
+  height: 2.25rem;
+  padding-inline: var(--space-sm) var(--space-md);
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-rule);
+  background: var(--color-paper-2);
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+  max-width: 22rem;
+}
+.filter-block select:focus-visible {
+  border-color: var(--color-accent);
+  background: var(--color-paper);
+}
 .filter-group {
   display: flex;
   flex-wrap: wrap;
@@ -399,6 +413,12 @@ img { max-width: 100%; display: block; }
   border-color: var(--color-ink);
   color: var(--color-paper);
 }
+.chip__count {
+  color: var(--color-muted);
+  font-weight: 400;
+  margin-left: var(--space-2xs);
+}
+.chip[aria-pressed="true"] .chip__count { color: inherit; opacity: 0.75; }
 
 /* ==================== Recipe grid / cards ==================== */
 
@@ -420,6 +440,8 @@ img { max-width: 100%; display: block; }
   transition: border-color var(--dur-short) var(--ease-out);
 }
 .recipe-card:hover { border-color: var(--color-neutral); }
+.recipe-card--no-media { position: relative; }
+.recipe-card--no-media .recipe-card__body { padding-top: 2.5rem; }
 
 .recipe-card__media {
   aspect-ratio: 4 / 3;
@@ -782,18 +804,30 @@ img { max-width: 100%; display: block; }
   width: 1.5rem;
   height: 1.5rem;
   border-radius: var(--radius-sm);
-  border: 2px solid var(--color-paper);
-  background: color-mix(in oklch, var(--color-paper) 85%, transparent);
+  border: 2px solid var(--color-ink-2);
+  background: var(--color-paper);
+  box-shadow: 0 1px 3px color-mix(in oklch, var(--color-ink) 20%, transparent);
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: border-color var(--dur-short) var(--ease-out),
+              background var(--dur-short) var(--ease-out);
 }
+.pick-checkbox:hover { border-color: var(--color-accent); }
 .pick-checkbox[aria-checked="true"] { background: var(--color-accent); border-color: var(--color-accent); }
 .pick-checkbox svg { width: 0.9rem; height: 0.9rem; stroke: var(--color-accent-ink); stroke-width: 2.5; opacity: 0; }
 .pick-checkbox[aria-checked="true"] svg { opacity: 1; }
 
 .shopping-list-panel { position: sticky; top: 5.5rem; }
+.shopping-list-panel__head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+}
+.shopping-list-panel__date { font-size: var(--text-xs); color: var(--color-muted); white-space: nowrap; }
 .shopping-list-panel ul { list-style: none; margin: 0; padding: 0; }
 .shopping-list-panel li {
   display: flex;

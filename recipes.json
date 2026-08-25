@@ -6,41 +6,41 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 190.0,
+        "amount": 190,
         "unit": "g",
         "name": "unsalted butter"
       },
       {
-        "amount": 290.0,
+        "amount": 290,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": null,
         "name": "large eggs"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "Dutch-processed cocoa powder"
       },
       {
-        "amount": 270.0,
+        "amount": 270,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "cornstarch",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "baking soda",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
         "amount": null,
@@ -48,17 +48,17 @@
         "name": "a pinch of salt"
       },
       {
-        "amount": 300.0,
+        "amount": 300,
         "unit": "g",
         "name": "milk chocolate (chips)"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "chopped hazelnuts"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": null,
         "name": "Ferrero Rocher chocolate candies"
       },
@@ -98,7 +98,8 @@
       "salt",
       "sugar"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cookies-brownies"
   },
   {
     "title": "BLUEBERRY-LEMON ROLLS RECIPE",
@@ -107,27 +108,27 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "warm milk"
       },
       {
-        "amount": 7.0,
+        "amount": 7,
         "unit": "g",
         "name": "dry yeast"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "melted unsalted butter"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "egg + 1 yolk"
       },
@@ -137,17 +138,17 @@
         "name": "zest of 2 lemons"
       },
       {
-        "amount": 4.0,
+        "amount": 4,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 360.0,
+        "amount": 360,
         "unit": "g",
         "name": "strong flour (I use Zernari Select, bread flour will work)"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "soft unsalted butter"
       },
@@ -157,42 +158,42 @@
         "name": "lemon zest"
       },
       {
-        "amount": 300.0,
+        "amount": 300,
         "unit": "g",
         "name": "blueberries"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "lemon pieces"
       },
       {
-        "amount": 16.0,
+        "amount": 16,
         "unit": "g",
         "name": "cornstarch"
       },
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "lemon juice"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "yolks"
       },
       {
-        "amount": 90.0,
+        "amount": 90,
         "unit": "g",
         "name": "lemon juice"
       },
@@ -203,34 +204,34 @@
       },
       {
         "amount": {
-          "min": 6.0,
-          "max": 9.0
+          "min": 6,
+          "max": 9
         },
         "unit": "g",
         "name": "cornstarch"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "unsalted butter"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "soft unsalted butter"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "lemon juice"
       },
@@ -240,17 +241,17 @@
         "name": "lemon zest"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "cream cheese or mascarpone"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "heavy whipping cream (33–36%)"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "blueberry filling"
       }
@@ -279,7 +280,8 @@
       "whipping-cream",
       "yeast"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "pies-pastry"
   },
   {
     "title": "MANDARIN-PASSIONFRUIT CUPCAKES",
@@ -288,41 +290,41 @@
     "servings": "~24 cupcakes",
     "ingredients": [
       {
-        "amount": 55.0,
+        "amount": 55,
         "unit": "g",
         "name": "butter (82%)"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "odorless oil"
       },
       {
-        "amount": 300.0,
+        "amount": 300,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 4.0,
+        "amount": 4,
         "unit": null,
         "name": "large eggs"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla paste/extract",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 330.0,
+        "amount": 330,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "tsp",
         "name": "baking powder",
-        "amount_ml": 10.0
+        "amount_ml": 10
       },
       {
         "amount": 0.75,
@@ -337,67 +339,67 @@
         "amount_ml": 2.5
       },
       {
-        "amount": 240.0,
+        "amount": 240,
         "unit": "g",
         "name": "kefir"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "passionfruit purée"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "mandarin pulp"
       },
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "pectin NH"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "gelatin"
       },
       {
-        "amount": 12.0,
+        "amount": 12,
         "unit": "g",
         "name": "cold water"
       },
       {
-        "amount": 35.0,
+        "amount": 35,
         "unit": "g",
         "name": "mandarin pulp"
       },
       {
-        "amount": 240.0,
+        "amount": 240,
         "unit": "g",
         "name": "passionfruit purée"
       },
       {
-        "amount": 350.0,
+        "amount": 350,
         "unit": "g",
         "name": "white chocolate 28–30%"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "cocoa butter"
       },
       {
-        "amount": 360.0,
+        "amount": 360,
         "unit": "g",
         "name": "heavy whipping cream 33–36%"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "mascarpone"
       }
@@ -439,7 +441,8 @@
       "whipping-cream",
       "white-chocolate"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cupcake"
   },
   {
     "title": "RECIPE: PUMPKIN CREAM SOUP",
@@ -449,40 +452,40 @@
     "ingredients": [
       {
         "amount": {
-          "min": 700.0,
-          "max": 800.0
+          "min": 700,
+          "max": 800
         },
         "unit": "g",
         "name": "Turkey thigh"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "butternut squash (1.5–2.0 kg)"
       },
       {
         "amount": {
-          "min": 300.0,
-          "max": 400.0
+          "min": 300,
+          "max": 400
         },
         "unit": "g",
         "name": "red lentils"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "medium carrot"
       },
       {
         "amount": {
-          "min": 100.0,
-          "max": 200.0
+          "min": 100,
+          "max": 200
         },
         "unit": "g",
         "name": "pork fat for cracklings (optional) or 2 tbsp oil"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "medium onion"
       },
@@ -498,8 +501,8 @@
       },
       {
         "amount": {
-          "min": 200.0,
-          "max": 250.0
+          "min": 200,
+          "max": 250
         },
         "unit": "g",
         "name": "cream or cream cheese"
@@ -520,7 +523,8 @@
       "pumpkin",
       "salt"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "savory"
   },
   {
     "title": "RECIPE: PUMPKIN MARBLE LOAF CAKE",
@@ -529,40 +533,40 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 115.0,
+        "amount": 115,
         "unit": "g",
         "name": "melted butter"
       },
       {
-        "amount": 225.0,
+        "amount": 225,
         "unit": "g",
         "name": "thick pumpkin purée"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "milk (room temperature)"
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "eggs (room temperature)"
       },
       {
-        "amount": 175.0,
+        "amount": 175,
         "unit": "g",
         "name": "flour"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "baking powder",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
         "amount": 0.6666666666666666,
@@ -577,10 +581,10 @@
         "amount_ml": 2.5
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "cinnamon",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
         "amount": 0.5,
@@ -595,12 +599,12 @@
         "amount_ml": 1.25
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "cocoa powder"
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "milk (room temperature)"
       }
@@ -629,7 +633,8 @@
       "salt",
       "sugar"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cakes-loaf"
   },
   {
     "title": "Tart Cherry-Coconut Swirls",
@@ -638,112 +643,112 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "warm milk"
       },
       {
-        "amount": 7.0,
+        "amount": 7,
         "unit": "g",
         "name": "dry yeast"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "granulated sugar"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "melted unsalted butter"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "egg + 1 yolk"
       },
       {
-        "amount": 4.0,
+        "amount": 4,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 360.0,
+        "amount": 360,
         "unit": "g",
         "name": "strong flour (I use Zernari Select, any bread flour will work)"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "soft unsalted butter"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "granulated sugar"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 25.0,
+        "amount": 25,
         "unit": "g",
         "name": "coconut flakes"
       },
       {
-        "amount": 500.0,
+        "amount": 500,
         "unit": "g",
         "name": "pitted tart cherries"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "granulated sugar"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "cornstarch"
       },
       {
-        "amount": 25.0,
+        "amount": 25,
         "unit": "g",
         "name": "lemon juice"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "soft unsalted butter"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "granulated sugar"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "coconut flakes"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "cream cheese or mascarpone"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "heavy whipping cream 33–36% or coconut cream 12–18%"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "coconut flakes"
       }
@@ -773,7 +778,8 @@
       "whipping-cream",
       "yeast"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cinnamon-roll"
   },
   {
     "title": "Caramel Apple Cinnamon Rolls",
@@ -782,130 +788,130 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "warm milk"
       },
       {
-        "amount": 7.0,
+        "amount": 7,
         "unit": "g",
         "name": "fresh yeast"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "melted unsalted butter"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "egg + 1 yolk"
       },
       {
-        "amount": 4.0,
+        "amount": 4,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 360.0,
+        "amount": 360,
         "unit": "g",
         "name": "strong flour (I use Zernari Select)"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "soft unsalted butter"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "caramel sauce (from my previous post)"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "heavy whipping cream (33–36%)"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "cinnamon"
       },
       {
-        "amount": 65.0,
+        "amount": 65,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "unsalted butter"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "diced apples"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "cinnamon"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "soft butter"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 7.0,
+        "amount": 7,
         "unit": "g",
         "name": "cinnamon"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "salt"
       },
       {
         "amount": {
-          "min": 80.0,
-          "max": 100.0
+          "min": 80,
+          "max": 100
         },
         "unit": "g",
         "name": "caramel sauce (recipe is a bit earlier on my profile)"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "cream cheese or mascarpone"
       },
       {
-        "amount": 25.0,
+        "amount": 25,
         "unit": "g",
         "name": "caramel (regular or apple caramel)"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "heavy  whipping cream (33–36%)"
       }
@@ -936,7 +942,8 @@
       "whipping-cream",
       "yeast"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cinnamon-roll"
   },
   {
     "title": "Chocolate Cinnamon Rolls with Baileys Recipe",
@@ -945,110 +952,110 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "warm milk"
       },
       {
-        "amount": 7.0,
+        "amount": 7,
         "unit": "g",
         "name": "fresh yeast"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "melted unsalted butter"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "egg + 1 yolk"
       },
       {
-        "amount": 4.0,
+        "amount": 4,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 335.0,
+        "amount": 335,
         "unit": "g",
         "name": "strong flour (I use Zernari Select,  bread flour works too)"
       },
       {
-        "amount": 25.0,
+        "amount": 25,
         "unit": "g",
         "name": "cocoa"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "soft unsalted butter"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "Baileys liqueur"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "soft unsalted butter"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 25.0,
+        "amount": 25,
         "unit": "g",
         "name": "Baileys liqueur"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "cocoa"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "cinnamon"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 350.0,
+        "amount": 350,
         "unit": "g",
         "name": "mascarpone"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "Baileys liqueur"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "Baileys per roll",
-        "amount_ml": 5.0
+        "amount_ml": 5
       }
     ],
     "steps": [
@@ -1070,7 +1077,8 @@
       "sugar",
       "yeast"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cinnamon-roll"
   },
   {
     "title": "TIRAMISU CHEESECAKE WITH BAILEYS",
@@ -1079,110 +1087,110 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 375.0,
+        "amount": 375,
         "unit": "g",
         "name": "all purpose flour"
       },
       {
-        "amount": 45.0,
+        "amount": 45,
         "unit": "g",
         "name": "almond flour"
       },
       {
-        "amount": 230.0,
+        "amount": 230,
         "unit": "g",
         "name": "unsalted butter"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "eggs"
       },
       {
-        "amount": 127.0,
+        "amount": 127,
         "unit": "g",
         "name": "powdered sugar"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "salt"
       },
       {
         "amount": {
-          "min": 200.0,
-          "max": 230.0
+          "min": 200,
+          "max": 230
         },
         "unit": "g",
         "name": "shortcrust crumbs"
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "almond flakes"
       },
       {
-        "amount": 90.0,
+        "amount": 90,
         "unit": "g",
         "name": "melted unsalted butter"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "chopped hazelnuts"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "brown sugar (optional)",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 500.0,
+        "amount": 500,
         "unit": "g",
         "name": "mascarpone"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "Baileys liqueur"
       },
       {
-        "amount": 300.0,
+        "amount": 300,
         "unit": "g",
         "name": "heavy whipping cream 33–36%"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla extract",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
         "amount": {
-          "min": 200.0,
-          "max": 220.0
+          "min": 200,
+          "max": 220
         },
         "unit": "g",
         "name": "Savoiardi cookies"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "espresso"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "Baileys liqueur"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "heavy whipping cream 30–33%"
       },
@@ -1223,7 +1231,8 @@
       "vanilla",
       "whipping-cream"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cheesecake"
   },
   {
     "title": "Mega-Chocolate Cinnamon Rolls Recipe",
@@ -1232,125 +1241,125 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "warm milk"
       },
       {
-        "amount": 7.0,
+        "amount": 7,
         "unit": "g",
         "name": "fresh yeast"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "melted unsalted butter"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "egg + 1 yolk"
       },
       {
-        "amount": 4.0,
+        "amount": 4,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 335.0,
+        "amount": 335,
         "unit": "g",
         "name": "strong flour (I use Zernari Select, bread flour works too)"
       },
       {
-        "amount": 25.0,
+        "amount": 25,
         "unit": "g",
         "name": "cocoa powder"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "soft unsalted butter"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 45.0,
+        "amount": 45,
         "unit": "g",
         "name": "heavy cream"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "cocoa powder"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "cinnamon"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "soft unsalted butter"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "cocoa powder"
       },
       {
-        "amount": 6.0,
+        "amount": 6,
         "unit": "g",
         "name": "cinnamon"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "candied orange peel (recipe on my profile, check the Reels tab)"
       },
       {
         "amount": {
-          "min": 100.0,
-          "max": 120.0
+          "min": 100,
+          "max": 120
         },
         "unit": "g",
         "name": "chocolate chips (I use 58% chocolate)"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "soft unsalted butter"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "cream cheese (room temp)"
       },
       {
-        "amount": 125.0,
+        "amount": 125,
         "unit": "g",
         "name": "melted dark chocolate"
       }
@@ -1376,7 +1385,8 @@
       "sugar",
       "yeast"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cinnamon-roll"
   },
   {
     "title": "Caramel-Nut Cinnamon Roll Recipe",
@@ -1385,123 +1395,123 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "warm milk"
       },
       {
-        "amount": 7.0,
+        "amount": 7,
         "unit": "g",
         "name": "fresh yeast"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "melted unsalted butter"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "egg + 1 yolk"
       },
       {
-        "amount": 4.0,
+        "amount": 4,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 335.0,
+        "amount": 335,
         "unit": "g",
         "name": "strong flour (I use Zernari Select)"
       },
       {
-        "amount": 25.0,
+        "amount": 25,
         "unit": "g",
         "name": "cocoa"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "soft unsalted butter"
       },
       {
-        "amount": 45.0,
+        "amount": 45,
         "unit": "g",
         "name": "nut paste/butter (I used hazelnut, but any nut paste or Nutella works)"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "brown sugar"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "heavy cream"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "soft unsalted butter"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "nut paste/butter"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "brown sugar"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "cinnamon"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "salt"
       },
       {
         "amount": {
-          "min": 80.0,
-          "max": 100.0
+          "min": 80,
+          "max": 100
         },
         "unit": "g",
         "name": "salted caramel (recipe posted earlier)"
       },
       {
         "amount": {
-          "min": 60.0,
-          "max": 80.0
+          "min": 60,
+          "max": 80
         },
         "unit": "g",
         "name": "chopped roasted nuts (I used hazelnuts)"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "soft unsalted butter"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "cream cheese"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "nut paste"
       }
@@ -1529,7 +1539,8 @@
       "sugar-brown",
       "yeast"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cinnamon-roll"
   },
   {
     "title": "Tiramisu Cinnamon Roll Recipe",
@@ -1538,118 +1549,118 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "warm milk"
       },
       {
-        "amount": 7.0,
+        "amount": 7,
         "unit": "g",
         "name": "yeast"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "instant espresso coffee",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "egg + 1 yolk"
       },
       {
-        "amount": 57.0,
+        "amount": 57,
         "unit": "g",
         "name": "melted unsalted butter"
       },
       {
-        "amount": 360.0,
+        "amount": 360,
         "unit": "g",
         "name": "strong flour"
       },
       {
-        "amount": 4.0,
+        "amount": 4,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 57.0,
+        "amount": 57,
         "unit": "g",
         "name": "soft butter"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "brown sugar"
       },
       {
-        "amount": 7.0,
+        "amount": 7,
         "unit": "g",
         "name": "cocoa"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "instant espresso coffee"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "cinnamon"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 170.0,
+        "amount": 170,
         "unit": "g",
         "name": "mascarpone"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "heavy whip cream (33–36%)"
       },
       {
-        "amount": 25.0,
+        "amount": 25,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "vanilla paste"
       },
       {
-        "amount": 113.0,
+        "amount": 113,
         "unit": "g",
         "name": "soft butter"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "brown sugar"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "cream"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "salt"
       }
@@ -1675,7 +1686,8 @@
       "vanilla",
       "yeast"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cinnamon-roll"
   },
   {
     "title": "LEMON—RASPBERRY CUPCAKES",
@@ -1684,7 +1696,7 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 125.0,
+        "amount": 125,
         "unit": "g",
         "name": "unsalted butter 82%"
       },
@@ -1694,22 +1706,22 @@
         "name": "Zest of 2 lemons"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "eggs"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "sour cream 20%"
       },
       {
-        "amount": 160.0,
+        "amount": 160,
         "unit": "g",
         "name": "all-purpose flour"
       },
@@ -1726,42 +1738,42 @@
         "amount_ml": 1.25
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "fresh raspberries"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "eggs"
       },
       {
-        "amount": 36.0,
+        "amount": 36,
         "unit": "g",
         "name": "yolks"
       },
       {
-        "amount": 90.0,
+        "amount": 90,
         "unit": "g",
         "name": "lemon juice"
       },
       {
-        "amount": 90.0,
+        "amount": 90,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 270.0,
+        "amount": 270,
         "unit": "g",
         "name": "lemon curd"
       },
       {
-        "amount": 330.0,
+        "amount": 330,
         "unit": "g",
         "name": "mascarpone"
       }
@@ -1794,7 +1806,8 @@
       "sour-cream",
       "sugar"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cupcake"
   },
   {
     "title": "BANANA TEA CAKE WITH DATES AND NUTS",
@@ -1803,27 +1816,27 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 260.0,
+        "amount": 260,
         "unit": "g",
         "name": "chopped dates"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "brown sugar"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "dark rum"
       },
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "water"
       },
@@ -1834,72 +1847,72 @@
         "amount_ml": 2.5
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "whole eggs"
       },
       {
-        "amount": 130.0,
+        "amount": 130,
         "unit": "g",
         "name": "bananas"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla paste",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "walnuts"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "salt",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 260.0,
+        "amount": 260,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "baking powder"
       },
       {
-        "amount": 460.0,
+        "amount": 460,
         "unit": "g",
         "name": "cream cheese"
       },
       {
-        "amount": 460.0,
+        "amount": 460,
         "unit": "g",
         "name": "heavy cream (33–36%)"
       },
       {
-        "amount": 160.0,
+        "amount": 160,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 240.0,
+        "amount": 240,
         "unit": "g",
         "name": "eggs"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "cornstarch"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tbsp",
         "name": "vanilla paste",
-        "amount_ml": 15.0
+        "amount_ml": 15
       }
     ],
     "steps": [
@@ -1945,7 +1958,8 @@
       "vanilla",
       "walnut"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "tea-cake"
   },
   {
     "title": "BANANA CUPCAKE RECIPE",
@@ -1954,72 +1968,72 @@
     "servings": "~12 cupcakes",
     "ingredients": [
       {
-        "amount": 125.0,
+        "amount": 125,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "almond flour"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "g",
         "name": "baking powder"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "baking soda"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 215.0,
+        "amount": 215,
         "unit": "g",
         "name": "bananas (peeled)"
       },
       {
-        "amount": 25.0,
+        "amount": 25,
         "unit": "g",
         "name": "sour cream"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "lemon juice"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "granulated sugar"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "eggs"
       },
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "oil"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "toasted chopped hazelnuts (or other nuts)"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "dark chocolate chips"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "banana — for the filling"
       }
@@ -2050,7 +2064,8 @@
       "sugar",
       "sugar-granulated"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cupcake"
   },
   {
     "title": "Banana Whipped Ganache",
@@ -2059,48 +2074,48 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 230.0,
+        "amount": 230,
         "unit": "g",
         "name": "heavy whipping cream (33–36%)"
       },
       {
         "amount": {
-          "min": 150.0,
-          "max": 200.0
+          "min": 150,
+          "max": 200
         },
         "unit": "g",
         "name": "very ripe bananas"
       },
       {
         "amount": {
-          "min": 1.0,
-          "max": 2.0
+          "min": 1,
+          "max": 2
         },
         "unit": "g",
         "name": "gelatin"
       },
       {
-        "amount": 95.0,
+        "amount": 95,
         "unit": "g",
         "name": "banana cream"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "white chocolate"
       },
       {
-        "amount": 105.0,
+        "amount": 105,
         "unit": "g",
         "name": "banana cream"
       },
       {
-        "amount": 325.0,
+        "amount": 325,
         "unit": "g",
         "name": "mascarpone"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "vanilla paste"
       }
@@ -2126,7 +2141,8 @@
       "whipping-cream",
       "white-chocolate"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "ganache"
   },
   {
     "title": "MATCHA STRAWBERRY TIRAMISU",
@@ -2135,68 +2151,68 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 6.0,
+        "amount": 6,
         "unit": null,
         "name": "egg yolks (~100 g)"
       },
       {
-        "amount": 130.0,
+        "amount": 130,
         "unit": "g",
         "name": "granulated sugar"
       },
       {
-        "amount": 500.0,
+        "amount": 500,
         "unit": "g",
         "name": "mascarpone"
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "matcha"
       },
       {
-        "amount": 400.0,
+        "amount": 400,
         "unit": "g",
         "name": "heavy whipping cream (33–35%)"
       },
       {
         "amount": {
-          "min": 350.0,
-          "max": 400.0
+          "min": 350,
+          "max": 400
         },
         "unit": "g",
         "name": "ladyfingers (savoiardi)"
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "matcha"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "granulated sugar"
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "hot water (~80°C/~176°F)"
       },
       {
-        "amount": 210.0,
+        "amount": 210,
         "unit": "g",
         "name": "milk"
       },
       {
         "amount": {
-          "min": 400.0,
-          "max": 450.0
+          "min": 400,
+          "max": 450
         },
         "unit": "g",
         "name": "fresh strawberries, diced"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "matcha for dusting"
       }
@@ -2225,7 +2241,8 @@
       "sugar-granulated",
       "whipping-cream"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "tiramisu-zephyr"
   },
   {
     "title": "BAILEYS TIRAMISU",
@@ -2234,20 +2251,20 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 6.0,
+        "amount": 6,
         "unit": null,
         "name": "egg yolks (~100 g)"
       },
       {
         "amount": {
-          "min": 100.0,
-          "max": 120.0
+          "min": 100,
+          "max": 120
         },
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 500.0,
+        "amount": 500,
         "unit": "g",
         "name": "mascarpone"
       },
@@ -2257,27 +2274,27 @@
         "name": "Seeds of 1 vanilla bean"
       },
       {
-        "amount": 450.0,
+        "amount": 450,
         "unit": "g",
         "name": "heavy whipping cream (33–35%)"
       },
       {
         "amount": {
-          "min": 200.0,
-          "max": 250.0
+          "min": 200,
+          "max": 250
         },
         "unit": "g",
         "name": "espresso"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "Baileys"
       },
       {
         "amount": {
-          "min": 15.0,
-          "max": 20.0
+          "min": 15,
+          "max": 20
         },
         "unit": "g",
         "name": "cocoa powder for dusting"
@@ -2306,7 +2323,8 @@
       "vanilla",
       "whipping-cream"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "tiramisu-zephyr"
   },
   {
     "title": "MANGO GANACHE",
@@ -2315,32 +2333,32 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "heavy whippinh cream (33–35%)"
       },
       {
-        "amount": 65.0,
+        "amount": 65,
         "unit": "g",
         "name": "mango purée"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "glucose syrup"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "inverted sugar (Trimoline)"
       },
       {
-        "amount": 145.0,
+        "amount": 145,
         "unit": "g",
         "name": "white chocolate callets"
       },
       {
-        "amount": 8.0,
+        "amount": 8,
         "unit": "g",
         "name": "cocoa butter"
       }
@@ -2361,7 +2379,8 @@
       "sugar",
       "white-chocolate"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "ganache"
   },
   {
     "title": "CHOCO–PEANUT BUTTER CUPCAKES RECIPE",
@@ -2370,30 +2389,30 @@
     "servings": "~12–14cupcakes",
     "ingredients": [
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "boiling water"
       },
       {
-        "amount": 160.0,
+        "amount": 160,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "granulated sugar"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "Dutch processed cocoa powder 22–24%"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "instant espresso powder",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
         "amount": 0.5,
@@ -2414,87 +2433,87 @@
         "amount_ml": 2.5
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "sour cream 20%"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "dorless oil"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla extract",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 110.0,
+        "amount": 110,
         "unit": "g",
         "name": "granulated sugar"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "water"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "glucose syrup"
       },
       {
-        "amount": 130.0,
+        "amount": 130,
         "unit": "g",
         "name": "heavy whipping cream 33–35%"
       },
       {
-        "amount": 35.0,
+        "amount": 35,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "cream cheese 65%"
       },
       {
-        "amount": 220.0,
+        "amount": 220,
         "unit": "g",
         "name": "mascarpone 80%"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "heavy whipping cream 33–36%"
       },
       {
-        "amount": 55.0,
+        "amount": 55,
         "unit": "g",
         "name": "peanut butter"
       },
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "powdered sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "fleur de sel or ⅓ tsp salt",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla extract",
-        "amount_ml": 5.0
+        "amount_ml": 5
       }
     ],
     "steps": [
@@ -2527,7 +2546,8 @@
       "vanilla",
       "whipping-cream"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cupcake"
   },
   {
     "title": "Choco-Caramel Cupcakes",
@@ -2536,30 +2556,30 @@
     "servings": "~12–14 cupcakes",
     "ingredients": [
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "boiling water"
       },
       {
-        "amount": 160.0,
+        "amount": 160,
         "unit": "g",
         "name": "flour"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "alkalized cocoa powder 22–24%"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "instant espresso coffee",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
         "amount": 0.5,
@@ -2580,78 +2600,78 @@
         "amount_ml": 2.5
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "sour cream 20%"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "odorless oil"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": null,
         "name": "large eggs (room temp)"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla extract",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 165.0,
+        "amount": 165,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "water"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "glucose syrup"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "heavy cream 33–35%"
       },
       {
-        "amount": 55.0,
+        "amount": 55,
         "unit": "g",
         "name": "unsalted butter 82%"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "heavy cream 33–36%"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "dark chocolate 54.5%"
       },
       {
-        "amount": 260.0,
+        "amount": 260,
         "unit": "g",
         "name": "heavy cream 33–36%"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "Baileys liqueur"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "mascarpone 80%"
       }
@@ -2693,7 +2713,8 @@
       "sugar",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cupcake"
   },
   {
     "title": "Pistachio-Tart Cherry Cupcakes",
@@ -2702,17 +2723,17 @@
     "servings": "14–16 cupcakes",
     "ingredients": [
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "flour"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "white sugar"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "brown sugar"
       },
@@ -2735,73 +2756,73 @@
         "amount_ml": 1.25
       },
       {
-        "amount": 115.0,
+        "amount": 115,
         "unit": "g",
         "name": "unsalted butter (melt and cool to room temp, 82%)"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": null,
         "name": "large eggs (room temp)"
       },
       {
-        "amount": 125.0,
+        "amount": 125,
         "unit": "g",
         "name": "Greek yogurt"
       },
       {
-        "amount": 62.0,
+        "amount": 62,
         "unit": "g",
         "name": "milk"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla extract",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "chopped pistachios"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "pitted tart cherries"
       },
       {
-        "amount": 13.0,
+        "amount": 13,
         "unit": "g",
         "name": "lemon juice and/or water"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "cornstarch"
       },
       {
-        "amount": 25.0,
+        "amount": 25,
         "unit": "g",
         "name": "granulated sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "g",
         "name": "NH Nappage pectin"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "heavy cream 33–36%"
       },
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "white chocolate 28–30%"
       },
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "pistachio paste"
       },
@@ -2812,12 +2833,12 @@
         "amount_ml": 1.25
       },
       {
-        "amount": 165.0,
+        "amount": 165,
         "unit": "g",
         "name": "heavy cream 33–36%"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "mascarpone 80%"
       }
@@ -2859,7 +2880,8 @@
       "vanilla",
       "white-chocolate"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cupcake"
   },
   {
     "title": "HAZELNUT PRALINE RECIPE",
@@ -2868,35 +2890,35 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "hazelnuts"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": null,
         "name": "used vanilla pods"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 45.0,
+        "amount": 45,
         "unit": "g",
         "name": "glucose syrup"
       },
       {
-        "amount": 35.0,
+        "amount": 35,
         "unit": "g",
         "name": "water"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "Fleur de Sel or ½ tsp regular salt",
-        "amount_ml": 5.0
+        "amount_ml": 5
       }
     ],
     "steps": [
@@ -2916,167 +2938,8 @@
       "sugar",
       "vanilla"
     ],
-    "image": null
-  },
-  {
-    "title": "MANDARIN-PASSIONFRUIT CUPCAKES",
-    "category": "cupcake",
-    "description": "These aren’t just cupcakes — they’re a firework of flavor! A celebration, unforgettable bliss, and an endorphin injection all in a single bite I created this recipe for the Winter holiday season, but didn’t post it in time, and keeping it a secret any longer feels like a crime. If you can’t find mandarins, grab some oranges and start baking now",
-    "servings": "~24 cupcakes",
-    "ingredients": [
-      {
-        "amount": 55.0,
-        "unit": "g",
-        "name": "butter (82%)"
-      },
-      {
-        "amount": 120.0,
-        "unit": "g",
-        "name": "odorless oil"
-      },
-      {
-        "amount": 300.0,
-        "unit": "g",
-        "name": "sugar"
-      },
-      {
-        "amount": 4.0,
-        "unit": null,
-        "name": "large eggs"
-      },
-      {
-        "amount": 1.0,
-        "unit": "tsp",
-        "name": "vanilla paste/extract",
-        "amount_ml": 5.0
-      },
-      {
-        "amount": 330.0,
-        "unit": "g",
-        "name": "all-purpose flour"
-      },
-      {
-        "amount": 2.0,
-        "unit": "tsp",
-        "name": "baking powder",
-        "amount_ml": 10.0
-      },
-      {
-        "amount": 0.75,
-        "unit": "tsp",
-        "name": "baking soda",
-        "amount_ml": 3.75
-      },
-      {
-        "amount": 0.5,
-        "unit": "tsp",
-        "name": "salt",
-        "amount_ml": 2.5
-      },
-      {
-        "amount": 240.0,
-        "unit": "g",
-        "name": "kefir"
-      },
-      {
-        "amount": 80.0,
-        "unit": "g",
-        "name": "passionfruit purée"
-      },
-      {
-        "amount": 80.0,
-        "unit": "g",
-        "name": "mandarin pulp"
-      },
-      {
-        "amount": 40.0,
-        "unit": "g",
-        "name": "sugar"
-      },
-      {
-        "amount": 3.0,
-        "unit": "g",
-        "name": "pectin NH"
-      },
-      {
-        "amount": 2.0,
-        "unit": "g",
-        "name": "gelatin"
-      },
-      {
-        "amount": 12.0,
-        "unit": "g",
-        "name": "cold water"
-      },
-      {
-        "amount": 35.0,
-        "unit": "g",
-        "name": "mandarin pulp"
-      },
-      {
-        "amount": 240.0,
-        "unit": "g",
-        "name": "passionfruit purée"
-      },
-      {
-        "amount": 350.0,
-        "unit": "g",
-        "name": "white chocolate 28–30%"
-      },
-      {
-        "amount": 20.0,
-        "unit": "g",
-        "name": "cocoa butter"
-      },
-      {
-        "amount": 360.0,
-        "unit": "g",
-        "name": "heavy whipping cream 33–36%"
-      },
-      {
-        "amount": 250.0,
-        "unit": "g",
-        "name": "mascarpone"
-      }
-    ],
-    "steps": [
-      "Place softened butter, oil, and sugar in the mixer bowl. Beat for about 5 min., until the mixture becomes pale and fluffy",
-      "Add eggs one at a time, then mix in vanilla",
-      "Sift and combine dry ingredients",
-      "Reduce mixer speed and add half of the dry ingredients",
-      "Add kefir, mix thoroughly",
-      "Add the remaining dry ingredients and combine",
-      "Distribute batter into cupcake liners, filling them about 2/3 full. Bake in a preheated oven at 170–180°C (~340–355°F) for 20–25 min",
-      "Pour purée into a saucepan and add mandarin pulp (1). Place over heat",
-      "Mix sugar with pectin and gradually sprinkle it into the saucepan while stirring",
-      "Mix gelatin in cold water and let it bloom",
-      "Bring the mixture to a boil, then remove from the heat. Add gelatin and stir until fully dissolved",
-      "Fold in mandarin pulp (2), cover the filling with food wrap, ensure it touches the entire surface, and refrigerate until set",
-      "Bring purée to a boil and pour it over finely chopped (or callets) white chocolate and cocoa butter. Let it sit for 1 minute, and mix until smooth",
-      "Add cream, stir, cover with food wrap, ensure it touches the entire surface, and refrigerate overnight",
-      "Add mascarpone and whip until frosting reaches a stable consistency",
-      "Scoop out the center of cupcakes, soak with 2–3 tsp of Cointreau, add filling, frost, and decorate. You can use rum instead of Cointreau"
-    ],
-    "tags": [
-      "baking-powder",
-      "baking-soda",
-      "butter",
-      "chocolate",
-      "cocoa-butter",
-      "eggs",
-      "gelatin",
-      "heavy-whipping-cream",
-      "kefir",
-      "mascarpone",
-      "passionfruit",
-      "pectin-nh",
-      "salt",
-      "sugar",
-      "vanilla",
-      "whipping-cream",
-      "white-chocolate"
-    ],
-    "image": null
+    "image": null,
+    "categoryGroup": "components-fillings"
   },
   {
     "title": "CHOCOLATE ORANGE CUPCAKES",
@@ -3085,43 +2948,43 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "flour"
       },
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "cocoa powder"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "baking powder"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "salt",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "eggs"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "sour cream"
       },
@@ -3131,28 +2994,28 @@
         "name": "zest of one orange"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tbsp",
         "name": "orange liqueur (Cointreau)",
-        "amount_ml": 15.0
+        "amount_ml": 15
       },
       {
-        "amount": 110.0,
+        "amount": 110,
         "unit": "g",
         "name": "orange juice"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "passion fruit purée"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "Cointreau"
       },
       {
-        "amount": 110.0,
+        "amount": 110,
         "unit": "g",
         "name": "sugar"
       },
@@ -3162,25 +3025,25 @@
         "name": "zest of one orange"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "chocolate 55% cocoa"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "cream cheese"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "tbsp",
         "name": "Cointreau",
-        "amount_ml": 30.0
+        "amount_ml": 30
       },
       {
         "amount": null,
@@ -3221,7 +3084,8 @@
       "sour-cream",
       "sugar"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cupcake"
   },
   {
     "title": "PERFECT ORANGE COMPOTE RECIPE",
@@ -3230,17 +3094,17 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "orange pulp"
       },
       {
-        "amount": 55.0,
+        "amount": 55,
         "unit": "g",
         "name": "passion fruit purée"
       },
       {
-        "amount": 55.0,
+        "amount": 55,
         "unit": "g",
         "name": "sugar"
       },
@@ -3250,22 +3114,22 @@
         "name": "NH pectin"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "orange zest"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "gelatin (160 Bloom)"
       },
       {
-        "amount": 18.0,
+        "amount": 18,
         "unit": "g",
         "name": "cold water"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "orange pulp"
       }
@@ -3285,7 +3149,8 @@
       "pectin-nh",
       "sugar"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "components-fillings"
   },
   {
     "title": "TART CHERRY COCONUT CUPCAKE RECIPE",
@@ -3294,15 +3159,15 @@
     "servings": "~12–14 cupcakes",
     "ingredients": [
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "tsp",
         "name": "baking powder",
-        "amount_ml": 10.0
+        "amount_ml": 10
       },
       {
         "amount": 0.5,
@@ -3311,73 +3176,73 @@
         "amount_ml": 2.5
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "white granulated sugar"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "coconut flakes"
       },
       {
-        "amount": 82.0,
+        "amount": 82,
         "unit": "g",
         "name": "softened butter"
       },
       {
-        "amount": 64.0,
+        "amount": 64,
         "unit": "g",
         "name": "odorless oil"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": null,
         "name": "egg whites"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "sour cream"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "milk"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla paste or extract",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "tart cherries, pitted"
       },
       {
-        "amount": 13.0,
+        "amount": 13,
         "unit": "g",
         "name": "lemon juice and/or water"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "cornstarch"
       },
       {
-        "amount": 25.0,
+        "amount": 25,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "g",
         "name": "pectin"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "vanilla pod"
       }
@@ -3406,7 +3271,8 @@
       "tart-cherry",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cupcake"
   },
   {
     "title": "GANACHE:",
@@ -3415,32 +3281,32 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "heavy cream (33–36%)"
       },
       {
-        "amount": 225.0,
+        "amount": 225,
         "unit": "g",
         "name": "white chocolate"
       },
       {
-        "amount": 165.0,
+        "amount": 165,
         "unit": "g",
         "name": "heavy cream (33–36%)"
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "coconut liqueur (e.g., Malibu)"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "mascarpone"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "coconut flakes"
       }
@@ -3456,7 +3322,8 @@
       "mascarpone",
       "white-chocolate"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "ganache"
   },
   {
     "title": "DECADENT CHOCOLATE BROWNIE RECIPE",
@@ -3465,54 +3332,54 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 230.0,
+        "amount": 230,
         "unit": "g",
         "name": "unsalted butter"
       },
       {
-        "amount": 400.0,
+        "amount": 400,
         "unit": "g",
         "name": "dark chocolate"
       },
       {
-        "amount": 6.0,
+        "amount": 6,
         "unit": null,
         "name": "large eggs"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "sugar (white granulated or caster)"
       },
       {
-        "amount": 310.0,
+        "amount": 310,
         "unit": "g",
         "name": "brown sugar"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "tsp",
         "name": "salt",
-        "amount_ml": 10.0
+        "amount_ml": 10
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla extract",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "cocoa powder"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "chopped nuts and chocolate chips (optional)"
       }
@@ -3537,7 +3404,8 @@
       "sugar-brown",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cookies-brownies"
   },
   {
     "title": "HAZELNUT SHORTBREAD PASTRY",
@@ -3546,12 +3414,12 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 90.0,
+        "amount": 90,
         "unit": "g",
         "name": "soft butter"
       },
       {
-        "amount": 45.0,
+        "amount": 45,
         "unit": "g",
         "name": "powdered sugar"
       },
@@ -3562,22 +3430,22 @@
         "amount_ml": 1.25
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "egg"
       },
       {
-        "amount": 4.0,
+        "amount": 4,
         "unit": null,
         "name": "drops vanilla extract"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 25.0,
+        "amount": 25,
         "unit": "g",
         "name": "hazelnut flour"
       }
@@ -3597,7 +3465,8 @@
       "sugar-powdered",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cookies-brownies"
   },
   {
     "title": "RECIPE FOR TIRAMISU CUPCAKES",
@@ -3606,12 +3475,12 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "almond flour"
       },
@@ -3634,54 +3503,54 @@
         "amount_ml": 1.25
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "softened butter"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": null,
         "name": "large eggs"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "sour cream (15–20%)"
       },
       {
-        "amount": 18.0,
+        "amount": 18,
         "unit": "g",
         "name": "odorless oil"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla extract",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tbsp",
         "name": "instant coffee",
-        "amount_ml": 15.0
+        "amount_ml": 15
       },
       {
-        "amount": 500.0,
+        "amount": 500,
         "unit": "g",
         "name": "mascarpone"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "heavy whipping cream (33–36%)"
       },
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "powdered sugar"
       },
@@ -3691,16 +3560,16 @@
         "name": "vanilla pod"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tbsp",
         "name": "Amaretto",
-        "amount_ml": 15.0
+        "amount_ml": 15
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "instant coffee, and cocoa for dusting",
-        "amount_ml": 5.0
+        "amount_ml": 5
       }
     ],
     "steps": [
@@ -3729,7 +3598,8 @@
       "vanilla",
       "whipping-cream"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cupcake"
   },
   {
     "title": "PÂTE BRISÉE RECIPE",
@@ -3738,37 +3608,37 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 4.0,
+        "amount": 4,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 4.0,
+        "amount": 4,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "cold butter, cubed"
       },
       {
-        "amount": 48.0,
+        "amount": 48,
         "unit": "g",
         "name": "cold eggs"
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "ice water"
       },
       {
-        "amount": 4.0,
+        "amount": 4,
         "unit": null,
         "name": "drops vanilla extract"
       }
@@ -3786,7 +3656,8 @@
       "sugar",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "pies-pastry"
   },
   {
     "title": "RECIPE FOR “VANILLA PANA-COTTA” CHEESECAKE",
@@ -3795,73 +3666,73 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 215.0,
+        "amount": 215,
         "unit": "g",
         "name": "basic crumb (recipe you can find in my stories, also will be pinned later in the highlights)"
       },
       {
-        "amount": 35.0,
+        "amount": 35,
         "unit": "g",
         "name": "desiccated coconut"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "hazelnuts"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "almonds"
       },
       {
-        "amount": 32.0,
+        "amount": 32,
         "unit": "g",
         "name": "coconut oil"
       },
       {
         "amount": {
-          "min": 15.0,
-          "max": 25.0
+          "min": 15,
+          "max": 25
         },
         "unit": "g",
         "name": "butter"
       },
       {
-        "amount": 900.0,
+        "amount": 900,
         "unit": "g",
         "name": "cream cheese"
       },
       {
         "amount": {
-          "min": 250.0,
-          "max": 300.0
+          "min": 250,
+          "max": 300
         },
         "unit": "g",
         "name": "sugar (to taste)"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "cornstarch"
       },
       {
-        "amount": 330.0,
+        "amount": 330,
         "unit": "g",
         "name": "whole eggs"
       },
       {
-        "amount": 650.0,
+        "amount": 650,
         "unit": "g",
         "name": "heavy cream (33-36%)"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "vanilla paste"
       },
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "lemon juice"
       },
@@ -3871,22 +3742,22 @@
         "name": "gelatin"
       },
       {
-        "amount": 33.0,
+        "amount": 33,
         "unit": "g",
         "name": "water"
       },
       {
-        "amount": 400.0,
+        "amount": 400,
         "unit": "g",
         "name": "heavy cream (30%)"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "vanilla bean"
       }
@@ -3919,7 +3790,8 @@
       "sugar",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cheesecake"
   },
   {
     "title": "BASIC SAVORY CRUMBLE RECIPE FOR CHEESECAKE CRUST",
@@ -3928,37 +3800,37 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 90.0,
+        "amount": 90,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "icing sugar"
       },
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "whole eggs (~0.7 pcs)"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "cornstarch"
       },
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "ground hazelnuts/almonds"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "salt"
       }
@@ -3980,7 +3852,8 @@
       "salt",
       "sugar"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cheesecake"
   },
   {
     "title": "AUTHENTIC NAMELAKA RECIPE FROM VALRHONA SCHOOL RESEARCH KITCHENS",
@@ -3989,27 +3862,27 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "dark chocolate 70%"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "leaf gelatin (gelatin sheets)"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "milk"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "glucose syrup"
       },
       {
-        "amount": 400.0,
+        "amount": 400,
         "unit": "g",
         "name": "heavy cream 33–36%"
       }
@@ -4038,7 +3911,8 @@
       "glucose-syrup",
       "milk"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "components-fillings"
   },
   {
     "title": "RECIPE FOR ALMOND TEA CAKE WITH ALMOND STREUSEL",
@@ -4047,73 +3921,73 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "almonds"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "brown sugar"
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 220.0,
+        "amount": 220,
         "unit": "g",
         "name": "almonds"
       },
       {
-        "amount": 240.0,
+        "amount": 240,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 240.0,
+        "amount": 240,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 260.0,
+        "amount": 260,
         "unit": "g",
         "name": "whole eggs (~5 pcs)"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "almond extract"
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "Espresso coffee"
       },
       {
-        "amount": 160.0,
+        "amount": 160,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "baking powder",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "rock salt"
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "Espresso coffee"
       }
@@ -4137,7 +4011,8 @@
       "sugar",
       "sugar-brown"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "tea-cake"
   },
   {
     "title": "RECIPE FOR SOUR CHERRY CONFIT CHEESECAKE",
@@ -4146,70 +4021,70 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "icing sugar"
       },
       {
-        "amount": 18.0,
+        "amount": 18,
         "unit": "g",
         "name": "egg yolks (~1 pc.)"
       },
       {
-        "amount": 130.0,
+        "amount": 130,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "alkalized cocoa powder (22–24% cocoa butter)"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "g",
         "name": "rock salt"
       },
       {
         "amount": {
-          "min": 40.0,
-          "max": 45.0
+          "min": 40,
+          "max": 45
         },
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "milk 3.2%"
       },
       {
-        "amount": 850.0,
+        "amount": 850,
         "unit": "g",
         "name": "cream cheese 60–70%"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 165.0,
+        "amount": 165,
         "unit": "g",
         "name": "whole eggs (~3 pcs)"
       },
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "heavy cream 33–36%"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "lemon juice"
       },
@@ -4219,17 +4094,17 @@
         "name": "zest of one lemon"
       },
       {
-        "amount": 400.0,
+        "amount": 400,
         "unit": "g",
         "name": "pitted sour cherries (fresh or frozen)"
       },
       {
-        "amount": 45.0,
+        "amount": 45,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "pectin NH Nappage"
       }
@@ -4254,7 +4129,8 @@
       "sour-cherry",
       "sugar"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cheesecake"
   },
   {
     "title": "COTTAGE CHEESE AND BERRY CRUMBLE PIE RECIPE",
@@ -4263,13 +4139,13 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "cups",
         "name": "all-purpose flour",
-        "amount_ml": 720.0
+        "amount_ml": 720
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "baking powder"
       },
@@ -4280,33 +4156,33 @@
         "amount_ml": 2.5
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 90.0,
+        "amount": 90,
         "unit": "g",
         "name": "egg yolks (~5 pcs)"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "tbsp",
         "name": "caster sugar",
-        "amount_ml": 30.0
+        "amount_ml": 30
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "kg",
         "name": "cottage cheese 9%"
       },
       {
-        "amount": 125.0,
+        "amount": 125,
         "unit": "g",
         "name": "sour cream 15–20%"
       },
       {
-        "amount": 18.0,
+        "amount": 18,
         "unit": "g",
         "name": "egg yolks (~1 pc.)"
       },
@@ -4314,43 +4190,43 @@
         "amount": 0.5,
         "unit": "cup",
         "name": "caster sugar",
-        "amount_ml": 120.0
+        "amount_ml": 120
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "vanilla sugar"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "tbsp",
         "name": "cornstarch",
-        "amount_ml": 30.0
+        "amount_ml": 30
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "tbsp",
         "name": "semolina",
-        "amount_ml": 30.0
+        "amount_ml": 30
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "cup",
         "name": "caster sugar",
-        "amount_ml": 240.0
+        "amount_ml": 240
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "vanilla sugar"
       },
       {
-        "amount": 185.0,
+        "amount": 185,
         "unit": "g",
         "name": "egg whites (~5 pcs)"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "pinch citric acid powder"
       }
@@ -4379,7 +4255,8 @@
       "sugar",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "pies-pastry"
   },
   {
     "title": "RECIPE FOR THE APRICOT ROULADE",
@@ -4388,67 +4265,67 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 275.0,
+        "amount": 275,
         "unit": "g",
         "name": "whole eggs (~ 5 pcs)"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "rock salt"
       },
       {
-        "amount": 90.0,
+        "amount": 90,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "baking powder"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "milk 3.2%"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "odorless vegetable oil"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "apricot puree"
       },
       {
-        "amount": 45.0,
+        "amount": 45,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "pectin NH Nappage"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "cream cheese 60–70%"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "heavy cream 33–36%"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "icing sugar"
       }
@@ -4470,7 +4347,8 @@
       "salt",
       "sugar"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "pies-pastry"
   },
   {
     "title": "RECIPE FOR THE APRICOT HONEY CAKE",
@@ -4479,90 +4357,90 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 110.0,
+        "amount": 110,
         "unit": "g",
         "name": "whole eggs (~2 pcs)"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "tbsp",
         "name": "honey",
-        "amount_ml": 30.0
+        "amount_ml": 30
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "baking soda",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
         "amount": {
-          "min": 500.0,
-          "max": 550.0
+          "min": 500,
+          "max": 550
         },
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "apricot puree"
       },
       {
         "amount": {
-          "min": 50.0,
-          "max": 80.0
+          "min": 50,
+          "max": 80
         },
         "unit": "g",
         "name": "caster sugar (to taste)"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "pectin NH Nappage"
       },
       {
-        "amount": 600.0,
+        "amount": 600,
         "unit": "g",
         "name": "drained sour cream 30%"
       },
       {
-        "amount": 300.0,
+        "amount": 300,
         "unit": "g",
         "name": "heavy cream 33–36%"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "icing sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "vanilla pod"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "drained sour cream 30%"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "heavy cream 33–36%"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "icing sugar"
       }
@@ -4586,7 +4464,8 @@
       "sugar",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cakes-loaf"
   },
   {
     "title": "RECIPE FOR CHOCOLATE HONEYCOMB",
@@ -4595,36 +4474,36 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "white chocolate callets 28–30%"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "white chocolate callets 28–30%"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "Mycryo™ powder"
       },
       {
         "amount": {
-          "min": 1.0,
-          "max": 2.0
+          "min": 1,
+          "max": 2
         },
         "unit": "tsp",
         "name": "titanium dioxide",
         "amount_ml": {
-          "min": 5.0,
-          "max": 10.0
+          "min": 5,
+          "max": 10
         }
       },
       {
         "amount": {
-          "min": 2.0,
-          "max": 3.0
+          "min": 2,
+          "max": 3
         },
         "unit": null,
         "name": "drops fat-soluble color for chocolate"
@@ -4645,7 +4524,8 @@
       "honey",
       "white-chocolate"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "components-fillings"
   },
   {
     "title": "RECIPE FOR THE SOUR CREAM CAKE",
@@ -4654,82 +4534,82 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 165.0,
+        "amount": 165,
         "unit": "g",
         "name": "whole eggs (~3 pcs)"
       },
       {
-        "amount": 225.0,
+        "amount": 225,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "vanilla powder"
       },
       {
-        "amount": 450.0,
+        "amount": 450,
         "unit": "g",
         "name": "sour cream 25–30%"
       },
       {
-        "amount": 300.0,
+        "amount": 300,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "baking powder"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "walnuts"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "golden raisins"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "poppy seeds"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "alkalized cocoa powder (22–24% cocoa butter)"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "milk 3.2%"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 1200.0,
+        "amount": 1200,
         "unit": "g",
         "name": "drained sour cream 30%"
       },
       {
-        "amount": 300.0,
+        "amount": 300,
         "unit": "g",
         "name": "icing sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "vanilla pod or 25 g vanilla paste"
       }
@@ -4753,7 +4633,8 @@
       "vanilla",
       "walnut"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cakes-loaf"
   },
   {
     "title": "RECIPE FOR STRAWBERRY MOJITO ZEPHYR",
@@ -4763,84 +4644,84 @@
     "ingredients": [
       {
         "amount": {
-          "min": 1000.0,
-          "max": 1500.0
+          "min": 1000,
+          "max": 1500
         },
         "unit": "g",
         "name": "green apples"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "large lime"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "fresh or frozen strawberries"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "baked apples"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "caster sugar"
       },
       {
         "amount": {
-          "min": 6.0,
-          "max": 7.0
+          "min": 6,
+          "max": 7
         },
         "unit": "g",
         "name": "pectin"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 500.0,
+        "amount": 500,
         "unit": "g",
         "name": "strawberry-lime jam"
       },
       {
-        "amount": 8.0,
+        "amount": 8,
         "unit": "g",
         "name": "albumin"
       },
       {
-        "amount": 170.0,
+        "amount": 170,
         "unit": "g",
         "name": "water"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "agar-agar 1200 g/cm2"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "glucose-fructose syrup"
       },
       {
         "amount": {
-          "min": 1.0,
+          "min": 1,
           "max": 1.5
         },
         "unit": "tsp",
         "name": "mint powder",
         "amount_ml": {
-          "min": 5.0,
+          "min": 5,
           "max": 7.5
         }
       },
@@ -4851,22 +4732,22 @@
       },
       {
         "amount": {
-          "min": 100.0,
-          "max": 150.0
+          "min": 100,
+          "max": 150
         },
         "unit": "g",
         "name": "icing sugar"
       },
       {
         "amount": {
-          "min": 1.0,
-          "max": 2.0
+          "min": 1,
+          "max": 2
         },
         "unit": "tbsp",
         "name": "cornstarch",
         "amount_ml": {
-          "min": 15.0,
-          "max": 30.0
+          "min": 15,
+          "max": 30
         }
       }
     ],
@@ -4882,7 +4763,8 @@
       "strawberry",
       "sugar"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "tiramisu-zephyr"
   },
   {
     "title": "RECIPE FOR QUICHE WITH SALMON AND GORGONZOLA",
@@ -4891,57 +4773,57 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "high quality all-purpose flour"
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "whole wheat flour"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "cold butter 82%"
       },
       {
-        "amount": 18.0,
+        "amount": 18,
         "unit": "g",
         "name": "egg yolks (~1 pc.)"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "ice cold water"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "g",
         "name": "rock salt"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "broccoli"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "fresh salmon"
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "Gorgonzola cheese"
       },
       {
-        "amount": 165.0,
+        "amount": 165,
         "unit": "g",
         "name": "whole eggs (~3 pcs)"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "sour cream 15%"
       },
@@ -4969,7 +4851,8 @@
       "salt",
       "sour-cream"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "savory"
   },
   {
     "title": "RECIPE FOR BROWNIE BONBONS",
@@ -4978,52 +4861,52 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "dark chocolate 54.5%"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 130.0,
+        "amount": 130,
         "unit": "g",
         "name": "whole eggs (~2.4 pcs)"
       },
       {
-        "amount": 110.0,
+        "amount": 110,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "alkalized cocoa powder (22–24% cocoa butter)"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "baking powder"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "heavy cream 33–36%"
       },
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "dark chocolate 54.5%"
       }
@@ -5047,7 +4930,8 @@
       "salt",
       "sugar"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cookies-brownies"
   },
   {
     "title": "RECIPE: GANACHE FOR CAKE COATING",
@@ -5056,12 +4940,12 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 400.0,
+        "amount": 400,
         "unit": "g",
         "name": "dark chocolate 54.5%"
       },
       {
-        "amount": 400.0,
+        "amount": 400,
         "unit": "g",
         "name": "heavy cream 33-36%"
       }
@@ -5086,7 +4970,8 @@
       "chocolate",
       "dark-chocolate"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "ganache"
   },
   {
     "title": "RECIPE FOR PANETTONE WITH CANDIED TANGERINE",
@@ -5096,90 +4981,90 @@
     "ingredients": [
       {
         "amount": {
-          "min": 150.0,
-          "max": 200.0
+          "min": 150,
+          "max": 200
         },
         "unit": "g",
         "name": "tangerine peel"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "salt"
       },
       {
         "amount": {
-          "min": 250.0,
-          "max": 300.0
+          "min": 250,
+          "max": 300
         },
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "vanilla pod"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "rum"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "golden raisins"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "dried cranberries"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "candied tangerines"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "rum"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "milk 3.2%"
       },
       {
-        "amount": 7.0,
+        "amount": 7,
         "unit": "g",
         "name": "caster sugar"
       },
       {
         "amount": {
-          "min": 7.0,
-          "max": 8.0
+          "min": 7,
+          "max": 8
         },
         "unit": "g",
         "name": "dry yeast"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "strong flour"
       },
       {
-        "amount": 165.0,
+        "amount": 165,
         "unit": "g",
         "name": "whole eggs (~3 pcs)"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "vanilla pod"
       },
@@ -5194,27 +5079,27 @@
         "name": "zest of 2 oranges"
       },
       {
-        "amount": 415.0,
+        "amount": 415,
         "unit": "g",
         "name": "bread starter"
       },
       {
-        "amount": 400.0,
+        "amount": 400,
         "unit": "g",
         "name": "strong flour"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 330.0,
+        "amount": 330,
         "unit": "g",
         "name": "rum soaked dried fruits"
       }
@@ -5240,7 +5125,8 @@
       "vanilla",
       "yeast"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "pies-pastry"
   },
   {
     "title": "RECIPE FOR THE PERFECT CHEESECAKE CRUMBLE",
@@ -5249,58 +5135,58 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 95.0,
+        "amount": 95,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "icing sugar"
       },
       {
-        "amount": 18.0,
+        "amount": 18,
         "unit": "g",
         "name": "egg yolks (~1 pc.)"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "cornstarch"
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "ground hazelnuts/almonds"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "rock salt"
       },
       {
         "amount": {
-          "min": 10.0,
-          "max": 20.0
+          "min": 10,
+          "max": 20
         },
         "unit": "g",
         "name": "butter 82%"
       },
       {
         "amount": {
-          "min": 20.0,
-          "max": 30.0
+          "min": 20,
+          "max": 30
         },
         "unit": "g",
         "name": "coconut oil"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "milk 3.2%"
       }
@@ -5324,7 +5210,8 @@
       "salt",
       "sugar"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cheesecake"
   },
   {
     "title": "COTTAGE CHEESE CASSEROLE RECIPE",
@@ -5334,52 +5221,52 @@
     "ingredients": [
       {
         "amount": {
-          "min": 50.0,
-          "max": 150.0
+          "min": 50,
+          "max": 150
         },
         "unit": "g",
         "name": "raisins (to taste)"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "kg",
         "name": "cottage cheese 5–9%"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "baking powder"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "rock salt"
       },
       {
-        "amount": 300.0,
+        "amount": 300,
         "unit": "g",
         "name": "sour cream 15–25%"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "semolina"
       },
       {
-        "amount": 440.0,
+        "amount": 440,
         "unit": "g",
         "name": "whole eggs (~8 pcs)"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla paste",
-        "amount_ml": 5.0
+        "amount_ml": 5
       }
     ],
     "steps": [
@@ -5402,7 +5289,8 @@
       "sugar",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "savory"
   },
   {
     "title": "COCONUT GANACHE RECIPE",
@@ -5411,117 +5299,117 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "fresh brown coconut pulp"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "heavy cream 33–36%"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "white chocolate 28–30%"
       },
       {
-        "amount": 400.0,
+        "amount": 400,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "alkalized cocoa powder 22–24%"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "sour cream 20–30%"
       },
       {
-        "amount": 36.0,
+        "amount": 36,
         "unit": "g",
         "name": "egg yolks (~2 pcs)"
       },
       {
-        "amount": 500.0,
+        "amount": 500,
         "unit": "g",
         "name": "milk 3.2%"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "vanilla pod"
       },
       {
-        "amount": 110.0,
+        "amount": 110,
         "unit": "g",
         "name": "whole eggs (~2 pcs)"
       },
       {
-        "amount": 36.0,
+        "amount": 36,
         "unit": "g",
         "name": "egg yolks (~2 pcs)"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "cornstarch"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "milk 3.2%"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "dark chocolate 54.5%"
       },
       {
-        "amount": 500.0,
+        "amount": 500,
         "unit": "g",
         "name": "pitted sour cherries"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "pectin NH Nappage"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "fresh coconut pulp"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "heavy cream 33–36%"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "white chocolate 28–30%"
       }
@@ -5564,7 +5452,8 @@
       "vanilla",
       "white-chocolate"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "ganache"
   },
   {
     "title": "RECIPE FOR CHOCOLATE CUPCAKES WITH SALTED CARAMEL",
@@ -5573,22 +5462,22 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "dark chocolate 54.5%"
       },
       {
-        "amount": 165.0,
+        "amount": 165,
         "unit": "g",
         "name": "whole eggs (~ 3 pcs)"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "caster sugar"
       },
@@ -5599,43 +5488,43 @@
         "amount_ml": 1.25
       },
       {
-        "amount": 110.0,
+        "amount": 110,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "alkalized cocoa powder (22–24% cocoa butter)"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "baking powder",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "glucose or glucose-fructose syrup"
       },
       {
         "amount": {
-          "min": 40.0,
-          "max": 50.0
+          "min": 40,
+          "max": 50
         },
         "unit": "g",
         "name": "butter 82%"
       },
       {
         "amount": {
-          "min": 60.0,
-          "max": 75.0
+          "min": 60,
+          "max": 75
         },
         "unit": "g",
         "name": "heavy cream 33–36%"
@@ -5647,37 +5536,37 @@
         "amount_ml": 1.25
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "dark chocolate 54.5%"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "heavy cream 33–36%"
       },
       {
-        "amount": 450.0,
+        "amount": 450,
         "unit": "g",
         "name": "cream cheese 60–70%"
       },
       {
-        "amount": 225.0,
+        "amount": 225,
         "unit": "g",
         "name": "heavy cream 33–36%"
       },
       {
         "amount": {
-          "min": 50.0,
-          "max": 100.0
+          "min": 50,
+          "max": 100
         },
         "unit": "g",
         "name": "icing sugar (to taste)"
       },
       {
         "amount": {
-          "min": 15.0,
-          "max": 30.0
+          "min": 15,
+          "max": 30
         },
         "unit": "g",
         "name": "alkalized cocoa powder 22–24 % (to taste)"
@@ -5705,7 +5594,8 @@
       "salted-caramel",
       "sugar"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cupcake"
   },
   {
     "title": "RECIPE FOR THE WILD BERRY CAKE",
@@ -5714,172 +5604,172 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "egg yolks (~4 pcs)"
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "vanilla powder"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "egg whites (~4 pcs)"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "g",
         "name": "rock salt"
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "icing sugar"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "cornstarch"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "baking powder"
       },
       {
-        "amount": 12.0,
+        "amount": 12,
         "unit": "g",
         "name": "gelatin 220 Bloom"
       },
       {
-        "amount": 72.0,
+        "amount": 72,
         "unit": "g",
         "name": "cold water"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "raspberry juice"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "water"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 130.0,
+        "amount": 130,
         "unit": "g",
         "name": "wild berries (raspberries, bilberries, blueberries, blackberries, wild strawberries)"
       },
       {
-        "amount": 8.0,
+        "amount": 8,
         "unit": "g",
         "name": "gelatin 220 Bloom"
       },
       {
-        "amount": 48.0,
+        "amount": 48,
         "unit": "g",
         "name": "cold water"
       },
       {
-        "amount": 45.0,
+        "amount": 45,
         "unit": "g",
         "name": "bilberries"
       },
       {
-        "amount": 45.0,
+        "amount": 45,
         "unit": "g",
         "name": "raspberries"
       },
       {
-        "amount": 65.0,
+        "amount": 65,
         "unit": null,
         "name": "heavy cream 33–36%"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "white chocolate 28-30% (callets)"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "heavy cream 33–36%"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "blueberries"
       },
       {
-        "amount": 500.0,
+        "amount": 500,
         "unit": "g",
         "name": "cream cheese 60–70%"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "heavy cream 33–36%"
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "icing sugar"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "vanilla powder"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "milk 3.2%"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "vanilla powder"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "butter 82.5%"
       },
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "icing sugar"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "vanilla powder"
       },
       {
-        "amount": 300.0,
+        "amount": 300,
         "unit": "g",
         "name": "cream cheese 60–70%"
       }
@@ -5909,7 +5799,8 @@
       "white-chocolate",
       "wild-berry"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cakes-loaf"
   },
   {
     "title": "HOMEMADE HAZELNUT PASTE",
@@ -5918,7 +5809,7 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "hazelnuts"
       }
@@ -5938,7 +5829,8 @@
       "hazelnut",
       "nut-paste"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "components-fillings"
   },
   {
     "title": "RECIPE FOR COTTAGE CHEESE STOLLEN",
@@ -5947,60 +5839,60 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "golden raisins"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "dried apricots"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "dried cranberries"
       },
       {
         "amount": {
-          "min": 100.0,
-          "max": 120.0
+          "min": 100,
+          "max": 120
         },
         "unit": "g",
         "name": "spiced or dark rum"
       },
       {
-        "amount": 140.0,
+        "amount": 140,
         "unit": "g",
         "name": "almonds"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "hazelnuts"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 130.0,
+        "amount": 130,
         "unit": "g",
         "name": "whole eggs"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "cottage cheese 9%"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "vanilla powder"
       },
@@ -6016,39 +5908,39 @@
       },
       {
         "amount": {
-          "min": 60.0,
-          "max": 70.0
+          "min": 60,
+          "max": 70
         },
         "unit": "g",
         "name": "lemon juice"
       },
       {
-        "amount": 400.0,
+        "amount": 400,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "baking powder"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 500.0,
+        "amount": 500,
         "unit": "g",
         "name": "spiced dried fruits"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "roasted nuts halves"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "butter 82%"
       }
@@ -6074,7 +5966,8 @@
       "sugar",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "pies-pastry"
   },
   {
     "title": "RECIPE FOR THE UPSIDE-DOWN BANANA PIE",
@@ -6084,65 +5977,65 @@
     "ingredients": [
       {
         "amount": {
-          "min": 4.0,
-          "max": 5.0
+          "min": 4,
+          "max": 5
         },
         "unit": null,
         "name": "bananas"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "glucose or glucose-fructose syrup",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "odorless vegetable oil"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "water"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "cornstarch"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "baking powder"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "semolina"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "g",
         "name": "salt"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "desiccated coconut"
       },
@@ -6171,7 +6064,8 @@
       "salt",
       "sugar"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "pies-pastry"
   },
   {
     "title": "HOW TO MAKE VANILLA POWDER AT HOME",
@@ -6180,12 +6074,12 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "scraped vanilla pods"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "caster sugar"
       }
@@ -6206,7 +6100,8 @@
       "sugar",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "components-fillings"
   },
   {
     "title": "RECIPE FOR THE BASQUE BURNT CHEESECAKE SAN SEBASTIAN",
@@ -6215,39 +6110,39 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 270.0,
+        "amount": 270,
         "unit": "g",
         "name": "cream cheese 60-70%"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "mascarpone 80-85%"
       },
       {
-        "amount": 460.0,
+        "amount": 460,
         "unit": "g",
         "name": "heavy cream 33-36%"
       },
       {
-        "amount": 140.0,
+        "amount": 140,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 240.0,
+        "amount": 240,
         "unit": "g",
         "name": "whole eggs (~4.4 pcs)"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
         "amount": {
-          "min": 30.0,
-          "max": 50.0
+          "min": 30,
+          "max": 50
         },
         "unit": "g",
         "name": "vanilla paste"
@@ -6267,7 +6162,8 @@
       "sugar",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cheesecake"
   },
   {
     "title": "RECIPE FOR THE HONEY CAKE WITH SEA BUCKTHORN CURD",
@@ -6276,91 +6172,91 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 210.0,
+        "amount": 210,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 90.0,
+        "amount": 90,
         "unit": "g",
         "name": "honey"
       },
       {
-        "amount": 165.0,
+        "amount": 165,
         "unit": "g",
         "name": "whole eggs (~3 pcs)"
       },
       {
-        "amount": 160.0,
+        "amount": 160,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "baking soda"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "lemon juice or 1/3 tsp. citric acid",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 600.0,
+        "amount": 600,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "sea buckthorn (fresh or frozen)"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "butter 82%"
       },
       {
         "amount": {
-          "min": 2.0,
-          "max": 3.0
+          "min": 2,
+          "max": 3
         },
         "unit": null,
         "name": "egg yolks"
       },
       {
-        "amount": 800.0,
+        "amount": 800,
         "unit": "g",
         "name": "drained sour cream 30%"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "icing sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "vanilla pod or 25 g vanilla paste"
       },
       {
-        "amount": 400.0,
+        "amount": 400,
         "unit": "g",
         "name": "drained sour cream 30%"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "icing sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "vanilla pod or 15 g vanilla paste"
       }
@@ -6386,7 +6282,8 @@
       "sugar",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cakes-loaf"
   },
   {
     "title": "RECIPE FOR BANANA CUPCAKES WITH RUM",
@@ -6395,45 +6292,45 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "whole eggs (~2 pcs)"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla paste or extract",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "all–purpose flour"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "baking powder"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "almond flour"
       },
       {
         "amount": {
-          "min": 1.0,
-          "max": 2.0
+          "min": 1,
+          "max": 2
         },
         "unit": "g",
         "name": "rock salt"
@@ -6451,54 +6348,54 @@
         "amount_ml": 3.75
       },
       {
-        "amount": 225.0,
+        "amount": 225,
         "unit": "g",
         "name": "ripe bananas (~2–3 pcs)"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "sour cream 20–25%"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "tbsp",
         "name": "dark rum",
-        "amount_ml": 30.0
+        "amount_ml": 30
       },
       {
-        "amount": 125.0,
+        "amount": 125,
         "unit": null,
         "name": "caster sugar"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "glucose syrup"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "heavy cream 33–36%"
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "banana puree"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla paste",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "dark rum"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "butter 82%"
       },
@@ -6515,17 +6412,17 @@
         }
       },
       {
-        "amount": 660.0,
+        "amount": 660,
         "unit": "g",
         "name": "mascarpone 80–85%"
       },
       {
-        "amount": 340.0,
+        "amount": 340,
         "unit": "g",
         "name": "banana caramel"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "dark rum"
       }
@@ -6555,7 +6452,8 @@
       "sugar",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cupcake"
   },
   {
     "title": "CHARITY RECIPE FOR LEMON-POPPY SEED CUPCAKE",
@@ -6564,27 +6462,27 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "whole eggs (~3 pcs)"
       },
       {
-        "amount": 175.0,
+        "amount": 175,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "heavy cream 33-36%"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "poppy seeds"
       },
@@ -6594,7 +6492,7 @@
         "name": "zest of 3 lemons"
       },
       {
-        "amount": 170.0,
+        "amount": 170,
         "unit": "g",
         "name": "all-purpose flour"
       },
@@ -6611,22 +6509,22 @@
         "amount_ml": 1.25
       },
       {
-        "amount": 65.0,
+        "amount": 65,
         "unit": "g",
         "name": "lemon juice"
       },
       {
-        "amount": 35.0,
+        "amount": 35,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "egg yolks (~2.5 pcs)"
       },
       {
-        "amount": 35.0,
+        "amount": 35,
         "unit": "g",
         "name": "butter 82%"
       },
@@ -6636,7 +6534,7 @@
         "name": "zest of one lemon"
       },
       {
-        "amount": 90.0,
+        "amount": 90,
         "unit": "g",
         "name": "heavy cream 33-36%"
       },
@@ -6646,29 +6544,29 @@
         "name": "zest of one lemon"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "white chocolate 30%"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "heavy cream 33-36%"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "Limoncello liqueur or lemon juice"
       },
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "mascarpone 80-85%"
       },
       {
         "amount": {
-          "min": 2.0,
-          "max": 3.0
+          "min": 2,
+          "max": 3
         },
         "unit": null,
         "name": "pinches of ground saffron or 2-3 drops of yellow coloring"
@@ -6692,7 +6590,8 @@
       "sugar",
       "white-chocolate"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cupcake"
   },
   {
     "title": "HAZELNUT-CHOCOLATE CUPCAKE RECIPE",
@@ -6701,17 +6600,17 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "hazelnuts"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "cinnamon powder"
       },
@@ -6722,12 +6621,12 @@
         "amount_ml": 1.25
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "sour cream 20-30%"
       },
       {
-        "amount": 130.0,
+        "amount": 130,
         "unit": "g",
         "name": "Greek yogurt 10-12%"
       },
@@ -6738,71 +6637,71 @@
         "amount_ml": 7.5
       },
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "whole eggs (~3 pcs)"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tbsp",
         "name": "rum",
-        "amount_ml": 15.0
+        "amount_ml": 15
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "tsp",
         "name": "vanilla paste",
-        "amount_ml": 10.0
+        "amount_ml": 10
       },
       {
-        "amount": 460.0,
+        "amount": 460,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": "tsp",
         "name": "baking powder",
-        "amount_ml": 10.0
+        "amount_ml": 10
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "salt",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 240.0,
+        "amount": 240,
         "unit": "g",
         "name": "milk chocolate 33%"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "hazelnut paste"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "heavy cream 33-36%"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "heavy cream 33-36%"
       },
       {
-        "amount": 300.0,
+        "amount": 300,
         "unit": "g",
         "name": "mascarpone 80-85%"
       }
@@ -6837,7 +6736,8 @@
       "sugar",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cupcake"
   },
   {
     "title": "RASPBERRY-LEMON CUPCAKE RECIPE",
@@ -6846,7 +6746,7 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 125.0,
+        "amount": 125,
         "unit": "g",
         "name": "butter 82%"
       },
@@ -6856,22 +6756,22 @@
         "name": "zest of two lemons"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "whole eggs (~3 pcs)"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "sour cream 20-30%"
       },
       {
-        "amount": 160.0,
+        "amount": 160,
         "unit": "g",
         "name": "all-purpose flour"
       },
@@ -6888,42 +6788,42 @@
         "amount_ml": 1.25
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "fresh raspberries"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "whole eggs (~1 pc.)"
       },
       {
-        "amount": 36.0,
+        "amount": 36,
         "unit": "g",
         "name": "egg yolks (~2 pcs)"
       },
       {
-        "amount": 90.0,
+        "amount": 90,
         "unit": "g",
         "name": "lemon juice"
       },
       {
-        "amount": 90.0,
+        "amount": 90,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 270.0,
+        "amount": 270,
         "unit": "g",
         "name": "lemon curd"
       },
       {
-        "amount": 330.0,
+        "amount": 330,
         "unit": "g",
         "name": "mascarpone 80-85%"
       }
@@ -6947,7 +6847,8 @@
       "sour-cream",
       "sugar"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cupcake"
   },
   {
     "title": "APRICOT-AMARETTO CHEESECAKE RECIPE",
@@ -6956,58 +6857,58 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "shortcrust crumble or biscuits"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "almond flakes"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "desiccated coconut"
       },
       {
         "amount": {
-          "min": 40.0,
-          "max": 50.0
+          "min": 40,
+          "max": 50
         },
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 850.0,
+        "amount": 850,
         "unit": "g",
         "name": "cream cheese 60-70%"
       },
       {
-        "amount": 160.0,
+        "amount": 160,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 280.0,
+        "amount": 280,
         "unit": "g",
         "name": "whole eggs (~5 pcs)"
       },
       {
-        "amount": 85.0,
+        "amount": 85,
         "unit": "g",
         "name": "sour cream 20-30%"
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "Amaretto liquor"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla paste",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
         "amount": null,
@@ -7015,32 +6916,32 @@
         "name": "zest of one orange"
       },
       {
-        "amount": 400.0,
+        "amount": 400,
         "unit": "g",
         "name": "fresh apricots"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tbsp",
         "name": "caster sugar",
-        "amount_ml": 15.0
+        "amount_ml": 15
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tbsp",
         "name": "rum",
-        "amount_ml": 15.0
+        "amount_ml": 15
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tbsp",
         "name": "Amaretto liquor",
-        "amount_ml": 15.0
+        "amount_ml": 15
       },
       {
         "amount": {
-          "min": 15.0,
-          "max": 20.0
+          "min": 15,
+          "max": 20
         },
         "unit": "g",
         "name": "almond flakes"
@@ -7068,7 +6969,8 @@
       "sugar",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cheesecake"
   },
   {
     "title": "STRAWBERRY-WHITE CHOCOLATE-VANILLA CUPCAKE RECIPE",
@@ -7077,33 +6979,33 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla paste",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 240.0,
+        "amount": 240,
         "unit": "g",
         "name": "whole eggs (~ 4 pcs)"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "baking powder"
       },
@@ -7114,63 +7016,63 @@
         "amount_ml": 1.25
       },
       {
-        "amount": 140.0,
+        "amount": 140,
         "unit": "g",
         "name": "almond flour"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "strawberries"
       },
       {
-        "amount": 300.0,
+        "amount": 300,
         "unit": "g",
         "name": "strawberry puree"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "pectin NH Nappage"
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "lemon juice"
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "heavy cream 33-36 %"
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "white chocolate"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "heavy cream 33-36 %"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tbsp",
         "name": "vanilla paste",
-        "amount_ml": 15.0
+        "amount_ml": 15
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "mascarpone"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "strawberry marmalade"
       }
@@ -7203,7 +7105,8 @@
       "vanilla",
       "white-chocolate"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cupcake"
   },
   {
     "title": "ANANA TEA CAKE WITH DATES AND NUTS",
@@ -7212,27 +7115,27 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 260.0,
+        "amount": 260,
         "unit": "g",
         "name": "chopped dates"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "brown sugar"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "dark rum"
       },
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "water"
       },
@@ -7243,75 +7146,75 @@
         "amount_ml": 2.5
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "whole eggs"
       },
       {
-        "amount": 130.0,
+        "amount": 130,
         "unit": "g",
         "name": "bananas"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla paste",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "walnuts"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "salt",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 260.0,
+        "amount": 260,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "baking powder"
       },
       {
-        "amount": 125.0,
+        "amount": 125,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "glucose syrup"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "heavy cream 33-36%"
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "banana puree"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla paste",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "dark rum"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "butter 82%"
       },
@@ -7322,27 +7225,27 @@
         "amount_ml": 1.67
       },
       {
-        "amount": 265.0,
+        "amount": 265,
         "unit": "g",
         "name": "cream cheese"
       },
       {
-        "amount": 135.0,
+        "amount": 135,
         "unit": "g",
         "name": "heavy cream 33-36%"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "icing sugar"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "vanilla paste"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": null,
         "name": "rectangular molds ~22x9 cm, h=10 cm"
       }
@@ -7373,7 +7276,8 @@
       "vanilla",
       "walnut"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "tea-cake"
   },
   {
     "title": "CARAMEL AND STRAWBERRY HONEY CAKE RECIPE",
@@ -7382,96 +7286,96 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 500.0,
+        "amount": 500,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 140.0,
+        "amount": 140,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 115.0,
+        "amount": 115,
         "unit": "g",
         "name": "whole eggs"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "honey"
       },
       {
-        "amount": 6.0,
+        "amount": 6,
         "unit": "g",
         "name": "baking soda"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "citric acid"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "strawberry puree"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tbsp",
         "name": "lemon/lime juice",
-        "amount_ml": 15.0
+        "amount_ml": 15
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "caster sugar"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "pectin NH Nappage"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 370.0,
+        "amount": 370,
         "unit": "g",
         "name": "caramel condensed milk"
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "drained sour cream 25-30%"
       },
       {
-        "amount": 400.0,
+        "amount": 400,
         "unit": "g",
         "name": "cream cheese 60-65%"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "heavy cream 33-36%"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "icing sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla paste",
-        "amount_ml": 5.0
+        "amount_ml": 5
       }
     ],
     "steps": [
@@ -7497,7 +7401,8 @@
       "sugar",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cakes-loaf"
   },
   {
     "title": "MANGO AND PASSION FRUIT INDIVIDUAL CHEESECAKE RECIPE",
@@ -7506,12 +7411,12 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "almond flakes"
       },
       {
-        "amount": 240.0,
+        "amount": 240,
         "unit": "g",
         "name": "shortcrust crumble or biscuits"
       },
@@ -7528,67 +7433,67 @@
         "amount_ml": 2.5
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "passion fruit puree without seeds"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "cornstarch"
       },
       {
-        "amount": 750.0,
+        "amount": 750,
         "unit": "g",
         "name": "cream cheese"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "granulated sugar"
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "sour cream 20-30%"
       },
       {
-        "amount": 165.0,
+        "amount": 165,
         "unit": "g",
         "name": "whole eggs"
       },
       {
-        "amount": 54.0,
+        "amount": 54,
         "unit": "g",
         "name": "egg yolks"
       },
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "mango puree"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "fresh or frozen diced mango (1x1 cm cubes)"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": "g",
         "name": "pectin NH Nappage"
       },
       {
-        "amount": 45.0,
+        "amount": 45,
         "unit": "g",
         "name": "granulated sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "vanilla pod"
       }
@@ -7616,7 +7521,8 @@
       "sugar-granulated",
       "vanilla"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cheesecake"
   },
   {
     "title": "EASTER CAKE RECIPE — KULICH WITH EGG YOLKS",
@@ -7625,48 +7531,48 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "ml",
         "name": "warm milk"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tbsp",
         "name": "sugar",
-        "amount_ml": 15.0
+        "amount_ml": 15
       },
       {
-        "amount": 15.0,
+        "amount": 15,
         "unit": "g",
         "name": "dry yeast / 45 g of fresh yeast"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "flour"
       },
       {
-        "amount": 300.0,
+        "amount": 300,
         "unit": "ml",
         "name": "warm milk"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "egg yolks (7-8 pcs)"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "trimoline"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": null,
         "name": "vanilla pods"
       },
@@ -7677,53 +7583,53 @@
         "amount_ml": 2.5
       },
       {
-        "amount": 750.0,
+        "amount": 750,
         "unit": "g",
         "name": "flour"
       },
       {
-        "amount": 125.0,
+        "amount": 125,
         "unit": "g",
         "name": "butter"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "Guinness beer"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "alkalized cocoa powder"
       },
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "granulated sugar"
       },
       {
-        "amount": 65.0,
+        "amount": 65,
         "unit": "g",
         "name": "sour cream 20-30%"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "whole eggs (1 large egg)"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "vanilla paste",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 130.0,
+        "amount": 130,
         "unit": "g",
         "name": "all-purpose flour"
       },
@@ -7734,38 +7640,38 @@
         "amount_ml": 1.25
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "baking soda",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 125.0,
+        "amount": 125,
         "unit": "g",
         "name": "mascarpone"
       },
       {
-        "amount": 45.0,
+        "amount": 45,
         "unit": "g",
         "name": "Baileys liqueur"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "icing sugar"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "Baileys liqueur"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "dark chocolate 54.5%"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "heavy cream 33-36%"
       }
@@ -7814,7 +7720,8 @@
       "vanilla",
       "yeast"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cakes-loaf"
   },
   {
     "title": "BANANA AND CHOCOLATE CHEESECAKE RECIPE by @marusya.manko",
@@ -7823,83 +7730,83 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "walnuts"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "shortbread crumble or biscuits"
       },
       {
-        "amount": 25.0,
+        "amount": 25,
         "unit": "g",
         "name": "Dutch-processed (alkalized) cocoa powder"
       },
       {
-        "amount": 25.0,
+        "amount": 25,
         "unit": "g",
         "name": "brown sugar"
       },
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "butter 82%"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": null,
         "name": "big bananas"
       },
       {
-        "amount": 375.0,
+        "amount": 375,
         "unit": "g",
         "name": "white chocolate"
       },
       {
-        "amount": 375.0,
+        "amount": 375,
         "unit": "g",
         "name": "cream cheese"
       },
       {
-        "amount": 180.0,
+        "amount": 180,
         "unit": "g",
         "name": "whole eggs (~3 pcs.)"
       },
       {
-        "amount": 220.0,
+        "amount": 220,
         "unit": "g",
         "name": "sour cream 20-30% or heavy cream 33%"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tbsp",
         "name": "vanilla paste or vanilla extract",
-        "amount_ml": 15.0
+        "amount_ml": 15
       },
       {
-        "amount": 125.0,
+        "amount": 125,
         "unit": "g",
         "name": "dark chocolate 70%"
       },
       {
-        "amount": 75.0,
+        "amount": 75,
         "unit": "g",
         "name": "heavy cream 33-36%"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "banana puree"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "milk chocolate"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "heavy cream 33-36%"
       }
@@ -7929,7 +7836,8 @@
       "walnut",
       "white-chocolate"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cheesecake"
   },
   {
     "title": "BLUEBERRY, LEMON AND ALMOND TEACAKES RECIPE by @marusya.manko",
@@ -7938,27 +7846,27 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "soft butter 82%"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "eggs (~5 pcs)"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "almond flour"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "all-purpose flour"
       },
@@ -7975,41 +7883,41 @@
         "amount_ml": 2.5
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "lemon juice"
       },
       {
         "amount": {
-          "min": 100.0,
-          "max": 120.0
+          "min": 100,
+          "max": 120
         },
         "unit": "g",
         "name": "fresh or frozen blueberries"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "cream cheese"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "heavy cream 33-36%"
       },
       {
-        "amount": 20.0,
+        "amount": 20,
         "unit": "g",
         "name": "icing sugar"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tsp",
         "name": "violet paste from Sosa",
-        "amount_ml": 5.0
+        "amount_ml": 5
       },
       {
-        "amount": 80.0,
+        "amount": 80,
         "unit": "g",
         "name": "fresh blueberries"
       }
@@ -8037,7 +7945,8 @@
       "salt",
       "sugar"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "tea-cake"
   },
   {
     "title": "EGG YOLK AND BUTTER TEA CAKE RECIPE",
@@ -8046,67 +7955,67 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "butter"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "sweet condensed milk"
       },
       {
-        "amount": 160.0,
+        "amount": 160,
         "unit": "g",
         "name": "egg yolks (~9 pcs.)"
       },
       {
-        "amount": 55.0,
+        "amount": 55,
         "unit": "g",
         "name": "whole eggs (~1 pc.)"
       },
       {
-        "amount": 60.0,
+        "amount": 60,
         "unit": "g",
         "name": "heavy cream 30-33%"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "Baileys liqueur"
       },
       {
-        "amount": 300.0,
+        "amount": 300,
         "unit": "g",
         "name": "all-purpose flour"
       },
       {
-        "amount": 10.0,
+        "amount": 10,
         "unit": "g",
         "name": "baking powder"
       },
       {
-        "amount": 5.0,
+        "amount": 5,
         "unit": "g",
         "name": "salt (~1 level tsp)"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "nuts"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "raisins"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": null,
         "name": "rectangular molds ~22x10 cm"
       }
@@ -8131,7 +8040,8 @@
       "salt",
       "sugar"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "tea-cake"
   },
   {
     "title": "RAFFAELLO’ ZEPHYR RECIPE",
@@ -8140,96 +8050,96 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 500.0,
+        "amount": 500,
         "unit": "g",
         "name": "baked Granny Smith apples"
       },
       {
         "amount": {
-          "min": 2.0,
-          "max": 3.0
+          "min": 2,
+          "max": 3
         },
         "unit": "tbsp",
         "name": "water",
         "amount_ml": {
-          "min": 30.0,
-          "max": 45.0
+          "min": 30,
+          "max": 45
         }
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 7.0,
+        "amount": 7,
         "unit": "g",
         "name": "pectin"
       },
       {
         "amount": {
-          "min": 450.0,
-          "max": 500.0
+          "min": 450,
+          "max": 500
         },
         "unit": "g",
         "name": "apple jam"
       },
       {
         "amount": {
-          "min": 7.0,
-          "max": 8.0
+          "min": 7,
+          "max": 8
         },
         "unit": "g",
         "name": "albumin"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "water"
       },
       {
         "amount": {
-          "min": 30.0,
-          "max": 40.0
+          "min": 30,
+          "max": 40
         },
         "unit": "g",
         "name": "coconut water"
       },
       {
-        "amount": 50.0,
+        "amount": 50,
         "unit": "g",
         "name": "Malibu rum"
       },
       {
         "amount": {
-          "min": 10.0,
-          "max": 12.0
+          "min": 10,
+          "max": 12
         },
         "unit": "g",
         "name": "agar-agar 1200 bloom"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 150.0,
+        "amount": 150,
         "unit": "g",
         "name": "glucose or glucose and fructose syrup"
       },
       {
-        "amount": 120.0,
+        "amount": 120,
         "unit": "g",
         "name": "white chocolate"
       },
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "dessicated coconut"
       },
       {
-        "amount": 40.0,
+        "amount": 40,
         "unit": "g",
         "name": "roasted blanched almonds"
       }
@@ -8255,7 +8165,8 @@
       "sugar",
       "white-chocolate"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "tiramisu-zephyr"
   },
   {
     "title": "QUICHE LORRAINE RECIPE",
@@ -8264,27 +8175,27 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "flour"
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "whole grain flour"
       },
       {
-        "amount": 100.0,
+        "amount": 100,
         "unit": "g",
         "name": "cold butter"
       },
       {
-        "amount": 2.0,
+        "amount": 2,
         "unit": null,
         "name": "tbsps of ice water"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": null,
         "name": "egg yolk"
       },
@@ -8294,27 +8205,27 @@
         "name": "a pinch of salt"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "salmon fillet"
       },
       {
-        "amount": 200.0,
+        "amount": 200,
         "unit": "g",
         "name": "broccoli"
       },
       {
-        "amount": 70.0,
+        "amount": 70,
         "unit": "g",
         "name": "gorgonzola"
       },
       {
-        "amount": 3.0,
+        "amount": 3,
         "unit": null,
         "name": "eggs"
       },
       {
-        "amount": 250.0,
+        "amount": 250,
         "unit": "g",
         "name": "sour cream 15%"
       }
@@ -8342,7 +8253,8 @@
       "salt",
       "sour-cream"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "savory"
   },
   {
     "title": "SAN SEBASTIAN BASQUE BURNT CHEESECAKE RECIPE",
@@ -8351,38 +8263,38 @@
     "servings": null,
     "ingredients": [
       {
-        "amount": 450.0,
+        "amount": 450,
         "unit": "g",
         "name": "cream cheese"
       },
       {
-        "amount": 460.0,
+        "amount": 460,
         "unit": "g",
         "name": "whipping cream 33-36%"
       },
       {
         "amount": {
-          "min": 150.0,
-          "max": 200.0
+          "min": 150,
+          "max": 200
         },
         "unit": "g",
         "name": "sugar"
       },
       {
-        "amount": 240.0,
+        "amount": 240,
         "unit": "g",
         "name": "whole eggs"
       },
       {
-        "amount": 30.0,
+        "amount": 30,
         "unit": "g",
         "name": "cornstarch"
       },
       {
-        "amount": 1.0,
+        "amount": 1,
         "unit": "tbsp",
         "name": "vanilla paste",
-        "amount_ml": 15.0
+        "amount_ml": 15
       }
     ],
     "steps": [
@@ -8399,6 +8311,7 @@
       "vanilla",
       "whipping-cream"
     ],
-    "image": null
+    "image": null,
+    "categoryGroup": "cheesecake"
   }
 ]

@@ -1,22 +1,28 @@
 # BakeStack — Context
 
 ## Status
-active — static site built in `site/` (vanilla JS, no build step) and
-verified working: recipe list+filters, recipe detail with 0.5x-3x
-multiplier scaling (ingredients + the 5 instruction steps with inline
-amounts), ml-primary unit display, cost estimate from `data/prices.json`,
-tips search, related-tips via shared tags, favorites (localStorage),
-multi-recipe shopping list with cross-recipe ingredient aggregation,
-EN/LT toggle (including category/flavor/ingredient/technique tag labels,
-web-verified via `site/data/tags_lt.json`), dark/light theme, share-link
-copy. Command-palette style global search: dropdown with up to 8 live
-results (recipes+tips) under the nav search box, keyboard nav
-(arrows/Enter/Escape), "show all N" link to a full `#/search?q=` results
-page. Mobile-first responsive verified at 320/375/768/1280px, no
-horizontal scroll, hamburger nav.
+active — static site in `site/` (vanilla JS, no build step). EN data is now
+the verified-correct baseline: 73 recipes, 312 tips (see Next Tasks — LT is
+stale relative to this and needs a full redo). A DOCx-vs-JSON visual QA tool
+(`tools/qa-compare.html`) exists and found real bugs this session — use it
+before trusting either language's data again after any future parser change.
+
+EN-only this session: fixed a tips mis-splitting bug (393→312, wrong `###`
+promoted to standalone entries), moved 8 recipe-shaped-but-not-recipes
+sections into tips, removed one true duplicate recipe (74→73), added
+`categoryGroup` (11 groups, recipes) and `topic` (8 topics, tips) fields
+feeding new UI filters and a topic-aware related-tips ranking, fixed a
+same-session `amount_ml` regression, and built a density-based unit-merge
+for the shopping list (one ingredient = one unit, not mixed ml/g). Full
+detail: Archive entry below (S5).
+
+Site features from S4 (list/detail/scaling/cost/favorites/shopping-list/
+EN-LT toggle, command-palette search, mobile-responsive) are unchanged and
+still verified working — this session only touched data shape + the
+specific UI pieces named above.
 GitHub repo live and public: https://github.com/gerimantas/BakeStack
 
-Session S4 closed 2026-08-25.
+Session S5 closed 2026-08-25.
 
 ## What this project is
 BakeStack: a recipe/pastry-tips database and calculator, starting from
@@ -356,11 +362,11 @@ before investing in that.
   a schema now.
 
 ## Done Log
-- 2026-08-25: recipes_lt.json (74) + tips_lt.json (363) translation
-  complete, structural diff clean, user-verified against a sample.
-  tsp/tbsp/cup converted to ml (new `amount_ml` field). Full detail in
-  Archive entry below.
-- 2026-08-25: Full static site built in `site/` (Hallmark bespoke
+- 2026-08-25 (S5): QA compare tool built and used to find + fix a real tips
+  mis-splitting bug (393→312), recipe dedup (74→73), category/topic UI
+  filters added, related-tips ranking fixed, shopping-list unit-merge via
+  density table. Full detail in Archive entry below.
+- 2026-08-25 (S4): Full static site built in `site/` (Hallmark bespoke
   design) — list/detail/scaling/cost/favorites/shopping-list/EN-LT,
   Playwright-verified. Tag vocabulary (category/flavor/ingredient/
   technique, 163 terms) translated and web-verified. Command-palette
@@ -368,15 +374,185 @@ before investing in that.
   user-reported bugs fixed. Full detail in Archive entry below.
 
 ## Next tasks
-1. Deploy `site/` to GitHub Pages (push + enable Pages on the repo,
+1. Redo LT translation (`recipes_lt.json`, `tips_lt.json`) against the new
+   EN structure from S5 — 73 vs current 74 recipes, 312 vs current 363
+   tips, plus the new `categoryGroup`/`topic` fields LT doesn't have yet.
+   plan: this session's Archive entry (S5) below has the exact before/after
+   for every EN change LT needs to mirror. Until this is done, LT mode
+   shows stale/mismatched data (site won't crash — a fallback guard is in
+   `site/js/data.js` — but LT content is behind EN).
+2. Deploy `site/` to GitHub Pages (push + enable Pages on the repo,
    source = `/site` or a `gh-pages` branch — not yet configured).
-2. Optional: fill in `site/data/prices.json` with real ingredient
+3. Optional: fill in `site/data/prices.json` with real ingredient
    prices to see cost estimates on recipe pages (currently only one
    placeholder entry — "unsalted butter").
-3. Optional: add real photos later (`image` field already reserved
+4. Optional: add real photos later (`image` field already reserved
    null on every recipe/tip record per the original plan).
+5. Optional: expand `site/js/density.js`'s ~30-entry density table if a
+   shopping-list unit still shows unmerged for a common ingredient — not
+   exhaustively checked against all 41 distinct volume-unit ingredient
+   names in the data, only spot-checked (cornstarch, baking soda).
 
 ## Archive
+
+### Session 2026-08-25 (S5) — QA compare tool built, tips mis-split bug found and fixed (393→312), recipe category groups + topic-aware related-tips, shopping-list unit-merge via density table, amount_ml regression fixed
+
+Started from a user request to visually verify DOCx→JSON conversion. Built
+`tools/qa-compare.html` (static, no server needed beyond a throwaway static file
+server) — side-by-side DOCx-derived-.md vs JSON view per recipe/tip, with
+missing/extra filters and live counts. This tool immediately surfaced a real bug,
+not just confirmed the pipeline was fine.
+
+**Root cause found**: `scripts/docx_to_markdown.py`'s `SECTION_WORDS` heuristic
+(and the general "any short/generic line becomes a `###` heading" logic) doesn't
+distinguish a real subtopic from a bare list item inside a longer article — e.g.
+"In ganaches: — cream — water" had "cream" promoted to its own H3, severing it
+from the sentence that introduced it. This wasn't caught in S1 because the
+original QA only checked structural counts (recipe/ingredient/step counts diffing
+clean), never whether individual `##`/`###` boundaries landed on real topic
+breaks. 124 `###` blocks existed pre-fix; manually reviewed every one (not
+regex-classified) against full body text, since an early attempt at a "merge if
+previous line ends with `:`" heuristic caught only 26 of the real cases and
+would have mis-merged unrelated blocks in others (found by reading, e.g. block 9
+"Origin: traditional Italian cheese" ran on into an unrelated "Why baking soda ≠
+baking powder?" opener with no heading at all — the reverse problem, a missed
+heading). Decisions recorded per-block in `tools/h3-decisions.json`
+(MERGE/KEEP/GROUP_CURDLE/GROUP_GANACHE + 4 hand-written text splits for blocks
+that fused two unrelated articles); `tools/apply-fixes.js` applies them to
+`Patarimai.md`. Result: 393 → 312 tips (`Patarimai.md`, `tips.json`,
+`site/data/tips.json`).
+
+**8 recipe-side "missing" sections reclassified**: QA also flagged 11 `##`
+headings in `Receptai.md` with no matching JSON recipe. 3 (CRUST/CREAM CHEESE
+LAYER/PANA-COTTA) turned out already merged into their parent recipe ("RECIPE
+FOR 'VANILLA PANA-COTTA' CHEESECAKE") by the S1 parser — false alarm, QA tool
+just doesn't see sub-recipe merges. The other 8 (STABILIZING WHIPPED CREAM +
+2 sub-sections, chocolate drips how-to + 2 steps, BASIC SAVORY CRUMBLE, FLAVOR
+PAIRING. STRAWBERRY) were genuinely dropped by `parse_recipes.py` — real content,
+not shaped like a standalone recipe. Moved into `Patarimai.md`/`tips.json` as 4
+new tip records (merging the sub-parts of each into one coherent tip) instead of
+inventing a new "components" site category — `Receptai.md`/`recipes.json` lost
+these 8 sections, 85→77 recipes at that point in the session.
+
+**Duplicate recipe found and removed**: user-reported. "MANDARIN-PASSIONFRUIT
+CUPCAKES" existed twice in `Receptai.md`, word-for-word identical, ~1000 lines
+apart — confirmed a real copy-paste duplication in the source, not a parser
+artifact (checked: text matched exactly). Removed the second occurrence from
+`Receptai.md` and `recipes.json` (77→73... — see below, count net includes both
+this and the 8-move above). Full-corpus duplicate sweep afterward (title match +
+Jaccard word-set similarity on both recipes and tips) found no others; the 4
+near-duplicate tip pairs the similarity check surfaced (e.g. "Rapid set pectin"
+vs "Medium rapid set pectin") were confirmed as distinct entries with a shared
+description template, not duplicates.
+
+**Recipe category UI overhaul**: user found the "Type" filter's 24 raw
+`category` values (many with only 1-2 recipes: roll, panettone, stollen...)
+impractical for browsing. Added a new `categoryGroup` field (11 groups) layered
+OVER the existing `category` — the raw category still shows on each card/detail
+page, only the filter chip uses the group. Big categories (cupcake 15,
+cheesecake 10) stayed standalone per user's explicit call; everything under ~7
+recipes merged into a themed group (Pies & Pastry, Cookies & Brownies,
+Tiramisu & Zephyr, Savory, Cakes & Loaf Cakes, Components & Fillings). Chips
+also gained live counts (`chip__count`) — split into "other-filter-only" counts
+so picking a Type doesn't collapse Flavor's own counts to zero and vice versa.
+
+**Tips got a matching `topic` field** (8 topics: ingredients, techniques,
+flavor-pairing, cheesecake, frostings-ganache, sponge-pastry, troubleshooting,
+storage) via keyword classification + manual review (found and fixed ~20
+misclassifications from an initial regex pass, e.g. "Flavor description"/"Aroma
+profile" subsections were inconsistently split between flavor-pairing and their
+generic-keyword topic before a full re-check). Used for a new Tips-page topic
+dropdown (compact `<select>`, not a chip row — user explicitly rejected chips
+here since 312 tips would need a chip row wider than the content itself) AND to
+fix `findRelatedTips()` on the recipe detail page: it previously ranked purely
+by raw tag-overlap count, which surfaced tips sharing only generic ingredients
+(butter/sugar/milk) with a recipe instead of topically relevant ones — a
+chocolate cheesecake recipe was showing "ganache"/"sour cream"/"crème anglaise
+curdling" tips instead of cheesecake tips. Fixed via a `CATEGORY_GROUP_TO_TOPICS`
+map: recipes whose group has a matching tip topic now rank those topic-matched
+tips first, tag-overlap only breaks ties within that group (groups with no
+topic match, e.g. cupcake, fall through to the old tag-overlap-only ranking
+unchanged).
+
+**No-photo card layout**: recipe/shopping-picker cards always rendered an empty
+gray placeholder box for the (always-null-for-now) `image` field. Changed to
+render the media slot only when `recipe.image` is actually set — compact card
+layout automatically, no manual toggle, so a card switches to photo layout
+the moment that one recipe gets a real image. Found and fixed a layout
+regression from this in the shopping-picker view (the `pick-checkbox`'s
+absolute positioning, previously anchored inside the media block, started
+overlapping the category label once the media block was omitted) —
+`.recipe-card--no-media` reserves top padding for it.
+
+**Shopping-list favorites-gating**: user reported the shopping-list recipe
+picker should only ever show favorited recipes, not all 73 — it previously
+showed everything regardless of favorite status. Fixed in `renderShoppingView`
+(filters `getRecipes()` through `getFavoriteIds("recipe")` first), added an
+empty-state message pointing the user at Favorites when none are picked yet.
+Also fixed the sidebar panel's duplicated "Shopping list" heading (renamed to
+"Your list"/"Jūsų sąrašas") and added the current date next to it, and darkened
+the `pick-checkbox`'s border/background (previously near-invisible — light
+border on a near-matching card background) after a user screenshot showed it
+essentially unreadable.
+
+**`amount_ml` regression found and fixed — a bug this session itself
+introduced**: while diagnosing why the shopping list showed "cornstarch — 5 ml"
+and "cornstarch — 23.5 g" as two separate lines, discovered the *current*
+`recipes.json` had ZERO `amount_ml` fields across all 118 tsp/tbsp/cup entries,
+even though CONTEXT.md's S2 archive entry describes this field as already built
+and populated. Traced via `git diff HEAD` — the field was present in the last
+commit, but this session's own recipe edits (duplicate removal, `categoryGroup`
+addition) had been applied on top of an in-memory copy of `recipes.json` that
+had already lost the field somewhere in the session's earlier tool calls.
+Rebuilt `recipes.json` from the last commit (which still had `amount_ml`
+intact), re-applied this session's dedup + `categoryGroup` changes on top of
+that correct base, instead of patching the already-broken working file.
+
+**User then rejected the follow-on shopping-list fix on sight**: once
+`amount_ml` was restored, the shopping list started showing "cornstarch — 5 ml"
+as its OWN unit (ml is not something anyone shops for a dry ingredient in) next
+to "cornstarch — 23.5 g" — same duplicate-looking problem, different unit. User
+explicitly rejected an initial fix attempt that kept both original units
+side-by-side ("display-only" merge) and stated the real requirement plainly:
+one ingredient must always resolve to ONE unit, grams or ml, not both. Built
+`site/js/density.js` — a ~30-entry g/ml density table (flour, sugar, salt,
+spices, common liqueurs) — so `buildShoppingList()` converts tsp/tbsp/cup
+entries to grams via density when known, merging into the same bucket as any
+gram-based entry of that ingredient; unknown-density ingredients keep their
+original unit (still unmerged from a same-name gram entry — no correct way to
+combine without density) rather than showing a meaningless raw ml figure.
+Merged entries get an `isApprox` flag, rendered with a `~` prefix in the UI
+(density conversion is an approximation, not exact per-brand). This changes
+Shopping-list display ONLY — the recipe detail page's "5 ml (1 tsp)" display
+(the S2-decided behavior) is untouched, since that page shows the original
+recipe unit for someone actively cooking, not a shopping quantity.
+
+**LT translation is now further behind EN** than at session start: this
+session's fixes (tips merge, recipe move, dedup, `categoryGroup`, `topic`) were
+applied EN-only per explicit user instruction ("pirma EN, LT vėliau" — LT redo
+deferred to a future session). `recipes_lt.json`/`tips_lt.json` still reflect
+the pre-fix EN structure (74/363 counts, old category/no topic field) — a
+guard was added in `site/js/data.js` (`tipsEn[i]?.title ?? t.title` fallback)
+so the site doesn't throw when the EN/LT array lengths mismatch, but LT content
+is stale relative to EN until re-translated.
+
+**Code:** `tools/qa-compare.html`, `tools/apply-fixes.js`, `tools/h3-decisions.json`,
+`tools/tip-topics.json`, `scripts/build-qa-compare.js` (new, kept as reusable
+tooling); `Patarimai.md`, `Receptai.md`, `recipes.json`, `tips.json`,
+`site/data/recipes.json`, `site/data/tips.json` (data changes — see above);
+`site/js/density.js` (new); `site/js/app.js`, `site/js/data.js`, `site/js/i18n.js`,
+`site/css/app.css`, `site/index.html` (site changes — recipe/tip topic filters,
+related-tips ranking, no-media cards, shopping-list favorites gating + unit
+merge + date + checkbox contrast).
+**Entry point:** `node scripts/build-qa-compare.js` regenerates
+`tools/qa-compare-data.json`, then serve `tools/` and open `qa-compare.html`
+(no build step). Site itself: `cd site && python -m http.server <port>`.
+**Not measured:** LT translation redo (recipes_lt.json/tips_lt.json need full
+re-generation against the new EN structure — new categoryGroup/topic fields,
+73 vs 74 recipe count, 312 vs 363 tip count); whether the ~30-entry density
+table covers every tsp/tbsp/cup ingredient actually in use (spot-checked
+cornstarch/baking soda, not exhaustively verified against all 41 distinct
+volume-unit ingredient names); GitHub Pages deploy still not configured.
 
 ### Session 2026-08-24 — recipes.json + tips.json parsers built, EN→LT glossary fully web-verified
 

@@ -33,9 +33,14 @@ async function loadAll() {
     fetchJSON(DATA_URLS.prices).catch(() => ({})),
   ]);
   store.recipes.en = recipesEn.map((r, i) => ({ ...r, id: slugify(r.title, i) }));
-  store.recipes.lt = recipesLt.map((r, i) => ({ ...r, id: slugify(recipesEn[i].title, i) }));
+  store.recipes.lt = recipesLt.map((r, i) => ({ ...r, id: slugify(recipesEn[i]?.title ?? r.title, i) }));
   store.tips.en = tipsEn.map((t, i) => ({ ...t, id: slugify(t.title, i) }));
-  store.tips.lt = tipsLt.map((t, i) => ({ ...t, id: slugify(tipsEn[i].title, i) }));
+  // FIXME: tips.json (EN) was corrected to merge mis-split subsections
+  // (306 entries); tips_lt.json (LT) is still the old, uncorrected
+  // translation (363 entries) - index-based EN/LT pairing is temporarily
+  // misaligned past entry 306 until the LT pass is redone. Fall back to
+  // the LT entry's own title so this doesn't throw.
+  store.tips.lt = tipsLt.map((t, i) => ({ ...t, id: slugify(tipsEn[i]?.title ?? t.title, i) }));
   store.tags = tags;
   store.tagsLt = tagsLt;
   store.prices = prices;
@@ -122,9 +127,15 @@ function recipePrice(recipe, multiplier) {
   return { total, priced, of: recipe.ingredients.length };
 }
 
-/** Aggregates ingredients across multiple recipes (each with its own multiplier) into one shopping list.
- * Volume units (tsp/tbsp/cup) are combined via their ml value so the same ingredient in different
- * volume units from different recipes still sums into one line. */
+/** Aggregates ingredients across multiple recipes (each with its own multiplier) into one
+ * shopping list. A shopping list needs ONE unit per ingredient — you buy flour by weight,
+ * not by the teaspoon — so tsp/tbsp/cup entries are converted to grams via the density
+ * table in density.js (ml value × g/ml density) whenever that ingredient's density is
+ * known, landing in the same bucket as any gram entries of the same ingredient from other
+ * recipes. When density isn't known for that ingredient, the entry keeps its original
+ * unit (tsp/tbsp/g/etc.) rather than showing a meaningless raw ml figure — still separate
+ * from a same-name gram entry, since without density there's no correct way to combine
+ * them, but at least not misleadingly relabeled as "ml". */
 function buildShoppingList(items) {
   // items: [{ recipe, multiplier }]
   const map = new Map();
@@ -137,17 +148,20 @@ function buildShoppingList(items) {
         if (!map.has(key)) map.set(key, { name: ing.name, unit: null, amount: null, isText: true });
         continue;
       }
-      const useMl = ing.amount_ml != null;
-      const unit = useMl ? "ml" : (ing.unit || "");
+      const density = ing.amount_ml != null ? densityFor(ing.name) : null;
+      const useGrams = density != null;
+      const unit = useGrams ? "g" : (ing.unit || "");
       const key = `${nameKey}::${unit}`;
-      const base = useMl ? ing.amount_ml : ing.amount;
+      const base = useGrams ? ing.amount_ml * density : ing.amount;
       // Ranges collapse to their midpoint for shopping-list totals — a pack is bought either way.
       const baseNum = typeof base === "number" ? base : (base.min + base.max) / 2;
       const scaled = baseNum * multiplier;
       if (map.has(key)) {
-        map.get(key).amount += scaled;
+        const existing = map.get(key);
+        existing.amount += scaled;
+        existing.isApprox = existing.isApprox || useGrams;
       } else {
-        map.set(key, { name: ing.name, unit, amount: scaled, isText: false });
+        map.set(key, { name: ing.name, unit, amount: scaled, isText: false, isApprox: useGrams });
       }
     }
   }

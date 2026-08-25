@@ -1,4 +1,5 @@
 ## FLAVOR INFUSION: WHAT, WITH WHAT, AND HOW
+
 Part 1
 
 At first glance, this topic may seem very simple, as if there is not much to discuss. But! You might be surprised to learn that even when I was running a masterclass at a large-scale production facility, my recommendation to switch to cold aromatization came as a surprise to the team.
@@ -28,7 +29,6 @@ In mousses:
 
 In ganaches:
 
-### cream
 - fruit purée
 - water
 
@@ -84,6 +84,7 @@ To completely extract aroma from fresh herbs, you’ll need 3–5 days, and from
 Part 3
 
 Continuing to explore the topic of flavor infusion, today we’ll look at the hot method, which I use quite often when developing recipes.
+
 ## THE HOT METHOD
 
 Many of you have probably already guessed that the hot method involves heat treatment—and you’re absolutely right.
@@ -154,6 +155,7 @@ Here are the factors that affect starch gelatinization t°:
 • amount of fats and sugar
 
 • amount of acid
+
 ## ALL ABOUT STARCH: TYPES AND USES
 
 A starch molecule consists of two polysaccharides—amylose and amylopectin, which are themselves made of glucose.
@@ -212,6 +214,7 @@ Some gelling agents (like agar-agar) are so powerful that a gel can form even wh
 Some ingredients can do both — thicken in small amounts and form gels in larger amounts — like gelatin, corn starch, and pectin.
 
 Other ingredients only thicken. They never form gels, no matter how much you add. They simply make the mixture thicker and stickier — similar to guar gum or waxy cornstarch.
+
 ## SHELF LIFE OF FROSTINGS
 
 ### Preparing frostings
@@ -256,6 +259,7 @@ Understanding these differences helps you choose the right product each time and
 Mascarpone
 
 ### Origin: traditional Italian cheese
+
 - Fat content: 70–75%, almost as rich as butter
 - Flavor and aroma: delicate, creamy, with a buttery note; almost neutral, enhancing other flavors harmoniously
 - Texture: very soft, silky, prone to separating if overwhipped
@@ -278,11 +282,12 @@ Cream cheese ensures density and structure, adds a light tang that balances swee
 To sum up, the choice depends on the desired result:
 • Mascarpone is ideal for delicate frostings and mousse-based desserts
 • Cream cheese is best for recipes where stability, shape, and flavor balance are important
+
+### Baking soda
+
 Why baking soda ≠ baking powder?
 
 And how to know which one you need for what you’re baking?
-
-### Baking soda
 
 Works only in combination with an acid—kefir, lemon juice, honey, etc.
 
@@ -311,6 +316,9 @@ Perfect for thin and dry baked goods— various cookies, including gingerbread c
 - If you need more control and stability—choose baking powder or a combo of soda + baking powder.
 
 - For thin crispy cookies or gingerbread dough—ammonium will be your secret ingredient.
+
+## Why Does Crème Anglaise Curdle? (Cooking Method)
+
 Why does crème anglaise turn out silky and delicate for some, but curdled and eggy for others?
 - And which cooking method is the safest?
 
@@ -345,6 +353,9 @@ Cooking methods:
 ▶ Steaming—slowest, but the safest method.
 ▶ Bowl in simmering water—a balance of speed and control.
 ▶ Direct heat—best for experienced chefs, since the risk of ending up with scrambled eggs is much higher.
+
+## Butter: Advantages, Drawbacks, and Creaming Temperature
+
 Butter — the ideal fat for any baked goods, but along with its advantages, it also comes with some obvious drawbacks.
 
 Let’s break it down.
@@ -374,7 +385,10 @@ In summer, even if you start with butter at the perfect (~21°C/~70°F), after j
 Also, pay attention to mixing speed—it should be a moderate (medium) speed.
 
 If you whip on high speed, the friction heats the ingredients too much. You’ll trap fewer air pockets, and the ones that do form will often be too large and uneven.
-ugar: Caramelization and the Maillard reaction—what they are and how they differ
+
+## Sugar: Caramelization and the Maillard Reaction
+
+Sugar: Caramelization and the Maillard reaction—what they are and how they differ
 
 In the culinary world, these two chemical processes play a key role in creating the color, aroma, and taste of many desserts. They are similar, but have important differences that every professional should understand
 
@@ -398,6 +412,7 @@ fructose > glucose > lactose > maltose > sucrose > isomalt.
 • The pH of the environment also matters: alkalis (such as baking soda) raise pH and increase browning, while acids (kefir, sour cream, cream of tartar) slow it down.
 
 • Higher baking temperatures intensify browning, which is why the crust on bread or sponge cake is always darker than the inside.
+
 ## UGAR: HOW IT WORKS IN BATTER
 
 All sugars are hygroscopic, meaning they have the ability to attract and retain water.
@@ -509,6 +524,7 @@ Decreases foam stability. It shouldn’t be added during whipping.
 ⏩Whisk type
 Thick wires—create large bubbles, less stable foam.
 Thin whisk—creates small, uniform bubbles, more stable foam.
+
 ## TOP 7 TIPS FOR BAKING SPONGE CAKES
 
 1.The batter should be a smooth, homogeneous emulsion
@@ -547,6 +563,7 @@ Factors Affecting Meringue Stability:
 ## FATS & ACIDS
 
 ## LIPIDS
+
 Everyone knows that if even a drop of yolk gets into your egg whites, it’s best not to whip them into meringue.
 
 But do you know why? What exactly does that yolk do that even beginner bakers are well aware it’s the sworn enemy of perfect meringue?
@@ -560,6 +577,7 @@ This is especially true for the lipids found in egg yolks, particularly lecithin
 Lipids disrupt aeration by coating the proteins, thus preventing them from unfolding and bonding. But they do more than that — lipids compete with proteins for space on the surface of air bubbles. Since lipids on their own can’t form a strong, cohesive, and elastic network like egg whites can, the bubbles they coat expand quickly and then collapse.
 
 ## PRO TIP
+
 To avoid problems with fats, oils, or emulsifiers when making meringue, always use a clean bowl, carefully separate every trace of yolk from the whites, and avoid plastic bowls and utensils — they tend to absorb grease and are difficult to fully clean.
 
 ## ACID
@@ -635,7 +653,9 @@ Air bubbles are beaten into the liquid, and the proteins in the egg whites denat
 Once there, neighboring proteins bond—or aggregate—around the bubbles, forming a film-like network. Surrounded by these strong, flexible films, the air bubbles are less likely to burst, allowing more bubbles to be beaten in.
 
 What happens to egg white proteins during whipping is similar, though not identical, to what occurs with them during heating.In both cases, protein molecules unfold and bond, forming a type of structure.
+
 ## POOR CAKE TEXTURE?
+
 ## CREAMING THE BUTTER: SIMPLE RULES
 
 The process of making batter often begins with creaming the butter and sugar. Few people are aware of this, but this step is crucial for achieving the desired texture.
@@ -649,6 +669,7 @@ Cold butter is too firm to form a large number of tiny air bubbles, while overly
 The mixer speed should be moderate. If you cream at high speed, friction will quickly warm the butter. Fewer air bubbles will form, and they’ll be large and uneven.
 
 ## A WHISK, A PADDLE, OR A DOUGH HOOK?
+
 At first glance, the answer seems simple:  A whisk for whipping  A paddle for mixing soft dough or batter  A dough hook for kneading stiff dough
 
 But in practice, as I’ve observed, these distinctions often confuse students. Choosing the correct attachment isn’t always straightforward!
@@ -704,7 +725,9 @@ But you might rightfully point out that a paddle attachment can also just smear 
 And you’d be absolutely right—especially when working with a small amount of butter and using a paddle that doesn’t have flexible silicone edges. In that case, you’ll often need to stop the mixer periodically to scrape the butter off the sides and bottom of the bowl manually.
 
 This is where the paddle attachment with soft silicone edges becomes a game changer…
+
 ## HOW TO WORK WITH SHORTCRUST PASTRY EFFECTIVELY?
+
 Part 1
 
 Working with shortcrust pastry is a very detailed topic, but I have compiled key points to help you achieve good results.
@@ -751,15 +774,19 @@ We’re all familiar with the classic cake assembly process: cake layer, frostin
 Here are some creative ways to make your cake slices look truly impressive:
 
 ## 1. DUAL-COLORED FROSTING
+
 Use two different shades of frosting and pipe them in concentric circles. The colors can be either complementary or contrasting. For a striking visual effect, try assembling a Coffee-Baileys cake.
 
 ## 2. INNOVATIVE FILLING TECHNIQUE
+
 Instead of layering the filling on top of the frosting, pipe it inside of it, or alternate filling rings with frosting rings on one layer. The result will be visually stunning! We recommend trying this method with cakes like Pistachio-Raspberry and Black Currant-Coffee.
 
 ## 3. VERTICAL CAKE ROLL
+
 For a unique twist, assemble your cake vertically by rolling the layers into a large spiral. This technique works best with thin, flexible cake layers and is guaranteed to impress. Try this with the Raspberry-Lychee-Rose honey cake or the Mega Chocolate Cherry honey cake.
 
 ## 4. CONTRASTING FILLINGS
+
 Incorporate multiple fillings with contrasting or complementary colors, such as jelly with frosting or jelly with mousse. Experiment like this with the Raspberry-Rose honey cake for a striking presentation.
 
 Guidelines for Storing, Sweetening, and Mixing Heavy Whipped Cream
@@ -767,6 +794,7 @@ Guidelines for Storing, Sweetening, and Mixing Heavy Whipped Cream
 Continuing our discussion on working with heavy whipped cream, here are some essential tips
 
 ## SWEETENING
+
 The classic method for sweetening heavy whipped cream is adding sugar near the end of the whipping process when the cream forms soft peaks.
 
 - Alternatively, you can add sugar at the beginning of the whipping process. This will significantly increase the whipping time, so it’s best to do this with a mixer rather than by hand.
@@ -774,6 +802,7 @@ The classic method for sweetening heavy whipped cream is adding sugar near the e
 - For sweetening, use very fine granulated sugar or sifted powdered sugar for better stability.
 
 ## WHIPPING AND MIXING
+
 1. Stop whipping once the heavy whipped cream forms peaks that hold their shape. If you continue whipping, the cream will first become grainy and then separate into butter and whey.
 
 2. Avoid overbeating heavy whipped cream that will be mixed with other ingredients. During mixing, the cream will continue to whip, potentially leading to overwhipping.
@@ -781,6 +810,7 @@ The classic method for sweetening heavy whipped cream is adding sugar near the e
 3. Add flavorings only after the heavy whipped cream has been whipped.
 
 ## STORAGE
+
 If the heavy whipped cream won’t be used immediately, cover it and store it in the refrigerator.
 Top Tips for Whipping Cream
 
@@ -829,7 +859,6 @@ Gradually return the heated gelatin mixture to the mousse, mixing gently in smoo
 
 - Whether your mousse is stabilized with cocoa butter or gelatin, there are key indicators that the process was executed correctly
 
-### Your mousse should be
 • Smooth
 • Free of lumps
 • Shiny
@@ -839,7 +868,6 @@ Common Mistakes When Working with Mousses
 
 Mousses generally consist of three key components:
 
-### Base (such as crème anglaise, custard, ganache, cheese mixture, or fruit purée)
 - Aerator (such as egg foam or whipped cream)
 - Stabilizer (such as cocoa butter, gelatin, or agar).
 
@@ -860,18 +888,22 @@ Sponge Cake Defects and How to Avoid Them
 This topic is highly relevant and requires a detailed examination of various nuances.
 
 - As promised, I have identified the three most common defects and will tell you how to resolve them:
+
 ## 1. SPONGE CAKES COLLAPSE DURING BAKING OR COOLING:
+
 - The cakes may have been moved around before the structure was set (coagulation of proteins and gelatinization of starch). Avoid opening the oven or moving the cakes during the initial stages of baking.
 - Incorrect proportions—insufficient drying agents or too much liquid in the batter.
 - Excessive chemical leavening agent. Ensure all ingredients are accurately measured.
 
 ## 2. CAKE TOP CRACKS DURING BAKING:
+
 - Baking temperature is too high.
 - Too much flour or the flour is too strong.
 - Insufficient liquid ingredients.
 - Incorrect kneading technique.
 
 ## 3. UNEVEN FORM:
+
 - Incorrect batter kneading technique.
 - Uneven oven heating—try baking in Convection mode.
 - Deformed/misshapen baking rings.
@@ -880,6 +912,7 @@ This topic is highly relevant and requires a detailed examination of various nua
 - Uneven distribution of baking powder—sift the baking powder with the dry ingredients.
 
 - In our Exquisite Cake course, we will thoroughly examine the correct batter-kneading techniques and discuss all potential defects of sponge cakes and how to avoid them.
+
 ## AVOID DOING THIS WHEN WORKING WITH FROSTING
 
 Most frostings and mousses are typically composed of three main components:
@@ -891,15 +924,19 @@ Most frostings and mousses are typically composed of three main components:
 Here are some common mistakes to watch out for and some quick notes on how to correct them:
 
 ## ▫INSUFFICIENT FAT CONTENT AND IMPROPERLY CHILLED CREAM
+
 Whipping cream should have a fat content of at least 30–33%, ideally 33–35%, and be cooled to approximately 4°C (~39°F).
 
 ## ▫INCORRECT TEMPERATURE OF BUTTER FOR WHIPPING
+
 Butter that is either too cold or too warm can lead to improper whipping results. This is a frequent yet often overlooked mistake among students.
 
 ## ▫UNDERWHIPPED OR OVERWHIPPED FROSTING
+
 It’s easy to overbeat frostings such as Chantilly cream, mascarpone-based frostings, and whipped ganaches, especially those made with dark chocolate.
 
 ## ▫SEPARATED BUTTERCREAM
+
 This can occur for two reasons: differing temperatures of the ingredients or improper proportions of fat and water needed to achieve a perfect emulsion.
 Did you know that the ingredients in every cake recipe can be categorized into four main groups based on their functions?
 
@@ -920,6 +957,7 @@ These ingredients, such as sugar, fat, and chemical leavening agents, ensure sof
 A lack of softeners leads to a dense, hardened cake that is challenging to cut with a knife. Does this sound familiar?
 
 ### Moisturizers
+
 Ingredients like water, milk, syrups, and eggs provide moisture.
 
 Interestingly, some ingredients serve multiple functions. You didn’t think it was all so straightforward, did you?
@@ -927,6 +965,7 @@ Interestingly, some ingredients serve multiple functions. You didn’t think it 
 If a cake is too dry, increasing the amount of moisturizers can help. However, be cautious, as most ingredients have multiple roles. For example, adding more eggs to a dry cake could result in an even drier and tougher texture.
 
 ### Dryers
+
 Ingredients such as flour, starch, and cocoa absorb moisture.
 
 The idea of a well-balanced recipe formula lies in the proportionate amounts of stabilizers that will balance out the softeners and dryers that will balance out the moisturizers. For instance, increasing stabilizers requires a corresponding increase in softeners.
@@ -949,6 +988,9 @@ In addition, as the amylase breaks down starches into sugars, yeast fermentation
 That’s why flour for bread is milled from hard red wheat, which not only has a high protein content, but also many damaged starch granules.
 
 Bread flours are typically used for pan breads, rolls, croissants and sweet yeast doughs.
+
+## How to Cover a Cake with Crumbs Neatly
+
 How to cover a cake with crumbs neatly?
 
 We’ve repeatedly been asked this question in DM, so we decided to make a short video in which we would share the main tips of this simple technique:
@@ -962,6 +1004,7 @@ We’ve repeatedly been asked this question in DM, so we decided to make a short
 - and, fourthly, work on a turntable and do not forget to put a large sheet of parchment paper next to it, so that cleaning the kitchen does not take half a day later.
 
 That’s all! Nothing complicated, and the cake already looks festive.
+
 ## 2 SECRET INGREDIENTS FOR THE PERFECT CARROT SPONGE
 
 Traditionally, the carrot sponge is made solely with vegetable oil, yielding a soft and tender yet excessively crumbly layer that defies slicing — it simply falls apart when you pick it up.
@@ -991,6 +1034,7 @@ is carrot juice.
 - + it imparts a deep, rich taste to the sponge
 
 The result is a carrot sponge that strikes a perfect balance — moderately tender, slightly dense, and incredibly vibrant and delectable!
+
 ## 4 PRIMARY WAYS IN WHICH FAT CONTRIBUTES TO LEAVENING
 
 1. All plastic fats contain tiny air bubbles, and some fats (such as butter and margarine) contain droplets of water.
@@ -1008,6 +1052,7 @@ The air bubbles are surrounded and protected by numerous tiny, hard fat crystals
 4. Emulsifiers have the ability to trap and retain large volumes of air, especially when using high-ratio shortenings.
 
 For instance, during the whipping process of plastic shortening, air is trapped. With the help of an emulsifier, it is first retained in the fat and then in the dough in the form of very small, strong bubbles evenly distributed throughout the dough.
+
 ## FLAVOR COMBINATIONS FEATURING CITRUS FRUITS
 
 The umbrella term “citrus fruits” may suggest a uniformity among the fruits within this category, but in reality, each possesses its own distinctive flavor nuances.
@@ -1023,6 +1068,7 @@ When aspiring to create a dessert worthy of being deemed a confectionery masterp
 - Lime — gooseberry, kiwi, bergamot; mint, lemongrass, green tea; hazelnuts, peanuts, macadamia; rum, tequila, Mojito vermouth; coconut milk, crème fraîche, white chocolate.
 
 - Kumquat — pomegranate, quince, orange; cinnamon, nutmeg, mint; pistachio, pecan, walnut; white wine, brandy, rum; caramel, honey, chocolate.
+
 ## HOW TO MAKE PUFF PASTRY FOR PIES TENDER
 
 Concluding the analysis of the second fundamental function of fats in baking — providing flakiness — I will now share another secret for you to take note of.
@@ -1044,6 +1090,7 @@ To achieve flakiness, incorporate relatively large pieces of fat. To guarantee t
 - do not overdo it with mixing the dough after adding water
 
 - let the dough chill in the fridge for several hours or overnight to allow water to migrate freely in the dough
+
 ## DETERMINING THE DONENESS OF HONEY CAKE LAYERS
 
 Delicate and seemingly innocuous, honey cake layers demand attention in the baking process, much like any other type of cakes.
@@ -1057,17 +1104,11 @@ Determining the doneness of your cakes is simple — just observe their appearan
 
 ## CAKES FROM STIFF OR SOFT HONEY DOUGH
 
-### Properly baked
-
 have a consistent golden or caramel color
 
 ▪ for chocolate cakes, assess doneness based on the baking time of classic cakes, as their dark color makes visual cues challenging
 
-### Underbaked
-
 appear flat, resembling pancakes, indicating insufficient protein and starch denaturation, causing the cakes to collapse
-
-### Overbaked
 
 result in excessive dryness, with the cake edges prone to crumbling
 
@@ -1075,19 +1116,14 @@ result in excessive dryness, with the cake edges prone to crumbling
 
 ## CAKES FROM LIQUID HONEY DOUGH (VERTICAL LAYER HONEY CAKES)
 
-### Properly baked
-
 display softness, tenderness, and high pliability, making them easy to roll into a roll
 
-### Underbaked
-
 reveal characteristic dark spots, indicating depressions formed due to incomplete protein denaturation
-
-### Overbaked
 
 develop dry areas that crumble, making it challenging to roll such cakes into a roll
 
 Always assess the doneness based on the first cake layer — allow the cake to cool completely, examine its appearance, and adjust the baking time or mode if necessary.
+
 ## THE PHYSICS OF FLAKY PUFF PASTRY FORMATION DURING BAKING
 
 Puff pastry consists of multiple, invisible to the eye, but intact layers of dough, separated from each other by equally thin and intact layers of pliable fat.
@@ -1116,17 +1152,16 @@ If opting for butter, it should be slightly cooled (~16–18 °C) and, optionall
 To prevent tearing, the use of strong flour is recommended, with adequate resting time for the dough between lamination sessions.
 
 Sometimes the dough is intentionally pierced, or small cuts are made in a random fashion to avoid excessive separation. Additionally, pressing along the edges of puff pastry can prevent it from complete separation into individual thin layers during baking.
+
 ## FLAVOR PAIRING. COCONUT
 
 It’s been some time since we delved into the realm of flavor pairing. Today’s spotlight is on the coconut
 
-### Flavor description
 ▫sweet
 ▫milky
 ▫heat treatment unveils a distinct creamy-nutty sweetness
 ▫fruit notes
 
-### Aroma profile
 ▫characteristic sweet smell
 ▫blend of diverse fruit notes
 ▫creamy-nutty undertones
@@ -1151,6 +1186,7 @@ The following flavor combinations deserve special attention:
 - coconut-lemon — the fusion with lemon accentuates coconut’s green lemongrass notes, balancing the richness with a citrus-floral touch
 
 - coconut-pineapple — cut a fresh pineapple in half and you’ll detect distinct coconut and rum notes. This similarity of flavors served as the inspiration behind the inception of the globally renowned Piña Colada drink. In my case, it sparked the creative journey leading to the creation of a cheesecake bearing the same name.
+
 ## BLUE SPOTS BETWEEN HONEY CAKE LAYERS AND FILLING
 
 On multiple occasions, concerned students have messaged me images of honey cakes exhibiting blue or bluish spots, accompanied by the question: "Marusya, is it safe to eat this? What's going on?"
@@ -1176,6 +1212,7 @@ But to be on the safe side, after adding baking soda to the heated honey mixture
 - If the mixture foams vigorously, signaling an incomplete reaction between baking soda and the acid in the honey, take corrective measures - > add a small amount of lemon juice or further heat the mixture until the reaction weakens.
 
 - Do not allow the mixture to overheat; otherwise, during the addition of flour to the batter, it may partially cook, resulting in a 'rubbery' texture. Similarly, when incorporating eggs into an overheated mixture, there is a risk of protein coagulation. To prevent this, use a water bath and/or actively stir with a whisk while introducing eggs.
+
 ## A FORMULA FOR SIMPLE YET STYLISH CAKE DECORATION
 
 If the idea of slicing into your cake feels like committing a culinary crime, it signifies that what is in front of you is not just a dessert to satisfy sweet cravings, but rather a genuine masterpiece.
@@ -1199,11 +1236,13 @@ Today, I’m unveiling a formula for a simple yet sophisticated and striking cak
 - given that most of my cakes measure 14–16 cm in height, I arrange small decorative elements, such as blueberries and raspberries, in 2 or even 3 layers for added visual impact
 
 - for convenience, you can initially sketch the placement of all decorative elements on paper before arranging them on the cake, using the drawing as a guide
+
 ## THE MAIN RULE FOR ACHIEVING PERFECT PUFF PASTRY
 
 or
 
 ## FUNCTIONS OF FATS IN BAKING
+
 part 1
 
 Have you ever thought about why we add butter into cupcake batter? And why do we whip it?
@@ -1293,6 +1332,7 @@ In short, the ability of fat to provide flakiness to baked goods depends on:
 ▪ fat hardness: the harder the fat and the higher its melting point, the greater the flakiness
 
 ▪ fat pieces size: larger fat pieces in the dough lead to better flakiness
+
 ## MULTI-LAYER CHEESECAKES – 3 RULES YOU SHOULD KNOW
 
 Wouldn’t you agree that cheesecakes with multiple layers never fail to pique one’s interest and leave a lasting impression?
@@ -1306,6 +1346,7 @@ To achieve that breathtaking multi-layer cheesecake, keep these straightforward 
 2. add a thicker cream cheese layer as the base, and a thinner layer on top
 
 3. if you find that some of your cream cheese layers are too runny, place them in the fridge for several hours to allow them to set
+
 ## HOW AND WHY TO DRAIN SOUR CREAM
 
 #marusya_theory_tips
@@ -1317,8 +1358,6 @@ Allow me to shed light on this for my beloved followers
 - What is drained sour cream
 
 - Drained sour cream is sour cream with artificially increased fat content, achieved by removing some of the moisture, specifically whey, during the draining process.
-
-### Why drain sour cream
 
 To obtain a harmonious flavor and prolong the shelf life of honey cakes, I recommend using store-bought sour cream.
 
@@ -1338,7 +1377,9 @@ And now, the question that has piqued the interest of many.
 - Which sour cream brand do I prefer
 
 ▪ President, and only President
+
 ## ALL ABOUT CAKE FILLINGS
+
 I noticed your keen interest in the topic of fillings, so as promised, I’m going to provide you with an in-depth exploration of the 3 most popular fruit fillings: coulis, confit, and compote.
 
 Distinguishing between these fillings might be tricky initially, but I’m here to clarify. Save or write it down for future reference.
@@ -1363,6 +1404,7 @@ Compote can be either a standalone dessert or a filling inside other desserts.
 
 When enjoyed as a dessert, it consists of berries or fruit pieces simmered in a sugar syrup, sometimes infused with spices. As a filling, it involves cooking berries or fruit pieces with sugar and adding one of thickeners (starch, gelatin, pectin, or agar-agar). The resulting texture is notably dense, akin to jelly or marmalade.
 Part 3
+
 ## CARAMEL: DRY, FRUIT, CREAMY AND SALTY
 
 Caramel desserts have always been popular in the world of sweets. Naturally, everyone fine-tunes their caramel intake based on their DNA-encoded cravings for sweetness, but no one can resist the allure of its deep, enveloping aroma!
@@ -1488,6 +1530,7 @@ Another option for cake fillings is:
 
 ▪ a flavor base (be it fruit or berry juice, puree, grape wine, chocolate, coffee, cocoa, etc.)
 ▪ and auxiliary components that facilitate frothing (like heavy cream and egg whites, etc.) and maintain the foamy consistency of the mousse (like gelatin or agar-agar).
+
 ## FORMING THE PERFECT CHEESECAKE CRUST: STEP-BY-STEP GUIDE
 
 Explore the beginning here #marusya_cheesecake_crust
@@ -1538,6 +1581,7 @@ Now I am an ardent fan of very delicate creamy filling and thick, crumbly, sligh
 And a perfect complement to a cheesecake will 100% depend on its flavor.
 
 In the photos, for example, a delicate texture and floral-berry taste of the Lavender-Bilberry cheesecake are perfectly complemented by the light sourness of bilberry coulis and fluffy clouds of whipped vanilla cream.
+
 ## HOW TO KNOW WHEN THE CUSTARD IS READY
 
 #marusya_theory_tips
@@ -1563,6 +1607,7 @@ When custard is cooked correctly (over very low heat with constant stirring), yo
 I prioritize the thickening process. The custard should reach a complete and uniform thickness with no liquid or thicker parts remaining – it should thicken evenly throughout.
 
 After achieving this complete thickness, I continue to stir constantly and let it boil for an additional one to two minutes, adjusting the duration based on the quantity of custard, to ensure there are no uncooked areas remaining.
+
 ## ORMING THE PERFECT CHEESECAKE CRUST: STEP-BY-STEP GUIDE
 
 After more than six months of experimentation and practice, I’ve developed my unique method for forming the ideal cheesecake crust.
@@ -1586,7 +1631,9 @@ Let’s get started.
 - when forming the side, you should develop the ability to gauge its thickness with your fingers – apply a bit more pressure to the crumbs where the side is thicker, distributing them evenly around the ring’s circumference
 
 In this manner, shape the sides around the entire circumference of the ring.
+
 ## WHEN THE CHEESECAKE IS READY: EGG WHITE COAGULATION
+
 part 1
 
 #marusya_about_coagulation
@@ -1708,6 +1755,7 @@ Milk proteins can also interact with egg proteins to enhance gel formation. If y
 Enzymes break down egg proteins in the same way they break down the proteins in gelatin.
 
 If you add raw pineapple with active protease to custard or cheesecake, it will not thicken. If you first boil the pineapple, thereby inactivating the protease, the intact egg proteins in the custard will coagulate and it will thicken.
+
 ## THE RELEVANCE OF FAT CONTENT IN DAIRY PRODUCTS FOR FROSTING
 
 If you are following my page or if it has appeared as a suggestion on your feed, chances are you’ve prepared cake frosting at least once in your life.
@@ -1767,6 +1815,7 @@ Here, a mere difference of a few degrees plays a significant role, particularly 
 - before grating cultured butter, I place it in the freezer overnight, and while grating, I consistently coat it with flour
 
 - while it’s possible to make puff pastry using sweet cream butter, the resulting pastry will be less flaky
+
 ## INTERCHANGEABILITY OF VARIETIES OF FLOUR
 
 part 2
@@ -1832,6 +1881,7 @@ Interchangeability —>
 Replace up to 25% of the total weight of all-purpose flour.
 
 - Hemp flour is made by grinding hemp plant seeds and should not be confused with CBD (cannabidiol), which is extracted from the plant’s flowers, leaves, and stems.
+
 ## INTERCHANGEABILITY OF VARIETIES OF FLOUR
 
 beginning by hashtag #marusya_60shades_offlour
@@ -1883,6 +1933,7 @@ Similar to almond flour, but consider the following:
 
 - absorbency — add less liquid in your recipes
 - liquid absorption rate is significantly lower than that of all-purpose flour —> allow the dough to rest for a while, and then check its consistency
+
 ## THE PERFECT CHEESECAKE — HOW TO CHOOSE A CAKE RING
 
 As perfectionists, we understand the importance of every detail in making a flawless cheesecake, even seemingly insignificant factors like the cake ring.
@@ -1908,6 +1959,7 @@ Even the slightest difference of tenths of a millimeter can impact the thickness
 It should be well polished. Even if the rings are entirely identical and from the same brand, their quality can vary: one may have a flawless joint, while the other might exhibit a noticeable gap. This gap can leave an unattractive streak on the cheesecake, which is particularly distressing for us perfectionists
 
 I recommend selecting cake rings from pastry shops rather than ordering them online. Alternatively, opt for brands with a proven track record of exceptional performance to ensure top-notch quality.
+
 ## WHY SHOULD CREAM BE COOLED BEFORE WHIPPING?
 
 #marusya_theory_tips
@@ -1927,11 +1979,13 @@ To understand why this happens, you need to delve into the physics and chemistry
 - This property of the globules allows the cream to expand and turn into a light, airy mass. At higher temperatures, fat grains melt, become liquid, and repel air, so warm cream cannot whip properly, and it takes longer to reach maximum volume.
 
 - But, the longer the cream is whipped, the more the protective membrane is destroyed. As a result, bare fat particles begin to strive only towards themselves – they displace air, clump into a dense mass, repel water, which results in the cream with a grainy texture.
+
 ## CHOCOLATE SUGAR BLOOM
 
 or
 
 ## EVERYTHING YOU NEED TO KNOW ON HOW TO STORE CHOCOLATE
+
 Part 2
 
 #marusya_chocolate_storage
@@ -2015,7 +2069,9 @@ So let's summarize. In order to prevent sugar bloom in chocolate, we should:
 ▪ store chocolate in a place with a consistently stable temperature
 ▪ avoid rapid temperature fluctuations of more than 10 °C within a short span of time
 ▪ prevent any liquid from coming into contact with the chocolate
+
 ## 60 SHADES OF FLOUR
+
 part 1
 
 #marusya_60shades_offlour
@@ -2075,6 +2131,7 @@ Today I’d like to tell you about 60 VARIETIES OF FLOUR that can be used to cre
 38◽Pecan flour
 
 ## FRUIT AND VEGETABLE
+
 39◽Arrowroot flour / arrowroot starch
 40◽Cassava flour
 41◽Chestnut flour
@@ -2164,6 +2221,7 @@ The liquid absorbency estimate is based on an amalgamation of the water absorpti
 ◽flour brand (compositions and processing methods may vary)
 ◽time of exposure to moisture
 ◽exposure to high / low temperatures
+
 ## HYDROCOLLOIDS IN CONFECTIONERY
 
 Part 3. The beginning can be found here #marusya_hydrocolloids
@@ -2171,6 +2229,7 @@ Part 3. The beginning can be found here #marusya_hydrocolloids
 Previously, we analyzed in detail the first hydrocolloid - carrageenan. Now let's explore the following −
 
 ## GELLAN GUM:
+
 - produced by algae fermentation
 - dissolves in cold water
 - rapid stability within minutes
@@ -2202,6 +2261,7 @@ SPHERIFICATION is the process of making one liquid spherical by adding drops of 
 - doesn’t affect the taste of the final product
 - gel texture has a unique mouthfeel
 - when used together with pectin, it creates a filling that won’t leak out during the baking process
+
 ## FLAVOR PAIRING. BLACKBERRY
 
 #marusya_flavor_pairing
@@ -2212,14 +2272,11 @@ Let's begin with the following — guys, no matter what culinary experiments you
 
 Perfect blackberries will have the following flavor profile:
 
-### Flavor description
 ◾ sweet and tart / sweet
 ◾ refreshing
 ◾ spicy notes
 ◾ slightly astringent
 ◾ sweet nutty aftertaste
-
-### Aroma profile
 
 ◾ berry aroma
 ◾ pronounced musky scent
@@ -2261,6 +2318,7 @@ Therefore, I never determine the doneness of the syrup by temperature — only b
 Take a small amount of syrup with a spatula and raise it to eye level: if the syrup flows down in a thin stream, then the syrup is ready.
 
 - In the carousel, you can find a short video from the live broadcast on the preparation of zephyr, where I clearly show how to check the doneness of syrup visually.
+
 ## WHY ONE SHOULDN’T OPEN THE OVEN WHILE BAKING A SPONGE
 
 #marusya_theory_tips
@@ -2326,6 +2384,7 @@ First, mix the cream cheese and sugar (if listed in the recipe) into a pasty con
 Then add the flavorings, and lastly — the liquid ingredients.
 
 - if the flavorings have a very thick consistency, e.g. dulce de leche, thick nut paste, it’s better to add them before you start introducing the eggs
+
 ## HONEY DOUGH: 3 CONSISTENCIES YOU SHOULD KNOW ABOUT
 
 If you still think that a honey cake is an uninteresting dessert that can only amaze you with the number of cake layers, just scroll through my feed and the myth will be dispelled instantly.
@@ -2369,6 +2428,7 @@ What determines the consistency of honey dough?
 ▪ crispy and crumbly cake layers are obtained from stiff dough
 ▪ soft dough ensures tender, soft and slightly airy cake layers
 ▪ honey batter helps to get elastic and at the same time very pliable cake layers
+
 ## TEMPERATURE FOR ADDING BUTTER TO CARAMEL
 
 #marusya_theory_tips
@@ -2404,7 +2464,9 @@ Let's have a look at 3 options, which I’ve tried and tested myself
 - nutty flavor the butter melts fast and boils, and as a result it acquires nutty notes, as in the preparation of beurre noisette
 
 ℹ you can read more about the beurre noisette by following the hashtag #marusya_beurre_noisette
+
 ## WHAT YOU NEED TO KNOW ABOUT MOUSSES
+
 part 1
 
 #marusya_about_mousse
@@ -2485,6 +2547,7 @@ Gelatin can take up 0.5–2% of the total mass of the mousse:
 ▪ if the mousse contains alcohol, tart fruits or lots of air (meringue-based mousses), the percentage of gelatin will be around 2%
 ▪ mousses made from milk or white couvertures (chocolate with a high content of cocoa butter), contain around 0.5% gelatin
 ▪if it’s a chocolate-based mousse which contains enough cocoa butter (couverture/dark/bitter chocolate), you can skip adding the gelatin
+
 ## PISTACHIO PASTE: 2 TIPS YOU DIDN'T KNOW ABOUT
 
 Pistachio paste has been added to all the desserts you see in the carousel, whether it be crémeux, cream for coating, cream cheese layer or frosting used between layers.
@@ -2515,7 +2578,9 @@ You can adjust the amount of paste added depending on what you want to emphasize
 
 - Pastes — Joygelato, ТМ Irca (Italy) or NutFarine (Ukraine)
 - Delipaste — Fabbri (Italy)
+
 ## HOW TO TEMPER EGGS AND WHY YOU NEED TO
+
 part 1
 
 #marusya_theory_tips
@@ -2565,7 +2630,9 @@ Lastly, let’s analyze one more interesting nuance.
 Tempering is a means of getting something (eggs) from point A to point B (from cold to hot) slowly and steadily. And is a technique, not a scientific formula, which is why there’s no definitive answer for this question.
 
 But there is no need to add all the hot liquid to the eggs — you should add just enough liquid to make the eggs hot (not warm, but hot!). You can then safely pour the tempered eggs into the saucepan with the remaining hot liquid. Just do not forget to stir with a whisk until the mixture becomes homogeneous.
+
 ## HYDROCOLLOIDS IN CONFECTIONERY ART
+
 part 1
 
 #marusya_hydrocolloids
@@ -2627,6 +2694,7 @@ I’m curious to know which of the above applications of hydrocolloids intereste
 In the meantime, let's get acquainted with the most mysterious representative of hydrocolloids of vegetable origin.
 
 ### Carrageenan
+
 - extracted from some red seaweeds
 - thermally reversible
 - dissolves in cold water when mixed with sugar
@@ -2642,7 +2710,9 @@ Functions:
 - suspends particles in liquid – is used, for example, in chocolate milk, so that solid cocoa particles do not settle at the bottom
 
 - is used as a vegetable substitute for gelatin to stabilize mousses and frostings (mix the carrageenan powder with sugar and add to a cold liquid, then bring it to a boil, pour into molds and allow to stabilize)
+
 ## EVERYTHING YOU NEED TO KNOW ABOUT GANASHES
+
 part 1
 
 #marusya_about_ganache
@@ -2686,7 +2756,9 @@ Depending on the texture and purpose, the ganache can be thick or more runny:
 The texture of the ganache can also be changed — it depends on the way you stir it — e.g, ganache can be whipped or made using the Chantilly cream method.
 
 Ganache is a stable and balanced emulsion type chain in which fat molecules (in particular cocoa butter, milk fat, milk and/or heavy cream) are combined into a homogeneous substance together with water molecules thanks to emulsifiers present in chocolate (lecithin) and in heavy cream (proteins).
+
 ## A CRASH COURSE IN CHOCOLATE
+
 part 1
 
 Hello everyone! I have great news for you - today we are launching a series of articles about chocolate!
@@ -2753,7 +2825,6 @@ If any of you still think that professional chocolate is a hard-to-find and expe
 
 It can be:
 
-### IRCA (Italy)
 - DGF (France)
 - Natra Cacao (Spain)
 - Cacao Barry (France)
@@ -2842,8 +2913,6 @@ And voilà — you can give liquid chocolate the desired shape
 With this method there is no need to first bring chocolate down to the crystallization temperature of cocoa butter (27 °C), and then bring it up to the working temperature, as with the classic method, since the callets themselves are already tempered and have a stable crystalline structure.
 
 - If I use chocolate callets only, then I just melt them and that's it?
-
-### No!
 
 Even if you use only chocolate in callets, bringing it to working temperature is not enough — heat treatment destroys the bonds between cocoa butter molecules, the crystalline structure breaks up and collapses.
 
@@ -2934,6 +3003,7 @@ You asked me for the details, so there you are.
 
 - 5. see step 4 of the conventional technique
 - 6. see step 5 of the conventional technique
+
 ## ALL YOU NEED TO KNOW ABOUT STARCH
 
 #marusya_about _starch
@@ -2972,6 +3042,7 @@ The dosage of starch may be different depending on:
 
 - density of the product to be thickened: liquid with a high percentage of water or a thicker puree with a high content of natural pectin
 - consistency of the filling you want to get
+
 ## HOW TO CORRECTLY MAKE AND SERVE A CAKE WITH BUTTERCREAM
 
 #marusya_theory_tips
@@ -3008,13 +3079,13 @@ So, let's learn how to get the best results.
 - and only then serve the cake to the client, guest or enjoy the cake yourself
 
 - A properly served cake keeps its shape well, and has a light, airy buttercream
+
 ## FLAVOR PAIRING. SOUR CHERRY
 
 #marusya_flavor_pairing
 
 The last time we analyzed the flavor of bilberries was more than a month ago. I think it's time to reveal all the flavor pairing secrets of sour cherries, which are relevant in the cold season.
 
-### Flavor description
 - tart / sweet and sour
 - refreshing
 - herbaceous and astringent
@@ -3026,7 +3097,6 @@ Sour cherries have a fresh, green, fruity flavor character. Their peculiarity is
 
 - after such an experiment, it will no longer seem strange to you that a compound called benzaldehyde is used as an ingredient in cherry and other natural fruit flavors due to its bitter almond odor
 
-### Aroma Profile
 - floral fragrance
 - spicy vanilla notes
 - noble almond notes
@@ -3046,6 +3116,7 @@ The cherry-coconut pair deserves special attention — both of the fruits are re
 - nuts — pecans, hazelnuts, walnuts and, of course, almonds.
 
 The flavor combination sour cherry-pistachio is also particularly noteworthy — separately, these are two completely different products: they have nothing in common in shape, taste, color or texture, but despite everything, together they create a truly amazing combination.
+
 ## HONEY. MYTHS VS REALITY
 
 part 1
@@ -3196,8 +3267,9 @@ I usually work with callets, as they help to speed up the melting of chocolate w
 
 Impact factors
 
-## TEXTURE
+## Ganache Components: Liquid, Butter, Sugar, and Additives
 
+TEXTURE
 ▪ thanks to the cocoa butter, ganache becomes fluid when heated and sets when cooled (due to the crystallization of cocoa butter molecules)
 ▪the lower the cocoa butter content and the higher the sugar content are, the softer the consistency of the ganache is
 
@@ -3205,8 +3277,7 @@ Impact factors
 
 - By cocoa products I mean the content of cocoa butter and cocoa mass (cocoa powder).
 
-## TASTE
-
+TASTE
 ▪ characteristic flavor of chocolate:
 
 - white – sweet milky
@@ -3228,30 +3299,28 @@ The fat content of cream should be 35-40%. Thanks to minimal heat treatment, the
 
 The fat content is 35-37%. These types of cream are exposed to high temperatures for a short period of time. This process extends the product's shelf life making these creams chefs’ favorites when working with ganaches.
 
-### Milk
-
+Milk
 Is used to replace some or all of the cream in ganache. Unsweetened condensed milk (also called evaporated or concentrated milk) is often used to reduce the amount of water added, which negatively affects the shelf life of the ganache.
 
 - Fruit or berry puree
 
 Part of the cream can be replaced with puree. Most often, the ratio of puree and cream is 1:1. It is added to give ganache a fruity flavor and aroma, as well as interesting vivid colors.
 
-## DOSAGE
-
+DOSAGE
 ▫milk: maximum 40%
 ▫cream: 20-50%
 ▫puree: maximum 50%
 
 How the liquid added affects the ganache?
 
-## TEXTURE
+TEXTURE
 ◽ gives the ganache a silky, melting texture during tasting (provided the fat content is at least 35%)
 ◽ in some cases, e.g. when preparing whipped ganache, cream is a necessary element for increasing the volume, as well as trapping and stabilizing air bubbles in the finished ganache
 
-## MOISTURE CONTENT
+MOISTURE CONTENT
 ◽ liquid with a water content of about 60% dissolves sugar and makes the chocolate less dense
 
-## TASTE
+TASTE
 ▫ due to the fat molecules present in the composition, it has aroma-retaining properties and is a carrier of taste to our receptors
 Part 4
 
@@ -3263,7 +3332,7 @@ Check out the beginning here #marusya_about_ganache
 
 We’ve already analyzed the chocolate and liquid in the composition of ganache in detail, now let's move on to possible additives.
 
-### Butter
+Butter
 - fat content — 82% and more — the more fat contained in butter, the longer the shelf life of the finished ganache will be
 - the butter is added when the ganache is at 32–34ºС
 
@@ -3273,18 +3342,15 @@ We’ve already analyzed the chocolate and liquid in the composition of ganache 
 
 When added to a ganache, the butter influences its:
 
-## TEXTURE
-
+TEXTURE
 ▪when the butter is heated, the consistency of the ganache becomes runnier, and when it cools, the ganache becomes thicker
 ▪makes the ganache smooth and creamy, adds it a glossy shine, as well as a delicate, melt-in-the mouth texture (provided the butter is added at the end of cooking, at 30-35ºС, without prior melting).
 
-## TASTE
-
+TASTE
 ▪ has aroma-retaining properties and is a carrier of taste to our receptors due to fat molecules in the composition
 ▪ reduces the bitterness of chocolate with a high content of cocoa products, e.g., >70%.
 
-## SHELF LIFE
-
+SHELF LIFE
 ▪ adding butter to cream before boiling it prolongs the shelf life of the ganache, and also contributes to the even distribution of fat molecules in the mixture.
 Part 5
 
@@ -3292,23 +3358,20 @@ Part 5
 
 In the previous part we discussed all the nuances of adding butter to a ganache. But apart from it, the following ingredients can be added to the ganache, namely:
 
-### Sugar
+Sugar
 - sugar in ganaches can be represented by: sucrose (=sugar), invert sugar or glucose syrup (high in dextrose)
 - dose — at least 25% of the total weight
 
 When added to a ganache, sugar influences its:
 
-## TASTE
-
+TASTE
 ▪makes the ganache sweeter
 
-## TEXTURE
-
+TEXTURE
 ▪makes it softer and more elastic
 ▪increases the viscosity of the ganache, making it more stable due to its hygroscopic properties
 
-## SHELF LIFE
-
+SHELF LIFE
 ▪ prolongs shelf life — sugar helps to “bind” water present in cream, making it unavailable for the microorganisms (molds) to multiply.
 
 - Sorbitol or food supplement E420
@@ -3317,7 +3380,7 @@ It is an odorless white crystalline powder with a pleasant taste. It is two time
 
 The way sorbitol affects the ganache is similar to sugar, however, E420 is used primarily as a stabilizer, and not as a sweetener.
 
-### Aromatic additives
+Aromatic additives
 - can be represented by various extracts, essential oils, alcohol, as well as flavored cream or milk
 - all additives that are sensitive to microflora (cocoa powder, spices, etc.) should be boiled for several minutes along with the cream
 Part 6 and last
@@ -3360,6 +3423,7 @@ And here comes another interesting nuance:
 - Before storing and cooling the ganache, it should be covered with cling film that comes in contact with the surface of the ganache. This way, you will protect your ganache from air, microorganisms and evaporation of aromatic substances.
 
 - Ganaches can be stored in the fridge at 4ºС for no more than 2 days. You can freeze them only in finished products.
+
 ## WHY DO YOU NEED TO SIFT THE FLOUR?
 
 Almost every pastry recipe calls for sifted flour. Have you ever thought about why you should sift it?
@@ -3383,6 +3447,9 @@ Nowadays, here are a few times you should sift your flour for baking:
 ### Lifehack from Marusya
 
 If the flour you are using is fairly fresh and does not contain any lumps, in most cases you can skip sifting, and make your flour airier simply by mixing it with a whisk.
+
+## Honey Cake Layers: Factors That Affect the Intensity of Honey Taste and Aroma
+
 HONEY CAKE LAYERS: FACTORS THAT AFFECT THE INTENSITY OF HONEY TASTE AND AROMA
 
 Honey cake layers can have a different intensity of honey taste and aroma: from delicate, subtle honey notes to strong, pronounced ones. What does it depend on?
@@ -3402,6 +3469,7 @@ The very first and seemingly obvious answer that comes to mind is the amount of 
 P.S. The photos show the Pear–Gorgonzola–Pine Nut honey cake, which drives fans of the sweet fragrant pear and noble blue cheese crazy.
 
 Do you think the dough for this honey cake is cooked over a water bath or is brought to a boil? Those who vote for the water bath, type "1" in the comments, for boiling — type "2".
+
 ## BROWN VS. WHITE EGGS — IS THERE A DIFFERENCE?
 
 #marusya_theory_tips
@@ -3427,13 +3495,13 @@ The color of the eggshell is not indicative of the best quality of the egg. In f
 - No — hens with brown feathers tend to be larger than hens with white feathers, meaning they consume more feed. Therefore, brown eggs need to be sold at a higher price to make up for the extra costs
 
 - Yes — if you have faced an unscrupulous dealer speculating on their more "natural" appearance
+
 ## FLAVOR PAIRING. PASSION FRUIT
 
 #marusya_flavor_pairing
 
 In winter, more than ever, we crave sunny desserts and bright summer flavors, although passion fruit is popular all year round. It is valued for its rich taste and aroma, which gives desserts a special charm. Let's figure out what to combine this exotic fruit with.
 
-### Flavor description
 - tart and sweet
 - refreshing
 - a hint of herbaceousness in seeds
@@ -3443,7 +3511,6 @@ In winter, more than ever, we crave sunny desserts and bright summer flavors, al
 
 It is impossible to describe the flavor of passion fruit in one word. It combines the freshness of kiwi, the tartness of sea buckthorn, the airy sweetness of peach and apricot, the juiciness of gooseberries, the tartness of plums and the tenderness of strawberries — a nice cocktail of rich sweet and tart taste.
 
-### Aroma profile
 - fragrant fruity aroma
 - peach notes
 - light tropical sweetness
@@ -3464,6 +3531,7 @@ Pairs well with:
 - mango and pineapple have very similar aroma profiles to passion fruit, which allows you to combine them with each other within one dessert — the incredibly delicious Napoleon cake “Tropics” that you see in the carousel was created using a combination of these three flavors
 
 - other products — chocolate, caramel, tonka beans and, of course, vanilla — light woody notes typical of both passion fruit and real vanilla pods make their combination especially successful
+
 ## 8 TYPES OF BUTTER AND HOW TO USE THEM
 
 start by tag #marusya_about_butter
@@ -3489,13 +3557,13 @@ This fresh look at a traditional butter involves adding air to it to create an e
 ### Brown butter (beurre noisette)
 
 Brown butter is an ultra-luxury ingredient that adds a nice nutty flavor to everything from bread and cake to Brussels sprouts. Heating of diced sweet cream butter until the milk solids begin to turn brown gives a toasted and delicious butter that is incredibly fragrant in both liquid and solid form.
+
 ## FLAVOR PAIRING. COFFEE
 
 #marusya_flavor_pairing
 
 Today I reveal the food pairing secrets of coffee
 
-### Flavor Description
 ▪ complex
 ▪ rich
 ▪ earthy
@@ -3506,7 +3574,6 @@ Today I reveal the food pairing secrets of coffee
 
 The flavor of coffee can vary greatly depending on its place of origin, processing method, degree of roasting and brewing.
 
-### Aroma Profile
 ▪ refreshing exquisite fragrance
 ▪ has a characteristic smell of freshly dug earth/soil after downpour
 ▪ woody notes
@@ -3531,6 +3598,7 @@ Coffee contains volatile aldehydes and esters, giving it a floral notes and hint
 - chocolate is always a winning combination! Coffee goes well with both milk and dark chocolate. But white chocolate will give it special elegance and nobility — the bitterness of coffee gives a pronounced contrast with white chocolate.
 
 - alcoholic drinks — cognac, brandy, spiced rum, as well as all kinds of liqueurs: almond "Amaretto", berry "Creme de Cassis" based on blackcurrant and, of course, Irish cream liqueur "Baileys" — Coffee-Baileys Cheesecake beat all sales records (photo 5-6)
+
 ## HOW TO RECALCULATE THE CHOCOLATE PERCENTAGE
 
 #marusya_about_chocolate
@@ -3572,6 +3640,7 @@ Substitute the values:
 x = (400 g * 0.36) / 0.41 = 351 g
 
 That is, you can replace 400 g of 54% chocolate with 351 g of 64% chocolate that you have available.
+
 ## 8 TYPES OF BUTTER AND HOW TO USE THEM
 
 #marusya_about_butter
@@ -3593,7 +3662,9 @@ Gee is nothing more than the pure butterfat! It is cooked over low heat to remov
 ### Compound butter
 
 This is a special variety of butter that has been softened to a pliable state, and then has herbs, spices, and/or sweeteners (fruit or berry purees) added to it. Usually chilled and then sliced, compound butter can add herby richness to a steak, enhance the flavor of a baked good, or add creaminess to a pasta sauce.
+
 ## ALT. PASTRY CHEF'S NOTES
+
 part 1
 
 I’d like to thank everyone who took part in yesterday's charity fundraising in support of Ukraine. You are amazing! It was very nice to see how many people are ready to help those who are now in a difficult situation.
@@ -3694,6 +3765,7 @@ When choosing the type of salt to add, think of the goal you want to achieve:
 ◾ to enhance the taste of the dessert, I advise you to use rock or sea salt. They dissolve well in the dough and don’t add bitterness, which is typical of iodized and table salt.
 
 ◾ if you use salt as a bitterness neutralizer, why add an extra bitter taste along with table salt?
+
 ## FLAVOR PAIRING. BILBERRY
 
 #marusya_flavor_pairing
@@ -3704,7 +3776,6 @@ I'm sure you have. After all, it was thanks to this science we learnt how to com
 
 Ready, steady, go! It will be interesting, as today we’re going to scan the BILBERRY
 
-### Flavor description
 - mild
 - top floral notes
 - slight sourness of the skin
@@ -3716,7 +3787,6 @@ Bilberries do not have a strong taste — it is quite neutral and often the berr
 
 The faint taste of bilberries can be revealed with the help of heat treatment — then they shine and add to the flavor profile of the dessert!
 
-### Aroma profile
 - floral rose aroma
 - spicy vanilla notes
 - subtle citrus notes
@@ -3734,7 +3804,9 @@ Flavor combinations that deserve special attention:
 
 - other fruits and berries such as orange, peach, blackcurrant, apple and lemon. The fruit and berry duet of bilberry and peach is especially good — this is a very popular flavor combination in America that is most often used in tarts.
 - nuts — almonds, hazelnuts, pecans and pine nuts
+
 ## WHY ADD SALT TO DESSERTS?
+
 part 1
 
 When I began to study this question, it immediately became clear that for this topic I’ll need more than one post. You may wonder what salt has to do with dessert. Let’s have a look.
@@ -3775,6 +3847,7 @@ Judging by your comments, this topic turned out to be interesting for many of yo
 So let's continue.
 
 ## FUNCTIONS OF SALT IN BAKING AND MAKING DESSERTS
+
 part 3
 
 Continuing to delve into the topic of infusion, today we take into account the hot method, that I use quite often when developing recipes.
@@ -3812,6 +3885,7 @@ Salt is a natural preservative. It dehydrates harmful microorganisms. Due to deh
 8. Helps to maintain the recommended daily sodium intake
 
 Our body needs a certain amount of salt (NaCl) to function properly, so it's natural that we tend to like the taste of salt. This does not mean that we should eat tons of salt a day, but using it in reasonable amounts in cooking and making desserts will help us stay healthy and enjoy food.
+
 ## INFUSION: WHAT, BY WHAT AND HOW
 
 #marusya_infusion
@@ -3843,6 +3917,7 @@ There are several ways:
 As a result, you can get an orange-flavored apple, for example, or a lemon-flavored banana.
 
 ## EVERYTHING YOU NEED TO KNOW ABOUT AGAR
+
 part 1
 
 In previous posts, we have already talked with you about gelatin - #marusya_about_gelatin and pectin - #marusya_about_pectin. Today I suggest analyzing the next, no less interesting thickener - agar, aka agar-agar, aka seaweed food thickener.
@@ -3953,6 +4028,7 @@ Agar should be stored in a cool, dry place, protected from sunlight, in airtight
 ## AGAR SUBSTITUTES
 
 ### Gelatin
+
 Gelatin has a lower density after cooling than agar, so it is suitable for making more delicate desserts. If you want to get a dense and smooth texture, it is better to use agar.
 
 In general, these thickeners can be considered interchangeable, but it should be kept in mind that the gelling ability of agar is much higher than that of gelatin.
@@ -3974,20 +4050,17 @@ A prerequisite for the "activation" of pectin is the presence of sugar. Accordin
 Agar-agar can be substituted for starch. However, starch makes the filling opaque, when dissolved, that significantly narrows the range of its possibilities.
 
 - Substitute: 1 tsp. agar = 2 tsp. starch
+
 ## FLAVOR PAIRING. LEMON
 
 In the pastry art, lemon can be considered a versatile citrus fruit that not only serves as the basis for creating desserts with a characteristic lemon sourness, but also for balancing sweet and savory tastes.
 
 Let's have a look at the flavor profile of LEMON
 
-### Flavor description
-
 - sour
 - pure, refreshing flavor dominated by citric acid
 
 We feel the pronounced sourness of lemon precisely thanks to the lemon juice. But the rich bouquet of aromas that a lemon possesses is revealed when the zest is peeled.
-
-### Aroma profile
 
 - dominant citrus notes
 - waxy and oily accents in essential oils and volatile compounds contained in the peel
@@ -4011,18 +4084,17 @@ Lemon-ginger is one of the most successful and harmonious flavor combinations. T
 That is why the Lemon-Ginger honey cake recipe gained such popularity. You can find this free recipe by following the hashtag #marusya_recipe
 
 - Check out the carousel to see an aide-memoire on lemon flavor combinations
+
 ## FLAVOR PAIRING. MANGO
 
 #marusya_flavor_pairing
 
 As you remember, we’ve started diving into the world of food pairing with apricot, and today I suggest having a closer look at MANGO.
 
-### Flavor description
 - sweet-tart
 - reminiscent of a pineapple and peach combination
 - has citrus and floral notes
 
-### Aroma profile
 - creamy notes
 - apricot and pineapple notes, melon flavor
 - has a slightly pine/evergreen aroma with notes of dried fruits
@@ -4052,6 +4124,7 @@ Fresh lime juice squeezed over a ripe mango is one of the world's greatest flavo
 - Lemon, which has a milder flavor than lime and contains sweet rose and fruity notes, cannot accentuate mango as nicely as lime.
 
 - Check out the carousel to see an aide-memoire on mango flavor combinations
+
 ## BROWN BUTTER OR BEURRE NOISETTE
 
 #marusya_theory_tips
@@ -4079,6 +4152,7 @@ The recipe for brown butter can be found in the previous post. But I’d like to
 5. After bringing the butter to 128 °C, remove the saucepan from the heat, while continuing to stir - within 30-40 seconds the residual heat of the saucepan will bring the butter to the desired slightly brownish color (it will heat up to 130-138 °C).
 
 6. Immediately after this, pour the butter into a separate container to stop the cooking process. Otherwise, the temperature will continue to rise, and as soon as it exceeds 140 °C, the butter will burn.
+
 ## NFUSION. THE INS AND OUTS
 
 #marusya_infusion
@@ -4113,7 +4187,6 @@ In mousses:
 
 In ganaches:
 
-### cream
 - fruit puree
 - water
 
@@ -4137,6 +4210,7 @@ Most likely, the first thing that comes to mind is flavors. Both natural and art
 Apart from flavors, the following ingredients can be used to create an infusion:
 
 ### Vanilla (pod/paste/extract)
+
 - Spices and seasoning (pepper, cinnamon, cardamom, anise, coriander, star anise, cloves, ginger)
 - Herbs and flowers (tarragon, basil, dill, thyme, rosemary, lavender)
 - Tea (black, matcha, red, green)
@@ -4153,7 +4227,6 @@ And this is not all!
 
 Now let’s proceed to the most interesting part - infusion methods. They are:
 
-### Cold
 - Hot
 - Decoction
 - Vacuum
@@ -4166,6 +4239,7 @@ This is the longest method of infusion - the aromatization of the liquid occurs 
 It will take 3-5 days to almost completely extract flavor from fresh herbs into a liquid, and about 20 days for dry ones. In addition, a MORE flavoring component will be required.
 
 But if you want to get an exquisite, sophisticated flavor and avoid heat treatment, this method will be the best option.
+
 ## FLAVOR PAIRING. APRICOT
 
 #marusya_flavor_pairing
@@ -4180,13 +4254,11 @@ Creating new flavors, I, first of all, rely on my inner instinct. And no matter 
 
 I’d love to share this particular knowledge. Therefore, today I am presenting a new series of posts on flavor pairing. And since the season of APRICOTS is now in full swing, let's talk about flavor combinations of this fruit first.
 
-### Flavor description
 - sweet-tart
 - a creamy, floral character
 - a mixture of fresh notes of tropical fruits
 - pronounced floral notes, in particular lavender
 
-### Aroma profile
 - fruity notes
 - high concentration of creamy notes
 
@@ -4220,6 +4292,7 @@ There are plenty of articles about pectins, but this topic doesn’t seem to los
 - Which brands of pectin NH Nappage do I prefer?
 
 ### Spanish Sosa
+
 - French Louis Francois
 
 - How much pectin NH Nappage do you need to perfectly thicken the filling and how to introduce it correctly?
@@ -4233,7 +4306,9 @@ There are plenty of articles about pectins, but this topic doesn’t seem to los
 - yes, this pectin practically doesn’t activate in mixtures containing alcohol
 
 Which thickener do you prefer to use and why?
+
 ## CRÈME ANGLAISE FROM A TO Z
+
 As it turned out, not everyone can properly make the crème anglaise (French for "English cream") or custard. There’s nothing complicated about its preparation, but at the same time, to obtain a stable result, you need to follow a number of rules, as well as understand the processes that occur during its preparation.
 
 So in order to avoid difficulties in working with the custard, you’ll need to know some tips and tricks which I’m going to share with you today.
@@ -4285,8 +4360,9 @@ It is thanks to lecithin that fats form an amalgam (emulsion) with a liquid. Tha
 
 ‼ Lecithin must not be heated above 70°C
 
-### Sugar
+## Why Does Crème Anglaise Curdle? Reasons and Fixes
 
+Sugar
 1. Sugar is very hygroscopic, that is, it has a high ability to absorb moisture.
 
 I suggest doing a little experiment. Place one yolk in a bowl, add a couple of tbsp of sugar and leave it like that without stirring.
@@ -4377,51 +4453,52 @@ This is a final post about crème anglaise, in which I’ll tell you what proble
 
 1. Runny custard
 
-### Reason
+Reason
 The custard hasn’t been brought to 82-83 °C.
 
 Crème anglaise contains the alpha-amylase enzyme which can break down protein.
 
 If the custard has been brought to less than 74 °C, the alpha-amylase won't get destroyed and will digest the proteins. In other words, the custard will be runny. Such custard can't be fixed.
 
-### Solution
+Solution
 If the custard has been brought to a temperature above 75 °C, the product has been pasteurized (alpha-amylase is destroyed), it can be fixed - just add bloomed gelatin in order to make the custard more stable.
 
 2. Custard has curdled
 
-### Reason
+Reason
 The custard was brought to a temperature above 82-83 °C.
 
-### Solution
+Solution
 In the future, be sure to measure the temperature correctly following the rules described in the previous post (P3). You can find them by the hashtag #marusya_about_crèmeanglaise
 
 Someone advises blending curdled custard. Thus, you will eliminate the "lump effect", but won’t get rid of the omelette taste. Therefore, if your crème anglaise has split, I advise you to remake it so as not to compromise the whole cake.
 
 3. Custard foams during cooking
 
-### Reason
+Reason
 See what’s in your hand. I'm sure it's a whisk.
 
-### Solution
+Solution
 After beating the yolks with sugar, put the whisk aside and switch to a silicone spatula. This is the appropriate tool to cook the custard with.
 
 4. There are yolk pieces in custard
 
-### Reason
+Reason
 Poorly beaten yolks with sugar
 
-### Solution
+Solution
 Remake the custard
 
 I don’t advise you to strain it. Yes, of course, you’ll get rid of pieces of yolk floating in the custard, but this won’t help you to get rid of the yolk taste.
 
 5. Skin forms on the custard surface
 
-### Reason
+Reason
 The custard wasn’t covered with cling film or wasn't covered tightly enough.
 
-### Solution
+Solution
 Strain the custard or carefully remove the skin. Then cover the crème anglaise with cling film touching the surface.
+
 ## HOW TO DIFFERENTIATE VEGETABLE CREAM FROM DAIRY?
 
 #marusya_theory_tips
@@ -4460,6 +4537,7 @@ The quality brands I trust:
 If you have read the post to the end, leave any emoji in the comments and bookmark the post
 
 P.S. Be sure to test the origin of the cream you use. You'll get valuable experience in a matter of minutes!
+
 ## DAIRY AND NON-DAIRY WHIPPING CREAM
 
 #marusya_theory_tips
@@ -4485,6 +4563,7 @@ This is done for the sake of extending the expiration date to 12months. But at t
 - The number one goal that I pursue when developing new recipes is to get the perfectly balanced taste. And these are the FAT MOLECULES that contribute to the FLAVOR! Therefore, I prefer to use dairy products with a high fat content.
 
 It seems that to get the perfect dessert it is enough to pick any dairy cream in the supermarket and that's it. But it’s not! Unfortunately, quite often the information provided by manufacturers on packaging cannot be trusted, believe my own experience.
+
 ## HOW TO CHOOSE THE RIGHT CHOCOLATE FLUIDITY
 
 #marusya_theory_tips
@@ -4516,6 +4595,7 @@ There is a wide range of fluidity levels marked with 1-5 drops:
 That is, depending on the application, you should choose a chocolate with the right fluidity.
 
 In my work, I most often use milk or dark chocolate with a fluidity of 3 drops - its properties are most suitable for making ganaches for coating, crémeux, as well as mousse and baked chocolate cheesecakes.
+
 ## SEVERAL THICKENERS IN A FILLING. WHY?
 
 In online courses and during live master classes, which I miss so much, students often ask me why they need to add gelatin if they have already added pectin to the preparation.
@@ -4525,12 +4605,14 @@ The question is really good and very interesting. Let’s find the answer now!
 The thing is that each thickener has different properties:
 
 ### Agar-agar
+
 - gives a delicate, "glassy", not elastic texture
 - activates at high temperatures (90-100°C). If added to a cold mixture, it starts to set at 40°C and form lumps
 - must not be frozen as it may lose its properties
 - if you process the gelled mixture with a blender, you’ll get a gel
 
 ### Gelatin
+
 - gives good elasticity and makes the fillings a bit “rubbery”
 - activates at low temperatures (can be added at 25-30°C)
 - retains its properties when frozen
@@ -4538,6 +4620,7 @@ The thing is that each thickener has different properties:
 - contains a large amount of protein, which allows one to whip it and get a thick foam
 
 ### Pectin (NH, NH Nappage)
+
 - gives a stable, jam-like texture and doesn’t affect the taste of the mixture
 - activates at high temperatures (80-100°C)
 - retains its properties when frozen
@@ -4548,7 +4631,9 @@ Sometimes when we want our filling to get the properties of 2 different thickene
 For example, when making the Kiwi-Lime-Bergamot cheesecake, the photo of which you can see in the carousel, I used both pectin (to give light elasticity and natural taste) and agar-agar (for stability) to prepare the Mojito marmalade made from vermouth, lime juice and bergamot.
 
 In this case, the gelatin can’t be used to stabilize (gel) the mixture. Can you guess why?
+
 ## WHAT YOU NEED TO KNOW ABOUT PECTIN
+
 part 1
 
 We’ve already talked with you about gelatin, and today I’d like to start a new series of posts about the super-popular thickener - pectin.
@@ -4624,16 +4709,19 @@ Today we continue to talk about the classifications of pectin. The pectin can al
 - Time of setting (gelling)
 
 ### Rapid set pectin
+
 - degree of esterification - above 70-76%
 - gelling temperature - 75-85°С
 - gelling time — 10-15 minutes
 
 ### Medium rapid set pectin
+
 - degree of esterification - 70-72%
 - gelling temperature - 60-70°С
 - gelling time — 15-20 minutes
 
 ### Slow set pectin
+
 - degree of esterification - 56-68%
 - gelling temperature - 45-60°С
 - gelling time - 20-25 minutes
@@ -4715,8 +4803,6 @@ Add pectin powder to boiling water, carefully processing it with a hand blender.
 
 This method is used if the mixture can "hold" additional liquid. It's more suitable for large productions.
 
-### Proportions
-
 Pectin - 5-8%
 Water - 92-95%
 
@@ -4781,7 +4867,9 @@ Taking into account all the above factors, which the amount of added pectin depe
 But there is good news - most often it is enough just to read the recommendations on the ratio on the packaging, if you have one available.
 
 If not, use the ratio 60 : 1 : 1, take into account all the influencing factors and experiment
+
 ## THINGS WE NEED TO KNOW ABOUT EGGS
+
 part 1
 
 #marusya_likbez
@@ -4880,14 +4968,14 @@ We had a look at the anatomy of an egg, but did not talk about the egg as a whol
 
 So, let's start!
 
-### Fresh eggs storage
-
 ### Commercial industry
+
 - Eggs are stored at room temperature as the use of refrigeration equipment is impractical (space, electricity, depreciation)
 - Shelf life - up to 25 days
 - After disinfection, eggs are stored for no more than a day
 
 ### Storage at home
+
 - At room temperature - up to 25 days
 - Storage in the fridge at 4-6°C extends the shelf life to 90 days, at 0-2°C - up to 125 days
 
@@ -4971,7 +5059,9 @@ Standard dry matter content:
 There is a formula by which you can calculate the required amount of dried egg powder (G₂):
 
 G₁*a₁
+
 ## G₂ = __________
+
 a₂
 
 G₁ is the mass of the product being substituted - for example, you need to substitute 2000 g of fresh eggs for dried egg powder
@@ -4997,7 +5087,9 @@ Lastly, it’s necessary to find out how much water is needed to dilute the powd
 Easy as ABC
 
 If you need to substitute only the egg white or egg yolk, then use the percentage of dry matter in each of them (46% and 12%, correspondingly) in the formula and get the required amount of dried egg white or egg yolk.
+
 ## ABOUT FOOD COLORINGS
+
 part 1
 
 Bucha
@@ -5033,6 +5125,7 @@ So, colorings are usually classified according to:
 - composition: synthetic and natural;
 - form of production: powdered, gel and liquid;
 - chemical basis: water-soluble and fat-soluble.
+
 ## PART 2
 
 check out the beginning by the hashtag #marusya_foodcolorings
@@ -5081,6 +5174,7 @@ Cons:
 - stain the oral cavity
 
 Personally, I use both synthetic and natural coloring, depending on the situation, but I try to give preference to natural ones.
+
 ## PART 3
 
 #marusya_foodcolorings
@@ -5112,6 +5206,7 @@ Are a good choice for coloring chocolate used for decoration, creating velour mi
 Definitely powder! The liquid will inevitably break the structure of cocoa butter, and you might encounter issues when tempering the mixture.
 
 The powder coloring will not affect the mixture in any way, but the weight of the coloring cannot exceed 0.02% of the weight of the product being colored in order to avoid staining the oral cavity.
+
 ## INTERCHANGEABILITY OF GLUCOSE, GLUCOSE-FRUCTOSE SYRUP AND TRIMOLINE
 
 #marusya_theory_tips
@@ -5133,7 +5228,9 @@ Glucose-fructose syrup can not always be substituted for trimoline.
 You can safely replace one with another if you are making ganache, frosting or chocolates filling. But if you are making various kinds of caramels, syrups or zephyr, meaning the products exposed to high temperatures during cooking, then the glucose cannot be substituted for trimoline due to its sensitivity to high temperatures - at temperatures above 100 °C it can have an unpleasant burnt smell and taste.
 
 - When adding trimoline to baked goods (puffs, croissants, etc.), the baking temperature is usually reduced by 10 °C to avoid excessive browning.
+
 ## ABOUT TASTES AND HOW THEY ARE CREATED
+
 A basic knowledge of primary flavors and how they work is essential in the culinary arts.
 
 Unfortunately, among amateurs, few people have this knowledge and even less consciously use it, combining ingredients and adding spices rather intuitively.
@@ -5167,6 +5264,7 @@ In writing the article, materials from books are used:
 - The Flavor Matrix by James Brinscione
 - The Art & Science of Foodpairing by Peter Concquyt, Bernard Lahousse, Johan Langenbick
 about
+
 ## PART 2
 
 #marusya_flavours
@@ -5209,6 +5307,7 @@ In addition to the four basic tastes, a growing body of evidence points to the e
 It gives dishes a salty or meaty "rich" taste. It can be felt in ingredients such as anchovies, cheese, mushrooms, green tea, and flavorings such as monosodium glutamate, which is the main component of ready-made seasonings.
 
 ## TASTE PERCEPTION
+
 Temperature, texture, piquancy, astringent taste.
 
 In the oral cavity, in addition to taste, there are tactile receptors sensitive to temperature and texture, which are also very important in determining taste. Such perception of food is usually called taste perception.
@@ -5258,6 +5357,7 @@ Ingredients such as horseradish and mustard have a strong spicy taste and aroma.
 ### Chemical senses
 
 The term “chemical senses” refers to taste sensations that are pleasant to us (for example, the tingling sensation when drinking sparkling drinks) and at the same time irritate or deceive the taste buds (for example, chili pepper creates a false sensation of burning, while peppermint has a cooling effect).
+
 ## PART 5
 
 the beginning can be found by the hashtag #marusya_flavours
@@ -5281,6 +5381,7 @@ Mental perception - the perception of eating food by the mind as a process that 
 Spiritual perception - the perception of cooking and eating as a sacrament that can improve the quality of our daily lives.
 
 The world's leading chefs have worked to improve every aspect of the meal experience - from products to atmosphere and service - in order to take this process to a new level, filled not only with pleasure, comfort and interest, but also with meaning.
+
 ## PART 6
 
 the beginning can be found by the hashtag #marusya_flavours
@@ -5328,6 +5429,7 @@ Thus, the scientific foodpairing is based on the fact that the ingredients in or
 If you have read the article to the end, please, leave any emoji in the comments
 
 Want to learn more about aroma molecules, key aromas, the main aroma types and how it all works?
+
 ## WHAT YOU NEED TO KNOW ABOUT GELATIN
 
 #marusya_about_gelatin
@@ -5392,6 +5494,7 @@ Then multiply this coefficient by the weight of the gelatin in the recipe: 10 g 
 If the strength of your gelatin is greater than in the recipe, you will get a coefficient which is less than one. This means that you will need to use a smaller amount of gelatin.
 
 As you can see, conversion is quite simple to do, and at the same time, it helps to avoid undesirable difficulties when working with the textures of your fillings, cakes and desserts..
+
 ## SHELF LIFE OF FROSTING
 
 I hear this question all the time: both at live master classes, and at my online courses, as well as from clients who contact me in DM. The question is relevant, interesting and, without a doubt, extremely important for any pastry chef and everyone who just loves to bake.
@@ -5424,6 +5527,7 @@ It should be remembered that:
 - with cream cheese - no more than 24 hours;
 - with custard - no more than 12 hours;
 - with crème fraîche or sour cream - no more than 6 hours.
+
 ## CONVERSION OF RECIPES FOR ANY SIZE CAKE MOLDS
 
 Every day I receive a lot of photo reviews about cheesecakes prepared using my recipes: you comment on their mind-blowing tastes, their beautiful appearance, the balance of flavors and textures....
@@ -5461,6 +5565,7 @@ P.S. For those to whom all this simple mathematics still seems complicated for s
 
 - Horizontally - the diameter of the form in the recipe, cm
 - Vertical - the diameter of your form, cm
+
 ## CAKE COATING. COMMON PROBLEMS
 
 The leaking liquid from the assembled cake. Where does it come from?
@@ -5484,6 +5589,7 @@ The remains of sour cream and frosting having spent some time in the fridge rele
 But one day, for lack of Cremette, I assembled the cake with another cream cheese, which contained neither thickeners nor stabilizers. Also, most likely, the technology of its preparation was also different. Now I understand why it cost almost half the price of Cremette.
 
 That cream cheese released 3-4 times more whey than Cremette. As a result, in the morning there were several tablespoons of sweet liquid on the cake base.
+
 ## CAKE COATING. COMMON PROBLEMS
 
 Last couple of words about putting the press on the cake and we’ll proceed to the last part of the article - leaking liquid from the assembled cake.
@@ -5505,7 +5611,9 @@ I really wanted to show you a photo that my student once sent me, but I had to g
 Therefore, at this point, imagine a coated smoothed cake with a pool of liquid leaked from it onto the cake base.
 
 Why does this happen? Logically, due to the large amount of liquid in the cake. But where does it come from?
+
 ## HOW TO MAKE A PERFECT CHEESECAKE
+
 ℹ If you open the oven, the cheesecake will collapse.
 
 Stupidity! The cheesecake shouldn't rise at all. If it rises, it means that the temperature that you set for it is too high.
@@ -5592,6 +5700,7 @@ Mostly, it’s "instant gelatin" – it takes just a few minutes for it to swell
 It is important that the liquid to which the gelatin is added is warm, so that the gelatin disperses well in it, and does not form a huge lump.
 
 Sometimes it is difficult and irrational to heat up the entire mousse or cream. For example, if it's a mousse made with cold sour cream, then a part of it, no more than 1/3, is taken, slightly heated over a water bath or in a microwave, then the gelatin is added to it, mixed well, and then both mixtures – the warm with gelatin and the cold one – are combined.
+
 ## CAKE COATING. COMMON PROBLEMS
 
 How to avoid air bubbles?
@@ -5629,6 +5738,7 @@ There are some simple rules for placing a cake under the press:
 - if you put a too heavy press / leave the press for a long time / put the press on a very delicate filling, then you can end up with a too tamped cake.
 
 ## CAKE COATING. COMMON PROBLEMS
+
 \Yesterday we discussed the possible reasons why the filling may get out of the cake in the form of bubbles on the coating:
 
 - not verified, inaccurate recipe
@@ -5648,6 +5758,7 @@ It is quite natural that many hollows, filled with air, remain inside the cake. 
 But it often happens that not all the air has time to get out and some of it remains inside the cake, looking for a perfect moment to put a pastry chef on edge. Usually, because it tries to get out when the chef is about to give the cake to the client.
 
 A similar problem often happens with sponge cakes, especially if we don’t give the assembled cake enough time to rest before applying the coating.
+
 ## CAKE COATING. COMMON PROBLEMS
 
 ##
@@ -5729,6 +5840,7 @@ Finally, the third option that may cause cracks on coating is lack of frosting o
 In this case, even though you kept the cake in the fridge overnight after assembly and covered it with a proper layer of buttercream, cracks may appear on the second day after smoothing.
 
 If the article was helpful, leave in the comments and I'll write a continuation.
+
 ## WHAT YOU NEED TO KNOW ABOUT GELATIN
 
 Judging by the number of questions that I often receive, articles with an analysis of the ingredients are very relevant for many of you.
@@ -5767,6 +5879,7 @@ As for calculating the amount of gelatin, this is an ambiguous question, because
 But, on average, it is assumed that for 500 g of liquid, 10 g of gelatin with a strength of 180-200 Bloom is used.
 
 And then you should decide whether the gelatin is enough, the product is too tender or, on the contrary, thick. Draw conclusions, make adjustments and adapt to the properties of your products.
+
 ## LET'S FIND OUT MORE ABOUT CREAM CHEESES
 
 I often receive questions about replacing Philadelphia with Mascarpone in recipes, difference between them and the reasons the frosting suddenly breaks after adding cream cheese to it.
@@ -5823,10 +5936,8 @@ In principle, in any frosting or sour cream frosting that is used as filling of 
 
 If in your recipe, for example, there are 2 parts of cream cheese and 1 part of cream (2:1) or 1 part of cream, 1 part of cream cheese and 1 part of sour cream (1:1:1) you may easily replace the cheeses with each other and nothing bad will happen.
 
-### Important!
 Consider the different texture and fat content of the cheeses. It might affect the taste of the pastry to some extent.
 
-### Much more important!
 Work with mascarpone extremely carefully! Unlike frosting with cream cheese, frosting with mascarpone is very easy to overwhip - it may break in the blink of an eye and you’ll end up with lumps and curdled texture.
 
 All this happens due to the capricious mascarpone.
@@ -5908,6 +6019,7 @@ As a result, we started to heat the cream cheese in the microwave until warm, pr
 So, have you now figured out all the nuances regarding the cream cheeses, or do you still have questions? If so, ask in the comments!
 
 ## WHAT YOU NEED TO KNOW ABOUT GANACHE
+
 Today is Monday and I am here with a useful post. I'm starting to think about making Monday and Thursday, for example, useful information days. What do you think?
 
 Let's start with the elementary. What is ganache?
@@ -6045,12 +6157,10 @@ Butter with fat content of 82% and more can be used (the lower the moisture cont
 - Recommended dosage of butter: 5-15%
 - Recommended dosage of fat (butter together with cocoa oil): 25-40%
 
-### Texture
 • if butter is added to the cream before it is brought to a boil, the fat molecules will be evenly distributed in the mass. This heat treatment prolongs the shelf life of the product.
 • if you add butter at the end of cooking (at 30-35 °C / 86-95 °F) without pre-melting it, the ganache will acquire a smooth and creamy consistency, glossy shine, as well as a delicate and melting texture (felt when tasted)
 • when butter is heated, the consistency of ganache becomes runnier, and when butter cools, it becomes thicker.
 
-### Taste
 • due to fat molecules it has aroma-retaining properties
 • makes the bitterness of chocolate with a high content of cocoa products (for example, more than 70%) milder.
 
@@ -6065,7 +6175,6 @@ The continuation of the article where I analyze the components of ganache, thei
 
 - The recommended dosage of sugars is at least 25% of the total weight.
 
-### Storage
 • due to hygroscopic properties, it retains water, binds components and increases the thickness of the mass, giving it stability.
 • combining with water molecules from whipping cream, sugars reduce the number of unbound water molecules, thus limiting the environment for the growth of microorganisms (mold) (this is especially important when storing food at subzero temperatures).
 
@@ -6085,7 +6194,6 @@ Sorbitol crystals are capable of binding free water molecules.
 - Texture
 • it's a powerful hygroscopic agent that retains and stabilizes moisture.
 
-### Storage
 • prolongs the shelf life by reducing the activity of unbound water molecules.
 
 - Aromatic additives
@@ -6194,6 +6302,7 @@ The thing is that when we first add 80-100 g of butter (~ 10°C/ 50°F) to 200 g
 On the contrary, when the hot cream is gradually poured in, the temperature decreases moderately and stays in the range of 140-160°C / 284-320°F longer.
 
 Therefore, in addition to caramelization of sugars, the Maillard reaction also takes place - amino acids in the cream react with sugars, which enhances the aroma and provides a darker shade of caramel.
+
 ## ECTIN, AGAR-AGAR AND GELATIN. WHAT’S THE DIFFERENCE?
 
 Russian version @ma_rusya_manko
@@ -6221,6 +6330,7 @@ What is the difference between agar-agar and gelatin?
 - Agar-agar can be dissolved in juices, but gelatin does not like fruit acids, it should be dissolved in water only.
 
 If you need a more detailed analysis of agar-agar and gelatin, their strengths and properties, let me know in the comments
+
 ## SOUR CREAM AND CREAM – LET’S HACK THE ISSUE!
 
 I suggest starting with the whipping cream.
@@ -6439,7 +6549,9 @@ In fact, absolutely nothing to worry about. The mass will be actively saturated 
 Still, you may face some difficulties such as:
 - the whole cheese mass won’t fit into the shortbread shell
 - after baking, the excess air will come out of the cheesecake and a dent will form in the center. Its depth directly depends on how much you whipped the cheese mass.
+
 ## HOW TO MAKE A PERFECT CHEESECAKE
+
 Personally, I prefer the hot infusion, since it is much more effective and does not require such a long preparation.
 
 The hot method suggests heating the whipping cream / milk with flavoring up to 90 °C / 194 °F over low heat. Then you should cover the mixture with a lid and let it infuse for at least 2-3 hours. For an intense flavor, you may repeat the process one more time.
@@ -6495,7 +6607,6 @@ Then a brilliant idea came across my mind and I bought a thermometer for the ove
 
 It all depends on the situation, and, again, on the characteristics of your oven. If the top heating element heats too much, then turn on only the bottom one. In 80% of cases, conventional heating is the best option. If you need to bake several trays at the same time, use the convection mode.
 
-### Useful tip
 If you have difficulties with the baking mode and the uniformity of baking, you can cover the top of the cheesecake with foil. This will keep the light color of the cheesecake and prevent it from being burnt.
 
 - Add the flavouring directly to the cheese mass.
@@ -6568,6 +6679,7 @@ A few tips and tricks for you:
 - also make sure that a thick layer of dough does not form between the bottom and the borders
 
 - in order to avoid the latter, first completely form the borders, and only then proceed to the bottom
+
 ## HOW TO MAKE A PERFECT CHEESECAKE
 
 I am glad that you find the tips on making the perfect cheesecake useful, so I will be happy to continue. If you like this idea, leave + in the comments!
@@ -6591,6 +6703,7 @@ The reason for the formation of cracks on the surface of the cheesecake is actua
 - Useful tip:
 
 It is better to introduce the eggs into the cheese filling one at a time, each time mixing the mass until smooth.
+
 ## WATER BATH AND CHEESECAKE
 
 One of the questions that I receive quite often from people who bought the cheesecake recipe concerns the water bath: what’s that? Where should I pour the water?
@@ -6638,4 +6751,117 @@ Useful tips:
 - It is much easier and faster not to bake the formed shortbread crust, but simply put it in the freezer for 30-60 minutes.
 
 - If you use the coconut oil instead of butter for the reconstituted shortbread crust, the base will come out crispier and crumblier, and it will be easier to unmold it.
+
+## Stabilizing Whipped Cream
+
+- In warm weather, adding gelatin or a stabilizer to heavy whipped cream can be beneficial for maintaining its shape.
+
+- This is especially important for dishes featuring heavy whipped cream that will be displayed or served on a buffet table. Don’t forget to hit and save this post so you can easily refer to it when needed.
+
+How to Use a Stabilizer
+Sift the stabilizer along with the powdered sugar you’ll use to sweeten the heavy whipped cream.
+
+- Use approximately 7 g of stabilizer per liter of heavy whipped cream, or follow the package instructions. Add the sugar and stabilizer during the whipping process.
+
+Gelatin Method
+For gelatin, use the following proportions:
+
+▫ 1 liter of heavy whipped cream
+▫ 10 g of gelatin
+▫ 60 ml of cold water
+
+- Soak the gelatin in cold water, then heat it until fully dissolved. Whip the cream until it begins to thicken, then gradually and evenly pour in the gelatin while continuing to whip to the desired consistency.
+
+## How to Make Perfect Chocolate Drips
+
+#marusya_theory_tips
+
+Chocolate drips are an elegant and seemingly simple decoration for a cake, in fact, they also require certain knowledge and skills.
+
+Today we decided to reveal all the secrets, so grab your pens and notepads, and get ready to be all ears!
+
+Step 1. Dark Chocolate Drip Icing
+You will need:
+
+- 75 g dark chocolate 54.5%
+- 25 g of odorless vegetable oil
+- heat-resistant silicone spatula
+- plastic bowl
+
+While stirring, melt the chocolate over a water bath or in pulses in the microwave oven, add the vegetable oil and mix thoroughly until completely smooth.
+▪ melt the chocolate in short pulses, 5–8 seconds, stirring vigorously with a spatula after each pulse
+▪ do not overheat the chocolate, otherwise it will curdle – for dark chocolate, the maximum temperature is 50–55 °C
+▪before applying to the cake, the temperature of the icing should be 32–34 °C – if it is slightly higher or lower, you’ll get either thick and rough drips (the icing isn’t warm enough) or very thin translucent drips (overheated icing)
+
+Step 2. Applying the Drips
+You will need:
+
+- pastry bag
+- scissors
+- offset spatula
+
+Pour the chocolate icing into a piping bag and make a small cut. Pipe the slightly warm icing on the edge of the chilled cake, allowing some of the icing to roll off the edge and run down the side. Pour the rest of the icing into the center of the cake and spread it over with an offset spatula.
+▪to get neat drips, it’s more convenient to use a pastry bag rather than a spoon – you’ll be able to adjust the thickness of the drips by making a cut bigger
+▪ the cake should be well chilled as the cold surface slows down the drips, preventing them from running down the entire length of the cake
+▪apply drips at the same distance from each other, but make them of different length, adjusting it with the amount of icing piped out
+
+## Basic Savory Crumble
+
+- 90 g butter 82%
+- 20 g icing sugar
+- 40 g whole eggs (~0.7 pcs)
+- 150 g all-purpose flour
+- 10 g cornstarch
+- 40 g ground hazelnuts/almonds
+- 3 g salt
+
+- Combine softened butter and icing sugar until well mixed. Add the egg melange and mix again. Incorporate sifted flour and cornstarch, ground nuts, and salt. Mix everything with a mixer for 30–40 seconds until crumbly. Be cautious not to overmix the dough.
+
+- Transfer the shortcrust crumbs onto a baking sheet lined with parchment paper, spread them evenly, and place in the freezer for at least 30 minutes. Bake in a preheated oven at 170–180 °C for approximately 15–20 minutes. Allow the crumble to cool completely. The baked shortcrust crumble should be crisp and golden.
+
+The basic savory crumble is now ready!
+
+- to form the cheesecake crust with savory crumble, I typically incorporate some ground nuts, spices to taste, around 20–30 g of milk, 20 g of butter, and 15 g of coconut oil into the baked shortcrust crumble
+
+Swipe through the carousel and enjoy enticing photos of savory cheesecakes — Philadelphia, Marseille, and, of course, Crepes with Red Caviar
+
+## FLAVOR PAIRING. STRAWBERRY
+
+#marusya_flavor_pairing
+
+Each of us is familiar with the taste of bright, juicy strawberries disturbing our imagination and appetite. But do we know everything about its aroma profile? What will it pair well with?
+
+Let's do a foodpairing autopsy of the favorite of millions
+
+### Flavor Description
+▪ sweet "candy"
+▪ nice acidity
+▪ top fruity notes
+▪ light creamy aftertaste
+▪ caramel notes
+▪ inherent oiliness
+
+Strawberries can be leading — then you need weaker flavors that emphasize the intensity of its taste, sweetness. If strawberries are as addition, beat the leading flavor with spices or heat treatment.
+
+### Aroma Profile
+▪ fruity aroma
+▪ sweet caramel notes
+▪ light grassiness
+▪ spicy notes of vanilla
+▪ strong resemblance to tomato aromatics
+
+The aroma profile of strawberries is composed of over 360 components, including esters, aldehydes, ketones, alcohols, terpenes, furanones, and sulfur compounds. The aroma of ripe strawberries is recognized as one of the most complex fruit flavors.
+
+Pairs well with:
+
+- nuts — almonds, cashews, pistachios and pecans. The ideal nutty companion — hazelnuts — does not overlap the taste of strawberries, but gently complements it.
+
+- other fruits and berries such as orange, pineapple, melon, raspberry, coconut
+
+The flavor combination strawberry-tomato deserves special attention — the natural flavor of strawberries is very similar to the aromatics of tomatoes, so the presence of tomatoes in dessert tarts, stracciatella and bruschettas is increasingly being traced
+
+- spices, herbs and seasonings — vanilla, cinnamon, mint, ginger, lemongrass and... balsamic vinegar! Just a couple of drops of balsamic can greatly enhance the taste of strawberries. The combination is often used by chefs in salads, tarts.
+
+- dairy products – cottage cheese, Greek yogurt, cream, mascarpone, cream cheese
+- Strawberry-Soft Cheeses — strawberries have soft, creamy, buttery notes in their flavor, making them a great partner for soft milk, creamy, cheeses and cottage cheese.
 

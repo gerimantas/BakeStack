@@ -1162,58 +1162,6 @@ Yield: ~380 g of praline.
 
 By the way, you can substitute almonds or peanuts for hazelnuts.
 
-## MANDARIN-PASSIONFRUIT CUPCAKES
-
-These aren’t just cupcakes — they’re a firework of flavor! A celebration, unforgettable bliss, and an endorphin injection all in a single bite
-
-I created this recipe for the Winter holiday season, but didn’t post it in time, and keeping it a secret any longer feels like a crime. If you can’t find mandarins, grab some oranges and start baking now
-
-BATTER ~24 cupcakes
-55g butter (82%)
-120g odorless oil
-300g sugar
-4 large eggs
-1 tsp vanilla paste/extract
-330g all-purpose flour
-2 tsp baking powder
-3/4 tsp baking soda
-1/2 tsp salt 240g kefir
-
-1.Place softened butter, oil, and sugar in the mixer bowl. Beat for about 5 min., until the mixture becomes pale and fluffy
-2.Add eggs one at a time, then mix in vanilla
-3.Sift and combine dry ingredients
-4.Reduce mixer speed and add half of the dry ingredients
-5.Add kefir, mix thoroughly
-6.Add the remaining dry ingredients and combine
-7.Distribute batter into cupcake liners, filling them about 2/3 full. Bake in a preheated oven at 170–180°C (~340–355°F) for 20–25 min
-
-### FILLING
-80g passionfruit purée
-80g mandarin pulp (1)
-40g sugar
-3g pectin NH
-2g gelatin + 12 g cold water
-35g mandarin pulp (2)
-
-1.Pour purée into a saucepan and add mandarin pulp (1). Place over heat
-2.Mix sugar with pectin and gradually sprinkle it into the saucepan while stirring
-3.Mix gelatin in cold water and let it bloom
-4.Bring the mixture to a boil, then remove from the heat. Add gelatin and stir until fully dissolved
-5.Fold in mandarin pulp (2), cover the filling with food wrap, ensure it touches the entire surface, and refrigerate until set
-
-### FROSTING
-240g passionfruit purée
-350g white chocolate 28–30%
-20g cocoa butter
-360g heavy whipping cream 33–36%
-250g mascarpone
-
-1.Bring purée to a boil and pour it over finely chopped (or callets) white chocolate and cocoa butter. Let it sit for 1 minute, and mix until smooth
-2.Add cream, stir, cover with food wrap, ensure it touches the entire surface, and refrigerate overnight
-3.Add mascarpone and whip until frosting reaches a stable consistency
-
-Scoop out the center of cupcakes, soak with 2–3 tsp of Cointreau, add filling, frost, and decorate. You can use rum instead of Cointreau
-
 ## CHOCOLATE ORANGE CUPCAKES
 
 Delicate cupcakes that combine the rich bitterness of chocolate with the explosive citrusy freshness of juicy oranges.
@@ -1476,28 +1424,6 @@ Save this recipe, and don’t forget to tap on the post!
 
 4. Wrap the dough in plastic food wrap and chill for at least 30 minutes before use.
 
-## STABILIZING WHIPPED CREAM
-
-- In warm weather, adding gelatin or a stabilizer to heavy whipped cream can be beneficial for maintaining its shape.
-
-- This is especially important for dishes featuring heavy whipped cream that will be displayed or served on a buffet table. Don’t forget to hit and save this post so you can easily refer to it when needed.
-
-## HOW TO USE A STABILIZER
-
-Sift the stabilizer along with the powdered sugar you’ll use to sweeten the heavy whipped cream.
-
-- Use approximately 7 g of stabilizer per liter of heavy whipped cream, or follow the package instructions. Add the sugar and stabilizer during the whipping process.
-
-## GELATIN
-
-For gelatin, use the following proportions:
-
-▫ 1 liter of heavy whipped cream
-▫ 10 g of gelatin
-▫ 60 ml of cold water
-
-- Soak the gelatin in cold water, then heat it until fully dissolved. Whip the cream until it begins to thicken, then gradually and evenly pour in the gelatin while continuing to whip to the desired consistency.
-
 ## RECIPE FOR “VANILLA PANA-COTTA” CHEESECAKE
 
 An incredibly tender dessert bursting with vanilla flavor while it melts in your mouth!
@@ -1551,26 +1477,6 @@ To remove the finished dessert from a cake form, warm it with a hairdryer from a
 I vividly recall your persistent request to add savory flavors into our second online course on cheesecakes! Intrigued by the idea, I embarked on the delightful journey of creating impeccable savory cheesecakes.
 
 A key challenge was to transform the sweet crumble into a savory counterpart. After a bit of experimentation, I successfully achieved the desired outcome, and I’m excited to generously share the recipe with you today
-
-## BASIC SAVORY CRUMBLE
-
-- 90 g butter 82%
-- 20 g icing sugar
-- 40 g whole eggs (~0.7 pcs)
-- 150 g all-purpose flour
-- 10 g cornstarch
-- 40 g ground hazelnuts/almonds
-- 3 g salt
-
-- Combine softened butter and icing sugar until well mixed. Add the egg melange and mix again. Incorporate sifted flour and cornstarch, ground nuts, and salt. Mix everything with a mixer for 30–40 seconds until crumbly. Be cautious not to overmix the dough.
-
-- Transfer the shortcrust crumbs onto a baking sheet lined with parchment paper, spread them evenly, and place in the freezer for at least 30 minutes. Bake in a preheated oven at 170–180 °C for approximately 15–20 minutes. Allow the crumble to cool completely. The baked shortcrust crumble should be crisp and golden.
-
-The basic savory crumble is now ready!
-
-- to form the cheesecake crust with savory crumble, I typically incorporate some ground nuts, spices to taste, around 20–30 g of milk, 20 g of butter, and 15 g of coconut oil into the baked shortcrust crumble
-
-Swipe through the carousel and enjoy enticing photos of savory cheesecakes — Philadelphia, Marseille, and, of course, Crepes with Red Caviar
 
 ## AUTHENTIC NAMELAKA RECIPE FROM VALRHONA SCHOOL RESEARCH KITCHENS
 
@@ -1941,41 +1847,6 @@ Read the recipe, save the post and don’t forget to thank the chef with a like 
 - Transfer the dough to a baking sheet lined with parchment paper and form a rectangle (around 34 x 17 cm) by evenly distributing the dough with slightly moistened hands over the entire surface of the baking sheet. Bake in the oven for about 15–20 minutes at 180 °C until the top browns lightly.
 
 - Carefully remove the baked cake layer from the baking sheet using two large offset spatulas or long knives, let it cool down completely, then carefully peel off the parchment paper and cut out a 32 x 15 cm rectangle using a ruler and a knife.
-
-## HOW TO MAKE PERFECT CHOCOLATE DRIPS
-
-#marusya_theory_tips
-
-Chocolate drips are an elegant and seemingly simple decoration for a cake, in fact, they also require certain knowledge and skills.
-
-Today we decided to reveal all the secrets, so grab your pens and notepads, and get ready to be all ears!
-
-## STEP 1. DARK CHOCOLATE DRIP ICING
-
-You will need:
-
-- 75 g dark chocolate 54.5%
-- 25 g of odorless vegetable oil
-- heat-resistant silicone spatula
-- plastic bowl
-
-While stirring, melt the chocolate over a water bath or in pulses in the microwave oven, add the vegetable oil and mix thoroughly until completely smooth.
-▪ melt the chocolate in short pulses, 5–8 seconds, stirring vigorously with a spatula after each pulse
-▪ do not overheat the chocolate, otherwise it will curdle – for dark chocolate, the maximum temperature is 50–55 °C
-▪before applying to the cake, the temperature of the icing should be 32–34 °C – if it is slightly higher or lower, you’ll get either thick and rough drips (the icing isn’t warm enough) or very thin translucent drips (overheated icing)
-
-## STEP 2. APPLYING THE DRIPS
-
-You will need:
-
-- pastry bag
-- scissors
-- offset spatula
-
-Pour the chocolate icing into a piping bag and make a small cut. Pipe the slightly warm icing on the edge of the chilled cake, allowing some of the icing to roll off the edge and run down the side. Pour the rest of the icing into the center of the cake and spread it over with an offset spatula.
-▪to get neat drips, it’s more convenient to use a pastry bag rather than a spoon – you’ll be able to adjust the thickness of the drips by making a cut bigger
-▪ the cake should be well chilled as the cold surface slows down the drips, preventing them from running down the entire length of the cake
-▪apply drips at the same distance from each other, but make them of different length, adjusting it with the amount of icing piped out
 
 ## RECIPE FOR STRAWBERRY MOJITO ZEPHYR
 
@@ -2500,46 +2371,6 @@ To make the hazelnut paste you will need:
 That's it — the hazelnut paste is ready!
 
 Use the finished nut paste for making various types of fillings and ganaches — it will give them an unforgettable rich nutty flavor!
-
-## FLAVOR PAIRING. STRAWBERRY
-
-#marusya_flavor_pairing
-
-Each of us is familiar with the taste of bright, juicy strawberries disturbing our imagination and appetite. But do we know everything about its aroma profile? What will it pair well with?
-
-Let's do a foodpairing autopsy of the favorite of millions
-
-### Flavor Description
-▪ sweet "candy"
-▪ nice acidity
-▪ top fruity notes
-▪ light creamy aftertaste
-▪ caramel notes
-▪ inherent oiliness
-
-Strawberries can be leading — then you need weaker flavors that emphasize the intensity of its taste, sweetness. If strawberries are as addition, beat the leading flavor with spices or heat treatment.
-
-### Aroma Profile
-▪ fruity aroma
-▪ sweet caramel notes
-▪ light grassiness
-▪ spicy notes of vanilla
-▪ strong resemblance to tomato aromatics
-
-The aroma profile of strawberries is composed of over 360 components, including esters, aldehydes, ketones, alcohols, terpenes, furanones, and sulfur compounds. The aroma of ripe strawberries is recognized as one of the most complex fruit flavors.
-
-Pairs well with:
-
-- nuts — almonds, cashews, pistachios and pecans. The ideal nutty companion — hazelnuts — does not overlap the taste of strawberries, but gently complements it.
-
-- other fruits and berries such as orange, pineapple, melon, raspberry, coconut
-
-The flavor combination strawberry-tomato deserves special attention — the natural flavor of strawberries is very similar to the aromatics of tomatoes, so the presence of tomatoes in dessert tarts, stracciatella and bruschettas is increasingly being traced
-
-- spices, herbs and seasonings — vanilla, cinnamon, mint, ginger, lemongrass and... balsamic vinegar! Just a couple of drops of balsamic can greatly enhance the taste of strawberries. The combination is often used by chefs in salads, tarts.
-
-- dairy products – cottage cheese, Greek yogurt, cream, mascarpone, cream cheese
-- Strawberry-Soft Cheeses — strawberries have soft, creamy, buttery notes in their flavor, making them a great partner for soft milk, creamy, cheeses and cottage cheese.
 
 ## RECIPE FOR COTTAGE CHEESE STOLLEN
 
