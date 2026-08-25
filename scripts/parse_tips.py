@@ -36,7 +36,7 @@ import re
 import sys
 from pathlib import Path
 
-HEADING_RE = re.compile(r"^(#{2,3})\s+(.*)$")
+HEADING_RE = re.compile(r"^(#{2,3})\s*(.*)$")
 
 
 def split_tips(text):

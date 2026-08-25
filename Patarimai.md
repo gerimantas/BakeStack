@@ -923,19 +923,19 @@ Most frostings and mousses are typically composed of three main components:
 - Errors can occur when working with these components individually or in combination.
 Here are some common mistakes to watch out for and some quick notes on how to correct them:
 
-## ▫INSUFFICIENT FAT CONTENT AND IMPROPERLY CHILLED CREAM
+## INSUFFICIENT FAT CONTENT AND IMPROPERLY CHILLED CREAM
 
 Whipping cream should have a fat content of at least 30–33%, ideally 33–35%, and be cooled to approximately 4°C (~39°F).
 
-## ▫INCORRECT TEMPERATURE OF BUTTER FOR WHIPPING
+## INCORRECT TEMPERATURE OF BUTTER FOR WHIPPING
 
 Butter that is either too cold or too warm can lead to improper whipping results. This is a frequent yet often overlooked mistake among students.
 
-## ▫UNDERWHIPPED OR OVERWHIPPED FROSTING
+## UNDERWHIPPED OR OVERWHIPPED FROSTING
 
 It’s easy to overbeat frostings such as Chantilly cream, mascarpone-based frostings, and whipped ganaches, especially those made with dark chocolate.
 
-## ▫SEPARATED BUTTERCREAM
+## SEPARATED BUTTERCREAM
 
 This can occur for two reasons: differing temperatures of the ingredients or improper proportions of fat and water needed to achieve a perfect emulsion.
 Did you know that the ingredients in every cake recipe can be categorized into four main groups based on their functions?
@@ -1435,11 +1435,11 @@ part 4
 
 Coulis, compote, caramel, confit... What other fillings can we explore for cakes? Naturally, curd comes to mind.
 
-## ▪DEFINITION
+## DEFINITION
 
 Curd is a filling that closely resembles custard and can also stand alone as a confectionery creation. It is made by cooking fruit or berry puree or juice with eggs and butter.
 
-## ▪MAIN INGREDIENTS
+## MAIN INGREDIENTS
 
 - egg yolks
 - sugar
@@ -1447,15 +1447,15 @@ Curd is a filling that closely resembles custard and can also stand alone as a c
 - starch
 - butter
 
-## ▪COOKING PROCESS
+## COOKING PROCESS
 
 Begin by beating sugar with egg yolks, then incorporate juice or fruit puree and starch. Boil the mixture until it thickens, then remove it from the heat and gently stir in the butter.
 
-## ▪CURD VS CUSTARD
+## CURD VS CUSTARD
 
 In fact, curd is essentially custard with a unique twist — it is made using fruit or berry puree instead of milk or cream.
 
-## ▪HOW TO MAKE YOUR CURD SPECIAL
+## HOW TO MAKE YOUR CURD SPECIAL
 
 - add the zest of yuzu, orange, lime, lemon...
 - pour in a splash of liqueur like Limoncello, Cointreau, Curaçao, or Crème de Pêche...
@@ -1463,7 +1463,7 @@ In fact, curd is essentially custard with a unique twist — it is made using fr
 - infuse it with a sprig of thyme, rosemary, or lemongrass
 - enhance the flavor with real vanilla, cinnamon, turmeric, or other spices
 
-## ▪IMPORTANT POINTS REGARDING CURDS
+## IMPORTANT POINTS REGARDING CURDS
 
 - to simplify the cooking process, start by dissolving the starch in a few tablespoons of juice beforehand
 - for the best results when making curds, opt for farm-fresh egg yolks
@@ -3688,7 +3688,7 @@ There are 4 types of food salt:
 
 They differ from each other in the methods of harvesting, chemical composition — and, accordingly, taste, as well as varying degrees of salinity, depending on the content of sodium chloride in the composition.
 
-## ▪TABLE SALT
+## TABLE SALT
 
 The most commonly used variety of salt. Most table salt is mined, then put into water, purified of other trace minerals and re-dehydrated (evaporated). The content of NaCl is no less than 97% on a dry matter basis.
 
@@ -3710,11 +3710,11 @@ Today, as promised, I will continue talking about food salt.
 
 #marusya_about_salt
 
-## ▪ROCK SALT
+## ROCK SALT
 
 It is considered natural: it is obtained by mining, then ground and it’s ready to be used. It has a less intense taste than that of table salt.
 
-## ▪SEA SALT
+## SEA SALT
 
 A type of salt of natural (marine) origin, extracted from seawater through the use of a vacuum evaporation process after which it is sun and wind dried and then distilled into an edible, solid form. The purity of sea salt depends on the composition and purity of the sea water from which it is harvested.
 
@@ -3723,7 +3723,7 @@ Sea salt not only enhances the taste of foods, but can also add different flavor
 ▫Fleur de Sel ("flower of salt" in French)
 The most expensive among sea salts. It has an exceptional taste and is able to give dishes a special delicacy and sophistication. This salt has snowflake-like crystals which add a crunchy texture to dishes.
 
-## ▪LAKE SALT
+## LAKE SALT
 
 It is extracted from the bottom of salt lakes, where it settles naturally. Then it undergoes purification processes, after which the salt crystals are converted into food salt. Lake salt has a low sodium chloride content, so it is considered less salty.
 
@@ -5475,7 +5475,7 @@ There are 2 ways of getting a stable, predictable result:
 1. Use gelatin with the same strength as indicated in the recipe
 2. Use any gelatin that you have on hand, converting between different strengths
 
-## ‼HERE’S THE FORMULA:
+## HERE’S THE FORMULA:
 
 In order to convert between different strengths of gelatin, you need to divide the strength of the gelatin used in the recipe by the strength of your gelatin.
 
@@ -5536,7 +5536,7 @@ But as soon as it comes to the slightest change in the recipe, such as using a m
 
 I always try to answer all the questions you have. But I would really like each of you to understand how this can be done on your own, because in fact, if you know the conversion formula, it will be easy as pie.
 
-## ‼SO, HERE’S THE FORMULA:
+## SO, HERE’S THE FORMULA:
 
 In order to convert the recipe for another size mold, you need to divide the square of the diameter of the larger mold by the square of the diameter of the smaller mold.
 
@@ -5761,7 +5761,7 @@ A similar problem often happens with sponge cakes, especially if we don’t give
 
 ## CAKE COATING. COMMON PROBLEMS
 
-##
+## CAKE COATING. COMMON PROBLEMS — 3
 In the previous part of the article, we began to analyze the reasons why the filling may begin to get out in the form of bubbles on the side surface of the coating.
 
 So let's continue.

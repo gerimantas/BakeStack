@@ -301,7 +301,8 @@ def is_ingredient_line(line):
 
 
 def strip_step_number(line):
-    return STEP_NUM_RE.sub("", line).strip()
+    line = STEP_NUM_RE.sub("", line).strip()
+    return BULLET_PREFIX.sub("", line).strip()
 
 
 def split_recipes(text):
