@@ -1,28 +1,26 @@
 # BakeStack — Context
 
 ## Status
-active — static site in `site/` (vanilla JS, no build step). EN data is now
-the verified-correct baseline: 73 recipes, 312 tips (see Next Tasks — LT is
-stale relative to this and needs a full redo). A DOCx-vs-JSON visual QA tool
-(`tools/qa-compare.html`) exists and found real bugs this session — use it
-before trusting either language's data again after any future parser change.
+active — static site in `site/`, live on GitHub Pages:
+**https://gerimantas.github.io/BakeStack/** (public repo, deploy via
+`.github/workflows/deploy.yml`, auto-updates on every push to master that
+touches `site/**`). LT translation is now fully current with EN — both
+73 recipes / 312 tips, structurally validated (counts, amounts, units,
+categoryGroup/topic fields all match). 5 original-.docx typos found and
+fixed at the source (`Receptai.md`/`Patarimai.md` + generated JSON), plus
+6 LT glossary-consistency fixes. QA compare tool (`site/tools/qa-compare.html`)
+copied into the deployed site and linked from the nav ("QA" link) — all
+remaining QA-tool findings investigated and confirmed to be either the
+known S1 sub-recipe merge or a naming-only mismatch (content not lost).
 
-EN-only this session: fixed a tips mis-splitting bug (393→312, wrong `###`
-promoted to standalone entries), moved 8 recipe-shaped-but-not-recipes
-sections into tips, removed one true duplicate recipe (74→73), added
-`categoryGroup` (11 groups, recipes) and `topic` (8 topics, tips) fields
-feeding new UI filters and a topic-aware related-tips ranking, fixed a
-same-session `amount_ml` regression, and built a density-based unit-merge
-for the shopping list (one ingredient = one unit, not mixed ml/g). Full
-detail: Archive entry below (S5).
+Two nav bugs fixed this session: the top bar wasn't staying sticky on
+scroll (an empty wrapper div around it had zero scroll range to stick
+against), and switching EN↔LT didn't update the nav menu text without a
+hard reload (the update function only ever touched aria attributes, not
+the link text itself). "Shopping list" removed from the nav per user
+request (route still works, just not promoted).
 
-Site features from S4 (list/detail/scaling/cost/favorites/shopping-list/
-EN-LT toggle, command-palette search, mobile-responsive) are unchanged and
-still verified working — this session only touched data shape + the
-specific UI pieces named above.
-GitHub repo live and public: https://github.com/gerimantas/BakeStack
-
-Session S5 closed 2026-08-25.
+Session S6 closed 2026-08-25.
 
 ## What this project is
 BakeStack: a recipe/pastry-tips database and calculator, starting from
@@ -362,38 +360,134 @@ before investing in that.
   a schema now.
 
 ## Done Log
+- 2026-08-25 (S6): LT translation fully redone (73/312, matches EN exactly),
+  5 original-.docx typos fixed at the source, 6 LT glossary-consistency
+  fixes, nav sticky bug + nav lang-switch bug fixed, QA tool wired into the
+  deployed site, GitHub Pages deploy live via GitHub Actions. Full detail
+  in Archive entry below.
 - 2026-08-25 (S5): QA compare tool built and used to find + fix a real tips
   mis-splitting bug (393→312), recipe dedup (74→73), category/topic UI
   filters added, related-tips ranking fixed, shopping-list unit-merge via
   density table. Full detail in Archive entry below.
-- 2026-08-25 (S4): Full static site built in `site/` (Hallmark bespoke
-  design) — list/detail/scaling/cost/favorites/shopping-list/EN-LT,
-  Playwright-verified. Tag vocabulary (category/flavor/ingredient/
-  technique, 163 terms) translated and web-verified. Command-palette
-  search dropdown + full `#/search` results page built, 3 rounds of
-  user-reported bugs fixed. Full detail in Archive entry below.
 
 ## Next tasks
-1. Redo LT translation (`recipes_lt.json`, `tips_lt.json`) against the new
-   EN structure from S5 — 73 vs current 74 recipes, 312 vs current 363
-   tips, plus the new `categoryGroup`/`topic` fields LT doesn't have yet.
-   plan: this session's Archive entry (S5) below has the exact before/after
-   for every EN change LT needs to mirror. Until this is done, LT mode
-   shows stale/mismatched data (site won't crash — a fallback guard is in
-   `site/js/data.js` — but LT content is behind EN).
-2. Deploy `site/` to GitHub Pages (push + enable Pages on the repo,
-   source = `/site` or a `gh-pages` branch — not yet configured).
-3. Optional: fill in `site/data/prices.json` with real ingredient
+1. Optional: fill in `site/data/prices.json` with real ingredient
    prices to see cost estimates on recipe pages (currently only one
    placeholder entry — "unsalted butter").
-4. Optional: add real photos later (`image` field already reserved
+2. Optional: add real photos later (`image` field already reserved
    null on every recipe/tip record per the original plan).
-5. Optional: expand `site/js/density.js`'s ~30-entry density table if a
+3. Optional: expand `site/js/density.js`'s ~30-entry density table if a
    shopping-list unit still shows unmerged for a common ingredient — not
    exhaustively checked against all 41 distinct volume-unit ingredient
    names in the data, only spot-checked (cornstarch, baking soda).
 
 ## Archive
+
+### Session 2026-08-25 (S6) — LT translation redo (73 recipes, 312 tips) to match S5 EN structure, nav bugs fixed, GitHub Pages deploy live
+
+Redid the full LT translation from scratch since S5's dedup/merge/categoryGroup/topic
+changes broke the old EN↔LT array-index pairing that `site/js/data.js` relies on
+(recipes/tips are matched by position, not id — order and count must match exactly).
+Dispatched 8 parallel background agents (4 recipe chunks, 4 tip chunks) mirroring the
+S2 approach. One tips chunk (78 entries — pectin/eggs/gelatin/food-coloring theory
+articles) had the agent refuse 3 times over the source's personal-voice content and a
+third-party-looking handle (`@ma_rusya_manko`); the user confirmed ownership directly,
+and rather than re-prompting a fresh agent with no way to verify that confirmation, I
+translated that chunk myself in-session. Merged all 8 chunks into `recipes_lt.json`/
+`tips_lt.json` (73/312, matching EN exactly) — structural validation (ingredient/step/
+tag counts, amount/unit/amount_ml values, categoryGroup/topic fields) passed with zero
+mismatches against EN.
+
+**Bugs found via user-directed spot-checks, not automated scanning:**
+- One EN recipe title had a typo in the *original .docx* itself ("ANANA TEA CAKE" —
+  missing "B"), silently carried through every pipeline stage since S1. Found by user
+  screenshot. Traced to the source docx via `office/unpack.py`, confirmed it wasn't a
+  parser artifact. Same root cause found in 3 tip titles ("ORMING"/"ECTIN"/"NFUSION" —
+  each missing a leading letter). Fixed in `recipes.json`/`tips.json` AND in
+  `Receptai.md`/`Patarimai.md` (the actual .docx-derived source), so re-running the
+  parser from scratch won't reintroduce them. A spellchecker pass (`pyspellchecker`)
+  over all recipe/tip text then found 5 more real typos in tip body text
+  (properattachment, thatstarch, cofee, specifed, creame) among ~240 flagged tokens
+  (rest were legitimate pastry terms/brands/British spelling).
+- LT-specific quality issues the user's "brownie" spot-check triggered a systematic
+  glossary-consistency check for: `tags` arrays used glossary.json terms correctly but
+  6 titles/ingredients didn't (MANGO→MANGŲ ×3, GORGONZOLA→GORGONZOLOS SŪRIU, 2×
+  "CUSTARD KREMĄ"→"kremą (custard)" format mismatch). "BROWNIE" itself researched via
+  web search (real LT sites use both "brownie" and "braunis") and left as-is per user
+  call. 32 recipe steps had literal English "minutes"/"hours" left untranslated by one
+  agent — fixed via regex sweep.
+- **Nav bar didn't stay sticky when scrolling.** Root cause: `position:sticky` was
+  correct CSS, but the header was rendered inside an empty `#nav-slot` wrapper div
+  whose height exactly matched the header's own height — a sticky element needs scroll
+  range *within* its containing block to have something to stick against; zero range
+  means it just scrolls away. Reproduced in an isolated minimal HTML file to rule out
+  flex/overflow-x:clip before finding the real cause. Fixed by making `#nav-slot` BE
+  the `<header class="nav">` itself instead of wrapping it.
+- **Nav menu text (Recipes/Tips/etc.) didn't update on EN↔LT switch without a hard
+  reload.** The nav renders once per page load (intentional, from S4, so the search
+  input never loses focus mid-keystroke) and is patched via `updateNavState()` on every
+  route/lang change — but that function only ever touched `aria-current`/`aria-pressed`,
+  never the link text itself or the search placeholder. Fixed by having it also set
+  `textContent`/`placeholder`/`aria-label` on every call.
+- User reported the fix wasn't working in Chrome (worked in Firefox) — root cause was
+  Chrome caching the local dev server's `app.js` aggressively even past hard refresh;
+  confirmed not a real bug (same code, same headless-Chromium test passed both times).
+
+**QA compare tool wired into the deployed site:** copied `tools/qa-compare.html` +
+regenerated `qa-compare-data.json` into `site/tools/` (GitHub Pages only serves
+`site/`, so the tool wasn't reachable there before), added a "QA" nav link (external,
+opens in new tab). Adding it as a 4th `NAV_LINKS` entry initially broke the lang-switch
+text update (index-based lookup miscounted), fixed by giving it a
+`nav__link--external` class excluded from that logic. Also hid "Shopping list" from
+the nav per user request (route still works, just not promoted).
+
+**Investigated every remaining QA-tool "missing/extra" finding** (after fixing the 4
+typo-caused ones): all trace to either the already-documented S1 sub-recipe merge
+(CRUST/CREAM CHEESE LAYER/PANA-COTTA folded into "VANILLA PANA-COTTA CHEESECAKE") or
+the QA tool's strict `##`-title matching missing content that legitimately lives under
+a nested `###` sub-heading's title instead (e.g. "Agar" tip = the `###` sub-section of
+"## TERMS AND CONDITIONS OF STORAGE"). No actual data loss found in either recipes or
+tips.
+
+**GitHub Pages deploy live.** User asked to make repo private first (has GitHub Pro);
+did so via `gh repo edit --visibility private`, pushed all 8 pending commits. Then
+discovered Pages doesn't support a custom `/site` source path (only `/` or `/docs`) —
+rather than renaming `site/` to `docs/` (would ripple through every script/doc
+reference for no real gain, flagged by user as a "cheap fix that costs more later"
+pattern to avoid), used the supported GitHub Actions deploy method instead:
+`.github/workflows/deploy.yml` (upload-pages-artifact + deploy-pages, triggered on
+push to master when `site/**` changes), Pages configured via `gh api` with
+`build_type=workflow`. Verified live at
+**https://gerimantas.github.io/BakeStack/** (200 status, no login, fresh browser
+context). User then asked for a private repo → realized private Pages has no
+shareable link for non-collaborators (GitHub hard limit, not a setting) → repo flipped
+back to public per user's explicit choice, since recipe content was already decided
+non-sensitive in S1.
+
+Also generated `bakestack-qr.png` (QR code to the live URL, project root, untracked —
+personal file, not a project asset) and a shareable Claude Artifact (QR + copyable
+link card, styled off the site's own amber/warm token palette) at the user's request.
+
+**Code:** `recipes_lt.json`, `tips_lt.json`, `site/data/recipes_lt.json`,
+`site/data/tips_lt.json` (full LT regen); `recipes.json`, `tips.json`,
+`site/data/recipes.json`, `site/data/tips.json`, `Receptai.md`, `Patarimai.md` (5
+source typo fixes, EN-side); `site/index.html`, `site/js/app.js` (nav-slot sticky fix,
+nav-state i18n fix, QA link, shopping-list nav removal), `site/js/data.js` (removed
+stale FIXME); `site/tools/qa-compare.html`, `site/tools/qa-compare-data.json` (new —
+copied in for Pages); `tools/qa-compare-data.json` (regenerated);
+`.github/workflows/deploy.yml` (new).
+**Entry point:** Site: `cd site && python -m http.server <port>` (local) or
+https://gerimantas.github.io/BakeStack/ (live). LT regen: no single command — was
+8 parallel agent dispatches with per-chunk prompts, see this session's transcript if
+redoing. QA tool: `node scripts/build-qa-compare.js` regenerates
+`tools/qa-compare-data.json`, then copy to `site/tools/` for the tool to reflect
+current data.
+**Not measured:** whether any other original-.docx typos exist beyond the 5 the
+spellchecker pass caught (spellchecker flagged real words used as typos in domain
+context could still slip through — e.g. a wrong-but-valid ingredient word); real
+ingredient prices still not filled in (`site/data/prices.json` — one placeholder
+entry); `site/js/density.js`'s ~30-entry unit-merge table still not exhaustively
+checked against all volume-unit ingredients (carried over from S5, unchanged).
 
 ### Session 2026-08-25 (S5) — QA compare tool built, tips mis-split bug found and fixed (393→312), recipe category groups + topic-aware related-tips, shopping-list unit-merge via density table, amount_ml regression fixed
 
