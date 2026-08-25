@@ -8,64 +8,76 @@
       {
         "amount": 190,
         "unit": "g",
-        "name": "nesūdyto sviesto"
+        "name": "nesūdyto sviesto",
+        "section": "Ingredientai"
       },
       {
         "amount": 290,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Ingredientai"
       },
       {
         "amount": 2,
         "unit": null,
-        "name": "didelių kiaušinių"
+        "name": "didelių kiaušinių",
+        "section": "Ingredientai"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "alkalizuotų (Dutch-processed) kakavos miltelių"
+        "name": "alkalizuotų (Dutch-processed) kakavos miltelių",
+        "section": "Ingredientai"
       },
       {
         "amount": 270,
         "unit": "g",
-        "name": "kvietinių miltų"
+        "name": "kvietinių miltų",
+        "section": "Ingredientai"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "kukurūzų krakmolo",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Ingredientai"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "valgomosios sodos",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Ingredientai"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "žiupsnelis druskos"
+        "name": "žiupsnelis druskos",
+        "section": "Ingredientai"
       },
       {
         "amount": 300,
         "unit": "g",
-        "name": "pieniško šokolado (lašelių)"
+        "name": "pieniško šokolado (lašelių)",
+        "section": "Ingredientai"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "smulkintų lazdyno riešutų"
+        "name": "smulkintų lazdyno riešutų",
+        "section": "Ingredientai"
       },
       {
         "amount": 10,
         "unit": null,
-        "name": "Ferrero Rocher saldainių"
+        "name": "Ferrero Rocher saldainių",
+        "section": "Ingredientai"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "Nutella (įdarui)"
+        "name": "Nutella (įdarui)",
+        "section": "Ingredientai"
       }
     ],
     "steps": [
@@ -110,97 +122,116 @@
       {
         "amount": 180,
         "unit": "g",
-        "name": "šilto pieno"
+        "name": "šilto pieno",
+        "section": "Tešla"
       },
       {
         "amount": 7,
         "unit": "g",
-        "name": "sausų mielių"
+        "name": "sausų mielių",
+        "section": "Tešla"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Tešla"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "ištirpinto nesūdyto sviesto"
+        "name": "ištirpinto nesūdyto sviesto",
+        "section": "Tešla"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "kiaušinio + 1 trynio"
+        "name": "kiaušinio + 1 trynio",
+        "section": "Tešla"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "2 citrinų žievelė"
+        "name": "2 citrinų žievelė",
+        "section": "Tešla"
       },
       {
         "amount": 4,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Tešla"
       },
       {
         "amount": 360,
         "unit": "g",
-        "name": "stiprių miltų (naudoju Zernari Select, tinka ir duoniniai miltai)"
+        "name": "stiprių miltų (naudoju Zernari Select, tinka ir duoniniai miltai)",
+        "section": "Tešla"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "minkšto nesūdyto sviesto"
+        "name": "minkšto nesūdyto sviesto",
+        "section": "Neprivaloma apatinio sluoksnio glazūra (papildomam švelnumui ir sultingumui)"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "citrinos žievelė"
+        "name": "citrinos žievelė",
+        "section": "Neprivaloma apatinio sluoksnio glazūra (papildomam švelnumui ir sultingumui)"
       },
       {
         "amount": 300,
         "unit": "g",
-        "name": "mėlynių"
+        "name": "mėlynių",
+        "section": "Mėlynių įdaras"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Mėlynių įdaras"
       },
       {
         "amount": 40,
         "unit": "g",
-        "name": "citrinos gabaliukų"
+        "name": "citrinos gabaliukų",
+        "section": "Mėlynių įdaras"
       },
       {
         "amount": 16,
         "unit": "g",
-        "name": "kukurūzų krakmolo"
+        "name": "kukurūzų krakmolo",
+        "section": "Mėlynių įdaras"
       },
       {
         "amount": 40,
         "unit": "g",
-        "name": "citrinos sulčių"
+        "name": "citrinos sulčių",
+        "section": "Mėlynių įdaras"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "trynių"
+        "name": "trynių",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 90,
         "unit": "g",
-        "name": "citrinos sulčių"
+        "name": "citrinos sulčių",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "citrinos žievelė"
+        "name": "citrinos žievelė",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": {
@@ -208,52 +239,62 @@
           "max": 9
         },
         "unit": "g",
-        "name": "kukurūzų krakmolo"
+        "name": "kukurūzų krakmolo",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "nesūdyto sviesto"
+        "name": "nesūdyto sviesto",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "minkšto nesūdyto sviesto"
+        "name": "minkšto nesūdyto sviesto",
+        "section": "Glazūra"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Glazūra"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Glazūra"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "citrinos sulčių"
+        "name": "citrinos sulčių",
+        "section": "Glazūra"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "citrinos žievelė"
+        "name": "citrinos žievelė",
+        "section": "Glazūra"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "kreminio sūrio arba maskarponės"
+        "name": "kreminio sūrio arba maskarponės",
+        "section": "Kremas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "riebios grietinėlės (33–36%)"
+        "name": "riebios grietinėlės (33–36%)",
+        "section": "Kremas"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "mėlynių įdaro"
+        "name": "mėlynių įdaro",
+        "section": "Kremas"
       }
     ],
     "steps": [
@@ -292,116 +333,138 @@
       {
         "amount": 55,
         "unit": "g",
-        "name": "sviesto (82%)"
+        "name": "sviesto (82%)",
+        "section": "TEŠLA"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "bekvapio aliejaus"
+        "name": "bekvapio aliejaus",
+        "section": "TEŠLA"
       },
       {
         "amount": 300,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "TEŠLA"
       },
       {
         "amount": 4,
         "unit": null,
-        "name": "didelių kiaušinių"
+        "name": "didelių kiaušinių",
+        "section": "TEŠLA"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "vanilės pastos/ekstrakto",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "TEŠLA"
       },
       {
         "amount": 330,
         "unit": "g",
-        "name": "kvietinių miltų"
+        "name": "kvietinių miltų",
+        "section": "TEŠLA"
       },
       {
         "amount": 2,
         "unit": "tsp",
         "name": "kepimo miltelių",
-        "amount_ml": 10
+        "amount_ml": 10,
+        "section": "TEŠLA"
       },
       {
         "amount": 0.75,
         "unit": "tsp",
         "name": "valgomosios sodos",
-        "amount_ml": 3.75
+        "amount_ml": 3.75,
+        "section": "TEŠLA"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "druskos",
-        "amount_ml": 2.5
+        "amount_ml": 2.5,
+        "section": "TEŠLA"
       },
       {
         "amount": 240,
         "unit": "g",
-        "name": "kefyro"
+        "name": "kefyro",
+        "section": "TEŠLA"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "marakujos tyrės"
+        "name": "marakujos tyrės",
+        "section": "ĮDARAS"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "mandarinų minkštimo"
+        "name": "mandarinų minkštimo",
+        "section": "ĮDARAS"
       },
       {
         "amount": 40,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "ĮDARAS"
       },
       {
         "amount": 3,
         "unit": "g",
-        "name": "NH pektino"
+        "name": "NH pektino",
+        "section": "ĮDARAS"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "želatinos"
+        "name": "želatinos",
+        "section": "ĮDARAS"
       },
       {
         "amount": 12,
         "unit": "g",
-        "name": "šalto vandens"
+        "name": "šalto vandens",
+        "section": "ĮDARAS"
       },
       {
         "amount": 35,
         "unit": "g",
-        "name": "mandarinų minkštimo"
+        "name": "mandarinų minkštimo",
+        "section": "ĮDARAS"
       },
       {
         "amount": 240,
         "unit": "g",
-        "name": "marakujos tyrės"
+        "name": "marakujos tyrės",
+        "section": "KREMAS"
       },
       {
         "amount": 350,
         "unit": "g",
-        "name": "baltojo šokolado (28–30%)"
+        "name": "baltojo šokolado (28–30%)",
+        "section": "KREMAS"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "kakavos sviesto"
+        "name": "kakavos sviesto",
+        "section": "KREMAS"
       },
       {
         "amount": 360,
         "unit": "g",
-        "name": "riebios grietinėlės (33–36%)"
+        "name": "riebios grietinėlės (33–36%)",
+        "section": "KREMAS"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "maskarponės"
+        "name": "maskarponės",
+        "section": "KREMAS"
       }
     ],
     "steps": [
@@ -535,78 +598,92 @@
       {
         "amount": 200,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 115,
         "unit": "g",
-        "name": "ištirpinto sviesto"
+        "name": "ištirpinto sviesto",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 225,
         "unit": "g",
-        "name": "tirštos moliūgų tyrės"
+        "name": "tirštos moliūgų tyrės",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "pieno (kambario temperatūros)"
+        "name": "pieno (kambario temperatūros)",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 70,
         "unit": "g",
-        "name": "kiaušinių (kambario temperatūros)"
+        "name": "kiaušinių (kambario temperatūros)",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 175,
         "unit": "g",
-        "name": "miltų"
+        "name": "miltų",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "kepimo miltelių",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 0.6666666666666666,
         "unit": "tsp",
         "name": "valgomosios sodos",
-        "amount_ml": 3.33
+        "amount_ml": 3.33,
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "druskos",
-        "amount_ml": 2.5
+        "amount_ml": 2.5,
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "cinamono",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "maltų imbierų",
-        "amount_ml": 2.5
+        "amount_ml": 2.5,
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 0.25,
         "unit": "tsp",
         "name": "muskato riešuto",
-        "amount_ml": 1.25
+        "amount_ml": 1.25,
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "kakavos miltelių"
+        "name": "kakavos miltelių",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "pieno (kambario temperatūros)"
+        "name": "pieno (kambario temperatūros)",
+        "section": "INGREDIENTAI"
       }
     ],
     "steps": [
@@ -645,112 +722,134 @@
       {
         "amount": 180,
         "unit": "g",
-        "name": "šilto pieno"
+        "name": "šilto pieno",
+        "section": "Tešla"
       },
       {
         "amount": 7,
         "unit": "g",
-        "name": "sausų mielių"
+        "name": "sausų mielių",
+        "section": "Tešla"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "baltojo cukraus"
+        "name": "baltojo cukraus",
+        "section": "Tešla"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "ištirpinto nesūdyto sviesto"
+        "name": "ištirpinto nesūdyto sviesto",
+        "section": "Tešla"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "kiaušinio + 1 trynio"
+        "name": "kiaušinio + 1 trynio",
+        "section": "Tešla"
       },
       {
         "amount": 4,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Tešla"
       },
       {
         "amount": 360,
         "unit": "g",
-        "name": "stiprių miltų (naudoju Zernari Select, tinka bet kokie duoniniai miltai)"
+        "name": "stiprių miltų (naudoju Zernari Select, tinka bet kokie duoniniai miltai)",
+        "section": "Tešla"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "minkšto nesūdyto sviesto"
+        "name": "minkšto nesūdyto sviesto",
+        "section": "Neprivaloma apatinio sluoksnio glazūra (papildomam švelnumui ir sultingumui)"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "baltojo cukraus"
+        "name": "baltojo cukraus",
+        "section": "Neprivaloma apatinio sluoksnio glazūra (papildomam švelnumui ir sultingumui)"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Neprivaloma apatinio sluoksnio glazūra (papildomam švelnumui ir sultingumui)"
       },
       {
         "amount": 25,
         "unit": "g",
-        "name": "kokoso drožlių"
+        "name": "kokoso drožlių",
+        "section": "Neprivaloma apatinio sluoksnio glazūra (papildomam švelnumui ir sultingumui)"
       },
       {
         "amount": 500,
         "unit": "g",
-        "name": "kauliukų neturinčių rūgščių vyšnių"
+        "name": "kauliukų neturinčių rūgščių vyšnių",
+        "section": "Rūgščiųjų vyšnių įdaras"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "baltojo cukraus"
+        "name": "baltojo cukraus",
+        "section": "Rūgščiųjų vyšnių įdaras"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "kukurūzų krakmolo"
+        "name": "kukurūzų krakmolo",
+        "section": "Rūgščiųjų vyšnių įdaras"
       },
       {
         "amount": 25,
         "unit": "g",
-        "name": "citrinos sulčių"
+        "name": "citrinos sulčių",
+        "section": "Rūgščiųjų vyšnių įdaras"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "minkšto nesūdyto sviesto"
+        "name": "minkšto nesūdyto sviesto",
+        "section": "Tepamas kremas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "baltojo cukraus"
+        "name": "baltojo cukraus",
+        "section": "Tepamas kremas"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Tepamas kremas"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "kokoso drožlių"
+        "name": "kokoso drožlių",
+        "section": "Tepamas kremas"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "kreminio sūrio arba maskarponės"
+        "name": "kreminio sūrio arba maskarponės",
+        "section": "Glazūra"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "riebios grietinėlės 33–36% arba kokosų grietinėlės 12–18%"
+        "name": "riebios grietinėlės 33–36% arba kokosų grietinėlės 12–18%",
+        "section": "Glazūra"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "kokoso drožlių"
+        "name": "kokoso drožlių",
+        "section": "Glazūra"
       }
     ],
     "steps": [
@@ -790,107 +889,128 @@
       {
         "amount": 180,
         "unit": "g",
-        "name": "šilto pieno"
+        "name": "šilto pieno",
+        "section": "Tešla"
       },
       {
         "amount": 7,
         "unit": "g",
-        "name": "šviežių mielių"
+        "name": "šviežių mielių",
+        "section": "Tešla"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Tešla"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "ištirpinto nesūdyto sviesto"
+        "name": "ištirpinto nesūdyto sviesto",
+        "section": "Tešla"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "kiaušinio + 1 trynio"
+        "name": "kiaušinio + 1 trynio",
+        "section": "Tešla"
       },
       {
         "amount": 4,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Tešla"
       },
       {
         "amount": 360,
         "unit": "g",
-        "name": "stiprių miltų (naudoju Zernari Select)"
+        "name": "stiprių miltų (naudoju Zernari Select)",
+        "section": "Tešla"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "minkšto nesūdyto sviesto"
+        "name": "minkšto nesūdyto sviesto",
+        "section": "Neprivaloma apatinio sluoksnio glazūra (papildomam švelnumui ir sultingumui)"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Neprivaloma apatinio sluoksnio glazūra (papildomam švelnumui ir sultingumui)"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "karamelės padažo (iš ankstesnio įrašo)"
+        "name": "karamelės padažo (iš ankstesnio įrašo)",
+        "section": "Neprivaloma apatinio sluoksnio glazūra (papildomam švelnumui ir sultingumui)"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "riebios grietinėlės (33–36%)"
+        "name": "riebios grietinėlės (33–36%)",
+        "section": "Neprivaloma apatinio sluoksnio glazūra (papildomam švelnumui ir sultingumui)"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Neprivaloma apatinio sluoksnio glazūra (papildomam švelnumui ir sultingumui)"
       },
       {
         "amount": 3,
         "unit": "g",
-        "name": "cinamono"
+        "name": "cinamono",
+        "section": "Neprivaloma apatinio sluoksnio glazūra (papildomam švelnumui ir sultingumui)"
       },
       {
         "amount": 65,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Karamelizuoti obuoliai"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "nesūdyto sviesto"
+        "name": "nesūdyto sviesto",
+        "section": "Karamelizuoti obuoliai"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "kubeliais pjaustytų obuolių"
+        "name": "kubeliais pjaustytų obuolių",
+        "section": "Karamelizuoti obuoliai"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "cinamono"
+        "name": "cinamono",
+        "section": "Karamelizuoti obuoliai"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "minkšto sviesto"
+        "name": "minkšto sviesto",
+        "section": "Įdaras"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Įdaras"
       },
       {
         "amount": 7,
         "unit": "g",
-        "name": "cinamono"
+        "name": "cinamono",
+        "section": "Įdaras"
       },
       {
         "amount": 3,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Įdaras"
       },
       {
         "amount": {
@@ -898,28 +1018,41 @@
           "max": 100
         },
         "unit": "g",
-        "name": "karamelės padažo (receptas anksčiau mano profilyje)"
+        "name": "karamelės padažo (receptas anksčiau mano profilyje)",
+        "section": "Įdaras"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "karamelizuoti obuoliai",
+        "section": "Įdaras"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "kreminio sūrio arba maskarponės"
+        "name": "kreminio sūrio arba maskarponės",
+        "section": "Glazūra"
       },
       {
         "amount": 25,
         "unit": "g",
-        "name": "karamelės (paprastos arba obuolių karamelės)"
+        "name": "karamelės (paprastos arba obuolių karamelės)",
+        "section": "Glazūra"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "riebios grietinėlės (33–36%)"
+        "name": "riebios grietinėlės (33–36%)",
+        "section": "Glazūra"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "papildomai karamelės aplaistymui",
+        "section": "Glazūra"
       }
     ],
     "steps": [
-      "karamelizuoti obuoliai",
-      "+ papildomai karamelės aplaistymui",
-      "⤵ Instrukcijos",
       "Į keptuvę suberkite cukrų ir pastatykite ant stiprios ugnies. Cukrui ištirpus, sudėkite minkštą sviestą ir maišykite, kol susijungs.",
       "Sudėkite obuolius ir cinamoną. Kepkite ant stiprios ugnies kelias minučių, nuolat maišydami, kol obuoliai taps šiek tiek permatomi, o perteklinis skystis išgaruos. Nukelkite nuo ugnies ir atvėsinkite.",
       "Sumaišykite šiltą pieną, cukrų, sviestą ir mieles. Sudėkite kiaušinį, trynį ir druską. Įmaišykite prasijotus miltus ir minkykite minkštą tešlą.",
@@ -954,108 +1087,129 @@
       {
         "amount": 180,
         "unit": "g",
-        "name": "šilto pieno"
+        "name": "šilto pieno",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 7,
         "unit": "g",
-        "name": "šviežių mielių"
+        "name": "šviežių mielių",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "ištirpinto nesūdyto sviesto"
+        "name": "ištirpinto nesūdyto sviesto",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "kiaušinio + 1 trynio"
+        "name": "kiaušinio + 1 trynio",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 4,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 335,
         "unit": "g",
-        "name": "stiprių miltų (naudoju Zernari Select, tinka ir duoniniai miltai)"
+        "name": "stiprių miltų (naudoju Zernari Select, tinka ir duoniniai miltai)",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 25,
         "unit": "g",
-        "name": "kakavos"
+        "name": "kakavos",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "minkšto nesūdyto sviesto"
+        "name": "minkšto nesūdyto sviesto",
+        "section": "Glazūra (papildomam švelnumui ir sultingumui)"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Glazūra (papildomam švelnumui ir sultingumui)"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "Baileys likerio"
+        "name": "Baileys likerio",
+        "section": "Glazūra (papildomam švelnumui ir sultingumui)"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Glazūra (papildomam švelnumui ir sultingumui)"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "minkšto nesūdyto sviesto"
+        "name": "minkšto nesūdyto sviesto",
+        "section": "Įdaras"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Įdaras"
       },
       {
         "amount": 25,
         "unit": "g",
-        "name": "Baileys likerio"
+        "name": "Baileys likerio",
+        "section": "Įdaras"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "kakavos"
+        "name": "kakavos",
+        "section": "Įdaras"
       },
       {
         "amount": 5,
         "unit": "g",
-        "name": "cinamono"
+        "name": "cinamono",
+        "section": "Įdaras"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Įdaras"
       },
       {
         "amount": 350,
         "unit": "g",
-        "name": "maskarponės"
+        "name": "maskarponės",
+        "section": "Glazūra"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "Baileys likerio"
+        "name": "Baileys likerio",
+        "section": "Glazūra"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "Baileys vienai bandelei",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Glazūra"
       }
     ],
     "steps": [
@@ -1089,32 +1243,38 @@
       {
         "amount": 375,
         "unit": "g",
-        "name": "kvietinių miltų"
+        "name": "kvietinių miltų",
+        "section": "Trapi tešla (didelė porcija ~3–4 sūrio pyragams)"
       },
       {
         "amount": 45,
         "unit": "g",
-        "name": "migdolų miltų"
+        "name": "migdolų miltų",
+        "section": "Trapi tešla (didelė porcija ~3–4 sūrio pyragams)"
       },
       {
         "amount": 230,
         "unit": "g",
-        "name": "nesūdyto sviesto"
+        "name": "nesūdyto sviesto",
+        "section": "Trapi tešla (didelė porcija ~3–4 sūrio pyragams)"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "kiaušinių"
+        "name": "kiaušinių",
+        "section": "Trapi tešla (didelė porcija ~3–4 sūrio pyragams)"
       },
       {
         "amount": 127,
         "unit": "g",
-        "name": "cukraus pudros"
+        "name": "cukraus pudros",
+        "section": "Trapi tešla (didelė porcija ~3–4 sūrio pyragams)"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Trapi tešla (didelė porcija ~3–4 sūrio pyragams)"
       },
       {
         "amount": {
@@ -1122,54 +1282,64 @@
           "max": 230
         },
         "unit": "g",
-        "name": "trapios tešlos trupinių"
+        "name": "trapios tešlos trupinių",
+        "section": "Pagrindas"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "migdolų drožlių"
+        "name": "migdolų drožlių",
+        "section": "Pagrindas"
       },
       {
         "amount": 90,
         "unit": "g",
-        "name": "ištirpinto nesūdyto sviesto"
+        "name": "ištirpinto nesūdyto sviesto",
+        "section": "Pagrindas"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "smulkintų lazdyno riešutų"
+        "name": "smulkintų lazdyno riešutų",
+        "section": "Pagrindas"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "rudojo cukraus (neprivaloma)",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Pagrindas"
       },
       {
         "amount": 500,
         "unit": "g",
-        "name": "maskarponės"
+        "name": "maskarponės",
+        "section": "Varškės įdaras"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Varškės įdaras"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "Baileys likerio"
+        "name": "Baileys likerio",
+        "section": "Varškės įdaras"
       },
       {
         "amount": 300,
         "unit": "g",
-        "name": "riebios grietinėlės (33–36%)"
+        "name": "riebios grietinėlės (33–36%)",
+        "section": "Varškės įdaras"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "vanilės ekstrakto",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Varškės įdaras"
       },
       {
         "amount": {
@@ -1177,27 +1347,32 @@
           "max": 220
         },
         "unit": "g",
-        "name": "Savoiardi sausainėlių"
+        "name": "Savoiardi sausainėlių",
+        "section": "Savoiardi sluoksnis"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "espreso"
+        "name": "espreso",
+        "section": "Savoiardi sluoksnis"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "Baileys likerio"
+        "name": "Baileys likerio",
+        "section": "Savoiardi sluoksnis"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "riebios grietinėlės (30–33%)"
+        "name": "riebios grietinėlės (30–33%)",
+        "section": "Dekoravimas"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "Kakava"
+        "name": "Kakava",
+        "section": "Dekoravimas"
       }
     ],
     "steps": [
@@ -1243,102 +1418,122 @@
       {
         "amount": 180,
         "unit": "g",
-        "name": "šilto pieno"
+        "name": "šilto pieno",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 7,
         "unit": "g",
-        "name": "šviežių mielių"
+        "name": "šviežių mielių",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "ištirpinto nesūdyto sviesto"
+        "name": "ištirpinto nesūdyto sviesto",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "kiaušinio + 1 trynio"
+        "name": "kiaušinio + 1 trynio",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 4,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 335,
         "unit": "g",
-        "name": "stiprių miltų (naudoju Zernari Select, tinka ir duoniniai miltai)"
+        "name": "stiprių miltų (naudoju Zernari Select, tinka ir duoniniai miltai)",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 25,
         "unit": "g",
-        "name": "kakavos miltelių"
+        "name": "kakavos miltelių",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "minkšto nesūdyto sviesto"
+        "name": "minkšto nesūdyto sviesto",
+        "section": "Apatinio sluoksnio glazūra"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Apatinio sluoksnio glazūra"
       },
       {
         "amount": 45,
         "unit": "g",
-        "name": "riebios grietinėlės"
+        "name": "riebios grietinėlės",
+        "section": "Apatinio sluoksnio glazūra"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "kakavos miltelių"
+        "name": "kakavos miltelių",
+        "section": "Apatinio sluoksnio glazūra"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "cinamono"
+        "name": "cinamono",
+        "section": "Apatinio sluoksnio glazūra"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Apatinio sluoksnio glazūra"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "minkšto nesūdyto sviesto"
+        "name": "minkšto nesūdyto sviesto",
+        "section": "Šokoladinis įdaras"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Šokoladinis įdaras"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "kakavos miltelių"
+        "name": "kakavos miltelių",
+        "section": "Šokoladinis įdaras"
       },
       {
         "amount": 6,
         "unit": "g",
-        "name": "cinamono"
+        "name": "cinamono",
+        "section": "Šokoladinis įdaras"
       },
       {
         "amount": 3,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Šokoladinis įdaras"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "cukruotos apelsinų žievelės (receptas mano profilyje, žr. Reels skiltį)"
+        "name": "cukruotos apelsinų žievelės (receptas mano profilyje, žr. Reels skiltį)",
+        "section": "Šokoladinis įdaras"
       },
       {
         "amount": {
@@ -1346,22 +1541,26 @@
           "max": 120
         },
         "unit": "g",
-        "name": "šokolado gabaliukų (naudoju 58% šokoladą)"
+        "name": "šokolado gabaliukų (naudoju 58% šokoladą)",
+        "section": "Šokoladinis įdaras"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "minkšto nesūdyto sviesto"
+        "name": "minkšto nesūdyto sviesto",
+        "section": "Glazūra"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "kreminio sūrio (kambario temperatūros)"
+        "name": "kreminio sūrio (kambario temperatūros)",
+        "section": "Glazūra"
       },
       {
         "amount": 125,
         "unit": "g",
-        "name": "ištirpinto juodojo šokolado"
+        "name": "ištirpinto juodojo šokolado",
+        "section": "Glazūra"
       }
     ],
     "steps": [
@@ -1397,92 +1596,110 @@
       {
         "amount": 180,
         "unit": "g",
-        "name": "šilto pieno"
+        "name": "šilto pieno",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 7,
         "unit": "g",
-        "name": "šviežių mielių"
+        "name": "šviežių mielių",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "ištirpinto nesūdyto sviesto"
+        "name": "ištirpinto nesūdyto sviesto",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "kiaušinio + 1 trynio"
+        "name": "kiaušinio + 1 trynio",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 4,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 335,
         "unit": "g",
-        "name": "stiprių miltų (naudoju Zernari Select)"
+        "name": "stiprių miltų (naudoju Zernari Select)",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 25,
         "unit": "g",
-        "name": "kakavos"
+        "name": "kakavos",
+        "section": "Šokoladinė tešla"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "minkšto nesūdyto sviesto"
+        "name": "minkšto nesūdyto sviesto",
+        "section": "Apatinis sluoksnis (papildomam sultingumui)"
       },
       {
         "amount": 45,
         "unit": "g",
-        "name": "riešutų pastos/sviesto (naudojau lazdyno riešutų, bet tinka bet kokia riešutų pasta arba Nutella)"
+        "name": "riešutų pastos/sviesto (naudojau lazdyno riešutų, bet tinka bet kokia riešutų pasta arba Nutella)",
+        "section": "Apatinis sluoksnis (papildomam sultingumui)"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "rudojo cukraus"
+        "name": "rudojo cukraus",
+        "section": "Apatinis sluoksnis (papildomam sultingumui)"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "riebios grietinėlės"
+        "name": "riebios grietinėlės",
+        "section": "Apatinis sluoksnis (papildomam sultingumui)"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Apatinis sluoksnis (papildomam sultingumui)"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "minkšto nesūdyto sviesto"
+        "name": "minkšto nesūdyto sviesto",
+        "section": "Riešutų įdaras"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "riešutų pastos/sviesto"
+        "name": "riešutų pastos/sviesto",
+        "section": "Riešutų įdaras"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "rudojo cukraus"
+        "name": "rudojo cukraus",
+        "section": "Riešutų įdaras"
       },
       {
         "amount": 5,
         "unit": "g",
-        "name": "cinamono"
+        "name": "cinamono",
+        "section": "Riešutų įdaras"
       },
       {
         "amount": 3,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Riešutų įdaras"
       },
       {
         "amount": {
@@ -1490,7 +1707,8 @@
           "max": 100
         },
         "unit": "g",
-        "name": "sūdytos karamelės (receptas skelbtas anksčiau)"
+        "name": "sūdytos karamelės (receptas skelbtas anksčiau)",
+        "section": "Riešutų įdaras"
       },
       {
         "amount": {
@@ -1498,22 +1716,26 @@
           "max": 80
         },
         "unit": "g",
-        "name": "smulkintų skrudintų riešutų (naudojau lazdyno riešutus)"
+        "name": "smulkintų skrudintų riešutų (naudojau lazdyno riešutus)",
+        "section": "Riešutų įdaras"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "minkšto nesūdyto sviesto"
+        "name": "minkšto nesūdyto sviesto",
+        "section": "Glazūra"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "kreminio sūrio"
+        "name": "kreminio sūrio",
+        "section": "Glazūra"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "riešutų pastos"
+        "name": "riešutų pastos",
+        "section": "Glazūra"
       }
     ],
     "steps": [
@@ -1551,118 +1773,141 @@
       {
         "amount": 180,
         "unit": "g",
-        "name": "šilto pieno"
+        "name": "šilto pieno",
+        "section": "Tešla"
       },
       {
         "amount": 7,
         "unit": "g",
-        "name": "mielių"
+        "name": "mielių",
+        "section": "Tešla"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Tešla"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "tirpios espreso kavos",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Tešla"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "kiaušinio + 1 trynio"
+        "name": "kiaušinio + 1 trynio",
+        "section": "Tešla"
       },
       {
         "amount": 57,
         "unit": "g",
-        "name": "ištirpinto nesūdyto sviesto"
+        "name": "ištirpinto nesūdyto sviesto",
+        "section": "Tešla"
       },
       {
         "amount": 360,
         "unit": "g",
-        "name": "stiprių miltų"
+        "name": "stiprių miltų",
+        "section": "Tešla"
       },
       {
         "amount": 4,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Tešla"
       },
       {
         "amount": 57,
         "unit": "g",
-        "name": "minkšto sviesto"
+        "name": "minkšto sviesto",
+        "section": "Kavos įdaras"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "rudojo cukraus"
+        "name": "rudojo cukraus",
+        "section": "Kavos įdaras"
       },
       {
         "amount": 7,
         "unit": "g",
-        "name": "kakavos"
+        "name": "kakavos",
+        "section": "Kavos įdaras"
       },
       {
         "amount": 5,
         "unit": "g",
-        "name": "tirpios espreso kavos"
+        "name": "tirpios espreso kavos",
+        "section": "Kavos įdaras"
       },
       {
         "amount": 5,
         "unit": "g",
-        "name": "cinamono"
+        "name": "cinamono",
+        "section": "Kavos įdaras"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Kavos įdaras"
       },
       {
         "amount": 170,
         "unit": "g",
-        "name": "maskarponės"
+        "name": "maskarponės",
+        "section": "Mascarpone glazūra"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "riebios plaktos grietinėlės (33–36%)"
+        "name": "riebios plaktos grietinėlės (33–36%)",
+        "section": "Mascarpone glazūra"
       },
       {
         "amount": 25,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Mascarpone glazūra"
       },
       {
         "amount": 5,
         "unit": "g",
-        "name": "vanilės pastos"
+        "name": "vanilės pastos",
+        "section": "Mascarpone glazūra"
       },
       {
         "amount": 113,
         "unit": "g",
-        "name": "minkšto sviesto"
+        "name": "minkšto sviesto",
+        "section": "Mascarpone glazūra"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "rudojo cukraus"
+        "name": "rudojo cukraus",
+        "section": "Mascarpone glazūra"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Mascarpone glazūra"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "grietinėlės"
+        "name": "grietinėlės",
+        "section": "Mascarpone glazūra"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "Mascarpone glazūra"
       }
     ],
     "steps": [
@@ -1698,84 +1943,100 @@
       {
         "amount": 125,
         "unit": "g",
-        "name": "nesūdyto sviesto 82%"
+        "name": "nesūdyto sviesto 82%",
+        "section": "Tešla"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "2 citrinų žievelė"
+        "name": "2 citrinų žievelė",
+        "section": "Tešla"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Tešla"
       },
       {
         "amount": 180,
         "unit": "g",
-        "name": "kiaušinių"
+        "name": "kiaušinių",
+        "section": "Tešla"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "grietinės 20%"
+        "name": "grietinės 20%",
+        "section": "Tešla"
       },
       {
         "amount": 160,
         "unit": "g",
-        "name": "kvietinių miltų"
+        "name": "kvietinių miltų",
+        "section": "Tešla"
       },
       {
         "amount": 1.5,
         "unit": "tsp",
         "name": "kepimo miltelių",
-        "amount_ml": 7.5
+        "amount_ml": 7.5,
+        "section": "Tešla"
       },
       {
         "amount": 0.25,
         "unit": "tsp",
         "name": "druskos",
-        "amount_ml": 1.25
+        "amount_ml": 1.25,
+        "section": "Tešla"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "šviežių avietių"
+        "name": "šviežių avietių",
+        "section": "Tešla"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "kiaušinių"
+        "name": "kiaušinių",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 36,
         "unit": "g",
-        "name": "trynių"
+        "name": "trynių",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 90,
         "unit": "g",
-        "name": "citrinos sulčių"
+        "name": "citrinos sulčių",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 90,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "sviesto 82%"
+        "name": "sviesto 82%",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 270,
         "unit": "g",
-        "name": "citrinų kremo"
+        "name": "citrinų kremo",
+        "section": "Kremas"
       },
       {
         "amount": 330,
         "unit": "g",
-        "name": "maskarponės"
+        "name": "maskarponės",
+        "section": "Kremas"
       }
     ],
     "steps": [
@@ -1818,101 +2079,120 @@
       {
         "amount": 260,
         "unit": "g",
-        "name": "smulkintų datulių"
+        "name": "smulkintų datulių",
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "rudojo cukraus"
+        "name": "rudojo cukraus",
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "sviesto 82%"
+        "name": "sviesto 82%",
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "tamsiojo romo"
+        "name": "tamsiojo romo",
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 180,
         "unit": "g",
-        "name": "vandens"
+        "name": "vandens",
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "valgomosios sodos",
-        "amount_ml": 2.5
+        "amount_ml": 2.5,
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "kiaušinių"
+        "name": "kiaušinių",
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 130,
         "unit": "g",
-        "name": "bananų"
+        "name": "bananų",
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "vanilės pastos",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "graikinių riešutų"
+        "name": "graikinių riešutų",
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "druskos",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 260,
         "unit": "g",
-        "name": "kvietinių miltų"
+        "name": "kvietinių miltų",
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "kepimo miltelių"
+        "name": "kepimo miltelių",
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 460,
         "unit": "g",
-        "name": "kreminio sūrio"
+        "name": "kreminio sūrio",
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 460,
         "unit": "g",
-        "name": "riebios grietinėlės (33–36%)"
+        "name": "riebios grietinėlės (33–36%)",
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 160,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 240,
         "unit": "g",
-        "name": "kiaušinių"
+        "name": "kiaušinių",
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "kukurūzų krakmolo"
+        "name": "kukurūzų krakmolo",
+        "section": "Ingredientai (dviem keksams)"
       },
       {
         "amount": 1,
         "unit": "tbsp",
         "name": "vanilės pastos",
-        "amount_ml": 15
+        "amount_ml": 15,
+        "section": "Ingredientai (dviem keksams)"
       }
     ],
     "steps": [
@@ -1970,72 +2250,86 @@
       {
         "amount": 125,
         "unit": "g",
-        "name": "kvietinių miltų"
+        "name": "kvietinių miltų",
+        "section": "TEŠLA"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "migdolų miltų"
+        "name": "migdolų miltų",
+        "section": "TEŠLA"
       },
       {
         "amount": 1,
         "unit": "g",
-        "name": "kepimo miltelių"
+        "name": "kepimo miltelių",
+        "section": "TEŠLA"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "valgomosios sodos"
+        "name": "valgomosios sodos",
+        "section": "TEŠLA"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "druskos"
+        "name": "druskos",
+        "section": "TEŠLA"
       },
       {
         "amount": 215,
         "unit": "g",
-        "name": "bananų (nulupti)"
+        "name": "bananų (nulupti)",
+        "section": "TEŠLA"
       },
       {
         "amount": 25,
         "unit": "g",
-        "name": "grietinės"
+        "name": "grietinės",
+        "section": "TEŠLA"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "citrinos sulčių"
+        "name": "citrinos sulčių",
+        "section": "TEŠLA"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "baltojo cukraus"
+        "name": "baltojo cukraus",
+        "section": "TEŠLA"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "kiaušinių"
+        "name": "kiaušinių",
+        "section": "TEŠLA"
       },
       {
         "amount": 40,
         "unit": "g",
-        "name": "aliejaus"
+        "name": "aliejaus",
+        "section": "TEŠLA"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "skrudintų smulkintų lazdyno riešutų (arba kitų riešutų)"
+        "name": "skrudintų smulkintų lazdyno riešutų (arba kitų riešutų)",
+        "section": "TEŠLA"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "juodojo šokolado gabaliukų"
+        "name": "juodojo šokolado gabaliukų",
+        "section": "TEŠLA"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "banano — įdarui"
+        "name": "banano — įdarui",
+        "section": "TEŠLA"
       }
     ],
     "steps": [
@@ -2153,27 +2447,32 @@
       {
         "amount": 6,
         "unit": null,
-        "name": "kiaušinių trynių (~100 g)"
+        "name": "kiaušinių trynių (~100 g)",
+        "section": "KREMAS"
       },
       {
         "amount": 130,
         "unit": "g",
-        "name": "baltojo cukraus"
+        "name": "baltojo cukraus",
+        "section": "KREMAS"
       },
       {
         "amount": 500,
         "unit": "g",
-        "name": "maskarponės"
+        "name": "maskarponės",
+        "section": "KREMAS"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "matčos"
+        "name": "matčos",
+        "section": "KREMAS"
       },
       {
         "amount": 400,
         "unit": "g",
-        "name": "riebios grietinėlės (33–35%)"
+        "name": "riebios grietinėlės (33–35%)",
+        "section": "KREMAS"
       },
       {
         "amount": {
@@ -2181,27 +2480,32 @@
           "max": 400
         },
         "unit": "g",
-        "name": "biskvitinių pirštukų (savoiardi)"
+        "name": "biskvitinių pirštukų (savoiardi)",
+        "section": "KREMAS"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "matčos"
+        "name": "matčos",
+        "section": "ĮMIRKYMO SIRUPAS"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "baltojo cukraus"
+        "name": "baltojo cukraus",
+        "section": "ĮMIRKYMO SIRUPAS"
       },
       {
         "amount": 70,
         "unit": "g",
-        "name": "karšto vandens (~80°C/~176°F)"
+        "name": "karšto vandens (~80°C/~176°F)",
+        "section": "ĮMIRKYMO SIRUPAS"
       },
       {
         "amount": 210,
         "unit": "g",
-        "name": "pieno"
+        "name": "pieno",
+        "section": "ĮMIRKYMO SIRUPAS"
       },
       {
         "amount": {
@@ -2209,12 +2513,14 @@
           "max": 450
         },
         "unit": "g",
-        "name": "šviežių braškių, kubeliais pjaustytų"
+        "name": "šviežių braškių, kubeliais pjaustytų",
+        "section": "ĮDARAS"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "matčos barstymui"
+        "name": "matčos barstymui",
+        "section": "ĮDARAS"
       }
     ],
     "steps": [
@@ -2253,7 +2559,8 @@
       {
         "amount": 6,
         "unit": null,
-        "name": "kiaušinių trynių (~100 g)"
+        "name": "kiaušinių trynių (~100 g)",
+        "section": "KREMAS"
       },
       {
         "amount": {
@@ -2261,22 +2568,35 @@
           "max": 120
         },
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "KREMAS"
       },
       {
         "amount": 500,
         "unit": "g",
-        "name": "maskarponės"
+        "name": "maskarponės",
+        "section": "KREMAS"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "1 vanilės ankšties sėklelės"
+        "name": "1 vanilės ankšties sėklelės",
+        "section": "KREMAS"
       },
       {
         "amount": 450,
         "unit": "g",
-        "name": "riebios grietinėlės (33–35%)"
+        "name": "riebios grietinėlės (33–35%)",
+        "section": "KREMAS"
+      },
+      {
+        "amount": {
+          "min": 350,
+          "max": 400
+        },
+        "unit": "g",
+        "name": "Savoiardi (pirštukų sausainiai)",
+        "section": "KREMAS"
       },
       {
         "amount": {
@@ -2284,12 +2604,14 @@
           "max": 250
         },
         "unit": "g",
-        "name": "espreso"
+        "name": "espreso",
+        "section": "ĮMIRKYMO SIRUPAS"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "Baileys likerio"
+        "name": "Baileys likerio",
+        "section": "ĮMIRKYMO SIRUPAS"
       },
       {
         "amount": {
@@ -2297,11 +2619,11 @@
           "max": 20
         },
         "unit": "g",
-        "name": "kakavos miltelių barstymui"
+        "name": "kakavos miltelių barstymui",
+        "section": "ĮMIRKYMO SIRUPAS"
       }
     ],
     "steps": [
-      "+ 350–400 g Savoiardi (biskvitinių pirštukų)",
       "Trynius ir cukrų sumaišykite karščiui atspariame dubenyje ir statykite ant karšto vandens vonelės.",
       "Nuolat maišydami šluotele, kaitinkite iki 60°C (~140°F) ir palaikykite ant vandens vonelės dar 2–3 minučių, kad trynius pasterizuotumėte.",
       "Perkelkite į maišytuvo dubenį, leiskite atvėsti iki kambario temperatūros ir plakite, kol tryniai taps šviesūs, pastelinės spalvos ir padidės tūris.",
@@ -2335,32 +2657,38 @@
       {
         "amount": 15,
         "unit": "g",
-        "name": "riebios grietinėlės (33–35%)"
+        "name": "riebios grietinėlės (33–35%)",
+        "section": "Ingredientai"
       },
       {
         "amount": 65,
         "unit": "g",
-        "name": "mangų tyrės"
+        "name": "mangų tyrės",
+        "section": "Ingredientai"
       },
       {
         "amount": 5,
         "unit": "g",
-        "name": "gliukozės sirupo"
+        "name": "gliukozės sirupo",
+        "section": "Ingredientai"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "invertinio cukraus (Trimolino)"
+        "name": "invertinio cukraus (Trimolino)",
+        "section": "Ingredientai"
       },
       {
         "amount": 145,
         "unit": "g",
-        "name": "baltojo šokolado lašelių"
+        "name": "baltojo šokolado lašelių",
+        "section": "Ingredientai"
       },
       {
         "amount": 8,
         "unit": "g",
-        "name": "kakavos sviesto"
+        "name": "kakavos sviesto",
+        "section": "Ingredientai"
       }
     ],
     "steps": [
@@ -2391,129 +2719,153 @@
       {
         "amount": 120,
         "unit": "g",
-        "name": "verdantis vanduo"
+        "name": "verdantis vanduo",
+        "section": "TEŠLA"
       },
       {
         "amount": 160,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "TEŠLA"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "baltasis cukrus"
+        "name": "baltasis cukrus",
+        "section": "TEŠLA"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "alkalizuoti kakavos milteliai 22–24%"
+        "name": "alkalizuoti kakavos milteliai 22–24%",
+        "section": "TEŠLA"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "tirpi espreso kava",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "TEŠLA"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "kepimo milteliai",
-        "amount_ml": 2.5
+        "amount_ml": 2.5,
+        "section": "TEŠLA"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "valgomoji soda",
-        "amount_ml": 2.5
+        "amount_ml": 2.5,
+        "section": "TEŠLA"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "druska",
-        "amount_ml": 2.5
+        "amount_ml": 2.5,
+        "section": "TEŠLA"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "grietinė 20%"
+        "name": "grietinė 20%",
+        "section": "TEŠLA"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "bekvapis aliejus"
+        "name": "bekvapis aliejus",
+        "section": "TEŠLA"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "vanilės ekstraktas",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "TEŠLA"
       },
       {
         "amount": 110,
         "unit": "g",
-        "name": "baltasis cukrus"
+        "name": "baltasis cukrus",
+        "section": "KARAMELĖ (išeiga ~220g)"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "vanduo"
+        "name": "vanduo",
+        "section": "KARAMELĖ (išeiga ~220g)"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "gliukozės sirupas"
+        "name": "gliukozės sirupas",
+        "section": "KARAMELĖ (išeiga ~220g)"
       },
       {
         "amount": 130,
         "unit": "g",
-        "name": "riebi grietinėlė 33–35%"
+        "name": "riebi grietinėlė 33–35%",
+        "section": "KARAMELĖ (išeiga ~220g)"
       },
       {
         "amount": 35,
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "KARAMELĖ (išeiga ~220g)"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "druska"
+        "name": "druska",
+        "section": "KARAMELĖ (išeiga ~220g)"
       },
       {
         "amount": 180,
         "unit": "g",
-        "name": "kreminis sūris 65%"
+        "name": "kreminis sūris 65%",
+        "section": "KREMAS (išeiga ~650 g)"
       },
       {
         "amount": 220,
         "unit": "g",
-        "name": "maskarponė 80%"
+        "name": "maskarponė 80%",
+        "section": "KREMAS (išeiga ~650 g)"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "KREMAS (išeiga ~650 g)"
       },
       {
         "amount": 55,
         "unit": "g",
-        "name": "žemės riešutų sviestas"
+        "name": "žemės riešutų sviestas",
+        "section": "KREMAS (išeiga ~650 g)"
       },
       {
         "amount": 40,
         "unit": "g",
-        "name": "cukraus pudra"
+        "name": "cukraus pudra",
+        "section": "KREMAS (išeiga ~650 g)"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "fleur de sel arba ⅓ tsp druskos",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "KREMAS (išeiga ~650 g)"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "vanilės ekstraktas",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "KREMAS (išeiga ~650 g)"
       }
     ],
     "steps": [
@@ -2558,122 +2910,145 @@
       {
         "amount": 120,
         "unit": "g",
-        "name": "verdantis vanduo"
+        "name": "verdantis vanduo",
+        "section": "TEŠLA"
       },
       {
         "amount": 160,
         "unit": "g",
-        "name": "miltai"
+        "name": "miltai",
+        "section": "TEŠLA"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "cukrus"
+        "name": "cukrus",
+        "section": "TEŠLA"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "alkalizuoti kakavos milteliai 22–24%"
+        "name": "alkalizuoti kakavos milteliai 22–24%",
+        "section": "TEŠLA"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "tirpi espreso kava",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "TEŠLA"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "kepimo milteliai",
-        "amount_ml": 2.5
+        "amount_ml": 2.5,
+        "section": "TEŠLA"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "valgomoji soda",
-        "amount_ml": 2.5
+        "amount_ml": 2.5,
+        "section": "TEŠLA"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "druska",
-        "amount_ml": 2.5
+        "amount_ml": 2.5,
+        "section": "TEŠLA"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "grietinė 20%"
+        "name": "grietinė 20%",
+        "section": "TEŠLA"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "bekvapis aliejus"
+        "name": "bekvapis aliejus",
+        "section": "TEŠLA"
       },
       {
         "amount": 2,
         "unit": null,
-        "name": "dideli kiaušiniai (kambario temperatūros)"
+        "name": "dideli kiaušiniai (kambario temperatūros)",
+        "section": "TEŠLA"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "vanilės ekstraktas",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "TEŠLA"
       },
       {
         "amount": 165,
         "unit": "g",
-        "name": "cukrus"
+        "name": "cukrus",
+        "section": "KARAMELĖ"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "vanduo"
+        "name": "vanduo",
+        "section": "KARAMELĖ"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "gliukozės sirupas"
+        "name": "gliukozės sirupas",
+        "section": "KARAMELĖ"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "riebi grietinėlė 33–35%"
+        "name": "riebi grietinėlė 33–35%",
+        "section": "KARAMELĖ"
       },
       {
         "amount": 55,
         "unit": "g",
-        "name": "nesūdytas sviestas 82%"
+        "name": "nesūdytas sviestas 82%",
+        "section": "KARAMELĖ"
       },
       {
         "amount": 3,
         "unit": "g",
-        "name": "druska"
+        "name": "druska",
+        "section": "KARAMELĖ"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "KREMAS"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "juodasis šokoladas 54.5%"
+        "name": "juodasis šokoladas 54.5%",
+        "section": "KREMAS"
       },
       {
         "amount": 260,
         "unit": "g",
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "KREMAS"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "Baileys likeris"
+        "name": "Baileys likeris",
+        "section": "KREMAS"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "maskarponė 80%"
+        "name": "maskarponė 80%",
+        "section": "KREMAS"
       }
     ],
     "steps": [
@@ -2725,122 +3100,145 @@
       {
         "amount": 180,
         "unit": "g",
-        "name": "miltai"
+        "name": "miltai",
+        "section": "TEŠLA"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "baltasis cukrus"
+        "name": "baltasis cukrus",
+        "section": "TEŠLA"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "rudasis cukrus"
+        "name": "rudasis cukrus",
+        "section": "TEŠLA"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "kepimo milteliai",
-        "amount_ml": 2.5
+        "amount_ml": 2.5,
+        "section": "TEŠLA"
       },
       {
         "amount": 0.25,
         "unit": "tsp",
         "name": "valgomoji soda",
-        "amount_ml": 1.25
+        "amount_ml": 1.25,
+        "section": "TEŠLA"
       },
       {
         "amount": 0.25,
         "unit": "tsp",
         "name": "druska",
-        "amount_ml": 1.25
+        "amount_ml": 1.25,
+        "section": "TEŠLA"
       },
       {
         "amount": 115,
         "unit": "g",
-        "name": "nesūdytas sviestas (ištirpintas ir atvėsintas iki kambario temperatūros, 82%)"
+        "name": "nesūdytas sviestas (ištirpintas ir atvėsintas iki kambario temperatūros, 82%)",
+        "section": "TEŠLA"
       },
       {
         "amount": 2,
         "unit": null,
-        "name": "dideli kiaušiniai (kambario temperatūros)"
+        "name": "dideli kiaušiniai (kambario temperatūros)",
+        "section": "TEŠLA"
       },
       {
         "amount": 125,
         "unit": "g",
-        "name": "graikiškas jogurtas"
+        "name": "graikiškas jogurtas",
+        "section": "TEŠLA"
       },
       {
         "amount": 62,
         "unit": "g",
-        "name": "pienas"
+        "name": "pienas",
+        "section": "TEŠLA"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "vanilės ekstraktas",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "TEŠLA"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "smulkintos pistacijos"
+        "name": "smulkintos pistacijos",
+        "section": "TEŠLA"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "iškauliuotos rūgščiosios vyšnios"
+        "name": "iškauliuotos rūgščiosios vyšnios",
+        "section": "ĮDARAS"
       },
       {
         "amount": 13,
         "unit": "g",
-        "name": "citrinos sultys ir/arba vanduo"
+        "name": "citrinos sultys ir/arba vanduo",
+        "section": "ĮDARAS"
       },
       {
         "amount": 5,
         "unit": "g",
-        "name": "kukurūzų krakmolas"
+        "name": "kukurūzų krakmolas",
+        "section": "ĮDARAS"
       },
       {
         "amount": 25,
         "unit": "g",
-        "name": "baltasis cukrus"
+        "name": "baltasis cukrus",
+        "section": "ĮDARAS"
       },
       {
         "amount": 1,
         "unit": "g",
-        "name": "NH Nappage pektinas"
+        "name": "NH Nappage pektinas",
+        "section": "ĮDARAS"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "KREMAS"
       },
       {
         "amount": 180,
         "unit": "g",
-        "name": "baltasis šokoladas 28–30%"
+        "name": "baltasis šokoladas 28–30%",
+        "section": "KREMAS"
       },
       {
         "amount": 40,
         "unit": "g",
-        "name": "pistacijų pasta"
+        "name": "pistacijų pasta",
+        "section": "KREMAS"
       },
       {
         "amount": 0.25,
         "unit": "tsp",
         "name": "druska",
-        "amount_ml": 1.25
+        "amount_ml": 1.25,
+        "section": "KREMAS"
       },
       {
         "amount": 165,
         "unit": "g",
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "KREMAS"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "maskarponė 80%"
+        "name": "maskarponė 80%",
+        "section": "KREMAS"
       }
     ],
     "steps": [
@@ -2950,105 +3348,125 @@
       {
         "amount": 200,
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "TEŠLA"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "cukrus"
+        "name": "cukrus",
+        "section": "TEŠLA"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "miltai"
+        "name": "miltai",
+        "section": "TEŠLA"
       },
       {
         "amount": 40,
         "unit": "g",
-        "name": "kakavos milteliai"
+        "name": "kakavos milteliai",
+        "section": "TEŠLA"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "kepimo milteliai"
+        "name": "kepimo milteliai",
+        "section": "TEŠLA"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "druska",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "TEŠLA"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "kiaušiniai"
+        "name": "kiaušiniai",
+        "section": "TEŠLA"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "grietinė"
+        "name": "grietinė",
+        "section": "TEŠLA"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "vieno apelsino žievelė"
+        "name": "vieno apelsino žievelė",
+        "section": "TEŠLA"
       },
       {
         "amount": 1,
         "unit": "tbsp",
         "name": "apelsinų likeris (Cointreau)",
-        "amount_ml": 15
+        "amount_ml": 15,
+        "section": "TEŠLA"
       },
       {
         "amount": 110,
         "unit": "g",
-        "name": "apelsinų sultys"
+        "name": "apelsinų sultys",
+        "section": "ĮMIRKYMO SIRUPAS"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "marakujos tyrė"
+        "name": "marakujos tyrė",
+        "section": "ĮMIRKYMO SIRUPAS"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "Cointreau"
+        "name": "Cointreau",
+        "section": "ĮMIRKYMO SIRUPAS"
       },
       {
         "amount": 110,
         "unit": "g",
-        "name": "cukrus"
+        "name": "cukrus",
+        "section": "ĮMIRKYMO SIRUPAS"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "vieno apelsino žievelė"
+        "name": "vieno apelsino žievelė",
+        "section": "ĮMIRKYMO SIRUPAS"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "šokoladas 55% kakavos"
+        "name": "šokoladas 55% kakavos",
+        "section": "KREMAS"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "KREMAS"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "kreminis sūris"
+        "name": "kreminis sūris",
+        "section": "KREMAS"
       },
       {
         "amount": 2,
         "unit": "tbsp",
         "name": "Cointreau",
-        "amount_ml": 30
+        "amount_ml": 30,
+        "section": "KREMAS"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "vieno apelsino žievelė"
+        "name": "vieno apelsino žievelė",
+        "section": "KREMAS"
       }
     ],
     "steps": [
@@ -3096,42 +3514,50 @@
       {
         "amount": 100,
         "unit": "g",
-        "name": "apelsinų minkštimas"
+        "name": "apelsinų minkštimas",
+        "section": "Ingredientai"
       },
       {
         "amount": 55,
         "unit": "g",
-        "name": "marakujos tyrė"
+        "name": "marakujos tyrė",
+        "section": "Ingredientai"
       },
       {
         "amount": 55,
         "unit": "g",
-        "name": "cukrus"
+        "name": "cukrus",
+        "section": "Ingredientai"
       },
       {
         "amount": 3.5,
         "unit": "g",
-        "name": "NH pektinas"
+        "name": "NH pektinas",
+        "section": "Ingredientai"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "apelsino žievelė"
+        "name": "apelsino žievelė",
+        "section": "Ingredientai"
       },
       {
         "amount": 3,
         "unit": "g",
-        "name": "želatina (160 Bloom)"
+        "name": "želatina (160 Bloom)",
+        "section": "Ingredientai"
       },
       {
         "amount": 18,
         "unit": "g",
-        "name": "šaltas vanduo"
+        "name": "šaltas vanduo",
+        "section": "Ingredientai"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "apelsinų minkštimas"
+        "name": "apelsinų minkštimas",
+        "section": "Ingredientai"
       }
     ],
     "steps": [
@@ -3161,90 +3587,107 @@
       {
         "amount": 180,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "TEŠLA (~12–14 keksiukų)"
       },
       {
         "amount": 2,
         "unit": "tsp",
         "name": "kepimo milteliai",
-        "amount_ml": 10
+        "amount_ml": 10,
+        "section": "TEŠLA (~12–14 keksiukų)"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "druska",
-        "amount_ml": 2.5
+        "amount_ml": 2.5,
+        "section": "TEŠLA (~12–14 keksiukų)"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "baltasis cukrus"
+        "name": "baltasis cukrus",
+        "section": "TEŠLA (~12–14 keksiukų)"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "kokoso drožlės"
+        "name": "kokoso drožlės",
+        "section": "TEŠLA (~12–14 keksiukų)"
       },
       {
         "amount": 82,
         "unit": "g",
-        "name": "suminkštintas sviestas"
+        "name": "suminkštintas sviestas",
+        "section": "TEŠLA (~12–14 keksiukų)"
       },
       {
         "amount": 64,
         "unit": "g",
-        "name": "bekvapis aliejus"
+        "name": "bekvapis aliejus",
+        "section": "TEŠLA (~12–14 keksiukų)"
       },
       {
         "amount": 2,
         "unit": null,
-        "name": "kiaušinių baltymai"
+        "name": "kiaušinių baltymai",
+        "section": "TEŠLA (~12–14 keksiukų)"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "grietinė"
+        "name": "grietinė",
+        "section": "TEŠLA (~12–14 keksiukų)"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "pienas"
+        "name": "pienas",
+        "section": "TEŠLA (~12–14 keksiukų)"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "vanilės pasta arba ekstraktas",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "TEŠLA (~12–14 keksiukų)"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "iškauliuotos rūgščiosios vyšnios"
+        "name": "iškauliuotos rūgščiosios vyšnios",
+        "section": "ĮDARAS"
       },
       {
         "amount": 13,
         "unit": "g",
-        "name": "citrinos sultys ir/arba vanduo"
+        "name": "citrinos sultys ir/arba vanduo",
+        "section": "ĮDARAS"
       },
       {
         "amount": 5,
         "unit": "g",
-        "name": "kukurūzų krakmolas"
+        "name": "kukurūzų krakmolas",
+        "section": "ĮDARAS"
       },
       {
         "amount": 25,
         "unit": "g",
-        "name": "cukrus"
+        "name": "cukrus",
+        "section": "ĮDARAS"
       },
       {
         "amount": 1,
         "unit": "g",
-        "name": "pektinas"
+        "name": "pektinas",
+        "section": "ĮDARAS"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "vanilės ankštis"
+        "name": "vanilės ankštis",
+        "section": "ĮDARAS"
       }
     ],
     "steps": [
@@ -3334,54 +3777,64 @@
       {
         "amount": 230,
         "unit": "g",
-        "name": "nesūdytas sviestas"
+        "name": "nesūdytas sviestas",
+        "section": "Ingredientai"
       },
       {
         "amount": 400,
         "unit": "g",
-        "name": "juodasis šokoladas"
+        "name": "juodasis šokoladas",
+        "section": "Ingredientai"
       },
       {
         "amount": 6,
         "unit": null,
-        "name": "dideli kiaušiniai"
+        "name": "dideli kiaušiniai",
+        "section": "Ingredientai"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "cukrus (baltasis smulkusis arba kastorinis)"
+        "name": "cukrus (baltasis smulkusis arba kastorinis)",
+        "section": "Ingredientai"
       },
       {
         "amount": 310,
         "unit": "g",
-        "name": "rudasis cukrus"
+        "name": "rudasis cukrus",
+        "section": "Ingredientai"
       },
       {
         "amount": 2,
         "unit": "tsp",
         "name": "druska",
-        "amount_ml": 10
+        "amount_ml": 10,
+        "section": "Ingredientai"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "vanilės ekstraktas",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Ingredientai"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "Ingredientai"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "kakavos milteliai"
+        "name": "kakavos milteliai",
+        "section": "Ingredientai"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "smulkinti riešutai ir šokolado gabaliukai (nebūtina)"
+        "name": "smulkinti riešutai ir šokolado gabaliukai (nebūtina)",
+        "section": "Ingredientai"
       }
     ],
     "steps": [
@@ -3416,38 +3869,45 @@
       {
         "amount": 90,
         "unit": "g",
-        "name": "minkštas sviestas"
+        "name": "minkštas sviestas",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 45,
         "unit": "g",
-        "name": "cukraus pudra"
+        "name": "cukraus pudra",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 0.25,
         "unit": "tsp",
         "name": "druska",
-        "amount_ml": 1.25
+        "amount_ml": 1.25,
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "kiaušinis"
+        "name": "kiaušinis",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 4,
         "unit": null,
-        "name": "lašai vanilės ekstrakto"
+        "name": "lašai vanilės ekstrakto",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 25,
         "unit": "g",
-        "name": "lazdyno riešutų miltai"
+        "name": "lazdyno riešutų miltai",
+        "section": "INGREDIENTAI"
       }
     ],
     "steps": [
@@ -3542,34 +4002,40 @@
       {
         "amount": 500,
         "unit": "g",
-        "name": "maskarponė"
+        "name": "maskarponė",
+        "section": "KREMAS"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "riebi grietinėlė (33–36%)"
+        "name": "riebi grietinėlė (33–36%)",
+        "section": "KREMAS"
       },
       {
         "amount": 40,
         "unit": "g",
-        "name": "cukraus pudra"
+        "name": "cukraus pudra",
+        "section": "KREMAS"
       },
       {
         "amount": 0.5,
         "unit": null,
-        "name": "vanilės ankštis"
+        "name": "vanilės ankštis",
+        "section": "KREMAS"
       },
       {
         "amount": 1,
         "unit": "tbsp",
         "name": "Amaretto likeris",
-        "amount_ml": 15
+        "amount_ml": 15,
+        "section": "KREMAS"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "tirpi kava ir kakava barstymui",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "KREMAS"
       }
     ],
     "steps": [
@@ -3610,37 +4076,44 @@
       {
         "amount": 150,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 4,
         "unit": "g",
-        "name": "druska"
+        "name": "druska",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 4,
         "unit": "g",
-        "name": "cukrus"
+        "name": "cukrus",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "šaltas sviestas, supjaustytas kubeliais"
+        "name": "šaltas sviestas, supjaustytas kubeliais",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 48,
         "unit": "g",
-        "name": "šalti kiaušiniai"
+        "name": "šalti kiaušiniai",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "ledinis vanduo"
+        "name": "ledinis vanduo",
+        "section": "INGREDIENTAI"
       },
       {
         "amount": 4,
         "unit": null,
-        "name": "lašai vanilės ekstrakto"
+        "name": "lašai vanilės ekstrakto",
+        "section": "INGREDIENTAI"
       }
     ],
     "steps": [
@@ -3668,27 +4141,32 @@
       {
         "amount": 215,
         "unit": "g",
-        "name": "bazinė trupinių masė (receptą rasite mano istorijose, taip pat vėliau bus prisegta pabraukiamuose)"
+        "name": "bazinė trupinių masė (receptą rasite mano istorijose, taip pat vėliau bus prisegta pabraukiamuose)",
+        "section": "PAGRINDAS"
       },
       {
         "amount": 35,
         "unit": "g",
-        "name": "tarkuotas kokosas"
+        "name": "tarkuotas kokosas",
+        "section": "PAGRINDAS"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "lazdyno riešutai"
+        "name": "lazdyno riešutai",
+        "section": "PAGRINDAS"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "migdolai"
+        "name": "migdolai",
+        "section": "PAGRINDAS"
       },
       {
         "amount": 32,
         "unit": "g",
-        "name": "kokosų aliejus"
+        "name": "kokosų aliejus",
+        "section": "PAGRINDAS"
       },
       {
         "amount": {
@@ -3696,12 +4174,14 @@
           "max": 25
         },
         "unit": "g",
-        "name": "sviestas"
+        "name": "sviestas",
+        "section": "PAGRINDAS"
       },
       {
         "amount": 900,
         "unit": "g",
-        "name": "kreminis sūris"
+        "name": "kreminis sūris",
+        "section": "VARŠKĖS SŪRIO SLUOKSNIS"
       },
       {
         "amount": {
@@ -3709,57 +4189,68 @@
           "max": 300
         },
         "unit": "g",
-        "name": "cukrus (pagal skonį)"
+        "name": "cukrus (pagal skonį)",
+        "section": "VARŠKĖS SŪRIO SLUOKSNIS"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "kukurūzų krakmolas"
+        "name": "kukurūzų krakmolas",
+        "section": "VARŠKĖS SŪRIO SLUOKSNIS"
       },
       {
         "amount": 330,
         "unit": "g",
-        "name": "kiaušiniai"
+        "name": "kiaušiniai",
+        "section": "VARŠKĖS SŪRIO SLUOKSNIS"
       },
       {
         "amount": 650,
         "unit": "g",
-        "name": "riebi grietinėlė (33-36%)"
+        "name": "riebi grietinėlė (33-36%)",
+        "section": "VARŠKĖS SŪRIO SLUOKSNIS"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "vanilės pasta"
+        "name": "vanilės pasta",
+        "section": "VARŠKĖS SŪRIO SLUOKSNIS"
       },
       {
         "amount": 40,
         "unit": "g",
-        "name": "citrinos sultys"
+        "name": "citrinos sultys",
+        "section": "VARŠKĖS SŪRIO SLUOKSNIS"
       },
       {
         "amount": 5.5,
         "unit": "g",
-        "name": "želatina"
+        "name": "želatina",
+        "section": "PANA COTTA"
       },
       {
         "amount": 33,
         "unit": "g",
-        "name": "vanduo"
+        "name": "vanduo",
+        "section": "PANA COTTA"
       },
       {
         "amount": 400,
         "unit": "g",
-        "name": "riebi grietinėlė (30%)"
+        "name": "riebi grietinėlė (30%)",
+        "section": "PANA COTTA"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "cukrus"
+        "name": "cukrus",
+        "section": "PANA COTTA"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "vanilės ankštis"
+        "name": "vanilės ankštis",
+        "section": "PANA COTTA"
       }
     ],
     "steps": [
@@ -3923,73 +4414,87 @@
       {
         "amount": 20,
         "unit": "g",
-        "name": "migdolai"
+        "name": "migdolai",
+        "section": "Migdolų striuzelis"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "Migdolų striuzelis"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "rudasis cukrus"
+        "name": "rudasis cukrus",
+        "section": "Migdolų striuzelis"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "Migdolų striuzelis"
       },
       {
         "amount": 220,
         "unit": "g",
-        "name": "migdolai"
+        "name": "migdolai",
+        "section": "Kekso tešla"
       },
       {
         "amount": 240,
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "Kekso tešla"
       },
       {
         "amount": 240,
         "unit": "g",
-        "name": "kastorinis cukrus"
+        "name": "kastorinis cukrus",
+        "section": "Kekso tešla"
       },
       {
         "amount": 260,
         "unit": "g",
-        "name": "kiaušiniai (~5 vnt.)"
+        "name": "kiaušiniai (~5 vnt.)",
+        "section": "Kekso tešla"
       },
       {
         "amount": 5,
         "unit": "g",
-        "name": "migdolų ekstraktas"
+        "name": "migdolų ekstraktas",
+        "section": "Kekso tešla"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "espreso kava"
+        "name": "espreso kava",
+        "section": "Kekso tešla"
       },
       {
         "amount": 160,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "Kekso tešla"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "kepimo milteliai",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Kekso tešla"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "stambi druska"
+        "name": "stambi druska",
+        "section": "Kekso tešla"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "espreso kava"
+        "name": "espreso kava",
+        "section": "Kekso tešla"
       }
     ],
     "steps": [
@@ -4023,32 +4528,38 @@
       {
         "amount": 75,
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "Šokoladinis pagrindas"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "cukraus pudra"
+        "name": "cukraus pudra",
+        "section": "Šokoladinis pagrindas"
       },
       {
         "amount": 18,
         "unit": "g",
-        "name": "kiaušinių tryniai (~1 vnt.)"
+        "name": "kiaušinių tryniai (~1 vnt.)",
+        "section": "Šokoladinis pagrindas"
       },
       {
         "amount": 130,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "Šokoladinis pagrindas"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "alkalizuoti kakavos milteliai (22–24% kakavos sviesto)"
+        "name": "alkalizuoti kakavos milteliai (22–24% kakavos sviesto)",
+        "section": "Šokoladinis pagrindas"
       },
       {
         "amount": 1,
         "unit": "g",
-        "name": "stambi druska"
+        "name": "stambi druska",
+        "section": "Šokoladinis pagrindas"
       },
       {
         "amount": {
@@ -4056,57 +4567,68 @@
           "max": 45
         },
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "Šokoladinis pagrindas"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "pienas 3.2%"
+        "name": "pienas 3.2%",
+        "section": "Šokoladinis pagrindas"
       },
       {
         "amount": 850,
         "unit": "g",
-        "name": "kreminis sūris 60–70%"
+        "name": "kreminis sūris 60–70%",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "kastorinis cukrus"
+        "name": "kastorinis cukrus",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 165,
         "unit": "g",
-        "name": "kiaušiniai (~3 vnt.)"
+        "name": "kiaušiniai (~3 vnt.)",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 180,
         "unit": "g",
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "citrinos sultys"
+        "name": "citrinos sultys",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "vienos citrinos žievelė"
+        "name": "vienos citrinos žievelė",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 400,
         "unit": "g",
-        "name": "iškauliuotos rūgščiosios vyšnios (šviežios arba šaldytos)"
+        "name": "iškauliuotos rūgščiosios vyšnios (šviežios arba šaldytos)",
+        "section": "Rūgščiųjų vyšnių konfitiūras"
       },
       {
         "amount": 45,
         "unit": "g",
-        "name": "kastorinis cukrus"
+        "name": "kastorinis cukrus",
+        "section": "Rūgščiųjų vyšnių konfitiūras"
       },
       {
         "amount": 5,
         "unit": "g",
-        "name": "NH Nappage pektinas"
+        "name": "NH Nappage pektinas",
+        "section": "Rūgščiųjų vyšnių konfitiūras"
       }
     ],
     "steps": [
@@ -4142,93 +4664,110 @@
         "amount": 3,
         "unit": "cups",
         "name": "kvietiniai miltai",
-        "amount_ml": 720
+        "amount_ml": 720,
+        "section": "Trapios tešlos pagrindas"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "kepimo milteliai"
+        "name": "kepimo milteliai",
+        "section": "Trapios tešlos pagrindas"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "stambi druska",
-        "amount_ml": 2.5
+        "amount_ml": 2.5,
+        "section": "Trapios tešlos pagrindas"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "Trapios tešlos pagrindas"
       },
       {
         "amount": 90,
         "unit": "g",
-        "name": "kiaušinių tryniai (~5 vnt.)"
+        "name": "kiaušinių tryniai (~5 vnt.)",
+        "section": "Trapios tešlos pagrindas"
       },
       {
         "amount": 2,
         "unit": "tbsp",
         "name": "kastorinis cukrus",
-        "amount_ml": 30
+        "amount_ml": 30,
+        "section": "Trapios tešlos pagrindas"
       },
       {
         "amount": 1,
         "unit": "kg",
-        "name": "varškė 9%"
+        "name": "varškė 9%",
+        "section": "Trapios tešlos pagrindas"
       },
       {
         "amount": 125,
         "unit": "g",
-        "name": "grietinė 15–20%"
+        "name": "grietinė 15–20%",
+        "section": "Trapios tešlos pagrindas"
       },
       {
         "amount": 18,
         "unit": "g",
-        "name": "kiaušinių tryniai (~1 vnt.)"
+        "name": "kiaušinių tryniai (~1 vnt.)",
+        "section": "Trapios tešlos pagrindas"
       },
       {
         "amount": 0.5,
         "unit": "cup",
         "name": "kastorinis cukrus",
-        "amount_ml": 120
+        "amount_ml": 120,
+        "section": "Trapios tešlos pagrindas"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "vanilinis cukrus"
+        "name": "vanilinis cukrus",
+        "section": "Trapios tešlos pagrindas"
       },
       {
         "amount": 2,
         "unit": "tbsp",
         "name": "kukurūzų krakmolas",
-        "amount_ml": 30
+        "amount_ml": 30,
+        "section": "Trapios tešlos pagrindas"
       },
       {
         "amount": 2,
         "unit": "tbsp",
         "name": "manų kruopos",
-        "amount_ml": 30
+        "amount_ml": 30,
+        "section": "Trapios tešlos pagrindas"
       },
       {
         "amount": 1,
         "unit": "cup",
         "name": "kastorinis cukrus",
-        "amount_ml": 240
+        "amount_ml": 240,
+        "section": "Bezė"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "vanilinis cukrus"
+        "name": "vanilinis cukrus",
+        "section": "Bezė"
       },
       {
         "amount": 185,
         "unit": "g",
-        "name": "kiaušinių baltymai (~5 vnt.)"
+        "name": "kiaušinių baltymai (~5 vnt.)",
+        "section": "Bezė"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "žiupsnelis citrinos rūgšties miltelių"
+        "name": "žiupsnelis citrinos rūgšties miltelių",
+        "section": "Bezė"
       }
     ],
     "steps": [
@@ -4267,67 +4806,80 @@
       {
         "amount": 275,
         "unit": "g",
-        "name": "kiaušiniai (~ 5 vnt.)"
+        "name": "kiaušiniai (~ 5 vnt.)",
+        "section": "Klasikinis biskvitas"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "kastorinis cukrus"
+        "name": "kastorinis cukrus",
+        "section": "Klasikinis biskvitas"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "stambi druska"
+        "name": "stambi druska",
+        "section": "Klasikinis biskvitas"
       },
       {
         "amount": 90,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "Klasikinis biskvitas"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "kepimo milteliai"
+        "name": "kepimo milteliai",
+        "section": "Klasikinis biskvitas"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "pienas 3.2%"
+        "name": "pienas 3.2%",
+        "section": "Klasikinis biskvitas"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "bekvapis augalinis aliejus"
+        "name": "bekvapis augalinis aliejus",
+        "section": "Klasikinis biskvitas"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "abrikosų tyrė"
+        "name": "abrikosų tyrė",
+        "section": "Abrikosų uogienė"
       },
       {
         "amount": 45,
         "unit": "g",
-        "name": "kastorinis cukrus"
+        "name": "kastorinis cukrus",
+        "section": "Abrikosų uogienė"
       },
       {
         "amount": 3,
         "unit": "g",
-        "name": "NH Nappage pektinas"
+        "name": "NH Nappage pektinas",
+        "section": "Abrikosų uogienė"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "kreminis sūris 60–70%"
+        "name": "kreminis sūris 60–70%",
+        "section": "Varškės sūrio kremas"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "Varškės sūrio kremas"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "cukraus pudra"
+        "name": "cukraus pudra",
+        "section": "Varškės sūrio kremas"
       }
     ],
     "steps": [
@@ -4359,29 +4911,34 @@
       {
         "amount": 110,
         "unit": "g",
-        "name": "kiaušiniai (~2 vnt.)"
+        "name": "kiaušiniai (~2 vnt.)",
+        "section": "Medaus pyragėliai"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Medaus pyragėliai"
       },
       {
         "amount": 2,
         "unit": "tbsp",
         "name": "medus",
-        "amount_ml": 30
+        "amount_ml": 30,
+        "section": "Medaus pyragėliai"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "Medaus pyragėliai"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "valgomoji soda",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Medaus pyragėliai"
       },
       {
         "amount": {
@@ -4389,12 +4946,14 @@
           "max": 550
         },
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "Medaus pyragėliai"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "abrikosų tyrė"
+        "name": "abrikosų tyrė",
+        "section": "Abrikosų padažas"
       },
       {
         "amount": {
@@ -4402,51 +4961,59 @@
           "max": 80
         },
         "unit": "g",
-        "name": "smulkus cukrus (pagal skonį)"
+        "name": "smulkus cukrus (pagal skonį)",
+        "section": "Abrikosų padažas"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "NH Nappage pektinas"
+        "name": "NH Nappage pektinas",
+        "section": "Abrikosų padažas"
       },
       {
         "amount": 600,
         "unit": "g",
-        "name": "nusunkta grietinė 30%"
+        "name": "nusunkta grietinė 30%",
+        "section": "Grietinės kremas"
       },
       {
         "amount": 300,
         "unit": "g",
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "Grietinės kremas"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "cukraus pudra"
+        "name": "cukraus pudra",
+        "section": "Grietinės kremas"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "vanilės ankštis"
+        "name": "vanilės ankštis",
+        "section": "Grietinės kremas"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "nusunkta grietinė 30%"
+        "name": "nusunkta grietinė 30%",
+        "section": "Grietinės kremas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "Grietinės kremas"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "cukraus pudra"
+        "name": "cukraus pudra",
+        "section": "Grietinės kremas"
       }
     ],
     "steps": [
-      "Glaistas apvilkimui",
       "Storadugniame puode lengvai išplakite kiaušinius su cukrumi, įdėkite medų, sviestą ir pastatykite puodą ant silpnos ugnies. Nuolat maišydami, virkite mišinį, kol cukraus kristalai visiškai ištirps.",
       "Nukelkite nuo ugnies, įdėkite sodą ir gerai išmaišykite. Masė turėtų gerai suputoti ir padidėti tūriu. Supilkite mišinį į atskirą dubenį, įdėkite 500 g persijotų miltų, maišykite šaukštu, kol taps vientisas. Palikite 10–15 minučių.",
       "jei po 10–15 minučių tešla vis dar per daug lipni, persijokite likusius 50 g miltų ir dėkite tik tiek, kiek tešla sugeba sugerti.",
@@ -4536,82 +5103,98 @@
       {
         "amount": 165,
         "unit": "g",
-        "name": "kiaušiniai (~3 vnt.)"
+        "name": "kiaušiniai (~3 vnt.)",
+        "section": "Grietinės biskvito sluoksniai"
       },
       {
         "amount": 225,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Grietinės biskvito sluoksniai"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "vanilės milteliai"
+        "name": "vanilės milteliai",
+        "section": "Grietinės biskvito sluoksniai"
       },
       {
         "amount": 450,
         "unit": "g",
-        "name": "grietinė 25–30%"
+        "name": "grietinė 25–30%",
+        "section": "Grietinės biskvito sluoksniai"
       },
       {
         "amount": 300,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "Grietinės biskvito sluoksniai"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "kepimo milteliai"
+        "name": "kepimo milteliai",
+        "section": "Grietinės biskvito sluoksniai"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "graikiniai riešutai"
+        "name": "graikiniai riešutai",
+        "section": "Grietinės biskvito sluoksniai"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "šviesios razinos"
+        "name": "šviesios razinos",
+        "section": "Grietinės biskvito sluoksniai"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "aguonos"
+        "name": "aguonos",
+        "section": "Grietinės biskvito sluoksniai"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "alkalizuoti kakavos milteliai (22–24% kakavos sviesto)"
+        "name": "alkalizuoti kakavos milteliai (22–24% kakavos sviesto)",
+        "section": "Šokoladinė glazūra"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Šokoladinė glazūra"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "pienas 3,2%"
+        "name": "pienas 3,2%",
+        "section": "Šokoladinė glazūra"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "Šokoladinė glazūra"
       },
       {
         "amount": 1200,
         "unit": "g",
-        "name": "nusunkta grietinė 30%"
+        "name": "nusunkta grietinė 30%",
+        "section": "Vanilinis grietinės kremas"
       },
       {
         "amount": 300,
         "unit": "g",
-        "name": "cukraus pudra"
+        "name": "cukraus pudra",
+        "section": "Vanilinis grietinės kremas"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "vanilės ankštis arba 25 g vanilės pastos"
+        "name": "vanilės ankštis arba 25 g vanilės pastos",
+        "section": "Vanilinis grietinės kremas"
       }
     ],
     "steps": [
@@ -4648,27 +5231,32 @@
           "max": 1500
         },
         "unit": "g",
-        "name": "žali obuoliai"
+        "name": "žali obuoliai",
+        "section": "Kepti obuoliai"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "didelė laimo citrina"
+        "name": "didelė laimo citrina",
+        "section": "Braškių–laimo uogienė"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "šviežios arba šaldytos braškės"
+        "name": "šviežios arba šaldytos braškės",
+        "section": "Braškių–laimo uogienė"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "kepti obuoliai"
+        "name": "kepti obuoliai",
+        "section": "Braškių–laimo uogienė"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Braškių–laimo uogienė"
       },
       {
         "amount": {
@@ -4676,42 +5264,50 @@
           "max": 7
         },
         "unit": "g",
-        "name": "pektinas"
+        "name": "pektinas",
+        "section": "Braškių–laimo uogienė"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Braškių–laimo uogienė"
       },
       {
         "amount": 500,
         "unit": "g",
-        "name": "braškių ir laimo uogienė"
+        "name": "braškių ir laimo uogienė",
+        "section": "Braškių Mojito zefyras"
       },
       {
         "amount": 8,
         "unit": "g",
-        "name": "albuminas"
+        "name": "albuminas",
+        "section": "Braškių Mojito zefyras"
       },
       {
         "amount": 170,
         "unit": "g",
-        "name": "vanduo"
+        "name": "vanduo",
+        "section": "Braškių Mojito zefyras"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "agaras 1200 g/cm2"
+        "name": "agaras 1200 g/cm2",
+        "section": "Braškių Mojito zefyras"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Braškių Mojito zefyras"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "gliukozės-fruktozės sirupas"
+        "name": "gliukozės-fruktozės sirupas",
+        "section": "Braškių Mojito zefyras"
       },
       {
         "amount": {
@@ -4723,12 +5319,14 @@
         "amount_ml": {
           "min": 5,
           "max": 7.5
-        }
+        },
+        "section": "Braškių Mojito zefyras"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "vieno laimo žievelė"
+        "name": "vieno laimo žievelė",
+        "section": "Braškių Mojito zefyras"
       },
       {
         "amount": {
@@ -4736,7 +5334,8 @@
           "max": 150
         },
         "unit": "g",
-        "name": "cukraus pudra"
+        "name": "cukraus pudra",
+        "section": "Apibarstymui"
       },
       {
         "amount": {
@@ -4748,7 +5347,8 @@
         "amount_ml": {
           "min": 15,
           "max": 30
-        }
+        },
+        "section": "Apibarstymui"
       }
     ],
     "steps": [
@@ -4775,62 +5375,74 @@
       {
         "amount": 100,
         "unit": "g",
-        "name": "aukštos kokybės kvietiniai miltai"
+        "name": "aukštos kokybės kvietiniai miltai",
+        "section": "Kišo pagrindas"
       },
       {
         "amount": 70,
         "unit": "g",
-        "name": "kvietiniai viso grūdo miltai"
+        "name": "kvietiniai viso grūdo miltai",
+        "section": "Kišo pagrindas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "šaltas sviestas 82%"
+        "name": "šaltas sviestas 82%",
+        "section": "Kišo pagrindas"
       },
       {
         "amount": 18,
         "unit": "g",
-        "name": "kiaušinių tryniai (~1 vnt.)"
+        "name": "kiaušinių tryniai (~1 vnt.)",
+        "section": "Kišo pagrindas"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "ledinis vanduo"
+        "name": "ledinis vanduo",
+        "section": "Kišo pagrindas"
       },
       {
         "amount": 1,
         "unit": "g",
-        "name": "stambi druska"
+        "name": "stambi druska",
+        "section": "Kišo pagrindas"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "brokoliai"
+        "name": "brokoliai",
+        "section": "Įdaras"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "šviežia lašiša"
+        "name": "šviežia lašiša",
+        "section": "Įdaras"
       },
       {
         "amount": 70,
         "unit": "g",
-        "name": "gorgonzolos sūris"
+        "name": "gorgonzolos sūris",
+        "section": "Įdaras"
       },
       {
         "amount": 165,
         "unit": "g",
-        "name": "kiaušiniai (~3 vnt.)"
+        "name": "kiaušiniai (~3 vnt.)",
+        "section": "Padažas"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "grietinė 15%"
+        "name": "grietinė 15%",
+        "section": "Padažas"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "druskos ir pipirų pagal skonį"
+        "name": "druskos ir pipirų pagal skonį",
+        "section": "Padažas"
       }
     ],
     "steps": [
@@ -4863,52 +5475,62 @@
       {
         "amount": 150,
         "unit": "g",
-        "name": "tamsusis šokoladas 54,5%"
+        "name": "tamsusis šokoladas 54,5%",
+        "section": "Braunis"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "Braunis"
       },
       {
         "amount": 180,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Braunis"
       },
       {
         "amount": 130,
         "unit": "g",
-        "name": "kiaušiniai (~2,4 vnt.)"
+        "name": "kiaušiniai (~2,4 vnt.)",
+        "section": "Braunis"
       },
       {
         "amount": 110,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "Braunis"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "alkalizuoti kakavos milteliai (22–24% kakavos sviesto)"
+        "name": "alkalizuoti kakavos milteliai (22–24% kakavos sviesto)",
+        "section": "Braunis"
       },
       {
         "amount": 3,
         "unit": "g",
-        "name": "kepimo milteliai"
+        "name": "kepimo milteliai",
+        "section": "Braunis"
       },
       {
         "amount": 1,
         "unit": "g",
-        "name": "druska"
+        "name": "druska",
+        "section": "Braunis"
       },
       {
         "amount": 180,
         "unit": "g",
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "Juodojo šokolado ganašas"
       },
       {
         "amount": 180,
         "unit": "g",
-        "name": "tamsusis šokoladas 54,5%"
+        "name": "tamsusis šokoladas 54,5%",
+        "section": "Juodojo šokolado ganašas"
       }
     ],
     "steps": [
@@ -4942,12 +5564,14 @@
       {
         "amount": 400,
         "unit": "g",
-        "name": "tamsusis šokoladas 54,5%"
+        "name": "tamsusis šokoladas 54,5%",
+        "section": "Ingredientai"
       },
       {
         "amount": 400,
         "unit": "g",
-        "name": "riebi grietinėlė 33-36%"
+        "name": "riebi grietinėlė 33-36%",
+        "section": "Ingredientai"
       }
     ],
     "steps": [
@@ -4985,12 +5609,14 @@
           "max": 200
         },
         "unit": "g",
-        "name": "mandarinų žievelė"
+        "name": "mandarinų žievelė",
+        "section": "Cukruoti mandarinai"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "druska"
+        "name": "druska",
+        "section": "Cukruoti mandarinai"
       },
       {
         "amount": {
@@ -4998,47 +5624,56 @@
           "max": 300
         },
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Cukruoti mandarinai"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "vanilės ankštis"
+        "name": "vanilės ankštis",
+        "section": "Cukruoti mandarinai"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "romas"
+        "name": "romas",
+        "section": "Cukruoti mandarinai"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "šviesios razinos"
+        "name": "šviesios razinos",
+        "section": "Romu mirkyti džiovinti vaisiai"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "džiovintos spanguolės"
+        "name": "džiovintos spanguolės",
+        "section": "Romu mirkyti džiovinti vaisiai"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "cukruoti mandarinai"
+        "name": "cukruoti mandarinai",
+        "section": "Romu mirkyti džiovinti vaisiai"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "romas"
+        "name": "romas",
+        "section": "Romu mirkyti džiovinti vaisiai"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "pienas 3,2%"
+        "name": "pienas 3,2%",
+        "section": "Duonos raugas"
       },
       {
         "amount": 7,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Duonos raugas"
       },
       {
         "amount": {
@@ -5046,62 +5681,74 @@
           "max": 8
         },
         "unit": "g",
-        "name": "sausos mielės"
+        "name": "sausos mielės",
+        "section": "Duonos raugas"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "stiprūs miltai"
+        "name": "stiprūs miltai",
+        "section": "Duonos raugas"
       },
       {
         "amount": 165,
         "unit": "g",
-        "name": "kiaušiniai (~3 vnt.)"
+        "name": "kiaušiniai (~3 vnt.)",
+        "section": "Panettone tešla"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Panettone tešla"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "vanilės ankštis"
+        "name": "vanilės ankštis",
+        "section": "Panettone tešla"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "citrinos žievelė"
+        "name": "citrinos žievelė",
+        "section": "Panettone tešla"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "2 apelsinų žievelė"
+        "name": "2 apelsinų žievelė",
+        "section": "Panettone tešla"
       },
       {
         "amount": 415,
         "unit": "g",
-        "name": "duonos raugas"
+        "name": "duonos raugas",
+        "section": "Panettone tešla"
       },
       {
         "amount": 400,
         "unit": "g",
-        "name": "stiprūs miltai"
+        "name": "stiprūs miltai",
+        "section": "Panettone tešla"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "druska"
+        "name": "druska",
+        "section": "Panettone tešla"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "Panettone tešla"
       },
       {
         "amount": 330,
         "unit": "g",
-        "name": "rome mirkyti džiovinti vaisiai"
+        "name": "rome mirkyti džiovinti vaisiai",
+        "section": "Panettone tešla"
       }
     ],
     "steps": [
@@ -5316,102 +5963,122 @@
       {
         "amount": 400,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "Šokoladinė trapi tešla"
       },
       {
         "amount": 40,
         "unit": "g",
-        "name": "alkalizuoti kakavos milteliai 22–24%"
+        "name": "alkalizuoti kakavos milteliai 22–24%",
+        "section": "Šokoladinė trapi tešla"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "druska"
+        "name": "druska",
+        "section": "Šokoladinė trapi tešla"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "Šokoladinė trapi tešla"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "grietinė 20–30%"
+        "name": "grietinė 20–30%",
+        "section": "Šokoladinė trapi tešla"
       },
       {
         "amount": 36,
         "unit": "g",
-        "name": "kiaušinių tryniai (~2 vnt.)"
+        "name": "kiaušinių tryniai (~2 vnt.)",
+        "section": "Šokoladinė trapi tešla"
       },
       {
         "amount": 500,
         "unit": "g",
-        "name": "pienas 3,2%"
+        "name": "pienas 3,2%",
+        "section": "Šokoladinis diplomatinis kremas"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "vanilės ankštis"
+        "name": "vanilės ankštis",
+        "section": "Šokoladinis diplomatinis kremas"
       },
       {
         "amount": 110,
         "unit": "g",
-        "name": "kiaušiniai (~2 vnt.)"
+        "name": "kiaušiniai (~2 vnt.)",
+        "section": "Šokoladinis diplomatinis kremas"
       },
       {
         "amount": 36,
         "unit": "g",
-        "name": "kiaušinių tryniai (~2 vnt.)"
+        "name": "kiaušinių tryniai (~2 vnt.)",
+        "section": "Šokoladinis diplomatinis kremas"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Šokoladinis diplomatinis kremas"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "kukurūzų krakmolas"
+        "name": "kukurūzų krakmolas",
+        "section": "Šokoladinis diplomatinis kremas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "pienas 3,2%"
+        "name": "pienas 3,2%",
+        "section": "Šokoladinis diplomatinis kremas"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "tamsusis šokoladas 54,5%"
+        "name": "tamsusis šokoladas 54,5%",
+        "section": "Šokoladinis diplomatinis kremas"
       },
       {
         "amount": 500,
         "unit": "g",
-        "name": "kauliukų neturinčios vyšnios"
+        "name": "kauliukų neturinčios vyšnios",
+        "section": "Rūgščiųjų vyšnių padažas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Rūgščiųjų vyšnių padažas"
       },
       {
         "amount": 5,
         "unit": "g",
-        "name": "NH Nappage pektinas"
+        "name": "NH Nappage pektinas",
+        "section": "Rūgščiųjų vyšnių padažas"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "šviežias kokoso minkštimas"
+        "name": "šviežias kokoso minkštimas",
+        "section": "Kokosų ganašas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "Kokosų ganašas"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "baltasis šokoladas 28–30%"
+        "name": "baltasis šokoladas 28–30%",
+        "section": "Kokosų ganašas"
       }
     ],
     "steps": [
@@ -5506,12 +6173,14 @@
       {
         "amount": 100,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Sūdyta karamelė"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "gliukozės arba gliukozės-fruktozės sirupas"
+        "name": "gliukozės arba gliukozės-fruktozės sirupas",
+        "section": "Sūdyta karamelė"
       },
       {
         "amount": {
@@ -5519,7 +6188,8 @@
           "max": 50
         },
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "Sūdyta karamelė"
       },
       {
         "amount": {
@@ -5527,33 +6197,39 @@
           "max": 75
         },
         "unit": "g",
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "Sūdyta karamelė"
       },
       {
         "amount": 0.25,
         "unit": "tsp",
         "name": "stambi druska",
-        "amount_ml": 1.25
+        "amount_ml": 1.25,
+        "section": "Sūdyta karamelė"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "tamsusis šokoladas 54,5%"
+        "name": "tamsusis šokoladas 54,5%",
+        "section": "Juodojo šokolado ganašas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "Juodojo šokolado ganašas"
       },
       {
         "amount": 450,
         "unit": "g",
-        "name": "kreminis sūris 60–70%"
+        "name": "kreminis sūris 60–70%",
+        "section": "Šokoladinis varškės sūrio kremas"
       },
       {
         "amount": 225,
         "unit": "g",
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "Šokoladinis varškės sūrio kremas"
       },
       {
         "amount": {
@@ -5561,7 +6237,8 @@
           "max": 100
         },
         "unit": "g",
-        "name": "cukraus pudra (pagal skonį)"
+        "name": "cukraus pudra (pagal skonį)",
+        "section": "Šokoladinis varškės sūrio kremas"
       },
       {
         "amount": {
@@ -5569,7 +6246,8 @@
           "max": 30
         },
         "unit": "g",
-        "name": "alkalizuoti kakavos milteliai 22–24% (pagal skonį)"
+        "name": "alkalizuoti kakavos milteliai 22–24% (pagal skonį)",
+        "section": "Šokoladinis varškės sūrio kremas"
       }
     ],
     "steps": [
@@ -5606,172 +6284,206 @@
       {
         "amount": 75,
         "unit": "g",
-        "name": "kiaušinių tryniai (~4 vnt.)"
+        "name": "kiaušinių tryniai (~4 vnt.)",
+        "section": "Vanilinis biskvitas"
       },
       {
         "amount": 70,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Vanilinis biskvitas"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "vanilės milteliai"
+        "name": "vanilės milteliai",
+        "section": "Vanilinis biskvitas"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "kiaušinių baltymai (~4 vnt.)"
+        "name": "kiaušinių baltymai (~4 vnt.)",
+        "section": "Vanilinis biskvitas"
       },
       {
         "amount": 2,
         "unit": "g",
-        "name": "stambi druska"
+        "name": "stambi druska",
+        "section": "Vanilinis biskvitas"
       },
       {
         "amount": 70,
         "unit": "g",
-        "name": "cukraus pudra"
+        "name": "cukraus pudra",
+        "section": "Vanilinis biskvitas"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "Vanilinis biskvitas"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "kukurūzų krakmolas"
+        "name": "kukurūzų krakmolas",
+        "section": "Vanilinis biskvitas"
       },
       {
         "amount": 3,
         "unit": "g",
-        "name": "kepimo milteliai"
+        "name": "kepimo milteliai",
+        "section": "Vanilinis biskvitas"
       },
       {
         "amount": 12,
         "unit": "g",
-        "name": "želatina 220 Bloom"
+        "name": "želatina 220 Bloom",
+        "section": "Miško uogų kompotas"
       },
       {
         "amount": 72,
         "unit": "g",
-        "name": "šaltas vanduo"
+        "name": "šaltas vanduo",
+        "section": "Miško uogų kompotas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "avietų sultys"
+        "name": "avietų sultys",
+        "section": "Miško uogų kompotas"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "vanduo"
+        "name": "vanduo",
+        "section": "Miško uogų kompotas"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Miško uogų kompotas"
       },
       {
         "amount": 130,
         "unit": "g",
-        "name": "miško uogos (avietės, mėlynuogės, mėlynės, gervuogės, laukinės žemuogės)"
+        "name": "miško uogos (avietės, mėlynuogės, mėlynės, gervuogės, laukinės žemuogės)",
+        "section": "Miško uogų kompotas"
       },
       {
         "amount": 8,
         "unit": "g",
-        "name": "želatina 220 Bloom"
+        "name": "želatina 220 Bloom",
+        "section": "Miško uogų musas"
       },
       {
         "amount": 48,
         "unit": "g",
-        "name": "šaltas vanduo"
+        "name": "šaltas vanduo",
+        "section": "Miško uogų musas"
       },
       {
         "amount": 45,
         "unit": "g",
-        "name": "mėlynuogės"
+        "name": "mėlynuogės",
+        "section": "Miško uogų musas"
       },
       {
         "amount": 45,
         "unit": "g",
-        "name": "avietės"
+        "name": "avietės",
+        "section": "Miško uogų musas"
       },
       {
         "amount": 65,
         "unit": null,
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "Miško uogų musas"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "baltasis šokoladas 28-30% (lašeliai)"
+        "name": "baltasis šokoladas 28-30% (lašeliai)",
+        "section": "Miško uogų musas"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "Miško uogų musas"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "mėlynės"
+        "name": "mėlynės",
+        "section": "Miško uogų musas"
       },
       {
         "amount": 500,
         "unit": "g",
-        "name": "kreminis sūris 60–70%"
+        "name": "kreminis sūris 60–70%",
+        "section": "Vanilinis varškės sūrio kremas"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "riebi grietinėlė 33–36%"
+        "name": "riebi grietinėlė 33–36%",
+        "section": "Vanilinis varškės sūrio kremas"
       },
       {
         "amount": 70,
         "unit": "g",
-        "name": "cukraus pudra"
+        "name": "cukraus pudra",
+        "section": "Vanilinis varškės sūrio kremas"
       },
       {
         "amount": 5,
         "unit": "g",
-        "name": "vanilės milteliai"
+        "name": "vanilės milteliai",
+        "section": "Vanilinis varškės sūrio kremas"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "pienas 3,2%"
+        "name": "pienas 3,2%",
+        "section": "Vanilinis pieno įmirkymas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Vanilinis pieno įmirkymas"
       },
       {
         "amount": 5,
         "unit": "g",
-        "name": "vanilės milteliai"
+        "name": "vanilės milteliai",
+        "section": "Vanilinis pieno įmirkymas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "sviestas 82,5%"
+        "name": "sviestas 82,5%",
+        "section": "Vanilinis pieno įmirkymas"
       },
       {
         "amount": 40,
         "unit": "g",
-        "name": "cukraus pudra"
+        "name": "cukraus pudra",
+        "section": "Vanilinis pieno įmirkymas"
       },
       {
         "amount": 5,
         "unit": "g",
-        "name": "vanilės milteliai"
+        "name": "vanilės milteliai",
+        "section": "Vanilinis pieno įmirkymas"
       },
       {
         "amount": 300,
         "unit": "g",
-        "name": "kreminis sūris 60–70%"
+        "name": "kreminis sūris 60–70%",
+        "section": "Vanilinis pieno įmirkymas"
       }
     ],
     "steps": [
@@ -5841,17 +6553,20 @@
       {
         "amount": 150,
         "unit": "g",
-        "name": "šviesios razinos"
+        "name": "šviesios razinos",
+        "section": "Prieskoniniai džiovinti vaisiai"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "džiovinti abrikosai"
+        "name": "džiovinti abrikosai",
+        "section": "Prieskoniniai džiovinti vaisiai"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "džiovintos spanguolės"
+        "name": "džiovintos spanguolės",
+        "section": "Prieskoniniai džiovinti vaisiai"
       },
       {
         "amount": {
@@ -5859,52 +6574,62 @@
           "max": 120
         },
         "unit": "g",
-        "name": "prieskoninis arba tamsus romas"
+        "name": "prieskoninis arba tamsus romas",
+        "section": "Prieskoniniai džiovinti vaisiai"
       },
       {
         "amount": 140,
         "unit": "g",
-        "name": "migdolai"
+        "name": "migdolai",
+        "section": "Skrudintos riešutų pusės"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "lazdyno riešutai"
+        "name": "lazdyno riešutai",
+        "section": "Skrudintos riešutų pusės"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "Tešla"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Tešla"
       },
       {
         "amount": 130,
         "unit": "g",
-        "name": "kiaušiniai"
+        "name": "kiaušiniai",
+        "section": "Tešla"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "varškė 9%"
+        "name": "varškė 9%",
+        "section": "Tešla"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "vanilės milteliai"
+        "name": "vanilės milteliai",
+        "section": "Tešla"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "vieno apelsino žievelė"
+        "name": "vieno apelsino žievelė",
+        "section": "Tešla"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "vienos citrinos žievelė"
+        "name": "vienos citrinos žievelė",
+        "section": "Tešla"
       },
       {
         "amount": {
@@ -5912,37 +6637,44 @@
           "max": 70
         },
         "unit": "g",
-        "name": "citrinos sultys"
+        "name": "citrinos sultys",
+        "section": "Tešla"
       },
       {
         "amount": 400,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "Tešla"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "kepimo milteliai"
+        "name": "kepimo milteliai",
+        "section": "Tešla"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "Tešla"
       },
       {
         "amount": 500,
         "unit": "g",
-        "name": "prieskoniniai džiovinti vaisiai"
+        "name": "prieskoniniai džiovinti vaisiai",
+        "section": "Tešla"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "skrudintų riešutų pusės"
+        "name": "skrudintų riešutų pusės",
+        "section": "Tešla"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "Tešla"
       }
     ],
     "steps": [
@@ -5981,68 +6713,81 @@
           "max": 5
         },
         "unit": null,
-        "name": "bananai"
+        "name": "bananai",
+        "section": "Sausai karamelizuoti bananai"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Sausai karamelizuoti bananai"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "gliukozės arba gliukozės-fruktozės sirupas",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Sausai karamelizuoti bananai"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "beskonis augalinis aliejus"
+        "name": "beskonis augalinis aliejus",
+        "section": "Tešla"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "vanduo"
+        "name": "vanduo",
+        "section": "Tešla"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "Tešla"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "kukurūzų krakmolas"
+        "name": "kukurūzų krakmolas",
+        "section": "Tešla"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "kepimo milteliai"
+        "name": "kepimo milteliai",
+        "section": "Tešla"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "manų kruopos"
+        "name": "manų kruopos",
+        "section": "Tešla"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Tešla"
       },
       {
         "amount": 1,
         "unit": "g",
-        "name": "druska"
+        "name": "druska",
+        "section": "Tešla"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "trinti kokosai"
+        "name": "trinti kokosai",
+        "section": "Tešla"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "vieno apelsino žievelė"
+        "name": "vieno apelsino žievelė",
+        "section": "Tešla"
       }
     ],
     "steps": [
@@ -6112,32 +6857,38 @@
       {
         "amount": 270,
         "unit": "g",
-        "name": "kreminis sūris 60-70%"
+        "name": "kreminis sūris 60-70%",
+        "section": "Ingredientai"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "maskarponė 80-85%"
+        "name": "maskarponė 80-85%",
+        "section": "Ingredientai"
       },
       {
         "amount": 460,
         "unit": "g",
-        "name": "riebi grietinėlė 33-36%"
+        "name": "riebi grietinėlė 33-36%",
+        "section": "Ingredientai"
       },
       {
         "amount": 140,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Ingredientai"
       },
       {
         "amount": 240,
         "unit": "g",
-        "name": "kiaušiniai (~4,4 vnt.)"
+        "name": "kiaušiniai (~4,4 vnt.)",
+        "section": "Ingredientai"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "Ingredientai"
       },
       {
         "amount": {
@@ -6145,7 +6896,8 @@
           "max": 50
         },
         "unit": "g",
-        "name": "vanilės pasta"
+        "name": "vanilės pasta",
+        "section": "Ingredientai"
       }
     ],
     "steps": [
@@ -6174,53 +6926,63 @@
       {
         "amount": 210,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Medaus tešla"
       },
       {
         "amount": 90,
         "unit": "g",
-        "name": "medus"
+        "name": "medus",
+        "section": "Medaus tešla"
       },
       {
         "amount": 165,
         "unit": "g",
-        "name": "kiaušiniai (~3 vnt.)"
+        "name": "kiaušiniai (~3 vnt.)",
+        "section": "Medaus tešla"
       },
       {
         "amount": 160,
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "Medaus tešla"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "valgomoji soda"
+        "name": "valgomoji soda",
+        "section": "Medaus tešla"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "citrinos sultys arba 1/3 tsp citrinos rūgšties",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Medaus tešla"
       },
       {
         "amount": 600,
         "unit": "g",
-        "name": "kvietiniai miltai"
+        "name": "kvietiniai miltai",
+        "section": "Medaus tešla"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "šaltalankiai (šviežios arba šaldytos)"
+        "name": "šaltalankiai (šviežios arba šaldytos)",
+        "section": "Šaltalankių kurdas"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "smulkus cukrus"
+        "name": "smulkus cukrus",
+        "section": "Šaltalankių kurdas"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "sviestas 82%"
+        "name": "sviestas 82%",
+        "section": "Šaltalankių kurdas"
       },
       {
         "amount": {
@@ -6228,37 +6990,44 @@
           "max": 3
         },
         "unit": null,
-        "name": "kiaušinių tryniai"
+        "name": "kiaušinių tryniai",
+        "section": "Šaltalankių kurdas"
       },
       {
         "amount": 800,
         "unit": "g",
-        "name": "nusunkta grietinė 30%"
+        "name": "nusunkta grietinė 30%",
+        "section": "Grietinės kremas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "cukraus pudra"
+        "name": "cukraus pudra",
+        "section": "Grietinės kremas"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "vanilės ankštis arba 25 g vanilės pastos"
+        "name": "vanilės ankštis arba 25 g vanilės pastos",
+        "section": "Grietinės kremas"
       },
       {
         "amount": 400,
         "unit": "g",
-        "name": "nusunkta grietinė 30%"
+        "name": "nusunkta grietinė 30%",
+        "section": "Grietinės kremas"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "cukraus pudra"
+        "name": "cukraus pudra",
+        "section": "Grietinės kremas"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "vanilės ankštis arba 15 g vanilės pastos"
+        "name": "vanilės ankštis arba 15 g vanilės pastos",
+        "section": "Grietinės kremas"
       }
     ],
     "steps": [
@@ -6366,38 +7135,45 @@
       {
         "amount": 125,
         "unit": null,
-        "name": "smulkaus cukraus"
+        "name": "smulkaus cukraus",
+        "section": "Bananų karamelė"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "gliukozės sirupo"
+        "name": "gliukozės sirupo",
+        "section": "Bananų karamelė"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "riebios grietinėlės 33–36%"
+        "name": "riebios grietinėlės 33–36%",
+        "section": "Bananų karamelė"
       },
       {
         "amount": 70,
         "unit": "g",
-        "name": "bananų tyrės"
+        "name": "bananų tyrės",
+        "section": "Bananų karamelė"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "vanilės pastos",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Bananų karamelė"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "tamsaus romo"
+        "name": "tamsaus romo",
+        "section": "Bananų karamelė"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "sviesto 82%"
+        "name": "sviesto 82%",
+        "section": "Bananų karamelė"
       },
       {
         "amount": {
@@ -6409,22 +7185,26 @@
         "amount_ml": {
           "min": 1.25,
           "max": 1.67
-        }
+        },
+        "section": "Bananų karamelė"
       },
       {
         "amount": 660,
         "unit": "g",
-        "name": "maskarponės 80–85%"
+        "name": "maskarponės 80–85%",
+        "section": "Bananų karamelės–romo kremas"
       },
       {
         "amount": 340,
         "unit": "g",
-        "name": "bananų karamelės"
+        "name": "bananų karamelės",
+        "section": "Bananų karamelės–romo kremas"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "tamsaus romo"
+        "name": "tamsaus romo",
+        "section": "Bananų karamelės–romo kremas"
       }
     ],
     "steps": [
@@ -6511,57 +7291,68 @@
       {
         "amount": 65,
         "unit": "g",
-        "name": "citrinų sulčių"
+        "name": "citrinų sulčių",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 35,
         "unit": "g",
-        "name": "smulkaus cukraus"
+        "name": "smulkaus cukraus",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "kiaušinių trynių (~2,5 vnt.)"
+        "name": "kiaušinių trynių (~2,5 vnt.)",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 35,
         "unit": "g",
-        "name": "sviesto 82%"
+        "name": "sviesto 82%",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "vienos citrinos žievelė"
+        "name": "vienos citrinos žievelė",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 90,
         "unit": "g",
-        "name": "riebios grietinėlės 33-36%"
+        "name": "riebios grietinėlės 33-36%",
+        "section": "Kremas"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "vienos citrinos žievelė"
+        "name": "vienos citrinos žievelė",
+        "section": "Kremas"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "baltojo šokolado 30%"
+        "name": "baltojo šokolado 30%",
+        "section": "Kremas"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "riebios grietinėlės 33-36%"
+        "name": "riebios grietinėlės 33-36%",
+        "section": "Kremas"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "Limoncello likerio arba citrinų sulčių"
+        "name": "Limoncello likerio arba citrinų sulčių",
+        "section": "Kremas"
       },
       {
         "amount": 180,
         "unit": "g",
-        "name": "maskarponės 80-85%"
+        "name": "maskarponės 80-85%",
+        "section": "Kremas"
       },
       {
         "amount": {
@@ -6569,7 +7360,8 @@
           "max": 3
         },
         "unit": null,
-        "name": "žiupsneliai maltos šafrano arba 2-3 lašai geltono dažiklio"
+        "name": "žiupsneliai maltos šafrano arba 2-3 lašai geltono dažiklio",
+        "section": "Kremas"
       }
     ],
     "steps": [
@@ -6602,112 +7394,131 @@
       {
         "amount": 100,
         "unit": "g",
-        "name": "lazdyno riešutų"
+        "name": "lazdyno riešutų",
+        "section": "Trupiniai"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "smulkaus cukraus"
+        "name": "smulkaus cukraus",
+        "section": "Trupiniai"
       },
       {
         "amount": 3,
         "unit": "g",
-        "name": "maltas cinamonas"
+        "name": "maltas cinamonas",
+        "section": "Trupiniai"
       },
       {
         "amount": 0.25,
         "unit": "tsp",
         "name": "druskos",
-        "amount_ml": 1.25
+        "amount_ml": 1.25,
+        "section": "Trupiniai"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "grietinės 20-30%"
+        "name": "grietinės 20-30%",
+        "section": "Trupiniai"
       },
       {
         "amount": 130,
         "unit": "g",
-        "name": "graikiško jogurto 10-12%"
+        "name": "graikiško jogurto 10-12%",
+        "section": "Trupiniai"
       },
       {
         "amount": 1.5,
         "unit": "tsp",
         "name": "valgomosios sodos",
-        "amount_ml": 7.5
+        "amount_ml": 7.5,
+        "section": "Trupiniai"
       },
       {
         "amount": 180,
         "unit": "g",
-        "name": "kiaušinių (~3 vnt.)"
+        "name": "kiaušinių (~3 vnt.)",
+        "section": "Trupiniai"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "smulkaus cukraus"
+        "name": "smulkaus cukraus",
+        "section": "Trupiniai"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "sviesto 82%"
+        "name": "sviesto 82%",
+        "section": "Trupiniai"
       },
       {
         "amount": 1,
         "unit": "tbsp",
         "name": "romo",
-        "amount_ml": 15
+        "amount_ml": 15,
+        "section": "Trupiniai"
       },
       {
         "amount": 2,
         "unit": "tsp",
         "name": "vanilės pastos",
-        "amount_ml": 10
+        "amount_ml": 10,
+        "section": "Trupiniai"
       },
       {
         "amount": 460,
         "unit": "g",
-        "name": "kvietinių miltų"
+        "name": "kvietinių miltų",
+        "section": "Trupiniai"
       },
       {
         "amount": 2,
         "unit": "tsp",
         "name": "kepimo miltelių",
-        "amount_ml": 10
+        "amount_ml": 10,
+        "section": "Trupiniai"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "druskos",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Trupiniai"
       },
       {
         "amount": 240,
         "unit": "g",
-        "name": "pieniško šokolado 33%"
+        "name": "pieniško šokolado 33%",
+        "section": "Ganašas"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "lazdyno riešutų pastos"
+        "name": "lazdyno riešutų pastos",
+        "section": "Ganašas"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "riebios grietinėlės 33-36%"
+        "name": "riebios grietinėlės 33-36%",
+        "section": "Ganašas"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "riebios grietinėlės 33-36%"
+        "name": "riebios grietinėlės 33-36%",
+        "section": "Ganašas"
       },
       {
         "amount": 300,
         "unit": "g",
-        "name": "maskarponės 80-85%"
+        "name": "maskarponės 80-85%",
+        "section": "Ganašas"
       }
     ],
     "steps": [
-      "Tešlos ~28-30 vnt.",
       "Skrudinkite lazdyno riešutus orkaitėje, kol jie taps auksinės spalvos ir įgaus ryškų riešutų kvapą, tuomet visiškai atvėsinkite.",
       "jei naudojate neluptus lazdyno riešutus, nulupkite juos po skrudinimo",
       "Sudėkite skrudintus lazdyno riešutus, cukrų, maltą cinamoną ir druską į trintuvo / virtuvinio kombaino dubenį. Sumalkite trumpais impulsais į smulkius trupinius.",
@@ -6795,37 +7606,44 @@
       {
         "amount": 60,
         "unit": "g",
-        "name": "kiaušinio (~1 vnt.)"
+        "name": "kiaušinio (~1 vnt.)",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 36,
         "unit": "g",
-        "name": "kiaušinių trynių (~2 vnt.)"
+        "name": "kiaušinių trynių (~2 vnt.)",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 90,
         "unit": "g",
-        "name": "citrinų sulčių"
+        "name": "citrinų sulčių",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 90,
         "unit": "g",
-        "name": "smulkaus cukraus"
+        "name": "smulkaus cukraus",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "sviesto 82%"
+        "name": "sviesto 82%",
+        "section": "Citrinų kurdas"
       },
       {
         "amount": 270,
         "unit": "g",
-        "name": "citrinų kremo"
+        "name": "citrinų kremo",
+        "section": "Kremas"
       },
       {
         "amount": 330,
         "unit": "g",
-        "name": "maskarponės 80-85%"
+        "name": "maskarponės 80-85%",
+        "section": "Kremas"
       }
     ],
     "steps": [
@@ -6859,17 +7677,20 @@
       {
         "amount": 200,
         "unit": "g",
-        "name": "trapios tešlos trupinių arba sausainių"
+        "name": "trapios tešlos trupinių arba sausainių",
+        "section": "Pagrindas"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "migdolų drožlių"
+        "name": "migdolų drožlių",
+        "section": "Pagrindas"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "tarkuoto kokoso"
+        "name": "tarkuoto kokoso",
+        "section": "Pagrindas"
       },
       {
         "amount": {
@@ -6877,66 +7698,78 @@
           "max": 50
         },
         "unit": "g",
-        "name": "sviesto 82%"
+        "name": "sviesto 82%",
+        "section": "Pagrindas"
       },
       {
         "amount": 850,
         "unit": "g",
-        "name": "kreminio sūrio 60-70%"
+        "name": "kreminio sūrio 60-70%",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 160,
         "unit": "g",
-        "name": "smulkaus cukraus"
+        "name": "smulkaus cukraus",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 280,
         "unit": "g",
-        "name": "kiaušinių (~5 vnt.)"
+        "name": "kiaušinių (~5 vnt.)",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 85,
         "unit": "g",
-        "name": "grietinės 20-30%"
+        "name": "grietinės 20-30%",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 70,
         "unit": "g",
-        "name": "Amaretto likerio"
+        "name": "Amaretto likerio",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "vanilės pastos",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "vieno apelsino žievelė"
+        "name": "vieno apelsino žievelė",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 400,
         "unit": "g",
-        "name": "šviežių abrikosų"
+        "name": "šviežių abrikosų",
+        "section": "Dekoravimas"
       },
       {
         "amount": 1,
         "unit": "tbsp",
         "name": "smulkaus cukraus",
-        "amount_ml": 15
+        "amount_ml": 15,
+        "section": "Dekoravimas"
       },
       {
         "amount": 1,
         "unit": "tbsp",
         "name": "romo",
-        "amount_ml": 15
+        "amount_ml": 15,
+        "section": "Dekoravimas"
       },
       {
         "amount": 1,
         "unit": "tbsp",
         "name": "Amaretto likerio",
-        "amount_ml": 15
+        "amount_ml": 15,
+        "section": "Dekoravimas"
       },
       {
         "amount": {
@@ -6944,7 +7777,8 @@
           "max": 20
         },
         "unit": "g",
-        "name": "migdolų drožlių"
+        "name": "migdolų drožlių",
+        "section": "Dekoravimas"
       }
     ],
     "steps": [
@@ -7028,53 +7862,63 @@
       {
         "amount": 300,
         "unit": "g",
-        "name": "braškių tyrės"
+        "name": "braškių tyrės",
+        "section": "Braškių marmeladas"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "smulkaus cukraus"
+        "name": "smulkaus cukraus",
+        "section": "Braškių marmeladas"
       },
       {
         "amount": 3,
         "unit": "g",
-        "name": "NH pektino Nappage"
+        "name": "NH pektino Nappage",
+        "section": "Braškių marmeladas"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "citrinų sulčių"
+        "name": "citrinų sulčių",
+        "section": "Braškių marmeladas"
       },
       {
         "amount": 70,
         "unit": "g",
-        "name": "riebios grietinėlės 33-36 %"
+        "name": "riebios grietinėlės 33-36 %",
+        "section": "Kremas"
       },
       {
         "amount": 70,
         "unit": "g",
-        "name": "baltojo šokolado"
+        "name": "baltojo šokolado",
+        "section": "Kremas"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "riebios grietinėlės 33-36 %"
+        "name": "riebios grietinėlės 33-36 %",
+        "section": "Kremas"
       },
       {
         "amount": 1,
         "unit": "tbsp",
         "name": "vanilės pastos",
-        "amount_ml": 15
+        "amount_ml": 15,
+        "section": "Kremas"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "maskarponės"
+        "name": "maskarponės",
+        "section": "Kremas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "braškių marmelado"
+        "name": "braškių marmelado",
+        "section": "Kremas"
       }
     ],
     "steps": [
@@ -7117,137 +7961,163 @@
       {
         "amount": 260,
         "unit": "g",
-        "name": "smulkintų datulių"
+        "name": "smulkintų datulių",
+        "section": "Keksas"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "rudojo cukraus"
+        "name": "rudojo cukraus",
+        "section": "Keksas"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "sviesto 82%"
+        "name": "sviesto 82%",
+        "section": "Keksas"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "tamsaus romo"
+        "name": "tamsaus romo",
+        "section": "Keksas"
       },
       {
         "amount": 180,
         "unit": "g",
-        "name": "vandens"
+        "name": "vandens",
+        "section": "Keksas"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "valgomosios sodos",
-        "amount_ml": 2.5
+        "amount_ml": 2.5,
+        "section": "Keksas"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "kiaušinių"
+        "name": "kiaušinių",
+        "section": "Keksas"
       },
       {
         "amount": 130,
         "unit": "g",
-        "name": "bananų"
+        "name": "bananų",
+        "section": "Keksas"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "vanilės pastos",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Keksas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "graikinių riešutų"
+        "name": "graikinių riešutų",
+        "section": "Keksas"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "druskos",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Keksas"
       },
       {
         "amount": 260,
         "unit": "g",
-        "name": "kvietinių miltų"
+        "name": "kvietinių miltų",
+        "section": "Keksas"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "kepimo miltelių"
+        "name": "kepimo miltelių",
+        "section": "Keksas"
       },
       {
         "amount": 125,
         "unit": "g",
-        "name": "smulkaus cukraus"
+        "name": "smulkaus cukraus",
+        "section": "Karamelės-bananų padažas"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "gliukozės sirupo"
+        "name": "gliukozės sirupo",
+        "section": "Karamelės-bananų padažas"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "riebios grietinėlės 33-36%"
+        "name": "riebios grietinėlės 33-36%",
+        "section": "Karamelės-bananų padažas"
       },
       {
         "amount": 70,
         "unit": "g",
-        "name": "bananų tyrės"
+        "name": "bananų tyrės",
+        "section": "Karamelės-bananų padažas"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "vanilės pastos",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Karamelės-bananų padažas"
       },
       {
         "amount": 15,
         "unit": "g",
-        "name": "tamsaus romo"
+        "name": "tamsaus romo",
+        "section": "Karamelės-bananų padažas"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "sviesto 82%"
+        "name": "sviesto 82%",
+        "section": "Karamelės-bananų padažas"
       },
       {
         "amount": 0.3333333333333333,
         "unit": "tsp",
         "name": "druskos",
-        "amount_ml": 1.67
+        "amount_ml": 1.67,
+        "section": "Karamelės-bananų padažas"
       },
       {
         "amount": 265,
         "unit": "g",
-        "name": "kreminio sūrio"
+        "name": "kreminio sūrio",
+        "section": "Karamelės-bananų padažas"
       },
       {
         "amount": 135,
         "unit": "g",
-        "name": "riebios grietinėlės 33-36%"
+        "name": "riebios grietinėlės 33-36%",
+        "section": "Karamelės-bananų padažas"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "cukraus pudros"
+        "name": "cukraus pudros",
+        "section": "Karamelės-bananų padažas"
       },
       {
         "amount": 3,
         "unit": "g",
-        "name": "vanilės pastos"
+        "name": "vanilės pastos",
+        "section": "Karamelės-bananų padažas"
       },
       {
         "amount": 2,
         "unit": null,
-        "name": "stačiakampės formos ~22x9 cm, h=10 cm"
+        "name": "stačiakampės formos ~22x9 cm, h=10 cm",
+        "section": "Karamelės-bananų padažas"
       }
     ],
     "steps": [
@@ -7288,94 +8158,112 @@
       {
         "amount": 500,
         "unit": "g",
-        "name": "kvietinių miltų"
+        "name": "kvietinių miltų",
+        "section": "Biskvito sluoksniai"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "smulkaus cukraus"
+        "name": "smulkaus cukraus",
+        "section": "Biskvito sluoksniai"
       },
       {
         "amount": 140,
         "unit": "g",
-        "name": "sviesto 82%"
+        "name": "sviesto 82%",
+        "section": "Biskvito sluoksniai"
       },
       {
         "amount": 115,
         "unit": "g",
-        "name": "kiaušinių"
+        "name": "kiaušinių",
+        "section": "Biskvito sluoksniai"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "medaus"
+        "name": "medaus",
+        "section": "Biskvito sluoksniai"
       },
       {
         "amount": 6,
         "unit": "g",
-        "name": "valgomosios sodos"
+        "name": "valgomosios sodos",
+        "section": "Biskvito sluoksniai"
       },
       {
         "amount": 3,
         "unit": "g",
-        "name": "citrinos rūgšties"
+        "name": "citrinos rūgšties",
+        "section": "Biskvito sluoksniai"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "braškių tyrės"
+        "name": "braškių tyrės",
+        "section": "Braškių konfitiūras"
       },
       {
         "amount": 1,
         "unit": "tbsp",
         "name": "citrinos / laimo sulčių",
-        "amount_ml": 15
+        "amount_ml": 15,
+        "section": "Braškių konfitiūras"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "smulkaus cukraus"
+        "name": "smulkaus cukraus",
+        "section": "Braškių konfitiūras"
       },
       {
         "amount": 3,
         "unit": "g",
-        "name": "NH pektino Nappage"
+        "name": "NH pektino Nappage",
+        "section": "Braškių konfitiūras"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "sviesto 82%"
+        "name": "sviesto 82%",
+        "section": "Karamelės kremas"
       },
       {
         "amount": 370,
         "unit": "g",
-        "name": "karamelizuoto sutirštinto pieno"
+        "name": "karamelizuoto sutirštinto pieno",
+        "section": "Karamelės kremas"
       },
       {
         "amount": 70,
         "unit": "g",
-        "name": "nusunktos grietinės 25-30%"
+        "name": "nusunktos grietinės 25-30%",
+        "section": "Karamelės kremas"
       },
       {
         "amount": 400,
         "unit": "g",
-        "name": "kreminio sūrio 60-65%"
+        "name": "kreminio sūrio 60-65%",
+        "section": "Varškės sūrio kremas"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "riebios grietinėlės 33-36%"
+        "name": "riebios grietinėlės 33-36%",
+        "section": "Varškės sūrio kremas"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "cukraus pudros"
+        "name": "cukraus pudros",
+        "section": "Varškės sūrio kremas"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "vanilės pastos",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Varškės sūrio kremas"
       }
     ],
     "steps": [
@@ -7413,89 +8301,106 @@
       {
         "amount": 60,
         "unit": "g",
-        "name": "migdolų drožlių"
+        "name": "migdolų drožlių",
+        "section": "Sūrio pyrago pagrindas"
       },
       {
         "amount": 240,
         "unit": "g",
-        "name": "trapios tešlos trupinių arba sausainių"
+        "name": "trapios tešlos trupinių arba sausainių",
+        "section": "Sūrio pyrago pagrindas"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "malto cinamono",
-        "amount_ml": 2.5
+        "amount_ml": 2.5,
+        "section": "Sūrio pyrago pagrindas"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "maltos žvaigždinio anyžiaus",
-        "amount_ml": 2.5
+        "amount_ml": 2.5,
+        "section": "Sūrio pyrago pagrindas"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "sviesto 82%"
+        "name": "sviesto 82%",
+        "section": "Sūrio pyrago pagrindas"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "marakujos tyrės be sėklų"
+        "name": "marakujos tyrės be sėklų",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 10,
         "unit": "g",
-        "name": "kukurūzų krakmolo"
+        "name": "kukurūzų krakmolo",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 750,
         "unit": "g",
-        "name": "kreminio sūrio"
+        "name": "kreminio sūrio",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "baltojo cukraus"
+        "name": "baltojo cukraus",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 80,
         "unit": "g",
-        "name": "grietinės 20-30%"
+        "name": "grietinės 20-30%",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 165,
         "unit": "g",
-        "name": "kiaušinių"
+        "name": "kiaušinių",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 54,
         "unit": "g",
-        "name": "kiaušinių trynių"
+        "name": "kiaušinių trynių",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 180,
         "unit": "g",
-        "name": "mangų tyrės"
+        "name": "mangų tyrės",
+        "section": "Papuošimas"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "šviežių arba šaldytų mangų, supjaustytų kubeliais (1x1 cm kubeliai)"
+        "name": "šviežių arba šaldytų mangų, supjaustytų kubeliais (1x1 cm kubeliai)",
+        "section": "Papuošimas"
       },
       {
         "amount": 3,
         "unit": "g",
-        "name": "NH pektino Nappage"
+        "name": "NH pektino Nappage",
+        "section": "Papuošimas"
       },
       {
         "amount": 45,
         "unit": "g",
-        "name": "baltojo cukraus"
+        "name": "baltojo cukraus",
+        "section": "Papuošimas"
       },
       {
         "amount": 1,
         "unit": null,
-        "name": "vanilės ankštis"
+        "name": "vanilės ankštis",
+        "section": "Papuošimas"
       }
     ],
     "steps": [
@@ -7595,85 +8500,101 @@
       {
         "amount": 120,
         "unit": "g",
-        "name": "Guinness alaus"
+        "name": "Guinness alaus",
+        "section": "Tešla"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "sviesto 82%"
+        "name": "sviesto 82%",
+        "section": "Tešla"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "šarminto kakavos miltelių"
+        "name": "šarminto kakavos miltelių",
+        "section": "Tešla"
       },
       {
         "amount": 180,
         "unit": "g",
-        "name": "baltojo cukraus"
+        "name": "baltojo cukraus",
+        "section": "Tešla"
       },
       {
         "amount": 65,
         "unit": "g",
-        "name": "grietinės 20-30%"
+        "name": "grietinės 20-30%",
+        "section": "Tešla"
       },
       {
         "amount": 60,
         "unit": "g",
-        "name": "kiaušinio (1 didelis kiaušinis)"
+        "name": "kiaušinio (1 didelis kiaušinis)",
+        "section": "Tešla"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "vanilės pastos",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Tešla"
       },
       {
         "amount": 130,
         "unit": "g",
-        "name": "kvietinių miltų"
+        "name": "kvietinių miltų",
+        "section": "Tešla"
       },
       {
         "amount": 0.25,
         "unit": "tsp",
         "name": "druskos",
-        "amount_ml": 1.25
+        "amount_ml": 1.25,
+        "section": "Tešla"
       },
       {
         "amount": 1,
         "unit": "tsp",
         "name": "valgomosios sodos",
-        "amount_ml": 5
+        "amount_ml": 5,
+        "section": "Tešla"
       },
       {
         "amount": 125,
         "unit": "g",
-        "name": "maskarponės"
+        "name": "maskarponės",
+        "section": "Tešla"
       },
       {
         "amount": 45,
         "unit": "g",
-        "name": "Baileys likerio"
+        "name": "Baileys likerio",
+        "section": "Tešla"
       },
       {
         "amount": 20,
         "unit": "g",
-        "name": "cukraus pudros"
+        "name": "cukraus pudros",
+        "section": "Tešla"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "Baileys likerio"
+        "name": "Baileys likerio",
+        "section": "Įmirkymas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "juodojo šokolado 54,5%"
+        "name": "juodojo šokolado 54,5%",
+        "section": "Šokoladinis ganašas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "riebios grietinėlės 33-36%"
+        "name": "riebios grietinėlės 33-36%",
+        "section": "Šokoladinis ganašas"
       }
     ],
     "steps": [
@@ -7690,7 +8611,6 @@
       "Galite padėkoti komandai, nes šis įrašas pasirodo būtent jų dėka - aš pati dabar tiesiog nieko negaliu daryti.",
       "12 keksiukų*",
       "* patariu iš karto ruošti dvigubą porciją",
-      "Kremas su Baileys",
       "Sudėkite sviestą ir alų į prikaistuvį ir pastatykite ant vidutinės kaitros. Retkarčiais pamaišydami, palaukite, kol sviestas visiškai ištirps, neužvirindami mišinio.",
       "Kai tik sviestas ištirps, suberkite kakavos miltelius, sumaišytus su cukrumi. Kruopščiai išmaišykite ir nukelkite prikaistuvį nuo kaitros.",
       "Išplakite grietinę, kiaušinius ir vanilės pastą iki vientisumo. Įpilkite į mišinį prikaistuvyje ir kruopščiai išmaišykite.",
@@ -7698,7 +8618,6 @@
       "Supilkite tešlą į keksiukų formeles, užpildydami jas ~2/3. Kepkite apie 20 minučių 195°C temperatūroje. Patikrinkite keksiukų parengtumą mediniu iešmeliu.",
       "195 °C su „viršus-apačia“ / „apačia“ režimu",
       "175 °C su „ventiliatoriaus“ režimu",
-      "Kremas su Baileys",
       "Sudėkite gerai atšaldytą maskarponės sūrį į maišytuvo dubenį, suberkite cukraus pudrą ir Baileys likerį. Plakite su šluoteliu, kol gausite kremišką konsistenciją.",
       "Padarykite skylutes visiškai atvėsusių keksiukų centre naudodami bet kokio konditerinio antgalio galinę dalį ir švelniai jį įspausdami į kiekvieną keksiuką."
     ],
@@ -7732,83 +8651,99 @@
       {
         "amount": 40,
         "unit": "g",
-        "name": "graikinių riešutų"
+        "name": "graikinių riešutų",
+        "section": "Pagrindas"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "trapios tešlos trupinių arba sausainių"
+        "name": "trapios tešlos trupinių arba sausainių",
+        "section": "Pagrindas"
       },
       {
         "amount": 25,
         "unit": "g",
-        "name": "olandiško apdorojimo (šarminto) kakavos miltelių"
+        "name": "olandiško apdorojimo (šarminto) kakavos miltelių",
+        "section": "Pagrindas"
       },
       {
         "amount": 25,
         "unit": "g",
-        "name": "rudojo cukraus"
+        "name": "rudojo cukraus",
+        "section": "Pagrindas"
       },
       {
         "amount": 40,
         "unit": "g",
-        "name": "sviesto 82%"
+        "name": "sviesto 82%",
+        "section": "Pagrindas"
       },
       {
         "amount": 3,
         "unit": null,
-        "name": "dideli bananai"
+        "name": "dideli bananai",
+        "section": "Pagrindas"
       },
       {
         "amount": 375,
         "unit": "g",
-        "name": "baltojo šokolado"
+        "name": "baltojo šokolado",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 375,
         "unit": "g",
-        "name": "kreminio sūrio"
+        "name": "kreminio sūrio",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 180,
         "unit": "g",
-        "name": "kiaušinių (~3 vnt.)"
+        "name": "kiaušinių (~3 vnt.)",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 220,
         "unit": "g",
-        "name": "grietinės 20-30% arba riebios grietinėlės 33%"
+        "name": "grietinės 20-30% arba riebios grietinėlės 33%",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 1,
         "unit": "tbsp",
         "name": "vanilės pastos arba vanilės ekstrakto",
-        "amount_ml": 15
+        "amount_ml": 15,
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 125,
         "unit": "g",
-        "name": "juodojo šokolado 70%"
+        "name": "juodojo šokolado 70%",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 75,
         "unit": "g",
-        "name": "riebios grietinėlės 33-36%"
+        "name": "riebios grietinėlės 33-36%",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "bananų tyrės"
+        "name": "bananų tyrės",
+        "section": "Varškės sūrio sluoksnis"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "pieniško šokolado"
+        "name": "pieniško šokolado",
+        "section": "Pieninio šokolado ganašas"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "riebios grietinėlės 33-36%"
+        "name": "riebios grietinėlės 33-36%",
+        "section": "Pieninio šokolado ganašas"
       }
     ],
     "steps": [
@@ -8052,7 +8987,8 @@
       {
         "amount": 500,
         "unit": "g",
-        "name": "keptų Granny Smith obuolių"
+        "name": "keptų Granny Smith obuolių",
+        "section": "Obuolių uogienė"
       },
       {
         "amount": {
@@ -8064,17 +9000,20 @@
         "amount_ml": {
           "min": 30,
           "max": 45
-        }
+        },
+        "section": "Obuolių uogienė"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Obuolių uogienė"
       },
       {
         "amount": 7,
         "unit": "g",
-        "name": "pektino"
+        "name": "pektino",
+        "section": "Obuolių uogienė"
       },
       {
         "amount": {
@@ -8082,7 +9021,8 @@
           "max": 500
         },
         "unit": "g",
-        "name": "obuolių uogienės"
+        "name": "obuolių uogienės",
+        "section": "Obuolių uogienė"
       },
       {
         "amount": {
@@ -8090,12 +9030,14 @@
           "max": 8
         },
         "unit": "g",
-        "name": "albumino"
+        "name": "albumino",
+        "section": "Obuolių uogienė"
       },
       {
         "amount": 100,
         "unit": "g",
-        "name": "vandens"
+        "name": "vandens",
+        "section": "Obuolių uogienė"
       },
       {
         "amount": {
@@ -8103,12 +9045,14 @@
           "max": 40
         },
         "unit": "g",
-        "name": "kokosų vandens"
+        "name": "kokosų vandens",
+        "section": "Obuolių uogienė"
       },
       {
         "amount": 50,
         "unit": "g",
-        "name": "Malibu romo"
+        "name": "Malibu romo",
+        "section": "Obuolių uogienė"
       },
       {
         "amount": {
@@ -8116,32 +9060,38 @@
           "max": 12
         },
         "unit": "g",
-        "name": "agaro 1200 bloom"
+        "name": "agaro 1200 bloom",
+        "section": "Obuolių uogienė"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Obuolių uogienė"
       },
       {
         "amount": 150,
         "unit": "g",
-        "name": "gliukozės arba gliukozės ir fruktozės sirupo"
+        "name": "gliukozės arba gliukozės ir fruktozės sirupo",
+        "section": "Obuolių uogienė"
       },
       {
         "amount": 120,
         "unit": "g",
-        "name": "baltojo šokolado"
+        "name": "baltojo šokolado",
+        "section": "Obuolių uogienė"
       },
       {
         "amount": 40,
         "unit": "g",
-        "name": "tarkuoto kokoso"
+        "name": "tarkuoto kokoso",
+        "section": "Obuolių uogienė"
       },
       {
         "amount": 40,
         "unit": "g",
-        "name": "skrudintų lupintų migdolų"
+        "name": "skrudintų lupintų migdolų",
+        "section": "Obuolių uogienė"
       }
     ],
     "steps": [
@@ -8207,27 +9157,32 @@
       {
         "amount": 250,
         "unit": "g",
-        "name": "lašišos filė"
+        "name": "lašišos filė",
+        "section": "Įdaras"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "brokolių"
+        "name": "brokolių",
+        "section": "Įdaras"
       },
       {
         "amount": 70,
         "unit": "g",
-        "name": "gorgonzolos"
+        "name": "gorgonzolos",
+        "section": "Įdaras"
       },
       {
         "amount": 3,
         "unit": null,
-        "name": "kiaušiniai"
+        "name": "kiaušiniai",
+        "section": "Įdaras"
       },
       {
         "amount": 250,
         "unit": "g",
-        "name": "grietinės 15%"
+        "name": "grietinės 15%",
+        "section": "Įdaras"
       }
     ],
     "steps": [
@@ -8265,12 +9220,14 @@
       {
         "amount": 450,
         "unit": "g",
-        "name": "kreminio sūrio"
+        "name": "kreminio sūrio",
+        "section": "Ingredientai"
       },
       {
         "amount": 460,
         "unit": "g",
-        "name": "riebios grietinėlės 33-36%"
+        "name": "riebios grietinėlės 33-36%",
+        "section": "Ingredientai"
       },
       {
         "amount": {
@@ -8278,23 +9235,27 @@
           "max": 200
         },
         "unit": "g",
-        "name": "cukraus"
+        "name": "cukraus",
+        "section": "Ingredientai"
       },
       {
         "amount": 240,
         "unit": "g",
-        "name": "kiaušinių"
+        "name": "kiaušinių",
+        "section": "Ingredientai"
       },
       {
         "amount": 30,
         "unit": "g",
-        "name": "kukurūzų krakmolo"
+        "name": "kukurūzų krakmolo",
+        "section": "Ingredientai"
       },
       {
         "amount": 1,
         "unit": "tbsp",
         "name": "vanilės pastos",
-        "amount_ml": 15
+        "amount_ml": 15,
+        "section": "Ingredientai"
       }
     ],
     "steps": [

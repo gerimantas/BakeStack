@@ -330,61 +330,61 @@
         "amount": 55.0,
         "unit": "g",
         "name": "butter (82%)",
-        "section": "BATTER ~24 cupcakes"
+        "section": "BATTER"
       },
       {
         "amount": 120.0,
         "unit": "g",
         "name": "odorless oil",
-        "section": "BATTER ~24 cupcakes"
+        "section": "BATTER"
       },
       {
         "amount": 300.0,
         "unit": "g",
         "name": "sugar",
-        "section": "BATTER ~24 cupcakes"
+        "section": "BATTER"
       },
       {
         "amount": 4.0,
         "unit": null,
         "name": "large eggs",
-        "section": "BATTER ~24 cupcakes"
+        "section": "BATTER"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
         "name": "vanilla paste/extract",
-        "section": "BATTER ~24 cupcakes"
+        "section": "BATTER"
       },
       {
         "amount": 330.0,
         "unit": "g",
         "name": "all-purpose flour",
-        "section": "BATTER ~24 cupcakes"
+        "section": "BATTER"
       },
       {
         "amount": 2.0,
         "unit": "tsp",
         "name": "baking powder",
-        "section": "BATTER ~24 cupcakes"
+        "section": "BATTER"
       },
       {
         "amount": 0.75,
         "unit": "tsp",
         "name": "baking soda",
-        "section": "BATTER ~24 cupcakes"
+        "section": "BATTER"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "salt",
-        "section": "BATTER ~24 cupcakes"
+        "section": "BATTER"
       },
       {
         "amount": 240.0,
         "unit": "g",
         "name": "kefir",
-        "section": "BATTER ~24 cupcakes"
+        "section": "BATTER"
       },
       {
         "amount": 80.0,
@@ -1004,6 +1004,12 @@
         "section": "Filling"
       },
       {
+        "amount": null,
+        "unit": null,
+        "name": "caramelized apples",
+        "section": "Filling"
+      },
+      {
         "amount": 250.0,
         "unit": "g",
         "name": "cream cheese or mascarpone",
@@ -1020,12 +1026,15 @@
         "unit": "g",
         "name": "heavy  whipping cream (33–36%)",
         "section": "Icing"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "extra caramel for drizzling",
+        "section": "Icing"
       }
     ],
     "steps": [
-      "caramelized apples",
-      "+ extra caramel for drizzling",
-      "⤵ Instructions",
       "Add sugar to a pan and set it over high heat. Once the sugar has melted, add the soft butter and stir until combined.",
       "Add the apples and cinnamon. Cook over high heat for a few minutes, stirring constantly, until the apples turn slightly translucent and excess liquid evaporates. Remove from heat and cool.",
       "Mix the warm milk, sugar, butter, and yeast. Add the egg, yolk, and salt. Fold in the sifted flour and knead into a soft dough.",
@@ -1108,25 +1117,25 @@
         "amount": 100.0,
         "unit": "g",
         "name": "soft unsalted butter",
-        "section": "Icing (for extra tenderness and juiciness)"
+        "section": "Icing"
       },
       {
         "amount": 100.0,
         "unit": "g",
         "name": "sugar",
-        "section": "Icing (for extra tenderness and juiciness)"
+        "section": "Icing"
       },
       {
         "amount": 30.0,
         "unit": "g",
         "name": "Baileys liqueur",
-        "section": "Icing (for extra tenderness and juiciness)"
+        "section": "Icing"
       },
       {
         "amount": 2.0,
         "unit": "g",
         "name": "salt",
-        "section": "Icing (for extra tenderness and juiciness)"
+        "section": "Icing"
       },
       {
         "amount": 60.0,
@@ -2206,85 +2215,85 @@
         "amount": 125.0,
         "unit": "g",
         "name": "all-purpose flour",
-        "section": "BATTER (yields ~12 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 20.0,
         "unit": "g",
         "name": "almond flour",
-        "section": "BATTER (yields ~12 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 1.0,
         "unit": "g",
         "name": "baking powder",
-        "section": "BATTER (yields ~12 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 2.0,
         "unit": "g",
         "name": "baking soda",
-        "section": "BATTER (yields ~12 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 2.0,
         "unit": "g",
         "name": "salt",
-        "section": "BATTER (yields ~12 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 215.0,
         "unit": "g",
         "name": "bananas (peeled)",
-        "section": "BATTER (yields ~12 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 25.0,
         "unit": "g",
         "name": "sour cream",
-        "section": "BATTER (yields ~12 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 10.0,
         "unit": "g",
         "name": "lemon juice",
-        "section": "BATTER (yields ~12 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 120.0,
         "unit": "g",
         "name": "granulated sugar",
-        "section": "BATTER (yields ~12 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 50.0,
         "unit": "g",
         "name": "eggs",
-        "section": "BATTER (yields ~12 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 40.0,
         "unit": "g",
         "name": "oil",
-        "section": "BATTER (yields ~12 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 50.0,
         "unit": "g",
         "name": "toasted chopped hazelnuts (or other nuts)",
-        "section": "BATTER (yields ~12 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 50.0,
         "unit": "g",
         "name": "dark chocolate chips",
-        "section": "BATTER (yields ~12 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 1.0,
         "unit": null,
         "name": "banana — for the filling",
-        "section": "BATTER (yields ~12 cupcakes)"
+        "section": "BATTER"
       }
     ],
     "steps": [
@@ -2543,6 +2552,15 @@
       },
       {
         "amount": {
+          "min": 350.0,
+          "max": 400.0
+        },
+        "unit": "g",
+        "name": "Savoiardi (ladyfinger biscuits)",
+        "section": "FROSTING"
+      },
+      {
+        "amount": {
           "min": 200.0,
           "max": 250.0
         },
@@ -2567,7 +2585,6 @@
       }
     ],
     "steps": [
-      "+ 350–400 g Savoiardi (ladyfinger biscuits)",
       "Mix the yolks and sugar into a heatproof bowl, and set over a hot water bath.",
       "Stir constantly with a whisk, heat to 60°C (~140°F), and hold over a water bath for another 2–3 minutes to pasteurize the yolks.",
       "Transfer to a mixer bowl, let cool to room temperature, and beat until the yolks turn light and pale and increase in volume.",
@@ -2662,145 +2679,145 @@
         "amount": 120.0,
         "unit": "g",
         "name": "boiling water",
-        "section": "BATTER (yields~12–14cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 160.0,
         "unit": "g",
         "name": "all-purpose flour",
-        "section": "BATTER (yields~12–14cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 200.0,
         "unit": "g",
         "name": "granulated sugar",
-        "section": "BATTER (yields~12–14cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 50.0,
         "unit": "g",
         "name": "Dutch processed cocoa powder 22–24%",
-        "section": "BATTER (yields~12–14cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
         "name": "instant espresso powder",
-        "section": "BATTER (yields~12–14cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "baking powder",
-        "section": "BATTER (yields~12–14cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "baking soda",
-        "section": "BATTER (yields~12–14cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "salt",
-        "section": "BATTER (yields~12–14cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 120.0,
         "unit": "g",
         "name": "sour cream 20%",
-        "section": "BATTER (yields~12–14cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 75.0,
         "unit": "g",
         "name": "odorless oil",
-        "section": "BATTER (yields~12–14cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
         "name": "vanilla extract",
-        "section": "BATTER (yields~12–14cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 110.0,
         "unit": "g",
         "name": "granulated sugar",
-        "section": "CARAMEL (yields~220g)"
+        "section": "CARAMEL"
       },
       {
         "amount": 20.0,
         "unit": "g",
         "name": "water",
-        "section": "CARAMEL (yields~220g)"
+        "section": "CARAMEL"
       },
       {
         "amount": 20.0,
         "unit": "g",
         "name": "glucose syrup",
-        "section": "CARAMEL (yields~220g)"
+        "section": "CARAMEL"
       },
       {
         "amount": 130.0,
         "unit": "g",
         "name": "heavy whipping cream 33–35%",
-        "section": "CARAMEL (yields~220g)"
+        "section": "CARAMEL"
       },
       {
         "amount": 35.0,
         "unit": "g",
         "name": "butter 82%",
-        "section": "CARAMEL (yields~220g)"
+        "section": "CARAMEL"
       },
       {
         "amount": 2.0,
         "unit": "g",
         "name": "salt",
-        "section": "CARAMEL (yields~220g)"
+        "section": "CARAMEL"
       },
       {
         "amount": 180.0,
         "unit": "g",
         "name": "cream cheese 65%",
-        "section": "FROSTING (yields~650 g)"
+        "section": "FROSTING"
       },
       {
         "amount": 220.0,
         "unit": "g",
         "name": "mascarpone 80%",
-        "section": "FROSTING (yields~650 g)"
+        "section": "FROSTING"
       },
       {
         "amount": 150.0,
         "unit": "g",
         "name": "heavy whipping cream 33–36%",
-        "section": "FROSTING (yields~650 g)"
+        "section": "FROSTING"
       },
       {
         "amount": 55.0,
         "unit": "g",
         "name": "peanut butter",
-        "section": "FROSTING (yields~650 g)"
+        "section": "FROSTING"
       },
       {
         "amount": 40.0,
         "unit": "g",
         "name": "powdered sugar",
-        "section": "FROSTING (yields~650 g)"
+        "section": "FROSTING"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
         "name": "fleur de sel or ⅓ tsp salt",
-        "section": "FROSTING (yields~650 g)"
+        "section": "FROSTING"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
         "name": "vanilla extract",
-        "section": "FROSTING (yields~650 g)"
+        "section": "FROSTING"
       }
     ],
     "steps": [
@@ -2845,73 +2862,73 @@
         "amount": 120.0,
         "unit": "g",
         "name": "boiling water",
-        "section": "BATTER (yields~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 160.0,
         "unit": "g",
         "name": "flour",
-        "section": "BATTER (yields~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 200.0,
         "unit": "g",
         "name": "sugar",
-        "section": "BATTER (yields~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 50.0,
         "unit": "g",
         "name": "alkalized cocoa powder 22–24%",
-        "section": "BATTER (yields~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
         "name": "instant espresso coffee",
-        "section": "BATTER (yields~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "baking powder",
-        "section": "BATTER (yields~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "baking soda",
-        "section": "BATTER (yields~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "salt",
-        "section": "BATTER (yields~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 120.0,
         "unit": "g",
         "name": "sour cream 20%",
-        "section": "BATTER (yields~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 75.0,
         "unit": "g",
         "name": "odorless oil",
-        "section": "BATTER (yields~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 2.0,
         "unit": null,
         "name": "large eggs (room temp)",
-        "section": "BATTER (yields~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
         "name": "vanilla extract",
-        "section": "BATTER (yields~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 165.0,
@@ -3029,73 +3046,73 @@
         "amount": 180.0,
         "unit": "g",
         "name": "flour",
-        "section": "BATTER (yields 14–16 cupcakes):"
+        "section": "BATTER"
       },
       {
         "amount": 100.0,
         "unit": "g",
         "name": "white sugar",
-        "section": "BATTER (yields 14–16 cupcakes):"
+        "section": "BATTER"
       },
       {
         "amount": 100.0,
         "unit": "g",
         "name": "brown sugar",
-        "section": "BATTER (yields 14–16 cupcakes):"
+        "section": "BATTER"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "baking powder",
-        "section": "BATTER (yields 14–16 cupcakes):"
+        "section": "BATTER"
       },
       {
         "amount": 0.25,
         "unit": "tsp",
         "name": "baking soda",
-        "section": "BATTER (yields 14–16 cupcakes):"
+        "section": "BATTER"
       },
       {
         "amount": 0.25,
         "unit": "tsp",
         "name": "salt",
-        "section": "BATTER (yields 14–16 cupcakes):"
+        "section": "BATTER"
       },
       {
         "amount": 115.0,
         "unit": "g",
         "name": "unsalted butter (melt and cool to room temp, 82%)",
-        "section": "BATTER (yields 14–16 cupcakes):"
+        "section": "BATTER"
       },
       {
         "amount": 2.0,
         "unit": null,
         "name": "large eggs (room temp)",
-        "section": "BATTER (yields 14–16 cupcakes):"
+        "section": "BATTER"
       },
       {
         "amount": 125.0,
         "unit": "g",
         "name": "Greek yogurt",
-        "section": "BATTER (yields 14–16 cupcakes):"
+        "section": "BATTER"
       },
       {
         "amount": 62.0,
         "unit": "g",
         "name": "milk",
-        "section": "BATTER (yields 14–16 cupcakes):"
+        "section": "BATTER"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
         "name": "vanilla extract",
-        "section": "BATTER (yields 14–16 cupcakes):"
+        "section": "BATTER"
       },
       {
         "amount": 100.0,
         "unit": "g",
         "name": "chopped pistachios",
-        "section": "BATTER (yields 14–16 cupcakes):"
+        "section": "BATTER"
       },
       {
         "amount": 150.0,
@@ -3503,67 +3520,67 @@
         "amount": 180.0,
         "unit": "g",
         "name": "all-purpose flour",
-        "section": "BATTER (~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 2.0,
         "unit": "tsp",
         "name": "baking powder",
-        "section": "BATTER (~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
         "name": "salt",
-        "section": "BATTER (~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 200.0,
         "unit": "g",
         "name": "white granulated sugar",
-        "section": "BATTER (~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 50.0,
         "unit": "g",
         "name": "coconut flakes",
-        "section": "BATTER (~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 82.0,
         "unit": "g",
         "name": "softened butter",
-        "section": "BATTER (~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 64.0,
         "unit": "g",
         "name": "odorless oil",
-        "section": "BATTER (~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 2.0,
         "unit": null,
         "name": "egg whites",
-        "section": "BATTER (~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 100.0,
         "unit": "g",
         "name": "sour cream",
-        "section": "BATTER (~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 100.0,
         "unit": "g",
         "name": "milk",
-        "section": "BATTER (~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
         "name": "vanilla paste or extract",
-        "section": "BATTER (~12–14 cupcakes)"
+        "section": "BATTER"
       },
       {
         "amount": 150.0,
@@ -4870,23 +4887,22 @@
         "amount": 200.0,
         "unit": "g",
         "name": "drained sour cream 30%",
-        "section": "Sour cream frosting"
+        "section": "Frosting"
       },
       {
         "amount": 100.0,
         "unit": "g",
         "name": "heavy cream 33–36%",
-        "section": "Sour cream frosting"
+        "section": "Frosting"
       },
       {
         "amount": 50.0,
         "unit": "g",
         "name": "icing sugar",
-        "section": "Sour cream frosting"
+        "section": "Frosting"
       }
     ],
     "steps": [
-      "Frosting for coating",
       "Lightly whisk the eggs with sugar in a thick-bottomed saucepan, add honey, butter and place the saucepan over low heat. Stirring constantly, boil the mixture until sugar crystals are completely dissolved.",
       "Remove from the heat, add baking soda, and mix thoroughly. The mass should foam well and increase in volume. Pour the mixture into a separate bowl and add 500 g of sifted flour, mix with a spoon until smooth. Set aside for 10–15 minutes.",
       "if the dough remains excessively sticky after 10–15 minutes, sift the remaining 50 g of flour and add only as much as the dough can absorb.",
@@ -6893,43 +6909,50 @@
   {
     "title": "RECIPE FOR BANANA CUPCAKES WITH RUM",
     "category": "cupcake",
-    "description": "Guys, today I’ve prepared for you a recipe for incredibly delicious banana–vanilla cupcakes made from almond flour. These moist cupcakes are complemented by airy domes of caramel frosting and are generously topped with banana caramel, flavored with spiced dark rum. This is a charity recipe, so today in the profile header you can find a link for donations. Follow it to help people affected by the war in Ukraine. - 100% OF THE FUNDS RAISED will go to humanitarian aid to Ukrainians When I see a notification that someone has donated some sum, this makes me even more confident that there are many people among you who are ready to help others in difficult times! Thank you so much for everyone 🇺🇦 Together we stay strong! YOU CAN DONATE USING THE BANK DETAILS IN THE PROFILE HEADER #marusya_recipe - Batter ~18–20 pcs. 45–50 g each",
-    "servings": null,
+    "description": "Guys, today I’ve prepared for you a recipe for incredibly delicious banana–vanilla cupcakes made from almond flour. These moist cupcakes are complemented by airy domes of caramel frosting and are generously topped with banana caramel, flavored with spiced dark rum. This is a charity recipe, so today in the profile header you can find a link for donations. Follow it to help people affected by the war in Ukraine. - 100% OF THE FUNDS RAISED will go to humanitarian aid to Ukrainians When I see a notification that someone has donated some sum, this makes me even more confident that there are many people among you who are ready to help others in difficult times! Thank you so much for everyone 🇺🇦 Together we stay strong! YOU CAN DONATE USING THE BANK DETAILS IN THE PROFILE HEADER #marusya_recipe",
+    "servings": "~18–20 pcs.",
     "ingredients": [
       {
         "amount": 100.0,
         "unit": "g",
-        "name": "butter 82%"
+        "name": "butter 82%",
+        "section": "Batter"
       },
       {
         "amount": 100.0,
         "unit": "g",
-        "name": "caster sugar"
+        "name": "caster sugar",
+        "section": "Batter"
       },
       {
         "amount": 120.0,
         "unit": "g",
-        "name": "whole eggs (~2 pcs)"
+        "name": "whole eggs (~2 pcs)",
+        "section": "Batter"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
-        "name": "vanilla paste or extract"
+        "name": "vanilla paste or extract",
+        "section": "Batter"
       },
       {
         "amount": 150.0,
         "unit": "g",
-        "name": "all–purpose flour"
+        "name": "all–purpose flour",
+        "section": "Batter"
       },
       {
         "amount": 10.0,
         "unit": "g",
-        "name": "baking powder"
+        "name": "baking powder",
+        "section": "Batter"
       },
       {
         "amount": 100.0,
         "unit": "g",
-        "name": "almond flour"
+        "name": "almond flour",
+        "section": "Batter"
       },
       {
         "amount": {
@@ -6937,32 +6960,38 @@
           "max": 2.0
         },
         "unit": "g",
-        "name": "rock salt"
+        "name": "rock salt",
+        "section": "Batter"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
-        "name": "cinnamon"
+        "name": "cinnamon",
+        "section": "Batter"
       },
       {
         "amount": 0.75,
         "unit": "tsp",
-        "name": "baking soda"
+        "name": "baking soda",
+        "section": "Batter"
       },
       {
         "amount": 225.0,
         "unit": "g",
-        "name": "ripe bananas (~2–3 pcs)"
+        "name": "ripe bananas (~2–3 pcs)",
+        "section": "Batter"
       },
       {
         "amount": 100.0,
         "unit": "g",
-        "name": "sour cream 20–25%"
+        "name": "sour cream 20–25%",
+        "section": "Batter"
       },
       {
         "amount": 2.0,
         "unit": "tbsp",
-        "name": "dark rum"
+        "name": "dark rum",
+        "section": "Batter"
       },
       {
         "amount": 125.0,
@@ -7064,53 +7093,62 @@
   {
     "title": "CHARITY RECIPE FOR LEMON-POPPY SEED CUPCAKE",
     "category": "cupcake",
-    "description": "Guys, today we’d like to share a recipe for amazingly delicious cupcakes! Domes of silky frosting made with white chocolate and Limoncello liqueur perfectly harmonize with airy poppy seed cupcakes and lemon curd filling. I’m sure you’ll definitely enjoy their rich taste with prominent sourness and delicate texture with pleasantly crunchy poppy seeds! As promised, today, on the day the recipe is posted, there’s a link for donations placed in the profile header. Follow it to help people affected by the war in Ukraine. - 100% OF THE FUNDS RAISED will go to humanitarian aid to Ukrainians Bookmark the recipe, make cupcakes for your loved ones and don't forget to support Ukrainians who don't have such an opportunity now. Any of your contributions matters — I’m sure, even $5 will make a difference and we will be able to help Ukrainian families! YOU CAN DONATE USING THE BANK DETAILS IN THE PROFILE HEADER 🇺🇦Together we stay strong! #marusya_recipe - Batter ~12 pcs, 50-60 g each",
-    "servings": null,
+    "description": "Guys, today we’d like to share a recipe for amazingly delicious cupcakes! Domes of silky frosting made with white chocolate and Limoncello liqueur perfectly harmonize with airy poppy seed cupcakes and lemon curd filling. I’m sure you’ll definitely enjoy their rich taste with prominent sourness and delicate texture with pleasantly crunchy poppy seeds! As promised, today, on the day the recipe is posted, there’s a link for donations placed in the profile header. Follow it to help people affected by the war in Ukraine. - 100% OF THE FUNDS RAISED will go to humanitarian aid to Ukrainians Bookmark the recipe, make cupcakes for your loved ones and don't forget to support Ukrainians who don't have such an opportunity now. Any of your contributions matters — I’m sure, even $5 will make a difference and we will be able to help Ukrainian families! YOU CAN DONATE USING THE BANK DETAILS IN THE PROFILE HEADER 🇺🇦Together we stay strong! #marusya_recipe",
+    "servings": "~12 pcs",
     "ingredients": [
       {
         "amount": 180.0,
         "unit": "g",
-        "name": "whole eggs (~3 pcs)"
+        "name": "whole eggs (~3 pcs)",
+        "section": "Batter"
       },
       {
         "amount": 175.0,
         "unit": "g",
-        "name": "caster sugar"
+        "name": "caster sugar",
+        "section": "Batter"
       },
       {
         "amount": 120.0,
         "unit": "g",
-        "name": "heavy cream 33-36%"
+        "name": "heavy cream 33-36%",
+        "section": "Batter"
       },
       {
         "amount": 75.0,
         "unit": "g",
-        "name": "butter 82%"
+        "name": "butter 82%",
+        "section": "Batter"
       },
       {
         "amount": 10.0,
         "unit": "g",
-        "name": "poppy seeds"
+        "name": "poppy seeds",
+        "section": "Batter"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "zest of 3 lemons"
+        "name": "zest of 3 lemons",
+        "section": "Batter"
       },
       {
         "amount": 170.0,
         "unit": "g",
-        "name": "all-purpose flour"
+        "name": "all-purpose flour",
+        "section": "Batter"
       },
       {
         "amount": 1.5,
         "unit": "tsp",
-        "name": "baking powder"
+        "name": "baking powder",
+        "section": "Batter"
       },
       {
         "amount": 0.25,
         "unit": "tsp",
-        "name": "salt"
+        "name": "salt",
+        "section": "Batter"
       },
       {
         "amount": 65.0,
@@ -7212,7 +7250,7 @@
     "title": "HAZELNUT-CHOCOLATE CUPCAKE RECIPE",
     "category": "cupcake",
     "description": "#marusya_recipe",
-    "servings": null,
+    "servings": "~28-30 pcs.",
     "ingredients": [
       {
         "amount": 100.0,
@@ -7242,67 +7280,67 @@
         "amount": 250.0,
         "unit": "g",
         "name": "sour cream 20-30%",
-        "section": "Crumble"
+        "section": "Batter"
       },
       {
         "amount": 130.0,
         "unit": "g",
         "name": "Greek yogurt 10-12%",
-        "section": "Crumble"
+        "section": "Batter"
       },
       {
         "amount": 1.5,
         "unit": "tsp",
         "name": "baking soda",
-        "section": "Crumble"
+        "section": "Batter"
       },
       {
         "amount": 180.0,
         "unit": "g",
         "name": "whole eggs (~3 pcs)",
-        "section": "Crumble"
+        "section": "Batter"
       },
       {
         "amount": 200.0,
         "unit": "g",
         "name": "caster sugar",
-        "section": "Crumble"
+        "section": "Batter"
       },
       {
         "amount": 250.0,
         "unit": "g",
         "name": "butter 82%",
-        "section": "Crumble"
+        "section": "Batter"
       },
       {
         "amount": 1.0,
         "unit": "tbsp",
         "name": "rum",
-        "section": "Crumble"
+        "section": "Batter"
       },
       {
         "amount": 2.0,
         "unit": "tsp",
         "name": "vanilla paste",
-        "section": "Crumble"
+        "section": "Batter"
       },
       {
         "amount": 460.0,
         "unit": "g",
         "name": "all-purpose flour",
-        "section": "Crumble"
+        "section": "Batter"
       },
       {
         "amount": 2.0,
         "unit": "tsp",
         "name": "baking powder",
-        "section": "Crumble"
+        "section": "Batter"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
         "name": "salt",
-        "section": "Crumble"
+        "section": "Batter"
       },
       {
         "amount": 240.0,
@@ -7336,7 +7374,6 @@
       }
     ],
     "steps": [
-      "Batter ~28-30 pcs.",
       "Roast the hazelnuts in the oven until golden brown and a pronounced nutty flavor, then cool down completely.",
       "if you’re using unskinned hazelnuts, skin them after roasting",
       "Put the roasted hazelnuts, sugar, cinnamon powder and salt into the bowl of a blender / food processor. Grind in pulses into fine crumbs.",
@@ -7370,53 +7407,62 @@
   {
     "title": "RASPBERRY-LEMON CUPCAKE RECIPE",
     "category": "cupcake",
-    "description": "I know that you enjoy baking using the recipes from my profile. Today I’ve got a new recipe for you to take advantage of the fresh raspberries available on the supermarkets' shelves. Please, welcome stunningly beautiful Raspberry-Lemon cupcakes, full of rich, balanced flavors! Light lemon notes of pleasantly sour frosting perfectly complement fragrant and incredibly tasty cupcakes, made with the addition of raspberries and lemon zest. By the way, the team and I want to post free recipes in the profile 2 times more often. How do you like the idea? If you support it, let me know in the comments and don't forget to thank us with your - it takes you a few seconds, but means a lot to us So here's the cupcake recipe! #marusya_recipe - Batter ~ 12-14 pcs. ~60 g each",
-    "servings": null,
+    "description": "I know that you enjoy baking using the recipes from my profile. Today I’ve got a new recipe for you to take advantage of the fresh raspberries available on the supermarkets' shelves. Please, welcome stunningly beautiful Raspberry-Lemon cupcakes, full of rich, balanced flavors! Light lemon notes of pleasantly sour frosting perfectly complement fragrant and incredibly tasty cupcakes, made with the addition of raspberries and lemon zest. By the way, the team and I want to post free recipes in the profile 2 times more often. How do you like the idea? If you support it, let me know in the comments and don't forget to thank us with your - it takes you a few seconds, but means a lot to us So here's the cupcake recipe! #marusya_recipe",
+    "servings": "~ 12-14 pcs.",
     "ingredients": [
       {
         "amount": 125.0,
         "unit": "g",
-        "name": "butter 82%"
+        "name": "butter 82%",
+        "section": "Batter"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "zest of two lemons"
+        "name": "zest of two lemons",
+        "section": "Batter"
       },
       {
         "amount": 200.0,
         "unit": "g",
-        "name": "caster sugar"
+        "name": "caster sugar",
+        "section": "Batter"
       },
       {
         "amount": 180.0,
         "unit": "g",
-        "name": "whole eggs (~3 pcs)"
+        "name": "whole eggs (~3 pcs)",
+        "section": "Batter"
       },
       {
         "amount": 120.0,
         "unit": "g",
-        "name": "sour cream 20-30%"
+        "name": "sour cream 20-30%",
+        "section": "Batter"
       },
       {
         "amount": 160.0,
         "unit": "g",
-        "name": "all-purpose flour"
+        "name": "all-purpose flour",
+        "section": "Batter"
       },
       {
         "amount": 1.5,
         "unit": "tsp",
-        "name": "baking powder"
+        "name": "baking powder",
+        "section": "Batter"
       },
       {
         "amount": 0.25,
         "unit": "tsp",
-        "name": "salt"
+        "name": "salt",
+        "section": "Batter"
       },
       {
         "amount": 150.0,
         "unit": "g",
-        "name": "fresh raspberries"
+        "name": "fresh raspberries",
+        "section": "Batter"
       },
       {
         "amount": 60.0,
@@ -7618,53 +7664,62 @@
   {
     "title": "STRAWBERRY-WHITE CHOCOLATE-VANILLA CUPCAKE RECIPE",
     "category": "cupcake",
-    "description": "RU @ma_rusya_manko #marusya_recipe The strawberry season comes to its end, as if telling us that half of the hot summer has passed. To make the most out of it, I’ve got a recipe for moist, tender and breathtakingly delicious cupcakes. I strongly advise you to make these cupcakes, even if the strawberry is no longer available. In this case, just replace it with any other berry - I'm sure the cupcakes will still turn out brilliantly! - Batter ~20-22 pcs",
-    "servings": null,
+    "description": "RU @ma_rusya_manko #marusya_recipe The strawberry season comes to its end, as if telling us that half of the hot summer has passed. To make the most out of it, I’ve got a recipe for moist, tender and breathtakingly delicious cupcakes. I strongly advise you to make these cupcakes, even if the strawberry is no longer available. In this case, just replace it with any other berry - I'm sure the cupcakes will still turn out brilliantly!",
+    "servings": "~20-22 pcs",
     "ingredients": [
       {
         "amount": 250.0,
         "unit": "g",
-        "name": "butter 82%"
+        "name": "butter 82%",
+        "section": "Batter"
       },
       {
         "amount": 200.0,
         "unit": "g",
-        "name": "caster sugar"
+        "name": "caster sugar",
+        "section": "Batter"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
-        "name": "vanilla paste"
+        "name": "vanilla paste",
+        "section": "Batter"
       },
       {
         "amount": 240.0,
         "unit": "g",
-        "name": "whole eggs (~ 4 pcs)"
+        "name": "whole eggs (~ 4 pcs)",
+        "section": "Batter"
       },
       {
         "amount": 120.0,
         "unit": "g",
-        "name": "all-purpose flour"
+        "name": "all-purpose flour",
+        "section": "Batter"
       },
       {
         "amount": 10.0,
         "unit": "g",
-        "name": "baking powder"
+        "name": "baking powder",
+        "section": "Batter"
       },
       {
         "amount": 0.25,
         "unit": "tsp",
-        "name": "salt"
+        "name": "salt",
+        "section": "Batter"
       },
       {
         "amount": 140.0,
         "unit": "g",
-        "name": "almond flour"
+        "name": "almond flour",
+        "section": "Batter"
       },
       {
         "amount": 200.0,
         "unit": "g",
-        "name": "strawberries"
+        "name": "strawberries",
+        "section": "Batter"
       },
       {
         "amount": 300.0,
@@ -8352,19 +8407,19 @@
         "amount": 125.0,
         "unit": "g",
         "name": "mascarpone",
-        "section": "Batter"
+        "section": "Frosting"
       },
       {
         "amount": 45.0,
         "unit": "g",
         "name": "Baileys liqueur",
-        "section": "Batter"
+        "section": "Frosting"
       },
       {
         "amount": 20.0,
         "unit": "g",
         "name": "icing sugar",
-        "section": "Batter"
+        "section": "Frosting"
       },
       {
         "amount": 120.0,
@@ -8399,7 +8454,6 @@
       "You can say “thank you” to the team, as this post appears thanks to them - I'm just not able to do anything at all right now.",
       "for 12 cupcakes*",
       "* I advise you to immediately prepare a double portion",
-      "Frosting with Baileys",
       "Put butter and beer in a saucepan and put it over medium heat. Stirring occasionally, wait until the butter has completely melted, without bringing the mixture to a boil.",
       "As soon as the butter has melted, add cocoa powder mixed with sugar. Mix thoroughly and remove the saucepan from the heat.",
       "Beat sour cream, eggs and vanilla paste until smooth. Add to the mixture in the saucepan and mix thoroughly.",
@@ -8407,7 +8461,6 @@
       "Pour the batter into cupcake molds, filling them ~2/3 full. Bake for about 20 minutes at 195°C. Check the doneness of the cupcakes with a wooden skewer.",
       "195 °C with \"top-bottom\" / \"bottom\" mode",
       "175 °C with \"fan\" mode",
-      "Frosting with Baileys",
       "Place well-chilled mascarpone cheese in the mixer bowl, add icing sugar and Baileys liqueur. Beat with a whisk attachment until a creamy consistency is obtained.",
       "Make holes in the center of completely cooled cupcakes using the back of any pastry tip and gently pushing it into each cupcake."
     ],

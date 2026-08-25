@@ -17,7 +17,7 @@ from pathlib import Path
 FRACTIONS = {"¼": 0.25, "½": 0.5, "¾": 0.75, "⅓": 1 / 3, "⅔": 2 / 3,
              "⅛": 0.125, "⅜": 0.375, "⅝": 0.625, "⅞": 0.875}
 
-BULLET_PREFIX = re.compile(r"^[•▪▫◾◽·\-•▪▫◾◽]\s*")
+BULLET_PREFIX = re.compile(r"^[•▪▫◾◽·\-•▪▫◾◽+]\s*")
 
 DOSE_SUFFIX = re.compile(r"\s*\((\d)\)\s*$")
 
@@ -107,7 +107,7 @@ SUBSECTION_HEADING = re.compile(r"^###\s+(.*)$")
 # Bare label lines used as sub-section headers without a `#` prefix in the
 # source, e.g. "BATTER ~24 cupcakes", "### FROSTING", "CARAMEL (yields~220g)".
 BARE_LABEL_RE = re.compile(
-    r"^(BATTER|FROSTING|FILLING|CARAMEL|GANACHE|ICING|GLAZE|CRUST|CRUMBLE|"
+    r"^[\W_]*(BATTER|FROSTING|FILLING|CARAMEL|GANACHE|ICING|GLAZE|CRUST|CRUMBLE|"
     r"DOUGH|SOAKING SYRUP|TOPPING|DECORATION|ASSEMBLY|METHOD|INSTRUCTIONS?|"
     r"PREPARATION)\b",
     re.IGNORECASE,
@@ -409,7 +409,7 @@ def parse_recipe(raw_recipe, tags_vocab):
         bare_m = None if sub_m else BARE_LABEL_RE.match(stripped)
         if sub_m or bare_m:
             seen_structure = True
-            heading_text = sub_m.group(1).strip() if sub_m else stripped.strip()
+            heading_text = sub_m.group(1).strip() if sub_m else bare_m.group(1).strip()
             # A step/instructions heading closes the ingredients section — what
             # follows is steps, not another ingredient group ("### Instructions",
             # "METHOD"). Everything else (Dough, Filling, Frosting, ...) opens a
