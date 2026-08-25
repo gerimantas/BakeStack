@@ -2922,7 +2922,7 @@ I strongly advise you to make these cupcakes, even if the strawberry is no longe
 
 - Place strawberry puree in a thick-bottomed saucepan and heat to 35-40 °C, stirring occasionally. Sprinkle in the sugar, pre-mixed with pectin, stirring vigorously.
 
-## ANANA TEA CAKE WITH DATES AND NUTS
+## BANANA TEA CAKE WITH DATES AND NUTS
 
 Catch the recipe for an amazingly delicious, yet easy-to-make tea cake. If you serve it with buttercream and caramel-banana sauce — you’ll definitely be paid high compliments!
 

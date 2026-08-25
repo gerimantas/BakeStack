@@ -1608,7 +1608,7 @@ I prioritize the thickening process. The custard should reach a complete and uni
 
 After achieving this complete thickness, I continue to stir constantly and let it boil for an additional one to two minutes, adjusting the duration based on the quantity of custard, to ensure there are no uncooked areas remaining.
 
-## ORMING THE PERFECT CHEESECAKE CRUST: STEP-BY-STEP GUIDE
+## FORMING THE PERFECT CHEESECAKE CRUST: STEP-BY-STEP GUIDE — 2
 
 After more than six months of experimentation and practice, I’ve developed my unique method for forming the ideal cheesecake crust.
 
@@ -4153,7 +4153,7 @@ The recipe for brown butter can be found in the previous post. But I’d like to
 
 6. Immediately after this, pour the butter into a separate container to stop the cooking process. Otherwise, the temperature will continue to rise, and as soon as it exceeds 140 °C, the butter will burn.
 
-## NFUSION. THE INS AND OUTS
+## INFUSION. THE INS AND OUTS
 
 #marusya_infusion
 part 1
@@ -6303,7 +6303,7 @@ On the contrary, when the hot cream is gradually poured in, the temperature decr
 
 Therefore, in addition to caramelization of sugars, the Maillard reaction also takes place - amino acids in the cream react with sugars, which enhances the aroma and provides a darker shade of caramel.
 
-## ECTIN, AGAR-AGAR AND GELATIN. WHAT’S THE DIFFERENCE?
+## PECTIN, AGAR-AGAR AND GELATIN. WHAT’S THE DIFFERENCE?
 
 Russian version @ma_rusya_manko
 
