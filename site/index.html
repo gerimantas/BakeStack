@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>BakeStack — recipes &amp; baking tips</title>
+  <meta name="description" content="A personal recipe and baking-tips database with scaling, cost estimates, and a shopping list.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css">
+  <style>
+    /* Cabinet Grotesk and Switzer are Fontshare faces (not on Google Fonts) — loaded via Fontshare's CDN below. Space Grotesk above is the safety fallback while Fontshare loads. */
+  </style>
+  <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
+  <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="app-shell">
+    <div id="nav-slot"></div>
+    <main class="main" id="main">
+      <div class="container">
+        <div class="empty-state"><h2>Loading…</h2></div>
+      </div>
+    </main>
+    <div id="footer-slot"></div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite" data-visible="false"></div>
+
+  <script src="js/data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/state.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

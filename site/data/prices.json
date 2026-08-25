@@ -1,0 +1,4 @@
+{
+  "_comment": "Ingredient prices, keyed by exact EN ingredient name from recipes.json. price = cost of one pack in EUR. packSize = pack size in grams or ml (matches the ingredient's unit/amount_ml). Example: 'all-purpose flour': { price: 1.20, packSize: 1000 } means 1.20 EUR per 1000 g. Edit this file, then re-deploy — no build step needed.",
+  "unsalted butter": { "price": 2.5, "packSize": 500 }
+}

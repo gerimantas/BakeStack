@@ -1,15 +1,22 @@
 # BakeStack — Context
 
 ## Status
-active — recipes_lt.json/tips_lt.json translation done and user-verified.
+active — static site built in `site/` (vanilla JS, no build step) and
+verified working: recipe list+filters, recipe detail with 0.5x-3x
+multiplier scaling (ingredients + the 5 instruction steps with inline
+amounts), ml-primary unit display, cost estimate from `data/prices.json`,
+tips search, related-tips via shared tags, favorites (localStorage),
+multi-recipe shopping list with cross-recipe ingredient aggregation,
+EN/LT toggle (including category/flavor/ingredient/technique tag labels,
+web-verified via `site/data/tags_lt.json`), dark/light theme, share-link
+copy. Command-palette style global search: dropdown with up to 8 live
+results (recipes+tips) under the nav search box, keyboard nav
+(arrows/Enter/Escape), "show all N" link to a full `#/search?q=` results
+page. Mobile-first responsive verified at 320/375/768/1280px, no
+horizontal scroll, hamburger nav.
 GitHub repo live and public: https://github.com/gerimantas/BakeStack
-(renamed from local "Receptai" this session; old local folder at
-`C:\Users\retco\Projects\Receptai` is stale/unused — could not be deleted
-mid-session, locked by another process; safe to remove by hand).
 
-Next session: start at "Next tasks" below, step 1 (site build).
-
-Session S2 closed 2026-08-25.
+Session S4 closed 2026-08-25.
 
 ## What this project is
 BakeStack: a recipe/pastry-tips database and calculator, starting from
@@ -349,26 +356,25 @@ before investing in that.
   a schema now.
 
 ## Done Log
-- 2026-08-24: Tag vocabulary built — `tags.json` (category/flavor_theme/
-  ingredient/technique lists, derived from reading both full source files).
-- 2026-08-24: recipes.json parser + QA built — 74 recipes, verified clean.
-  Full detail in Archive entry below.
-- 2026-08-24: tips.json parser + QA built — 363 tip records, verified clean.
-  Full detail in Archive entry below.
-- 2026-08-24: EN→LT glossary built and fully web-verified (214 terms,
-  0 missing/extra vs tags.json). Full detail in Archive entry below.
 - 2026-08-25: recipes_lt.json (74) + tips_lt.json (363) translation
   complete, structural diff clean, user-verified against a sample.
-  tsp/tbsp/cup converted to ml (new `amount_ml` field, original
-  amount/unit untouched) in both recipes.json and recipes_lt.json.
-  Full detail in Archive entry below.
+  tsp/tbsp/cup converted to ml (new `amount_ml` field). Full detail in
+  Archive entry below.
+- 2026-08-25: Full static site built in `site/` (Hallmark bespoke
+  design) — list/detail/scaling/cost/favorites/shopping-list/EN-LT,
+  Playwright-verified. Tag vocabulary (category/flavor/ingredient/
+  technique, 163 terms) translated and web-verified. Command-palette
+  search dropdown + full `#/search` results page built, 3 rounds of
+  user-reported bugs fixed. Full detail in Archive entry below.
 
 ## Next tasks
-1. Design + build the static site (list + detail + servings
-   recalculation + tips search + related-tips linking + EN/LT toggle +
-   unit ml display). Run the `hallmark` skill for visual design first —
-   real data (recipes_lt.json/tips_lt.json) now exists, so design
-   decisions can be made against the actual data shape.
+1. Deploy `site/` to GitHub Pages (push + enable Pages on the repo,
+   source = `/site` or a `gh-pages` branch — not yet configured).
+2. Optional: fill in `site/data/prices.json` with real ingredient
+   prices to see cost estimates on recipe pages (currently only one
+   placeholder entry — "unsalted butter").
+3. Optional: add real photos later (`image` field already reserved
+   null on every recipe/tip record per the original plan).
 
 ## Archive
 
@@ -490,3 +496,98 @@ prompt structure (see this session's conversation for the exact prompts if the
 translation ever needs redoing).
 **Not measured:** the static site itself hasn't started — `hallmark` skill run for
 visual design is the next task now that real translated data exists.
+
+### Session 2026-08-25 — static site built (Hallmark bespoke design), tag vocabulary translated, search rebuilt as command-palette + full results page
+
+Built the entire static site in `site/` — vanilla JS, no build step, no framework.
+Scope grew mid-session past the original plan (recipe list/detail/scaling/EN-LT toggle)
+once the user asked for favorites, a multi-recipe shopping list, and ingredient-price
+cost estimates; all three got scoped and built this session, not deferred.
+
+**Design**: ran `hallmark` in bespoke-custom mode (this app has 5 real screens — list,
+detail, tips, favorites, shopping — not a landing page, so none of the 20 catalog
+themes/macrostructures fit). Vibe: "kitchen counter, warm, floury, no-nonsense", amber
+accent (~50°), Cabinet Grotesk display + Switzer body + Geist Mono for prices/measurements.
+Nav: top bar with hamburger on mobile (user's explicit pick over bottom-tab).
+
+**Data layer** (`js/data.js`): fetches recipes/tips (EN+LT) + tags + prices from
+`site/data/*.json` (copied from repo root). `scaleAmount`/`formatAmount` handle
+null/number/{min,max}-range ingredient amounts under the multiplier. `recipePrice()`
+sums `amount_ml ?? amount × unit-price` from `prices.json` (new file — pack-size based:
+price per pack + pack size in g/ml, not price-per-100g, per user's explicit choice).
+`buildShoppingList()` aggregates ingredients across multiple picked recipes, combining
+same-name ingredients via their ml value when available so tsp/tbsp entries from one
+recipe correctly sum with gram entries from another; range amounts collapse to their
+midpoint for shopping-list totals (a pack gets bought either way).
+
+**Tag translation gap found and closed**: the EN→LT glossary from S1 only covered
+words appearing in recipe/tip *body text* — it never covered the `category` (27) /
+`flavor_theme` (42) / `ingredient` (60) / `technique` (34) slug vocabulary from
+`tags.json`, so every filter chip and recipe-card tag rendered in English even in LT
+mode. Built `site/data/tags_lt.json` (163 terms across all 4 axes) and **web-verified
+every entry** against real Lithuanian baking/confectionery sources (same discipline as
+S1's glossary) — this surfaced and fixed real errors the first pass got wrong:
+"brownie" → "braunis" (not "browniai", unattested); blueberry ≠ bilberry in Lithuanian
+(šilauogė vs mėlynė — the first draft called both "mėlynė", botanically wrong);
+"crumble" → "trupiniuotis" (not "trupinių pyragas"); "panna cotta" spelling fixed (was
+"pana kota"); "roll" vs "roulade" split into "mielinis suktinukas" (yeast-dough) vs
+"biskvito roladas" (sponge-roll) since the source data uses them for genuinely
+different products, not just as spelling variants. `tagLabel()`/`anyTagLabel()` in
+data.js resolve category-scoped vs. free-form (recipe.tags mixes all 4 axes) lookups.
+
+**Search rebuilt twice mid-session, both times from real bugs, not preference**:
+1. Original implementation debounced `location.hash` changes per keystroke → every
+   letter typed triggered a full `render()` that rebuilt the entire nav (including the
+   search `<input>` itself) from `innerHTML`, destroying focus mid-word. Root fix:
+   nav now renders ONCE (`navRendered` flag in `render()`), `wireNavEvents()` runs once
+   at first render, subsequent navigations only call `updateNavState()` (aria-current,
+   theme icon, lang buttons) — the search input DOM node is never recreated.
+2. User asked for "Google-style dropdown with keyboard nav" specifically (confirmed via
+   brainstorm skill before building) — added `searchAll()` (title/category/tags for
+   recipes, title/text/tags for tips) + a live dropdown (`renderSearchDropdown`) under
+   the nav search box, capped at 8 results, arrow-key/Enter/Escape navigation, "Show
+   all N results" row. First dropdown build had 4 user-reported bugs, all fixed same
+   session: (a) dropdown width tracked the input's own shrink-to-fit-icons width →
+   fixed to `width: max(100%, 26rem)`, anchored `position: fixed` to viewport on
+   mobile so it doesn't inherit the input's narrow width; (b) `<mark>` highlight used
+   a 30%-alpha accent overlay → nearly invisible in dark mode, changed to solid
+   `var(--color-accent)` fill; (c) result rows used `flex-direction: column` with
+   wrapping title text → multi-line rows forced a scrollbar for what should fit
+   unscrolled; changed to a 2-col grid with `text-overflow: ellipsis`, one line each;
+   (d) "Show all" button still pointed at the pre-existing `#/recipes?q=` filter route
+   instead of the new `#/search?q=` full-results page — traced to a stale second
+   occurrence of the same `goToSearchResult(...)` call left over from an interrupted
+   edit; both occurrences now correct.
+3. **Stale-URL bug found by user**: clearing the search box didn't clear the `?q=`
+   already in the URL, so reloading the page silently re-applied the old filter (typed
+   "bra", cleared it, reloaded — recipe list still showed only 4 "bra*" matches).
+   Fixed with `syncQueryParam()` — every `input` event now also `history.replaceState`s
+   the URL's `q` param to match (or removes it when empty), without triggering
+   `hashchange` (so it doesn't fight the dropdown's own re-render or steal focus).
+
+New `#/search?q=` route + `renderSearchView()` shows the *full* result set (no 8-cap),
+recipes and tips in separate labelled sections with counts — reached via Enter (no
+row selected) or the dropdown's "Show all" link.
+
+**Verification**: every feature checked with Playwright against a local server, not
+just eyeballed — multiplier scaling, ml-primary unit display, cost calc against the
+one seeded `prices.json` entry, favorites persistence across reload, shopping-list
+cross-recipe aggregation math, dark/light theme, EN/LT toggle, mobile at 320/375/768px
+(zero horizontal scroll), and the full search flow (type → dropdown → arrow+Enter →
+recipe page; type → show-all → full results page; clear → reload → filter gone).
+Two real CSS bugs caught only by Playwright, not visual review: `minmax(0, minmax(...))`
+(invalid nested minmax silently collapsed `.recipe-grid`/`.tip-mini-list` to a single
+44,895px-tall column) and the search-input `min-width` starving the hamburger button
+off-screen at 375px.
+
+**Code:** `site/index.html`, `site/css/tokens.css`, `site/css/app.css`, `site/js/data.js`,
+`site/js/i18n.js`, `site/js/state.js`, `site/js/app.js` (new); `site/data/*.json`
+(copied from repo root) + `site/data/prices.json` (new, one seeded entry) +
+`site/data/tags_lt.json` (new, 163 web-verified terms); `.hallmark/log.json` (new,
+records the bespoke-custom design pick for future Hallmark diversification).
+**Entry point:** `cd site && python -m http.server <port>`, open `http://localhost:<port>/`.
+No build step — static files served as-is. GitHub Pages deploy not yet configured.
+**Not measured:** real ingredient prices (only "unsalted butter" seeded in
+`prices.json` — cost estimates elsewhere show the "add prices" placeholder message);
+GitHub Pages hosting; whether the shopping-list ml/g cross-unit aggregation reads
+clearly to the user in a real multi-recipe session (only checked programmatically).
