@@ -106,7 +106,7 @@ function renderNav(lang, route) {
         <div class="search-dropdown" id="search-dropdown" data-open="false" role="listbox"></div>
       </div>
       <nav aria-label="Primary">
-        <ul class="nav__links" id="nav-links">${NAV_LINKS.map((l) => `<li><a class="nav__link" href="${l.href}"${l.match(route) ? ' aria-current="page"' : ""}>${t(lang, l.key)}</a></li>`).join("")}</ul>
+        <ul class="nav__links" id="nav-links">${NAV_LINKS.map((l) => `<li><a class="nav__link" href="${l.href}"${l.match(route) ? ' aria-current="page"' : ""}>${t(lang, l.key)}</a></li>`).join("")}<li><a class="nav__link nav__link--external" href="tools/qa-compare.html" target="_blank" rel="noopener">QA</a></li></ul>
       </nav>
       <div class="nav__actions">
         <div class="lang-toggle" role="group" aria-label="${t(lang, "langToggle")}">
@@ -121,12 +121,13 @@ function renderNav(lang, route) {
     </div>
     <div class="nav__sheet" id="nav-sheet" data-open="false">
       ${NAV_LINKS.map((l) => `<a class="nav__link" href="${l.href}"${l.match(route) ? ' aria-current="page"' : ""}>${t(lang, l.key)}</a>`).join("")}
+      <a class="nav__link nav__link--external" href="tools/qa-compare.html" target="_blank" rel="noopener">QA</a>
     </div>`;
 }
 
 /** Updates nav state (active link, theme icon, lang buttons) without touching the search input's DOM node. */
 function updateNavState(lang, route) {
-  document.querySelectorAll("#nav-links .nav__link, #nav-sheet .nav__link").forEach((el, i) => {
+  document.querySelectorAll("#nav-links .nav__link:not(.nav__link--external), #nav-sheet .nav__link:not(.nav__link--external)").forEach((el, i) => {
     const link = NAV_LINKS[i % NAV_LINKS.length];
     el.textContent = t(lang, link.key);
     if (link.match(route)) el.setAttribute("aria-current", "page");
