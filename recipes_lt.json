@@ -2327,7 +2327,7 @@
     "categoryGroup": "tiramisu-zephyr"
   },
   {
-    "title": "MANGO GANAŠAS",
+    "title": "MANGŲ GANAŠAS",
     "category": "ganache",
     "description": "Meilė iš pirmo šaukšto: švelnus, ryškus ir kupinas skonio",
     "servings": null,
@@ -2340,7 +2340,7 @@
       {
         "amount": 65,
         "unit": "g",
-        "name": "mango tyrės"
+        "name": "mangų tyrės"
       },
       {
         "amount": 5,
@@ -4767,7 +4767,7 @@
     "categoryGroup": "tiramisu-zephyr"
   },
   {
-    "title": "KIŠAS SU LAŠIŠA IR GORGONZOLA",
+    "title": "KIŠAS SU LAŠIŠA IR GORGONZOLOS SŪRIU",
     "category": "quiche",
     "description": "Keptos lašišos kvapas kreminiame kiaušinių padaže su gorgonzolos ir brokolių gabaliukais varo mano šeimos narius iš proto! Jie neduoda kišui nė sekundės atvėsti! Peržiūrėkite receptą, įsiraukite jį ir pavaišinkite savo artimuosius nauju, sūriu kepiniu! Įdomu, ar jūsų kišas spės atvėsti #marusya_recipe",
     "servings": null,
@@ -7405,7 +7405,7 @@
     "categoryGroup": "cakes-loaf"
   },
   {
-    "title": "MANGO IR MARAKUJOS PORCIJINIAI SŪRIO PYRAGAI",
+    "title": "MANGŲ IR MARAKUJOS PORCIJINIAI SŪRIO PYRAGAI",
     "category": "cheesecake",
     "description": "Rusiška versija @ma_rusya_manko #marusya_recipe Traškus trapios tešlos pagrindas su migdolų drožlėmis, egzotiškas gaivinančio marakujos rūgštumo skonis švelniame kreminio sūrio sluoksnyje su saldaus mango gabaliukais, apibarstytais vanilės sėklomis - visas šias puikias tekstūras galite paragauti pasigaminę šiuos fantastiškai ryškius porcijinius Mango ir Marakujos sūrio pyragus. Primenu, kad like prieš išsisaugant receptą yra geriausia padėka už mūsų kuklų darbą! Taip pat noriu priminti, kad šiandien trečiadienis, o tai reiškia, kad pradedame naują savaitės labdaros akciją su precedento neturinčia -85% nuolaida 6 receptų su mokomaisiais vaizdo įrašais rinkiniui! Visą informaciją rasite stories skiltyje Taigi, grįžkime prie recepto. Šiems porcijiniams sūrio pyragams pagaminti naudojau 9 žiedus d=9 cm, h=5,5 cm (žr. nuotrauką karuselėje)",
     "servings": null,
@@ -7475,12 +7475,12 @@
       {
         "amount": 180,
         "unit": "g",
-        "name": "mango tyrės"
+        "name": "mangų tyrės"
       },
       {
         "amount": 200,
         "unit": "g",
-        "name": "šviežio arba šaldyto smulkintais kubeliais mango (1x1 cm kubeliai)"
+        "name": "šviežių arba šaldytų mangų, supjaustytų kubeliais (1x1 cm kubeliai)"
       },
       {
         "amount": 3,
