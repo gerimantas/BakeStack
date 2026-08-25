@@ -99,7 +99,9 @@ function themeIconSvg(theme) {
 function renderNav(lang, route) {
   return `
     <div class="container nav__bar">
-      <a class="nav__wordmark" href="#/recipes"><span aria-hidden="true">🥐</span> BakeStack<span class="nav__wordmark-dot">.</span></a>
+      <button class="icon-btn nav__hamburger" id="hamburger-btn" aria-label="Menu" aria-expanded="false">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </button>
       <div class="nav__search">
         <label class="visually-hidden" for="global-search">${t(lang, "searchPlaceholder")}</label>
         <input id="global-search" type="search" placeholder="${t(lang, "searchPlaceholder")}" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="search-dropdown" aria-autocomplete="list">
@@ -114,9 +116,6 @@ function renderNav(lang, route) {
           <button data-lang="lt" aria-pressed="${lang === "lt"}">LT</button>
         </div>
         <button class="icon-btn" id="theme-btn" aria-label="${t(lang, "themeToggle")}">${themeIconSvg(appState.theme)}</button>
-        <button class="icon-btn nav__hamburger" id="hamburger-btn" aria-label="Menu" aria-expanded="false">
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
-        </button>
       </div>
     </div>
     <div class="nav__sheet" id="nav-sheet" data-open="false">
