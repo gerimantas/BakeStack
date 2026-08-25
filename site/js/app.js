@@ -97,7 +97,6 @@ function themeIconSvg(theme) {
  * The search input and its dropdown must never be re-created — that's what breaks focus mid-keystroke. */
 function renderNav(lang, route) {
   return `
-  <header class="nav">
     <div class="container nav__bar">
       <a class="nav__wordmark" href="#/recipes"><span aria-hidden="true">🥐</span> BakeStack<span class="nav__wordmark-dot">.</span></a>
       <div class="nav__search">
@@ -121,8 +120,7 @@ function renderNav(lang, route) {
     </div>
     <div class="nav__sheet" id="nav-sheet" data-open="false">
       ${NAV_LINKS.map((l) => `<a class="nav__link" href="${l.href}"${l.match(route) ? ' aria-current="page"' : ""}>${t(lang, l.key)}</a>`).join("")}
-    </div>
-  </header>`;
+    </div>`;
 }
 
 /** Updates nav state (active link, theme icon, lang buttons) without touching the search input's DOM node. */
