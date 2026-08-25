@@ -337,7 +337,7 @@ def infer_category(title, tags_vocab):
             return cat
     # a few explicit aliases the raw vocab term doesn't literal-match
     aliases = {
-        "cinnamon roll": "cinnamon-roll", "swirls": "cinnamon-roll",
+        "cinnamon roll": "cinnamon-roll", "swirls": "roll",
         "tea cake": "tea-cake", "teacake": "tea-cake", "teacakes": "tea-cake",
         "loaf": "loaf-cake", "honey cake": "honey-cake",
         "cupcakes": "cupcake", "cupcake": "cupcake",
