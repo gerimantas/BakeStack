@@ -84,6 +84,7 @@ const NAV_LINKS = [
   { href: "#/recipes", key: "navRecipes", match: (r) => r.name === "recipes" || r.name === "recipe" },
   { href: "#/tips", key: "navTips", match: (r) => r.name === "tips" || r.name === "tip" },
   { href: "#/favorites", key: "navFavorites", match: (r) => r.name === "favorites" },
+  { href: "#/about", key: "navAbout", match: (r) => r.name === "about" },
   // Shopping list hidden from nav for now — route still works (linked from recipe pages), just not
   // promoted in the main menu yet.
 ];
@@ -668,6 +669,14 @@ function renderShoppingView(lang) {
   </div>`;
 }
 
+function renderAboutView(lang) {
+  return `
+  <div class="container">
+    <div class="page-head"><h1>${t(lang, "aboutTitle")}</h1></div>
+    ${t(lang, "aboutBody").map((p) => `<p style="max-width:42rem;margin-bottom:var(--space-md);color:var(--color-ink-2)">${esc(p)}</p>`).join("")}
+  </div>`;
+}
+
 // ---------------------------------------------------------------- Router
 
 function parseHash() {
@@ -681,6 +690,7 @@ function parseHash() {
   if (segments[0] === "tips") return { route: { name: "tips" }, params };
   if (segments[0] === "favorites") return { route: { name: "favorites" }, params };
   if (segments[0] === "shopping") return { route: { name: "shopping" }, params };
+  if (segments[0] === "about") return { route: { name: "about" }, params };
   return { route: { name: "recipes" }, params };
 }
 
@@ -712,6 +722,7 @@ function render() {
     case "search": html = renderSearchView(lang, params); break;
     case "favorites": html = renderFavoritesView(lang); break;
     case "shopping": html = renderShoppingView(lang); break;
+    case "about": html = renderAboutView(lang); break;
     default: html = renderRecipesView(lang, params);
   }
   const main = document.getElementById("main");
@@ -729,6 +740,7 @@ function pageTitle(lang, route) {
   if (route.name === "tips") return `${t(lang, "navTips")} · ${base}`;
   if (route.name === "favorites") return `${t(lang, "navFavorites")} · ${base}`;
   if (route.name === "shopping") return `${t(lang, "navShopping")} · ${base}`;
+  if (route.name === "about") return `${t(lang, "navAbout")} · ${base}`;
   return base;
 }
 
