@@ -695,6 +695,9 @@ function render() {
     wireNavEvents();
     navRendered = true;
   }
+  const navSheet = document.getElementById("nav-sheet");
+  if (navSheet) navSheet.dataset.open = "false";
+  document.getElementById("hamburger-btn")?.setAttribute("aria-expanded", "false");
   updateNavState(lang, route);
 
   const search = document.getElementById("global-search");
