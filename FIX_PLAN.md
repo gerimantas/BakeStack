@@ -152,6 +152,32 @@ Source wrote the range high-to-low; parser didn't reorder it, so min > max in th
 
 ---
 
+## Found but NOT fixed — pre-existing, outside this session's scope
+
+Found while chasing other bugs. Real, still broken, deliberately left alone because fixing them
+means editing `tags_lt.json` itself (the translation dictionary), and that file's quality/scope
+was never audited this session — changing it blind risks the same kind of regression this
+session already made once (see the LT tag corruption entry in git history, commit 124ce36).
+
+- **26 tips have at least one untranslated hyphenated tag** — `tags_lt.json` has no LT entry for
+  slugs like `pectin-nh`, `egg-whites`, `cream-cheese`, `cocoa-butter`, `sour-cream`,
+  `whipping-cream`, `cake-coating`, `food-coloring`, `glucose-syrup`, `maillard-reaction`,
+  `nut-paste`, `flavor-pairing`, `sugar-powdered`, `greek-yogurt`, `cottage-cheese`,
+  `baking-soda`. The LT page silently falls back to showing the raw English slug for these —
+  confirmed this predates the current session (present as far back as commit `3687893`, which
+  is before any work in this session touched tags). Affects both recipes and tips wherever these
+  slugs are used, not just the 26 tips found — a full page-by-page tag audit hasn't been done.
+- **`tags_lt.json`'s own entries are internally inconsistent with what's already used elsewhere**
+  — discovered while trying to translate the 9 recipes' new tags: the dictionary's current
+  `sour-cherry`/`tart-cherry` -> "vyšnia" (drops "rūgšti"/"sour"), `whipping-cream` alternates
+  between "riebi grietinėlė" and "riebi plakama grietinėlė" depending which recipe you check, and
+  `baking-soda` -> "soda" is used in the dictionary but "valgomoji soda" is the more common
+  existing phrasing across the actual recipe data. None of these were fixed — the dictionary
+  itself needs a deliberate pass against the phrasing already used in `recipes_lt.json`/
+  `tips_lt.json`, not a quick edit made in passing while chasing an unrelated bug.
+
+---
+
 ## Order of operations
 
 **0. Strengthen QA Compare first, before fixing anything.**
