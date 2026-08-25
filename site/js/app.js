@@ -436,7 +436,7 @@ function renderRecipeDetail(lang, id) {
   const price = recipePrice(recipe, 1);
   const priceHtml = price
     ? `<div class="price-summary"><span>${t(lang, "estCost")}${price.priced < price.of ? ` <small>(${t(lang, "costPartial", price.priced, price.of)})</small>` : ""}</span><strong>${price.total.toFixed(2)} €</strong></div>`
-    : `<div class="price-summary"><span>${t(lang, "costUnavailable")}</span></div>`;
+    : "";
 
   const related = findRelatedTips(recipe, lang, 4);
   const relatedHtml = related.length ? `
@@ -869,7 +869,7 @@ function wireRecipeDetail(recipe) {
       const price = recipePrice(recipe, m);
       document.getElementById("price-block").innerHTML = price
         ? `<div class="price-summary"><span>${t(lang, "estCost")}${price.priced < price.of ? ` <small>(${t(lang, "costPartial", price.priced, price.of)})</small>` : ""}</span><strong>${price.total.toFixed(2)} €</strong></div>`
-        : `<div class="price-summary"><span>${t(lang, "costUnavailable")}</span></div>`;
+        : "";
       if (isPicked(recipe.id)) setPickMultiplier(recipe.id, m);
     });
   });
