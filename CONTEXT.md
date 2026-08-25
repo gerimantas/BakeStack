@@ -4,23 +4,27 @@
 active — static site in `site/`, live on GitHub Pages:
 **https://gerimantas.github.io/BakeStack/** (public repo, deploy via
 `.github/workflows/deploy.yml`, auto-updates on every push to master that
-touches `site/**`). LT translation is now fully current with EN — both
-73 recipes / 312 tips, structurally validated (counts, amounts, units,
-categoryGroup/topic fields all match). 5 original-.docx typos found and
-fixed at the source (`Receptai.md`/`Patarimai.md` + generated JSON), plus
-6 LT glossary-consistency fixes. QA compare tool (`site/tools/qa-compare.html`)
-copied into the deployed site and linked from the nav ("QA" link) — all
-remaining QA-tool findings investigated and confirmed to be either the
-known S1 sub-recipe merge or a naming-only mismatch (content not lost).
+touches `site/**`). 73 recipes / ~310 tips (2 empty tips deleted, 1 new
+tip split out — see S7 Archive for exact count), EN and LT kept in
+array-index sync on every data edit.
 
-Two nav bugs fixed this session: the top bar wasn't staying sticky on
-scroll (an empty wrapper div around it had zero scroll range to stick
-against), and switching EN↔LT didn't update the nav menu text without a
-hard reload (the update function only ever touched aria attributes, not
-the link text itself). "Shopping list" removed from the nav per user
-request (route still works, just not promoted).
+**S6's "QA compare findings all confirmed as known/harmless" claim was false —
+corrected in S7.** QA Compare only ever diffed recipe/tip titles, never
+ingredients/steps/body text, so it structurally could not have caught real
+content bugs. A full audit (S7) found 13 previously-undocumented bugs plus
+several more found while fixing those — all fixed; full list in S7 Archive
+and `FIX_PLAN.md`. Do not cite "QA confirmed" as evidence of data quality —
+QA Compare still only checks titles; strengthening it to a real content-diff
+is `FIX_PLAN.md` step 0, not yet done.
 
-Session S6 closed 2026-08-25.
+Known open data-quality gaps (deliberately unfixed, see `FIX_PLAN.md` final
+section): `tags_lt.json` has no LT entry for ~16 hyphenated tag slugs (UI
+falls back to showing the raw English slug on ≥26 tips), and the dictionary's
+own entries are inconsistent with phrasing already used in the data in a few
+places (sour-cherry, whipping-cream, baking-soda). Needs a dedicated
+dictionary audit pass, not a fix made in passing.
+
+Session S7 closed 2026-08-26.
 
 ## What this project is
 BakeStack: a recipe/pastry-tips database and calculator, starting from
@@ -360,28 +364,153 @@ before investing in that.
   a schema now.
 
 ## Done Log
+- 2026-08-26 (S7): Full data audit found and fixed 13 previously-undocumented
+  bugs (section-grouping loss on 43/73 recipes, cross-file duplicate, typo
+  regressions, leftover conversion glyphs, empty tips, mis-parsed lines) plus
+  several more found while testing fixes (cost-estimate block removed,
+  category mis-inference, duplicate recipe title, tag substring-matching
+  bug). Self-inflicted LT tag corruption caught and reverted same session.
+  Disproved S6's "QA confirmed" claim — QA Compare only checks titles, never
+  content. Nav polish (hamburger position, mobile auto-close, About page)
+  also done this session. Full detail in Archive entry below and `FIX_PLAN.md`.
 - 2026-08-25 (S6): LT translation fully redone (73/312, matches EN exactly),
   5 original-.docx typos fixed at the source, 6 LT glossary-consistency
   fixes, nav sticky bug + nav lang-switch bug fixed, QA tool wired into the
   deployed site, GitHub Pages deploy live via GitHub Actions. Full detail
   in Archive entry below.
-- 2026-08-25 (S5): QA compare tool built and used to find + fix a real tips
-  mis-splitting bug (393→312), recipe dedup (74→73), category/topic UI
-  filters added, related-tips ranking fixed, shopping-list unit-merge via
-  density table. Full detail in Archive entry below.
 
 ## Next tasks
-1. Optional: fill in `site/data/prices.json` with real ingredient
-   prices to see cost estimates on recipe pages (currently only one
-   placeholder entry — "unsalted butter").
-2. Optional: add real photos later (`image` field already reserved
+1. Strengthen QA Compare to do a real content diff (ingredients/steps/body
+   text), not just title-matching — `FIX_PLAN.md` step 0. This is what let
+   13 real bugs go undocumented for 2 sessions; doing this first would catch
+   the next one automatically instead of waiting for the user to spot it.
+2. Audit `tags_lt.json` deliberately: ~16 hyphenated tag slugs have no LT
+   entry (falls back to raw English on ≥26 tips), and a few existing entries
+   contradict phrasing already used in the data (sour-cherry, whipping-cream,
+   baking-soda). Full list in `FIX_PLAN.md`'s "Found but NOT fixed" section.
+3. Optional: add real photos later (`image` field already reserved
    null on every recipe/tip record per the original plan).
-3. Optional: expand `site/js/density.js`'s ~30-entry density table if a
+4. Optional: expand `site/js/density.js`'s ~30-entry density table if a
    shopping-list unit still shows unmerged for a common ingredient — not
    exhaustively checked against all 41 distinct volume-unit ingredient
    names in the data, only spot-checked (cornstarch, baking soda).
 
 ## Archive
+
+### Session 2026-08-26 (S7) — full data audit disproved S6's "QA confirmed" claim, 13 real bugs found and fixed, LT tag corruption self-inflicted and reverted
+
+Started from nav polish (hamburger menu position, mobile auto-close, About page) — see
+those commits first. Then the user spotted "sugar" appearing 4 times in one recipe's
+ingredient list and asked why. That question unwound S6's central claim: "QA compare
+tool findings all confirmed as known/harmless." **That claim was false.** QA Compare only
+ever diffs recipe/tip **titles** between source and JSON — it never compared ingredients,
+steps, or body text, so it could not have caught any of what this session found. Dispatched
+a wide Explore-agent audit (all 73 recipes, 40+ tip samples) against the actual source .md
+files. Result: 13 confirmed, previously undocumented bugs — not variance, not noise.
+
+**Fixed, in order, each its own commit (see `FIX_PLAN.md` for the full write-up):**
+1. **Section-grouping loss (43/73 recipes)** — multi-part recipes (Dough/Filling/Curd/
+   Icing/Frosting) lost their part labels during parsing; all ingredients flattened into
+   one list, making "sugar" look like a duplicate when it's 4 separate amounts for 4
+   separate parts. Added a `section` field to the parser, grouped display in the recipe
+   page, translated all 105 unique section labels to LT.
+2. **"Basic Savory Crumble" cross-file duplicate** — same content existed as both a
+   recipe and a tip. S6's own exclusion comment blamed the wrong cause (claimed content
+   was "copied from a different recipe" — false; verified by direct read, not assumption).
+   Kept as a recipe (source has no ingredient list for it — flagged in the parser as a
+   permanent hand-kept exception), removed the tip duplicate.
+3. **"creamd" regression** — a past typo-fix pass corrupted "creamed" into "creamd" while
+   trying to fix something else. Reverted.
+4. **5 typos S6 claimed were "fixed at the source" were never actually applied to
+   `Patarimai.md`** — only the JSON side was fixed. Patched the source file too.
+5. **4 more "missing leading letter" typos** the S6 spellcheck pass missed (UGAR→SUGAR,
+   dorless→odorless, radually→gradually, reparing→preparing).
+6-8. **Leftover conversion glyphs (▪▫◾◽‼)** in 16 tip titles, 49 tip bodies, 5 recipe
+   step lists — fixed the parser gap (bullet-stripping never applied to recipe steps),
+   cleaned all affected records both languages. Found and fixed a related defect at wider
+   scope while in there: many recipe steps had a redundant leading "- " duplicating the
+   UI's own numbered-list marker ("1. - Mix..." instead of "1. Mix...") — 308 LT step
+   lines alone.
+9. **2 empty "or" tips** — source wrote combined titles ("X or Y"), conversion split them
+   into 2 headings, leaving "or" as one tip's entire body. Deleted both languages.
+10. **Bare `##` heading bug** — a `##` with no space and no title wasn't recognized as a
+    heading at all, leaking literal `##` into one tip's body mid-paragraph. Fixed the
+    parser regex, split the orphaned content into its own titled tip ("Cake Coating.
+    Common Problems — 3"), translated to LT.
+11. **2 ingredients missing their unit** ("125 caster sugar", "65 heavy cream 33-36%" —
+    both needed "g"). Fixed at the source.
+12. **A section label mis-parsed as an instruction step** ("- Buttercream for coating").
+13. **A min/max range stored backwards** when source wrote it high-to-low. Parser now
+    always normalizes min <= max.
+
+**Found while testing the fixes, not in the original audit — also fixed:**
+- Cost-estimate block removed entirely from recipe pages (was showing a misleading
+  partial price — "0.25 € — 1 of 29 ingredients priced" — whenever a recipe happened to
+  use the one placeholder-priced ingredient in `prices.json`; feature isn't finished, a
+  partial number is worse than none).
+- 10 recipes had a redundant generic "Ingredients"/"INGREDIENTS" section label duplicating
+  the page's own `<h2>` — cleared when it's a recipe's only section.
+- Category inference matched vocabulary terms in list order, not accuracy: "Basic Savory
+  Crumble..." and "Perfect Cheesecake Crumble" were tagged `cheesecake` because that term
+  sorts before `crumble` in the vocab and both words appear in the titles. Fixed both to
+  `crumble`, added a title-based override in the parser.
+- "swirls" → category alias mapped to `cinnamon-roll` even for the one swirls recipe with
+  no cinnamon in it (Tart Cherry-Coconut Swirls). Remapped to the generic `roll` category.
+- Two entirely different recipes shared the exact title "BANANA TEA CAKE WITH DATES AND
+  NUTS" (two real, separate Instagram posts in the source — not a bug, but indistinguishable
+  in the UI). Renamed the second to "... — 2" in both languages.
+- **Tag inference used bare substring matching, not word-boundary** — "rum" matched inside
+  "crumble", "salt" inside "salted"/"salty", "butter" inside "buttercream", "milk" inside
+  "milky", "gelatin" inside "gelatinization". Affected 9 recipes + 19 tips. Fixed to
+  word-boundary regex with an explicit plural allowance (`e?s?`) — a first attempt was too
+  strict and silently dropped correct tags on every plural ingredient name ("hazelnuts"
+  no longer matching "hazelnut"), caught only by re-diffing against real ingredient text
+  before trusting the fix.
+
+**Self-inflicted bug, found and reverted before session end:** the tag-substring fix above
+was applied to LT files by copying the *corrected EN slugs* directly into `tags`, instead
+of translating them — overwriting already-correct Lithuanian words ("Baileys likeris",
+"rūgšti vyšnia") with raw English slugs ("baileys", "tart-cherry") across all 9 recipes and
+19 tips the fix touched. Caught by the user asking "was the LT translation done after this
+change" — a direct EN/LT tags-array comparison confirmed the corruption. Reverted LT tags to
+their pre-corruption state, reapplied only the same removals by array position (no
+dictionary rewrite), and hand-translated the one set of newly-added tags using the most
+common existing LT phrasing elsewhere in the dataset — not the dictionary, because
+`tags_lt.json`'s own entries turned out inconsistent with established usage (see below).
+
+**Found but deliberately NOT fixed this session** (see `FIX_PLAN.md`'s final section):
+- 26 tips have at least one tag with no LT translation in `tags_lt.json` (`pectin-nh`,
+  `cream-cheese`, `food-coloring`, etc. — UI falls back to showing the raw English slug).
+  Predates this session (confirmed present at commit `3687893`).
+- `tags_lt.json`'s own entries are internally inconsistent with phrasing already used in
+  the data (`sour-cherry`/`tart-cherry` → "vyšnia", dropping "sour"; `whipping-cream`
+  translated two different ways in different recipes; `baking-soda` → "soda" vs. the more
+  common "valgomoji soda"). Needs a deliberate dictionary audit, not a fix made in passing.
+- "COLD INFUSION" tip's body ends with a "Part 3" paragraph that's actually "THE HOT
+  METHOD"'s intro — source puts a transition paragraph between two `##` headings, and the
+  block-splitter attaches it to the preceding tip. Not checked for other occurrences of the
+  same pattern elsewhere in `Patarimai.md`.
+
+**Why this matters beyond the 13 bugs:** the session's own first attempt at documenting a
+fix plan had real gaps (a first pass wrongly resolved the Basic Savory Crumble ownership
+question, missed a commit-strategy, missed a mid-way verification step) — caught by a
+critical self-review before execution, not after. QA Compare needs a real content-diff
+capability (title-matching alone missed every one of these 13 bugs) — flagged in
+`FIX_PLAN.md` step 0 but not yet built.
+
+**Code:** `scripts/parse_recipes.py`, `scripts/parse_tips.py` (parser fixes), all 4 data
+files (`recipes.json`/`recipes_lt.json`/`tips.json`/`tips_lt.json`, root + `site/data/`
+copies), `site/js/app.js` (section-grouped ingredient rendering, cost-block removal),
+`site/js/i18n.js` (About page expansion), `site/css/app.css` (nav + section-label styles),
+`FIX_PLAN.md` (new — full audit findings + decision log, kept in the repo for reference).
+**Entry point:** `python scripts/parse_recipes.py Receptai.md <out.json>` and
+`python scripts/parse_tips.py Patarimai.md <out.json>` regenerate from source — but note
+several fields (`amount_ml`, the Basic Savory Crumble recipe's content, the "— 2"/"— 3"
+disambiguation renames) are NOT reproduced by the parser and must be reapplied by hand
+after any regeneration, per the comments left in the parser files.
+**Not measured:** whether the 6 unfixed `tags_lt.json` issues (26 tips + dictionary
+inconsistency) extend beyond what was sampled — no full page-by-page audit was done for
+those two. QA Compare's content-diff capability (step 0 of `FIX_PLAN.md`) was never built.
 
 ### Session 2026-08-25 (S6) — LT translation redo (73 recipes, 312 tips) to match S5 EN structure, nav bugs fixed, GitHub Pages deploy live
 
