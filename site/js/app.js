@@ -746,11 +746,22 @@ function wireNavEvents() {
   });
   const hamburgerBtn = document.getElementById("hamburger-btn");
   const sheet = document.getElementById("nav-sheet");
+  const closeSheet = () => {
+    sheet.dataset.open = "false";
+    hamburgerBtn?.setAttribute("aria-expanded", "false");
+  };
   hamburgerBtn?.addEventListener("click", () => {
     const open = sheet.dataset.open === "true";
     sheet.dataset.open = String(!open);
     hamburgerBtn.setAttribute("aria-expanded", String(!open));
   });
+  sheet?.addEventListener("click", (e) => {
+    if (e.target.closest("a")) closeSheet();
+  });
+  document.addEventListener("click", (e) => {
+    if (sheet?.dataset.open === "true" && !sheet.contains(e.target) && !hamburgerBtn?.contains(e.target)) closeSheet();
+  });
+  window.addEventListener("hashchange", closeSheet);
   wireSearchDropdown();
 }
 
