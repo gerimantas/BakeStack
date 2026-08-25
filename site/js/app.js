@@ -450,10 +450,10 @@ function renderRecipeDetail(lang, id) {
 
   const stepsHtml = recipe.steps.map((s) => `<li><p>${scaleStepText(esc(s).replace(/\{\{amount:([\d.]+)\}\}/g, "{{amount:$1}}"), 1)}</p></li>`).join("");
 
-  const price = recipePrice(recipe, 1);
-  const priceHtml = price
-    ? `<div class="price-summary"><span>${t(lang, "estCost")}${price.priced < price.of ? ` <small>(${t(lang, "costPartial", price.priced, price.of)})</small>` : ""}</span><strong>${price.total.toFixed(2)} €</strong></div>`
-    : "";
+  // Cost estimates aren't a finished feature yet (see the About page) — prices.json
+  // only has one placeholder entry, so showing a partial cost for whichever recipe
+  // happens to use that one ingredient is misleading rather than useful.
+  const priceHtml = "";
 
   const related = findRelatedTips(recipe, lang, 4);
   const relatedHtml = related.length ? `
@@ -883,10 +883,6 @@ function wireRecipeDetail(recipe) {
       multBtns.forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
       document.getElementById("ingredient-list").innerHTML = renderIngredientList(recipe.ingredients, m, lang);
       document.getElementById("steps-list").innerHTML = recipe.steps.map((s) => `<li><p>${scaleStepText(esc(s), m)}</p></li>`).join("");
-      const price = recipePrice(recipe, m);
-      document.getElementById("price-block").innerHTML = price
-        ? `<div class="price-summary"><span>${t(lang, "estCost")}${price.priced < price.of ? ` <small>(${t(lang, "costPartial", price.priced, price.of)})</small>` : ""}</span><strong>${price.total.toFixed(2)} €</strong></div>`
-        : "";
       if (isPicked(recipe.id)) setPickMultiplier(recipe.id, m);
     });
   });

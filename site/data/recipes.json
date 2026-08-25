@@ -8,74 +8,62 @@
       {
         "amount": 190.0,
         "unit": "g",
-        "name": "unsalted butter",
-        "section": "Ingredients"
+        "name": "unsalted butter"
       },
       {
         "amount": 290.0,
         "unit": "g",
-        "name": "sugar",
-        "section": "Ingredients"
+        "name": "sugar"
       },
       {
         "amount": 2.0,
         "unit": null,
-        "name": "large eggs",
-        "section": "Ingredients"
+        "name": "large eggs"
       },
       {
         "amount": 50.0,
         "unit": "g",
-        "name": "Dutch-processed cocoa powder",
-        "section": "Ingredients"
+        "name": "Dutch-processed cocoa powder"
       },
       {
         "amount": 270.0,
         "unit": "g",
-        "name": "all-purpose flour",
-        "section": "Ingredients"
+        "name": "all-purpose flour"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
-        "name": "cornstarch",
-        "section": "Ingredients"
+        "name": "cornstarch"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
-        "name": "baking soda",
-        "section": "Ingredients"
+        "name": "baking soda"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "a pinch of salt",
-        "section": "Ingredients"
+        "name": "a pinch of salt"
       },
       {
         "amount": 300.0,
         "unit": "g",
-        "name": "milk chocolate (chips)",
-        "section": "Ingredients"
+        "name": "milk chocolate (chips)"
       },
       {
         "amount": 100.0,
         "unit": "g",
-        "name": "chopped hazelnuts",
-        "section": "Ingredients"
+        "name": "chopped hazelnuts"
       },
       {
         "amount": 10.0,
         "unit": null,
-        "name": "Ferrero Rocher chocolate candies",
-        "section": "Ingredients"
+        "name": "Ferrero Rocher chocolate candies"
       },
       {
         "amount": null,
         "unit": null,
-        "name": "Nutella (for filling)",
-        "section": "Ingredients"
+        "name": "Nutella (for filling)"
       }
     ],
     "steps": [
@@ -588,86 +576,72 @@
       {
         "amount": 200.0,
         "unit": "g",
-        "name": "sugar",
-        "section": "INGREDIENTS"
+        "name": "sugar"
       },
       {
         "amount": 115.0,
         "unit": "g",
-        "name": "melted butter",
-        "section": "INGREDIENTS"
+        "name": "melted butter"
       },
       {
         "amount": 225.0,
         "unit": "g",
-        "name": "thick pumpkin purée",
-        "section": "INGREDIENTS"
+        "name": "thick pumpkin purée"
       },
       {
         "amount": 75.0,
         "unit": "g",
-        "name": "milk (room temperature)",
-        "section": "INGREDIENTS"
+        "name": "milk (room temperature)"
       },
       {
         "amount": 70.0,
         "unit": "g",
-        "name": "eggs (room temperature)",
-        "section": "INGREDIENTS"
+        "name": "eggs (room temperature)"
       },
       {
         "amount": 175.0,
         "unit": "g",
-        "name": "flour",
-        "section": "INGREDIENTS"
+        "name": "flour"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
-        "name": "baking powder",
-        "section": "INGREDIENTS"
+        "name": "baking powder"
       },
       {
         "amount": 0.6666666666666666,
         "unit": "tsp",
-        "name": "baking soda",
-        "section": "INGREDIENTS"
+        "name": "baking soda"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
-        "name": "salt",
-        "section": "INGREDIENTS"
+        "name": "salt"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
-        "name": "cinnamon",
-        "section": "INGREDIENTS"
+        "name": "cinnamon"
       },
       {
         "amount": 0.5,
         "unit": "tsp",
-        "name": "ground ginger",
-        "section": "INGREDIENTS"
+        "name": "ground ginger"
       },
       {
         "amount": 0.25,
         "unit": "tsp",
-        "name": "nutmeg",
-        "section": "INGREDIENTS"
+        "name": "nutmeg"
       },
       {
         "amount": 15.0,
         "unit": "g",
-        "name": "cocoa powder",
-        "section": "INGREDIENTS"
+        "name": "cocoa powder"
       },
       {
         "amount": 15.0,
         "unit": "g",
-        "name": "milk (room temperature)",
-        "section": "INGREDIENTS"
+        "name": "milk (room temperature)"
       }
     ],
     "steps": [
@@ -2617,38 +2591,32 @@
       {
         "amount": 15.0,
         "unit": "g",
-        "name": "heavy whippinh cream (33–35%)",
-        "section": "Ingredients"
+        "name": "heavy whippinh cream (33–35%)"
       },
       {
         "amount": 65.0,
         "unit": "g",
-        "name": "mango purée",
-        "section": "Ingredients"
+        "name": "mango purée"
       },
       {
         "amount": 5.0,
         "unit": "g",
-        "name": "glucose syrup",
-        "section": "Ingredients"
+        "name": "glucose syrup"
       },
       {
         "amount": 10.0,
         "unit": "g",
-        "name": "inverted sugar (Trimoline)",
-        "section": "Ingredients"
+        "name": "inverted sugar (Trimoline)"
       },
       {
         "amount": 145.0,
         "unit": "g",
-        "name": "white chocolate callets",
-        "section": "Ingredients"
+        "name": "white chocolate callets"
       },
       {
         "amount": 8.0,
         "unit": "g",
-        "name": "cocoa butter",
-        "section": "Ingredients"
+        "name": "cocoa butter"
       }
     ],
     "steps": [
@@ -3447,50 +3415,42 @@
       {
         "amount": 100.0,
         "unit": "g",
-        "name": "orange pulp",
-        "section": "Ingredients"
+        "name": "orange pulp"
       },
       {
         "amount": 55.0,
         "unit": "g",
-        "name": "passion fruit purée",
-        "section": "Ingredients"
+        "name": "passion fruit purée"
       },
       {
         "amount": 55.0,
         "unit": "g",
-        "name": "sugar",
-        "section": "Ingredients"
+        "name": "sugar"
       },
       {
         "amount": 3.5,
         "unit": "g",
-        "name": "NH pectin",
-        "section": "Ingredients"
+        "name": "NH pectin"
       },
       {
         "amount": 2.0,
         "unit": "g",
-        "name": "orange zest",
-        "section": "Ingredients"
+        "name": "orange zest"
       },
       {
         "amount": 3.0,
         "unit": "g",
-        "name": "gelatin (160 Bloom)",
-        "section": "Ingredients"
+        "name": "gelatin (160 Bloom)"
       },
       {
         "amount": 18.0,
         "unit": "g",
-        "name": "cold water",
-        "section": "Ingredients"
+        "name": "cold water"
       },
       {
         "amount": 50.0,
         "unit": "g",
-        "name": "orange pulp",
-        "section": "Ingredients"
+        "name": "orange pulp"
       }
     ],
     "steps": [
@@ -3704,62 +3664,52 @@
       {
         "amount": 230.0,
         "unit": "g",
-        "name": "unsalted butter",
-        "section": "Ingredients"
+        "name": "unsalted butter"
       },
       {
         "amount": 400.0,
         "unit": "g",
-        "name": "dark chocolate",
-        "section": "Ingredients"
+        "name": "dark chocolate"
       },
       {
         "amount": 6.0,
         "unit": null,
-        "name": "large eggs",
-        "section": "Ingredients"
+        "name": "large eggs"
       },
       {
         "amount": 100.0,
         "unit": "g",
-        "name": "sugar (white granulated or caster)",
-        "section": "Ingredients"
+        "name": "sugar (white granulated or caster)"
       },
       {
         "amount": 310.0,
         "unit": "g",
-        "name": "brown sugar",
-        "section": "Ingredients"
+        "name": "brown sugar"
       },
       {
         "amount": 2.0,
         "unit": "tsp",
-        "name": "salt",
-        "section": "Ingredients"
+        "name": "salt"
       },
       {
         "amount": 1.0,
         "unit": "tsp",
-        "name": "vanilla extract",
-        "section": "Ingredients"
+        "name": "vanilla extract"
       },
       {
         "amount": 120.0,
         "unit": "g",
-        "name": "all-purpose flour",
-        "section": "Ingredients"
+        "name": "all-purpose flour"
       },
       {
         "amount": 60.0,
         "unit": "g",
-        "name": "cocoa powder",
-        "section": "Ingredients"
+        "name": "cocoa powder"
       },
       {
         "amount": 100.0,
         "unit": "g",
-        "name": "chopped nuts and chocolate chips (optional)",
-        "section": "Ingredients"
+        "name": "chopped nuts and chocolate chips (optional)"
       }
     ],
     "steps": [
@@ -3793,44 +3743,37 @@
       {
         "amount": 90.0,
         "unit": "g",
-        "name": "soft butter",
-        "section": "INGREDIENTS"
+        "name": "soft butter"
       },
       {
         "amount": 45.0,
         "unit": "g",
-        "name": "powdered sugar",
-        "section": "INGREDIENTS"
+        "name": "powdered sugar"
       },
       {
         "amount": 0.25,
         "unit": "tsp",
-        "name": "salt",
-        "section": "INGREDIENTS"
+        "name": "salt"
       },
       {
         "amount": 10.0,
         "unit": "g",
-        "name": "egg",
-        "section": "INGREDIENTS"
+        "name": "egg"
       },
       {
         "amount": 4.0,
         "unit": null,
-        "name": "drops vanilla extract",
-        "section": "INGREDIENTS"
+        "name": "drops vanilla extract"
       },
       {
         "amount": 100.0,
         "unit": "g",
-        "name": "all-purpose flour",
-        "section": "INGREDIENTS"
+        "name": "all-purpose flour"
       },
       {
         "amount": 25.0,
         "unit": "g",
-        "name": "hazelnut flour",
-        "section": "INGREDIENTS"
+        "name": "hazelnut flour"
       }
     ],
     "steps": [
@@ -3990,44 +3933,37 @@
       {
         "amount": 150.0,
         "unit": "g",
-        "name": "all-purpose flour",
-        "section": "INGREDIENTS"
+        "name": "all-purpose flour"
       },
       {
         "amount": 4.0,
         "unit": "g",
-        "name": "salt",
-        "section": "INGREDIENTS"
+        "name": "salt"
       },
       {
         "amount": 4.0,
         "unit": "g",
-        "name": "sugar",
-        "section": "INGREDIENTS"
+        "name": "sugar"
       },
       {
         "amount": 75.0,
         "unit": "g",
-        "name": "cold butter, cubed",
-        "section": "INGREDIENTS"
+        "name": "cold butter, cubed"
       },
       {
         "amount": 48.0,
         "unit": "g",
-        "name": "cold eggs",
-        "section": "INGREDIENTS"
+        "name": "cold eggs"
       },
       {
         "amount": 15.0,
         "unit": "g",
-        "name": "ice water",
-        "section": "INGREDIENTS"
+        "name": "ice water"
       },
       {
         "amount": 4.0,
         "unit": null,
-        "name": "drops vanilla extract",
-        "section": "INGREDIENTS"
+        "name": "drops vanilla extract"
       }
     ],
     "steps": [
@@ -5435,14 +5371,12 @@
       {
         "amount": 400.0,
         "unit": "g",
-        "name": "dark chocolate 54.5%",
-        "section": "Ingredients"
+        "name": "dark chocolate 54.5%"
       },
       {
         "amount": 400.0,
         "unit": "g",
-        "name": "heavy cream 33-36%",
-        "section": "Ingredients"
+        "name": "heavy cream 33-36%"
       }
     ],
     "steps": [
@@ -6712,38 +6646,32 @@
       {
         "amount": 270.0,
         "unit": "g",
-        "name": "cream cheese 60-70%",
-        "section": "Ingredients"
+        "name": "cream cheese 60-70%"
       },
       {
         "amount": 250.0,
         "unit": "g",
-        "name": "mascarpone 80-85%",
-        "section": "Ingredients"
+        "name": "mascarpone 80-85%"
       },
       {
         "amount": 460.0,
         "unit": "g",
-        "name": "heavy cream 33-36%",
-        "section": "Ingredients"
+        "name": "heavy cream 33-36%"
       },
       {
         "amount": 140.0,
         "unit": "g",
-        "name": "caster sugar",
-        "section": "Ingredients"
+        "name": "caster sugar"
       },
       {
         "amount": 240.0,
         "unit": "g",
-        "name": "whole eggs (~4.4 pcs)",
-        "section": "Ingredients"
+        "name": "whole eggs (~4.4 pcs)"
       },
       {
         "amount": 30.0,
         "unit": "g",
-        "name": "all-purpose flour",
-        "section": "Ingredients"
+        "name": "all-purpose flour"
       },
       {
         "amount": {
@@ -6751,8 +6679,7 @@
           "max": 50.0
         },
         "unit": "g",
-        "name": "vanilla paste",
-        "section": "Ingredients"
+        "name": "vanilla paste"
       }
     ],
     "steps": [
@@ -9049,14 +8976,12 @@
       {
         "amount": 450.0,
         "unit": "g",
-        "name": "cream cheese",
-        "section": "Ingredients"
+        "name": "cream cheese"
       },
       {
         "amount": 460.0,
         "unit": "g",
-        "name": "whipping cream 33-36%",
-        "section": "Ingredients"
+        "name": "whipping cream 33-36%"
       },
       {
         "amount": {
@@ -9064,26 +8989,22 @@
           "max": 200.0
         },
         "unit": "g",
-        "name": "sugar",
-        "section": "Ingredients"
+        "name": "sugar"
       },
       {
         "amount": 240.0,
         "unit": "g",
-        "name": "whole eggs",
-        "section": "Ingredients"
+        "name": "whole eggs"
       },
       {
         "amount": 30.0,
         "unit": "g",
-        "name": "cornstarch",
-        "section": "Ingredients"
+        "name": "cornstarch"
       },
       {
         "amount": 1.0,
         "unit": "tbsp",
-        "name": "vanilla paste",
-        "section": "Ingredients"
+        "name": "vanilla paste"
       }
     ],
     "steps": [
