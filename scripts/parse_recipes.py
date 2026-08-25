@@ -332,6 +332,15 @@ def split_recipes(text):
 
 def infer_category(title, tags_vocab):
     title_lower = title.lower()
+    # A title like "... FOR CHEESECAKE CRUST" or "... CHEESECAKE CRUMBLE" is a crust/
+    # crumble component recipe, not a full cheesecake — but "cheesecake" sorts earlier
+    # in tags_vocab["category"] than "crumble", so the generic loop below would match
+    # the wrong (broader dessert) category first. Only applies when "crumble" is paired
+    # with another dessert name in the title (the false-match pattern) — a title like
+    # "... CRUMBLE PIE" is a real pie with a crumble topping, not a crumble component,
+    # so it's excluded and falls through to match "pie" normally.
+    if "crumble" in title_lower and "pie" not in title_lower:
+        return "crumble"
     for cat in tags_vocab["category"]:
         if cat.replace("-", " ") in title_lower or cat.replace("-", "") in title_lower.replace(" ", ""):
             return cat
