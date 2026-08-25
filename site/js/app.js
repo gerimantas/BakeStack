@@ -670,10 +670,22 @@ function renderShoppingView(lang) {
 }
 
 function renderAboutView(lang) {
+  const sectionsHtml = t(lang, "aboutSections").map((s) => `
+    <h2 style="font-size:var(--text-lg);margin:var(--space-xl) 0 var(--space-2xs)">${esc(s.heading)}</h2>
+    <p style="max-width:42rem;color:var(--color-ink-2)">${esc(s.text)}</p>`).join("");
+
   return `
   <div class="container">
     <div class="page-head"><h1>${t(lang, "aboutTitle")}</h1></div>
-    ${t(lang, "aboutBody").map((p) => `<p style="max-width:42rem;margin-bottom:var(--space-md);color:var(--color-ink-2)">${esc(p)}</p>`).join("")}
+    <p style="max-width:42rem;color:var(--color-ink-2)">${esc(t(lang, "aboutIntro"))}</p>
+    ${sectionsHtml}
+    <p style="max-width:42rem;margin-top:var(--space-xl);color:var(--color-ink-2)">${esc(t(lang, "aboutPlanned"))}</p>
+    <p style="max-width:42rem;margin-top:var(--space-md);color:var(--color-ink-2)">${esc(t(lang, "aboutTested"))}</p>
+    <h2 style="font-size:var(--text-lg);margin:var(--space-xl) 0 var(--space-2xs)">${esc(t(lang, "aboutHomeScreenTitle"))}</h2>
+    <ul style="max-width:42rem;color:var(--color-ink-2);padding-left:1.2em">
+      <li style="margin-bottom:var(--space-2xs)">${esc(t(lang, "aboutHomeScreenAndroid"))}</li>
+      <li>${esc(t(lang, "aboutHomeScreenIos"))}</li>
+    </ul>
   </div>`;
 }
 
