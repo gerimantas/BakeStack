@@ -92,6 +92,16 @@ EXCLUDE_FROM_RECIPES = {
     "FLAVOR PAIRING. STRAWBERRY",
 }
 
+# "BASIC SAVORY CRUMBLE RECIPE FOR CHEESECAKE CRUST" is intentionally hand-kept in
+# recipes.json even though its `## ` block in Receptai.md has NO ingredient list at
+# all (just an Instagram-post intro) — its real ingredients/steps live under the
+# same content in Patarimai.md ("Basic Savory Crumble"), which was previously
+# duplicated as a tip too. Decision: keep it as a recipe (not a tip), remove the
+# tip-side duplicate. Because this parser only reads Receptai.md, it can never
+# reconstruct this recipe's content on its own — if recipes.json is ever
+# regenerated from scratch, this title's ingredients/steps must be copied back in
+# by hand from Patarimai.md's "Basic Savory Crumble" tip, not left empty.
+
 RECIPE_HEADING = re.compile(r"^##\s+(.*)$")
 SUBSECTION_HEADING = re.compile(r"^###\s+(.*)$")
 # Bare label lines used as sub-section headers without a `#` prefix in the
@@ -120,7 +130,9 @@ def parse_amount(amt1, amt2):
     v1 = parse_number(amt1)
     if amt2:
         v2 = parse_number(amt2)
-        return {"min": v1, "max": v2}
+        # Source occasionally writes ranges high-to-low ("1/3-1/4 tsp.") —
+        # normalize to min <= max regardless of the order in the text.
+        return {"min": min(v1, v2), "max": max(v1, v2)}
     return v1 if v1 == int(v1) else v1
 
 
@@ -377,6 +389,7 @@ def parse_recipe(raw_recipe, tags_vocab):
     description_lines = []
     servings = None
     seen_structure = False  # first sub-section heading or ingredient line
+    current_section = None  # heading text of the ingredient sub-section we're in
 
     servings_re = re.compile(
         r"(~?\s*\d+[–\-]?\d*\s*(?:pcs?\.?|cupcakes?|rolls?|servings?))",
@@ -391,8 +404,20 @@ def parse_recipe(raw_recipe, tags_vocab):
         if not stripped:
             continue
 
-        if SUBSECTION_HEADING.match(stripped) or BARE_LABEL_RE.match(stripped):
+        sub_m = SUBSECTION_HEADING.match(stripped)
+        bare_m = None if sub_m else BARE_LABEL_RE.match(stripped)
+        if sub_m or bare_m:
             seen_structure = True
+            heading_text = sub_m.group(1).strip() if sub_m else stripped.strip()
+            # A step/instructions heading closes the ingredients section — what
+            # follows is steps, not another ingredient group ("### Instructions",
+            # "METHOD"). Everything else (Dough, Filling, Frosting, ...) opens a
+            # new ingredient group so its items don't fall into the previous
+            # group or the flat list with no marker at all.
+            if re.match(r"^(instructions?|method|preparation|assembly)\b", heading_text, re.IGNORECASE):
+                current_section = None
+            else:
+                current_section = heading_text
             m = servings_re.search(stripped)
             if m and servings is None:
                 servings = m.group(1).strip()
@@ -401,11 +426,12 @@ def parse_recipe(raw_recipe, tags_vocab):
         if is_ingredient_line(stripped):
             seen_structure = True
             parsed = parse_ingredient_line(stripped)
-            if parsed:
-                ingredients.append(parsed)
-            else:
+            if not parsed:
                 text = BULLET_PREFIX.sub("", stripped).strip()
-                ingredients.append({"amount": None, "unit": None, "name": text})
+                parsed = {"amount": None, "unit": None, "name": text}
+            if current_section:
+                parsed["section"] = current_section
+            ingredients.append(parsed)
             continue
 
         if not seen_structure:

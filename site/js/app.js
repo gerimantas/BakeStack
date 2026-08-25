@@ -66,6 +66,23 @@ function ingredientLine(ing, multiplier, lang) {
   return `<li><span class="${nameClass}">${esc(ing.name)}</span><span class="amt">${amtHtml}</span></li>`;
 }
 
+/** Renders the full ingredient list, grouping consecutive ingredients under the same
+ * `section` (e.g. "Dough", "Frosting") with a heading — recipes with multiple parts
+ * would otherwise show one flat list where a name like "sugar" appearing 4 times
+ * looks like a duplicate instead of 4 separate amounts for 4 separate parts. */
+function renderIngredientList(ingredients, multiplier, lang) {
+  let html = "";
+  let currentSection = undefined;
+  for (const ing of ingredients) {
+    if (ing.section !== currentSection) {
+      currentSection = ing.section;
+      if (currentSection) html += `<li class="ingredient-section">${esc(currentSection)}</li>`;
+    }
+    html += ingredientLine(ing, multiplier, lang);
+  }
+  return html;
+}
+
 function scaleStepText(text, multiplier) {
   return text.replace(/\{\{amount:([\d.]+)\}\}/g, (_, num) => {
     const scaled = parseFloat(num) * multiplier;
@@ -429,7 +446,7 @@ function renderRecipeDetail(lang, id) {
     `<button data-mult="${m}" aria-pressed="${m === 1}">${m}×</button>`
   ).join("");
 
-  const ingHtml = recipe.ingredients.map((ing) => ingredientLine(ing, 1, lang)).join("");
+  const ingHtml = renderIngredientList(recipe.ingredients, 1, lang);
 
   const stepsHtml = recipe.steps.map((s) => `<li><p>${scaleStepText(esc(s).replace(/\{\{amount:([\d.]+)\}\}/g, "{{amount:$1}}"), 1)}</p></li>`).join("");
 
@@ -864,7 +881,7 @@ function wireRecipeDetail(recipe) {
     btn.addEventListener("click", () => {
       const m = parseFloat(btn.dataset.mult);
       multBtns.forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
-      document.getElementById("ingredient-list").innerHTML = recipe.ingredients.map((ing) => ingredientLine(ing, m, lang)).join("");
+      document.getElementById("ingredient-list").innerHTML = renderIngredientList(recipe.ingredients, m, lang);
       document.getElementById("steps-list").innerHTML = recipe.steps.map((s) => `<li><p>${scaleStepText(esc(s), m)}</p></li>`).join("");
       const price = recipePrice(recipe, m);
       document.getElementById("price-block").innerHTML = price
