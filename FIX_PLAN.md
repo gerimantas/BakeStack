@@ -175,6 +175,16 @@ session already made once (see the LT tag corruption entry in git history, commi
   existing phrasing across the actual recipe data. None of these were fixed — the dictionary
   itself needs a deliberate pass against the phrasing already used in `recipes_lt.json`/
   `tips_lt.json`, not a quick edit made in passing while chasing an unrelated bug.
+- **"COLD INFUSION" tip's body ends with a paragraph that belongs to a different tip.** Source
+  (`Patarimai.md` lines 84-86) has "Part 3 / Continuing to explore the topic of flavor infusion,
+  today we'll look at the hot method..." positioned between the `## COLD INFUSION` and
+  `## THE HOT METHOD` headings — it reads as HOT METHOD's intro, but the block-splitting logic
+  attaches it to the end of COLD INFUSION instead, since it appears before the next `##`. Result:
+  the COLD INFUSION tip card ends with a stray "Part 3" and a sentence introducing a different
+  topic. Same root cause likely affects other places in `Patarimai.md` where a transition
+  paragraph sits between two `##` headings — not checked beyond this one instance. Not fixed:
+  requires deciding whether to delete the stray paragraph or move it to the following tip, and a
+  broader check for the same pattern elsewhere hasn't been done.
 
 ---
 
