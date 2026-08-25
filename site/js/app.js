@@ -127,14 +127,24 @@ function renderNav(lang, route) {
 function updateNavState(lang, route) {
   document.querySelectorAll("#nav-links .nav__link, #nav-sheet .nav__link").forEach((el, i) => {
     const link = NAV_LINKS[i % NAV_LINKS.length];
+    el.textContent = t(lang, link.key);
     if (link.match(route)) el.setAttribute("aria-current", "page");
     else el.removeAttribute("aria-current");
   });
   document.querySelectorAll("[data-lang]").forEach((btn) => {
     btn.setAttribute("aria-pressed", String(btn.dataset.lang === lang));
   });
+  const search = document.getElementById("global-search");
+  if (search) search.placeholder = t(lang, "searchPlaceholder");
+  const searchLabel = document.querySelector('label[for="global-search"]');
+  if (searchLabel) searchLabel.textContent = t(lang, "searchPlaceholder");
+  const langToggle = document.querySelector(".lang-toggle");
+  if (langToggle) langToggle.setAttribute("aria-label", t(lang, "langToggle"));
   const themeBtn = document.getElementById("theme-btn");
-  if (themeBtn) themeBtn.innerHTML = themeIconSvg(appState.theme);
+  if (themeBtn) {
+    themeBtn.innerHTML = themeIconSvg(appState.theme);
+    themeBtn.setAttribute("aria-label", t(lang, "themeToggle"));
+  }
 }
 
 function renderFooter(lang) {
