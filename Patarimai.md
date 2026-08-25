@@ -413,7 +413,7 @@ fructose > glucose > lactose > maltose > sucrose > isomalt.
 
 • Higher baking temperatures intensify browning, which is why the crust on bread or sponge cake is always darker than the inside.
 
-## UGAR: HOW IT WORKS IN BATTER
+## SUGAR: HOW IT WORKS IN BATTER
 
 All sugars are hygroscopic, meaning they have the ability to attract and retain water.
 
@@ -682,7 +682,7 @@ Is a whisk better when mixing the cheese filling for a cheesecake, or should you
 
 And what if you’re using a hand mixer—does that change the choice entirely?
 
-Let’s break it down entirely because selecting the properattachment is crucial to achieving perfect desserts.
+Let’s break it down entirely because selecting the proper attachment is crucial to achieving perfect desserts.
 
 ## WHISK
 
@@ -3030,7 +3030,7 @@ Types of cornstarch
 - regular cornstarch — does not contain impurities and has a white color
 - modified starch — a safe product, additionally processed for better absorption
 
-Take into account thatstarch as a thickener activates properly only after bringing the mixture to a boil
+Take into account that starch as a thickener activates properly only after bringing the mixture to a boil
 
 The boiling point of mixtures with starch added is 82 °C.
 
@@ -3172,7 +3172,7 @@ In the continuation of the article, we"ll analyze why citric acid is sometimes a
 
 part 3
 
-While I was reparing materials for the articles on my site, I found out that one very interesting topic was not fully disclosed.
+While I was preparing materials for the articles on my site, I found out that one very interesting topic was not fully disclosed.
 
 Almost a year and a half ago I started writing an article about honey, and in the first two parts I gave a detailed answer to such a tricky question as to whether it's possible to heat honey and whether it becomes harmful after that.
 
@@ -3613,7 +3613,7 @@ In 99% of cases, beginners simply replace the amount of chocolate specified in t
 
 Is it possible basically to replace one chocolate with another?
 
-- Yes, if you correctly calculate the required amount of chocolate with a cocoa butter content that is different from that specifed in the recipe
+- Yes, if you correctly calculate the required amount of chocolate with a cocoa butter content that is different from that specified in the recipe
 
 Let's say the recipe says 400 g of dark chocolate 54% (chocolate A). You only have 64% chocolate (Chocolate B) available.
 
@@ -3856,7 +3856,7 @@ Continuing to delve into the topic of infusion, today we take into account the h
 
 Many of you, probably, have guessed that the hot method involves heat treatment. You’re on the right track. Hot infusion consists in bringing the liquid together with spices, herbs or other flavorings to a boil, followed by infusion for 30-60 minutes.
 
-The infused liquid can be cream, milk or berry puree. For example, you can infuse the cream with dry lavender, as I did in Blueberry-Lavender Cheesecake (photo 3-6), or you can give a mouthwatering coffee aroma by hot infusion the cream with ground cofee (Coffee-Baileys Cheesecake, photo 7-8).
+The infused liquid can be cream, milk or berry puree. For example, you can infuse the cream with dry lavender, as I did in Blueberry-Lavender Cheesecake (photo 3-6), or you can give a mouthwatering coffee aroma by hot infusion the cream with ground coffee (Coffee-Baileys Cheesecake, photo 7-8).
 
 Everything is very simple, but there are secrets that I will gladly share with you.
 
@@ -4424,7 +4424,7 @@ If you’re using raw milk, bring it to a boil (100°C) to pasteurize.
 - When the milk has boiled, a film forms on its surface - these are proteins that have coagulated. To prevent skin formation, add some sugar to the milk.
 - It is best to use pasteurized dairy products to achieve a balanced taste in the final product.
 
-3. Temper the egg yolks - radually pour a third of the hot milk into the yolk mixture in a thin stream and mix well with a silicone spatula.
+3. Temper the egg yolks - gradually pour a third of the hot milk into the yolk mixture in a thin stream and mix well with a silicone spatula.
 
 - If you pour the milk too quickly, the yolks can cook, while you only need to heat up the yolk mixture.
 
@@ -6402,7 +6402,7 @@ Crème fraîche (lit. from French "fresh cream") is a dairy product with the fat
 
 It is made by fermenting pasteurized cream from cow's milk. Crème fraîche has a pleasant, slightly sour taste, and without additives it is indistinguishable from sour cream either in taste or in the production technology.
 
-In England, Spain, Italy, Denmark, the Benelux countries, crème fraîche and sour creame often stand on the shelves of shops nearby and even have the same manufacturers. Moreover, both names are often present on the same package.
+In England, Spain, Italy, Denmark, the Benelux countries, crème fraîche and sour cream often stand on the shelves of shops nearby and even have the same manufacturers. Moreover, both names are often present on the same package.
 Can we work with homemade cream? I can’t categorically say “no”, but I don’t recommend working with it either. Why? Let's figure it out.
 
 Firstly, in addition to different fat content, the cream can also be divided into categories according to the method of heat treatment:

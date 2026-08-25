@@ -1003,7 +1003,7 @@ BATTER (yields~12–14cupcakes)
 ½tsp baking soda
 ½tsp salt
 120g sour cream 20%
-75g dorless oil
+75g odorless oil
 2large eggs (Grade A)
 1tsp vanilla extract
 
@@ -2307,7 +2307,7 @@ Bookmark the recipe, enjoy juicy photos and show the chef your generosity with l
 48 g cold water
 45 g bilberries
 45 g raspberries
-65 heavy cream 33–36% (1)
+65 g heavy cream 33–36% (1)
 80 g white chocolate 28-30% (callets)
 80 g heavy cream 33–36% (2)
 50 g blueberries
@@ -2635,7 +2635,7 @@ YOU CAN DONATE USING THE BANK DETAILS IN THE PROFILE HEADER
 
 ### Banana Caramel
 
-125 caster sugar
+125 g caster sugar
 50 g glucose syrup
 150 g heavy cream 33–36%
 70 g banana puree

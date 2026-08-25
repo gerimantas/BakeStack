@@ -2715,7 +2715,7 @@
       {
         "amount": 75.0,
         "unit": "g",
-        "name": "dorless oil",
+        "name": "odorless oil",
         "section": "BATTER (yields~12–14cupcakes)"
       },
       {
@@ -6242,7 +6242,7 @@
       },
       {
         "amount": 65.0,
-        "unit": null,
+        "unit": "g",
         "name": "heavy cream 33–36%",
         "section": "Wild berry mousse"
       },
@@ -6966,7 +6966,7 @@
       },
       {
         "amount": 125.0,
-        "unit": null,
+        "unit": "g",
         "name": "caster sugar",
         "section": "Banana Caramel"
       },
