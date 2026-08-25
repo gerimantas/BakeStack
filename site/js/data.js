@@ -35,11 +35,6 @@ async function loadAll() {
   store.recipes.en = recipesEn.map((r, i) => ({ ...r, id: slugify(r.title, i) }));
   store.recipes.lt = recipesLt.map((r, i) => ({ ...r, id: slugify(recipesEn[i]?.title ?? r.title, i) }));
   store.tips.en = tipsEn.map((t, i) => ({ ...t, id: slugify(t.title, i) }));
-  // FIXME: tips.json (EN) was corrected to merge mis-split subsections
-  // (306 entries); tips_lt.json (LT) is still the old, uncorrected
-  // translation (363 entries) - index-based EN/LT pairing is temporarily
-  // misaligned past entry 306 until the LT pass is redone. Fall back to
-  // the LT entry's own title so this doesn't throw.
   store.tips.lt = tipsLt.map((t, i) => ({ ...t, id: slugify(tipsEn[i]?.title ?? t.title, i) }));
   store.tags = tags;
   store.tagsLt = tagsLt;
