@@ -111,7 +111,15 @@ def infer_tags(title, body, tags_vocab):
             # forward-only match silently missed every one of them
             # (FLAX FLOUR, SESAME FLOUR, etc. all showed zero tags).
             needle_reversed = " ".join(reversed(words)) if len(words) > 1 else None
-            if needle in haystack or (needle_reversed and needle_reversed in haystack):
+            # Word-boundary match, not bare substring — a short tag like "rum"
+            # matches as a substring inside unrelated words (e.g. "crumble"),
+            # same bug found and fixed in parse_recipes.py's infer_tags. The
+            # optional trailing "s"/"es" is needed too, for the same reason:
+            # plural forms in body text ("sugars", "oranges") must still match
+            # their singular vocab term.
+            pattern = r"\b" + re.escape(needle) + r"e?s?\b"
+            pattern_reversed = r"\b" + re.escape(needle_reversed) + r"e?s?\b" if needle_reversed else None
+            if re.search(pattern, haystack) or (pattern_reversed and re.search(pattern_reversed, haystack)):
                 found.add(term)
     return sorted(found)
 

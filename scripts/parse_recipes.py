@@ -384,7 +384,24 @@ def infer_tags(title, ingredient_names, tags_vocab):
             # missed every flour-type ingredient tag (same bug found and
             # fixed in parse_tips.py's infer_tags).
             needle_reversed = " ".join(reversed(words)) if len(words) > 1 else None
-            if needle in haystack or (needle_reversed and needle_reversed in haystack):
+            # Word-boundary match, not bare substring — "rum" as a plain
+            # substring matched inside "crumble"/"crumbs", tagging 6 crumble
+            # recipes with a spirit they don't contain. \b works here because
+            # tag terms are plain words/word-pairs, never regex metacharacters.
+            # Allow an optional trailing "s"/"es" so plural ingredient forms
+            # ("hazelnuts", "walnuts", "dates", "oranges") still match their
+            # singular vocab term — a strict \b...\b on the bare singular
+            # missed every one of these, which a first pass at this fix did.
+            pattern = r"\b" + re.escape(needle) + r"e?s?\b"
+            pattern_reversed = r"\b" + re.escape(needle_reversed) + r"e?s?\b" if needle_reversed else None
+            # "nut-paste" must also match "hazelnut paste"/"almond paste" — any
+            # word ending in "nut" (hazelnut, peanut, ...) directly before
+            # "paste", plus "almond paste" as its own explicit case since
+            # almond isn't a "...nut" word textually despite being a nut.
+            nut_paste_variant = term == "nut-paste" and (
+                re.search(r"\w*nut\s+paste\b", haystack) or re.search(r"\balmond\s+paste\b", haystack)
+            )
+            if re.search(pattern, haystack) or (pattern_reversed and re.search(pattern_reversed, haystack)) or nut_paste_variant:
                 found.add(term)
     return sorted(found)
 

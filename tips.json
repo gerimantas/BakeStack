@@ -40,7 +40,6 @@
     "title": "FACTORS THAT AFFECT STARCH FUNCTIONALITY",
     "text": "In previous posts, we discussed different types of starch and how starch works. Today, let’s focus on what specifically affects the rate of starch thickening.\n\n- So, the factors that influence the gelatinization temperature (t°) of starch include:\n\n— TYPE OF STARCH — each type of starch has an optimal amount of heat required for proper gelatinization.\n\nThe time required for complete gelatinization of root starches is always shorter than that required for corn starch. In most cases, unmodified root starches should not be brought to a boil. When cooked for too long, unmodified root starches develop an excessively elastic or stringy texture.\n\n— AMOUNT OF TENDERIZERS — sugars and fats slow down the rate at which starch granules absorb water and swell.\n\nThe slower they absorb water, the longer it takes for starch granules to gelatinize. In fact, if enough sugar is present, it can completely prevent starch gelatinization. This is one of the ways sugars and fats tenderize baked goods: they reduce the amount of gelatinized starch, which is responsible for structure formation. Sugar also increases the transparency of starch-thickened mixtures.\n\n— AMOUNT OF ACID — acids hydrolyze (break down) large starch molecules into smaller ones, reducing their thickening power.\n\nAcids also weaken starch granules, allowing them to gelatinize faster and more easily. In fact, if enough acid is present, gelatinization occurs so rapidly that the starch mixture may appear not to thicken at all.\nSTARCH. How does it work?\n\nThe process depends on the temperature setting. When starch granules are placed in cold water, its molecules attract water molecules and the granules swell just slightly. However, when the water is heated, the starch granules undergo an irreversible process called GELATINIZATION.\n\nThere is an optimal amount of heat for proper thickening and gel formation:\n\n— too little heat → too few granules swell\n\n— too much heat → too many granules break down\n\nUndercooking or overcooking starch results in insufficient thickening and gel formation.\n\nUNDERCOOKING starch causes additional problems as well:\n\n— because raw granules are hard and dense, undercooked starch feels gritty in the mouth\n\n— undercooked starch is opaque and has an unpleasant starch taste\n\n— if stored for a day or longer, undercooked starch mixtures tend to release droplets or even pools of water around the gel\n\nThere are many factors affect the gelatinization t° of starches. The higher the gelatinization t°, the longer starch takes to gelatinize and, thus, the greater the risk of undercooking.\n\nHere are the factors that affect starch gelatinization t°:\n\n• type of starch used\n\n• amount of fats and sugar\n\n• amount of acid",
     "tags": [
-      "gelatin",
       "sugar"
     ]
   },
@@ -71,8 +70,7 @@
       "butter",
       "cream-cheese",
       "mascarpone",
-      "milk",
-      "salt"
+      "milk"
     ]
   },
   {
@@ -125,8 +123,7 @@
     "tags": [
       "butter",
       "creaming-butter",
-      "milk",
-      "salt"
+      "milk"
     ]
   },
   {
@@ -156,7 +153,6 @@
     "title": "CREATING TENDER TEXTURES",
     "text": "Once dissolved, sugar prevents:\n• gluten formation\n• protein coagulation\n• starch gelatinization\n\nIn other words, sugar slows down structure formation — and because of that, the batter has more time in the oven to rise, and the baked good remains soft and tender after baking.\n\nWhy does this happen?\n\nBecause gluten, proteins, and starch need water to form structure, and sugar — as a hygroscopic substance — absorbs and binds water, leaving less available liquid for the structure-builders.\n\nSugar raises the temperature at which proteins coagulate and starch gelatinizes, which delays structure formation.\n\n- As a result, the more sugar in a recipe, the more tender the baked good becomes.\n\n- BUT it’s important to find the right balance\n\n If there’s too much sugar, structure barely forms: the product either doesn’t rise, or rises — and quickly collapses when cooled.\n\n If there’s too little sugar, structure forms too early — before steam has time to expand the dough. The baked good ends up with poor volume, and its surface tears because steam breaks through the prematurely formed crust.",
     "tags": [
-      "gelatin",
       "sugar"
     ]
   },
@@ -211,7 +207,6 @@
     "tags": [
       "egg-whites",
       "egg-yolks",
-      "folding",
       "meringue"
     ]
   },
@@ -236,7 +231,6 @@
     "text": "Meringue stability is vital. A stable meringue is dense and thick, yet elastic and springy, so it can easily withstand mixing, piping, and baking\n\nOften, the very thing that increases meringue’s stability also reduces its volume and tenderness. As always, the goal of a pastry chef is to balance these opposing characteristics — stability with volume and delicacy\n\nSo, what exactly affects the stability of egg white foam?\n\n• sugar\n• lipids (fats, oils, emulsifiers)\n• acidity\n• temperature\n• protein density\n• whipping time\n• salt\n• type of whisk\n\nSugar\n\nSugar greatly stabilizes meringue, although it also slows down the whipping process and slightly reduces the volume. In French meringue, where room-temperature egg whites are whipped with sugar, the sugar stabilizes it best when added slowly and in the proper amount\n\nSugar should be added gradually to give the sugar crystals time to dissolve and avoid weighing down the foam. In addition, if sugar is added too quickly, the protein molecules may not unfold properly.* As a result, we may end up with a softer meringue or, in extreme cases, egg whites that won’t whip at all\n\n*Remember from the previous post: the unfolding of protein molecules is one of the two key conditions for creating egg white foam\n\nSugar stabilizes meringue by slowing down the unfolding and aggregation (binding) of protein molecules. This contributes to stability by protecting against overwhipping\n\nAnother way sugar stabilizes meringue is by dissolving into the liquid film of the foam, creating a thick, viscous syrup that protects air bubbles from collapsing\n\nSugar syrup also adds a satiny shine to the surface of the meringue",
     "tags": [
       "egg-whites",
-      "folding",
       "meringue",
       "salt",
       "sugar"
@@ -358,9 +352,7 @@
   {
     "title": "1. SPONGE CAKES COLLAPSE DURING BAKING OR COOLING:",
     "text": "- The cakes may have been moved around before the structure was set (coagulation of proteins and gelatinization of starch). Avoid opening the oven or moving the cakes during the initial stages of baking.\n- Incorrect proportions—insufficient drying agents or too much liquid in the batter.\n- Excessive chemical leavening agent. Ensure all ingredients are accurately measured.",
-    "tags": [
-      "gelatin"
-    ]
+    "tags": []
   },
   {
     "title": "2. CAKE TOP CRACKS DURING BAKING:",
@@ -408,7 +400,6 @@
     "title": "SEPARATED BUTTERCREAM",
     "text": "This can occur for two reasons: differing temperatures of the ingredients or improper proportions of fat and water needed to achieve a perfect emulsion.\nDid you know that the ingredients in every cake recipe can be categorized into four main groups based on their functions?\n\nThe “perfect recipe” is achieved when these four categories are balanced.\n\nUnderstanding the primary functions of these ingredients and their correct ratios not only allows you to modify recipes to suit your taste but also to evaluate and correct untested recipes.\n\nInterested? Let’s dive into it.\n\n- Tougheners or Stabilizers:\nThese ingredients, including flour and eggs, provide a stable texture.\n\nInsufficient structure formers result in a delicate sponge cake that crumbles in your hands. Have you experienced this? I certainly have.\n\n- Softeners or Tenderizers:\nThese ingredients, such as sugar, fat, and chemical leavening agents, ensure softness by shortening protein fibers.\n\nA lack of softeners leads to a dense, hardened cake that is challenging to cut with a knife. Does this sound familiar?",
     "tags": [
-      "butter",
       "eggs",
       "sugar"
     ]
@@ -677,7 +668,6 @@
     "title": "FORMING THE PERFECT CHEESECAKE CRUST: STEP-BY-STEP GUIDE",
     "text": "Explore the beginning here #marusya_cheesecake_crust\n\nIf you recall my previous instructions on shaping the sides of the cheesecake crust, it’s now time to learn how to properly create the bottom and give the crust its ideal shape using a bent tablespoon.\n\nLet’s get started!\n\n- add the remaining shortbread crumbs to those that became detached during the shaping of the sides\n- bend a tablespoon at an obtuse angle that is comfortable for your work\n- a soft metal tablespoon is the best choice for forming a crust, as it easily bends at any angle\n\n- using the bent tablespoon, evenly distribute the crumbs over the entire bottom and compact them tightly\n- when compacting the crumbs along the edges of the bottom, gently press the tip of the spoon into the side, creating a small depression\n- use the back of a spoon to compact the lower part of the side, running it around the cake ring. At this point, the tip of the spoon should slightly press the crust, forming a beautiful 90° angle\n- compact any crumbs that have crumbled as a result of pressing the bottom\n- if you notice that the crust’s side is thicker at the base, you can carefully scrape off the excess with a spoon\n\n- compact the central part of the crust’s side with the middle part of the back of a spoon, running it along the cake ring\n- at the same time, the sides of the crust will rise slightly; this is normal\n\n- compact the top part of the crust’s side with four fingers, while not forgetting to constantly press the top with the thumb of the other hand\n\nThe perfect cheesecake crust is now finished!\n\nAnd here are insider tips exclusively for you:\n\n- cheesecake crust thickness: 0.7–0.8 mm\n- approximately 57% of shortbread crumbs are used for the sides, while 43% are used for the bottom (I use 240 g and 180 g)\nWhat's a perfect cheesecake for you? What attracts you the most in this dessert?\n\nA creamy cheesecake mass or a crunchy base? Perhaps, you like a dense cheesecake to have something good to enjoy?\n\nHow thick should an ideal base be? Thin, just to keep the cheese mass inside, or with sides 1 centimeter thick so that there is something to crunch to your heart's content?\n\nDo you like the crust with sides or do the bare cheese sides look more appealing to you?\n\nDo you top the cheesecake with fresh berries and berry sauce or salted caramel and nuts?\n\nShare your preferences in the comments, please. Let’s see what a perfect cheesecake for the majority of us looks like.\n\nI'll start.\n\nI used to like a thin, perfectly flat base and a dense cheesecake mass, but over time I changed my mind.\n\nNow I am an ardent fan of very delicate creamy filling and thick, crumbly, slightly sloppy sides with pieces of toasted crunchy nuts.\n\nAnd a perfect complement to a cheesecake will 100% depend on its flavor.\n\nIn the photos, for example, a delicate texture and floral-berry taste of the Lavender-Bilberry cheesecake are perfectly complemented by the light sourness of bilberry coulis and fluffy clouds of whipped vanilla cream.",
     "tags": [
-      "salt",
       "vanilla"
     ]
   },
@@ -719,7 +709,6 @@
     "text": "#marusya_theory_tips\n\nLately, I’ve noticed a growing number of inquiries regarding cultured butter. Students are curious about its nature and its role in making the layers of a Napoleon cake.\n\nSo, let me tell you.\nBe all ears and save the post to bookmarks.\n\nThe two most common butter types are sweet cream and cultured butter. So, what is the difference between them?\n\n- Sweet cream butter is made from pasteurized cream. It has a gentle milky flavor and aroma.\n\n- Cultured butter, on the other hand, is made from pasteurized fermented cream. It involves the use of pure cultures of lactic acid bacteria during fermentation. This variety of butter has a tangier, more complex flavor and aroma.\n\n- How to identify the type of butter\n\nIn cases where the packaging doesn’t specify the type of butter you have, you can distinguish between them by examining their composition. Cultured butter can be readily identified by the presence of lactic acid bacteria, whereas sweet cream butter consists solely of cream.\n\nAnd now, let’s move on to the most interesting aspect. Why is cultured butter preferred for making flaky puff pastry for Napoleon cake? Is it due to its taste? Not entirely. We should focus on a seemingly minor yet important distinction in physicochemical properties.\n\nAnd that is the",
     "tags": [
       "butter",
-      "milk",
       "puff-pastry"
     ]
   },
@@ -1311,9 +1300,7 @@
   {
     "title": "HOW TO CORRECTLY MAKE AND SERVE A CAKE WITH BUTTERCREAM",
     "text": "#marusya_theory_tips\n\nIt hasn’t been long since a new Napoleon cake recipe set was released, and I’ve already received lots of similar feedback: “The cake is delicious, but I didn’t like the buttercream — it’s heavy and too greasy.”\n\n- Can Napoleons and other cakes with buttercream taste like this?\n- Yes, they can\n\n- Is there some mistake in the recipe?\n- No, there isn’t\n\nThere are 2 reasons why your buttercream can turn out to be heavy and greasy:\n\n1. You didn’t follow the buttercream preparation instructions properly\n2. You served the cake with buttercream inappropriately\n\nSo, let's learn how to get the best results.",
-    "tags": [
-      "butter"
-    ]
+    "tags": []
   },
   {
     "title": "HOW TO MAKE THE PERFECT BUTTERCREAM:",
@@ -1325,9 +1312,7 @@
   {
     "title": "HOW SHOULD THE CAKE WITH BUTTERCREAM BE SERVED:",
     "text": "- in no case do we serve the cake immediately from the fridge, as the fat molecules harden at this temperature\n- you should take a well stabilized cake out of the fridge and slice it into portions\n- keep the slices at room temperature for 10 to 30 minutes, depending on the temperature in the room, so that the buttercream softens\n- and only then serve the cake to the client, guest or enjoy the cake yourself\n\n- A properly served cake keeps its shape well, and has a light, airy buttercream",
-    "tags": [
-      "butter"
-    ]
+    "tags": []
   },
   {
     "title": "FLAVOR PAIRING. SOUR CHERRY",
@@ -1408,8 +1393,7 @@
     "title": "8 TYPES OF BUTTER AND HOW TO USE THEM",
     "text": "start by tag #marusya_about_butter\n\nWell, the start of a new week! Wish you all the best and a productive Monday!\n\nToday I’ve prepared a continuation about the types of butter. Learn, save it to your bookmarks and don’t forget to leave your and any comment under the post — I will be very pleased!\n\nSo, we have already talked about sweet cream, salted, compound and ghee butter. There are 4 more types left.",
     "tags": [
-      "butter",
-      "salt"
+      "butter"
     ]
   },
   {
@@ -1477,8 +1461,7 @@
     "title": "Sweet Cream Butter (Unsalted Butter)",
     "text": "It is the most popular variety due to its versatility: it can be used both for frying vegetables, meat, and for making desserts and pastries. It is made only from cream of animal origin.",
     "tags": [
-      "butter",
-      "salt"
+      "butter"
     ]
   },
   {
@@ -1747,7 +1730,6 @@
       "cottage-cheese",
       "flavor-pairing",
       "greek-yogurt",
-      "milk",
       "pectin-nh",
       "sugar",
       "vanilla"
@@ -2082,9 +2064,7 @@
   {
     "title": "Sweet taste",
     "text": "To act on our receptors, a large amount of a sweet substance is needed, unlike other tastes. Nevertheless, we can appreciate the harmony and pleasant taste that even a subtle sweet taste gives to spicy dishes.\n\nSweet taste is combined with bitter (chocolate), sour (berries, lemon) and even salty (caramel). Sweetness can also bring out the flavors of other ingredients, like fruit or mint.",
-    "tags": [
-      "salt"
-    ]
+    "tags": []
   },
   {
     "title": "Salty taste",
@@ -2110,9 +2090,7 @@
   {
     "title": "Umami (found in high-protein foods)",
     "text": "In addition to the four basic tastes, a growing body of evidence points to the existence of a fifth taste, umami.\n\nIt gives dishes a salty or meaty \"rich\" taste. It can be felt in ingredients such as anchovies, cheese, mushrooms, green tea, and flavorings such as monosodium glutamate, which is the main component of ready-made seasonings.",
-    "tags": [
-      "salt"
-    ]
+    "tags": []
   },
   {
     "title": "TASTE PERCEPTION",
@@ -2194,7 +2172,6 @@
     "title": "SHELF LIFE OF FROSTING",
     "text": "I hear this question all the time: both at live master classes, and at my online courses, as well as from clients who contact me in DM. The question is relevant, interesting and, without a doubt, extremely important for any pastry chef and everyone who just loves to bake.\n\n- Making the frosting\n\n- I always tell my students that making the frosting is an integral part of assembling a cake.\n\nSuch frostings as buttercream, cream cheese frosting, custard and frosting made from egg whites, should be used immediately after their preparation.\n\n THEY CANNOT BE STORED AND MUST NOT BE PREPARED IN ADVANCE.\n\n- Other types of frosting can be stored in the fridge at 2-6 °C for no more than 5 hours. After that, they must be used for coating and decorating a cake.\n\n- Storage of frosting during coating and decorating\n\nIt should be remembered that:\n\n- From the moment you start applying the frosting to a dessert, you have no more than 1.5 hours - this is the period set for working with frosting at the workplace.\n- If you take breaks during this process, the piping bags filled with frosting should be put in a clean container and placed in the fridge till the end of the break.\n\n- Storage of finished desserts with frosting\n\n- The container in which you place the pastry product must be clean, dry and without any foreign odors.\n- All finished pastry products should be stored in the fridge at 2-6 °C.\n- Shelf life of finished products according to governmental standard:\n\n- with frosting made from egg whites - no more than 72 hours;\n- with buttercream - no more than 36 hours;\n- with cream cheese - no more than 24 hours;\n- with custard - no more than 12 hours;\n- with crème fraîche or sour cream - no more than 6 hours.",
     "tags": [
-      "butter",
       "cream-cheese",
       "egg-whites",
       "sour-cream"
@@ -2404,7 +2381,6 @@
     "title": "Aroma Profile",
     "text": " fruity aroma\n sweet caramel notes\n light grassiness\n spicy notes of vanilla\n strong resemblance to tomato aromatics\n\nThe aroma profile of strawberries is composed of over 360 components, including esters, aldehydes, ketones, alcohols, terpenes, furanones, and sulfur compounds. The aroma of ripe strawberries is recognized as one of the most complex fruit flavors.\n\nPairs well with:\n\n- nuts — almonds, cashews, pistachios and pecans. The ideal nutty companion — hazelnuts — does not overlap the taste of strawberries, but gently complements it.\n\n- other fruits and berries such as orange, pineapple, melon, raspberry, coconut\n\nThe flavor combination strawberry-tomato deserves special attention — the natural flavor of strawberries is very similar to the aromatics of tomatoes, so the presence of tomatoes in dessert tarts, stracciatella and bruschettas is increasingly being traced\n\n- spices, herbs and seasonings — vanilla, cinnamon, mint, ginger, lemongrass and... balsamic vinegar! Just a couple of drops of balsamic can greatly enhance the taste of strawberries. The combination is often used by chefs in salads, tarts.\n\n- dairy products – cottage cheese, Greek yogurt, cream, mascarpone, cream cheese\n- Strawberry-Soft Cheeses — strawberries have soft, creamy, buttery notes in their flavor, making them a great partner for soft milk, creamy, cheeses and cottage cheese.",
     "tags": [
-      "butter",
       "cottage-cheese",
       "cream-cheese",
       "greek-yogurt",
