@@ -4,27 +4,51 @@
 active — static site in `site/`, live on GitHub Pages:
 **https://gerimantas.github.io/BakeStack/** (public repo, deploy via
 `.github/workflows/deploy.yml`, auto-updates on every push to master that
-touches `site/**`). 73 recipes / ~310 tips (2 empty tips deleted, 1 new
-tip split out — see S7 Archive for exact count), EN and LT kept in
-array-index sync on every data edit.
+touches `site/**`). 73 recipes / 310 tips, EN and LT kept in array-index
+sync on every data edit.
 
-**S6's "QA compare findings all confirmed as known/harmless" claim was false —
-corrected in S7.** QA Compare only ever diffed recipe/tip titles, never
-ingredients/steps/body text, so it structurally could not have caught real
-content bugs. A full audit (S7) found 13 previously-undocumented bugs plus
-several more found while fixing those — all fixed; full list in S7 Archive
-and `FIX_PLAN.md`. Do not cite "QA confirmed" as evidence of data quality —
-QA Compare still only checks titles; strengthening it to a real content-diff
-is `FIX_PLAN.md` step 0, not yet done.
+**S7's "13 bugs, all fixed" claim covered content-level mismatches only —
+S8 found the real problem is structural, and it is much bigger.** A from-
+scratch rebuild of all tips straight from `Patarimai.docx` (ignoring
+`tips.json` entirely, to avoid inheriting its errors) produced 207
+independently-derived tips, versus `tips.json`'s 310 entries. Comparing the
+two found roughly 155 of the 207 rebuilt tips have a structural problem in
+`tips.json` — most are wrong-merge (2+ unrelated tips fused into one JSON
+entry with no title/heading break) or wrong-split (one tip's content spread
+across several JSON entries using an inline sub-header as a fake title), not
+new text corruption. Two "mega-merges" fuse 7 consecutive tips into a single
+entry each. ~19 tips exist only as untitled text buried inside a wrong
+neighbor, undiscoverable by any title-based search. Full detail:
+`FINDINGS_tips_audit.md` (this session's summary) plus
+`.audit/compare/compare_batch1-4.md` (992 lines, per-tip evidence) and
+`.audit/rebuild/MASTER_rebuilt_tips.md` (the 207-tip ground truth).
 
-Known open data-quality gaps (deliberately unfixed, see `FIX_PLAN.md` final
-section): `tags_lt.json` has no LT entry for ~16 hyphenated tag slugs (UI
-falls back to showing the raw English slug on ≥26 tips), and the dictionary's
-own entries are inconsistent with phrasing already used in the data in a few
-places (sour-cherry, whipping-cream, baking-soda). Needs a dedicated
-dictionary audit pass, not a fix made in passing.
+**Confirmed real content loss** (not just structural): 8 specific spots —
+dropped list items ("cream" from a ganache list ×2, "Base" from a mousse
+list, "IRCA" from a chocolate-brand list, "Cold" from an infusion-method
+list), a truncated punchline sentence, stripped doneness labels making a
+whole section ambiguous, and one leftover cross-promo line. Exact locations
+in `FINDINGS_tips_audit.md` section 1.
 
-Session S7 closed 2026-08-26.
+**🚩 Needs a decision, not a fix:** Tip 155 ("About Food Colorings") ships
+live with an off-topic passage referencing the Bucha massacre (Ukraine war)
+and a charity fundraiser, bundled ahead of the actual baking content —
+confirmed present verbatim in `tips.json` right now. Also, `tips.json`
+indices 305-309 (Stabilizing Whipped Cream, Chocolate Drips, Flavor Pairing:
+Strawberry + 2 sub-entries) have no match anywhere in the 207-tip rebuilt
+list — checked both `.docx` source files: "Strawberry" pairing is confirmed
+to actually live in `Receptai.docx` (recipes source, not tips source), but
+"Chocolate Drips" and "Stabilizing Whipped Cream" were not found in either
+`.docx` — origin still unverified.
+
+`tags_lt.json` dictionary audit (from S7's open item) is now DONE: all 162
+tag slugs across 4 categories confirmed translated (S7's "~16 missing" claim
+was stale/wrong by S8). Two real phrasing mismatches found and fixed:
+`heavy-whipping-cream` and `baking-soda` didn't match the phrasing already
+used ~90x/33x in the actual data. `sour-cherry`/`tart-cherry` checked and
+found already correct (S7 flagged them as a false positive).
+
+Session S8 closed 2026-08-26.
 
 ## What this project is
 BakeStack: a recipe/pastry-tips database and calculator, starting from
@@ -364,6 +388,14 @@ before investing in that.
   a schema now.
 
 ## Done Log
+- 2026-08-26 (S8): tags_lt.json dictionary audit done — all 162 tag slugs confirmed
+  translated (S7's "16 missing" was stale), 2 real phrasing mismatches fixed
+  (heavy-whipping-cream, baking-soda). Full from-scratch tips.json structural audit:
+  6 agents rebuilt 207 tips directly from Patarimai.docx (blind to tips.json), 4 agents
+  compared against the live 310-entry tips.json, found ~155 tips have a wrong-merge or
+  wrong-split problem plus 8 real content-loss spots and 1 off-topic passage (war/charity
+  content) shipping live. Nothing fixed yet — findings only, in FINDINGS_tips_audit.md +
+  .audit/. Full detail in Archive entry below.
 - 2026-08-26 (S7): Full data audit found and fixed 13 previously-undocumented
   bugs (section-grouping loss on 43/73 recipes, cross-file duplicate, typo
   regressions, leftover conversion glyphs, empty tips, mis-parsed lines) plus
@@ -380,14 +412,19 @@ before investing in that.
   in Archive entry below.
 
 ## Next tasks
-1. Strengthen QA Compare to do a real content diff (ingredients/steps/body
-   text), not just title-matching — `FIX_PLAN.md` step 0. This is what let
-   13 real bugs go undocumented for 2 sessions; doing this first would catch
-   the next one automatically instead of waiting for the user to spot it.
-2. Audit `tags_lt.json` deliberately: ~16 hyphenated tag slugs have no LT
-   entry (falls back to raw English on ≥26 tips), and a few existing entries
-   contradict phrasing already used in the data (sour-cherry, whipping-cream,
-   baking-soda). Full list in `FIX_PLAN.md`'s "Found but NOT fixed" section.
+1. Plan and execute fixes for the S8 tips.json structural audit — plan:
+   `FINDINGS_tips_audit.md` (summary + priority order), detailed evidence in
+   `.audit/compare/compare_batch1-4.md` and the 207-tip ground truth in
+   `.audit/rebuild/MASTER_rebuilt_tips.md`. Suggested order: (a) decide Tip
+   155's war/charity passage and the idx 305-309 unknown-origin entries first
+   — human calls, not mechanical fixes; (b) fix the 8 confirmed content-loss
+   spots (section 1 of the findings doc); (c) tackle the systemic
+   merge/split structural bugs, starting with the two 7-tip mega-merges
+   (idx 296, idx 298) since they're the most severe single entries.
+2. Strengthen QA Compare to do a real content diff (ingredients/steps/body
+   text) — `FIX_PLAN.md` step 0, still not done. Would have caught the S8
+   findings automatically; still worth building so a future data edit is
+   checked without another full manual audit.
 3. Optional: add real photos later (`image` field already reserved
    null on every recipe/tip record per the original plan).
 4. Optional: expand `site/js/density.js`'s ~30-entry density table if a
@@ -396,6 +433,116 @@ before investing in that.
    names in the data, only spot-checked (cornstarch, baking soda).
 
 ## Archive
+
+### Session 2026-08-26 (S8) — tags_lt.json dictionary audit fixed, full from-scratch tips.json structural audit found ~155 tips affected by wrong-merge/wrong-split bugs
+
+Two separate pieces of work: closed S7's open `tags_lt.json` item, then did a much larger
+audit the user specifically requested — "reikia rankiniu būdu patikrinti visus patarimus"
+(need to manually check every tip), explicitly because prior automated fix scripts had
+themselves introduced corruption (the S7 LT tag corruption). User's requirement was clear
+after two false starts: agents must derive tips fresh from the true original source, never
+compare against or read `tips.json`/`Patarimai.md` while doing so, since both were already
+known-unreliable.
+
+**tags_lt.json audit (S7's open item, now closed):** wrote a Python diff script comparing
+every tag slug in `tags.json` against `tags_lt.json` across all 4 categories (category,
+flavor_theme, ingredient, technique) — result: 162/162 slugs already translated, S7's
+claim of "~16 missing" was stale (something had already filled them in before this
+session, or the claim was wrong to begin with). Checked the 3 specific phrasing
+inconsistencies S7 flagged against actual usage counts in `recipes_lt.json`/`tips_lt.json`:
+`sour-cherry`/`tart-cherry` → confirmed already correct (both phrasings are used
+correctly, not a conflict — S7's flag was a false positive). `heavy-whipping-cream`
+("riebi plakama grietinėlė") and `baking-soda` ("soda") were real mismatches — the data
+uses "riebi grietinėlė" (90+ occurrences, no "plakama") and "valgomoji soda" (33
+occurrences vs. 3 bare "soda") respectively. Fixed both, verified JSON still valid,
+committed separately (commit `188e3d1`) before starting the tips audit.
+
+**tips.json structural audit — the main work.** First attempt was wrong and had to be
+corrected mid-session: initially treated `Patarimai.md` as ground truth and dispatched
+agents to diff `tips.json` against it using tips.json's own array indices as batch
+boundaries. User stopped this twice — first pointing out the true original is
+`Patarimai.docx` (a Word doc), not the derived `.md`; second, more fundamentally,
+rejecting the whole "compare against tips.json's existing boundaries" approach, since
+tips.json's tip *boundaries themselves* are exactly what's suspected of being wrong —
+comparing against them would silently inherit that error. Corrected approach: extract
+plain text from `Patarimai.docx` via direct zipfile+XML parsing (no pandoc/python-docx
+available; custom script also needed a fix to convert `<w:br/>`/`<w:tab/>` into real
+newlines/tabs, since the first extraction attempt concatenated paragraphs into
+unreadable walls of text) → `.audit/Patarimai_docx_source.txt` (6698 lines).
+
+**Rebuild phase**: 6 parallel agents each read a ~1200-1300-line overlapping slice of the
+docx-extracted text (100-200 line overlap at each seam to avoid cutting a tip in half),
+with explicit instructions to never open tips.json/tips_lt.json/Patarimai.md, and to
+identify tip boundaries by reading and understanding the content — a meaning-based
+judgment call, not a mechanical split. Produced 6 batch files (`.audit/rebuild/
+batch1-6_rebuilt.md`), each flagging its own multi-part-series decisions and
+non-chronological-order findings. A 7th agent merged all 6 into one deduplicated,
+sequentially-numbered list — this agent hit the session API limit mid-task (partial
+output preserved on disk, ~1/3 done) and had to be resumed by a fresh agent instructed to
+continue from the exact stopping point rather than restart. Final result: **207 distinct
+tips** (`.audit/rebuild/MASTER_rebuilt_tips.md`), versus tips.json's 310 entries — a large
+gap, mostly explained by the structural findings below, not by either count being simply
+"right."
+
+**Compare phase**: 4 agents each took ~52 of the 207 rebuilt tips and searched all 310
+tips.json entries (not assuming position/order matches) for the corresponding content,
+categorizing every mismatch as missing/merged-wrong/split-wrong/content-mismatch/title-
+mismatch. Results in `.audit/compare/compare_batch1-4.md` (992 lines).
+
+**Findings, consolidated into `FINDINGS_tips_audit.md`:**
+- **~155 of 207 rebuilt tips have a structural problem** in tips.json — the dominant
+  pattern is the same family as the previously-confirmed "Cold Infusion" bug (a transition
+  paragraph glued to the wrong neighboring tip), recurring at nearly every multi-part
+  series boundary in the whole corpus, not an isolated case.
+- **Two "mega-merges"**: `tips.json[296]` ("WHAT YOU NEED TO KNOW ABOUT GANACHE") contains
+  7 consecutive rebuilt tips (185-191) including the entire unrelated Caramelization/
+  Maillard series with zero separation — confirmed via its own tags array mixing
+  `cocoa-butter`/`whipping-cream` with `caramelization`/`maillard-reaction`.
+  `tips.json[298]` ("SOUR CREAM AND CREAM") similarly fuses 7 tips (193-199), an entire
+  sour-cream/crème-fraîche educational series.
+- **~19 tips have no title entry anywhere in tips.json** — content survives but only as
+  untitled text buried in a wrong neighbor's `text` field, undiscoverable by any
+  title-based search or listing (e.g. Tips 135/136/137 of the crème anglaise series).
+- **8 confirmed real content-loss spots** (not just misfiled) — see Status for the list;
+  most notable: "IRCA (Italy)" dropped from a chocolate-brand bullet list, a punchline
+  sentence truncated with the closing line missing entirely from the whole corpus.
+- **🚩 Tip 155 ships live with off-topic war/charity content** — confirmed present
+  verbatim in `tips.json[256]` right now, not just in some old draft. Needs a human
+  decision on how to handle, not a mechanical strip (a milder, non-graphic version at
+  Tip 113 was judged fine to leave as-is).
+- **`tips.json` indices 305-309 have no match in the 207-tip rebuild at all.** Traced by
+  grepping both `.docx` source files at the raw XML level: "FLAVOR PAIRING. STRAWBERRY"
+  (with its Flavor Description/Aroma Profile sub-sections) is confirmed to exist verbatim
+  in `Receptai.docx` (the *recipes* source document) — user's own hypothesis, confirmed.
+  "Stabilizing Whipped Cream" and "How to Make Perfect Chocolate Drips" were not found in
+  either `.docx` file, nor anywhere in the repo except `Patarimai.md`/`tips.json`
+  themselves — origin still unresolved, flagged for the next session rather than guessed.
+- Non-chronological source document confirmed at ~10 distinct points (posts reference
+  "the previous post" pointing at content that actually appears later in the file) — not a
+  bug, but relevant context for anyone fixing boundaries by trusting in-file order alone.
+
+**Nothing has been fixed yet.** This was a findings-only pass per the user's explicit
+instruction ("vėliau tai, ką radome, analizuosime ir taisysime" — we'll analyze and fix
+what we found later). `tips.json`/`tips_lt.json` are untouched by the tips audit; only
+`tags_lt.json` was actually edited and committed this session.
+
+**Code:** `site/data/tags_lt.json` (2-line phrasing fix, committed `188e3d1`).
+`.audit/Patarimai_docx_source.txt` (new — docx extraction, ground truth for future
+re-audits), `.audit/rebuild/batch1-6_rebuilt.md` + `MASTER_rebuilt_tips.md` (new — the
+207-tip independent rebuild), `.audit/compare/compare_batch1-4.md` (new — the diff against
+tips.json), `FINDINGS_tips_audit.md` (new, repo root — the consolidated summary and
+priority list for the fix session). All of `.audit/` and `FINDINGS_tips_audit.md` are
+untracked as of this session end — not yet committed (see below).
+**Entry point:** Start the fix session by reading `FINDINGS_tips_audit.md` top to bottom,
+then the specific `compare_batch*.md` section for whichever tip range is being fixed.
+`.audit/rebuild/MASTER_rebuilt_tips.md` is the ground-truth reference for what each tip's
+correct title/text/boundary should be.
+**Not measured:** whether `recipes.json` has the same class of structural bug — this
+audit covered tips only (user's explicit scope decision this session, see AskUserQuestion
+in transcript). The origin of "Stabilizing Whipped Cream" / "Chocolate Drips" (idx
+305-306) — checked both `.docx` files, found in neither; not checked against any other
+possible source. No fixes attempted or verified working yet for any of the ~155
+structural findings.
 
 ### Session 2026-08-26 (S7) — full data audit disproved S6's "QA confirmed" claim, 13 real bugs found and fixed, LT tag corruption self-inflicted and reverted
 
