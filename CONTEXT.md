@@ -7,48 +7,51 @@ active — static site in `site/`, live on GitHub Pages:
 touches `site/**`). 73 recipes / 310 tips, EN and LT kept in array-index
 sync on every data edit.
 
-**S7's "13 bugs, all fixed" claim covered content-level mismatches only —
-S8 found the real problem is structural, and it is much bigger.** A from-
-scratch rebuild of all tips straight from `Patarimai.docx` (ignoring
-`tips.json` entirely, to avoid inheriting its errors) produced 207
-independently-derived tips, versus `tips.json`'s 310 entries. Comparing the
-two found roughly 155 of the 207 rebuilt tips have a structural problem in
-`tips.json` — most are wrong-merge (2+ unrelated tips fused into one JSON
-entry with no title/heading break) or wrong-split (one tip's content spread
-across several JSON entries using an inline sub-header as a fake title), not
-new text corruption. Two "mega-merges" fuse 7 consecutive tips into a single
-entry each. ~19 tips exist only as untitled text buried inside a wrong
-neighbor, undiscoverable by any title-based search. Full detail:
-`FINDINGS_tips_audit.md` (this session's summary) plus
-`.audit/compare/compare_batch1-4.md` (992 lines, per-tip evidence) and
-`.audit/rebuild/MASTER_rebuilt_tips.md` (the 207-tip ground truth).
+**Ground truth for the tips.json fix is now fully verified and corrected —
+`.audit/rebuild/MASTER_rebuilt_tips.md` is ready to copy from.** S9 audited
+this file (built by S8's 6-subagent rebuild) against the raw docx source at
+full 207/207 body-text and 207/207 title coverage — subagent rebuilds can
+themselves contain errors, and this session found 5: a false "missing item"
+anomaly note, and 4 tips whose titles had a fabricated or dropped "Part N"
+number not present in the source. All 5 fixed in place. Also found (per an
+explicit user-defined standard: a tip must have a meaningful title and be
+self-contained, not cut off mid-thought) 4 tips that are genuinely
+incomplete in the original source material — Tip 021 (sentence cut off
+mid-word), Tip 118 (promises content it doesn't contain), Tip 172 (ends on
+an unanswered question), Tip 183 (deliberate cliffhanger, resolved only in
+Tip 184). Since there's no text to mechanically restore, each now carries a
+reader-visible `[⚠ Note: ...]` warning at the top of its body — text that
+will ship to the live site, not just an internal audit comment. Full audit
+trail with every source-line citation: `.audit/DECISIONS_review.md` (11
+sections). Also built `.audit/rebuild/series_index.json` — a structured
+index of 31 multi-part series (127 of 207 tips) with part order and known
+source-ordering quirks, for generating "Part X of Y" navigation links once
+the site itself is fixed.
 
-**Confirmed real content loss** (not just structural): 8 specific spots —
-dropped list items ("cream" from a ganache list ×2, "Base" from a mousse
-list, "IRCA" from a chocolate-brand list, "Cold" from an infusion-method
-list), a truncated punchline sentence, stripped doneness labels making a
-whole section ambiguous, and one leftover cross-promo line. Exact locations
-in `FINDINGS_tips_audit.md` section 1.
+**S8's structural finding still stands and is now precisely measured, not
+estimated:** comparing MASTER's 207 verified tips against live
+`tips.json`'s 310 entries found only **1 tip matches exactly** (byte-for-
+byte, ignoring the title/body split) — `tips.json[279]`. 52 more have the
+right content merged/split differently than MASTER; 154 show no automatic
+match at all (typically larger, unresolved merges like the two known
+7-tip mega-merges at `tips.json` idx 296/298). Essentially the entire live
+tips.json needs fixing against this ground truth — that's the next
+session's scope, not started yet.
 
-**🚩 Needs a decision, not a fix:** Tip 155 ("About Food Colorings") ships
-live with an off-topic passage referencing the Bucha massacre (Ukraine war)
-and a charity fundraiser, bundled ahead of the actual baking content —
-confirmed present verbatim in `tips.json` right now. Also, `tips.json`
-indices 305-309 (Stabilizing Whipped Cream, Chocolate Drips, Flavor Pairing:
-Strawberry + 2 sub-entries) have no match anywhere in the 207-tip rebuilt
-list — checked both `.docx` source files: "Strawberry" pairing is confirmed
-to actually live in `Receptai.docx` (recipes source, not tips source), but
-"Chocolate Drips" and "Stabilizing Whipped Cream" were not found in either
-`.docx` — origin still unverified.
+**🚩 Still needs a human decision before the fix, not a mechanical
+change:** Tip 155 ("About Food Colorings") ships live with an off-topic
+passage referencing the Bucha massacre (Ukraine war) and a charity
+fundraiser, bundled ahead of the actual baking content. S9 confirmed the
+decision (strip the passage, keep only the baking content starting at "Do
+you use food colorings?") and it's already applied in
+`MASTER_rebuilt_tips.md` — but NOT yet in live `tips.json`/`tips_lt.json`.
+Also still open: `tips.json` indices 305-309 (Stabilizing Whipped Cream,
+Chocolate Drips, Flavor Pairing: Strawberry + 2 sub-entries) have no match
+anywhere in the 207-tip rebuild — "Strawberry" pairing is confirmed to
+belong in `Receptai.docx` (recipes source, not tips), origin of the other
+two still unverified.
 
-`tags_lt.json` dictionary audit (from S7's open item) is now DONE: all 162
-tag slugs across 4 categories confirmed translated (S7's "~16 missing" claim
-was stale/wrong by S8). Two real phrasing mismatches found and fixed:
-`heavy-whipping-cream` and `baking-soda` didn't match the phrasing already
-used ~90x/33x in the actual data. `sour-cherry`/`tart-cherry` checked and
-found already correct (S7 flagged them as a false positive).
-
-Session S8 closed 2026-08-26.
+Session S9 closed 2026-08-27.
 
 ## What this project is
 BakeStack: a recipe/pastry-tips database and calculator, starting from
@@ -388,6 +391,15 @@ before investing in that.
   a schema now.
 
 ## Done Log
+- 2026-08-27 (S9): `MASTER_rebuilt_tips.md` fully audited (207/207 body text + 207/207
+  titles checked against raw docx source) and corrected — 5 defects fixed (1 false anomaly
+  note, 4 fabricated/dropped "Part N" titles), 4 genuinely-incomplete tips flagged with a
+  reader-visible warning note (Tip 021, 118, 172, 183). Built `series_index.json` (31
+  multi-part series, 127 of 207 tips, part order + known source-ordering quirks). Precisely
+  measured live tips.json against the verified ground truth: only 1 of 207 tips matches
+  exactly. Full trail in `.audit/DECISIONS_review.md`. Nothing applied to
+  tips.json/tips_lt.json this session — ground-truth-file-only scope, by explicit user
+  instruction. Full detail in Archive entry below.
 - 2026-08-26 (S8): tags_lt.json dictionary audit done — all 162 tag slugs confirmed
   translated (S7's "16 missing" was stale), 2 real phrasing mismatches fixed
   (heavy-whipping-cream, baking-soda). Full from-scratch tips.json structural audit:
@@ -412,27 +424,143 @@ before investing in that.
   in Archive entry below.
 
 ## Next tasks
-1. Plan and execute fixes for the S8 tips.json structural audit — plan:
-   `FINDINGS_tips_audit.md` (summary + priority order), detailed evidence in
-   `.audit/compare/compare_batch1-4.md` and the 207-tip ground truth in
-   `.audit/rebuild/MASTER_rebuilt_tips.md`. Suggested order: (a) decide Tip
-   155's war/charity passage and the idx 305-309 unknown-origin entries first
-   — human calls, not mechanical fixes; (b) fix the 8 confirmed content-loss
-   spots (section 1 of the findings doc); (c) tackle the systemic
-   merge/split structural bugs, starting with the two 7-tip mega-merges
-   (idx 296, idx 298) since they're the most severe single entries.
+1. Fix live `tips.json`/`tips_lt.json` against the now-verified ground truth
+   `.audit/rebuild/MASTER_rebuilt_tips.md` — plan/evidence:
+   `.audit/DECISIONS_review.md` (S9's full audit trail, supersedes
+   `FINDINGS_tips_audit.md` as the primary reference — that file's ~155
+   estimate is still directionally right but was measured before S9's
+   stricter exact-match method). Precise scope: only 1 of 207 tips already
+   matches exactly; 52 need re-merging/re-splitting; 154 need larger
+   restructuring. Suggested order: (a) apply Tip 155's already-decided
+   war/charity strip (text to remove is in `.audit/DECISIONS_review.md`
+   section 1) and resolve the idx 305-309 unknown-origin entries — human
+   calls; (b) copy the 4 tips MASTER already fixed titles for (042, 066,
+   174, 180) and the 4 flagged-incomplete ones (021, 118, 172, 183 — copy
+   the warning note too); (c) tackle the two 7-tip mega-merges (idx 296,
+   298); (d) work through the rest using MASTER as the copy source.
 2. Strengthen QA Compare to do a real content diff (ingredients/steps/body
-   text) — `FIX_PLAN.md` step 0, still not done. Would have caught the S8
-   findings automatically; still worth building so a future data edit is
-   checked without another full manual audit.
-3. Optional: add real photos later (`image` field already reserved
+   text) — `FIX_PLAN.md` step 0, still not done. Would catch this class of
+   bug automatically going forward.
+3. Not yet scoped: whether/how to insert the `series_index.json` cross-
+   reference data as reader-visible "Part X of Y" navigation text — into
+   `MASTER_rebuilt_tips.md` body content, into the eventual
+   `tips.json`/`tips_lt.json` fix, or both. Format/scope decision deferred
+   by user this session (S9) — see `.audit/DECISIONS_review.md` section 10.
+4. Optional: add real photos later (`image` field already reserved
    null on every recipe/tip record per the original plan).
-4. Optional: expand `site/js/density.js`'s ~30-entry density table if a
+5. Optional: expand `site/js/density.js`'s ~30-entry density table if a
    shopping-list unit still shows unmerged for a common ingredient — not
    exhaustively checked against all 41 distinct volume-unit ingredient
    names in the data, only spot-checked (cornstarch, baking soda).
 
 ## Archive
+
+### Session 2026-08-27 (S9) — MASTER_rebuilt_tips.md fully verified and corrected (207/207 body + title), 5 defects fixed, 4 incomplete tips flagged with reader-visible warnings, series cross-reference index built
+
+Scope for this session, set explicitly by the user at the start: audit and fix only the
+intermediate ground-truth file (`.audit/rebuild/MASTER_rebuilt_tips.md`) itself — NOT
+`site/data/tips.json`/`tips_lt.json`. The live site is untouched by this session; that's the
+next session's job, using this now-corrected file as the copy source.
+
+**Why this session happened:** S8 built `MASTER_rebuilt_tips.md` as ground truth by having 6
+subagents independently re-derive 207 tips from the raw docx source, then merge. But a
+subagent-built "ground truth" can itself contain subagent errors — proven directly this
+session: the very first spot-check (Tip 180) found a fabricated "Part 2" in the title that
+doesn't exist in the source. That one finding triggered a full, systematic re-audit rather
+than trusting S8's rebuild at face value.
+
+**Audit method, in escalating passes (full detail + every citation in the new
+`.audit/DECISIONS_review.md`, 11 numbered sections):**
+1. Pilot spot-check (2 tips) → found the Tip 180 title fabrication, confirmed body text
+   itself was clean → hypothesis: titles are the risk area, bodies are not.
+2. Targeted check of all 6 genuinely-risky merge/truncation seams (where a subagent had to
+   choose between two batch versions) → 3 more title defects found (042, 066, 174).
+3. Manually verified every remaining item in the rebuild's own "FLAGGED ANOMALIES" section
+   against source → found 1 anomaly note was itself FALSE (Tip 019's "9 not 10 items" claim
+   — recounted, both source and rebuild have exactly 10).
+4. Wrote a read-only Python script (`audit_body_match.py`, session scratchpad only, never
+   touches project files) that mechanically checks all 207 tip bodies against the raw source
+   text — full coverage achieved: 185 exact-match automatically, the other 22 individually
+   reviewed and found clean (disclosed corrections or benign glyph-stripping).
+5. Wrote a second script (`audit_title_check.py`) to extract source context for all 207
+   titles in one pass, manually read every row — 0 additional defects (2 apparent mismatches
+   turned out to be the script's own lookup bug, not real defects, caught by manual
+   cross-check rather than trusting script output).
+6. User then did a real-world visual sanity check (an Artifact comparing MASTER Tip 163
+   against the live site's tips.json[279]) and caught a gap in the session's own methodology:
+   the earlier "1 exact match" measurement only checked text equality, not whether a bare
+   "PART 5" title (meaningless without series context) actually counts as correct. This led
+   to defining a proper standard: **a correct tip has (1) a meaningful title, (2) may have
+   internal "part N" structure, (3) is self-contained — doesn't cut off mid-thought or open
+   mid-thought.** Re-audited all 207 against this definition (heuristic script +ull manual
+   read of all 79 flagged) → found 4 tips that are genuinely incomplete: Tip 021 (sentence
+   cut off mid-word), Tip 118 (promises content it doesn't contain), Tip 172 (ends on an
+   unanswered question), Tip 183 (deliberate cliffhanger, resolved only in Tip 184).
+
+**Fixes applied to `MASTER_rebuilt_tips.md`** (all verified against source before writing):
+- Tip 019: deleted the false anomaly note.
+- Tip 042, 066: titles corrected to preserve both of the source's two author-given
+  alternate titles (previously one was silently dropped or replaced by a fabricated hybrid).
+- Tip 174, 180: fabricated "Part 1"/"Part 2" numbering removed from titles (source has 4
+  unrelated posts sharing one identical heading, "WHAT YOU NEED TO KNOW ABOUT GELATIN", with
+  zero part-numbering — confirmed by direct read).
+- Tip 021, 118, 172, 183: per explicit user decision, added a reader-visible `[⚠ Note: ...]`
+  warning at the top of each tip's body text (in English) explaining the interruption — not
+  just an audit-trail comment, but text that will ship to the live site so a reader isn't
+  confused by an abruptly incomplete tip. This will carry over automatically when these 4
+  are eventually copied into tips.json/tips_lt.json.
+- Also fixed 2 bugs this session introduced in itself: the Tip 042/066 Notes lines were
+  initially placed BEFORE the body instead of after (breaking automated body-extraction) —
+  caught by the session's own re-audit script, corrected to match the document's own
+  convention.
+
+**Built new: `.audit/rebuild/series_index.json`** — a structured (not inline-text) index of
+31 multi-part series covering 127 of the 207 tips, with `series_id`/`part`/`tip_num` per
+entry, for later programmatic generation of "Part X of Y" navigation links on the live site.
+Deliberately kept separate from `MASTER_rebuilt_tips.md` and from the scratchpad's
+`master_tips.json` (an auto-regenerated export used only for the audit scripts) — the user
+confirmed this separation was the right call. Where source's own document order doesn't
+match true reading order (confirmed via the FLAGGED ANOMALIES section, e.g. Chocolate
+Storage's true order is 68→66→67, not document order 66→67→68), the JSON's `parts` array
+uses the corrected logical order with a `logical_order_note` explaining why. Where order is
+genuinely uncertain (Cake Coating Common Problems, Sour Cream series, Perfect Cheesecake
+Q&A group), marked with `"part": null` rather than guessed.
+
+**Explicitly deferred, not started:** inserting the series cross-reference info as
+reader-visible text into the other 123 multi-part tips' body content (only the 4
+already-incomplete tips got a warning note this session) — scope/format was decided
+(structured JSON, not inline text) but the actual insertion work into `MASTER_rebuilt_tips.md`
+body text has NOT been done. The live-site fix pass itself (tips.json/tips_lt.json) also has
+not started — this entire session was ground-truth-file-only, per explicit user instruction,
+repeated more than once when the session drifted into inspecting tips.json mid-audit.
+
+**A methodology note for future sessions:** this session repeatedly found that trusting a
+tool's own summary (a subagent's rebuild, a script's match report) without independently
+verifying the underlying claim produces exactly the kind of error the audit was designed to
+catch — the session's own scripts had real bugs (the concat-detector's title-echo strip
+initially failed on case-sensitivity; the title-lookup script anchored to the wrong source
+occurrence twice) that would have gone unnoticed without manual cross-check of every
+flagged row.
+
+**Code:** `.audit/rebuild/MASTER_rebuilt_tips.md` (5 defects fixed + 4 warning notes added,
+in-place edits, no line-count change of consequence). `.audit/DECISIONS_review.md` (new —
+the full audit trail, 11 sections, every finding with exact source-line citations).
+`.audit/rebuild/series_index.json` (new — the series cross-reference index). No changes to
+`site/data/tips.json`, `site/data/tips_lt.json`, or any other live-site file.
+**Entry point:** Next session should read `.audit/DECISIONS_review.md` top to bottom (it is
+now the authoritative audit trail, supersedes reading `FINDINGS_tips_audit.md` alone — that
+file's "~155 structural problems" estimate is still directionally correct but was measured
+before this session's stricter exact-match methodology). `MASTER_rebuilt_tips.md` is now the
+verified, corrected ground truth to copy from when fixing `tips.json`/`tips_lt.json`.
+`.audit/rebuild/series_index.json` has the part-numbering/series data for generating
+navigation links, once the live-site fix work begins.
+**Not measured:** the live-site fix pass itself — 0% started. Whether the remaining ~184
+tips not individually title-checked in earlier S8-era passes hold up under the same
+scrutiny (they were checked this session, just not called out with the same granularity as
+the ones with defects) — actually, they were: this session achieved full 207/207 title and
+207/207 body coverage, so this note from a prior draft is now resolved. What's genuinely
+still open: whether `recipes.json` has the same class of structural bug (never audited,
+scope was tips only, same as S8).
 
 ### Session 2026-08-26 (S8) — tags_lt.json dictionary audit fixed, full from-scratch tips.json structural audit found ~155 tips affected by wrong-merge/wrong-split bugs
 

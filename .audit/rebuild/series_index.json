@@ -1,0 +1,334 @@
+{
+  "_comment": "Structured cross-reference index for multi-part tip series in MASTER_rebuilt_tips.md. Built by reading every tip title plus the FLAGGED ANOMALIES section (logical order sometimes differs from tip_num order, noted per series below). Intended for generating reader-facing 'Part X of Y' navigation links when the live site is fixed. Does NOT modify MASTER_rebuilt_tips.md or tips.json/tips_lt.json itself.",
+  "series": [
+    {
+      "series_id": "flavor-infusion-mega",
+      "series_name": "Flavor Infusion (combined mega-post)",
+      "note": "Tip 001 is a single combined post covering the same ground as the separate Infusion series (129,130,119,121) at coarser granularity - likely the same underlying content captured twice. Not merged into the infusion-series list below; flagged for human reconciliation per FLAGGED ANOMALIES.",
+      "parts": [
+        {"part": null, "tip_num": 1}
+      ]
+    },
+    {
+      "series_id": "cake-fillings",
+      "series_name": "Cake Fillings",
+      "parts": [
+        {"part": 1, "tip_num": 47, "note": "titled 'All About Cake Fillings' - intro, covers coulis/confit/compote"},
+        {"part": 3, "tip_num": 48},
+        {"part": 4, "tip_num": 49},
+        {"part": 5, "tip_num": 50},
+        {"part": 6, "tip_num": 51}
+      ],
+      "note": "No Part 2 found in source under this title - may be a numbering gap in the original, not verified further."
+    },
+    {
+      "series_id": "egg-white-coagulation",
+      "series_name": "Egg White Coagulation (When the Cheesecake Is Ready)",
+      "parts": [
+        {"part": 1, "tip_num": 56},
+        {"part": 2, "tip_num": 57},
+        {"part": 3, "tip_num": 58},
+        {"part": 4, "tip_num": 59}
+      ]
+    },
+    {
+      "series_id": "functions-of-fats",
+      "series_name": "Functions of Fats in Baking",
+      "parts": [
+        {"part": 1, "tip_num": 42},
+        {"part": 2, "tip_num": 43},
+        {"part": 3, "tip_num": 44}
+      ]
+    },
+    {
+      "series_id": "chocolate-storage",
+      "series_name": "How to Store Chocolate",
+      "logical_order_note": "Source order is 66(labeled Part2)->67(Part3)->68(labeled Part1) but Tip 68 is logically Part 1 per FLAGGED ANOMALIES ('appears AFTER Parts 2 and 3'). logical_part reflects true reading order; tip_num is document position.",
+      "parts": [
+        {"part": 1, "tip_num": 68, "logical_position": 1},
+        {"part": 2, "tip_num": 66, "logical_position": 2},
+        {"part": 3, "tip_num": 67, "logical_position": 3}
+      ]
+    },
+    {
+      "series_id": "60-shades-of-flour",
+      "series_name": "60 Shades of Flour",
+      "parts": [
+        {"part": 1, "tip_num": 69},
+        {"part": 2, "tip_num": 70},
+        {"part": 3, "tip_num": 71}
+      ]
+    },
+    {
+      "series_id": "flour-interchangeability",
+      "series_name": "Interchangeability of Varieties of Flour",
+      "note": "Distinct from the '60 Shades of Flour' series (different title in source) though closely related topic - not merged, per source's own separate headings.",
+      "parts": [
+        {"part": 2, "tip_num": 62, "note": "titled 'Seed Flours' - no Part 1 located under this exact series title"},
+        {"part": null, "tip_num": 63, "note": "titled 'Nut Flours' - part number unclear, no explicit marker found"}
+      ]
+    },
+    {
+      "series_id": "mousses-intro",
+      "series_name": "What You Need to Know About Mousses",
+      "parts": [
+        {"part": 1, "tip_num": 79},
+        {"part": 2, "tip_num": 80}
+      ]
+    },
+    {
+      "series_id": "temper-eggs",
+      "series_name": "How to Temper Eggs and Why You Need To",
+      "parts": [
+        {"part": 1, "tip_num": 82},
+        {"part": 2, "tip_num": 83}
+      ]
+    },
+    {
+      "series_id": "hydrocolloids",
+      "series_name": "Hydrocolloids in Confectionery Art",
+      "logical_order_note": "Tip 72 (Part 3, Gellan Gum) appears earlier in document position than Tips 84/85 (Parts 1-2) - a merge-position artifact per FLAGGED ANOMALIES, not a content error. logical_part order is 84->85->72.",
+      "parts": [
+        {"part": 1, "tip_num": 84},
+        {"part": 2, "tip_num": 85},
+        {"part": 3, "tip_num": 72}
+      ]
+    },
+    {
+      "series_id": "ganaches-everything",
+      "series_name": "Everything You Need to Know About Ganaches",
+      "note": "Distinct from the second, later 'What You Need to Know About Ganache' series (185-189) - different title, different post series in source.",
+      "parts": [
+        {"part": 1, "tip_num": 86},
+        {"part": 2, "tip_num": 87},
+        {"part": 3, "tip_num": 88},
+        {"part": 4, "tip_num": 89},
+        {"part": 5, "tip_num": 90},
+        {"part": 6, "tip_num": 91, "note": "final part, per title '(Last)'"}
+      ]
+    },
+    {
+      "series_id": "crash-course-chocolate",
+      "series_name": "A Crash Course in Chocolate",
+      "parts": [
+        {"part": 1, "tip_num": 92},
+        {"part": 2, "tip_num": 93},
+        {"part": 3, "tip_num": 94},
+        {"part": 4, "tip_num": 95},
+        {"part": 5, "tip_num": 96},
+        {"part": 6, "tip_num": 97},
+        {"part": 7, "tip_num": 98}
+      ]
+    },
+    {
+      "series_id": "honey-myths",
+      "series_name": "Honey: Myths vs. Reality",
+      "parts": [
+        {"part": 1, "tip_num": 102},
+        {"part": 2, "tip_num": 103},
+        {"part": 3, "tip_num": 104},
+        {"part": 4, "tip_num": 105}
+      ]
+    },
+    {
+      "series_id": "types-of-butter",
+      "series_name": "8 Types of Butter and How to Use Them",
+      "logical_order_note": "Tip 112 is titled 'Part 1' and Tip 110 'Part 2', but Tip 110 appears earlier in document position than Tip 112 - document position does not match part order.",
+      "parts": [
+        {"part": 1, "tip_num": 112},
+        {"part": 2, "tip_num": 110}
+      ]
+    },
+    {
+      "series_id": "salt-varieties",
+      "series_name": "Alt. Pastry Chef's Notes — Varieties of Salt",
+      "parts": [
+        {"part": 1, "tip_num": 113},
+        {"part": 2, "tip_num": 114},
+        {"part": 3, "tip_num": 115, "note": "final part, per title '[Part 3 and last]'"}
+      ]
+    },
+    {
+      "series_id": "salt-functions",
+      "series_name": "Why Add Salt to Desserts (Functions)",
+      "note": "Distinct from the 'salt-varieties' series above - different underlying post series. Tip 118 is a known-incomplete bridging fragment (see main audit findings) whose promised content (functions 5-8) is physically Tip 120, interleaved with an unrelated Infusion post (Tip 119) in between.",
+      "parts": [
+        {"part": 1, "tip_num": 117},
+        {"part": 2, "tip_num": 118, "note": "short bridging fragment, marked incomplete - see [WARNING] note in tip body"},
+        {"part": 3, "tip_num": 120, "note": "titled 'Functions 5-8', not explicitly numbered 'Part 3' in source, but is the logical continuation of Tip 118's promise"}
+      ]
+    },
+    {
+      "series_id": "infusion",
+      "series_name": "Infusion",
+      "logical_order_note": "Document position is 119(Part3)->121(Part4)->129(Part1)->130(Part2) - source is not in part order per FLAGGED ANOMALIES. logical_part order below is 129->130->119->121.",
+      "parts": [
+        {"part": 1, "tip_num": 129},
+        {"part": 2, "tip_num": 130},
+        {"part": 3, "tip_num": 119},
+        {"part": 4, "tip_num": 121, "note": "final part, per title '[Part 4, the last one]'"}
+      ]
+    },
+    {
+      "series_id": "agar",
+      "series_name": "Everything You Need to Know About Agar",
+      "parts": [
+        {"part": 1, "tip_num": 122},
+        {"part": 2, "tip_num": 123},
+        {"part": 3, "tip_num": 124},
+        {"part": 4, "tip_num": 125}
+      ]
+    },
+    {
+      "series_id": "creme-anglaise",
+      "series_name": "Crème Anglaise From A to Z",
+      "parts": [
+        {"part": 1, "tip_num": 133},
+        {"part": 2, "tip_num": 134},
+        {"part": 3, "tip_num": 135},
+        {"part": 4, "tip_num": 136, "note": "marked incomplete note not applicable here - this tip is clean; see main audit"},
+        {"part": 5, "tip_num": 137, "note": "final part, per title '[Part 5, final]'"}
+      ]
+    },
+    {
+      "series_id": "pectin-what-you-need-to-know",
+      "series_name": "What You Need to Know About Pectin",
+      "parts": [
+        {"part": 1, "tip_num": 142},
+        {"part": 2, "tip_num": 143},
+        {"part": 3, "tip_num": 144},
+        {"part": 4, "tip_num": 145},
+        {"part": 5, "tip_num": 146},
+        {"part": 6, "tip_num": 147},
+        {"part": 7, "tip_num": 148}
+      ]
+    },
+    {
+      "series_id": "eggs-things-we-need-to-know",
+      "series_name": "Things We Need to Know About Eggs",
+      "parts": [
+        {"part": 1, "tip_num": 149},
+        {"part": 2, "tip_num": 150},
+        {"part": 3, "tip_num": 151},
+        {"part": 4, "tip_num": 152},
+        {"part": 5, "tip_num": 153},
+        {"part": 6, "tip_num": 154}
+      ]
+    },
+    {
+      "series_id": "food-colorings",
+      "series_name": "About Food Colorings",
+      "note": "Part 1 (Tip 155) originally opened with an off-topic real-world passage (Bucha/charity), deliberately excluded from the body - see main audit findings section 1.",
+      "parts": [
+        {"part": 1, "tip_num": 155},
+        {"part": 2, "tip_num": 156},
+        {"part": 3, "tip_num": 157}
+      ]
+    },
+    {
+      "series_id": "about-tastes",
+      "series_name": "About Tastes and How They Are Created",
+      "parts": [
+        {"part": 1, "tip_num": 159},
+        {"part": 2, "tip_num": 160},
+        {"part": 3, "tip_num": 161},
+        {"part": 4, "tip_num": 162},
+        {"part": 5, "tip_num": 163},
+        {"part": 6, "tip_num": 164},
+        {"part": 7, "tip_num": 165}
+      ]
+    },
+    {
+      "series_id": "gelatin-what-you-need-to-know",
+      "series_name": "What You Need to Know About Gelatin",
+      "note": "Source reuses this exact title for 4 unrelated posts with NO part-numbering in the original - confirmed in main audit sections 2-4/9. Order here is document position, not a true series (each post is independently topical, not a sequential series read in order).",
+      "parts": [
+        {"part": null, "tip_num": 166, "topic": "Can Gelatin Be Boiled?"},
+        {"part": null, "tip_num": 167, "topic": "What Gelatin Is; Sources; Powdered Gelatin Prep"},
+        {"part": null, "tip_num": 174, "topic": "duplicate pointer to Tip 167 (same underlying post, captured twice at a batch seam)"},
+        {"part": null, "tip_num": 180, "topic": "Gelatin Mass, Sheet Gelatin, Bloom Strength, Dosage"}
+      ]
+    },
+    {
+      "series_id": "cake-coating-common-problems",
+      "series_name": "Cake Coating. Common Problems",
+      "note": "Source's own internal cross-references do NOT form a clean linear order per FLAGGED ANOMALIES (Tip 179 is internally jumbled, Tip 172 references content that appears earlier at Tip 171, etc). part numbers below are UNCERTAIN - listed in document order only, not verified logical order. Tip 172 is marked incomplete (unanswered question) - see main audit.",
+      "parts": [
+        {"part": null, "tip_num": 171, "topic": "Leaking Liquid - Whey"},
+        {"part": null, "tip_num": 172, "topic": "The Cake Press (Pros/Cons)", "note": "ends on unanswered question - see [WARNING] note in tip body"},
+        {"part": null, "tip_num": 175, "topic": "Air Bubbles (Why They Form)"},
+        {"part": null, "tip_num": 176, "topic": "Where Air Bubbles Come From (Mechanism)"},
+        {"part": null, "tip_num": 177, "topic": "Deviating from Instructions & Incorrect Assembly"},
+        {"part": null, "tip_num": 178, "topic": "Root Cause - Not Following a New Recipe"},
+        {"part": null, "tip_num": 179, "topic": "Cracked Coating - Causes and Fixes", "note": "internally jumbled per FLAGGED ANOMALIES - treat its own ordering with caution"}
+      ]
+    },
+    {
+      "series_id": "cream-cheese-vs-mascarpone",
+      "series_name": "Cream Cheese vs Mascarpone",
+      "parts": [
+        {"part": null, "tip_num": 181, "topic": "What's the Difference"},
+        {"part": null, "tip_num": 182, "topic": "When They ARE and ARE NOT Interchangeable"}
+      ]
+    },
+    {
+      "series_id": "malaysia-buttercream-story",
+      "series_name": "Cream Cheese Brands / The Kuala Lumpur Buttercream Story",
+      "note": "Tip 183 is a deliberate cliffhanger, resolved only in Tip 184 - see main audit section 9, [WARNING] note already in Tip 183's body.",
+      "parts": [
+        {"part": 1, "tip_num": 183, "topic": "Cremette vs Philadelphia, story setup"},
+        {"part": 2, "tip_num": 184, "topic": "story ending"}
+      ]
+    },
+    {
+      "series_id": "ganache-what-you-need-to-know",
+      "series_name": "What You Need to Know About Ganache",
+      "note": "Distinct from the earlier 'Everything You Need to Know About Ganaches' series (086-091) - a separate, later post series with a different title in source.",
+      "parts": [
+        {"part": 1, "tip_num": 185},
+        {"part": null, "tip_num": 186, "topic": "Broken Ganache Fixes and Storage"},
+        {"part": null, "tip_num": 187, "topic": "Chocolate and Liquid components"},
+        {"part": null, "tip_num": 188, "topic": "Whipping Cream Protein, Fats/Butter components"},
+        {"part": null, "tip_num": 189, "topic": "Sugar, Additives, Full Recipe"}
+      ]
+    },
+    {
+      "series_id": "caramelization-maillard",
+      "series_name": "Caramelization and the Maillard Reaction",
+      "parts": [
+        {"part": 1, "tip_num": 190},
+        {"part": 2, "tip_num": 191}
+      ]
+    },
+    {
+      "series_id": "sour-cream-and-cream",
+      "series_name": "Sour Cream and Cream — Let's Hack the Issue",
+      "note": "Tip 193 opens this series with an explicit teaser for the continuation. Part numbers below are UNCERTAIN - source gives no explicit 'Part N' markers for tips 194-199, listed in document order.",
+      "parts": [
+        {"part": null, "tip_num": 193, "topic": "Whipping Cream Types and Fat Content"},
+        {"part": null, "tip_num": 194, "topic": "Origins, Types, Quality, Substitutes"},
+        {"part": null, "tip_num": 195, "topic": "Homemade Cream"},
+        {"part": null, "tip_num": 196, "topic": "Chilling Whipping Cream, Quality Check"},
+        {"part": null, "tip_num": 197, "topic": "Sour Cream vs Crème Fraîche"},
+        {"part": null, "tip_num": 198, "topic": "Frosting Choice"},
+        {"part": null, "tip_num": 199, "topic": "Sour Cream Substitutes"}
+      ]
+    },
+    {
+      "series_id": "perfect-cheesecake-qa",
+      "series_name": "How to Make a Perfect Cheesecake (Q&A / Myths series)",
+      "note": "Large loosely-connected group of cheesecake myth/Q&A posts. Tip 201 vs Tip 203 order is confirmed reversed in source per FLAGGED ANOMALIES (201's hot-method answer appears before 203's cold/hot setup question). Part numbers UNCERTAIN throughout - listed in document order, NOT verified logical order.",
+      "parts": [
+        {"part": null, "tip_num": 173, "topic": "Myths, Baking, Cooling, Decorating, Storage - Q&A intro"},
+        {"part": null, "tip_num": 200, "topic": "Myths vs Reality - Room Temperature Ingredients"},
+        {"part": null, "tip_num": 201, "topic": "Hot vs Cold Infusion, Baking-Ring Myths", "note": "logically answers a question posed later, in Tip 203 - see FLAGGED ANOMALIES"},
+        {"part": null, "tip_num": 202, "topic": "Baking Temperature, Water Bath"},
+        {"part": null, "tip_num": 203, "topic": "Flavoring methods, Cold Method setup"},
+        {"part": null, "tip_num": 204, "topic": "Perfect Borders"},
+        {"part": null, "tip_num": 205, "topic": "Room Temperature Ingredients Myth"},
+        {"part": null, "tip_num": 206, "topic": "Water Bath - Over vs In"},
+        {"part": null, "tip_num": 207, "topic": "Shortbread Crust Myths"}
+      ]
+    }
+  ]
+}

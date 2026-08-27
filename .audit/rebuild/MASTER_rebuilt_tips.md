@@ -775,8 +775,6 @@ What happens to egg white proteins during whipping is similar, though not identi
 
 ❌ Trusting recipes from the internet and thinking, "Surely they wouldn't write complete nonsense"
 
-**[ANOMALY]** Title says "10" but only 9 bullet items are present in the source — a genuine numbering discrepancy in the original document (see Flagged Anomalies section).
-
 ---
 
 ## Tip 020 — Poor Cake Texture? Creaming the Butter: Simple Rules
@@ -801,6 +799,8 @@ The mixer speed should be moderate. If you cream at high speed, friction will qu
 ## Tip 021 — A Whisk, a Paddle, or a Dough Hook? (Parts 1–3, incl. Creaming Method)
 
 **Source:** from B1-21
+
+[⚠ Note: this post is cut off in the original source and ends mid-sentence, with no continuation found anywhere in the material.]
 
 A WHISK, A PADDLE, OR A DOUGH HOOK?
 At first glance, the answer seems simple: ✔️ A whisk for whipping ✔️ A paddle for mixing soft dough or batter ✔️ A dough hook for kneading stiff dough
@@ -1494,7 +1494,7 @@ Today, I'm unveiling a formula for a simple yet sophisticated and striking cake 
 
 ---
 
-## Tip 042 — Functions of Fats in Baking, Part 1: Impact on Softness and Tenderness
+## Tip 042 — The Main Rule for Achieving Perfect Puff Pastry / Functions of Fats in Baking, Part 1: Impact on Softness and Tenderness
 
 **Source:** merged B1-42 (stub only, truncated at "Have you ever thought about why we add butter...") + B2-08 (complete version kept)
 
@@ -1536,6 +1536,8 @@ Like thorough dough mixing, emulsifiers assist in even fat distribution througho
 The greater the leavening ability of the fat, the more it contributes to softening. The rising of baked goods during baking stretches and thins the cell walls, weakening them.
 
 Hence, vegetable oil, devoid of leavening properties, softens pie batter but yields denser cakes and tea cakes.
+
+**Notes:** Source gives this post two alternative author titles joined by "or": "THE MAIN RULE FOR ACHIEVING PERFECT PUFF PASTRY / or / FUNCTIONS OF FATS IN BAKING / part 1" (source line 1208-1211). The markdown heading above preserves both; the body above matches source verbatim starting at "FUNCTIONS OF FATS IN BAKING".
 
 ---
 
@@ -2349,7 +2351,7 @@ To understand why this happens, you need to delve into the physics and chemistry
 
 ---
 
-## Tip 066 — Chocolate Fat Bloom: How to Store Chocolate, Part 2
+## Tip 066 — Chocolate Sugar Bloom / Everything You Need to Know on How to Store Chocolate, Part 2
 
 **Source:** from B2-32
 
@@ -2385,6 +2387,8 @@ This blooming happens for a number of reasons:
 Generally, chocolate affected by fat bloom remains edible, but it loses its appealing gloss and crispness, and quickly melts upon touch.
 
 **[ANOMALY]** Title says "Chocolate Sugar Bloom" but the content is entirely about FAT bloom (sugar bloom is the subject of Part 3, the next tip) — an inconsistency in the original document's heading (see Flagged Anomalies section).
+
+**Notes:** Source gives this post two alternative author titles joined by "or": "CHOCOLATE SUGAR BLOOM / or / EVERYTHING YOU NEED TO KNOW ON HOW TO STORE CHOCOLATE / Part 2" (source line 1937-1942). The markdown heading above preserves both verbatim (previously this heading was a fabricated hybrid, "Chocolate Fat Bloom...", matching neither source title).
 
 ---
 
@@ -4534,6 +4538,8 @@ A similar effect can be obtained by adding acid (e.g. lemon juice).
 
 **Source:** from B4-18
 
+[⚠ Note: this post is a short bridging fragment. It promises more content (the next salt functions) that isn't included here — see Tip 120 for the continuation.]
+
 Judging by your comments, this topic turned out to be interesting for many of you. Today we'll continue to talk about the functions of salt. We have already analyzed the first four functions (check out the beginning by following the hashtag #marusya_about_salt), but that's not all😉
 
 So let's continue.
@@ -6652,6 +6658,8 @@ That cream cheese released 3-4 times more whey than Cremette. As a result, in th
 
 **Source:** merged B5-36 + B6-03 (identical content in both)
 
+[⚠ Note: this post ends on an unanswered question — the source never answers it anywhere in the material.]
+
 CAKE COATING. COMMON PROBLEMS
 
 Last couple of words about putting the press on the cake and we'll proceed to the last part of the article - leaking liquid from the assembled cake.
@@ -6738,11 +6746,11 @@ It's like with zefir – everyone has their own preferences. First of all, YOU s
 
 ---
 
-## Tip 174 — What You Need to Know About Gelatin, Part 1 (Types: Sources, Powdered vs Sheet)
+## Tip 174 — What You Need to Know About Gelatin (Types: Sources, Powdered vs Sheet) — de-dup pointer to Tip 167
 
 **Source:** merged B5-38-position-duplicate + B6-05 (identical content in both; see also Tip 167 which independently captured this same post from Batch 5's numbering — this is the SAME underlying source post as Tip 167, redundantly captured again at the B5/B6 seam)
 
-**Notes:** ⚠️ **DE-DUPLICATION NOTE:** This post's full text is identical to Tip 167 above ("What You Need to Know About Gelatin — What Gelatin Is; Sources; Powdered Gelatin Prep"). Batch 5 captured it once as B5-38 (well inside its core range, already placed as Tip 167) and Batch 6 captured it again as B6-05 at the start of its range (a natural seam overlap). Per this document's numbering scheme, it is not repeated as its own tip here — refer to **Tip 167** for the full text. This entry exists only to document the seam correspondence (B5-38 = B6-05) for the human reconciliation pass; no new tip number is consumed.
+**Notes:** ⚠️ **DE-DUPLICATION NOTE:** This post's full text is identical to Tip 167 above ("What You Need to Know About Gelatin — What Gelatin Is; Sources; Powdered Gelatin Prep"). Batch 5 captured it once as B5-38 (well inside its core range, already placed as Tip 167) and Batch 6 captured it again as B6-05 at the start of its range (a natural seam overlap). Per this document's numbering scheme, it is not repeated as its own tip here — refer to **Tip 167** for the full text. This entry exists only to document the seam correspondence (B5-38 = B6-05) for the human reconciliation pass; no new tip number is consumed. Title previously read "Part 1" — removed: source has no such numbering. The source reuses the identical heading "WHAT YOU NEED TO KNOW ABOUT GELATIN" for at least 4 separate, unrelated posts (Tips 166, 167/174, 180, each a distinct topic) with no part-numbering anywhere; Tip 167's own title correctly uses no number, so this pointer now matches that convention.
 
 ---
 
@@ -6923,7 +6931,7 @@ If the article was helpful, leave 👍🏻 in the comments and I'll write a cont
 
 **Notes:** This post has an odd internal structure: it opens with a one-line fix-list for "cracked coating" (already introduced in an earlier, not-fully-visible post), THEN re-introduces and fully explains cracked coating and its 3 causes from scratch, THEN teases a "second common problem" (bubbles) already covered in Tips 175–176. This strongly suggests the underlying original Instagram carousel/thread posted these topics in a different order than they appear in this text extraction. Kept as one tip (single opening, single closing "leave 👍🏻... I'll write a continuation") despite the internal redundancy — a content-fidelity call, not an attempt to fix the source's apparent disorder.
 
-## Tip 180 — What You Need to Know About Gelatin, Part 2 (Gelatin Mass, Sheet Gelatin, Bloom Strength, Dosage)
+## Tip 180 — What You Need to Know About Gelatin (Gelatin Mass, Sheet Gelatin, Bloom Strength, Dosage)
 
 **Source:** merged B5-44 (truncated at batch boundary) + B6-11 (complete version used)
 
@@ -6964,7 +6972,7 @@ But, on average, it is assumed that for 500 g of liquid, 10 g of gelatin with a 
 
 And then you should decide whether the gelatin is enough, the product is too tender or, on the contrary, thick. Draw conclusions, make adjustments and adapt to the properties of your products.
 
-**Notes:** Batch 5's version of this post (B5-44) was cut off mid-topic exactly at its batch boundary ("SHEET / The gelatin sheets are soaked in a fairly large amount of very cold water..."); Batch 6's independently-captured version (B6-11) is complete, and is used here in full.
+**Notes:** Batch 5's version of this post (B5-44) was cut off mid-topic exactly at its batch boundary ("SHEET / The gelatin sheets are soaked in a fairly large amount of very cold water..."); Batch 6's independently-captured version (B6-11) is complete, and is used here in full. Title previously read "Part 2" — removed: source has no such numbering. The source reuses the identical heading "WHAT YOU NEED TO KNOW ABOUT GELATIN" for at least 4 separate, unrelated posts (Tips 166, 167/174, and this one), each covering a different topic, with no part-numbering anywhere in the original document.
 
 ---
 
@@ -7063,6 +7071,8 @@ Therefore, if you want to replace cream cheese with mascarpone in buttercream, c
 ## Tip 183 — Cream Cheese Brands — Cremette vs Philadelphia, Proportions Adjustment, and the Malaysia Buttercream Story
 
 **Source:** from B6-14
+
+[⚠ Note: this post ends on a deliberate cliffhanger — the story is left unresolved here; see Tip 184 for the ending.]
 
 So, we figured out the difference between cream cheese and Mascarpone and learnt that they are not always interchangeable.
 
