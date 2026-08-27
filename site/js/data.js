@@ -5,7 +5,9 @@ const DATA_URLS = {
   lt: { recipes: "data/recipes_lt.json", tips: "data/tips_lt.json" },
   tags: "data/tags.json",
   tagsLt: "data/tags_lt.json",
+  tagsEn: "data/tags_en.json",
   prices: "data/prices.json",
+  density: "data/density.json",
 };
 
 const store = {
@@ -13,7 +15,9 @@ const store = {
   tips: { en: null, lt: null },
   tags: null,
   tagsLt: null,
+  tagsEn: null,
   prices: null,
+  density: null,
 };
 
 async function fetchJSON(url) {
@@ -23,42 +27,50 @@ async function fetchJSON(url) {
 }
 
 async function loadAll() {
-  const [recipesEn, recipesLt, tipsEn, tipsLt, tags, tagsLt, prices] = await Promise.all([
+  const [recipesEn, recipesLt, tipsEn, tipsLt, tags, tagsLt, tagsEn, prices, density] = await Promise.all([
     fetchJSON(DATA_URLS.en.recipes),
     fetchJSON(DATA_URLS.lt.recipes),
     fetchJSON(DATA_URLS.en.tips),
     fetchJSON(DATA_URLS.lt.tips),
     fetchJSON(DATA_URLS.tags),
     fetchJSON(DATA_URLS.tagsLt).catch(() => ({ category: {}, flavor_theme: {} })),
+    fetchJSON(DATA_URLS.tagsEn).catch(() => ({ category: {}, flavor_theme: {} })),
     fetchJSON(DATA_URLS.prices).catch(() => ({})),
+    fetchJSON(DATA_URLS.density).catch(() => ({})),
   ]);
+  // EN and LT recipe files are edited independently and are not guaranteed to hold the
+  // same recipes in the same order (e.g. EN can gain new entries LT hasn't been
+  // translated for yet), so each list's id is derived from its own title — never from
+  // the other language's array position, which would silently mismatch across languages.
   store.recipes.en = recipesEn.map((r, i) => ({ ...r, id: slugify(r.title, i) }));
-  store.recipes.lt = recipesLt.map((r, i) => ({ ...r, id: slugify(recipesEn[i]?.title ?? r.title, i) }));
+  store.recipes.lt = recipesLt.map((r, i) => ({ ...r, id: slugify(r.title, i) }));
   store.tips.en = tipsEn.map((t, i) => ({ ...t, id: slugify(t.title, i) }));
   store.tips.lt = tipsLt.map((t, i) => ({ ...t, id: slugify(tipsEn[i]?.title ?? t.title, i) }));
   store.tags = tags;
   store.tagsLt = tagsLt;
+  store.tagsEn = tagsEn;
   store.prices = prices;
+  delete density._comment;
+  store.density = density;
+  window.INGREDIENT_DENSITY = density;
   return store;
 }
 
-/** Returns the display label for a category or flavor_theme tag slug, translated when lang is "lt". */
+/** Returns the display label for a category or flavor_theme tag slug, translated for lang "lt" or "en". */
 function tagLabel(lang, kind, slug) {
-  if (lang === "lt") {
-    const translated = store.tagsLt?.[kind]?.[slug];
-    if (translated) return translated;
-  }
+  const dict = lang === "lt" ? store.tagsLt : store.tagsEn;
+  const translated = dict?.[kind]?.[slug];
+  if (translated) return translated;
   return slug;
 }
 
 /** Returns the display label for a free-form recipe/tip tag whose category (flavor_theme/ingredient/technique)
  * isn't known ahead of time — checks all three dictionaries in turn. */
 function anyTagLabel(lang, slug) {
-  if (lang === "lt") {
-    for (const kind of ["flavor_theme", "ingredient", "technique"]) {
-      const translated = store.tagsLt?.[kind]?.[slug];
-      if (translated) return translated;
-    }
+  const dict = lang === "lt" ? store.tagsLt : store.tagsEn;
+  for (const kind of ["flavor_theme", "ingredient", "technique"]) {
+    const translated = dict?.[kind]?.[slug];
+    if (translated) return translated;
   }
   return slug;
 }
@@ -96,6 +108,19 @@ function formatAmount(amount, decimals = 1) {
   };
   if (typeof amount === "number") return round(amount);
   return `${round(amount.min)}–${round(amount.max)}`;
+}
+
+/** Formats a gram/milliliter amount, switching to kg/L (2 decimals) once the amount
+ * reaches 500 — matches how a baker actually reads a scale ("0.65 kg" not "650 g"). */
+function formatWeightVolume(amount, unit) {
+  if (amount == null) return "";
+  const bigUnit = unit === "g" ? "kg" : "L";
+  if (typeof amount === "number") {
+    return amount >= 500 ? `${formatAmount(amount / 1000, 2)} ${bigUnit}` : `${formatAmount(amount, 0)} ${unit}`;
+  }
+  const big = amount.min >= 500;
+  const div = big ? 1000 : 1;
+  return `${formatAmount({ min: amount.min / div, max: amount.max / div }, big ? 2 : 0)} ${big ? bigUnit : unit}`;
 }
 
 /** Looks up a per-100g/ml price for an ingredient name from prices.json, resolving pack-size to unit price. */

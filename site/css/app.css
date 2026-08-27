@@ -475,6 +475,22 @@ img { max-width: 100%; display: block; }
   color: var(--color-accent);
   font-weight: 600;
 }
+.recipe-card__kind-badge,
+.recipe-detail__kind-badge {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+  color: var(--color-muted);
+  background: var(--color-rule-2);
+  border-radius: var(--radius-sm);
+  padding: 0.1em 0.5em;
+  margin-left: var(--space-2xs);
+  vertical-align: middle;
+}
+.recipe-detail__kind-badge {
+  font-size: var(--text-sm);
+}
 .recipe-card__title {
   font-size: var(--text-md);
   line-height: 1.25;

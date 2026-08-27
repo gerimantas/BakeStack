@@ -53,12 +53,14 @@ function highlight(text, query) {
 
 function ingredientLine(ing, multiplier, lang) {
   const scaledAmount = scaleAmount(ing.amount, multiplier);
-  const scaledMl = scaleAmount(ing.amount_ml, multiplier);
+  const scaledConv = scaleAmount(ing.amount_conv, multiplier);
   let amtHtml;
   if (scaledAmount == null) {
     amtHtml = "";
-  } else if (scaledMl != null) {
-    amtHtml = `${formatAmount(scaledMl, 0)} ml<span class="amt-sub">${formatAmount(scaledAmount)} ${esc(ing.unit)}</span>`;
+  } else if (scaledConv != null) {
+    amtHtml = `${formatWeightVolume(scaledConv, ing.unit_conv)}<span class="amt-sub">${formatAmount(scaledAmount)} ${esc(ing.unit)}</span>`;
+  } else if (ing.unit === "g" || ing.unit === "ml") {
+    amtHtml = formatWeightVolume(scaledAmount, ing.unit);
   } else {
     amtHtml = `${formatAmount(scaledAmount)}${ing.unit ? " " + esc(ing.unit) : ""}`;
   }
@@ -129,10 +131,7 @@ function renderNav(lang, route) {
         <ul class="nav__links" id="nav-links">${NAV_LINKS.map((l) => `<li><a class="nav__link" href="${l.href}"${l.match(route) ? ' aria-current="page"' : ""}>${t(lang, l.key)}</a></li>`).join("")}<li><a class="nav__link nav__link--external" href="tools/qa-compare.html" target="_blank" rel="noopener">QA</a></li></ul>
       </nav>
       <div class="nav__actions">
-        <div class="lang-toggle" role="group" aria-label="${t(lang, "langToggle")}">
-          <button data-lang="en" aria-pressed="${lang === "en"}">EN</button>
-          <button data-lang="lt" aria-pressed="${lang === "lt"}">LT</button>
-        </div>
+        <!-- lang-toggle removed: LT recipes are temporarily out of sync with rebuilt EN data, see state.js -->
         <button class="icon-btn" id="theme-btn" aria-label="${t(lang, "themeToggle")}">${themeIconSvg(appState.theme)}</button>
       </div>
     </div>
@@ -359,7 +358,7 @@ function recipeCard(recipe, lang, query) {
     ${recipeCardMedia(recipe, favBtn)}
     ${!recipe.image ? favBtn : ""}
     <div class="recipe-card__body">
-      <span class="recipe-card__cat">${esc(tagLabel(lang, "category", recipe.category))}</span>
+      <span class="recipe-card__cat">${esc(tagLabel(lang, "category", recipe.category))}${recipe.is_technique ? `<span class="recipe-card__kind-badge">${t(lang, "kindTechnique")}</span>` : ""}</span>
       <h3 class="recipe-card__title">${highlight(recipe.title, query)}</h3>
       <span class="recipe-card__tags">${(recipe.tags || []).slice(0, 3).map((tg) => anyTagLabel(lang, tg)).join(" · ")}</span>
     </div>
@@ -378,6 +377,7 @@ function tipCard(tip, lang, query) {
 function renderRecipesView(lang, params) {
   const all = getRecipes(lang);
   const query = (params.get("q") || "").trim();
+  const kind = params.get("kind") || "";
   const category = params.get("cat") || "";
   const tag = params.get("tag") || "";
 
@@ -386,19 +386,23 @@ function renderRecipesView(lang, params) {
   const groupOrder = ["cupcake", "cheesecake", "cakes-loaf", "cinnamon-roll", "tea-cake", "tiramisu-zephyr", "cookies-brownies", "pies-pastry", "savory", "ganache", "components-fillings"];
   const categoryGroups = groupOrder.filter((g) => all.some((r) => r.categoryGroup === g));
   const flavorTags = (store.tags?.flavor_theme || []).filter((tg) => all.some((r) => r.tags?.includes(tg)));
+  const hasTechniques = all.some((r) => r.is_technique);
 
   let filtered = all;
   if (query) {
     const q = query.toLowerCase();
     filtered = filtered.filter((r) => r.title.toLowerCase().includes(q) || (r.tags || []).some((tg) => tg.includes(q)));
   }
+  if (kind === "technique") filtered = filtered.filter((r) => r.is_technique);
+  else if (kind === "recipe") filtered = filtered.filter((r) => !r.is_technique);
   if (category) filtered = filtered.filter((r) => r.categoryGroup === category);
   if (tag) filtered = filtered.filter((r) => (r.tags || []).includes(tag));
 
-  // Counts reflect the OTHER active filter (so picking a Type doesn't hide Flavor counts, and vice versa),
-  // but not the chip's own filter — that would collapse every non-selected chip to a same/lower count.
-  const byOtherTag = tag ? all.filter((r) => (r.tags || []).includes(tag)) : all;
-  const byOtherCategory = category ? all.filter((r) => r.categoryGroup === category) : all;
+  // Counts reflect the OTHER active filters (so picking a Type doesn't hide Flavor counts, and vice
+  // versa), but not the chip's own filter — that would collapse every non-selected chip to a same/lower count.
+  const byOtherKind = all.filter((r) => (!category || r.categoryGroup === category) && (!tag || (r.tags || []).includes(tag)));
+  const byOtherTag = all.filter((r) => (!kind || (kind === "technique" ? r.is_technique : !r.is_technique)) && (!category || r.categoryGroup === category));
+  const byOtherCategory = all.filter((r) => (!kind || (kind === "technique" ? r.is_technique : !r.is_technique)) && (!tag || (r.tags || []).includes(tag)));
 
   const chip = (label, count, active, href) =>
     `<button class="chip" data-nav="${href}" aria-pressed="${active}">${esc(label)} <span class="chip__count">${count}</span></button>`;
@@ -409,6 +413,14 @@ function renderRecipesView(lang, params) {
       <h1>${t(lang, "navRecipes")}</h1>
       <span class="page-head__count">${t(lang, "recipesCount", filtered.length)}</span>
     </div>
+    ${hasTechniques ? `<div class="filter-block">
+      <span class="filter-label">${t(lang, "filterKind")}</span>
+      <div class="filters"><div class="filter-group">
+        ${chip(t(lang, "allTypes"), byOtherKind.length, !kind, `#/recipes?${withParam(params, "kind", "")}`)}
+        ${chip(t(lang, "kindRecipe"), byOtherKind.filter((r) => !r.is_technique).length, kind === "recipe", `#/recipes?${withParam(params, "kind", "recipe")}`)}
+        ${chip(t(lang, "kindTechnique"), byOtherKind.filter((r) => r.is_technique).length, kind === "technique", `#/recipes?${withParam(params, "kind", "technique")}`)}
+      </div></div>
+    </div>` : ""}
     <div class="filter-block">
       <span class="filter-label">${t(lang, "filterType")}</span>
       <div class="filters">
@@ -469,7 +481,7 @@ function renderRecipeDetail(lang, id) {
     <a class="back-link" href="#/recipes">${iconBack()} ${t(lang, "backToRecipes")}</a>
     <div class="recipe-detail__head">
       <div>
-        <h1 class="recipe-detail__title">${esc(recipe.title)}</h1>
+        <h1 class="recipe-detail__title">${esc(recipe.title)}${recipe.is_technique ? `<span class="recipe-detail__kind-badge">${t(lang, "kindTechnique")}</span>` : ""}</h1>
         <div class="recipe-detail__meta"><span>${esc(tagLabel(lang, "category", recipe.category))}</span>${(recipe.tags || []).length ? `<span>· ${recipe.tags.map((tg) => anyTagLabel(lang, tg)).join(", ")}</span>` : ""}</div>
       </div>
       <div class="recipe-actions">

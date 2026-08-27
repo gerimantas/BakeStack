@@ -203,9 +203,17 @@ it would require recalculating all ~75 recipes' ingredient units in one pass
 and creates a duplication risk (the static gram value could drift from the
 source `amount`/`unit` if a recipe is edited later without recalculating it).
 
-**Not yet started:** no file has been created or edited for this task. Next
-step when resumed: trace exact `density.js` call sites in `data.js`/`index.html`
-before touching anything.
+**Done (S13, 2026-08-27):** call sites traced — `INGREDIENT_DENSITY` was only
+read inside `density.js`'s own `densityFor()`, which is only called from
+`data.js`'s `buildShoppingList()`; `index.html` loads `density.js` as a plain
+`<script>` tag (no ES module), before `data.js`. Moved the 33-entry table to
+`site/data/density.json`. `density.js` now keeps only `densityFor()`, reading
+from `window.INGREDIENT_DENSITY` instead of a local const. `data.js`'s
+`loadAll()` fetches `density.json`, strips its `_comment` key, and assigns it
+to both `store.density` and `window.INGREDIENT_DENSITY`. Verified in a live
+browser via Playwright: 33 entries loaded, no `_comment` leak, exact-match
+and substring-fallback matching both still work (`sugar` → 0.85, "vanilla
+paste or extract" → 1.1), unknown ingredient → null.
 
 ## 4. Archive the old, error-filled recipes/tips JSON once replaced
 
@@ -260,7 +268,16 @@ every slug — building `tags_en.json` to the same completeness keeps the two
 language dictionaries structurally matched from the start, instead of
 leaving a partial file that needs revisiting to fill remaining gaps later.
 
-**Not yet started:** no file created, no JS edited.
+**Done (S13, 2026-08-27):** `site/data/tags_en.json` created (all 168 current
+slugs — 164 planned + 4 net new from the vocabulary-audit fixes applied this
+session). `tags_lt.json` was found out of sync with `tags.json` (missing
+`mousse`/`banana`/`apple`/`coconut`/`raisins`/`creme-fraiche`, still had stale
+`sugar-granulated`/`creaming-butter`) — fixed to match before building the EN
+file, per user decision. `tagLabel()`/`anyTagLabel()` in `site/js/data.js`
+rewired to pick `store.tagsEn` or `store.tagsLt` by `lang`, replacing the old
+LT-only branch. Verified in a live browser via Playwright: EN labels resolve
+correctly (e.g. `creme-fraiche` → "crème fraîche (soured cream)"), LT still
+resolves, unknown slugs still fall back to the raw slug.
 
 ## Open before starting any of these
 
