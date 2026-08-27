@@ -8,30 +8,24 @@ touches `site/**`). 73 recipes / 310 tips live, EN and LT kept in
 array-index sync — but both live datasets are known to have structural
 defects; the fix passes for both are queued (Next tasks 2/3), not started.
 
-**Recipes now have a ground-truth rebuild too, mirroring tips' S8 step.**
-`.audit/rebuild_recipes/MASTER_rebuilt_recipes.md` (79 entries, built S11
-from `Receptai.docx` by 5 blind subagents + a source-verified merge — zero
-seam conflicts, unlike tips' rebuild which had one) is now the equivalent of
-tips' `MASTER_rebuilt_tips.md`. **Not yet cross-checked against live
-`recipes.json`** — that's recipes' still-pending S9-equivalent step (Next
-task 2). 32 of 75 dish recipes are genuinely incomplete in the source itself
-(Instagram carousel-only steps, confirmed absent from `recipes.json` too,
-not an extraction defect) and now carry a reader-facing incomplete warning.
-One true duplicate (#26, word-for-word repost) removed; 3 recipes recur as
-real variants (San Sebastian ×3, Banana Tea Cake ×2) — visually verified via
-a published Artifact, variant-labeling still not applied to the file.
+**Recipes now have a full ground-truth JSON export, not just the MASTER
+markdown file.** `.audit/rebuild_recipes/recipes_export.json` (79/79
+recipes, built S12 from `MASTER_rebuilt_recipes.md`) is the new, complete
+artifact — manually verified against raw docx source (no scripted
+checking, per a hard constraint set this session — see
+`.claude/skills/recipes-audit/SKILL.md`). Two real content bugs were found
+and fixed during verification: ingredient ranges ("700–800 g") were being
+silently averaged into one number, and a header-format ingredient
+("For 2.0–3.0 L of water:") was dropped by a section-count check that only
+recognized plain list lines. **Still not cross-checked against live
+`recipes.json`** — that's the still-pending S9-equivalent step (Next task
+2, unchanged from S11).
 
-**A recipes+tips JSON schema was unified in a brainstorm session, nothing
-applied yet.** Full detail and every decision: `.audit/PLAN_recipes_json_work.md`.
-Covers: prefixed-string IDs (`recipe-004`/`tip-001`), shared fields both
-future exports will use, a `tags.json` vocabulary audit (found real gaps —
-`mousse` category; `banana`/`apple`/`coconut`/`raisins`/`creme-fraiche`
-ingredients — and real duplicates to collapse — `sugar-granulated`→`sugar`,
-`creaming-butter`→`creaming-method`), the discovery that `findRelatedTips()`
-already exists in `site/js/app.js` (so the "need a cross-reference field"
-framing was wrong — the real gap is vocabulary consistency), and a new task
-to build `site/data/tags_en.json` (English UI currently shows raw slugs,
-no label dictionary exists for EN, only `tags_lt.json`).
+**`tags.json` vocabulary edits from S11's brainstorm are now applied** (both
+root and `site/data/` copies): `sugar-granulated`/`creaming-butter` removed,
+`mousse`/`banana`/`apple`/`coconut`/`raisins`/`creme-fraiche` added.
+`tags_en.json` (task c) and moving `density.js`'s table to JSON (task d)
+are still not started.
 
 **Tips-side ground truth (`MASTER_rebuilt_tips.md`, 207 tips) remains fully
 verified against both raw source (S9) and live `tips.json` (S10) — nothing
@@ -46,7 +40,7 @@ MASTER, not yet to live `tips.json`), and Tip 113's newly-found second
 war/charity passage (no strip decision made yet). Also open: `tips.json`
 indices 305-309 have no match anywhere in the 207-tip rebuild.
 
-Session S11 closed 2026-08-27.
+Session S12 closed 2026-08-27.
 
 ## What this project is
 BakeStack: a recipe/pastry-tips database and calculator, starting from
@@ -386,6 +380,15 @@ before investing in that.
   a schema now.
 
 ## Done Log
+- 2026-08-27 (S12): `tags.json` vocabulary edits applied (both copies).
+  `.audit/rebuild_recipes/recipes_export.json` built — all 79 recipes from
+  `MASTER_rebuilt_recipes.md`, manually verified against raw docx source
+  batch by batch (no scripted checking, per a hard constraint set this
+  session). Two real bugs found and fixed: silent range-averaging
+  ("700–800 g" → one number) and a dropped header-format ingredient
+  ("For 2.0–3.0 L of water:"). New `.claude/skills/recipes-audit/SKILL.md`
+  documents the method and both bugs for future sessions. Full detail:
+  Archive entry above.
 - 2026-08-27 (S11): `MASTER_rebuilt_recipes.md` built (79 entries) from
   `Receptai.docx` via the same blind-subagent-rebuild method S8 used for
   tips — zero seam conflicts found. 32 genuinely-incomplete recipes flagged
@@ -426,30 +429,25 @@ audit + 13 bugs fixed, S6 LT translation redo + GitHub Pages deploy live,
 and further back.)
 
 ## Next tasks
-1. Apply the JSON schema/vocabulary decisions from S11's brainstorm session —
-   plan: `.audit/PLAN_recipes_json_work.md` (5 tasks, all decided, none
-   applied yet). Suggested order per the plan: (a) edit `tags.json` first
-   (drop `sugar-granulated` and `creaming-butter`, add `mousse`/`banana`/
-   `apple`/`coconut`/`raisins`/`creme-fraiche`) since both JSON exports
-   depend on a stable vocabulary; (b) export
-   `.audit/rebuild_recipes/MASTER_rebuilt_recipes.md` (79 entries) to a new
-   JSON file per the agreed shared schema (`id` as `recipe-NNN`,
-   `source_docx_lines`, `is_complete`, `variant_of`/`variant_label` for the
-   San Sebastian ×3 and Banana Tea Cake ×2 groups — labeling those "Variant N
-   of M" still not applied to the MASTER file itself either); (c) build
-   `site/data/tags_en.json` (all 164 slugs, matching `tags_lt.json`'s shape)
-   and wire it into `tagLabel()`/`anyTagLabel()` in `site/js/data.js`; (d)
-   move `site/js/density.js`'s `INGREDIENT_DENSITY` table into
+1. Finish the remaining two tasks from S11's plan
+   (`.audit/PLAN_recipes_json_work.md`) — (a) tags.json and (b) the recipes
+   JSON export are DONE (S12). Remaining: (c) build `site/data/tags_en.json`
+   (all 164 slugs, matching `tags_lt.json`'s shape) and wire it into
+   `tagLabel()`/`anyTagLabel()` in `site/js/data.js`; (d) move
+   `site/js/density.js`'s `INGREDIENT_DENSITY` table into
    `site/data/density.json`, keeping `densityFor()`'s matching logic in JS —
    trace exact call sites in `data.js`/`index.html` first, not done yet.
-2. Once (1) ships `MASTER_rebuilt_recipes.md` as JSON, do the S9-equivalent
-   step recipes never got: cross-check that JSON against live
-   `recipes.json`/`recipes_lt.json` entry by entry, the same manual method
-   S9→S10 used for tips (direct phrase-search for anything a script flags
-   NO_MATCH, watch for mega-merge false negatives — see
-   `.claude/skills/tips-audit/SKILL.md`). Not started — S11 only built the
-   ground truth (the S8-equivalent step), same as S8 did for tips before S9
-   checked it.
+2. Do the S9-equivalent step recipes never got: cross-check
+   `.audit/rebuild_recipes/recipes_export.json` (79 recipes, built S12)
+   against live `recipes.json`/`recipes_lt.json` entry by entry, the same
+   manual method S9→S10 used for tips (direct phrase-search for anything a
+   script flags NO_MATCH, watch for mega-merge false negatives — see
+   `.claude/skills/tips-audit/SKILL.md`, and read
+   `.claude/skills/recipes-audit/SKILL.md` first — it documents two real
+   bugs S12 found doing manual verification and bans scripted content
+   checks for this data). Not started — S11 built the ground-truth markdown
+   (S8-equivalent), S12 exported it to JSON and verified it against source,
+   but neither compared it against the live site yet.
 3. Fix live `tips.json`/`tips_lt.json` against the already-verified ground
    truth `.audit/rebuild/MASTER_rebuilt_tips.md` — plan/evidence:
    `.audit/DECISIONS_review.md` sections 12-27. Precise scope: only 1 of 207
@@ -484,6 +482,104 @@ and further back.)
    null on every recipe/tip record per the original plan).
 
 ## Archive
+
+### Session 2026-08-27 (S12) — tags.json vocabulary edits applied; all 79 recipes exported from MASTER_rebuilt_recipes.md to recipes_export.json, manually verified against raw docx source (never scripted) after two real bugs surfaced; new recipes-audit skill written to enforce that method going forward
+
+**Scope, and how it was set:** continued directly from S11's plan
+(`.audit/PLAN_recipes_json_work.md`) — task (a) tags.json edit, then task (b) the
+recipes JSON export. User set a hard constraint mid-session after Claude used a
+python regex sweep to "confirm" a range-averaging bug rather than catching it by
+reading: **no script may check or convert recipe content, ever — Read + human eyes
+only.** This constraint is now written into a new project skill so it survives
+past this session.
+
+**(a) tags.json — applied, both copies in sync.** `sugar-granulated` and
+`creaming-butter` removed; `mousse` (category), `banana`/`apple`/`coconut`/
+`raisins`/`creme-fraiche` (ingredient) added, per S11's brainstorm decisions.
+`site/data/tags.json` diff-confirmed identical to root `tags.json` after the edit.
+
+**(b) recipes_export.json — built, 79/79 recipes, 7 batches of ~10-16 recipes
+each, each batch fully re-read against source before moving to the next.**
+Per-recipe fields: `id` (`recipe-NNN`, MASTER's original 1-80 numbering, #26
+skipped), `source_docx_lines` (built by grep-locating each of the 79 titles in
+`Receptai_docx_source.txt`, confirmed manually for the 5 that needed disambiguation
+against a repeated title or a dropped-letter extraction artifact), `is_complete`
+(35 of 79 are `false`, matching MASTER's own incomplete-instruction flags),
+`is_technique` (5 entries: #34, #45, #57, #58, #61), `variant_of`/`variant_label`
+for the two known variant groups — San Sebastian trio now chains #16→#62→#80
+(each earlier entry's `variant_of` points to the next), Banana Tea Cake pair
+chains #15→#70.
+
+**Two real content bugs found and fixed, both from a mechanical/pattern-matching
+shortcut, neither caught until a human re-read the source line by line:**
+1. **Range-averaging.** Ingredient lines with a source range ("700–800 g turkey
+   thigh") were being converted to one averaged number with no trace the range
+   existed — found in a 5-recipe spot check the user asked for, then confirmed as
+   systemic via one more read (8 occurrences total in batch 1 alone: #3, #5×5, #8,
+   #10×2, #11, #12×2). Fixed by keeping the full range in the `name` string and
+   setting `amount`/`unit` to `null` — this preserves what the source actually
+   claims instead of inventing false precision.
+2. **Header-format ingredient silently dropped.** Source line `"For 2.0–3.0 L of
+   water:"` (recipe #5, Pumpkin Cream Soup) IS the soup's water — but written as a
+   lead-in header, not a plain `amount unit name` list line, so a section-by-
+   section ingredient count missed it entirely. The user caught this directly
+   ("ar tau tai nera svarbu: For 2.0–3.0 L of water") after being told the recipe
+   was fully verified — it wasn't. Fixed by adding a `water (2.0–3.0 L)` entry.
+
+Three smaller defects also found and fixed during the batch-by-batch re-read
+(each re-read happened immediately after writing a batch, before starting the
+next): a dropped ingredient line (`#8` "extra caramel for drizzling"), two
+invented tag/category values not in `tags.json`'s vocabulary (`flour-hazelnut` on
+#31, `category: technique` on #34 — both corrected to existing vocabulary
+entries), one self-copied wrong instruction step on #23 (Frosting steps
+accidentally duplicated text from a different recipe, caught on the very next
+re-read), and one invented title on #70 (wrote "...with Caramel-Banana Sauce" as
+if it were the source title — it was Claude's own paraphrase; corrected back to
+MASTER's exact title).
+
+**Why the constraint against scripted checking, in the user's own framing:** a
+script only catches the failure modes its author anticipated; both real bugs
+above are exactly the shape neither a range-regex nor a section-based count-check
+would think to guard against, because the mechanical pass's whole premise (average
+the range, count only list-line ingredients) IS the bug. New skill
+`.claude/skills/recipes-audit/SKILL.md` (project-local) documents both bugs with
+the exact source lines, the file map, and the source-text-format catalogue (plain
+list line / header-prefixed range / section-header-with-serving-count / trailing
+unlabeled line / range amount) so a future session recognizes these shapes on
+sight instead of writing a script that re-discovers the same two bugs.
+
+**Two Artifacts published mid-session** to let the user visually verify: a first
+5-recipe side-by-side (docx vs JSON) that surfaced the range-averaging and
+missing-caramel bugs directly; a second one, requested after the user pointed out
+"aš noriu matyti kaip json rodomas puslapyje" (not raw JSON — the rendered site
+page), rebuilt using the live site's actual `tokens.css` palette/type and
+`renderIngredientList()`'s section-heading logic, showing two edited recipes as
+they'd actually render; a third comparing 3 randomly-picked recipes that have
+ingredient subsections, confirming `section` grouping renders correctly including
+one recipe mixing metric and US-cup units.
+
+**Full manual re-verification pass, twice:** after the two batch-1 bugs were
+found and fixed, did a complete (not sampled) second read of all 16 batch-1
+recipes against source specifically hunting for the same bug shapes — found no
+further instances in batch 1. Each subsequent batch (2 through 7) got the same
+immediate-re-read-before-continuing treatment as it was written, not deferred to
+session end.
+
+**Code:** `tags.json` and `site/data/tags.json` (both edited, kept identical).
+`.audit/rebuild_recipes/recipes_export.json` (new, 79 recipes, ~3100 lines,
+untracked). `.claude/skills/recipes-audit/SKILL.md` (new, untracked).
+
+**Entry point:** `.audit/rebuild_recipes/recipes_export.json` is the finished
+export — read it directly, or load the `recipes-audit` skill first if any further
+recipe-data work is needed (it documents the file map and the no-script rule).
+`tags.json`'s edits are already live in both copies.
+
+**Not measured:** the S9-equivalent step for recipes (Next Task 2 in S11's
+list — cross-checking this new export against live `recipes.json`) has still not
+started; this session only got as far as building and verifying the ground-truth
+export itself, one level short of that. `site/data/tags_en.json` (task c) and
+moving `density.js`'s table to JSON (task d) — both still not started. Nothing
+committed to git yet this session (all changes staged only at session-end time).
 
 ### Session 2026-08-27 (S11) — recipes.json rebuilt from Receptai.docx using the same manual method as tips (S8); 32 genuine source gaps flagged reader-facing; one true duplicate removed; recipes/tips JSON schema unified and a tags.json vocabulary audit done, all decided in a brainstorm session, nothing yet applied to live files
 

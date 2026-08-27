@@ -29,7 +29,8 @@
     "pana-cotta",
     "custard-cream",
     "pastry-base",
-    "component"
+    "component",
+    "mousse"
   ],
 
   "flavor_theme": [
@@ -97,7 +98,6 @@
     "flour-teff",
     "flour-bread-strong",
     "sugar",
-    "sugar-granulated",
     "sugar-brown",
     "sugar-powdered",
     "glucose-syrup",
@@ -137,14 +137,18 @@
     "shortcrust-pastry",
     "nut-paste",
     "praline-paste",
-    "food-coloring"
+    "food-coloring",
+    "banana",
+    "apple",
+    "coconut",
+    "raisins",
+    "creme-fraiche"
   ],
 
   "technique": [
     "tempering-chocolate",
     "tempering-eggs",
     "whipping-cream",
-    "creaming-butter",
     "cold-infusion",
     "hot-infusion",
     "decoction",
