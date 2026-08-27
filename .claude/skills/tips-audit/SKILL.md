@@ -110,6 +110,73 @@ hanging; if it does (even as a separate tip), the original isn't broken, it's ju
 series. If it doesn't — if the thread genuinely dies with no resolution anywhere in the
 corpus — that's a real defect.
 
+## The core lesson, extended (S10): a per-tip script pass misses mega-merges
+
+S9's `compare_master_vs_site.py` checked each MASTER tip against `tips.json` by exact match
+and substring containment. S10 found this **systematically under-reports how much content
+actually exists live** — when 5-7 originally separate posts get glued into one giant site
+entry (the known `tips.json[296]` and `[298]` mega-merges are 17,000+ characters each), a
+single MASTER tip's normalized body often fails the substring check even though the text is
+sitting right there, because of small formatting drift (emoji vs. `-` bullets, curly vs.
+straight quotes) accumulated across the whole merged block.
+
+**Concretely, S10 measured this**: an initial per-tip pass flagged 95 of 207 MASTER tips as
+"not located anywhere in tips.json." A direct phrase-search re-check (below) found 49 of
+those 95 were actually present, just glued to neighbors. The true not-located count was 46,
+not 95 — roughly half of the original "missing" list was a false negative from the matching
+method, not missing content.
+
+**The fix: direct phrase search, not exact/substring match, for anything the per-tip pass
+flags as NO_MATCH.** Method: pick one distinctive ~60-70 character sentence from roughly the
+middle of the MASTER tip's body (avoid the first line — it often echoes the title and isn't
+unique), then search for that literal substring across every site entry's `text` + `title`
+combined, no normalization. A hit is unambiguous proof the content exists somewhere in
+`tips.json`, regardless of which entry it's glued into. Do this for every tip a script
+reports NO_MATCH before treating it as content that needs to be recreated — it changes the
+fix-pass scope substantially (fewer tips need genuinely new text copied in; more just need
+re-splitting along existing, already-present content).
+
+## `tips_lt.json` is index-aligned with `tips.json` — do not re-translate what already exists
+
+**Verified S10**: `site/data/tips_lt.json[i]` is the Lithuanian translation of
+`site/data/tips.json[i]` at the *same array index*, for every `i`. This means every site
+index this project's audits map to a MASTER tip number on the EN side (a clean match, a
+wrong-split fragment, a wrong-merge glue point) applies identically to the LT side at that
+same index — the LT sentence is already sitting there, just as mis-boundaried as its EN
+counterpart, not missing or wrong.
+
+**Consequence for the fix pass**: for any MASTER tip whose EN content was located in
+`tips.json` (whether cleanly, split, or merged), the corresponding LT text should be
+**collected from `tips_lt.json` at the same index(es)**, never re-translated. Only the tips
+whose EN content is genuinely absent from `tips.json` need a fresh LT translation decision —
+and even then, check `tips_lt.json` separately first, since an EN gap and an LT gap are not
+guaranteed to be the same set of tips.
+
+This project has already redone the full LT translation at least twice (original pass, S6's
+"LT translation redo") plus multiple `tags_lt.json` dictionary fixes (S7, S8) — a further
+full re-translation during the tips.json fix pass would be a needless 5th pass over content
+that in most cases hasn't actually changed, only moved.
+
+## Scope drift still happens even with this skill loaded — watch for it actively
+
+S10 caught itself drifting into `tips.json`-scope questions (proposing fix decisions,
+opening AskUserQuestion about live-site edits) while the user's stated scope was still
+audit/verification only, on this exact skill loaded. **Loading this skill is not itself a
+guarantee against the drift it documents** — re-read the "Scope discipline" section above
+mid-session if a line of reasoning starts proposing edits to `tips.json`/`tips_lt.json`
+before the user has explicitly said the scope moved there.
+
+## Compute counts with a script, never by hand, even for "just add these two numbers"
+
+S10 made the same small arithmetic mistake twice in one session while reporting running
+totals across audit batches (once reporting 61 instead of the correct 55; once writing "9
+tips... actually 8" mid-sentence) — trivial by itself, but each error briefly wrote incorrect
+figures into `DECISIONS_review.md`, the file this whole audit trail exists to make
+trustworthy. **Any running total, count, or list-length claim going into the audit trail
+must be computed by a script call** (`len(set(...))`, not mental addition), even when the
+arithmetic looks simple enough to do in your head. The discipline this skill asks for on
+content claims ("cite the exact source line") applies equally to the bookkeeping.
+
 ## Known state as of S9 (2026-08-27) — don't re-discover these
 
 - **207/207 tip bodies and 207/207 tip titles in `MASTER_rebuilt_tips.md` have been checked**
@@ -123,11 +190,24 @@ corpus — that's a real defect.
   only in Tip 184). This is final — the source material itself is incomplete at these points,
   there's nothing left to fix, and the warning note is deliberately meant to ship to the live
   site as reader-facing text, not just an internal audit comment.
-- **The live-site fix (`tips.json`/`tips_lt.json`) has not started.** Comparing MASTER against
-  live tips.json found only 1 of 207 tips matches exactly (tip about "the 4 main tastes" —
-  `tips.json[279]`); 52 need re-merging/re-splitting to match MASTER's boundaries; 154 need
-  larger restructuring (including two known 7-tip mega-merges). This is the next real chunk
-  of work, and `.audit/DECISIONS_review.md` section 8 has the exact methodology and numbers.
+- **The live-site fix (`tips.json`/`tips_lt.json`) has not started, but all 207 MASTER tips
+  have now been manually cross-checked against live `tips.json`, one by one (S10,
+  `.audit/DECISIONS_review.md` sections 12-27)** — not just script-measured. Don't repeat
+  this cross-check from scratch; read sections 12-27 for the per-tip findings before
+  re-auditing. Summary: only 1 of 207 matches exactly (`tips.json[279]`); most of the rest
+  fall into two classes — **clean or truncated wrong-splits** (content correct but
+  fragmented, or fragmented AND missing the back half) and **wrong-merges with zero
+  separators** (2 to 7 originally-distinct posts glued into one entry, including the two
+  known 7-tip mega-merges at `tips.json[296]` and `[298]`, both confirmed S10 to contain
+  their full content, just unseparated). **The true "genuinely missing, needs new text
+  copied from MASTER" count is 46 of 207** (list: 7, 10, 20, 21, 22, 24, 26, 27, 39, 43, 48,
+  55, 66, 68, 71, 74, 76, 79, 80, 82, 85, 89, 94, 96, 98, 101, 104, 105, 109, 124, 125, 126,
+  127, 132, 134, 135, 136, 144, 148, 152, 153, 154, 171, 173, 177, 178) — section 27 has the
+  method and caveat (a heuristic phrase-search lower bound; could be slightly lower still).
+  The other ~161 need only re-splitting/re-merging of content that already exists live.
 - Tip 155 ("About Food Colorings") has a confirmed, already-decided fix (strip an off-topic
   war/charity passage, keep only the baking content) applied to MASTER but **not yet** to live
-  `tips.json`/`tips_lt.json`.
+  `tips.json`/`tips_lt.json`. **S10 found a second instance of the same class of defect**:
+  Tip 113 also carries an off-topic Ukraine war/charity paragraph ahead of its real content
+  (`tips.json[187]`) — no strip decision made yet for this one, needs the same kind of human
+  call as Tip 155 before the fix pass touches it (section 20).
