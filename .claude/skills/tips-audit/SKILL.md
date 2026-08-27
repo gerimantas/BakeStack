@@ -211,3 +211,63 @@ content claims ("cite the exact source line") applies equally to the bookkeeping
   Tip 113 also carries an off-topic Ukraine war/charity paragraph ahead of its real content
   (`tips.json[187]`) — no strip decision made yet for this one, needs the same kind of human
   call as Tip 155 before the fix pass touches it (section 20).
+
+## Exporting MASTER to JSON (`tips_export.json`) — S13 method, in progress
+
+S13 started building `.audit/rebuild/tips_export.json` — the tips-side equivalent of S12's
+`recipes_export.json` — by hand, one MASTER tip at a time, same no-script-writes-JSON rule as
+the recipes export. As of the session that added this section: **40 of 207 done** (Tips
+001–040), in numeric order, no batches skipped. Continue from the next unexported tip number;
+check the file's last entry rather than assuming a count.
+
+**Schema** (matches the recipes export's shape): `id` (`"tip-NNN"`, zero-padded), `title`
+(short — see below), `text`, `tags` (drawn only from `tags.json`'s vocabulary, same rule as
+recipes), `source_docx_lines` (`"START-END"`), `is_complete` (`false` only for the 4 known
+tips — see above).
+
+**Title vs. body first line — decided S13**: the MASTER heading (`## Tip NNN — Title (extra
+parenthetical)`) often carries a parenthetical suffix like "(Parts 1–3, incl. ...)" — this is
+provenance/series metadata, not part of the tip's own title. `title` gets the heading **with
+the parenthetical stripped**. The body's own first line, which is often (not always) the same
+title repeated in caps or mixed case as the social-media post's own headline, is **left
+in `text` unchanged** — same as how live `tips.json` already does it. Do not try to
+mechanically deduplicate title vs. first line; about a third of tips have a first line that
+diverges from the title (a real opening sentence, not an echo) and collapsing them on a
+pattern match would delete real content.
+
+**The source `.docx` extraction has an intermittent first-letter-drop bug**: some ALL-CAPS
+headers are missing their leading letter in `Patarimai_docx_source.txt` — e.g. "UGAR: HOW IT
+WORKS IN BATTER" (should be "SUGAR..."), "ugar: Caramelization and the Maillard reaction"
+(should be "Sugar..."). A `grep` for the exact expected header text will silently miss these;
+if a title search comes up empty, retry without the first letter, or grep for a distinctive
+phrase from later in the same line/paragraph instead.
+
+**MASTER's tip numbering order is not always the source's physical line order.** Confirmed
+once so far: Tip 019 ("10 Critical Mistakes...") sits physically *before* Tip 018 ("How Liquid
+Egg Whites Turn Into Foam...") in `Patarimai_docx_source.txt`, even though MASTER numbers them
+018 then 019 — MASTER's editorial order doesn't have to match the raw document's line order.
+**Always verify the actual physical line range for `source_docx_lines`** by locating each
+tip's own distinctive text in the source, rather than assuming tip N+1 starts immediately
+after tip N's line range ends — an assumed-contiguous range can silently point into the wrong
+tip's content when the numbering and physical order diverge.
+
+**Tag vocabulary gap-filling**: when a tip's natural tag (e.g. "lemon juice") has no exact
+`tags.json` ingredient slug, check what live `tips.json` already uses for the same concept
+before inventing a new slug or forcing a mismatch — e.g. "lemon juice" already maps to the
+existing `citric-acid` slug across multiple live entries, confirmed by grepping live tips with
+that ingredient. Reuse that existing convention rather than deciding fresh each time.
+
+**Mistake made and corrected this session — do not repeat**: a `node -e` one-liner was used to
+directly rewrite two tags (`lemon-juice` → `citric-acid`) inside `tips_export.json`. This
+violates the "no script writes to the JSON" rule from the top of this skill just as much for
+a tags-array tweak as it would for body text — **every edit to the export file, including a
+single-field correction found via a script, must go through a manual Edit call**, not a script
+that touches the file directly. A script may locate/verify a problem; only a human-reviewed
+Edit fixes it.
+
+**Known items still pending when the export reaches them** (don't re-decide, don't forget):
+the 4 incomplete tips' `[⚠ Note: ...]` warnings and `is_complete: false` must be copied
+verbatim from MASTER (already correctly done for Tip 021 in the 001–040 batch); Tip 155's
+war/charity passage must be stripped per the already-decided fix (section 1 above); **Tip 113
+still has no strip decision — ask the user when the export reaches it, same as Tip 155's
+question was originally asked**, don't strip it unilaterally or leave it in without asking.
