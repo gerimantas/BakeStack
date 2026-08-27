@@ -399,7 +399,10 @@ before investing in that.
   measured live tips.json against the verified ground truth: only 1 of 207 tips matches
   exactly. Full trail in `.audit/DECISIONS_review.md`. Nothing applied to
   tips.json/tips_lt.json this session — ground-truth-file-only scope, by explicit user
-  instruction. Full detail in Archive entry below.
+  instruction. Also built `.claude/skills/tips-audit/SKILL.md` (project-local, not global —
+  lives in this repo only) capturing the file map, checking method, scope-discipline lesson,
+  and known state, so the next tips.json session doesn't need re-explaining. Full detail in
+  Archive entry below.
 - 2026-08-26 (S8): tags_lt.json dictionary audit done — all 162 tag slugs confirmed
   translated (S7's "16 missing" was stale), 2 real phrasing mismatches fixed
   (heavy-whipping-cream, baking-soda). Full from-scratch tips.json structural audit:
@@ -545,13 +548,18 @@ flagged row.
 **Code:** `.audit/rebuild/MASTER_rebuilt_tips.md` (5 defects fixed + 4 warning notes added,
 in-place edits, no line-count change of consequence). `.audit/DECISIONS_review.md` (new —
 the full audit trail, 11 sections, every finding with exact source-line citations).
-`.audit/rebuild/series_index.json` (new — the series cross-reference index). No changes to
-`site/data/tips.json`, `site/data/tips_lt.json`, or any other live-site file.
-**Entry point:** Next session should read `.audit/DECISIONS_review.md` top to bottom (it is
-now the authoritative audit trail, supersedes reading `FINDINGS_tips_audit.md` alone — that
-file's "~155 structural problems" estimate is still directionally correct but was measured
-before this session's stricter exact-match methodology). `MASTER_rebuilt_tips.md` is now the
-verified, corrected ground truth to copy from when fixing `tips.json`/`tips_lt.json`.
+`.audit/rebuild/series_index.json` (new — the series cross-reference index).
+`.claude/skills/tips-audit/SKILL.md` (new — project-local skill capturing this session's
+method for future tips.json sessions). No changes to `site/data/tips.json`,
+`site/data/tips_lt.json`, or any other live-site file.
+**Entry point:** A new session doing tips.json audit/fix work should let the `tips-audit`
+skill (`.claude/skills/tips-audit/SKILL.md`, project-local) load automatically — it's the
+fast path into the file map, checking method, and known state without re-reading this whole
+Archive entry. For the full decision-by-decision trail, `.audit/DECISIONS_review.md` top to
+bottom (it is now the authoritative audit trail, supersedes reading `FINDINGS_tips_audit.md`
+alone — that file's "~155 structural problems" estimate is still directionally correct but
+was measured before this session's stricter exact-match methodology). `MASTER_rebuilt_tips.md`
+is now the verified, corrected ground truth to copy from when fixing `tips.json`/`tips_lt.json`.
 `.audit/rebuild/series_index.json` has the part-numbering/series data for generating
 navigation links, once the live-site fix work begins.
 **Not measured:** the live-site fix pass itself — 0% started. Whether the remaining ~184
