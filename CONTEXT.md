@@ -4,56 +4,49 @@
 active — static site in `site/`, live on GitHub Pages:
 **https://gerimantas.github.io/BakeStack/** (public repo, deploy via
 `.github/workflows/deploy.yml`, auto-updates on every push to master that
-touches `site/**`). 73 recipes / 310 tips, EN and LT kept in array-index
-sync on every data edit.
+touches `site/**`). 73 recipes / 310 tips live, EN and LT kept in
+array-index sync — but both live datasets are known to have structural
+defects; the fix passes for both are queued (Next tasks 2/3), not started.
 
-**Ground truth (`MASTER_rebuilt_tips.md`, 207 tips) is fully verified — AND
-all 207 tips have now been manually cross-checked against live
-`tips.json`, one by one (S10).** S9 verified MASTER against the raw docx
-source (207/207 body+title, 5 defects fixed, 4 tips flagged permanently
-incomplete). S10 then checked MASTER against the *live site*, by hand, tip
-by tip — not trusting S9's script-measured "1 exact / 52 partial / 154
-no_match" summary, which turned out to significantly undercount how much
-content actually exists live. **Corrected, precise numbers**: only 1 of 207
-matches exactly (`tips.json[279]`); ~161 of the other 206 have their
-content already present live, just fragmented across several site entries
-or glued into unseparated mega-merge blocks (the two known 7-tip
-mega-merges at `tips.json[296]`/`[298]` were confirmed to contain their
-FULL content, not missing any); only **46 of 207 are genuinely absent from
-tips.json** and need new text copied from MASTER during the fix pass. Full
-per-tip trail, every finding cited: `.audit/DECISIONS_review.md` sections
-12-27 (up from 11 at S9 close).
+**Recipes now have a ground-truth rebuild too, mirroring tips' S8 step.**
+`.audit/rebuild_recipes/MASTER_rebuilt_recipes.md` (79 entries, built S11
+from `Receptai.docx` by 5 blind subagents + a source-verified merge — zero
+seam conflicts, unlike tips' rebuild which had one) is now the equivalent of
+tips' `MASTER_rebuilt_tips.md`. **Not yet cross-checked against live
+`recipes.json`** — that's recipes' still-pending S9-equivalent step (Next
+task 2). 32 of 75 dish recipes are genuinely incomplete in the source itself
+(Instagram carousel-only steps, confirmed absent from `recipes.json` too,
+not an extraction defect) and now carry a reader-facing incomplete warning.
+One true duplicate (#26, word-for-word repost) removed; 3 recipes recur as
+real variants (San Sebastian ×3, Banana Tea Cake ×2) — visually verified via
+a published Artifact, variant-labeling still not applied to the file.
 
-**LT translation is NOT a blocker for the fix pass.** `tips_lt.json` was
-verified index-aligned with `tips.json` — the LT translation for any tip
-whose EN content was located already exists at the same array index(es),
-just as mis-boundaried as the EN side. No re-translation needed for the
-~161 tips with located EN content; only the 46 genuinely-missing tips (or
-fewer, pending a separate LT-side check) need a translation decision. This
-avoids what would have been a 5th full LT translation pass for this
-project.
+**A recipes+tips JSON schema was unified in a brainstorm session, nothing
+applied yet.** Full detail and every decision: `.audit/PLAN_recipes_json_work.md`.
+Covers: prefixed-string IDs (`recipe-004`/`tip-001`), shared fields both
+future exports will use, a `tags.json` vocabulary audit (found real gaps —
+`mousse` category; `banana`/`apple`/`coconut`/`raisins`/`creme-fraiche`
+ingredients — and real duplicates to collapse — `sugar-granulated`→`sugar`,
+`creaming-butter`→`creaming-method`), the discovery that `findRelatedTips()`
+already exists in `site/js/app.js` (so the "need a cross-reference field"
+framing was wrong — the real gap is vocabulary consistency), and a new task
+to build `site/data/tags_en.json` (English UI currently shows raw slugs,
+no label dictionary exists for EN, only `tags_lt.json`).
 
-**🚩 Two human decisions still needed before the fix pass, not mechanical:**
-1. Tip 155 ("About Food Colorings") ships live with an off-topic
-   Bucha/charity war passage ahead of the real content. Decision already
-   made (strip it, keep only "Do you use food colorings?" onward), applied
-   to MASTER, **not yet** to live `tips.json`/`tips_lt.json`.
-2. **New this session**: Tip 113 ("ALT. Pastry Chef's Notes") carries a
-   second, different Ukraine war/charity passage (`tips.json[187]`) ahead
-   of its salt-varieties content — same class of issue as Tip 155, no
-   strip decision made yet.
-Also still open from S9: `tips.json` indices 305-309 (Stabilizing Whipped
-Cream, Chocolate Drips, Flavor Pairing: Strawberry + 2 sub-entries) have no
-match anywhere in the 207-tip rebuild — human calls, not re-investigated
-this session.
+**Tips-side ground truth (`MASTER_rebuilt_tips.md`, 207 tips) remains fully
+verified against both raw source (S9) and live `tips.json` (S10) — nothing
+changed there this session.** Precise scope for its fix pass: only 1 of 207
+matches exactly; ~161 have their content already live, just needing
+re-split/re-merge; 46 of 207 are genuinely absent and need new text copied
+in. Full trail: `.audit/DECISIONS_review.md` sections 12-27.
 
-**`tips-audit/SKILL.md` updated with S10's method** — the mega-merge false-
-negative pattern (a per-tip exact/substring check misses content sitting in
-a large glued block; direct phrase search catches it), the LT index-align
-fact, and a reminder to compute all audit-trail counts with a script, never
-by hand (this session made that mistake twice, caught both times).
+**🚩 Two human decisions still needed before the tips fix pass, not
+mechanical:** Tip 155's already-decided war/charity strip (applied to
+MASTER, not yet to live `tips.json`), and Tip 113's newly-found second
+war/charity passage (no strip decision made yet). Also open: `tips.json`
+indices 305-309 have no match anywhere in the 207-tip rebuild.
 
-Session S10 closed 2026-08-27.
+Session S11 closed 2026-08-27.
 
 ## What this project is
 BakeStack: a recipe/pastry-tips database and calculator, starting from
@@ -393,6 +386,21 @@ before investing in that.
   a schema now.
 
 ## Done Log
+- 2026-08-27 (S11): `MASTER_rebuilt_recipes.md` built (79 entries) from
+  `Receptai.docx` via the same blind-subagent-rebuild method S8 used for
+  tips — zero seam conflicts found. 32 genuinely-incomplete recipes flagged
+  reader-facing (source-only gap, verified absent from live `recipes.json`
+  too). 1 true duplicate removed (#26), 3 recipes confirmed as real variants
+  not duplicates (visually verified via a published Artifact). Brainstorm
+  session unified a recipes+tips JSON schema and audited `tags.json`
+  vocabulary against both MASTER files (gaps + duplicates found, all
+  decided) — full plan in `.audit/PLAN_recipes_json_work.md`, nothing
+  applied to any live file yet.
+- 2026-08-27 (S10): all 207 MASTER tips manually cross-checked against live
+  `tips.json` — corrected S9's script-estimated fix scope from "154 missing"
+  to "46 genuinely missing," confirmed `tips_lt.json` index-aligned (no
+  re-translation needed for ~161 tips). `tips-audit/SKILL.md` updated with
+  the mega-merge false-negative lesson.
 - 2026-08-27 (S9): `MASTER_rebuilt_tips.md` fully audited (207/207 body text + 207/207
   titles checked against raw docx source) and corrected — 5 defects fixed (1 false anomaly
   note, 4 fabricated/dropped "Part N" titles), 4 genuinely-incomplete tips flagged with a
@@ -413,68 +421,166 @@ before investing in that.
   wrong-split problem plus 8 real content-loss spots and 1 off-topic passage (war/charity
   content) shipping live. Nothing fixed yet — findings only, in FINDINGS_tips_audit.md +
   .audit/. Full detail in Archive entry below.
-- 2026-08-26 (S7): Full data audit found and fixed 13 previously-undocumented
-  bugs (section-grouping loss on 43/73 recipes, cross-file duplicate, typo
-  regressions, leftover conversion glyphs, empty tips, mis-parsed lines) plus
-  several more found while testing fixes (cost-estimate block removed,
-  category mis-inference, duplicate recipe title, tag substring-matching
-  bug). Self-inflicted LT tag corruption caught and reverted same session.
-  Disproved S6's "QA confirmed" claim — QA Compare only checks titles, never
-  content. Nav polish (hamburger position, mobile auto-close, About page)
-  also done this session. Full detail in Archive entry below and `FIX_PLAN.md`.
-- 2026-08-25 (S6): LT translation fully redone (73/312, matches EN exactly),
-  5 original-.docx typos fixed at the source, 6 LT glossary-consistency
-  fixes, nav sticky bug + nav lang-switch bug fixed, QA tool wired into the
-  deployed site, GitHub Pages deploy live via GitHub Actions. Full detail
-  in Archive entry below.
+(Earlier sessions S1–S8: full detail in `## Archive` below — S7 full data
+audit + 13 bugs fixed, S6 LT translation redo + GitHub Pages deploy live,
+and further back.)
 
 ## Next tasks
-1. Fix live `tips.json`/`tips_lt.json` against the now-verified ground truth
-   `.audit/rebuild/MASTER_rebuilt_tips.md` — plan/evidence:
-   `.audit/DECISIONS_review.md` sections 12-27 (S10's full per-tip audit
-   trail, supersedes S9's section 8 script-measured numbers — those were
-   undercounting how much content exists live; see section 27 for the
-   corrected method). Precise scope: only 1 of 207 tips matches exactly;
-   ~161 have their content already live, just needing re-split/re-merge
-   along MASTER's boundaries (including the two 7-tip mega-merges at idx
-   296/298, both confirmed to hold their FULL content); only 46 of 207 are
-   genuinely absent and need new text copied in (exact list: section 27).
-   LT text for the ~161 can be collected from `tips_lt.json` at the same
-   array indices — no re-translation needed there (section 28). Suggested
-   order: (a) two human decisions first — Tip 155's already-decided
-   war/charity strip (text in section 1) AND Tip 113's newly-found second
-   war/charity passage (section 20, no decision yet) — plus resolve the
-   idx 305-309 unknown-origin entries; (b) copy the tips MASTER already
-   fixed titles for (042, 066, 174, 180) and the 4 flagged-incomplete ones
-   (021, 118, 172, 183 — copy the warning note too); (c) unpack the two
-   7-tip mega-merges (idx 296, 298) plus the smaller 3-tip merges found in
-   S10 (idx 300, 302, 304); (d) work through the rest using MASTER as the
-   copy source, LT from `tips_lt.json` same index.
-2. **New, user-requested (2026-08-27, end of S10):** once the tips.json fix
-   pass is scoped/underway, apply the same manual per-item audit method to
-   `recipes.json`/`recipes_lt.json` against their source — recipes have
-   never been audited this way (S7/S8 explicitly scoped audits to tips
-   only). Use `.claude/skills/tips-audit/SKILL.md`'s method (direct
-   phrase-search over exact-match, script counts verified not hand-added,
-   watch for mega-merge false negatives) as the template — a parallel
-   `recipes-audit` skill may be worth creating once the method is proven
-   again on a second dataset.
-3. Strengthen QA Compare to do a real content diff (ingredients/steps/body
+1. Apply the JSON schema/vocabulary decisions from S11's brainstorm session —
+   plan: `.audit/PLAN_recipes_json_work.md` (5 tasks, all decided, none
+   applied yet). Suggested order per the plan: (a) edit `tags.json` first
+   (drop `sugar-granulated` and `creaming-butter`, add `mousse`/`banana`/
+   `apple`/`coconut`/`raisins`/`creme-fraiche`) since both JSON exports
+   depend on a stable vocabulary; (b) export
+   `.audit/rebuild_recipes/MASTER_rebuilt_recipes.md` (79 entries) to a new
+   JSON file per the agreed shared schema (`id` as `recipe-NNN`,
+   `source_docx_lines`, `is_complete`, `variant_of`/`variant_label` for the
+   San Sebastian ×3 and Banana Tea Cake ×2 groups — labeling those "Variant N
+   of M" still not applied to the MASTER file itself either); (c) build
+   `site/data/tags_en.json` (all 164 slugs, matching `tags_lt.json`'s shape)
+   and wire it into `tagLabel()`/`anyTagLabel()` in `site/js/data.js`; (d)
+   move `site/js/density.js`'s `INGREDIENT_DENSITY` table into
+   `site/data/density.json`, keeping `densityFor()`'s matching logic in JS —
+   trace exact call sites in `data.js`/`index.html` first, not done yet.
+2. Once (1) ships `MASTER_rebuilt_recipes.md` as JSON, do the S9-equivalent
+   step recipes never got: cross-check that JSON against live
+   `recipes.json`/`recipes_lt.json` entry by entry, the same manual method
+   S9→S10 used for tips (direct phrase-search for anything a script flags
+   NO_MATCH, watch for mega-merge false negatives — see
+   `.claude/skills/tips-audit/SKILL.md`). Not started — S11 only built the
+   ground truth (the S8-equivalent step), same as S8 did for tips before S9
+   checked it.
+3. Fix live `tips.json`/`tips_lt.json` against the already-verified ground
+   truth `.audit/rebuild/MASTER_rebuilt_tips.md` — plan/evidence:
+   `.audit/DECISIONS_review.md` sections 12-27. Precise scope: only 1 of 207
+   tips matches exactly; ~161 have their content already live, just needing
+   re-split/re-merge along MASTER's boundaries (including the two 7-tip
+   mega-merges at idx 296/298, both confirmed to hold their FULL content);
+   only 46 of 207 are genuinely absent and need new text copied in (exact
+   list: section 27). LT text for the ~161 can be collected from
+   `tips_lt.json` at the same array indices — no re-translation needed there
+   (section 28). Suggested order: (a) two human decisions first — Tip 155's
+   already-decided war/charity strip (text in section 1) AND Tip 113's
+   newly-found second war/charity passage (section 20, no decision yet) —
+   plus resolve the idx 305-309 unknown-origin entries; (b) copy the tips
+   MASTER already fixed titles for (042, 066, 174, 180) and the 4
+   flagged-incomplete ones (021, 118, 172, 183 — copy the warning note too);
+   (c) unpack the two 7-tip mega-merges (idx 296, 298) plus the smaller 3-tip
+   merges found in S10 (idx 300, 302, 304); (d) work through the rest using
+   MASTER as the copy source, LT from `tips_lt.json` same index.
+4. Once both fix passes (2 and 3) are live, archive the old error-filled
+   `recipes.json`/`recipes_lt.json`/`tips.json`/`tips_lt.json` — plan:
+   `.audit/PLAN_recipes_json_work.md` task 4. Blocked until then; nothing to
+   archive yet.
+5. Strengthen QA Compare to do a real content diff (ingredients/steps/body
    text) — `FIX_PLAN.md` step 0, still not done. Would catch this class of
    bug automatically going forward.
-4. Not yet scoped: whether/how to insert the `series_index.json` cross-
+6. Not yet scoped: whether/how to insert the `series_index.json` cross-
    reference data as reader-visible "Part X of Y" navigation text — into
    `MASTER_rebuilt_tips.md` body content, into the eventual
    `tips.json`/`tips_lt.json` fix, or both. Format/scope decision deferred
    by user (S9) — see `.audit/DECISIONS_review.md` section 10.
-5. Optional: add real photos later (`image` field already reserved
+7. Optional: add real photos later (`image` field already reserved
    null on every recipe/tip record per the original plan).
-6. Optional: expand `site/js/density.js`'s ~30-entry density table if a
-   shopping-list unit still shows unmerged for a common ingredient — not
-   exhaustively checked against all 41 distinct volume-unit ingredient
-   names in the data, only spot-checked (cornstarch, baking soda).
 
 ## Archive
+
+### Session 2026-08-27 (S11) — recipes.json rebuilt from Receptai.docx using the same manual method as tips (S8); 32 genuine source gaps flagged reader-facing; one true duplicate removed; recipes/tips JSON schema unified and a tags.json vocabulary audit done, all decided in a brainstorm session, nothing yet applied to live files
+
+**Scope, and how it was set:** user asked to repeat the tips.json audit method
+(S8/S9) on `recipes.json`/`recipes_lt.json` — this session did the S8 half
+(build a MASTER ground-truth file from raw source), not the S9 half (cross-
+check MASTER against live `recipes.json`). User corrected direction twice:
+once when Claude compared the new rebuild against `recipes.json` instead of
+doing an independent extraction from `Receptai.docx` ("kartuoju darome tokį
+patį duomenų ištraukimą naują... Kaip man nesupratai?"), once when Claude
+started implementing a JSON export mid-brainstorm instead of just answering a
+question ("Kodėl skubi daryti. Mes dar neaptarėm visų klausimų."). Both times
+work stopped and restarted from the corrected understanding.
+
+**Recipe rebuild (mirrors S8's tips method):** `Receptai.docx` → raw text via
+a manual zipfile+XML Python script (pandoc unavailable in this environment,
+same tooling gap S8 hit) → `.audit/rebuild_recipes/Receptai_docx_source.txt`
+(3633 lines). 5 subagents each read an overlapping ~800-line slice, blind to
+`recipes.json`/`Receptai.md`/any parser script, identified recipe boundaries
+by meaning not mechanical splitting → `batch1-5_rebuilt.md`. A merge agent
+cross-checked every seam directly against the raw source (not just batch
+agents' self-reports) → `.audit/rebuild_recipes/MASTER_rebuilt_recipes.md`.
+
+**Result: 80 entries** (75 dish recipes + 5 technique/educational, marked
+`[TECHNIQUE, NOT A DISH]`). Unlike S8's tips rebuild (which had a fabricated
+"Part 2" title caught only by S9's later audit), the merge agent found **zero
+wording conflicts at any of 7 flagged + 2 unflagged seams** — every duplicate
+overlap was word-for-word identical between adjacent batches.
+
+**32 of 75 recipes are genuinely incomplete in the source itself** — not a
+docx-extraction defect. Instructions stop mid-recipe (usually after the first
+sub-component) while ingredient lists for all sub-components are given in
+full; the source text itself says "swipe the carousel" / "see continuation in
+photo carousel" at two of these points, confirming the missing steps existed
+only as Instagram carousel images, never as text. Verified this isn't fixable
+from `recipes.json` either — spot-checked "Sour Cherry Confit Cheesecake":
+live site has the identical 4-step cutoff, no fuller version exists anywhere
+in the repo. Per user's explicit request, added a reader-facing `> ⚠️ **This
+recipe is incomplete.**` warning naming the exact missing component to all 32
+(2 done directly, 30 via 2 sequential subagents — sequential specifically to
+avoid concurrent-edit conflicts on one file). MERGE NOTES' own count ("38")
+was a miscount against its own 32-item list — corrected in the file.
+
+**3 recipes recur multiple times in the source** — verified visually (an
+Artifact was built and published showing raw-vs-MASTER side by side for all
+of these plus 2 clean examples): Mandarin-Passionfruit Cupcakes (#4/#26,
+word-for-word identical repost — **#26 removed** per user decision, 80→79
+entries, original numbering kept stable) — San Sebastian Basque Cheesecake
+(#16/#62/#80, three genuinely different proportion variants, one carrying an
+unrelated Ukraine-charity paragraph) — Banana Tea Cake with Dates and Nuts
+(#15/#70, base recipe + a later repost adding two more components). The
+variant-labeling ("Variant 1 of 3" etc.) user asked for on the latter two
+groups is **planned but not yet applied** — deferred into the plan file below
+when the user said "kol kas šį darbą atidėdam" mid-task.
+
+**Brainstorm session (JSON schema unification, recipes+tips):** covered in
+`.audit/PLAN_recipes_json_work.md` — nothing here touches live files yet.
+Key decisions: (1) prefixed string IDs (`recipe-004`/`tip-001`), not bare
+numbers — self-describing without a paired `type` field; (2) shared fields
+across both future JSON exports: `id`, `title`, `tags`, `source_docx_lines`,
+`is_complete`, `variant_of`/`variant_label`; (3) a full vocabulary audit of
+`tags.json` (28/42/60/34 across 4 axes) against both MASTER files by a
+read-only research agent found real gaps (missing category `mousse`; missing
+ingredients `banana`/`apple`/`coconut`/`raisins`/`creme-fraiche`, all cited
+against specific recipes/tips) and real duplicates (`sugar-granulated` vs
+`sugar`, `creaming-butter` vs `creaming-method` — both confirmed
+interchangeable in source text, decided to drop the redundant one each;
+`caramelizing-sugar` vs `caramelization` — decided NOT a duplicate, same
+shape as the pre-existing `vanilla` split between flavor_theme/ingredient,
+kept both); (4) discovered `site/js/app.js`'s `findRelatedTips()` already
+implements recipe→tip cross-referencing via `tags[]` overlap — the earlier
+"we need a cross-reference field" framing was wrong, the real gap is
+vocabulary consistency, which the audit above addresses; (5) found English UI
+has no label dictionary at all (`tagLabel()`/`anyTagLabel()` in `data.js` fall
+straight to the raw slug for English, only `tags_lt.json` exists) — new task
+5, build `site/data/tags_en.json` for all 164 slugs, matching `tags_lt.json`'s
+structure; (6) explicitly rejected adding empty/reserved placeholder fields
+(calories, price, allergens, cross-ref, ingredient-slug) to either future JSON
+export now — no field until it's actually being built and populated.
+
+**Code:** `.audit/rebuild_recipes/` (new dir: `Receptai_docx_source.txt`,
+`batch1-5_rebuilt.md`, `MASTER_rebuilt_recipes.md` — 13,152 lines total, all
+untracked), `.audit/PLAN_recipes_json_work.md` (new, 274 lines, untracked).
+No `site/`, `recipes.json`, `tags.json`, or any live file touched.
+
+**Entry point:** read `.audit/rebuild_recipes/MASTER_rebuilt_recipes.md`
+directly (79 numbered entries, `## MERGE NOTES` section at the end has full
+seam/duplicate/gap bookkeeping); `.audit/PLAN_recipes_json_work.md` for the
+JSON-export decisions to apply next.
+
+**Not measured:** MASTER_rebuilt_recipes.md has NOT been cross-checked
+against live `recipes.json` the way S9 did for tips (that's the S9-equivalent
+step, still to come) — this session only built the ground truth, same as S8
+did for tips. None of the 5 planning-file decisions (variant labels, tags.json
+edits, tags_en.json, JSON exports, docx-line references for all 80 entries)
+have been applied to any file yet — all recorded as decided-but-not-done in
+the plan file.
 
 ### Session 2026-08-27 (S10) — all 207 MASTER tips manually cross-checked against live tips.json; corrected the fix-pass scope from S9's script estimate; tips_lt.json confirmed index-aligned (no re-translation needed); tips-audit skill updated
 
