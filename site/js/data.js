@@ -149,39 +149,40 @@ function recipePrice(recipe, multiplier) {
 
 /** Aggregates ingredients across multiple recipes (each with its own multiplier) into one
  * shopping list. A shopping list needs ONE unit per ingredient — you buy flour by weight,
- * not by the teaspoon — so tsp/tbsp/cup entries are converted to grams via the density
- * table in density.js (ml value × g/ml density) whenever that ingredient's density is
- * known, landing in the same bucket as any gram entries of the same ingredient from other
- * recipes. When density isn't known for that ingredient, the entry keeps its original
- * unit (tsp/tbsp/g/etc.) rather than showing a meaningless raw ml figure — still separate
- * from a same-name gram entry, since without density there's no correct way to combine
- * them, but at least not misleadingly relabeled as "ml". */
-function buildShoppingList(items) {
+ * not by the teaspoon — so a tsp/tbsp entry that already carries a gram conversion
+ * (amount_conv/unit_conv, computed when the recipe was authored) is grouped and summed in
+ * grams alongside any plain gram entries of the same ingredient from other recipes. An
+ * entry with no unit at all (a count — "1 egg", "2 lemons") is grouped and summed as
+ * pieces. Anything else (no numeric amount, or a unit with no known gram equivalent) keeps
+ * its original unit and is only combined with an exact same-name-and-unit match. */
+function buildShoppingList(items, pieceUnitLabel = "pcs") {
   // items: [{ recipe, multiplier }]
   const map = new Map();
   for (const { recipe, multiplier } of items) {
     for (const ing of recipe.ingredients) {
-      const nameKey = ing.name.toLowerCase().trim();
+      // Collapse hyphen/space variation ("all-purpose flour" vs "all purpose flour") so
+      // the same ingredient written inconsistently across recipes still groups together —
+      // the source docx isn't consistent about this, e.g. recipe-010 drops the hyphen.
+      const nameKey = ing.name.toLowerCase().trim().replace(/[\s-]+/g, " ");
       const isRange = ing.amount != null && typeof ing.amount === "object" && "min" in ing.amount;
       if (ing.amount == null || (typeof ing.amount !== "number" && !isRange)) {
         const key = `${nameKey}::text`;
-        if (!map.has(key)) map.set(key, { name: ing.name, unit: null, amount: null, isText: true });
+        if (!map.has(key)) map.set(key, { id: key, name: ing.name, unit: null, amount: null, isText: true });
         continue;
       }
-      const density = ing.amount_ml != null ? densityFor(ing.name) : null;
-      const useGrams = density != null;
-      const unit = useGrams ? "g" : (ing.unit || "");
+      const hasConv = ing.amount_conv != null && ing.unit_conv != null;
+      const unit = hasConv ? ing.unit_conv : (ing.unit || pieceUnitLabel);
       const key = `${nameKey}::${unit}`;
-      const base = useGrams ? ing.amount_ml * density : ing.amount;
+      const base = hasConv ? ing.amount_conv : ing.amount;
       // Ranges collapse to their midpoint for shopping-list totals — a pack is bought either way.
       const baseNum = typeof base === "number" ? base : (base.min + base.max) / 2;
       const scaled = baseNum * multiplier;
       if (map.has(key)) {
         const existing = map.get(key);
         existing.amount += scaled;
-        existing.isApprox = existing.isApprox || useGrams;
+        existing.isApprox = existing.isApprox || hasConv;
       } else {
-        map.set(key, { name: ing.name, unit, amount: scaled, isText: false, isApprox: useGrams });
+        map.set(key, { id: key, name: ing.name, unit, amount: scaled, isText: false, isApprox: hasConv });
       }
     }
   }

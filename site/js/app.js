@@ -118,9 +118,8 @@ const NAV_LINKS = [
   { href: "#/recipes", key: "navRecipes", match: (r) => r.name === "recipes" || r.name === "recipe" },
   { href: "#/tips", key: "navTips", match: (r) => r.name === "tips" || r.name === "tip" },
   { href: "#/favorites", key: "navFavorites", match: (r) => r.name === "favorites" },
+  { href: "#/shopping", key: "navShopping", match: (r) => r.name === "shopping" },
   { href: "#/about", key: "navAbout", match: (r) => r.name === "about" },
-  // Shopping list hidden from nav for now — route still works (linked from recipe pages), just not
-  // promoted in the main menu yet.
 ];
 
 function themeIconSvg(theme) {
@@ -143,7 +142,7 @@ function renderNav(lang, route) {
         <div class="search-dropdown" id="search-dropdown" data-open="false" role="listbox"></div>
       </div>
       <nav aria-label="Primary">
-        <ul class="nav__links" id="nav-links">${NAV_LINKS.map((l) => `<li><a class="nav__link" href="${l.href}"${l.match(route) ? ' aria-current="page"' : ""}>${t(lang, l.key)}</a></li>`).join("")}<li><a class="nav__link nav__link--external" href="tools/qa-compare.html" target="_blank" rel="noopener">QA</a></li></ul>
+        <ul class="nav__links" id="nav-links">${NAV_LINKS.map((l) => `<li><a class="nav__link" href="${l.href}"${l.match(route) ? ' aria-current="page"' : ""}>${t(lang, l.key)}</a></li>`).join("")}</ul>
       </nav>
       <div class="nav__actions">
         <div class="lang-toggle" role="group" aria-label="${t(lang, "langToggle")}">
@@ -155,7 +154,6 @@ function renderNav(lang, route) {
     </div>
     <div class="nav__sheet" id="nav-sheet" data-open="false">
       ${NAV_LINKS.map((l) => `<a class="nav__link" href="${l.href}"${l.match(route) ? ' aria-current="page"' : ""}>${t(lang, l.key)}</a>`).join("")}
-      <a class="nav__link nav__link--external" href="tools/qa-compare.html" target="_blank" rel="noopener">QA</a>
     </div>`;
 }
 
@@ -385,8 +383,10 @@ function recipeCard(recipe, lang, query) {
 
 function tipCard(tip, lang, query) {
   const snippet = tip.text.replace(/\s+/g, " ").slice(0, 140);
+  const fav = isFavorite("tip", tip.id);
   return `
   <a class="tip-card" href="#/tip/${tip.id}">
+    <button class="fav-btn tip-card__fav" data-fav-tip="${tip.id}" aria-pressed="${fav}" aria-label="${t(lang, fav ? "unsaveFavorite" : "saveFavorite")}">${iconHeart(fav)}</button>
     <h3>${highlight(tip.title, query)}</h3>
     <p>${highlight(snippet, query)}…</p>
   </a>`;
@@ -710,9 +710,21 @@ function renderFavoritesView(lang) {
   return `
   <div class="container">
     <div class="page-head"><h1>${t(lang, "navFavorites")}</h1></div>
-    ${recipes.length ? `<h2 style="font-size:var(--text-lg);margin-bottom:var(--space-md)">${t(lang, "navRecipes")}</h2><div class="recipe-grid">${recipes.map((r) => recipeCard(r, lang, "")).join("")}</div>` : ""}
-    ${tips.length ? `<h2 style="font-size:var(--text-lg);margin:var(--space-2xl) 0 var(--space-md)">${t(lang, "navTips")}</h2><div class="tip-list">${tips.map((tp) => tipCard(tp, lang, "")).join("")}</div>` : ""}
+    ${recipes.length ? `<h2 style="font-size:var(--text-lg);margin-bottom:var(--space-md)">${t(lang, "navRecipes")} <span style="color:var(--color-muted);font-weight:400">(${recipes.length})</span></h2><div class="recipe-grid">${recipes.map((r) => recipeCard(r, lang, "")).join("")}</div>` : ""}
+    ${tips.length ? `<h2 style="font-size:var(--text-lg);margin:var(--space-2xl) 0 var(--space-md)">${t(lang, "navTips")} <span style="color:var(--color-muted);font-weight:400">(${tips.length})</span></h2><div class="tip-list">${tips.map((tp) => tipCard(tp, lang, "")).join("")}</div>` : ""}
   </div>`;
+}
+
+function renderShoppingListItem(item) {
+  const checked = isChecked(item.id);
+  const amtHtml = item.isText ? "" : (item.isApprox ? "~" : "") + formatAmount(item.amount) + (item.unit ? " " + esc(item.unit) : "");
+  return `<li class="${checked ? "shopping-item--checked" : ""}">
+    <label class="shopping-item__label">
+      <input type="checkbox" class="shopping-item__check" data-check-id="${esc(item.id)}" ${checked ? "checked" : ""}>
+      <span>${esc(item.name)}</span>
+    </label>
+    <span class="amt">${amtHtml}</span>
+  </li>`;
 }
 
 function renderShoppingView(lang) {
@@ -722,10 +734,20 @@ function renderShoppingView(lang) {
   const pickedItems = pickedIds
     .map((id) => ({ recipe: getRecipeById(lang, id), multiplier: appState.shoppingPicks[id] }))
     .filter((x) => x.recipe);
-  const list = pickedItems.length ? buildShoppingList(pickedItems) : [];
+  const pieceUnit = t(lang, "pieceUnit");
+  const list = pickedItems.length ? buildShoppingList(pickedItems, pieceUnit) : [];
+
+  const totalWeightG = list.reduce((sum, item) => (item.unit === "g" || item.unit === "ml") ? sum + item.amount : sum, 0);
+  const totalPieces = list.reduce((sum, item) => item.unit === pieceUnit ? sum + item.amount : sum, 0);
+  const summaryHtml = list.length ? `
+    <div class="shopping-list-panel__summary">
+      <span>${t(lang, "shoppingListItemCount", list.length)}</span>
+      ${totalWeightG > 0 ? `<span>${Math.round(totalWeightG)} g</span>` : ""}
+      ${totalPieces > 0 ? `<span>${formatAmount(totalPieces)} ${esc(pieceUnit)}</span>` : ""}
+    </div>` : "";
 
   const listHtml = list.length
-    ? `<ul>${list.map((item) => `<li><span>${esc(item.name)}</span><span class="amt">${item.isText ? "" : (item.isApprox ? "~" : "") + formatAmount(item.amount) + (item.unit ? " " + esc(item.unit) : "")}</span></li>`).join("")}</ul>`
+    ? `${summaryHtml}<ol>${list.map((item) => renderShoppingListItem(item)).join("")}</ol>`
     : `<p style="color:var(--color-muted);font-size:var(--text-sm)">${t(lang, "shoppingListEmpty")}</p>`;
 
   return `
@@ -873,6 +895,11 @@ function wireNavEvents() {
           if (newItem) location.hash = `#/${route.name}/${newItem.id}`;
         }
       }
+      // Same id-mismatch problem as above, but for ids parked in localStorage (favorites,
+      // shopping-list picks) rather than the URL — remap every stored recipe id from the
+      // old language's array position to the new language's id before switching, or a
+      // favorited/picked recipe silently disappears from its list in the new language.
+      remapStoredRecipeIdsForLangSwitch(appState.lang, newLang);
       setLang(newLang);
       render();
     });
@@ -921,6 +948,21 @@ function wireEvents(route) {
       e.preventDefault(); e.stopPropagation();
       const id = btn.dataset.favRecipe;
       const nowFav = toggleFavorite("recipe", id);
+      // On the Favorites page itself, un-favoriting must re-render — the card's whole
+      // reason for being there just disappeared, unlike on Recipes/Search/detail pages
+      // where the heart only toggles state and the card stays visible either way.
+      if (route.name === "favorites") { render(); return; }
+      btn.setAttribute("aria-pressed", String(nowFav));
+      btn.innerHTML = iconHeart(nowFav);
+    });
+  });
+
+  document.querySelectorAll("[data-fav-tip]").forEach((btn) => {
+    btn.addEventListener("click", (e) => {
+      e.preventDefault(); e.stopPropagation();
+      const id = btn.dataset.favTip;
+      const nowFav = toggleFavorite("tip", id);
+      if (route.name === "favorites") { render(); return; }
       btn.setAttribute("aria-pressed", String(nowFav));
       btn.innerHTML = iconHeart(nowFav);
     });
@@ -1024,6 +1066,12 @@ function wireShoppingView() {
   document.getElementById("clear-list-btn")?.addEventListener("click", () => {
     clearPicks();
     render();
+  });
+  document.querySelectorAll(".shopping-item__check").forEach((cb) => {
+    cb.addEventListener("change", () => {
+      const nowChecked = toggleChecked(cb.dataset.checkId);
+      cb.closest("li").classList.toggle("shopping-item--checked", nowChecked);
+    });
   });
   document.getElementById("copy-list-btn")?.addEventListener("click", async () => {
     const lang = appState.lang;
