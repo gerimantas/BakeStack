@@ -4,610 +4,167 @@
 active — static site in `site/`, live on GitHub Pages:
 **https://gerimantas.github.io/BakeStack/** (public repo, deploy via
 `.github/workflows/deploy.yml`, auto-updates on every push to master that
-touches `site/**`).
+touches `site/**`). **28 commits are unpushed — the live site is still on
+S7-era content.** Everything below is committed locally and visible only in
+local preview.
 
-**EN recipes are now the verified 79-recipe set, live locally (committed,
-not yet pushed to GitHub).** `recipes.json`/`site/data/recipes.json` were
-swapped from the old 73-recipe file (which had at least one confirmed
-content bug — two recipes concatenated into one) to
-`.audit/rebuild_recipes/recipes_export.json`, after a manual title-by-title
-cross-check against the old live file (the S9-equivalent step Next Task 2
-used to ask for — now done for recipes). Old file archived to
-`.audit/archive/recipes_EN_pre_S13.json`. tsp/tbsp ingredients now show a
-computed gram amount as primary with the original spoon measure as a
-subscript; a `categoryGroup` bug (Type filter silently never worked for EN
-visitors, LT-only field) was found and fixed; a new Kind filter
-(Recipe/Technique) distinguishes the 8 technique write-ups from the 71 real
-recipes. `tags_en.json` and `density.json` (S11's remaining plan tasks) are
-also done and live.
+**Both languages are fully translated and live: 79/79 recipes (S17) and
+207/207 tips (S19).** No native speaker has read either set end to end — that
+3rd QA layer is still open for both.
 
-**LT recipes are NOT swapped and the LT toggle is hidden site-wide.**
-`recipes_lt.json` still holds the old 73-recipe set in the old order — no
-translation exists yet for the new 79-recipe set. `state.js` forces
-`appState.lang = "en"` regardless of stored/browser preference until a
-matching LT translation is built. Tips' EN/LT (still the old 310-entry
-files, unaffected by any of this) were deliberately left visible.
+**Tips and recipes now key off a stable `id` in their JSON** (`tip-001`…,
+`recipe-001`…, identical across EN and LT). Until S19, `data.js` overwrote
+every id at load with `slugify(title, index)`, which made ids differ between
+languages and produced visibly wrong card numbers. Data files are the source
+of truth for ids now; `slugify` is unused but left in place.
 
-**Tips JSON export finished — `.audit/rebuild/tips_export.json` is now
-207/207.** Built by hand, one tip at a time, no scripted content-writes
-(the S13 lapse was not repeated). The title-echo rule was corrected this
-session (see Archive S14) — a genuine title-echo in a tip's body first
-line is now stripped after a human eye check, never left in and never
-auto-stripped by pattern-match. Tip 113's short war-fundraiser mention was
-kept (per the skill's existing distinction); Tip 155's longer Bucha-massacre
-passage was stripped this session, closing the one open strip-decision the
-skill had flagged. `tips-audit/SKILL.md` has the exact method, two source
-quirks (OCR first-letter-drop, tip-order ≠ source-line-order), and the
-corrected title-echo rule.
+**32 recipes are incomplete, and the site now says so.** Verified against the
+raw source in S19: in all 32 the ingredients are complete and only method
+steps are missing (they existed only in the original posts' photo carousels).
+Each carries an `incomplete_note` naming what is absent, shown on the recipe
+page; the list marks them with a ⚠ badge and a tinted card, and the legend
+above the list doubles as a filter for just those 32. Recovering the missing
+steps would mean going back to the original post images — the text source does
+not contain them.
 
-**EN tips are now the verified 207-tip set, live locally (committed, not
-yet pushed to GitHub).** `tips.json`/`site/data/tips.json` swapped from the
-old 310-entry file to `.audit/rebuild/tips_export.json`'s content, after
-the cross-check the S14 status above asked for (found and fixed one real
-drift: Tip 113's war passage). Old file archived to
-`.audit/archive/tips_EN_pre_S15.json`.
+**Browser-cache staleness is fixed at the root** (S19): `site/serve.py` sends
+`no-store`, `fetchJSON` revalidates, and css/js carry a `?v=` query. A plain
+reload is enough — do not ask for a hard refresh.
 
-**Every tip now has a `topicGroup`/`topic` classification** (7 groups, 4 of
-them further split into subcategories — see Archive S15 for the full
-breakdown), built by reading each tip's full body text, not just its
-title. The tips page's Topic filter — previously silently broken since
-launch, since it read a `tip.topic` field that had never existed in any
-tips.json revision — now works, rendered as a custom grouped dropdown
-(replaced a native `<select>`, whose popup rendered outside the viewport
-with this many options). Recipe pages' "Related tips" block now matches on
-exact `topicGroup` only (was noisy tag-overlap scoring).
+**Prior (S18):** LT tips translation started, 100/207, using the
+reuse+resplit method from the archived 310-entry LT corpus rather than
+re-translating; that method carried through to completion in S19.
 
-**LT tips translation in progress: 100/207 done (S18), committed, live on site.**
-`site/data/tips_lt.json` is now a full 207-entry structure (EN base, matching live
-`tips.json`'s index order) with tip-001 through tip-100's `title`+`text` overwritten with
-verified LT translations. Method: reuse+resplit from the old 310-entry LT set (archived to
-`.audit/archive/tips_LT_pre_S18.json`), never re-translated from scratch — confirmed every
-new tip's content already exists somewhere in the old LT text, just merged/split differently.
-`.audit/rebuild/tips_export_lt.json` holds the 100 done translations in export schema, the
-growing target for the remaining 107. `tags`/`topicGroup`/`topic` stay EN-sourced on every LT
-tip (deliberately out of scope this pass). See Archive S18 for the full method and entry
-point to continue.
+(Earlier sessions S1–S17: full detail in `## Archive` below — verified 79-recipe
+and 207-tip EN exports swapped live, topicGroup/topic taxonomy, source-audit
+links, shopping-list data model, and further back.)
 
-**LT recipe translation is 79/79 done (S17), committed, LT toggle LIVE.**
-S16 left 5 untranslated (recipe-076 through recipe-080); S17 translated
-them fresh from `recipes_export.json` and merged into
-`site/data/recipes_lt.json` (the redundant root-level `recipes_lt.json`
-copy — never read by the site, only `site/data/recipes_lt.json` is — was
-deleted rather than kept in sync). Zero recipes still carry
-`_needs_translation: true`. **Not yet done: the 3rd QA layer** (a
-native-speaker spot-check on a sample) — S17 only re-ran the structural
-checks (ingredient/step/tag counts, amount/unit values match EN) that S16
-already established as the ceiling of a scripted check for this file; see
-`recipes-audit` skill for why a full content diff isn't scripted either.
-
-Session S16 closed 2026-08-28.
-
-**S17 added a source-audit link, fixed the shopping list's data model, and
-fixed two real EN/LT-switch bugs.** Every recipe (EN+LT) now carries a
-`source_url` pointing into `site/source.html` — the full original
-docx-extracted text with a per-line `id="L<n>"` anchor on every line — so
-"View original source" on a recipe page opens the exact source passage in
-a new tab, highlighted, for translation QA. `buildShoppingList` (data.js)
-was using a dead `amount_ml` + density-table lookup that never matched
-current recipe data (the real field is `amount_conv`/`unit_conv`); tsp/tbsp
-quantities now actually convert to grams and sum correctly, unit-less
-ingredients (eggs, zest) show "pcs"/"vnt." instead of a blank unit, and a
-hyphen/space naming inconsistency in the source ("all-purpose flour" vs
-"all purpose flour") no longer splits one ingredient into two list rows.
-Shopping list UI: numbered rows, an item-count/weight/piece-count summary
-strip, and a per-item bought-checkbox (persisted in localStorage, keyed by
-ingredient name — does not survive an EN/LT switch, since the name itself
-changes). Two real bugs found and fixed: (1) un-favoriting a recipe/tip on
-the Favorites page left its card visible until reload — now re-renders
-immediately; tip cards in list views gained a heart button (recipes
-already had one) and Favorites shows a live `(N)` count per section. (2)
-Switching EN↔LT wiped `favorites` and the shopping-list picks silently —
-recipe/tip ids are re-slugified per language from the title (an S13
-decision, see `data.js:41-44`), so a stored id from the old language
-matched nothing in the new one; `[data-lang]` click now remaps every
-stored id by array position before the switch (same fix S16 already
-applied to the URL hash, extended to localStorage-backed state).
-
-## What this project is
-BakeStack: a recipe/pastry-tips database and calculator, starting from
-two Instagram-recipe-export Word documents (pastry/baking recipes and
-technique tips) converted to clean Markdown for LLM processing. Renamed
-from "Receptai" once the project scope grew from "convert two docs" to
-"build an interactive dashboard" — see Goal below.
-
-## Current state
-- `Receptai.docx` / `Patarimai.docx` — original source files, untouched.
-- `Receptai.md` / `Patarimai.md` — converted Markdown: headings/sub-headings
-  reconstructed, emoji removed (converted to real Markdown lists/numbering
-  or the word they stood in for, e.g. 🍋→lemon; purely decorative emoji
-  deleted), Instagram screenshot metadata (author handle, song caption,
-  like counts) stripped out.
-- `scripts/` — the conversion pipeline used to produce the .md files, with
-  a verification script. See `scripts/README.md` for usage. Re-run this
-  pipeline if the source .docx files change, or reuse it for a similar
-  future document (README explains what needs re-tuning per document).
-
-## Verified
-Both .md files checked character-by-character against their source .docx
-(scripts/docx_verify.py) — no recipe text, ingredient, or step lost.
-Structural check also done separately: recipe sub-sections (Ingredients,
-Instructions, Frosting, etc.) confirmed at the correct heading level
-(### under the recipe's ##, not sibling ## headings).
-
-## Goal: interactive static dashboard (GitHub Pages)
-Decided after a brainstorm session (see Decisions below). Target: a static,
-interactive site — no backend, no database server. Runs entirely in the
-browser off pre-generated JSON. Future data updates happen by re-running
-the conversion scripts locally and `git push`-ing a new JSON — not by
-writing back from the page itself.
-
-Longer-term direction (not yet in scope): a Telegram bot with a real
-database, so recipes/tips can be added and browsed from any device with
-data staying in sync. The static site is a deliberate first experiment
-before investing in that.
-
-### Data pipeline needed (not yet built)
-1. `Receptai.md` → `recipes.json`: one object per recipe — `title`,
-   `category` (inferred from title), `servings` (base yield, if stated in
-   source; otherwise null), `ingredients: [{amount, unit, name}]` (parsed
-   from lines like "300 g blueberries"; lines without a parseable
-   quantity, e.g. "a pinch of salt", get `amount: null` and stay
-   display-only), `steps: []`, `tags: []` (auto-derived from title +
-   ingredient names, from a shared vocabulary — see Decisions),
-   `image: null` (placeholder — see Photos note below).
-
-   **Parse coverage checked**: roughly 5-10% of ingredient lines
-   genuinely have no quantity in the source ("a pinch of salt", "Nutella
-   (for filling)", "cocoa for sprinkling") — these always stay
-   `amount: null`, no regex fixes that, the source itself doesn't
-   specify an amount. The rest (numbers written as fractions like "⅔
-   tsp", count-nouns like "2 large eggs" or "10 Ferrero Rocher candies",
-   bullet-prefixed lines like "•500 g mascarpone") are parseable with a
-   real parser handling those forms — expect ~90-95% coverage, not the
-   ~70% a naive "number+unit only" regex gets.
-
-   **Range quantities** ("300–400 g red lentils", "150–200 g"): checked
-   the source — a real, common pattern (~20-45 occurrences depending on
-   dash-character counting), not a rare edge case. `amount` becomes
-   `{min, max}` instead of a single number when the source gives a
-   range; the multiplier scales both ends ("300–400 g" × 2 = "600–800
-   g"), keeping it a range rather than collapsing to one number, since
-   the range itself is information the source author chose to give.
-
-   `category` and `tags` are two separate axes, not one flat pile —
-   checked the titles: almost every one names both a **format** (cupcake,
-   roll, cheesecake, ganache, tea cake, brownie — what physical thing it
-   is, single-valued) and a **flavor/theme** (chocolate, lemon, tiramisu,
-   caramel, baileys — can be more than one, e.g. "Tiramisu Cheesecake" is
-   category="cheesecake" + tags=["tiramisu","baileys"], not a category
-   conflict). UI gets two separate filters ("Type" and "Flavor/Theme")
-   that can be combined, instead of one undifferentiated tag search.
-2. `Patarimai.md` → `tips.json`: **not** restructured into article/
-   sub-article hierarchy — decided against that (254 headings mix real
-   article titles with sub-sections like "PART 2", "TIP #1", "TEXTURE" at
-   the same Markdown heading level; too inconsistent to reliably regroup
-   automatically). Instead, every `##`/`###` block becomes its own
-   flat searchable record with its own text and auto-derived `tags`.
-   Findability comes from full-text search (client-side, e.g. Fuse.js or
-   Lunr.js) plus tag filtering — not from browsing a rebuilt hierarchy.
-
-   **Duplicate-title handling** (checked: "CAKE COATING. COMMON
-   PROBLEMS" appears 5x, "HOW TO MAKE A PERFECT CHEESECAKE" 4x — this is
-   the source author revisiting the same topic across separate Instagram
-   posts over time, confirmed by reading the actual text: e.g. one block
-   opens with "Yesterday we discussed the possible reasons..."):
-   - Consecutive `##` blocks sharing the exact same title are the literal
-     continuation of one post split across paragraphs — merge into a
-     single tip record.
-   - The same title reappearing *non-consecutively* elsewhere in the file
-     is a separate later post on the same topic — keep as its own
-     record, but suffix the displayed title with a number ("CAKE
-     COATING. COMMON PROBLEMS — 2") so search results are distinguishable
-     instead of showing identical-looking duplicates.
-   - Auto-derived tags (see point 3 below) help disambiguate further
-     even between same-numbered entries, since two posts sharing a title
-     usually cover different specifics (e.g. air bubbles vs. whey
-     leaking) that show up as different tags.
-3. Shared tag vocabulary (chocolate, gelatin, cream cheese, cheesecake,
-   flour, meringue, tempering, citrus, etc.) used for both files, so a
-   recipe and a tip with an overlapping tag can be cross-linked in the UI
-   ("related tips" block on a recipe page) automatically — no manual
-   linking between the two files.
-4. Ingredient name normalization, two separate layers:
-   - **Spelling-only variants merge automatically**: "heavy cream 33–36%"
-     / "heavy cream 33-36%" / "heavy cream (33–36%)" / "heavy cream
-     33–36%(1)" are the same product written differently (en-dash vs
-     hyphen, parens, the "(1)"/"(2)" multi-dose labels within one
-     recipe) — collapse to one canonical name.
-   - **Real product variants stay separate**: "dark chocolate 54.5%" and
-     "dark chocolate 70%" are genuinely different products at different
-     price points — each keeps its own canonical name (and later, its
-     own price entry). Same for butter salted/unsalted if the source
-     distinguishes them; "melted"/"soft"/"cold" butter are just a *state*
-     of the same product, not separate ones, and merge like the
-     spelling-only case.
-
-### Site features needed (not yet built)
-- **Mobile-first responsive layout from the start**, not a later
-  retrofit. Ties directly to the earlier stated goal of eventually using
-  this on Android/iOS (before deciding on the Telegram bot direction) —
-  building responsive now is cheaper than reworking a desktop-only
-  layout once real usage on a phone is expected.
-- **Dark/light theme**: defaults to the OS/browser preference
-  (`prefers-color-scheme`), with a manual toggle so the user can
-  override it regardless of system setting.
-- Recipe list with category/keyword filter.
-- Recipe detail page: ingredients with a **multiplier** (0.5x, 1x, 1.5x,
-  2x, 3x, ...) that scales every ingredient amount proportionally. Not a
-  "servings" input — most recipes here aren't unit-count recipes (cakes,
-  cinnamon rolls, ganaches don't have a meaningful "servings" number; a
-  cinnamon roll recipe always yields "8 rolls" because the dough amount
-  is sized for one baking dish, not because you'd want to scale roll
-  count independently of dough amount). Where the source states a yield
-  ("~12 cupcakes", "yields ~650 g frosting") show it as informational
-  text next to the multiplier, not as a separate recalculated field.
-- **Instruction-step quantities that also need to scale**: checked all
-  113 numbered steps in Receptai.md — only 5 mention a specific gram/ml
-  amount inline (as opposed to temperature/time, which never need
-  scaling). Those 5 get the amount marked as a variable in the step text
-  (e.g. "Pour {{amount}} g of cream...") so it recalculates with the
-  multiplier too, instead of silently staying at the 1x value while the
-  ingredient list above it updates — found by grep, exact lines:
-  - `Pour 100 g of cream (1) into a saucepan...` (Baileys ganache)
-  - `...Add the blueberry filling (set aside 20 g).` (Blueberry-Lemon Rolls)
-  - `...300–400 g of rinsed lentils. Simmer...` (Pumpkin Cream Soup)
-  - `...half (~175–200 g) of the Savoiardi biscuits...` (Matcha Strawberry Tiramisu)
-  - `...half (~175–200 g) of the Savoiardi biscuits...` (Baileys Tiramisu)
-  All other numbers in step text (temperatures, minutes/hours, "10-12
-  hours", oven settings) are left as plain text — they don't scale with
-  batch size and marking them as variables would be wrong.
-- Tips: searchable (full-text + tags), not necessarily browsable by
-  article hierarchy.
-- "Related tips" block on recipe pages via shared tags.
-- EN/LT language toggle for the whole page (UI strings AND recipe/tip
-  content — titles, ingredients, steps). Content translation is
-  pre-generated once (not live/API-based), same reasoning as the static
-  data pipeline: no backend to call a translation API from.
-- Volume units (tsp/tbsp/cup) shown with an ml conversion alongside the
-  original unit, in both languages — not replaced by it. ml is the
-  primary/larger display value, original unit shown smaller in
-  parentheses below it. E.g. "1 tsp vanilla extract" displays as
-  "5 ml (1 tsp)". Conversion table: tsp=5ml, tbsp=15ml, cup=240ml (US
-  cup, approximate — flag as such in the UI). Gram amounts already in
-  the source are shown as-is; no cup/tbsp-to-gram conversion (that
-  depends on ingredient density, not a fixed factor, so it's not
-  attempted). Implemented in the data: every `ingredients[]` entry
-  whose source `unit` was tsp/tbsp/cup/cups now also carries an
-  `amount_ml` field (number or `{min,max}` for ranges) alongside the
-  untouched original `amount`/`unit` — both `recipes.json` and
-  `recipes_lt.json` carry this field identically.
-- Ingredient unit price field is a placeholder for later — not building
-  cost calculation yet, but the `ingredients` JSON shape (separate
-  amount/unit/name) is chosen specifically so it can be added later
-  without reshaping the data again.
-- **Photos**: source text frequently references photos/carousel that
-  existed on the original Instagram posts ("swipe through the carousel
-  and enjoy...") but no actual image files came with the .docx exports.
-  `image: null` reserved on every recipe/tip record now so a photo can
-  be attached later (by filename/path) without another JSON reshape.
-  Not fetching or attaching any images in this phase — no image files
-  exist to attach yet, and the referencing text in the recipe body is
-  left as-is (that's the original author's writing, not something to
-  edit out).
-- Ingredients with no parseable quantity (`amount: null`, ~5-10% of
-  lines — "a pinch of salt" etc.) are displayed as plain text, untouched
-  by the multiplier, with no "missing data" warning styling — this is
-  expected/normal (the source recipe itself doesn't quantify them), not
-  a parsing failure to flag to the user.
-
-### Translation quality check (3 layers, not a single pass)
-1. **Automated structural check**: after translating, verify the LT JSON
-   has the same recipe count, same ingredient count per recipe, and the
-   same numeric amount/unit per ingredient as EN (a translation pass
-   must never change "300 g" into "300 ml" or drop an ingredient) —
-   catches technical corruption, not meaning errors.
-2. **Fixed terminology glossary, built before translating**: baking terms
-   (fold in → švelniai sumaišyti, whisk → plakti šluoteliu, heavy cream →
-   plaktukė grietinėlė, baking soda → soda, etc.) get one agreed LT term
-   used consistently across all 85 recipes — not re-decided per recipe.
-   Inconsistent terms for the same ingredient would break search and
-   (later) cost matching between recipes.
-3. **Manual spot-check by the user on a sample** (~5-10 recipes across
-   different types), not a full review of all 85 — meaning-level
-   correctness needs a human, but reviewing everything isn't the bar;
-   the glossary is what keeps the other ~75 consistent with the
-   spot-checked sample.
-
-## Decisions
-- 2026-08-24: Static GitHub Pages site first, Telegram bot later. Reason:
-  cheap way to validate the idea before investing in a 24/7-hosted bot +
-  database.
-- 2026-08-24: Patarimai.md tags/search over rebuilt article hierarchy.
-  Reason: the heading levels in the source don't reliably distinguish
-  "article title" from "sub-section" — hand-fixing 254 headings wasn't
-  worth it versus flat full-text search + tags.
-- 2026-08-24: Recipes and tips cross-link via a shared tag vocabulary, not
-  manual per-recipe links. Reason: keeps the connection automatic as new
-  recipes/tips are added, no upkeep burden.
-- 2026-08-24: Full EN/LT translation (UI + recipe/tip content), generated
-  once ahead of time rather than via a live translation API. Reason: no
-  backend on a static site to call an API from; a one-time high-quality
-  pass (done by Claude, aware of pastry terminology) beats generic machine
-  translation anyway.
-- 2026-08-24: tsp/tbsp/cup shown alongside an ml conversion, not replaced
-  by a Lithuanian word ("šaukštelis" etc alone). Reason: "cup" has no
-  precise LT kitchen equivalent, and silently converting risks misleading
-  quantities — showing both the unit and its ml value removes the
-  ambiguity instead of picking a side.
-- 2026-08-24: Recipe scaling uses a plain multiplier (0.5x/1x/2x/...)
-  applied to every ingredient, not a "servings" field. Reason: checked
-  the source — only ~8-10 of 85 recipes have a real unit yield ("~12
-  cupcakes"); the rest (cakes, rolls, ganaches) don't have a meaningful
-  servings count, only a dough/batch size tied to one baking dish or a
-  weight yield. A multiplier works uniformly for all of them; a
-  "servings" input would only make sense for the minority.
-- 2026-08-24: Ingredient normalization keeps real product variants
-  (chocolate cocoa %, salted/unsalted butter) as separate canonical
-  entries, only merging pure spelling differences (dashes, parens, "(1)"/
-  "(2)" dose labels). Reason: chocolate % genuinely changes price — a
-  single "chocolate" price entry would make cost calculation wrong for
-  every recipe using a different %. Costs more upfront price-entry effort
-  later, but the alternative silently produces incorrect recipe costs.
-- 2026-08-24: Duplicate Patarimai.md titles — merge only when
-  consecutive (same post continuing), keep as separate numbered entries
-  ("— 2", "— 3") when the same title reappears elsewhere in the file.
-  Reason: verified by reading the actual text that non-consecutive
-  repeats are the author revisiting a topic in a later, separate
-  Instagram post (one literally opens with "Yesterday we discussed...")
-  — they are not the same content duplicated, so merging them would lose
-  distinct tips; leaving them identically-titled and unnumbered would
-  make search results indistinguishable.
-- 2026-08-24: Recipes get two separate classification axes — a
-  single-valued `category` (format: cupcake/roll/cheesecake/ganache/...)
-  and a multi-valued `tags` (flavor/theme: chocolate/lemon/tiramisu/
-  baileys/...), not one flat tag pile. Reason: checked the titles —
-  nearly all name both a format and a flavor (e.g. "Tiramisu Cheesecake
-  with Baileys"); a single category field can't hold "cheesecake" and
-  "tiramisu" at once without one of them being lost or arbitrarily
-  chosen, and a flat tag pile can't answer "show me only cheesecakes"
-  without also matching every recipe merely flavored like a cheesecake.
-- 2026-08-24: Translation QA is 3 layers — automated structural diff
-  (amounts/units/counts unchanged), a fixed terminology glossary built
-  upfront (consistent LT term per baking term across all recipes), and a
-  user spot-check on a sample rather than a full review of all 85.
-  Reason: meaning-level correctness needs a human and reviewing
-  everything isn't practical; the glossary is what makes a sample check
-  representative of the rest instead of each recipe being independently
-  risky.
-- 2026-08-24: Accepted that ~5-10% of ingredient lines will have no
-  parseable quantity and stay display-only text, not blocked on fixing
-  every line. Reason: measured against the actual source text — those
-  lines genuinely have no quantity written ("a pinch of salt"), so no
-  parser improvement can extract one; treating it as expected rather
-  than a defect avoids chasing an unreachable 100%.
-- 2026-08-24: The 5 instruction steps (out of 113) that mention a
-  specific gram/ml amount get that number marked as a scalable variable,
-  rather than leaving instruction text un-scaled everywhere. Reason:
-  small enough to hand-fix now (5 cases, identified exactly) while it's
-  cheap — the alternative is a visible, confusing mismatch between the
-  scaled ingredient list and a stale number in the instructions for
-  those specific recipes.
-- 2026-08-24: Mobile-first responsive layout from the first build, not
-  a later retrofit. Reason: ties directly to the stated eventual goal
-  of using this on Android/iOS — building responsive now is cheaper
-  than reworking a desktop-only layout once real phone usage matters.
-  (Renamed project to BakeStack around the same time, reflecting the
-  same shift from "convert two docs" to "build the actual app".)
-- 2026-08-24: Dark/light theme follows the OS preference by default,
-  with a manual override toggle. Reason: standard expectation for a
-  personal-use app opened at various times of day; a toggle covers the
-  case where the user wants to override the system default.
-- 2026-08-24: Range-quantity ingredients ("300–400 g") scale both ends
-  of the range with the multiplier, rather than collapsing to a single
-  averaged number. Reason: checked the source — ranges are common
-  (~20-45 occurrences), not rare; the author chose to give a range on
-  purpose (e.g. "however much fits"), and averaging would silently
-  discard that intent.
-- 2026-08-24: Reserve `image: null` on every recipe/tip record now,
-  don't attach any images yet. Reason: source text references photos
-  that existed on the original Instagram posts but no image files came
-  with the .docx exports — nothing to attach in this phase — but the
-  field shape is settled now (same reasoning as the price-field
-  placeholder) so attaching photos later doesn't require another data
-  reshape.
-- 2026-08-24: Repo stays public (GitHub Pages from a public repo, no
-  Pro plan needed). Reason: personal hobby project, no sensitive data
-  in the recipes/tips — recipe content being visible in git history
-  forever is acceptable.
-- 2026-08-24: Not sizing the search index (Fuse.js/Lunr, full EN+LT
-  text) upfront — will measure the real bundle size after the parser
-  and translation steps produce actual JSON, decide then if it needs
-  trimming. Reason: 85 recipes + 254 tips is not large; premature to
-  design around a guessed size.
-- 2026-08-24: Ingredient price field stays a `null` placeholder with no
-  planned fill-in date or task. Reason: not part of the current scope;
-  will be filled manually if/when cost calculation becomes a real need,
-  not scheduled now.
-- 2026-08-24: JSON build step (Receptai.md/Patarimai.md → recipes.json/
-  tips.json) stays a manual local script run + git push, not a GitHub
-  Action. Reason: hobby project, infrequent updates, simplicity over
-  automation.
-- 2026-08-24: Parser output gets the same structural-diff QA as the
-  translation pass (recipe/ingredient counts, and every amount value —
-  number/range/null — checked against a source-verified reference)
-  before commit. Reason: same corruption risk as translation (e.g.
-  parser turning "300 g" into the wrong number) — same check catches
-  it, run right after the parser instead of only at the translation
-  step.
-- 2026-08-24: recipes.json/tips.json structure is NOT being designed
-  for a future DB import (Telegram bot phase). Reason: bot phase hasn't
-  started; the JSON shape is already reasonable (separate fields, not
-  flat text) and a future DB import can adapt then — no need to guess
-  a schema now.
-- 2026-08-28 (S16, SUPERSEDED same session): LT translation initially
-  planned to reuse the old 73-recipe `recipes_lt.json` as a base
-  wherever a recipe paired against the new 79-set. Overturned a few
-  hours later in the same session: a full field-by-field diff (not just
-  `ingredients`) found 0 of 79 recipes are byte-identical between old
-  and new EN — S13's steps rewrite touched nearly every recipe. Replaced
-  by the decision below.
-- 2026-08-28 (S16): LT translation for the 79-recipe set translates
-  every recipe fresh from the new EN `recipes_export.json` content
-  (title, description, every ingredient, every step) — the old LT file
-  is used only as terminology/style reference, never as a base to patch.
-  Reason: measured that pairing-then-diffing costs as much work as
-  translating fresh once the real diff rate is known (0/79 identical),
-  so the "reuse as base" plan above added a lookup step without saving
-  translation work. 74/79 done this way by session end; see Archive
-  S16 for the exact resume point.
-
-## Done Log
-- 2026-08-28 (S18): LT tips translation started, 100/207 done (tip-001
-  through tip-100). Old 310-entry `tips_lt.json` archived to
-  `.audit/archive/tips_LT_pre_S18.json` before being overwritten. Method:
-  reuse+resplit from the archived old content, hand-verified per tip, not
-  re-translated from scratch. Live `site/data/tips_lt.json` rebuilt as a
-  full 207-entry EN-base structure with done tips' title+text overwritten
-  in place (LT toggle still shows correct EN text for untranslated tips).
-  First use this session of a local preview loop (`python -m http.server`
-  + Playwright screenshot) — caught a stale server serving the wrong root
-  page and confirmed correct SPA hash-route + localStorage-lang format
-  before trusting the live preview. One false "bug" report caught and
-  retracted before any fix (screenshot misread, not a real data bug).
-  Updated `recipes-audit` and (global) `playwright` skills with this
-  session's confirmed lessons. Not pushed to GitHub. Full detail in
-  Archive entry above.
-- 2026-08-28 (S17): LT recipe translation finished, 79/79 (recipe-076
-  through -080, the ones S16 left), structurally verified against EN.
-  Deleted the unused root-level `recipes_lt.json` duplicate. Added a
-  "View original source" link to every recipe (new `site/source.html`
-  with per-line anchors + `source_url` field). Rewrote `buildShoppingList`
-  to use the real `amount_conv`/`unit_conv` fields (was silently using a
-  dead `amount_ml` field that never matched any recipe) — tsp/tbsp now
-  convert and sum correctly, unit-less ingredients show "pcs"/"vnt.",
-  hyphen/space naming variants merge into one line. Shopping list UI:
-  numbered rows, item/weight/piece summary, per-item bought-checkbox.
-  Fixed two real bugs: un-favoriting on the Favorites page now removes
-  the card immediately (was stuck until reload); switching EN/LT no
-  longer wipes favorites or shopping-list picks (ids are remapped by
-  array position, same fix S16 applied to the URL hash). Tip cards
-  gained a heart button in list views; Favorites shows a live count.
-  Removed the QA link from nav, added Shopping list to nav. Committed
-  (`25872f4`, `a1fb16c`). Full detail in Archive entry above.
-- 2026-08-28 (S16): LT translation for the 79-recipe set — 74/79 done
-  (5 remain: `recipe-076`-`080`). Method decided via brainstorm (translate
-  fresh from EN, not pair-and-patch old LT — see Decisions). `glossary.json`
-  corrected against `tags.json` (4 terms added, 2 stale removed). Found and
-  fixed a real bug: switching language on a recipe/tip detail page showed
-  "Nothing found" because EN and LT ids are derived independently per
-  language — fixed in `app.js`'s lang-switch handler. LT toggle re-enabled
-  for preview. Not committed, not pushed. Full detail in Archive entry
-  above.
-- 2026-08-28 (S15): `tips.json` swapped live to the verified 207-tip export
-  (old file archived). Built a two-level `topicGroup`/`topic` taxonomy for
-  all 207 tips (7 groups, 4 with subcategories), fixing a filter that had
-  been silently broken since launch. Fixed `findRelatedTips` to exact-match
-  `topicGroup` instead of noisy tag-overlap. Rebuilt the tips filter as a
-  custom dropdown (native `<select>` rendered its popup outside the
-  viewport). Found and fixed Tip 113's undecided war-passage strip. Two
-  commits (`d9cb021`, `5e425cd`), neither pushed. Full detail in Archive
-  entry above.
-- 2026-08-28 (S14): `.audit/rebuild/tips_export.json` finished, 207/207
-  (from S13's 40/207). Title-echo rule reversed — a genuine title-echo in
-  a tip's body is now stripped after a human eye check, never left in;
-  `tips-audit/SKILL.md` rewritten, 3 echoes retroactively fixed on already-
-  done tips (041, 042, 048). Tip 155's war-passage strip decision made
-  (stripped) and applied; Tip 113's short version kept, per skill's
-  distinction. One MASTER-numbering gap (Tip 167) found via a numeric-gap
-  check and closed. Tip 174 (a de-dup pointer in MASTER, not real content)
-  — user chose to duplicate Tip 167's content under it, keeping the total
-  at 207. Full detail in Archive entry above.
-- 2026-08-27 (S13): `recipes.json`/`site/data/recipes.json` (EN) swapped
-  live to the verified 79-recipe export, after a manual cross-check against
-  the old file found and confirmed one real bug (two recipes concatenated).
-  `categoryGroup` Type-filter bug fixed (EN-only, existed since launch).
-  New Kind (Recipe/Technique) filter. tsp/tbsp→gram conversion built and
-  wired live (the old `amount_ml` field had never actually been populated).
-  `tags_en.json` and `density.json` (S11's remaining plan tasks) done.
-  LT recipes NOT swapped (still old 73-set); LT toggle hidden site-wide
-  until a matching translation exists. Committed (`e1128e7`), not pushed.
-  Started `.audit/rebuild/tips_export.json` (new tips JSON export, 40/207
-  done) — full detail in Archive entry above.
-- 2026-08-27 (S12): `tags.json` vocabulary edits applied (both copies).
-  `.audit/rebuild_recipes/recipes_export.json` built — all 79 recipes from
-  `MASTER_rebuilt_recipes.md`, manually verified against raw docx source
-  batch by batch (no scripted checking, per a hard constraint set this
-  session). Two real bugs found and fixed: silent range-averaging
-  ("700–800 g" → one number) and a dropped header-format ingredient
-  ("For 2.0–3.0 L of water:"). New `.claude/skills/recipes-audit/SKILL.md`
-  documents the method and both bugs for future sessions. Full detail:
-  Archive entry above.
-- 2026-08-27 (S11): `MASTER_rebuilt_recipes.md` built (79 entries) from
-  `Receptai.docx` via the same blind-subagent-rebuild method S8 used for
-  tips — zero seam conflicts found. 32 genuinely-incomplete recipes flagged
-  reader-facing (source-only gap, verified absent from live `recipes.json`
-  too). 1 true duplicate removed (#26), 3 recipes confirmed as real variants
-  not duplicates (visually verified via a published Artifact). Brainstorm
-  session unified a recipes+tips JSON schema and audited `tags.json`
-  vocabulary against both MASTER files (gaps + duplicates found, all
-  decided) — full plan in `.audit/PLAN_recipes_json_work.md`, nothing
-  applied to any live file yet.
-- 2026-08-27 (S10): all 207 MASTER tips manually cross-checked against live
-  `tips.json` — corrected S9's script-estimated fix scope from "154 missing"
-  to "46 genuinely missing," confirmed `tips_lt.json` index-aligned (no
-  re-translation needed for ~161 tips). `tips-audit/SKILL.md` updated with
-  the mega-merge false-negative lesson.
-- 2026-08-27 (S9): `MASTER_rebuilt_tips.md` fully audited (207/207 body text + 207/207
-  titles checked against raw docx source) and corrected — 5 defects fixed (1 false anomaly
-  note, 4 fabricated/dropped "Part N" titles), 4 genuinely-incomplete tips flagged with a
-  reader-visible warning note (Tip 021, 118, 172, 183). Built `series_index.json` (31
-  multi-part series, 127 of 207 tips, part order + known source-ordering quirks). Precisely
-  measured live tips.json against the verified ground truth: only 1 of 207 tips matches
-  exactly. Full trail in `.audit/DECISIONS_review.md`. Nothing applied to
-  tips.json/tips_lt.json this session — ground-truth-file-only scope, by explicit user
-  instruction. Also built `.claude/skills/tips-audit/SKILL.md` (project-local, not global —
-  lives in this repo only) capturing the file map, checking method, scope-discipline lesson,
-  and known state, so the next tips.json session doesn't need re-explaining. Full detail in
-  Archive entry below.
-- 2026-08-26 (S8): tags_lt.json dictionary audit done — all 162 tag slugs confirmed
-  translated (S7's "16 missing" was stale), 2 real phrasing mismatches fixed
-  (heavy-whipping-cream, baking-soda). Full from-scratch tips.json structural audit:
-  6 agents rebuilt 207 tips directly from Patarimai.docx (blind to tips.json), 4 agents
-  compared against the live 310-entry tips.json, found ~155 tips have a wrong-merge or
-  wrong-split problem plus 8 real content-loss spots and 1 off-topic passage (war/charity
-  content) shipping live. Nothing fixed yet — findings only, in FINDINGS_tips_audit.md +
-  .audit/. Full detail in Archive entry below.
-(Earlier sessions S1–S8: full detail in `## Archive` below — S7 full data
-audit + 13 bugs fixed, S6 LT translation redo + GitHub Pages deploy live,
-and further back.)
 
 ## Next tasks
-1. **Continue LT tips translation — tip-101 through tip-207 (107 remaining).**
-   Method and exact entry point: Archive S18 ("Entry point" line). Live file
-   is `site/data/tips_lt.json`; working export is
-   `.audit/rebuild/tips_export_lt.json`; old-content source is
-   `.audit/archive/tips_LT_pre_S18.json`.
-2. **User spot-check LT recipe translations (3rd QA layer).** All 79 are
-   translated and structurally verified (S17), but never read by a
-   native speaker — pick ~5-10 recipes across different categories and
-   read them normally as a user, not diffing JSON. Same gap will apply to
-   LT tips once task 1 finishes.
+1. **Push to GitHub — 28 commits are unpushed and the live site is on S7-era
+   content.** Everything from S13 onward (verified EN exports, both LT
+   translations, incomplete-recipe warnings, source links, all UI work) exists
+   only locally. `git push origin master` triggers `.github/workflows/deploy.yml`.
+2. **Native-speaker read of the LT translations (3rd QA layer), both sets.**
+   79 recipes and 207 tips are translated and structurally verified, but never
+   read as a reader would. Pick ~5-10 of each across categories and read them
+   normally, not diffing JSON.
 3. Strengthen QA Compare to do a real content diff (ingredients/steps/body
-   text) — `FIX_PLAN.md` step 0, still not done. Would catch this class of
-   bug automatically going forward.
-4. Not yet scoped: whether/how to insert the `series_index.json` cross-
-   reference data as reader-visible "Part X of Y" navigation text — into
-   `MASTER_rebuilt_tips.md` body content, into the eventual tips export, or
-   both. Format/scope decision deferred by user (S9) — see
-   `.audit/DECISIONS_review.md` section 10.
-5. Optional: add real photos later (`image` field already reserved
-   null on every recipe/tip record per the original plan).
-6. Known limitation, not yet fixed: shopping-list "bought" checkboxes are
-   keyed by ingredient name, so they reset (silently, no data loss — just
-   unchecked) if the user switches EN/LT while mid-shop. Low priority
-   unless it's reported as confusing in practice.
+   text) — `FIX_PLAN.md` step 0, still not done.
+4. Not yet scoped: whether/how to surface `series_index.json`'s cross-reference
+   data as reader-visible "Part X of Y" navigation. Format/scope decision
+   deferred by user (S9) — see `.audit/DECISIONS_review.md` section 10.
+5. Optional: add real photos (`image` is reserved null on every record; the
+   About page already tells readers photos are coming).
+6. Known limitation: shopping-list "bought" checkboxes are keyed by ingredient
+   name, so they reset (silently, no data loss) on an EN/LT switch mid-shop.
+   Low priority unless reported as confusing.
+7. Optional cleanup: `slugify` in `data.js` is now unused, and
+   `remapStoredRecipeIdsForLangSwitch` is a no-op for tips (ids match across
+   languages); recipes still need it.
+
+## Done Log
+- **S19** — LT tips translation finished 207/207; JSON `id` made the real
+  primary key for tips and recipes; 32 incomplete recipes audited against
+  source and surfaced to readers with per-recipe notes; tips got source links;
+  topic filter translated; About rewritten; browser-cache staleness fixed at
+  the root.
+- **S18** — LT tips translation started (100/207), live-preview method
+  established, `recipes-audit` and `playwright` skills updated.
+- **S17** — LT recipe translation finished 79/79, source-audit link added to
+  every recipe, shopping-list data model fixed, two EN/LT-switch bugs fixed.
+
 
 ## Archive
+
+### Session 2026-08-29 (S19) — LT tips translation finished 207/207; the tips/recipes `id` field was never the primary key the data claimed; 32 incomplete recipes audited against source and surfaced to readers; browser-cache class of false bug eliminated
+
+**LT tips translation finished: 207/207.** Continued S18's reuse+resplit method (never
+re-translate from scratch) across three delegated runs — tip-101→134, →171, →207. Zero tips
+needed fresh translation; every one was found in the old 310-entry LT corpus and re-split to
+the new boundaries, including both 7-tip mega-merges (old indices 296, 298). Verified
+independently of the agents' own reports: 207 entries in both `tips_export_lt.json` and
+`site/data/tips_lt.json`, ids sequential, no entry still holding EN text, zero drift in
+tags/topicGroup/topic. Two old-corpus errors corrected rather than propagated ("tanki ausią"
+→ "tankiausia" tip-193; "yra tik vienas išeitis" → "viena išeitis" tip-173), and emoji markers
+the old corpus had flattened to hyphens were restored from the EN structure.
+
+**One agent stopped mid-tip.** The tip-121→ run wrote tip-134 to the export but never synced
+it to the live file, leaving 134 vs 133. Caught by counting both files rather than trusting the
+"consistent" claim in its report. Later briefs were amended to require both writes per tip
+before moving on.
+
+**The `id` field was decorative — found via a numbering bug, not by looking for it.** Adding
+a visible card number exposed it: `data.js:47-48` overwrote every tip's and recipe's `id` at
+load with `slugify(title, index)`. Consequences, all live until this session: tip ids differed
+between EN and LT (which is why `remapStoredRecipeIdsForLangSwitch` had to exist at all), and
+the number parsed out of a title-derived slug picked up digits from the title itself — "10
+Critical Mistakes…" rendered as #10 rather than its real position, so the list appeared
+randomly numbered. `site/data/tips.json`/`tips_lt.json` had never carried an `id` at all;
+`recipes.json` did (`recipe-001`…`recipe-080`, #26 absent) and it was being discarded. Added
+the field to both tips files (verified identical and index-aligned across languages), and
+`data.js` now uses the JSON `id` as the key for both datasets. `slugify` is now unused but
+left in place.
+
+**A hardcoded `.slice(0, 100)` made 107 tips unreachable.** `renderTipsView` capped the list
+at 100 while the heading read "207 tips". Removed; 207 render fine.
+
+**32 incomplete recipes: the flag was real, the warning was never built.** `is_complete:
+false` sat on 32 recipes and was read by nothing — `.audit/PLAN_recipes_json_work.md:137` had
+specified a reader-facing warning that never shipped, so a reader could start one and discover
+mid-bake that the method stops. Audited all 32 against `Receptai_docx_source.txt` by reading
+each line range (no scripted classification, per the recipes-audit skill), plus two verified
+by hand here. Result: **all 32 are STEPS_MISSING — ingredients complete in every case**, the
+gap being steps that existed only in the original posts' photo carousels. The flag is correct
+in all 32.
+
+The audit also found the older MASTER notes **understate** the gap in six (043, 044, 054, 064,
+065, 075). The sharpest signal is orphaned ingredients — listed but consumed by no surviving
+step: poppy seeds and raisins in #44, three bananas in #75, and in #78 the white chocolate,
+coconut and almonds that make a Raffaello a Raffaello. That signal comes from the source's own
+internal consistency, so it catches gaps a section-header comparison cannot.
+
+**Browser cache was producing false data bugs, repeatedly.** Several rounds were spent
+diagnosing "the change is live in LT but not EN" and "the tips aren't translated" — each time
+the file on disk and the bytes off the server were correct and the browser was serving its own
+copy. Fixed at the root rather than by asking for hard reloads: `site/serve.py` (new preview
+server sending `no-store`; stock `http.server` sends no cache headers at all), `fetch(url, {
+cache: "no-cache" })` in `fetchJSON`, and a `?v=` query on css/js in `index.html`. **A plain
+reload is now sufficient — do not ask the user for Ctrl+Shift+R again.**
+
+**One false bug reported from a screenshot.** Read cards #45/#49 as wrongly flagged because
+they sit beside red-tinted neighbours; the DOM showed neither the class, the badge, nor the
+tint. Same failure the `recipes-audit` skill already documents — a rendered page is a lead,
+never a verdict.
+
+**Also shipped:** tips got source links matching the recipes (new `site/source_tips.html`,
+`source_url` on all 207 in both languages); the tip Topic filter's group/subcategory names are
+translated via a `topicLabels` dictionary while the filter key stays English; About was
+rewritten (it claimed "73 recipes and 312 tips", called the working shopping list unbuilt, and
+documented a QA tool the user does not want mentioned) and now avoids counts entirely so it
+will not go stale; and a round of visual work — accent-coloured active nav/chips/multiplier, a
+glowing nav underline, the incomplete warning de-boxed, page-heading counts removed, and the
+incomplete legend turned into a working filter toggle.
+
+**Code:**
+- `site/data/tips.json`, `site/data/tips_lt.json` — `id` + `source_url` on all 207; LT fully translated
+- `site/data/recipes.json`, `site/data/recipes_lt.json` — `incomplete_note` on the 32 (EN + LT)
+- `.audit/rebuild/tips_export_lt.json` — 207/207
+- `.audit/rebuild_recipes/INCOMPLETE_audit.md` (new) — per-recipe findings behind the notes
+- `site/source_tips.html` (new), `site/serve.py` (new)
+- `site/js/data.js` (id as primary key, no-cache fetch), `site/js/app.js`, `site/js/i18n.js`,
+  `site/css/app.css`, `site/css/tokens.css`, `site/index.html`
+
+**Entry point:** preview with `python site/serve.py 8792` from the repo root (or
+`python serve.py 8792` from `site/`), then <http://localhost:8792/>. Bump the `?v=` in
+`site/index.html` and `site/css/app.css` when changing css/js.
+
+**Not measured:** no native-speaker read of any of the 207 LT tips (the same 3rd-QA-layer gap
+the 79 LT recipes have). The 32 incomplete recipes' missing steps are named but not recovered —
+they are not in the source text at all, so recovering them means going back to the original
+posts' images. Whether `tags` should eventually be translated on LT tips (still EN-sourced by
+deliberate scope choice). 28 commits remain unpushed — the live GitHub Pages site is still on
+S7-era content.
 
 ### Session 2026-08-28 (S18) — LT tips translation started fresh (100/207 done), live-preview method established, two skills updated with this session's lessons
 
