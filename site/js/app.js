@@ -436,7 +436,6 @@ function renderRecipesView(lang, params) {
   <div class="container">
     <div class="page-head">
       <h1>${t(lang, "navRecipes")}</h1>
-      <span class="page-head__count">${t(lang, "recipesCount", filtered.length)}</span>
     </div>
     ${hasTechniques ? `<div class="filter-block">
       <span class="filter-label">${t(lang, "filterKind")}</span>
@@ -642,7 +641,7 @@ function renderTipsView(lang, params) {
   // `data-topic-value` (they are the filter key); only the visible label is translated.
   const topicLabel = (value) => t(lang, "topicLabels")?.[value] || value;
   const selectedLabel = (() => {
-    if (!topic) return t(lang, "allTypes");
+    if (!topic) return `${t(lang, "allTypes")} (${all.length})`;
     for (const g of TOPIC_GROUP_ORDER) {
       if (topic === g) return `${topicLabel(g)} (${countFor((r) => r.topicGroup === g)})`;
       const subs = TOPIC_GROUP_SUBCATEGORY_ORDER[g] || [];
@@ -673,7 +672,6 @@ function renderTipsView(lang, params) {
   <div class="container">
     <div class="page-head">
       <h1>${t(lang, "navTips")}</h1>
-      <span class="page-head__count">${t(lang, "tipsCount", filtered.length)}</span>
     </div>
     <div class="filter-block">
       <span class="filter-label" id="tip-topic-label">${t(lang, "filterTopic")}</span>
@@ -683,7 +681,7 @@ function renderTipsView(lang, params) {
           <span class="topic-dropdown__chevron" aria-hidden="true">▾</span>
         </button>
         <div class="topic-dropdown__panel" role="listbox" data-topic-panel hidden>
-          <button type="button" class="topic-dropdown__item" data-topic-value="" aria-pressed="${!topic}">${t(lang, "allTypes")}</button>
+          ${topic ? `<button type="button" class="topic-dropdown__item topic-dropdown__item--all" data-topic-value="" aria-pressed="false">${t(lang, "allTypes")} <span class="topic-dropdown__count">(${all.length})</span></button>` : ""}
           ${groupsHtml}
         </div>
       </div>
@@ -702,7 +700,10 @@ function renderTipDetail(lang, id) {
   <div class="container tip-detail">
     <a class="back-link" href="#/tips">${iconBack()} ${t(lang, "backToTips")}</a>
     <div class="recipe-detail__head">
-      <h1 class="recipe-detail__title">${esc(tip.title)}</h1>
+      <div>
+        <h1 class="recipe-detail__title">${esc(tip.title)}</h1>
+        ${tip.source_url ? `<div class="recipe-detail__meta"><span><a href="${esc(tip.source_url)}" target="_blank" rel="noopener">${t(lang, "viewSource")}</a></span></div>` : ""}
+      </div>
       <div class="recipe-actions">
         <button class="btn" id="fav-btn" aria-pressed="${fav}">${iconHeart(fav)} ${t(lang, fav ? "unsaveFavorite" : "saveFavorite")}</button>
         <button class="btn" id="share-btn">${t(lang, "share")}</button>

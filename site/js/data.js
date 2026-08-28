@@ -20,8 +20,13 @@ const store = {
   density: null,
 };
 
+/* The data files are edited far more often than the page is deployed, and a browser will
+   happily serve a stale copy from disk cache for a long time — which shows up as a change
+   that is live in one language but not the other, or not at all. `cache: "no-cache"` makes
+   the browser revalidate with the server every time (a 304 when unchanged, so it stays
+   cheap) instead of trusting its own copy. */
 async function fetchJSON(url) {
-  const res = await fetch(url);
+  const res = await fetch(url, { cache: "no-cache" });
   if (!res.ok) throw new Error(`Failed to load ${url}: ${res.status}`);
   return res.json();
 }
