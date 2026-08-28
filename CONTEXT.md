@@ -40,15 +40,28 @@ skill had flagged. `tips-audit/SKILL.md` has the exact method, two source
 quirks (OCR first-letter-drop, tip-order ≠ source-line-order), and the
 corrected title-echo rule.
 
-**Not yet done: the live cross-check of `tips_export.json` against
-`site/data/tips.json`/`tips_lt.json`** — the S13-recipes-equivalent
-verification step. `tips.json` indices 305-309 still have no confirmed
-match anywhere in the 207-tip rebuild; DECISIONS_review.md sections 12-27
-already have most of the per-tip findings from S10's audit, so this may be
-largely bookkeeping, but confirm before treating it as done — S13's
-recipes swap found a real bug no prior audit method caught.
+**EN tips are now the verified 207-tip set, live locally (committed, not
+yet pushed to GitHub).** `tips.json`/`site/data/tips.json` swapped from the
+old 310-entry file to `.audit/rebuild/tips_export.json`'s content, after
+the cross-check the S14 status above asked for (found and fixed one real
+drift: Tip 113's war passage). Old file archived to
+`.audit/archive/tips_EN_pre_S15.json`.
 
-Session S14 closed 2026-08-28.
+**Every tip now has a `topicGroup`/`topic` classification** (7 groups, 4 of
+them further split into subcategories — see Archive S15 for the full
+breakdown), built by reading each tip's full body text, not just its
+title. The tips page's Topic filter — previously silently broken since
+launch, since it read a `tip.topic` field that had never existed in any
+tips.json revision — now works, rendered as a custom grouped dropdown
+(replaced a native `<select>`, whose popup rendered outside the viewport
+with this many options). Recipe pages' "Related tips" block now matches on
+exact `topicGroup` only (was noisy tag-overlap scoring).
+
+**LT tips are NOT swapped.** `tips_lt.json` still holds the old 310-entry
+set in the old order — same situation as LT recipes (see above), same
+`state.js` force-English guard, now covering both reasons.
+
+Session S15 closed 2026-08-28.
 
 ## What this project is
 BakeStack: a recipe/pastry-tips database and calculator, starting from
@@ -388,6 +401,15 @@ before investing in that.
   a schema now.
 
 ## Done Log
+- 2026-08-28 (S15): `tips.json` swapped live to the verified 207-tip export
+  (old file archived). Built a two-level `topicGroup`/`topic` taxonomy for
+  all 207 tips (7 groups, 4 with subcategories), fixing a filter that had
+  been silently broken since launch. Fixed `findRelatedTips` to exact-match
+  `topicGroup` instead of noisy tag-overlap. Rebuilt the tips filter as a
+  custom dropdown (native `<select>` rendered its popup outside the
+  viewport). Found and fixed Tip 113's undecided war-passage strip. Two
+  commits (`d9cb021`, `5e425cd`), neither pushed. Full detail in Archive
+  entry above.
 - 2026-08-28 (S14): `.audit/rebuild/tips_export.json` finished, 207/207
   (from S13's 40/207). Title-echo rule reversed — a genuine title-echo in
   a tip's body is now stripped after a human eye check, never left in;
@@ -488,6 +510,82 @@ and further back.)
    null on every recipe/tip record per the original plan).
 
 ## Archive
+
+### Session 2026-08-28 (S15) — tips.json swapped live to the verified 207-tip export; two-level topicGroup/topic taxonomy built for all 207 tips; recipe→tip related-tips logic fixed; tips filter UI rebuilt as a custom dropdown
+
+**Live swap done.** `site/data/tips.json` (was 310 error-filled entries) replaced with the
+S9-S14 verified 207-tip export (title/text/tags only — `id`/`is_complete`/`source_docx_lines`
+dropped, since the live site generates its own slug ids and doesn't need the audit metadata).
+Old file archived to `.audit/archive/tips_EN_pre_S15.json`. `state.js`'s LT force-English
+comment updated to name both recipes and tips as the reason (tips_lt.json is now also out of
+sync — still the old 310-entry set in the old order, no translation for the new 207 yet).
+
+**Found and fixed one real defect during the swap cross-check**: Tip 113 in
+`tips_export.json` had its war/charity passage already silently removed with no recorded
+decision — a mapping drift against `MASTER_rebuilt_tips.md` (which still had it). User decided
+to strip it (same treatment as Tip 155, already decided S14). Applied to
+`MASTER_rebuilt_tips.md` and logged as DECISIONS_review.md section 29; `tips_export.json`
+needed no further edit since it already matched the decided outcome.
+
+**Built a two-level category system (`topicGroup` + `topic`) for all 207 tips** — the live
+site's tips dropdown filter had been silently broken since launch (`tip.topic` was read by
+`app.js` but never existed in any tips.json revision, old or new). Classified every tip by
+manually reading its full body text (not just title — title-only guessing produced at least
+one wrong call, caught and corrected: Tip 100 "Buttercream on Napoleon cake" was initially
+guessed into Cheesecake by title-adjacency, actual content is Frostings). Worked in 11 batches
+of ~20, each batch diffed field-by-field against a pre-change snapshot to confirm zero
+title/text/tags drift before moving on — 0 mismatches across all 207.
+
+**Final structure (207/207, verified by script — every subcategory sum equals its group
+total, all groups sum to 207):**
+- Cheesecake (25): Crust & Shortbread (4), Baking/Water Bath/Temperature (10), Cream Cheese
+  vs. Mascarpone (5), General (6)
+- Ganache, Frostings & Fillings (35): Ganache (11), Cake Coating Problems (7), Cake Fillings
+  (8), Mousses (3), Frostings General (6)
+- Ingredients (104): Gelatin (7), Pectin & Agar (17), Sugar & Honey (13), Eggs (7), Flour &
+  Starch (11), Dairy (13), Butter & Fats (9), Chocolate (11), Salt (6), Flavorings & Colorings
+  (11) — note some batch-time subcounts drifted slightly from batch-announcement counts as
+  later reads corrected earlier guesses (e.g. Tip 26 "Tempering Gelatin" ended in Gelatin, not
+  Techniques/Tempering); the numbers above are the final, script-verified ones, not the
+  running totals quoted mid-session
+- Techniques (15): Whipping & Meringue (4), Tempering (7 — crème anglaise series + egg
+  tempering, kept together as one technique), Infusion (4)
+- Flavor Pairing (10) — flat, no subcategories
+- Sponge, Honey Cake & Puff Pastry (16) — flat
+- Troubleshooting (2) — flat, deliberately small; several borderline tips (e.g. "Whisk, Paddle
+  or Dough Hook") were placed in Sponge/Honey/Puff instead since Troubleshooting's own 2
+  members are specifically about unresolved/curdling problems, not general technique choice
+
+**`findRelatedTips` (recipe detail page's "Related tips" block) rewritten**: was tag-overlap
+scoring with a `CATEGORY_GROUP_TO_TOPICS` fallback that produced misleading matches (e.g. any
+tip sharing "butter" or "sugar" tags with a recipe, regardless of actual relevance) — user
+explicitly asked for **exact topicGroup match only, no fallback**. `CATEGORY_GROUP_TO_TOPIC_GROUPS`
+maps each recipe `categoryGroup` to the one relevant tip `topicGroup`; a recipe with no mapped
+group now shows zero related tips rather than a tag-overlap guess.
+
+**Tips filter UI rebuilt from a native `<select>` to a custom dropdown.** The grouped
+`<optgroup>` select (24 options across 7 groups) rendered its native popup starting near the
+viewport top regardless of button position — browsers position/size native select popups
+themselves, uncontrollable via CSS, and with this many options the popup routinely overflowed
+above the page. Replaced with a button+absolutely-positioned-panel component
+(`.topic-dropdown`, `data-topic-trigger`/`data-topic-panel`/`data-topic-value` wiring in
+`app.js`), `max-height: 22rem` + internal scroll, closes on outside click (listener attached
+once in `wireNavEvents()`, not per-render, to avoid listener accumulation). Iterated on
+visual feedback across several rounds: group headers and flat (no-subcategory) groups now
+render with identical bold/uppercase/accent-colored styling (previously a flat group like
+"Flavor Pairing" looked like a plain subcategory item); group and subcategory counts now
+inherit their parent's text color instead of a mismatched `--color-muted` gray; group header
+now shows the group's total count, not just each subcategory's own count.
+
+**Verified end-to-end in a headless Chromium (Playwright) at every stage** — dropdown
+rendering (light + dark theme), filter correctness (spot-checked several group/subcategory
+counts against the live page), and the recipe→tips related block (confirmed a cheesecake
+recipe shows only the one Cheesecake/Cream-Cheese-vs-Mascarpone tip, no tag-overlap noise).
+
+**Committed in two commits** (`d9cb021` — the tips.json swap + taxonomy + related-tips fix;
+`5e425cd` — the custom dropdown UI rebuild + formatting fixes). **Neither pushed to GitHub** —
+live site (`https://gerimantas.github.io/BakeStack/`) still shows the old 310-entry tips.json;
+user has not yet confirmed the push.
 
 ### Session 2026-08-28 (S14) — tips_export.json finished, 207/207; title-echo rule reversed and applied retroactively; Tip 155 war passage stripped
 
