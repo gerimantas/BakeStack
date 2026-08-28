@@ -1609,3 +1609,35 @@ decision doesn't have to be re-derived: **when the LT question comes back up, th
 "collect from `tips_lt.json` at the same indices already mapped for EN, only translate the
 46 (or fewer, pending separate LT verification) that are genuinely missing" — not a 5th
 full translation pass.**
+
+---
+
+## 29. S15 — Tip 113 off-topic war/charity passage — same defect class as Tip 155, now decided
+
+**Context:** section 20 (S10) flagged Tip 113 as carrying the same class of defect as Tip 155
+(section 1) — an off-topic Ukraine war/charity fundraising paragraph ahead of the real baking
+content — but left it with no strip decision, pending a user call. Found again during S15
+while cross-checking `tips_export.json` against the section 12-27 map before the live-site
+swap: `tips_export.json`'s `tip-113` entry already had the passage removed, with no decision
+recorded to justify it — a mapping mismatch against MASTER (which still had it), not yet a
+content error, but the export was ahead of an actual decision.
+
+**Decision (user, this session): strip it.** Same treatment as Tip 155.
+
+**Removed from `MASTER_rebuilt_tips.md` (Tip 113, was lines 4330-4332):**
+> I'd like to thank everyone who took part in yesterday's charity fundraising in support of
+> Ukraine. You are amazing! It was very nice to see how many people are ready to help those
+> who are now in a difficult situation.
+>
+> If you have a desire to join the fundraising campaign, follow the link in the profile
+> header — it will be active until the end of the day, after which the fundraise will be
+> closed, and the proceeds will be transferred to humanitarian aid to Ukrainians.
+
+**Applied:** `MASTER_rebuilt_tips.md` edited to remove the passage (body now goes straight
+from "ALT. PASTRY CHEF'S NOTES / part 1" to "So, today we continue to analyze the topic of
+salt."). `tips_export.json`'s `tip-113` needed no further edit — it already matched this
+result, confirmed by direct read of the JSON entry.
+
+**Status:** Tip 113 defect closed. No other tips are known to carry this defect class beyond
+155 and 113 — not re-scanned for a third instance this session; if one turns up, treat as a
+new finding, not an assumption this pattern is exhaustively found.

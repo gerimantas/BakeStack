@@ -508,33 +508,27 @@ function renderRecipeDetail(lang, id) {
   </div>`;
 }
 
-// A recipe's categoryGroup maps to the tip topic(s) most relevant to making
-// that kind of dessert — e.g. a cheesecake recipe should surface cheesecake
-// tips before a tip that merely happens to share generic ingredient tags
-// (butter, sugar, milk) with it. Not every group has a matching topic; those
-// fall through to tag-overlap ranking alone.
-const CATEGORY_GROUP_TO_TOPICS = {
-  cheesecake: ["cheesecake"],
-  ganache: ["frostings-ganache"],
-  "components-fillings": ["frostings-ganache"],
-  "cakes-loaf": ["sponge-pastry"],
-  "tea-cake": ["sponge-pastry"],
-  "cinnamon-roll": ["sponge-pastry"],
-  "pies-pastry": ["sponge-pastry"],
+// A recipe's categoryGroup maps to the tip topicGroup(s) most relevant to making
+// that kind of dessert — e.g. a cheesecake recipe should surface only Cheesecake
+// tips, never a tip that merely happens to share a generic ingredient tag
+// (butter, sugar, milk). Exact topicGroup match only — no tag-overlap fallback,
+// since tag overlap alone produced misleading, off-topic results.
+const CATEGORY_GROUP_TO_TOPIC_GROUPS = {
+  cheesecake: ["Cheesecake"],
+  ganache: ["Ganache, Frostings & Fillings"],
+  "components-fillings": ["Ganache, Frostings & Fillings"],
+  "cakes-loaf": ["Sponge, Honey Cake & Puff Pastry"],
+  "tea-cake": ["Sponge, Honey Cake & Puff Pastry"],
+  "cinnamon-roll": ["Sponge, Honey Cake & Puff Pastry"],
+  "pies-pastry": ["Sponge, Honey Cake & Puff Pastry"],
 };
 
 function findRelatedTips(recipe, lang, limit) {
-  const tags = new Set(recipe.tags || []);
-  const relevantTopics = new Set(CATEGORY_GROUP_TO_TOPICS[recipe.categoryGroup] || []);
-  const scored = getTips(lang)
-    .map((tip) => ({
-      tip,
-      topicMatch: relevantTopics.has(tip.topic) ? 1 : 0,
-      overlap: (tip.tags || []).filter((tg) => tags.has(tg)).length,
-    }))
-    .filter((x) => x.topicMatch || x.overlap > 0)
-    .sort((a, b) => b.topicMatch - a.topicMatch || b.overlap - a.overlap);
-  return scored.slice(0, limit).map((x) => x.tip);
+  const relevantGroups = new Set(CATEGORY_GROUP_TO_TOPIC_GROUPS[recipe.categoryGroup] || []);
+  if (!relevantGroups.size) return [];
+  return getTips(lang)
+    .filter((tip) => relevantGroups.has(tip.topicGroup))
+    .slice(0, limit);
 }
 
 /** Full search results page — reached via Enter or "Show all N results" from the nav dropdown.
@@ -574,6 +568,25 @@ function renderSearchView(lang, params) {
   </div>`;
 }
 
+// Fixed, curated order for tip topicGroups — not every group has subcategories;
+// groups with none are filtered directly by topicGroup (the option's value equals
+// the group name). Groups with subcategories render as an <optgroup> of their topics.
+const TOPIC_GROUP_ORDER = [
+  "Cheesecake",
+  "Ganache, Frostings & Fillings",
+  "Ingredients",
+  "Techniques",
+  "Flavor Pairing",
+  "Sponge, Honey Cake & Puff Pastry",
+  "Troubleshooting",
+];
+const TOPIC_GROUP_SUBCATEGORY_ORDER = {
+  Cheesecake: ["Crust & Shortbread", "Baking, Water Bath & Temperature", "Cream Cheese vs. Mascarpone", "General"],
+  "Ganache, Frostings & Fillings": ["Ganache", "Cake Coating Problems", "Cake Fillings", "Mousses", "Frostings General"],
+  Ingredients: ["Gelatin", "Pectin & Agar", "Sugar & Honey", "Eggs", "Flour & Starch", "Dairy", "Butter & Fats", "Chocolate", "Salt", "Flavorings & Colorings"],
+  Techniques: ["Whipping & Meringue", "Tempering", "Infusion"],
+};
+
 function renderTipsView(lang, params) {
   const all = getTips(lang);
   const query = (params.get("q") || "").trim();
@@ -584,14 +597,29 @@ function renderTipsView(lang, params) {
     const q = query.toLowerCase();
     filtered = filtered.filter((tp) => tp.title.toLowerCase().includes(q) || tp.text.toLowerCase().includes(q) || (tp.tags || []).some((tg) => tg.includes(q)));
   }
-  if (topic) filtered = filtered.filter((tp) => tp.topic === topic);
+  // topic param matches either a subcategory (tp.topic) or, for groups with no
+  // subcategories, the topicGroup itself.
+  if (topic) filtered = filtered.filter((tp) => tp.topic === topic || (!tp.topic && tp.topicGroup === topic));
 
-  const topicDict = STRINGS[lang]?.topics || STRINGS.en.topics;
-  // preserve a fixed, curated order rather than sorting alphabetically or by count
-  const topicOrder = ["ingredients", "techniques", "flavor-pairing", "cheesecake", "frostings-ganache", "sponge-pastry", "troubleshooting", "storage"];
-  const topicOptions = topicOrder
-    .filter((tp) => all.some((r) => r.topic === tp))
-    .map((tp) => `<option value="${tp}" ${topic === tp ? "selected" : ""}>${esc(topicDict[tp] || tp)}</option>`)
+  const countFor = (matchFn) => all.filter(matchFn).length;
+  const optionsHtml = TOPIC_GROUP_ORDER
+    .filter((g) => all.some((r) => r.topicGroup === g))
+    .map((g) => {
+      const subs = TOPIC_GROUP_SUBCATEGORY_ORDER[g];
+      if (!subs) {
+        const count = countFor((r) => r.topicGroup === g);
+        return `<option value="${esc(g)}" ${topic === g ? "selected" : ""}>${esc(g)} (${count})</option>`;
+      }
+      const subOptions = subs
+        .filter((s) => all.some((r) => r.topicGroup === g && r.topic === s))
+        .map((s) => {
+          const count = countFor((r) => r.topicGroup === g && r.topic === s);
+          return `<option value="${esc(s)}" ${topic === s ? "selected" : ""}>${esc(s)} (${count})</option>`;
+        })
+        .join("");
+      const groupCount = countFor((r) => r.topicGroup === g);
+      return `<optgroup label="${esc(g)} (${groupCount})">${subOptions}</optgroup>`;
+    })
     .join("");
 
   return `
@@ -604,7 +632,7 @@ function renderTipsView(lang, params) {
       <label class="filter-label" for="tip-topic-select">${t(lang, "filterTopic")}</label>
       <select id="tip-topic-select" data-nav-select data-nav-param="topic">
         <option value="">${t(lang, "allTypes")}</option>
-        ${topicOptions}
+        ${optionsHtml}
       </select>
     </div>
     ${filtered.length ? `<div class="tip-list">${filtered.slice(0, 100).map((tp) => tipCard(tp, lang, query)).join("")}</div>`

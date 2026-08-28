@@ -388,6 +388,14 @@ img { max-width: 100%; display: block; }
   border-color: var(--color-accent);
   background: var(--color-paper);
 }
+.filter-block select optgroup {
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.filter-block select optgroup option {
+  text-transform: none;
+  letter-spacing: normal;
+}
 .filter-group {
   display: flex;
   flex-wrap: wrap;

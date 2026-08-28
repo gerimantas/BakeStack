@@ -4327,10 +4327,6 @@ This is a special variety of butter that has been softened to a pliable state, a
 ALT. PASTRY CHEF'S NOTES
 part 1
 
-I'd like to thank everyone who took part in yesterday's charity fundraising in support of Ukraine. You are amazing! It was very nice to see how many people are ready to help those who are now in a difficult situation.
-
-If you have a desire to join the fundraising campaign, follow the link in the profile header — it will be active until the end of the day, after which the fundraise will be closed, and the proceeds will be transferred to humanitarian aid to Ukrainians.
-
 So, today we continue to analyze the topic of salt.
 
 Earlier, we talked about why add salt to desserts — #marusya_about_salt. Having understood that salt performs many important functions, from enhancing flavor to extending the shelf life of desserts, the question arises: how much salt to add?

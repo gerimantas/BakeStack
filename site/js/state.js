@@ -19,10 +19,11 @@ function writeLS(key, value) {
   try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* storage unavailable — ignore */ }
 }
 
-// LT recipes are temporarily out of sync with the EN dataset (recipes.json was
-// rebuilt from source and now holds 79 entries in a different order than the
-// still-old, error-known recipes_lt.json's 73) — force English site-wide until
-// a matching LT recipe translation exists, regardless of stored/browser language.
+// LT recipes and LT tips are temporarily out of sync with their EN datasets
+// (recipes.json rebuilt to 79 entries vs. recipes_lt.json's still-old 73; tips.json
+// rebuilt to 207 entries vs. tips_lt.json's still-old 310, both in a different order) —
+// force English site-wide until matching LT translations exist, regardless of
+// stored/browser language.
 const appState = {
   lang: "en",
   theme: readLS(LS_KEYS.theme, null), // null = follow system
