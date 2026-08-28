@@ -602,23 +602,31 @@ function renderTipsView(lang, params) {
   if (topic) filtered = filtered.filter((tp) => tp.topic === topic || (!tp.topic && tp.topicGroup === topic));
 
   const countFor = (matchFn) => all.filter(matchFn).length;
-  const optionsHtml = TOPIC_GROUP_ORDER
+  const selectedLabel = (() => {
+    if (!topic) return t(lang, "allTypes");
+    for (const g of TOPIC_GROUP_ORDER) {
+      if (topic === g) return `${g} (${countFor((r) => r.topicGroup === g)})`;
+      const subs = TOPIC_GROUP_SUBCATEGORY_ORDER[g] || [];
+      if (subs.includes(topic)) return `${topic} (${countFor((r) => r.topicGroup === g && r.topic === topic)})`;
+    }
+    return topic;
+  })();
+  const groupsHtml = TOPIC_GROUP_ORDER
     .filter((g) => all.some((r) => r.topicGroup === g))
     .map((g) => {
       const subs = TOPIC_GROUP_SUBCATEGORY_ORDER[g];
+      const groupCount = countFor((r) => r.topicGroup === g);
       if (!subs) {
-        const count = countFor((r) => r.topicGroup === g);
-        return `<option value="${esc(g)}" ${topic === g ? "selected" : ""}>${esc(g)} (${count})</option>`;
+        return `<button type="button" class="topic-dropdown__item topic-dropdown__item--group" data-topic-value="${esc(g)}" aria-pressed="${topic === g}">${esc(g)} <span class="topic-dropdown__count">(${groupCount})</span></button>`;
       }
-      const subOptions = subs
+      const subItems = subs
         .filter((s) => all.some((r) => r.topicGroup === g && r.topic === s))
         .map((s) => {
           const count = countFor((r) => r.topicGroup === g && r.topic === s);
-          return `<option value="${esc(s)}" ${topic === s ? "selected" : ""}>${esc(s)} (${count})</option>`;
+          return `<button type="button" class="topic-dropdown__item topic-dropdown__item--sub" data-topic-value="${esc(s)}" aria-pressed="${topic === s}">${esc(s)} <span class="topic-dropdown__count">(${count})</span></button>`;
         })
         .join("");
-      const groupCount = countFor((r) => r.topicGroup === g);
-      return `<optgroup label="${esc(g)} (${groupCount})">${subOptions}</optgroup>`;
+      return `<div class="topic-dropdown__group"><div class="topic-dropdown__group-label">${esc(g)} <span class="topic-dropdown__count">(${groupCount})</span></div>${subItems}</div>`;
     })
     .join("");
 
@@ -629,11 +637,17 @@ function renderTipsView(lang, params) {
       <span class="page-head__count">${t(lang, "tipsCount", filtered.length)}</span>
     </div>
     <div class="filter-block">
-      <label class="filter-label" for="tip-topic-select">${t(lang, "filterTopic")}</label>
-      <select id="tip-topic-select" data-nav-select data-nav-param="topic">
-        <option value="">${t(lang, "allTypes")}</option>
-        ${optionsHtml}
-      </select>
+      <span class="filter-label" id="tip-topic-label">${t(lang, "filterTopic")}</span>
+      <div class="topic-dropdown" data-topic-dropdown>
+        <button type="button" class="topic-dropdown__trigger" aria-haspopup="listbox" aria-expanded="false" aria-labelledby="tip-topic-label" data-topic-trigger>
+          <span>${esc(selectedLabel)}</span>
+          <span class="topic-dropdown__chevron" aria-hidden="true">▾</span>
+        </button>
+        <div class="topic-dropdown__panel" role="listbox" data-topic-panel hidden>
+          <button type="button" class="topic-dropdown__item" data-topic-value="" aria-pressed="${!topic}">${t(lang, "allTypes")}</button>
+          ${groupsHtml}
+        </div>
+      </div>
     </div>
     ${filtered.length ? `<div class="tip-list">${filtered.slice(0, 100).map((tp) => tipCard(tp, lang, query)).join("")}</div>`
       : `<div class="empty-state"><h2>${t(lang, "noResults")}</h2><p>${t(lang, "noResultsHint")}</p></div>`}
@@ -847,6 +861,17 @@ function wireNavEvents() {
   });
   window.addEventListener("hashchange", closeSheet);
   wireSearchDropdown();
+
+  document.addEventListener("click", (e) => {
+    document.querySelectorAll("[data-topic-dropdown]").forEach((wrap) => {
+      if (!wrap.contains(e.target)) {
+        const panel = wrap.querySelector("[data-topic-panel]");
+        const dropdownTrigger = wrap.querySelector("[data-topic-trigger]");
+        panel.hidden = true;
+        dropdownTrigger.setAttribute("aria-expanded", "false");
+      }
+    });
+  });
 }
 
 function wireEvents(route) {
@@ -870,6 +895,24 @@ function wireEvents(route) {
       const path = location.hash.split("?")[0];
       const withVal = withParam(currentParams, el.dataset.navParam, el.value);
       location.hash = withVal ? `${path}?${withVal}` : path;
+    });
+  });
+
+  document.querySelectorAll("[data-topic-dropdown]").forEach((wrap) => {
+    const trigger = wrap.querySelector("[data-topic-trigger]");
+    const panel = wrap.querySelector("[data-topic-panel]");
+    trigger.addEventListener("click", () => {
+      const isOpen = !panel.hidden;
+      panel.hidden = isOpen;
+      trigger.setAttribute("aria-expanded", String(!isOpen));
+    });
+    panel.querySelectorAll("[data-topic-value]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const currentParams = new URLSearchParams(location.hash.split("?")[1] || "");
+        const path = location.hash.split("?")[0];
+        const withVal = withParam(currentParams, "topic", btn.dataset.topicValue);
+        location.hash = withVal ? `${path}?${withVal}` : path;
+      });
     });
   });
 
