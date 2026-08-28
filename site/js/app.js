@@ -368,6 +368,7 @@ function wireSearchDropdown() {
 
 function recipeCard(recipe, lang, query) {
   const fav = isFavorite("recipe", recipe.id);
+  const num = (recipe.id.match(/^recipe-(\d+)$/) || [])[1]?.replace(/^0+(?=\d)/, "");
   const favBtn = `<button class="fav-btn recipe-card__fav" data-fav-recipe="${recipe.id}" aria-pressed="${fav}" aria-label="${t(lang, fav ? "unsaveFavorite" : "saveFavorite")}">${iconHeart(fav)}</button>`;
   return `
   <a class="recipe-card ${recipe.image ? "" : "recipe-card--no-media"}" href="#/recipe/${recipe.id}">
@@ -375,7 +376,7 @@ function recipeCard(recipe, lang, query) {
     ${!recipe.image ? favBtn : ""}
     <div class="recipe-card__body">
       <span class="recipe-card__cat">${esc(tagLabel(lang, "category", recipe.category))}${recipe.is_technique ? `<span class="recipe-card__kind-badge">${t(lang, "kindTechnique")}</span>` : ""}</span>
-      <h3 class="recipe-card__title">${highlight(recipe.title, query)}</h3>
+      <h3 class="recipe-card__title">${num ? `<span class="recipe-card__num">#${num}</span> ` : ""}${highlight(recipe.title, query)}</h3>
       <span class="recipe-card__tags">${(recipe.tags || []).slice(0, 3).map((tg) => anyTagLabel(lang, tg)).join(" · ")}</span>
     </div>
   </a>`;
@@ -384,10 +385,14 @@ function recipeCard(recipe, lang, query) {
 function tipCard(tip, lang, query) {
   const snippet = tip.text.replace(/\s+/g, " ").slice(0, 140);
   const fav = isFavorite("tip", tip.id);
+  const num = (tip.id.match(/^tip-(\d+)$/) || [])[1]?.replace(/^0+(?=\d)/, "");
+  // The LT file is a full copy of the EN one with translated entries overwritten in place,
+  // so an entry whose title still matches its EN counterpart verbatim is not yet translated.
+  const untranslated = lang === "lt" && getTipById("en", tip.id)?.title === tip.title;
   return `
   <a class="tip-card" href="#/tip/${tip.id}">
     <button class="fav-btn tip-card__fav" data-fav-tip="${tip.id}" aria-pressed="${fav}" aria-label="${t(lang, fav ? "unsaveFavorite" : "saveFavorite")}">${iconHeart(fav)}</button>
-    <h3>${highlight(tip.title, query)}</h3>
+    <h3>${num ? `<span class="tip-card__num">#${num}</span> ` : ""}${highlight(tip.title, query)}${untranslated ? ` <span class="tip-card__en-badge">EN</span>` : ""}</h3>
     <p>${highlight(snippet, query)}…</p>
   </a>`;
 }
@@ -672,7 +677,7 @@ function renderTipsView(lang, params) {
         </div>
       </div>
     </div>
-    ${filtered.length ? `<div class="tip-list">${filtered.slice(0, 100).map((tp) => tipCard(tp, lang, query)).join("")}</div>`
+    ${filtered.length ? `<div class="tip-list">${filtered.map((tp) => tipCard(tp, lang, query)).join("")}</div>`
       : `<div class="empty-state"><h2>${t(lang, "noResults")}</h2><p>${t(lang, "noResultsHint")}</p></div>`}
   </div>`;
 }

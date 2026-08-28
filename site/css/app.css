@@ -889,6 +889,18 @@ img { max-width: 100%; display: block; }
   right: var(--space-sm);
   z-index: var(--z-raised);
 }
+.tip-card__num,
+.recipe-card__num { color: var(--color-muted); font-weight: 400; font-size: 0.7em; }
+.tip-card__en-badge {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+  border-radius: var(--radius-sm);
+  padding: 0 0.35em;
+  vertical-align: middle;
+}
 
 .tip-detail {
   max-width: 65ch;

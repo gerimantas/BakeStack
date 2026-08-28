@@ -38,14 +38,14 @@ async function loadAll() {
     fetchJSON(DATA_URLS.prices).catch(() => ({})),
     fetchJSON(DATA_URLS.density).catch(() => ({})),
   ]);
-  // EN and LT recipe files are edited independently and are not guaranteed to hold the
-  // same recipes in the same order (e.g. EN can gain new entries LT hasn't been
-  // translated for yet), so each list's id is derived from its own title — never from
-  // the other language's array position, which would silently mismatch across languages.
-  store.recipes.en = recipesEn.map((r, i) => ({ ...r, id: slugify(r.title, i) }));
-  store.recipes.lt = recipesLt.map((r, i) => ({ ...r, id: slugify(r.title, i) }));
-  store.tips.en = tipsEn.map((t, i) => ({ ...t, id: slugify(t.title, i) }));
-  store.tips.lt = tipsLt.map((t, i) => ({ ...t, id: slugify(tipsEn[i]?.title ?? t.title, i) }));
+  // Recipes carry a stable `id` ("recipe-001"…) in their JSON — it is the primary key,
+  // identical across EN and LT, and must never be re-derived from the title.
+  store.recipes.en = recipesEn;
+  store.recipes.lt = recipesLt;
+  // Tips carry a stable `id` ("tip-001"…) in their JSON — it is the primary key,
+  // identical across EN and LT, and must never be re-derived from the title.
+  store.tips.en = tipsEn;
+  store.tips.lt = tipsLt;
   store.tags = tags;
   store.tagsLt = tagsLt;
   store.tagsEn = tagsEn;
