@@ -16,7 +16,8 @@
       "cinnamon"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flavorings & Colorings"
+    "topic": "Flavorings & Colorings",
+    "source_url": "source_tips.html#L1"
   },
   {
     "id": "tip-002",
@@ -28,7 +29,8 @@
       "citric-acid"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flour & Starch"
+    "topic": "Flour & Starch",
+    "source_url": "source_tips.html#L112"
   },
   {
     "id": "tip-003",
@@ -40,7 +42,8 @@
       "citric-acid"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flour & Starch"
+    "topic": "Flour & Starch",
+    "source_url": "source_tips.html#L129"
   },
   {
     "id": "tip-004",
@@ -50,7 +53,8 @@
       "cornstarch"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flour & Starch"
+    "topic": "Flour & Starch",
+    "source_url": "source_tips.html#L158"
   },
   {
     "id": "tip-005",
@@ -63,7 +67,8 @@
       "eggs"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L188"
   },
   {
     "id": "tip-006",
@@ -77,7 +82,8 @@
       "eggs"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Frostings General"
+    "topic": "Frostings General",
+    "source_url": "source_tips.html#L218"
   },
   {
     "id": "tip-007",
@@ -90,7 +96,8 @@
       "citric-acid"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Cream Cheese vs. Mascarpone"
+    "topic": "Cream Cheese vs. Mascarpone",
+    "source_url": "source_tips.html#L253"
   },
   {
     "id": "tip-008",
@@ -105,7 +112,8 @@
       "citric-acid",
       "honey"
     ],
-    "topicGroup": "Troubleshooting"
+    "topicGroup": "Troubleshooting",
+    "source_url": "source_tips.html#L284"
   },
   {
     "id": "tip-009",
@@ -118,7 +126,8 @@
       "vanilla",
       "tempering-eggs"
     ],
-    "topicGroup": "Troubleshooting"
+    "topicGroup": "Troubleshooting",
+    "source_url": "source_tips.html#L317"
   },
   {
     "id": "tip-010",
@@ -129,7 +138,8 @@
       "creaming-method"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Butter & Fats"
+    "topic": "Butter & Fats",
+    "source_url": "source_tips.html#L351"
   },
   {
     "id": "tip-011",
@@ -148,7 +158,8 @@
       "honey"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Sugar & Honey"
+    "topic": "Sugar & Honey",
+    "source_url": "source_tips.html#L380"
   },
   {
     "id": "tip-012",
@@ -161,7 +172,8 @@
       "inverted-sugar-trimoline"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Sugar & Honey"
+    "topic": "Sugar & Honey",
+    "source_url": "source_tips.html#L403"
   },
   {
     "id": "tip-013",
@@ -174,7 +186,8 @@
       "caramelizing-sugar"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Sugar & Honey"
+    "topic": "Sugar & Honey",
+    "source_url": "source_tips.html#L450"
   },
   {
     "id": "tip-014",
@@ -186,7 +199,8 @@
       "salt"
     ],
     "topicGroup": "Techniques",
-    "topic": "Whipping & Meringue"
+    "topic": "Whipping & Meringue",
+    "source_url": "source_tips.html#L475"
   },
   {
     "id": "tip-015",
@@ -196,7 +210,8 @@
       "eggs",
       "emulsifying"
     ],
-    "topicGroup": "Sponge, Honey Cake & Puff Pastry"
+    "topicGroup": "Sponge, Honey Cake & Puff Pastry",
+    "source_url": "source_tips.html#L515"
   },
   {
     "id": "tip-016",
@@ -210,7 +225,8 @@
       "citric-acid"
     ],
     "topicGroup": "Techniques",
-    "topic": "Whipping & Meringue"
+    "topic": "Whipping & Meringue",
+    "source_url": "source_tips.html#L548"
   },
   {
     "id": "tip-017",
@@ -223,7 +239,8 @@
       "whipping-meringue"
     ],
     "topicGroup": "Techniques",
-    "topic": "Whipping & Meringue"
+    "topic": "Whipping & Meringue",
+    "source_url": "source_tips.html#L575"
   },
   {
     "id": "tip-018",
@@ -234,7 +251,8 @@
       "whipping-meringue"
     ],
     "topicGroup": "Techniques",
-    "topic": "Whipping & Meringue"
+    "topic": "Whipping & Meringue",
+    "source_url": "source_tips.html#L633"
   },
   {
     "id": "tip-019",
@@ -252,7 +270,8 @@
       "chocolate",
       "cocoa-butter"
     ],
-    "topicGroup": "Sponge, Honey Cake & Puff Pastry"
+    "topicGroup": "Sponge, Honey Cake & Puff Pastry",
+    "source_url": "source_tips.html#L612"
   },
   {
     "id": "tip-020",
@@ -263,7 +282,8 @@
       "sugar",
       "creaming-method"
     ],
-    "topicGroup": "Sponge, Honey Cake & Puff Pastry"
+    "topicGroup": "Sponge, Honey Cake & Puff Pastry",
+    "source_url": "source_tips.html#L642"
   },
   {
     "id": "tip-021",
@@ -281,7 +301,8 @@
       "creaming-method",
       "gelatin"
     ],
-    "topicGroup": "Sponge, Honey Cake & Puff Pastry"
+    "topicGroup": "Sponge, Honey Cake & Puff Pastry",
+    "source_url": "source_tips.html#L656"
   },
   {
     "id": "tip-022",
@@ -294,7 +315,8 @@
       "flour-all-purpose",
       "kneading-dough"
     ],
-    "topicGroup": "Sponge, Honey Cake & Puff Pastry"
+    "topicGroup": "Sponge, Honey Cake & Puff Pastry",
+    "source_url": "source_tips.html#L712"
   },
   {
     "id": "tip-023",
@@ -306,7 +328,8 @@
       "chocolate",
       "honey-cake"
     ],
-    "topicGroup": "Sponge, Honey Cake & Puff Pastry"
+    "topicGroup": "Sponge, Honey Cake & Puff Pastry",
+    "source_url": "source_tips.html#L753"
   },
   {
     "id": "tip-024",
@@ -320,7 +343,8 @@
       "butter"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Dairy"
+    "topic": "Dairy",
+    "source_url": "source_tips.html#L771"
   },
   {
     "id": "tip-025",
@@ -331,7 +355,8 @@
       "whipping-cream"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Dairy"
+    "topic": "Dairy",
+    "source_url": "source_tips.html#L791"
   },
   {
     "id": "tip-026",
@@ -344,7 +369,8 @@
       "tempering-chocolate"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Gelatin"
+    "topic": "Gelatin",
+    "source_url": "source_tips.html#L814"
   },
   {
     "id": "tip-027",
@@ -359,7 +385,8 @@
       "chocolate"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Mousses"
+    "topic": "Mousses",
+    "source_url": "source_tips.html#L844"
   },
   {
     "id": "tip-028",
@@ -371,7 +398,8 @@
       "kneading-dough",
       "sifting"
     ],
-    "topicGroup": "Sponge, Honey Cake & Puff Pastry"
+    "topicGroup": "Sponge, Honey Cake & Puff Pastry",
+    "source_url": "source_tips.html#L864"
   },
   {
     "id": "tip-029",
@@ -386,7 +414,8 @@
       "whipping-cream"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Frostings General"
+    "topic": "Frostings General",
+    "source_url": "source_tips.html#L889"
   },
   {
     "id": "tip-030",
@@ -402,7 +431,8 @@
       "cocoa-powder",
       "baking-powder"
     ],
-    "topicGroup": "Sponge, Honey Cake & Puff Pastry"
+    "topicGroup": "Sponge, Honey Cake & Puff Pastry",
+    "source_url": "source_tips.html#L910"
   },
   {
     "id": "tip-031",
@@ -415,7 +445,8 @@
       "yeast"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flour & Starch"
+    "topic": "Flour & Starch",
+    "source_url": "source_tips.html#L939"
   },
   {
     "id": "tip-032",
@@ -425,7 +456,8 @@
       "sifting",
       "cake-coating"
     ],
-    "topicGroup": "Sponge, Honey Cake & Puff Pastry"
+    "topicGroup": "Sponge, Honey Cake & Puff Pastry",
+    "source_url": "source_tips.html#L958"
   },
   {
     "id": "tip-033",
@@ -436,7 +468,8 @@
       "butter",
       "tea-cake"
     ],
-    "topicGroup": "Sponge, Honey Cake & Puff Pastry"
+    "topicGroup": "Sponge, Honey Cake & Puff Pastry",
+    "source_url": "source_tips.html#L971"
   },
   {
     "id": "tip-034",
@@ -448,7 +481,8 @@
       "emulsifying"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Butter & Fats"
+    "topic": "Butter & Fats",
+    "source_url": "source_tips.html#L1000"
   },
   {
     "id": "tip-035",
@@ -472,7 +506,8 @@
       "caramel",
       "flavor-pairing"
     ],
-    "topicGroup": "Flavor Pairing"
+    "topicGroup": "Flavor Pairing",
+    "source_url": "source_tips.html#L1017"
   },
   {
     "id": "tip-036",
@@ -484,7 +519,8 @@
       "butter",
       "kneading-dough"
     ],
-    "topicGroup": "Sponge, Honey Cake & Puff Pastry"
+    "topicGroup": "Sponge, Honey Cake & Puff Pastry",
+    "source_url": "source_tips.html#L1032"
   },
   {
     "id": "tip-037",
@@ -495,7 +531,8 @@
       "honey-cake",
       "cornstarch"
     ],
-    "topicGroup": "Sponge, Honey Cake & Puff Pastry"
+    "topicGroup": "Sponge, Honey Cake & Puff Pastry",
+    "source_url": "source_tips.html#L1053"
   },
   {
     "id": "tip-038",
@@ -507,7 +544,8 @@
       "flour-bread-strong",
       "laminating-dough"
     ],
-    "topicGroup": "Sponge, Honey Cake & Puff Pastry"
+    "topicGroup": "Sponge, Honey Cake & Puff Pastry",
+    "source_url": "source_tips.html#L1097"
   },
   {
     "id": "tip-039",
@@ -530,7 +568,8 @@
       "mango",
       "flavor-pairing"
     ],
-    "topicGroup": "Flavor Pairing"
+    "topicGroup": "Flavor Pairing",
+    "source_url": "source_tips.html#L1125"
   },
   {
     "id": "tip-040",
@@ -544,7 +583,8 @@
       "honey",
       "honey-cake"
     ],
-    "topicGroup": "Sponge, Honey Cake & Puff Pastry"
+    "topicGroup": "Sponge, Honey Cake & Puff Pastry",
+    "source_url": "source_tips.html#L1160"
   },
   {
     "id": "tip-041",
@@ -554,7 +594,8 @@
       "cake"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Frostings General"
+    "topic": "Frostings General",
+    "source_url": "source_tips.html#L1185"
   },
   {
     "id": "tip-042",
@@ -564,7 +605,8 @@
       "butter"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Butter & Fats"
+    "topic": "Butter & Fats",
+    "source_url": "source_tips.html#L1208"
   },
   {
     "id": "tip-043",
@@ -575,7 +617,8 @@
       "butter"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Butter & Fats"
+    "topic": "Butter & Fats",
+    "source_url": "source_tips.html#L1250"
   },
   {
     "id": "tip-044",
@@ -586,7 +629,8 @@
       "butter"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Butter & Fats"
+    "topic": "Butter & Fats",
+    "source_url": "source_tips.html#L1279"
   },
   {
     "id": "tip-045",
@@ -597,7 +641,8 @@
       "cream-cheese"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "General"
+    "topic": "General",
+    "source_url": "source_tips.html#L1302"
   },
   {
     "id": "tip-046",
@@ -609,7 +654,8 @@
       "honey-cake"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Dairy"
+    "topic": "Dairy",
+    "source_url": "source_tips.html#L1316"
   },
   {
     "id": "tip-047",
@@ -621,7 +667,8 @@
       "gelatin"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Cake Fillings"
+    "topic": "Cake Fillings",
+    "source_url": "source_tips.html#L1348"
   },
   {
     "id": "tip-048",
@@ -634,7 +681,8 @@
       "butter"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Cake Fillings"
+    "topic": "Cake Fillings",
+    "source_url": "source_tips.html#L1372"
   },
   {
     "id": "tip-049",
@@ -646,7 +694,8 @@
       "cornstarch"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Cake Fillings"
+    "topic": "Cake Fillings",
+    "source_url": "source_tips.html#L1399"
   },
   {
     "id": "tip-050",
@@ -659,7 +708,8 @@
       "milk"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Cake Fillings"
+    "topic": "Cake Fillings",
+    "source_url": "source_tips.html#L1435"
   },
   {
     "id": "tip-051",
@@ -671,7 +721,8 @@
       "meringue"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Cake Fillings"
+    "topic": "Cake Fillings",
+    "source_url": "source_tips.html#L1467"
   },
   {
     "id": "tip-052",
@@ -681,7 +732,8 @@
       "cheesecake"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Crust & Shortbread"
+    "topic": "Crust & Shortbread",
+    "source_url": "source_tips.html#L1498"
   },
   {
     "id": "tip-053",
@@ -692,7 +744,8 @@
       "salted-caramel"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "General"
+    "topic": "General",
+    "source_url": "source_tips.html#L1527"
   },
   {
     "id": "tip-054",
@@ -702,7 +755,8 @@
       "custard-cream"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Cake Fillings"
+    "topic": "Cake Fillings",
+    "source_url": "source_tips.html#L1548"
   },
   {
     "id": "tip-055",
@@ -712,7 +766,8 @@
       "cheesecake"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Crust & Shortbread"
+    "topic": "Crust & Shortbread",
+    "source_url": "source_tips.html#L1573"
   },
   {
     "id": "tip-056",
@@ -724,7 +779,8 @@
       "custard-cream"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Baking, Water Bath & Temperature"
+    "topic": "Baking, Water Bath & Temperature",
+    "source_url": "source_tips.html#L1596"
   },
   {
     "id": "tip-057",
@@ -737,7 +793,8 @@
       "custard-cream"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Baking, Water Bath & Temperature"
+    "topic": "Baking, Water Bath & Temperature",
+    "source_url": "source_tips.html#L1622"
   },
   {
     "id": "tip-058",
@@ -750,7 +807,8 @@
       "custard-cream"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Baking, Water Bath & Temperature"
+    "topic": "Baking, Water Bath & Temperature",
+    "source_url": "source_tips.html#L1654"
   },
   {
     "id": "tip-059",
@@ -765,7 +823,8 @@
       "cheesecake"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Baking, Water Bath & Temperature"
+    "topic": "Baking, Water Bath & Temperature",
+    "source_url": "source_tips.html#L1689"
   },
   {
     "id": "tip-060",
@@ -777,7 +836,8 @@
       "sour-cream"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Frostings General"
+    "topic": "Frostings General",
+    "source_url": "source_tips.html#L1718"
   },
   {
     "id": "tip-061",
@@ -788,7 +848,8 @@
       "puff-pastry"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Butter & Fats"
+    "topic": "Butter & Fats",
+    "source_url": "source_tips.html#L1742"
   },
   {
     "id": "tip-062",
@@ -803,7 +864,8 @@
       "flour-hemp"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flour & Starch"
+    "topic": "Flour & Starch",
+    "source_url": "source_tips.html#L1777"
   },
   {
     "id": "tip-063",
@@ -817,7 +879,8 @@
       "flour-tiger-nut"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flour & Starch"
+    "topic": "Flour & Starch",
+    "source_url": "source_tips.html#L1842"
   },
   {
     "id": "tip-064",
@@ -827,7 +890,8 @@
       "cheesecake"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Baking, Water Bath & Temperature"
+    "topic": "Baking, Water Bath & Temperature",
+    "source_url": "source_tips.html#L1893"
   },
   {
     "id": "tip-065",
@@ -838,7 +902,8 @@
       "whipping-cream"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Dairy"
+    "topic": "Dairy",
+    "source_url": "source_tips.html#L1918"
   },
   {
     "id": "tip-066",
@@ -850,7 +915,8 @@
       "chocolate-storage"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Chocolate"
+    "topic": "Chocolate",
+    "source_url": "source_tips.html#L1937"
   },
   {
     "id": "tip-067",
@@ -861,7 +927,8 @@
       "chocolate-storage"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Chocolate"
+    "topic": "Chocolate",
+    "source_url": "source_tips.html#L1969"
   },
   {
     "id": "tip-068",
@@ -872,7 +939,8 @@
       "chocolate-storage"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Chocolate"
+    "topic": "Chocolate",
+    "source_url": "source_tips.html#L1983"
   },
   {
     "id": "tip-069",
@@ -886,7 +954,8 @@
       "flour-coconut"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flour & Starch"
+    "topic": "Flour & Starch",
+    "source_url": "source_tips.html#L2025"
   },
   {
     "id": "tip-070",
@@ -900,7 +969,8 @@
       "flour-teff"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flour & Starch"
+    "topic": "Flour & Starch",
+    "source_url": "source_tips.html#L2113"
   },
   {
     "id": "tip-071",
@@ -910,7 +980,8 @@
       "flour-all-purpose"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flour & Starch"
+    "topic": "Flour & Starch",
+    "source_url": "source_tips.html#L2146"
   },
   {
     "id": "tip-072",
@@ -921,7 +992,8 @@
       "pectin-nh"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L2174"
   },
   {
     "id": "tip-073",
@@ -935,7 +1007,8 @@
       "coconut",
       "honey-cake"
     ],
-    "topicGroup": "Flavor Pairing"
+    "topicGroup": "Flavor Pairing",
+    "source_url": "source_tips.html#L2212"
   },
   {
     "id": "tip-074",
@@ -945,7 +1018,8 @@
       "zephyr"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Sugar & Honey"
+    "topic": "Sugar & Honey",
+    "source_url": "source_tips.html#L2250"
   },
   {
     "id": "tip-075",
@@ -956,7 +1030,8 @@
       "eggs",
       "meringue"
     ],
-    "topicGroup": "Sponge, Honey Cake & Puff Pastry"
+    "topicGroup": "Sponge, Honey Cake & Puff Pastry",
+    "source_url": "source_tips.html#L2271"
   },
   {
     "id": "tip-076",
@@ -968,7 +1043,8 @@
       "eggs"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "General"
+    "topic": "General",
+    "source_url": "source_tips.html#L2300"
   },
   {
     "id": "tip-077",
@@ -978,7 +1054,8 @@
       "honey-cake",
       "flour-all-purpose"
     ],
-    "topicGroup": "Sponge, Honey Cake & Puff Pastry"
+    "topicGroup": "Sponge, Honey Cake & Puff Pastry",
+    "source_url": "source_tips.html#L2336"
   },
   {
     "id": "tip-078",
@@ -990,7 +1067,8 @@
       "butter-brown-beurre-noisette"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Sugar & Honey"
+    "topic": "Sugar & Honey",
+    "source_url": "source_tips.html#L2379"
   },
   {
     "id": "tip-079",
@@ -1002,7 +1080,8 @@
       "caramel"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Mousses"
+    "topic": "Mousses",
+    "source_url": "source_tips.html#L2414"
   },
   {
     "id": "tip-080",
@@ -1014,7 +1093,8 @@
       "cocoa-butter"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Mousses"
+    "topic": "Mousses",
+    "source_url": "source_tips.html#L2461"
   },
   {
     "id": "tip-081",
@@ -1025,7 +1105,8 @@
       "cream-cheese"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Cake Fillings"
+    "topic": "Cake Fillings",
+    "source_url": "source_tips.html#L2495"
   },
   {
     "id": "tip-082",
@@ -1036,7 +1117,8 @@
       "tempering-eggs"
     ],
     "topicGroup": "Techniques",
-    "topic": "Tempering"
+    "topic": "Tempering",
+    "source_url": "source_tips.html#L2525"
   },
   {
     "id": "tip-083",
@@ -1048,7 +1130,8 @@
       "custard-cream"
     ],
     "topicGroup": "Techniques",
-    "topic": "Tempering"
+    "topic": "Tempering",
+    "source_url": "source_tips.html#L2551"
   },
   {
     "id": "tip-084",
@@ -1060,7 +1143,8 @@
       "gelatin"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L2575"
   },
   {
     "id": "tip-085",
@@ -1071,7 +1155,8 @@
       "sugar"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L2616"
   },
   {
     "id": "tip-086",
@@ -1083,7 +1168,8 @@
       "cocoa-butter"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Ganache"
+    "topic": "Ganache",
+    "source_url": "source_tips.html#L2652"
   },
   {
     "id": "tip-087",
@@ -1098,7 +1184,8 @@
       "cocoa-powder"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Ganache"
+    "topic": "Ganache",
+    "source_url": "source_tips.html#L3184"
   },
   {
     "id": "tip-088",
@@ -1110,7 +1197,8 @@
       "sugar"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Ganache"
+    "topic": "Ganache",
+    "source_url": "source_tips.html#L3228"
   },
   {
     "id": "tip-089",
@@ -1122,7 +1210,8 @@
       "chocolate"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Ganache"
+    "topic": "Ganache",
+    "source_url": "source_tips.html#L3267"
   },
   {
     "id": "tip-090",
@@ -1134,7 +1223,8 @@
       "cocoa-powder"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Ganache"
+    "topic": "Ganache",
+    "source_url": "source_tips.html#L3300"
   },
   {
     "id": "tip-091",
@@ -1145,7 +1235,8 @@
       "heavy-whipping-cream"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Ganache"
+    "topic": "Ganache",
+    "source_url": "source_tips.html#L3334"
   },
   {
     "id": "tip-092",
@@ -1160,7 +1251,8 @@
       "cocoa-powder"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Chocolate"
+    "topic": "Chocolate",
+    "source_url": "source_tips.html#L2696"
   },
   {
     "id": "tip-093",
@@ -1170,7 +1262,8 @@
       "chocolate"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Chocolate"
+    "topic": "Chocolate",
+    "source_url": "source_tips.html#L2753"
   },
   {
     "id": "tip-094",
@@ -1182,7 +1275,8 @@
       "cocoa-butter"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Chocolate"
+    "topic": "Chocolate",
+    "source_url": "source_tips.html#L2779"
   },
   {
     "id": "tip-095",
@@ -1194,7 +1288,8 @@
       "cocoa-butter"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Chocolate"
+    "topic": "Chocolate",
+    "source_url": "source_tips.html#L2825"
   },
   {
     "id": "tip-096",
@@ -1206,7 +1301,8 @@
       "cocoa-butter"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Chocolate"
+    "topic": "Chocolate",
+    "source_url": "source_tips.html#L2858"
   },
   {
     "id": "tip-097",
@@ -1218,7 +1314,8 @@
       "mycryo-tempering"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Chocolate"
+    "topic": "Chocolate",
+    "source_url": "source_tips.html#L2880"
   },
   {
     "id": "tip-098",
@@ -1230,7 +1327,8 @@
       "cocoa-butter"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Chocolate"
+    "topic": "Chocolate",
+    "source_url": "source_tips.html#L2913"
   },
   {
     "id": "tip-099",
@@ -1244,7 +1342,8 @@
       "custard-cream"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flour & Starch"
+    "topic": "Flour & Starch",
+    "source_url": "source_tips.html#L2944"
   },
   {
     "id": "tip-100",
@@ -1254,7 +1353,8 @@
       "butter"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Frostings General"
+    "topic": "Frostings General",
+    "source_url": "source_tips.html#L2982"
   },
   {
     "id": "tip-101",
@@ -1268,7 +1368,8 @@
       "milk-chocolate",
       "pistachio"
     ],
-    "topicGroup": "Flavor Pairing"
+    "topicGroup": "Flavor Pairing",
+    "source_url": "source_tips.html#L3018"
   },
   {
     "id": "tip-102",
@@ -1280,7 +1381,8 @@
       "cheesecake"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Sugar & Honey"
+    "topic": "Sugar & Honey",
+    "source_url": "source_tips.html#L3056"
   },
   {
     "id": "tip-103",
@@ -1291,7 +1393,8 @@
       "honey-cake"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Sugar & Honey"
+    "topic": "Sugar & Honey",
+    "source_url": "source_tips.html#L3091"
   },
   {
     "id": "tip-104",
@@ -1304,7 +1407,8 @@
       "sugar"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Sugar & Honey"
+    "topic": "Sugar & Honey",
+    "source_url": "source_tips.html#L3113"
   },
   {
     "id": "tip-105",
@@ -1317,7 +1421,8 @@
       "cocoa-powder"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Sugar & Honey"
+    "topic": "Sugar & Honey",
+    "source_url": "source_tips.html#L3151"
   },
   {
     "id": "tip-106",
@@ -1327,7 +1432,8 @@
       "flour-all-purpose"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flour & Starch"
+    "topic": "Flour & Starch",
+    "source_url": "source_tips.html#L3377"
   },
   {
     "id": "tip-107",
@@ -1339,7 +1445,8 @@
       "gorgonzola"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Sugar & Honey"
+    "topic": "Sugar & Honey",
+    "source_url": "source_tips.html#L3400"
   },
   {
     "id": "tip-108",
@@ -1349,7 +1456,8 @@
       "eggs"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Eggs"
+    "topic": "Eggs",
+    "source_url": "source_tips.html#L3419"
   },
   {
     "id": "tip-109",
@@ -1366,7 +1474,8 @@
       "caramel",
       "vanilla"
     ],
-    "topicGroup": "Flavor Pairing"
+    "topicGroup": "Flavor Pairing",
+    "source_url": "source_tips.html#L3444"
   },
   {
     "id": "tip-110",
@@ -1377,7 +1486,8 @@
       "butter-brown-beurre-noisette"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Butter & Fats"
+    "topic": "Butter & Fats",
+    "source_url": "source_tips.html#L3481"
   },
   {
     "id": "tip-111",
@@ -1394,7 +1504,8 @@
       "milk-chocolate",
       "white-chocolate"
     ],
-    "topicGroup": "Flavor Pairing"
+    "topicGroup": "Flavor Pairing",
+    "source_url": "source_tips.html#L3506"
   },
   {
     "id": "tip-112",
@@ -1405,7 +1516,8 @@
       "salt"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Butter & Fats"
+    "topic": "Butter & Fats",
+    "source_url": "source_tips.html#L3589"
   },
   {
     "id": "tip-113",
@@ -1415,7 +1527,8 @@
       "salt"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Salt"
+    "topic": "Salt",
+    "source_url": "source_tips.html#L3617"
   },
   {
     "id": "tip-114",
@@ -1425,7 +1538,8 @@
       "salt"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Salt"
+    "topic": "Salt",
+    "source_url": "source_tips.html#L3648"
   },
   {
     "id": "tip-115",
@@ -1435,7 +1549,8 @@
       "salt"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Salt"
+    "topic": "Salt",
+    "source_url": "source_tips.html#L3682"
   },
   {
     "id": "tip-116",
@@ -1448,7 +1563,8 @@
       "cream-cheese",
       "vanilla"
     ],
-    "topicGroup": "Flavor Pairing"
+    "topicGroup": "Flavor Pairing",
+    "source_url": "source_tips.html#L3711"
   },
   {
     "id": "tip-117",
@@ -1462,7 +1578,8 @@
       "dark-chocolate"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Salt"
+    "topic": "Salt",
+    "source_url": "source_tips.html#L3751"
   },
   {
     "id": "tip-118",
@@ -1472,7 +1589,8 @@
       "salt"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Salt"
+    "topic": "Salt",
+    "source_url": "source_tips.html#L3785"
   },
   {
     "id": "tip-119",
@@ -1487,7 +1605,8 @@
       "cheesecake"
     ],
     "topicGroup": "Techniques",
-    "topic": "Infusion"
+    "topic": "Infusion",
+    "source_url": "source_tips.html#L3794"
   },
   {
     "id": "tip-120",
@@ -1500,7 +1619,8 @@
       "meringue"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Salt"
+    "topic": "Salt",
+    "source_url": "source_tips.html#L3814"
   },
   {
     "id": "tip-121",
@@ -1516,7 +1636,8 @@
       "apple"
     ],
     "topicGroup": "Techniques",
-    "topic": "Infusion"
+    "topic": "Infusion",
+    "source_url": "source_tips.html#L3829"
   },
   {
     "id": "tip-122",
@@ -1528,7 +1649,8 @@
       "zephyr"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L3859"
   },
   {
     "id": "tip-123",
@@ -1542,7 +1664,8 @@
       "dark-chocolate"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L3893"
   },
   {
     "id": "tip-124",
@@ -1553,7 +1676,8 @@
       "gelatin"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L3914"
   },
   {
     "id": "tip-125",
@@ -1566,7 +1690,8 @@
       "cornstarch"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L3949"
   },
   {
     "id": "tip-126",
@@ -1578,7 +1703,8 @@
       "citric-acid",
       "honey-cake"
     ],
-    "topicGroup": "Flavor Pairing"
+    "topicGroup": "Flavor Pairing",
+    "source_url": "source_tips.html#L3991"
   },
   {
     "id": "tip-127",
@@ -1592,7 +1718,8 @@
       "passionfruit",
       "lemon"
     ],
-    "topicGroup": "Flavor Pairing"
+    "topicGroup": "Flavor Pairing",
+    "source_url": "source_tips.html#L4028"
   },
   {
     "id": "tip-128",
@@ -1605,7 +1732,8 @@
       "bilberry"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Butter & Fats"
+    "topic": "Butter & Fats",
+    "source_url": "source_tips.html#L4069"
   },
   {
     "id": "tip-129",
@@ -1618,7 +1746,8 @@
       "cinnamon"
     ],
     "topicGroup": "Techniques",
-    "topic": "Infusion"
+    "topic": "Infusion",
+    "source_url": "source_tips.html#L4096"
   },
   {
     "id": "tip-130",
@@ -1630,7 +1759,8 @@
       "coffee-espresso"
     ],
     "topicGroup": "Techniques",
-    "topic": "Infusion"
+    "topic": "Infusion",
+    "source_url": "source_tips.html#L4141"
   },
   {
     "id": "tip-131",
@@ -1640,7 +1770,8 @@
       "apricot",
       "flavor-pairing"
     ],
-    "topicGroup": "Flavor Pairing"
+    "topicGroup": "Flavor Pairing",
+    "source_url": "source_tips.html#L4183"
   },
   {
     "id": "tip-132",
@@ -1651,7 +1782,8 @@
       "sugar"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L4214"
   },
   {
     "id": "tip-133",
@@ -1664,7 +1796,8 @@
       "sugar"
     ],
     "topicGroup": "Techniques",
-    "topic": "Tempering"
+    "topic": "Tempering",
+    "source_url": "source_tips.html#L4250"
   },
   {
     "id": "tip-134",
@@ -1676,7 +1809,8 @@
       "sugar"
     ],
     "topicGroup": "Techniques",
-    "topic": "Tempering"
+    "topic": "Tempering",
+    "source_url": "source_tips.html#L4281"
   },
   {
     "id": "tip-135",
@@ -1686,7 +1820,8 @@
       "custard-cream"
     ],
     "topicGroup": "Techniques",
-    "topic": "Tempering"
+    "topic": "Tempering",
+    "source_url": "source_tips.html#L4325"
   },
   {
     "id": "tip-136",
@@ -1701,7 +1836,8 @@
       "vanilla"
     ],
     "topicGroup": "Techniques",
-    "topic": "Tempering"
+    "topic": "Tempering",
+    "source_url": "source_tips.html#L4348"
   },
   {
     "id": "tip-137",
@@ -1713,7 +1849,8 @@
       "egg-yolks"
     ],
     "topicGroup": "Techniques",
-    "topic": "Tempering"
+    "topic": "Tempering",
+    "source_url": "source_tips.html#L4388"
   },
   {
     "id": "tip-138",
@@ -1724,7 +1861,8 @@
       "sour-cream"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Dairy"
+    "topic": "Dairy",
+    "source_url": "source_tips.html#L4439"
   },
   {
     "id": "tip-139",
@@ -1735,7 +1873,8 @@
       "whipping-cream"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Dairy"
+    "topic": "Dairy",
+    "source_url": "source_tips.html#L4477"
   },
   {
     "id": "tip-140",
@@ -1749,7 +1888,8 @@
       "cheesecake"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Chocolate"
+    "topic": "Chocolate",
+    "source_url": "source_tips.html#L4502"
   },
   {
     "id": "tip-141",
@@ -1762,7 +1902,8 @@
       "cheesecake"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Cake Fillings"
+    "topic": "Cake Fillings",
+    "source_url": "source_tips.html#L4533"
   },
   {
     "id": "tip-142",
@@ -1775,7 +1916,8 @@
       "agar-agar"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L4565"
   },
   {
     "id": "tip-143",
@@ -1786,7 +1928,8 @@
       "zephyr"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L4593"
   },
   {
     "id": "tip-144",
@@ -1796,7 +1939,8 @@
       "pectin-nh"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L4626"
   },
   {
     "id": "tip-145",
@@ -1807,7 +1951,8 @@
       "cheesecake"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L4668"
   },
   {
     "id": "tip-146",
@@ -1821,7 +1966,8 @@
       "pistachio"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L4699"
   },
   {
     "id": "tip-147",
@@ -1832,7 +1978,8 @@
       "sugar"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L4722"
   },
   {
     "id": "tip-148",
@@ -1845,7 +1992,8 @@
       "cream-of-tartar"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L4756"
   },
   {
     "id": "tip-149",
@@ -1855,7 +2003,8 @@
       "eggs"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Eggs"
+    "topic": "Eggs",
+    "source_url": "source_tips.html#L4798"
   },
   {
     "id": "tip-150",
@@ -1867,7 +2016,8 @@
       "custard-cream"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Eggs"
+    "topic": "Eggs",
+    "source_url": "source_tips.html#L4837"
   },
   {
     "id": "tip-151",
@@ -1879,7 +2029,8 @@
       "meringue"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Eggs"
+    "topic": "Eggs",
+    "source_url": "source_tips.html#L4859"
   },
   {
     "id": "tip-152",
@@ -1890,7 +2041,8 @@
       "custard-cream"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Eggs"
+    "topic": "Eggs",
+    "source_url": "source_tips.html#L4892"
   },
   {
     "id": "tip-153",
@@ -1902,7 +2054,8 @@
       "custard-cream"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Eggs"
+    "topic": "Eggs",
+    "source_url": "source_tips.html#L4940"
   },
   {
     "id": "tip-154",
@@ -1914,7 +2067,8 @@
       "egg-whites"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Eggs"
+    "topic": "Eggs",
+    "source_url": "source_tips.html#L4973"
   },
   {
     "id": "tip-155",
@@ -1925,7 +2079,8 @@
       "banana"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flavorings & Colorings"
+    "topic": "Flavorings & Colorings",
+    "source_url": "source_tips.html#L5018"
   },
   {
     "id": "tip-156",
@@ -1939,7 +2094,8 @@
       "chocolate"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flavorings & Colorings"
+    "topic": "Flavorings & Colorings",
+    "source_url": "source_tips.html#L5058"
   },
   {
     "id": "tip-157",
@@ -1953,7 +2109,8 @@
       "meringue"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flavorings & Colorings"
+    "topic": "Flavorings & Colorings",
+    "source_url": "source_tips.html#L5106"
   },
   {
     "id": "tip-158",
@@ -1967,7 +2124,8 @@
       "zephyr"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Sugar & Honey"
+    "topic": "Sugar & Honey",
+    "source_url": "source_tips.html#L5137"
   },
   {
     "id": "tip-159",
@@ -1981,7 +2139,8 @@
       "sugar"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flavorings & Colorings"
+    "topic": "Flavorings & Colorings",
+    "source_url": "source_tips.html#L5158"
   },
   {
     "id": "tip-160",
@@ -1995,7 +2154,8 @@
       "sugar"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flavorings & Colorings"
+    "topic": "Flavorings & Colorings",
+    "source_url": "source_tips.html#L5192"
   },
   {
     "id": "tip-161",
@@ -2003,7 +2163,8 @@
     "text": "part 3\n\nthe beginning can be found by the hashtag #marusya_flavours\n\nWe continue to talk about tastes. Today I will tell you about the fifth little-known taste of umami, and also we will deal with such a concept as \"taste perception\".\n\n⚠️ Umami (found in high-protein foods)\n\nIn addition to the four basic tastes, a growing body of evidence points to the existence of a fifth taste, umami.\n\nIt gives dishes a salty or meaty \"rich\" taste. It can be felt in ingredients such as anchovies, cheese, mushrooms, green tea, and flavorings such as monosodium glutamate, which is the main component of ready-made seasonings.\n\n✔️TASTE PERCEPTION\nTemperature, texture, piquancy, astringent taste.\n\nIn the oral cavity, in addition to taste, there are tactile receptors sensitive to temperature and texture, which are also very important in determining taste. Such perception of food is usually called taste perception.\n\nThey help our body digest food, get the most nutrients and pleasure from it. A crunchy dish should be appealing in both sound and texture.\n\n⚠️ Temperature\n\nTemperature is the main sensation perceived by the oral cavity. The temperature of food even affects how we perceive its taste. For example, cool temperatures suppress the appeal of sweetness.\n\nThe temperature of food can affect both how it is perceived and how much you enjoy it. The menu is always dominated by hot dishes in winter and chilled ones on hot summer days, precisely because they balance the temperature of our body and the environment.\n\n⚠️ Texture\n\nThe texture of food plays a crucial role in its ability to attract and please. We consider mashed and/or creamy foods (soup, mashed potatoes) traditional while crunchy food is considered fun.\n\nWe like texture because it activates the senses of touch, sight, and sound.",
     "tags": [],
     "topicGroup": "Ingredients",
-    "topic": "Flavorings & Colorings"
+    "topic": "Flavorings & Colorings",
+    "source_url": "source_tips.html#L5222"
   },
   {
     "id": "tip-162",
@@ -2011,7 +2172,8 @@
     "text": "part 4\n\nthe beginning can be found by the hashtag #marusya_flavours\n\nThank you for supporting new posts about tastes with likes and comments! I see that you're involved and interested and it inspires me to write a continuation.\n\nSo, in addition to temperature and texture, the following 2 factors also affect the TASTE PERCEPTION:\n\n⚠️ Piquancy\n\nOur taste buds can also perceive what we mistakenly call spicy, meaning piquant taste, that is more pronounced in chili peppers and barely noticeable in cayenne pepper powder. Some prefer the piquant taste to others.\n\n⚠️ Astringent taste\n\nOur taste buds also recognize astringency, a dry mouth sensation caused by the tannin content in tea or wine, and sometimes cranberries, unripe persimmons, and certain types of nuts.\n\n✔️ AROMA\n\nTaste balance largely depends on the aroma. It is believed that it is the aroma that mainly determines the taste of the dish. This explains the popularity of such flavoring ingredients as fresh herbs, spices or lemon zest.\n\nAdding flavoring ingredients will enhance the aroma of the dish and improve its taste.\n\nSome foods are perceived with both our taste buds and our sense of smell.\n\n⚠️ Strong spicy taste\n\nIngredients such as horseradish and mustard have a strong spicy taste and aroma. However, despite their piquancy, their taste and aroma irritate the receptors of both the nasal and oral cavities.\n\n⚠️ Chemical senses\n\nThe term \"chemical senses\" refers to taste sensations that are pleasant to us (for example, the tingling sensation when drinking sparkling drinks) and at the same time irritate or deceive the taste buds (for example, chili pepper creates a false sensation of burning, while peppermint has a cooling effect).",
     "tags": [],
     "topicGroup": "Ingredients",
-    "topic": "Flavorings & Colorings"
+    "topic": "Flavorings & Colorings",
+    "source_url": "source_tips.html#L5254"
   },
   {
     "id": "tip-163",
@@ -2024,7 +2186,8 @@
       "honey-cake"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flavorings & Colorings"
+    "topic": "Flavorings & Colorings",
+    "source_url": "source_tips.html#L5285"
   },
   {
     "id": "tip-164",
@@ -2035,7 +2198,8 @@
       "caramelization"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flavorings & Colorings"
+    "topic": "Flavorings & Colorings",
+    "source_url": "source_tips.html#L5308"
   },
   {
     "id": "tip-165",
@@ -2046,7 +2210,8 @@
       "coconut"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Flavorings & Colorings"
+    "topic": "Flavorings & Colorings",
+    "source_url": "source_tips.html#L5332"
   },
   {
     "id": "tip-166",
@@ -2059,7 +2224,8 @@
       "heavy-whipping-cream"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Gelatin"
+    "topic": "Gelatin",
+    "source_url": "source_tips.html#L5355"
   },
   {
     "id": "tip-167",
@@ -2070,7 +2236,8 @@
       "sour-cream"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Gelatin"
+    "topic": "Gelatin",
+    "source_url": "source_tips.html#L5592"
   },
   {
     "id": "tip-168",
@@ -2081,7 +2248,8 @@
       "cheesecake"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Gelatin"
+    "topic": "Gelatin",
+    "source_url": "source_tips.html#L5387"
   },
   {
     "id": "tip-169",
@@ -2095,7 +2263,8 @@
       "egg-whites"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Frostings General"
+    "topic": "Frostings General",
+    "source_url": "source_tips.html#L5419"
   },
   {
     "id": "tip-170",
@@ -2105,7 +2274,8 @@
       "cheesecake"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "General"
+    "topic": "General",
+    "source_url": "source_tips.html#L5451"
   },
   {
     "id": "tip-171",
@@ -2118,7 +2288,8 @@
       "honey-cake"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Cake Coating Problems"
+    "topic": "Cake Coating Problems",
+    "source_url": "source_tips.html#L5488"
   },
   {
     "id": "tip-172",
@@ -2128,7 +2299,8 @@
       "honey-cake"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Cake Coating Problems"
+    "topic": "Cake Coating Problems",
+    "source_url": "source_tips.html#L5511"
   },
   {
     "id": "tip-173",
@@ -2141,7 +2313,8 @@
       "meringue"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "General"
+    "topic": "General",
+    "source_url": "source_tips.html#L5532"
   },
   {
     "id": "tip-174",
@@ -2152,7 +2325,8 @@
       "sour-cream"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Gelatin"
+    "topic": "Gelatin",
+    "source_url": "source_tips.html#L5592"
   },
   {
     "id": "tip-175",
@@ -2162,7 +2336,8 @@
       "cake"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Cake Coating Problems"
+    "topic": "Cake Coating Problems",
+    "source_url": "source_tips.html#L5626"
   },
   {
     "id": "tip-176",
@@ -2172,7 +2347,8 @@
       "cake"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Cake Coating Problems"
+    "topic": "Cake Coating Problems",
+    "source_url": "source_tips.html#L5663"
   },
   {
     "id": "tip-177",
@@ -2184,7 +2360,8 @@
       "chocolate"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Cake Coating Problems"
+    "topic": "Cake Coating Problems",
+    "source_url": "source_tips.html#L5687"
   },
   {
     "id": "tip-178",
@@ -2198,7 +2375,8 @@
       "gelatin"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Cake Coating Problems"
+    "topic": "Cake Coating Problems",
+    "source_url": "source_tips.html#L5705"
   },
   {
     "id": "tip-179",
@@ -2206,7 +2384,8 @@
     "text": "❌ You deviated from the cooking instructions. It's your fault if...\nSo, the first problem which we've already discussed was cracked coating.\n\nHow can you avoid this?\n\n✅ do not violate the technological process and coat the cake with buttercream no earlier than 10-12 hours after assembly, especially if it's a sponge cake\n\n✅ do not make the buttercream layer too thin, unless it is required by the design\n\n✅ use foolproof recipes in which the precise amount of frosting and soaking syrup sufficient to soak the layers are indicated\n\nThe second common problem that many pastry chefs might have faced is bubbles on the coated cake.\n\nWhat's that, what does it look like, why does it happen and how to deal with it?\n\nIt happens that you make a cake, keep it in the fridge, everything seems to be as it should be. You coat it with buttercream, decorate, and are waiting for the customer. And then 15-20 minutes before their arrival, you open the fridge, and, gosh, you see a large \"tumor\" that has formed on the perfectly smooth surface of the cake, as if something is trying to get out of the filling.\n\nWell, it is. Something is trying to get out, but what?\n\nThe first problem is a cracked coating. Why does this happen?\n\nCracks in the buttercream appear due to the fact that the cake layers have absorbed a lot of moisture from the buttercream, it became too dry and cracked.\n\nThe most common causes of cracking are:\n\n📌 coating the cake a few hours after assembly\n\nRemember, the technological process of making cakes requires keeping the cake after assembly for at least 10-12 hours in the fridge before proceeding with the coating.\n\nWhy? First, the fillings and the frosting need to stabilize and second, which is more important, the cake needs to mature – the cake layers need to soak with frosting.\n\nI prefer to leave the cake in the fridge overnight after assembly and coat it with buttercream only the next day. Thus, the layers will be perfectly soaked and will no longer absorb moisture from the buttercream.\n\n📌 too thin layer of coating\n\nEven if you left the cake in the fridge overnight and it soaked well, parts of the layers that do not come into direct contact with the frosting inside the cake (sides of the layers and the top layer) can still absorb some moisture from the buttercream.\n\nIf the coating is very thin and the layers are not sufficiently soaked, it results in cracks on the coating.\n\n📌 insufficient amount of frosting or soaking syrup in the recipe\n\nFinally, the third option that may cause cracks on coating is lack of frosting or syrup inside the cake. Consequently, you get too dry cake layers which actively absorb moisture from the buttercream.\n\nIn this case, even though you kept the cake in the fridge overnight after assembly and covered it with a proper layer of buttercream, cracks may appear on the second day after smoothing.\n\nIf the article was helpful, leave 👍🏻 in the comments and I'll write a continuation.",
     "tags": [],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Cake Coating Problems"
+    "topic": "Cake Coating Problems",
+    "source_url": "source_tips.html#L5719"
   },
   {
     "id": "tip-180",
@@ -2217,7 +2396,8 @@
       "chocolate"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Gelatin"
+    "topic": "Gelatin",
+    "source_url": "source_tips.html#L5768"
   },
   {
     "id": "tip-181",
@@ -2230,7 +2410,8 @@
       "butter"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Cream Cheese vs. Mascarpone"
+    "topic": "Cream Cheese vs. Mascarpone",
+    "source_url": "source_tips.html#L5806"
   },
   {
     "id": "tip-182",
@@ -2244,7 +2425,8 @@
       "butter"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Cream Cheese vs. Mascarpone"
+    "topic": "Cream Cheese vs. Mascarpone",
+    "source_url": "source_tips.html#L5854"
   },
   {
     "id": "tip-183",
@@ -2254,7 +2436,8 @@
       "cream-cheese"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Cream Cheese vs. Mascarpone"
+    "topic": "Cream Cheese vs. Mascarpone",
+    "source_url": "source_tips.html#L5883"
   },
   {
     "id": "tip-184",
@@ -2265,7 +2448,8 @@
       "butter"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Cream Cheese vs. Mascarpone"
+    "topic": "Cream Cheese vs. Mascarpone",
+    "source_url": "source_tips.html#L5893"
   },
   {
     "id": "tip-185",
@@ -2281,7 +2465,8 @@
       "butter"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Ganache"
+    "topic": "Ganache",
+    "source_url": "source_tips.html#L5951"
   },
   {
     "id": "tip-186",
@@ -2293,7 +2478,8 @@
       "heavy-whipping-cream"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Ganache"
+    "topic": "Ganache",
+    "source_url": "source_tips.html#L6015"
   },
   {
     "id": "tip-187",
@@ -2309,7 +2495,8 @@
       "milk"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Ganache"
+    "topic": "Ganache",
+    "source_url": "source_tips.html#L6038"
   },
   {
     "id": "tip-188",
@@ -2322,7 +2509,8 @@
       "chocolate"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Ganache"
+    "topic": "Ganache",
+    "source_url": "source_tips.html#L6079"
   },
   {
     "id": "tip-189",
@@ -2340,7 +2528,8 @@
       "vanilla"
     ],
     "topicGroup": "Ganache, Frostings & Fillings",
-    "topic": "Ganache"
+    "topic": "Ganache",
+    "source_url": "source_tips.html#L6108"
   },
   {
     "id": "tip-190",
@@ -2353,7 +2542,8 @@
       "heavy-whipping-cream"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Sugar & Honey"
+    "topic": "Sugar & Honey",
+    "source_url": "source_tips.html#L6182"
   },
   {
     "id": "tip-191",
@@ -2367,7 +2557,8 @@
       "heavy-whipping-cream"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Sugar & Honey"
+    "topic": "Sugar & Honey",
+    "source_url": "source_tips.html#L6221"
   },
   {
     "id": "tip-192",
@@ -2379,7 +2570,8 @@
       "gelatin"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Pectin & Agar"
+    "topic": "Pectin & Agar",
+    "source_url": "source_tips.html#L6245"
   },
   {
     "id": "tip-193",
@@ -2391,7 +2583,8 @@
       "ganache"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Dairy"
+    "topic": "Dairy",
+    "source_url": "source_tips.html#L6272"
   },
   {
     "id": "tip-194",
@@ -2402,7 +2595,8 @@
       "creme-fraiche"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Dairy"
+    "topic": "Dairy",
+    "source_url": "source_tips.html#L6299"
   },
   {
     "id": "tip-195",
@@ -2412,7 +2606,8 @@
       "heavy-whipping-cream"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Dairy"
+    "topic": "Dairy",
+    "source_url": "source_tips.html#L6345"
   },
   {
     "id": "tip-196",
@@ -2424,7 +2619,8 @@
       "sour-cream"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Dairy"
+    "topic": "Dairy",
+    "source_url": "source_tips.html#L6364"
   },
   {
     "id": "tip-197",
@@ -2439,7 +2635,8 @@
       "honey-cake"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Dairy"
+    "topic": "Dairy",
+    "source_url": "source_tips.html#L6383"
   },
   {
     "id": "tip-198",
@@ -2454,7 +2651,8 @@
       "draining-sour-cream"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Dairy"
+    "topic": "Dairy",
+    "source_url": "source_tips.html#L6406"
   },
   {
     "id": "tip-199",
@@ -2470,7 +2668,8 @@
       "kefir"
     ],
     "topicGroup": "Ingredients",
-    "topic": "Dairy"
+    "topic": "Dairy",
+    "source_url": "source_tips.html#L6430"
   },
   {
     "id": "tip-200",
@@ -2481,7 +2680,8 @@
       "cream-cheese"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "General"
+    "topic": "General",
+    "source_url": "source_tips.html#L6462"
   },
   {
     "id": "tip-201",
@@ -2492,7 +2692,8 @@
       "coconut"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Baking, Water Bath & Temperature"
+    "topic": "Baking, Water Bath & Temperature",
+    "source_url": "source_tips.html#L6493"
   },
   {
     "id": "tip-202",
@@ -2502,7 +2703,8 @@
       "cheesecake"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Baking, Water Bath & Temperature"
+    "topic": "Baking, Water Bath & Temperature",
+    "source_url": "source_tips.html#L6533"
   },
   {
     "id": "tip-203",
@@ -2520,7 +2722,8 @@
       "cinnamon"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Baking, Water Bath & Temperature"
+    "topic": "Baking, Water Bath & Temperature",
+    "source_url": "source_tips.html#L6554"
   },
   {
     "id": "tip-204",
@@ -2532,7 +2735,8 @@
       "coconut"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Crust & Shortbread"
+    "topic": "Crust & Shortbread",
+    "source_url": "source_tips.html#L6589"
   },
   {
     "id": "tip-205",
@@ -2544,7 +2748,8 @@
       "eggs"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Baking, Water Bath & Temperature"
+    "topic": "Baking, Water Bath & Temperature",
+    "source_url": "source_tips.html#L6625"
   },
   {
     "id": "tip-206",
@@ -2555,7 +2760,8 @@
       "water-bath-bain-marie"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Baking, Water Bath & Temperature"
+    "topic": "Baking, Water Bath & Temperature",
+    "source_url": "source_tips.html#L6650"
   },
   {
     "id": "tip-207",
@@ -2568,6 +2774,7 @@
       "coconut"
     ],
     "topicGroup": "Cheesecake",
-    "topic": "Crust & Shortbread"
+    "topic": "Crust & Shortbread",
+    "source_url": "source_tips.html#L6672"
   }
 ]
