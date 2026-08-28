@@ -19,13 +19,14 @@ function writeLS(key, value) {
   try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* storage unavailable — ignore */ }
 }
 
-// LT recipes and LT tips are temporarily out of sync with their EN datasets
-// (recipes.json rebuilt to 79 entries vs. recipes_lt.json's still-old 73; tips.json
-// rebuilt to 207 entries vs. tips_lt.json's still-old 310, both in a different order) —
-// force English site-wide until matching LT translations exist, regardless of
-// stored/browser language.
+// TEMPORARY (S16 preview): LT toggle re-enabled for visual QA of the in-progress
+// 79-recipe LT translation (10/79 done). recipes_lt.json now matches the new
+// 79-recipe id/field structure; untranslated entries carry EN text with
+// `_needs_translation: true` so they're visually obvious in LT mode. Revert this
+// force-en override until the full 79-recipe LT set is done — tips_lt.json is
+// still the old 310-entry file, unrelated to this preview.
 const appState = {
-  lang: "en",
+  lang: readLS(LS_KEYS.lang, "en"),
   theme: readLS(LS_KEYS.theme, null), // null = follow system
   favorites: new Set(readLS(LS_KEYS.favorites, [])), // set of "recipe:<id>" / "tip:<id>"
   shoppingPicks: readLS(LS_KEYS.shoppingPicks, {}), // { "recipe:<id>": multiplier }

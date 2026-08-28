@@ -131,7 +131,10 @@ function renderNav(lang, route) {
         <ul class="nav__links" id="nav-links">${NAV_LINKS.map((l) => `<li><a class="nav__link" href="${l.href}"${l.match(route) ? ' aria-current="page"' : ""}>${t(lang, l.key)}</a></li>`).join("")}<li><a class="nav__link nav__link--external" href="tools/qa-compare.html" target="_blank" rel="noopener">QA</a></li></ul>
       </nav>
       <div class="nav__actions">
-        <!-- lang-toggle removed: LT recipes are temporarily out of sync with rebuilt EN data, see state.js -->
+        <div class="lang-toggle" role="group" aria-label="${t(lang, "langToggle")}">
+          <button class="lang-toggle__btn" data-lang="en" aria-pressed="${String(lang === "en")}">EN</button>
+          <button class="lang-toggle__btn" data-lang="lt" aria-pressed="${String(lang === "lt")}">LT</button>
+        </div>
         <button class="icon-btn" id="theme-btn" aria-label="${t(lang, "themeToggle")}">${themeIconSvg(appState.theme)}</button>
       </div>
     </div>
@@ -834,7 +837,25 @@ function pageTitle(lang, route) {
  * never need to be re-attached. */
 function wireNavEvents() {
   document.querySelectorAll("[data-lang]").forEach((btn) => {
-    btn.addEventListener("click", () => { setLang(btn.dataset.lang); render(); });
+    btn.addEventListener("click", () => {
+      const newLang = btn.dataset.lang;
+      const { route } = parseHash();
+      // recipe/tip ids are derived per-language from each title (see data.js loadAll),
+      // so the same recipe has a different id in EN vs LT — switching language while on
+      // a detail page must remap the hash by array position, or the new language's id
+      // lookup finds nothing ("Nothing found").
+      if (route.name === "recipe" || route.name === "tip") {
+        const oldList = route.name === "recipe" ? getRecipes(appState.lang) : getTips(appState.lang);
+        const idx = oldList.findIndex((x) => x.id === route.id);
+        if (idx !== -1) {
+          const newList = route.name === "recipe" ? getRecipes(newLang) : getTips(newLang);
+          const newItem = newList[idx];
+          if (newItem) location.hash = `#/${route.name}/${newItem.id}`;
+        }
+      }
+      setLang(newLang);
+      render();
+    });
   });
   const themeBtn = document.getElementById("theme-btn");
   themeBtn?.addEventListener("click", () => {
