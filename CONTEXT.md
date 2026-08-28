@@ -28,22 +28,27 @@ translation exists yet for the new 79-recipe set. `state.js` forces
 matching LT translation is built. Tips' EN/LT (still the old 310-entry
 files, unaffected by any of this) were deliberately left visible.
 
-**Tips JSON export started from scratch — `.audit/rebuild/tips_export.json`
-(new file, 40/207 done, Tips 001–040).** This is genuinely new work: the
-207-tip MASTER ground truth (verified against source S9, against live S10)
-never had a JSON export before, only markdown. Built by hand, one tip at a
-time, no scripted content-writes (one lapse this session, corrected — see
-Archive). `tips-audit/SKILL.md` has the exact method, two source quirks
-(OCR first-letter-drop, tip-order ≠ source-line-order), and the title-echo
-stripping rule.
+**Tips JSON export finished — `.audit/rebuild/tips_export.json` is now
+207/207.** Built by hand, one tip at a time, no scripted content-writes
+(the S13 lapse was not repeated). The title-echo rule was corrected this
+session (see Archive S14) — a genuine title-echo in a tip's body first
+line is now stripped after a human eye check, never left in and never
+auto-stripped by pattern-match. Tip 113's short war-fundraiser mention was
+kept (per the skill's existing distinction); Tip 155's longer Bucha-massacre
+passage was stripped this session, closing the one open strip-decision the
+skill had flagged. `tips-audit/SKILL.md` has the exact method, two source
+quirks (OCR first-letter-drop, tip-order ≠ source-line-order), and the
+corrected title-echo rule.
 
-**🚩 Human decision still needed when the tips export reaches it:** Tip
-113's off-topic war/charity passage has no strip decision yet (Tip 155's
-is already decided, needs applying when reached). Also still open once the
-export nears completion: `tips.json` indices 305-309 have no match
-anywhere in the 207-tip rebuild.
+**Not yet done: the live cross-check of `tips_export.json` against
+`site/data/tips.json`/`tips_lt.json`** — the S13-recipes-equivalent
+verification step. `tips.json` indices 305-309 still have no confirmed
+match anywhere in the 207-tip rebuild; DECISIONS_review.md sections 12-27
+already have most of the per-tip findings from S10's audit, so this may be
+largely bookkeeping, but confirm before treating it as done — S13's
+recipes swap found a real bug no prior audit method caught.
 
-Session S13 closed 2026-08-27.
+Session S14 closed 2026-08-28.
 
 ## What this project is
 BakeStack: a recipe/pastry-tips database and calculator, starting from
@@ -383,6 +388,16 @@ before investing in that.
   a schema now.
 
 ## Done Log
+- 2026-08-28 (S14): `.audit/rebuild/tips_export.json` finished, 207/207
+  (from S13's 40/207). Title-echo rule reversed — a genuine title-echo in
+  a tip's body is now stripped after a human eye check, never left in;
+  `tips-audit/SKILL.md` rewritten, 3 echoes retroactively fixed on already-
+  done tips (041, 042, 048). Tip 155's war-passage strip decision made
+  (stripped) and applied; Tip 113's short version kept, per skill's
+  distinction. One MASTER-numbering gap (Tip 167) found via a numeric-gap
+  check and closed. Tip 174 (a de-dup pointer in MASTER, not real content)
+  — user chose to duplicate Tip 167's content under it, keeping the total
+  at 207. Full detail in Archive entry above.
 - 2026-08-27 (S13): `recipes.json`/`site/data/recipes.json` (EN) swapped
   live to the verified 79-recipe export, after a manual cross-check against
   the old file found and confirmed one real bug (two recipes concatenated).
@@ -443,48 +458,90 @@ audit + 13 bugs fixed, S6 LT translation redo + GitHub Pages deploy live,
 and further back.)
 
 ## Next tasks
-1. Continue `.audit/rebuild/tips_export.json` from Tip 041 (40/207 done).
-   Read `.claude/skills/tips-audit/SKILL.md`'s "Exporting MASTER to JSON"
-   section first — has the schema, the OCR first-letter-drop quirk, the
-   tip-order-≠-source-order quirk, and the title-echo-stripping rule (S13
-   went back and fixed this on all 40 already-done entries; keep applying
-   it to new ones, don't retrofit again later). No script may write to the
-   export file — read-only scripts to locate/verify only, Edit calls only
-   for the actual content (S13 violated this once with a 2-value tag fix,
-   corrected). When the export reaches Tip 113, ask the user for a strip
-   decision on its off-topic passage (same as Tip 155's, already decided —
-   apply that one directly, verbatim text in `.audit/DECISIONS_review.md`
-   section 1).
-2. Once tips_export.json is complete (207/207), do for tips what S13 did
-   for recipes: manually cross-check it against live `tips.json`/
+1. `tips_export.json` is complete (207/207, done S14). Do for tips what
+   S13 did for recipes: manually cross-check it against live `tips.json`/
    `tips_lt.json` before any swap — `.audit/DECISIONS_review.md` sections
    12-27 already have the per-tip findings from S10's audit (only 1 of 207
    matches exactly live; ~161 need only re-split/re-merge; 46 are genuinely
    absent — list in section 27), so this step may be mostly bookkeeping
    rather than fresh comparison, but confirm before swapping — S13 found a
    real bug in recipes that no prior audit had caught this way.
-3. Build the LT translation for the new 79-recipe set
+2. Build the LT translation for the new 79-recipe set
    (`recipes_export.json`) and re-enable the LT toggle once it's ready
    (`state.js`'s forced `lang: "en"` and the removed nav buttons in
    `app.js` are the two places to revert — see S13's Archive entry for
    what changed). Not started.
-4. Once tips_export.json is live-swapped (task 2) and the LT recipes
-   translation exists (task 3), archive the old error-filled
+3. Once tips_export.json is live-swapped (task 1) and the LT recipes
+   translation exists (task 2), archive the old error-filled
    `tips.json`/`tips_lt.json`/`recipes_lt.json` the way S13 already did
    for the old EN `recipes.json` (`.audit/archive/recipes_EN_pre_S13.json`
    is the pattern to follow).
-5. Strengthen QA Compare to do a real content diff (ingredients/steps/body
+4. Strengthen QA Compare to do a real content diff (ingredients/steps/body
    text) — `FIX_PLAN.md` step 0, still not done. Would catch this class of
    bug automatically going forward.
-6. Not yet scoped: whether/how to insert the `series_index.json` cross-
+5. Not yet scoped: whether/how to insert the `series_index.json` cross-
    reference data as reader-visible "Part X of Y" navigation text — into
    `MASTER_rebuilt_tips.md` body content, into the eventual tips export, or
    both. Format/scope decision deferred by user (S9) — see
    `.audit/DECISIONS_review.md` section 10.
-7. Optional: add real photos later (`image` field already reserved
+6. Optional: add real photos later (`image` field already reserved
    null on every recipe/tip record per the original plan).
 
 ## Archive
+
+### Session 2026-08-28 (S14) — tips_export.json finished, 207/207; title-echo rule reversed and applied retroactively; Tip 155 war passage stripped
+
+**Continued from S13's 40/207 into a full finish.** Worked through MASTER_rebuilt_tips.md
+tips 041-207 in ~14 batches, one Edit call per batch, each followed by a read-only Node
+validation pass (count, unique ids, tag-vocabulary check, echo-scan) — never a script write
+to the export file itself, per the skill's rule.
+
+**Title-echo rule reversed — this is the one real correction this session made.**
+S13's `tips-audit/SKILL.md` said leave a body's first-line echo of the title untouched "for
+safety," on the theory that ~1/3 of tips have a real (non-echo) opening sentence and an
+automated strip would risk deleting content. User pushed back mid-session ("echo tai
+neLegali egzistuoti") — echo must never survive, full stop. Reworked the rule: **strip a
+genuine title echo, but only after a human eye check per tip, never by pattern-match** (the
+safety concern was real, the fix was "check by hand," not "leave it in"). Rewrote the
+`tips-audit/SKILL.md` section accordingly (S14 note added), then re-scanned all 001-041
+already-exported tips with a read-only script and manually confirmed/fixed 3 more echoes
+that had slipped through under the old S13 rule (Tips 041, 042, 048). Every batch from
+Tip 041 onward was echo-checked before writing.
+
+**Tip 155's Ukraine-war/charity passage — stripped, per user decision this session.** The
+skill's open question ("no strip decision yet for Tip 155's Bucha-massacre opening
+paragraph") was resolved: same treatment as the already-decided Tip 155 precedent from
+DECISIONS_review.md — the passage is baking-unrelated and does not belong in site content.
+Tip 113's much shorter Ukraine-fundraiser thank-you (2 sentences, no graphic content) was
+**left in**, per the skill's existing distinction between the two.
+
+**One MASTER-file gap found and closed:** Tip 167 was skipped in an early Edit call
+(batch boundary slip) — caught by a post-batch numeric-gap script check (`for i in 1..N`),
+not by eye. Inserted with its correct source lines (5592-5625) between 166 and 168.
+
+**Tip 174 handling — user decision.** MASTER's Tip 174 is a bare de-duplication pointer
+("this is the same post as Tip 167, no new content") rather than an independent tip. Asked
+the user whether to skip the number (206 total) or duplicate Tip 167's content under id
+`tip-174` (207 total, matching MASTER's own "FINAL TOTAL TIP COUNT: 207" line). User chose
+duplicate — done.
+
+**Final state of `.audit/rebuild/tips_export.json`: 207/207, JSON-valid, no id gaps, every
+`tags` array checked against `tags.json`'s 4-category vocabulary (0 invalid tags), the 4
+tips MASTER already flagged as permanently incomplete (021, 118, 172, 183) correctly carry
+`is_complete: false` with their `[⚠ Note: ...]` warning text intact in `text`.**
+
+**Not done this session, still open:** the live cross-check against `site/data/tips.json`/
+`tips_lt.json` (the S13-recipes-equivalent verification step, listed as Next Task 2 before
+this session and still pending — DECISIONS_review.md sections 12-27 already have most of
+the per-tip findings, so this may be closer to bookkeeping than fresh comparison, but S13's
+recipes swap found a real bug that no prior audit caught this way, so don't skip it).
+
+**Code:** `.audit/rebuild/tips_export.json` (new, 1336 lines, 207 tip records),
+`.claude/skills/tips-audit/SKILL.md` (title-echo rule section rewritten, +23/-9 lines).
+**Entry point:** no runtime entry point — this is a static data file, not yet wired into
+`site/`. Next consumer is the swap step described in Next Tasks below.
+**Not measured:** whether tips_export.json's content actually matches what's live in
+`tips.json`/`tips_lt.json` at each index — that comparison has not been run yet this session.
 
 ### Session 2026-08-27 (S13) — recipes.json (EN) replaced live with the verified 79-recipe export; tsp/tbsp→gram conversion, categoryGroup fix, and a Kind (Recipe/Technique) filter added; tips.json JSON export started by hand (40/207 done)
 

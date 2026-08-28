@@ -225,15 +225,20 @@ check the file's last entry rather than assuming a count.
 recipes), `source_docx_lines` (`"START-END"`), `is_complete` (`false` only for the 4 known
 tips — see above).
 
-**Title vs. body first line — decided S13**: the MASTER heading (`## Tip NNN — Title (extra
-parenthetical)`) often carries a parenthetical suffix like "(Parts 1–3, incl. ...)" — this is
-provenance/series metadata, not part of the tip's own title. `title` gets the heading **with
-the parenthetical stripped**. The body's own first line, which is often (not always) the same
-title repeated in caps or mixed case as the social-media post's own headline, is **left
-in `text` unchanged** — same as how live `tips.json` already does it. Do not try to
-mechanically deduplicate title vs. first line; about a third of tips have a first line that
-diverges from the title (a real opening sentence, not an echo) and collapsing them on a
-pattern match would delete real content.
+**Title vs. body first line — decided S13, corrected S14**: the MASTER heading (`## Tip NNN —
+Title (extra parenthetical)`) often carries a parenthetical suffix like "(Parts 1–3, incl.
+...)" — this is provenance/series metadata, not part of the tip's own title. `title` gets the
+heading **with the parenthetical stripped**.
+
+For the body's own first line: **strip it only when it is a genuine echo — the same wording as
+`title`, verbatim or near-verbatim (case/whitespace differences only)**. About a third of tips
+have a first line that diverges from the title (a real opening sentence, not an echo) — those
+stay untouched, since collapsing them on a pattern match would delete real content. **Do not
+decide this with a script or a pattern match; read `title` against the body's first line for
+every tip and judge by eye** — S13 defaulted to leaving all echoes in, which shipped a
+duplicated headline into `text` on every tip where the two matched (confirmed on Tips 041 and
+048 in the 041–050 batch, both fixed S14). When the first line is a genuine echo, delete it
+(and the blank line that follows it) from `text` — do not leave it "for safety."
 
 **The source `.docx` extraction has an intermittent first-letter-drop bug**: some ALL-CAPS
 headers are missing their leading letter in `Patarimai_docx_source.txt` — e.g. "UGAR: HOW IT
