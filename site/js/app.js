@@ -62,10 +62,25 @@ function ingredientLine(ing, multiplier, lang) {
   } else if (ing.unit === "g" || ing.unit === "ml") {
     amtHtml = formatWeightVolume(scaledAmount, ing.unit);
   } else {
-    amtHtml = `${formatAmount(scaledAmount)}${ing.unit ? " " + esc(ing.unit) : ""}`;
+    amtHtml = `${formatAmount(scaledAmount)} ${ing.unit ? esc(ing.unit) : t(lang, "pieceUnit")}`;
   }
   const nameClass = scaledAmount == null ? "name name--no-qty" : "name";
   return `<li><span class="${nameClass}">${esc(ing.name)}</span><span class="amt">${amtHtml}</span></li>`;
+}
+
+/** Sums only ingredients with a known weight (g/ml, or tsp/tbsp with a gram conversion)
+ * scaled by multiplier. Ingredients given as a plain count ("1 egg", "1 onion") have no
+ * reliable weight and are skipped — the total is therefore a lower bound, never exact. */
+function calcTotalWeight(ingredients, multiplier) {
+  let sum = 0;
+  let hasSkipped = false;
+  for (const ing of ingredients) {
+    if (ing.amount == null) continue;
+    if (ing.unit === "g" || ing.unit === "ml") sum += ing.amount * multiplier;
+    else if (ing.amount_conv != null) sum += ing.amount_conv * multiplier;
+    else hasSkipped = true;
+  }
+  return { grams: Math.round(sum), isPartial: hasSkipped };
 }
 
 /** Renders the full ingredient list, grouping consecutive ingredients under the same
@@ -462,6 +477,7 @@ function renderRecipeDetail(lang, id) {
   ).join("");
 
   const ingHtml = renderIngredientList(recipe.ingredients, 1, lang);
+  const totalWeight = calcTotalWeight(recipe.ingredients, 1);
 
   const stepsHtml = recipe.steps.map((s) => `<li><p>${scaleStepText(esc(s).replace(/\{\{amount:([\d.]+)\}\}/g, "{{amount:$1}}"), 1)}</p></li>`).join("");
 
@@ -485,7 +501,7 @@ function renderRecipeDetail(lang, id) {
     <div class="recipe-detail__head">
       <div>
         <h1 class="recipe-detail__title">${esc(recipe.title)}${recipe.is_technique ? `<span class="recipe-detail__kind-badge">${t(lang, "kindTechnique")}</span>` : ""}</h1>
-        <div class="recipe-detail__meta"><span>${esc(tagLabel(lang, "category", recipe.category))}</span>${(recipe.tags || []).length ? `<span>· ${recipe.tags.map((tg) => anyTagLabel(lang, tg)).join(", ")}</span>` : ""}</div>
+        <div class="recipe-detail__meta"><span>${esc(tagLabel(lang, "category", recipe.category))}</span>${(recipe.tags || []).length ? `<span>· ${recipe.tags.map((tg) => anyTagLabel(lang, tg)).join(", ")}</span>` : ""}${recipe.source_url ? ` <span>· <a href="${esc(recipe.source_url)}" target="_blank" rel="noopener">${t(lang, "viewSource")}</a></span>` : ""}</div>
       </div>
       <div class="recipe-actions">
         <button class="btn" id="fav-btn" aria-pressed="${fav}">${iconHeart(fav)} ${t(lang, fav ? "unsaveFavorite" : "saveFavorite")}</button>
@@ -500,6 +516,10 @@ function renderRecipeDetail(lang, id) {
         <div class="multiplier" role="group" aria-label="Scale recipe">${multBtns}</div>
         <ul class="ingredient-list" id="ingredient-list">${ingHtml}</ul>
         <div id="price-block">${priceHtml}</div>
+        <div class="weight-note" id="weight-note" title="${esc(t(lang, "totalWeightApprox"))}">
+          <span>${t(lang, "totalWeightLabel")}</span>
+          <strong>${t(lang, "totalWeightValue", totalWeight.grams, totalWeight.isPartial)}</strong>
+        </div>
         ${recipe.servings ? `<div class="yield-note">${t(lang, "servingsYield", recipe.servings)}</div>` : ""}
       </aside>
       <div class="panel">
@@ -986,6 +1006,8 @@ function wireRecipeDetail(recipe) {
       const m = parseFloat(btn.dataset.mult);
       multBtns.forEach((b) => b.setAttribute("aria-pressed", String(b === btn)));
       document.getElementById("ingredient-list").innerHTML = renderIngredientList(recipe.ingredients, m, lang);
+      const tw = calcTotalWeight(recipe.ingredients, m);
+      document.querySelector("#weight-note strong").textContent = t(lang, "totalWeightValue", tw.grams, tw.isPartial);
       document.getElementById("steps-list").innerHTML = recipe.steps.map((s) => `<li><p>${scaleStepText(esc(s), m)}</p></li>`).join("");
       if (isPicked(recipe.id)) setPickMultiplier(recipe.id, m);
     });

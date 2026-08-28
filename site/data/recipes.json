@@ -50,7 +50,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "ganache"
+    "categoryGroup": "ganache",
+    "source_url": "source.html#L1"
   },
   {
     "id": "recipe-002",
@@ -159,7 +160,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cookies-brownies"
+    "categoryGroup": "cookies-brownies",
+    "source_url": "source.html#L22"
   },
   {
     "id": "recipe-003",
@@ -373,7 +375,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "pies-pastry"
+    "categoryGroup": "pies-pastry",
+    "source_url": "source.html#L75"
   },
   {
     "id": "recipe-004",
@@ -558,7 +561,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cupcake"
+    "categoryGroup": "cupcake",
+    "source_url": "source.html#L144"
   },
   {
     "id": "recipe-005",
@@ -635,7 +639,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "savory"
+    "categoryGroup": "savory",
+    "source_url": "source.html#L206"
   },
   {
     "id": "recipe-006",
@@ -756,7 +761,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cakes-loaf"
+    "categoryGroup": "cakes-loaf",
+    "source_url": "source.html#L238"
   },
   {
     "id": "recipe-007",
@@ -927,7 +933,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cinnamon-roll"
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "source.html#L278"
   },
   {
     "id": "recipe-008",
@@ -1129,7 +1136,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cinnamon-roll"
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "source.html#L335"
   },
   {
     "id": "recipe-009",
@@ -1298,7 +1306,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cinnamon-roll"
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "source.html#L396"
   },
   {
     "id": "recipe-010",
@@ -1473,7 +1482,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cheesecake"
+    "categoryGroup": "cheesecake",
+    "source_url": "source.html#L449"
   },
   {
     "id": "recipe-011",
@@ -1660,7 +1670,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cinnamon-roll"
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "source.html#L511"
   },
   {
     "id": "recipe-012",
@@ -1847,7 +1858,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cinnamon-roll"
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "source.html#L569"
   },
   {
     "id": "recipe-013",
@@ -2030,7 +2042,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cinnamon-roll"
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "source.html#L630"
   },
   {
     "id": "recipe-014",
@@ -2175,7 +2188,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cupcake"
+    "categoryGroup": "cupcake",
+    "source_url": "source.html#L680"
   },
   {
     "id": "recipe-015",
@@ -2285,7 +2299,8 @@
     "is_technique": false,
     "variant_of": "recipe-070",
     "variant_label": "Variant 1 of 2",
-    "categoryGroup": "tea-cake"
+    "categoryGroup": "tea-cake",
+    "source_url": "source.html#L746"
   },
   {
     "id": "recipe-016",
@@ -2348,7 +2363,8 @@
     "is_technique": false,
     "variant_of": "recipe-062",
     "variant_label": "Variant 1 of 3",
-    "categoryGroup": "cheesecake"
+    "categoryGroup": "cheesecake",
+    "source_url": "source.html#L779"
   },
   {
     "id": "recipe-017",
@@ -2471,7 +2487,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cupcake"
+    "categoryGroup": "cupcake",
+    "source_url": "source.html#L809"
   },
   {
     "id": "recipe-018",
@@ -2552,7 +2569,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "ganache"
+    "categoryGroup": "ganache",
+    "source_url": "source.html#L855"
   },
   {
     "id": "recipe-019",
@@ -2663,7 +2681,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "tiramisu-zephyr"
+    "categoryGroup": "tiramisu-zephyr",
+    "source_url": "source.html#L884"
   },
   {
     "id": "recipe-020",
@@ -2756,7 +2775,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "tiramisu-zephyr"
+    "categoryGroup": "tiramisu-zephyr",
+    "source_url": "source.html#L941"
   },
   {
     "id": "recipe-021",
@@ -2817,7 +2837,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "ganache"
+    "categoryGroup": "ganache",
+    "source_url": "source.html#L992"
   },
   {
     "id": "recipe-022",
@@ -3026,7 +3047,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cupcake"
+    "categoryGroup": "cupcake",
+    "source_url": "source.html#L1001"
   },
   {
     "id": "recipe-023",
@@ -3226,7 +3248,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cupcake"
+    "categoryGroup": "cupcake",
+    "source_url": "source.html#L1062"
   },
   {
     "id": "recipe-024",
@@ -3429,7 +3452,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cupcake"
+    "categoryGroup": "cupcake",
+    "source_url": "source.html#L1114"
   },
   {
     "id": "recipe-025",
@@ -3494,7 +3518,8 @@
     "is_technique": true,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "components-fillings"
+    "categoryGroup": "components-fillings",
+    "source_url": "source.html#L1167"
   },
   {
     "id": "recipe-027",
@@ -3677,7 +3702,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cupcake"
+    "categoryGroup": "cupcake",
+    "source_url": "source.html#L1238"
   },
   {
     "id": "recipe-028",
@@ -3753,7 +3779,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "components-fillings"
+    "categoryGroup": "components-fillings",
+    "source_url": "source.html#L1294"
   },
   {
     "id": "recipe-029",
@@ -3944,7 +3971,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cupcake"
+    "categoryGroup": "cupcake",
+    "source_url": "source.html#L1321"
   },
   {
     "id": "recipe-030",
@@ -4033,7 +4061,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cookies-brownies"
+    "categoryGroup": "cookies-brownies",
+    "source_url": "source.html#L1371"
   },
   {
     "id": "recipe-031",
@@ -4102,7 +4131,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cookies-brownies"
+    "categoryGroup": "cookies-brownies",
+    "source_url": "source.html#L1400"
   },
   {
     "id": "recipe-032",
@@ -4258,7 +4288,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cupcake"
+    "categoryGroup": "cupcake",
+    "source_url": "source.html#L1428"
   },
   {
     "id": "recipe-033",
@@ -4323,7 +4354,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "pies-pastry"
+    "categoryGroup": "pies-pastry",
+    "source_url": "source.html#L1472"
   },
   {
     "id": "recipe-034",
@@ -4366,7 +4398,8 @@
     "is_technique": true,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "components-fillings"
+    "categoryGroup": "components-fillings",
+    "source_url": "source.html#L1500"
   },
   {
     "id": "recipe-035",
@@ -4511,7 +4544,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cheesecake"
+    "categoryGroup": "cheesecake",
+    "source_url": "source.html#L1523"
   },
   {
     "id": "recipe-036",
@@ -4576,7 +4610,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cheesecake"
+    "categoryGroup": "cheesecake",
+    "source_url": "source.html#L1571"
   },
   {
     "id": "recipe-037",
@@ -4637,7 +4672,8 @@
     "is_technique": true,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "components-fillings"
+    "categoryGroup": "components-fillings",
+    "source_url": "source.html#L1597"
   },
   {
     "id": "recipe-038",
@@ -4758,7 +4794,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "tea-cake"
+    "categoryGroup": "tea-cake",
+    "source_url": "source.html#L1640"
   },
   {
     "id": "recipe-039",
@@ -4896,7 +4933,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cheesecake"
+    "categoryGroup": "cheesecake",
+    "source_url": "source.html#L1694"
   },
   {
     "id": "recipe-040",
@@ -5048,7 +5086,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "pies-pastry"
+    "categoryGroup": "pies-pastry",
+    "source_url": "source.html#L1742"
   },
   {
     "id": "recipe-041",
@@ -5160,7 +5199,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "pies-pastry"
+    "categoryGroup": "pies-pastry",
+    "source_url": "source.html#L1793"
   },
   {
     "id": "recipe-042",
@@ -5295,7 +5335,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cakes-loaf"
+    "categoryGroup": "cakes-loaf",
+    "source_url": "source.html#L1838"
   },
   {
     "id": "recipe-043",
@@ -5349,7 +5390,8 @@
     "is_technique": true,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "components-fillings"
+    "categoryGroup": "components-fillings",
+    "source_url": "source.html#L1889"
   },
   {
     "id": "recipe-044",
@@ -5480,7 +5522,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cakes-loaf"
+    "categoryGroup": "cakes-loaf",
+    "source_url": "source.html#L1922"
   },
   {
     "id": "recipe-045",
@@ -5516,7 +5559,8 @@
     "is_technique": true,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "components-fillings"
+    "categoryGroup": "components-fillings",
+    "source_url": "source.html#L1967"
   },
   {
     "id": "recipe-046",
@@ -5648,7 +5692,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "tiramisu-zephyr"
+    "categoryGroup": "tiramisu-zephyr",
+    "source_url": "source.html#L2002"
   },
   {
     "id": "recipe-047",
@@ -5751,7 +5796,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "savory"
+    "categoryGroup": "savory",
+    "source_url": "source.html#L2059"
   },
   {
     "id": "recipe-048",
@@ -5846,7 +5892,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cookies-brownies"
+    "categoryGroup": "cookies-brownies",
+    "source_url": "source.html#L2101"
   },
   {
     "id": "recipe-049",
@@ -5883,7 +5930,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "ganache"
+    "categoryGroup": "ganache",
+    "source_url": "source.html#L2143"
   },
   {
     "id": "recipe-050",
@@ -6058,7 +6106,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "pies-pastry"
+    "categoryGroup": "pies-pastry",
+    "source_url": "source.html#L2174"
   },
   {
     "id": "recipe-051",
@@ -6141,7 +6190,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cheesecake"
+    "categoryGroup": "cheesecake",
+    "source_url": "source.html#L2230"
   },
   {
     "id": "recipe-052",
@@ -6226,7 +6276,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "savory"
+    "categoryGroup": "savory",
+    "source_url": "source.html#L2256"
   },
   {
     "id": "recipe-053",
@@ -6271,7 +6322,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "ganache"
+    "categoryGroup": "ganache",
+    "source_url": "source.html#L2290"
   },
   {
     "id": "recipe-054",
@@ -6430,7 +6482,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cakes-loaf"
+    "categoryGroup": "cakes-loaf",
+    "source_url": "source.html#L2318"
   },
   {
     "id": "recipe-055",
@@ -6586,7 +6639,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cupcake"
+    "categoryGroup": "cupcake",
+    "source_url": "source.html#L2368"
   },
   {
     "id": "recipe-056",
@@ -6833,7 +6887,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cakes-loaf"
+    "categoryGroup": "cakes-loaf",
+    "source_url": "source.html#L2422"
   },
   {
     "id": "recipe-057",
@@ -6864,7 +6919,8 @@
     "is_technique": true,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "components-fillings"
+    "categoryGroup": "components-fillings",
+    "source_url": "source.html#L2494"
   },
   {
     "id": "recipe-058",
@@ -6898,7 +6954,8 @@
     "is_technique": true,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "components-fillings"
+    "categoryGroup": "components-fillings",
+    "source_url": "source.html#L2526"
   },
   {
     "id": "recipe-059",
@@ -7054,7 +7111,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "pies-pastry"
+    "categoryGroup": "pies-pastry",
+    "source_url": "source.html#L2566"
   },
   {
     "id": "recipe-060",
@@ -7169,7 +7227,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "pies-pastry"
+    "categoryGroup": "pies-pastry",
+    "source_url": "source.html#L2619"
   },
   {
     "id": "recipe-061",
@@ -7207,7 +7266,8 @@
     "is_technique": true,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "components-fillings"
+    "categoryGroup": "components-fillings",
+    "source_url": "source.html#L2679"
   },
   {
     "id": "recipe-062",
@@ -7274,7 +7334,8 @@
     "is_technique": false,
     "variant_of": "recipe-080",
     "variant_label": "Variant 2 of 3",
-    "categoryGroup": "cheesecake"
+    "categoryGroup": "cheesecake",
+    "source_url": "source.html#L2709"
   },
   {
     "id": "recipe-063",
@@ -7411,7 +7472,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cakes-loaf"
+    "categoryGroup": "cakes-loaf",
+    "source_url": "source.html#L2745"
   },
   {
     "id": "recipe-064",
@@ -7606,7 +7668,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cupcake"
+    "categoryGroup": "cupcake",
+    "source_url": "source.html#L2795"
   },
   {
     "id": "recipe-065",
@@ -7771,7 +7834,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cupcake"
+    "categoryGroup": "cupcake",
+    "source_url": "source.html#L2852"
   },
   {
     "id": "recipe-066",
@@ -7945,7 +8009,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cupcake"
+    "categoryGroup": "cupcake",
+    "source_url": "source.html#L2904"
   },
   {
     "id": "recipe-067",
@@ -8079,7 +8144,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cupcake"
+    "categoryGroup": "cupcake",
+    "source_url": "source.html#L2957"
   },
   {
     "id": "recipe-068",
@@ -8219,7 +8285,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cheesecake"
+    "categoryGroup": "cheesecake",
+    "source_url": "source.html#L3003"
   },
   {
     "id": "recipe-069",
@@ -8381,7 +8448,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cupcake"
+    "categoryGroup": "cupcake",
+    "source_url": "source.html#L3054"
   },
   {
     "id": "recipe-070",
@@ -8579,7 +8647,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "tea-cake"
+    "categoryGroup": "tea-cake",
+    "source_url": "source.html#L3116"
   },
   {
     "id": "recipe-071",
@@ -8729,7 +8798,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cakes-loaf"
+    "categoryGroup": "cakes-loaf",
+    "source_url": "source.html#L3178"
   },
   {
     "id": "recipe-072",
@@ -8870,7 +8940,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cheesecake"
+    "categoryGroup": "cheesecake",
+    "source_url": "source.html#L3232"
   },
   {
     "id": "recipe-073",
@@ -8993,7 +9064,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cakes-loaf"
+    "categoryGroup": "cakes-loaf",
+    "source_url": "source.html#L3277"
   },
   {
     "id": "recipe-074",
@@ -9135,7 +9207,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cupcake"
+    "categoryGroup": "cupcake",
+    "source_url": "source.html#L3316"
   },
   {
     "id": "recipe-075",
@@ -9269,7 +9342,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "cheesecake"
+    "categoryGroup": "cheesecake",
+    "source_url": "source.html#L3371"
   },
   {
     "id": "recipe-076",
@@ -9403,7 +9477,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "tea-cake"
+    "categoryGroup": "tea-cake",
+    "source_url": "source.html#L3425"
   },
   {
     "id": "recipe-077",
@@ -9497,7 +9572,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "tea-cake"
+    "categoryGroup": "tea-cake",
+    "source_url": "source.html#L3472"
   },
   {
     "id": "recipe-078",
@@ -9623,7 +9699,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "tiramisu-zephyr"
+    "categoryGroup": "tiramisu-zephyr",
+    "source_url": "source.html#L3515"
   },
   {
     "id": "recipe-079",
@@ -9735,7 +9812,8 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": null,
-    "categoryGroup": "savory"
+    "categoryGroup": "savory",
+    "source_url": "source.html#L3558"
   },
   {
     "id": "recipe-080",
@@ -9796,6 +9874,7 @@
     "is_technique": false,
     "variant_of": null,
     "variant_label": "Variant 3 of 3",
-    "categoryGroup": "cheesecake"
+    "categoryGroup": "cheesecake",
+    "source_url": "source.html#L3600"
   }
 ]
