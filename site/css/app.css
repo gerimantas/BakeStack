@@ -1,4 +1,4 @@
-@import url("tokens.css?v=14");
+@import url("tokens.css?v=15");
 
 *, *::before, *::after { box-sizing: border-box; }
 html, body { overflow-x: clip; }
@@ -910,16 +910,29 @@ img { max-width: 100%; display: block; }
   line-height: 1;
 }
 .incomplete-legend {
-  display: flex;
+  display: inline-flex;
   gap: var(--space-2xs);
   align-items: baseline;
-  max-width: 42rem;
   margin-bottom: var(--space-md);
+  padding: var(--space-2xs) var(--space-sm);
+  border: 1px solid color-mix(in oklch, var(--color-warn) 45%, transparent);
+  border-radius: var(--radius-md);
+  background: transparent;
   color: var(--color-warn);
   font-size: var(--text-sm);
   font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out);
 }
-.incomplete-legend__mark { color: var(--color-warn); }
+.incomplete-legend:hover { border-color: var(--color-warn); background: var(--color-warn-bg); }
+.incomplete-legend[aria-pressed="true"] {
+  background: var(--color-warn);
+  border-color: var(--color-warn);
+  color: var(--color-paper);
+}
+.incomplete-legend__mark { color: inherit; }
+.incomplete-legend__count { font-weight: 400; opacity: 0.8; }
 .incomplete-warning {
   max-width: 42rem;
   margin-block: var(--space-md) var(--space-lg);

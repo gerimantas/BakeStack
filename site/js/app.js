@@ -375,7 +375,7 @@ function recipeCard(recipe, lang, query) {
   <a class="recipe-card ${recipe.image ? "" : "recipe-card--no-media"}${incomplete ? " recipe-card--incomplete" : ""}" href="#/recipe/${recipe.id}">
     ${recipeCardMedia(recipe, favBtn)}
     ${!recipe.image ? favBtn : ""}
-    ${incomplete ? `<span class="recipe-card__incomplete-badge" title="${esc(t(lang, "incompleteLegend"))}" aria-label="${esc(t(lang, "incompleteLegend"))}">⚠</span>` : ""}
+    ${incomplete ? `<span class="recipe-card__incomplete-badge" title="${esc(t(lang, "incompleteTitle"))}" aria-label="${esc(t(lang, "incompleteTitle"))}">⚠</span>` : ""}
     <div class="recipe-card__body">
       <span class="recipe-card__cat">${esc(tagLabel(lang, "category", recipe.category))}${recipe.is_technique ? `<span class="recipe-card__kind-badge">${t(lang, "kindTechnique")}</span>` : ""}</span>
       <h3 class="recipe-card__title">${num ? `<span class="recipe-card__num">#${num}</span> ` : ""}${highlight(recipe.title, query)}</h3>
@@ -405,6 +405,7 @@ function renderRecipesView(lang, params) {
   const kind = params.get("kind") || "";
   const category = params.get("cat") || "";
   const tag = params.get("tag") || "";
+  const incompleteOnly = params.get("incomplete") === "1";
 
   const groupDict = STRINGS[lang]?.categoryGroups || STRINGS.en.categoryGroups;
   // curated display order, not alphabetical or by count — biggest/most-searched-for types first
@@ -422,6 +423,7 @@ function renderRecipesView(lang, params) {
   else if (kind === "recipe") filtered = filtered.filter((r) => !r.is_technique);
   if (category) filtered = filtered.filter((r) => r.categoryGroup === category);
   if (tag) filtered = filtered.filter((r) => (r.tags || []).includes(tag));
+  if (incompleteOnly) filtered = filtered.filter((r) => r.is_complete === false);
 
   // Counts reflect the OTHER active filters (so picking a Type doesn't hide Flavor counts, and vice
   // versa), but not the chip's own filter — that would collapse every non-selected chip to a same/lower count.
@@ -461,7 +463,7 @@ function renderRecipesView(lang, params) {
         ${flavorTags.slice(0, 14).map((tg) => chip(tagLabel(lang, "flavor_theme", tg), byOtherCategory.filter((r) => (r.tags || []).includes(tg)).length, tag === tg, `#/recipes?${withParam(params, "tag", tg)}`)).join("")}
       </div></div>
     </div>` : ""}
-    ${filtered.some((r) => r.is_complete === false) ? `<p class="incomplete-legend"><span class="incomplete-legend__mark">⚠</span> ${esc(t(lang, "incompleteLegend"))}</p>` : ""}
+    ${all.some((r) => r.is_complete === false) ? `<button type="button" class="incomplete-legend" data-nav="#/recipes?${withParam(params, "incomplete", incompleteOnly ? "" : "1")}" aria-pressed="${incompleteOnly}"><span class="incomplete-legend__mark">⚠</span> ${esc(t(lang, "incompleteLegend"))} <span class="incomplete-legend__count">(${all.filter((r) => r.is_complete === false).length})</span></button>` : ""}
     ${filtered.length ? `<div class="recipe-grid">${filtered.map((r) => recipeCard(r, lang, query)).join("")}</div>`
       : `<div class="empty-state"><h2>${t(lang, "noResults")}</h2><p>${t(lang, "noResultsHint")}</p></div>`}
   </div>`;

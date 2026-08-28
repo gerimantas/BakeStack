@@ -30,7 +30,7 @@ const STRINGS = {
     filterFlavor: "Flavor / theme",
     filterTopic: "Topic",
     allTypes: "All",
-    incompleteLegend: "Incomplete recipe",
+    incompleteLegend: "Incomplete recipes",
     incompleteTitle: "This recipe is incomplete",
     incompleteBody: "The ingredient list is complete, but some cooking steps are missing from the original source — they existed only in the post's photos, never in the text.",
     // Tip topicGroup/topic values are stored in English in tips.json (they are data, not
