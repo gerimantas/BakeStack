@@ -499,6 +499,7 @@ img { max-width: 100%; display: block; }
 }
 
 .recipe-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   border: 1px solid var(--color-rule);
@@ -891,6 +892,43 @@ img { max-width: 100%; display: block; }
 }
 .tip-card__num,
 .recipe-card__num { color: var(--color-muted); font-weight: 400; font-size: 0.7em; }
+
+/* Incomplete recipes: ingredients are complete but some method steps are missing from
+   the source. Flagged on the card, explained once above the list, detailed on the page. */
+.recipe-card--incomplete { background: var(--color-warn-bg); border-color: var(--color-warn-rule); }
+.recipe-card__incomplete-badge {
+  position: absolute;
+  top: var(--space-sm);
+  right: calc(var(--space-sm) + 2.1rem);
+  z-index: var(--z-raised);
+  color: var(--color-warn);
+  font-size: var(--text-lg);
+  line-height: 1;
+}
+.incomplete-legend {
+  display: flex;
+  gap: var(--space-2xs);
+  align-items: baseline;
+  max-width: 42rem;
+  margin-bottom: var(--space-md);
+  color: var(--color-warn);
+  font-size: var(--text-sm);
+  font-weight: 600;
+}
+.incomplete-legend__mark { color: var(--color-warn); }
+.incomplete-warning {
+  max-width: 42rem;
+  margin-top: var(--space-md);
+  padding: var(--space-md) var(--space-lg);
+  background: var(--color-warn-bg);
+  border: 1px solid var(--color-warn-rule);
+  border-radius: var(--radius-md);
+  color: var(--color-ink-2);
+}
+.incomplete-warning strong { color: var(--color-ink); }
+.incomplete-warning__mark { color: var(--color-warn); }
+.incomplete-warning p { margin-top: var(--space-2xs); font-size: var(--text-sm); }
+.incomplete-warning__detail { font-weight: 500; color: var(--color-ink); }
 .tip-card__en-badge {
   display: inline-block;
   font-size: var(--text-xs);

@@ -370,10 +370,12 @@ function recipeCard(recipe, lang, query) {
   const fav = isFavorite("recipe", recipe.id);
   const num = (recipe.id.match(/^recipe-(\d+)$/) || [])[1]?.replace(/^0+(?=\d)/, "");
   const favBtn = `<button class="fav-btn recipe-card__fav" data-fav-recipe="${recipe.id}" aria-pressed="${fav}" aria-label="${t(lang, fav ? "unsaveFavorite" : "saveFavorite")}">${iconHeart(fav)}</button>`;
+  const incomplete = recipe.is_complete === false;
   return `
-  <a class="recipe-card ${recipe.image ? "" : "recipe-card--no-media"}" href="#/recipe/${recipe.id}">
+  <a class="recipe-card ${recipe.image ? "" : "recipe-card--no-media"}${incomplete ? " recipe-card--incomplete" : ""}" href="#/recipe/${recipe.id}">
     ${recipeCardMedia(recipe, favBtn)}
     ${!recipe.image ? favBtn : ""}
+    ${incomplete ? `<span class="recipe-card__incomplete-badge" title="${esc(t(lang, "incompleteLegend"))}" aria-label="${esc(t(lang, "incompleteLegend"))}">⚠</span>` : ""}
     <div class="recipe-card__body">
       <span class="recipe-card__cat">${esc(tagLabel(lang, "category", recipe.category))}${recipe.is_technique ? `<span class="recipe-card__kind-badge">${t(lang, "kindTechnique")}</span>` : ""}</span>
       <h3 class="recipe-card__title">${num ? `<span class="recipe-card__num">#${num}</span> ` : ""}${highlight(recipe.title, query)}</h3>
@@ -460,6 +462,7 @@ function renderRecipesView(lang, params) {
         ${flavorTags.slice(0, 14).map((tg) => chip(tagLabel(lang, "flavor_theme", tg), byOtherCategory.filter((r) => (r.tags || []).includes(tg)).length, tag === tg, `#/recipes?${withParam(params, "tag", tg)}`)).join("")}
       </div></div>
     </div>` : ""}
+    ${filtered.some((r) => r.is_complete === false) ? `<p class="incomplete-legend"><span class="incomplete-legend__mark">⚠</span> ${esc(t(lang, "incompleteLegend"))}</p>` : ""}
     ${filtered.length ? `<div class="recipe-grid">${filtered.map((r) => recipeCard(r, lang, query)).join("")}</div>`
       : `<div class="empty-state"><h2>${t(lang, "noResults")}</h2><p>${t(lang, "noResultsHint")}</p></div>`}
   </div>`;
@@ -515,6 +518,11 @@ function renderRecipeDetail(lang, id) {
       </div>
     </div>
     ${recipe.description ? `<p class="recipe-detail__desc">${esc(recipe.description)}</p>` : ""}
+    ${recipe.is_complete === false ? `<div class="incomplete-warning" role="note">
+      <strong><span class="incomplete-warning__mark">⚠</span> ${esc(t(lang, "incompleteTitle"))}</strong>
+      <p>${esc(t(lang, "incompleteBody"))}</p>
+      ${recipe.incomplete_note ? `<p class="incomplete-warning__detail">${esc(recipe.incomplete_note)}</p>` : ""}
+    </div>` : ""}
     <div class="recipe-detail__grid">
       <aside class="panel panel--ingredients">
         <h2>${t(lang, "ingredients")}</h2>
@@ -630,14 +638,17 @@ function renderTipsView(lang, params) {
   if (topic) filtered = filtered.filter((tp) => tp.topic === topic || (!tp.topic && tp.topicGroup === topic));
 
   const countFor = (matchFn) => all.filter(matchFn).length;
+  // topicGroup/topic are stored in English in the data and stay English in the URL and in
+  // `data-topic-value` (they are the filter key); only the visible label is translated.
+  const topicLabel = (value) => t(lang, "topicLabels")?.[value] || value;
   const selectedLabel = (() => {
     if (!topic) return t(lang, "allTypes");
     for (const g of TOPIC_GROUP_ORDER) {
-      if (topic === g) return `${g} (${countFor((r) => r.topicGroup === g)})`;
+      if (topic === g) return `${topicLabel(g)} (${countFor((r) => r.topicGroup === g)})`;
       const subs = TOPIC_GROUP_SUBCATEGORY_ORDER[g] || [];
-      if (subs.includes(topic)) return `${topic} (${countFor((r) => r.topicGroup === g && r.topic === topic)})`;
+      if (subs.includes(topic)) return `${topicLabel(topic)} (${countFor((r) => r.topicGroup === g && r.topic === topic)})`;
     }
-    return topic;
+    return topicLabel(topic);
   })();
   const groupsHtml = TOPIC_GROUP_ORDER
     .filter((g) => all.some((r) => r.topicGroup === g))
@@ -645,16 +656,16 @@ function renderTipsView(lang, params) {
       const subs = TOPIC_GROUP_SUBCATEGORY_ORDER[g];
       const groupCount = countFor((r) => r.topicGroup === g);
       if (!subs) {
-        return `<button type="button" class="topic-dropdown__item topic-dropdown__item--group" data-topic-value="${esc(g)}" aria-pressed="${topic === g}">${esc(g)} <span class="topic-dropdown__count">(${groupCount})</span></button>`;
+        return `<button type="button" class="topic-dropdown__item topic-dropdown__item--group" data-topic-value="${esc(g)}" aria-pressed="${topic === g}">${esc(topicLabel(g))} <span class="topic-dropdown__count">(${groupCount})</span></button>`;
       }
       const subItems = subs
         .filter((s) => all.some((r) => r.topicGroup === g && r.topic === s))
         .map((s) => {
           const count = countFor((r) => r.topicGroup === g && r.topic === s);
-          return `<button type="button" class="topic-dropdown__item topic-dropdown__item--sub" data-topic-value="${esc(s)}" aria-pressed="${topic === s}">${esc(s)} <span class="topic-dropdown__count">(${count})</span></button>`;
+          return `<button type="button" class="topic-dropdown__item topic-dropdown__item--sub" data-topic-value="${esc(s)}" aria-pressed="${topic === s}">${esc(topicLabel(s))} <span class="topic-dropdown__count">(${count})</span></button>`;
         })
         .join("");
-      return `<div class="topic-dropdown__group"><div class="topic-dropdown__group-label">${esc(g)} <span class="topic-dropdown__count">(${groupCount})</span></div>${subItems}</div>`;
+      return `<div class="topic-dropdown__group"><div class="topic-dropdown__group-label">${esc(topicLabel(g))} <span class="topic-dropdown__count">(${groupCount})</span></div>${subItems}</div>`;
     })
     .join("");
 
@@ -800,10 +811,8 @@ function renderAboutView(lang) {
     <div class="page-head"><h1>${t(lang, "aboutTitle")}</h1></div>
     <p style="max-width:42rem;color:var(--color-ink-2)">${esc(t(lang, "aboutIntro"))}</p>
     ${sectionsHtml}
-    <p style="max-width:42rem;margin-top:var(--space-xl);color:var(--color-ink-2)">${esc(t(lang, "aboutPlanned"))}</p>
-    <p style="max-width:42rem;margin-top:var(--space-md);color:var(--color-ink-2)">${esc(t(lang, "aboutTested"))}</p>
-    <h2 style="font-size:var(--text-lg);margin:var(--space-xl) 0 var(--space-2xs)">${esc(t(lang, "aboutHomeScreenTitle"))}</h2>
-    <ul style="max-width:42rem;color:var(--color-ink-2);padding-left:1.2em">
+    <p style="max-width:42rem;margin-top:var(--space-md);color:var(--color-ink-2)">${esc(t(lang, "aboutHomeScreenIntro"))}</p>
+    <ul style="max-width:42rem;color:var(--color-ink-2);padding-left:1.2em;margin-top:var(--space-2xs)">
       <li style="margin-bottom:var(--space-2xs)">${esc(t(lang, "aboutHomeScreenAndroid"))}</li>
       <li>${esc(t(lang, "aboutHomeScreenIos"))}</li>
     </ul>
