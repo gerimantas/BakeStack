@@ -1,6 +1,6 @@
 ---
 name: tips-audit
-description: Audit, verify, and fix BakeStack's tips.json data-quality pipeline — the multi-file workflow around .audit/rebuild/MASTER_rebuilt_tips.md (the verified ground truth) and its relationship to Patarimai_docx_source.txt (raw source) and site/data/tips.json (live site data, only 1 of 207 tips currently matches ground truth). Use this whenever the user asks to check, verify, compare, or fix tips against the source material, wants to continue the tips.json structural fix, mentions MASTER_rebuilt_tips.md, DECISIONS_review.md, or asks "ar sutampa su originalu" / "patikrink patarimą" / "taisom tips.json" style questions. Also load this before writing any read-only audit script for this project — it documents a normalization bug class that already bit two separate scripts this session.
+description: Audit, verify, and fix BakeStack's tips.json data-quality pipeline — the multi-file workflow around .audit/rebuild/MASTER_rebuilt_tips.md (the verified ground truth) and its relationship to Patarimai_docx_source.txt (raw source) and site/data/tips.json (live site data — as of S15, the verified 207-tip export, swapped in from the old 310-entry file). Use this whenever the user asks to check, verify, compare, or fix tips against the source material, wants to continue the tips.json structural fix, mentions MASTER_rebuilt_tips.md, DECISIONS_review.md, topicGroup/topic classification, or asks "ar sutampa su originalu" / "patikrink patarimą" / "taisom tips.json" style questions. Also load this before writing any read-only audit script for this project — it documents a normalization bug class that already bit two separate scripts this session.
 ---
 
 # BakeStack tips.json audit & fix workflow
@@ -270,9 +270,73 @@ single-field correction found via a script, must go through a manual Edit call**
 that touches the file directly. A script may locate/verify a problem; only a human-reviewed
 Edit fixes it.
 
-**Known items still pending when the export reaches them** (don't re-decide, don't forget):
-the 4 incomplete tips' `[⚠ Note: ...]` warnings and `is_complete: false` must be copied
-verbatim from MASTER (already correctly done for Tip 021 in the 001–040 batch); Tip 155's
-war/charity passage must be stripped per the already-decided fix (section 1 above); **Tip 113
-still has no strip decision — ask the user when the export reaches it, same as Tip 155's
-question was originally asked**, don't strip it unilaterally or leave it in without asking.
+**Known items — resolved S15, don't re-decide**: the 4 incomplete tips' `[⚠ Note: ...]`
+warnings and `is_complete: false` are copied verbatim from MASTER in the export. Tip 155's
+and Tip 113's war/charity passages are BOTH stripped now (Tip 113 decided S15 — see below).
+
+## S15 — tips.json swapped live; a script had silently pre-decided Tip 113 without asking
+
+**What happened**: sometime between S13 (when `tips_export.json`'s Tip 113 entry was written)
+and S15, the Tip 113 war-passage strip described in the paragraph above as "ask the user, don't
+strip unilaterally" was violated — the export's Tip 113 text already had the passage removed,
+with no DECISIONS_review.md entry recording who decided that or when. `MASTER_rebuilt_tips.md`
+still had the passage. This was only caught because S15's live-swap cross-check compared the
+export against MASTER field-by-field before trusting it, per this skill's core method — it
+would NOT have been caught by re-reading the export alone, since the export was internally
+consistent (just quietly wrong relative to its own source of truth).
+
+**Lesson for future sessions**: when resuming this project after a gap, do not assume a
+"pending decision" flagged in an old skill note is still pending — check whether the file it
+concerns has moved past that decision unrecorded. A read-only diff against the last-known-good
+source (here, MASTER) is the only way to catch this class of drift; asking "does the decision
+log mention it" is not enough, since the log itself was what went stale.
+
+**Resolution**: user re-confirmed the strip decision (same treatment as Tip 155). Applied to
+`MASTER_rebuilt_tips.md`; `tips_export.json` needed no edit since it already matched. Logged
+as DECISIONS_review.md section 29.
+
+## S15 — topicGroup/topic taxonomy (all 207 tips classified)
+
+The live site's tips Topic filter had been silently broken since launch — `app.js` read a
+`tip.topic` field that never existed in any `tips.json` revision, old or new. S15 built a
+two-level classification and populated it on every tip in both `tips_export.json` and
+`site/data/tips.json`.
+
+**Method**: read each tip's full body text (title alone produced at least one wrong call —
+Tip 100 "How to Correctly Make and Serve a Cake with Buttercream" was initially guessed into
+Cheesecake by title-adjacency to neighboring cheesecake tips; the actual content is about
+Napoleon-cake buttercream, correctly Frostings). Worked in 11 batches of ~20 tips, each batch
+diffed field-by-field against a pre-batch snapshot before moving on, confirming zero
+title/text/tags drift across all 207 — the classification pass never touched content.
+
+**Final structure** (verified by script: every subcategory sum equals its group total, all
+7 groups sum to 207):
+- **Cheesecake** (25): Crust & Shortbread (4), Baking/Water Bath/Temperature (10), Cream
+  Cheese vs. Mascarpone (5), General (6)
+- **Ganache, Frostings & Fillings** (35): Ganache (11), Cake Coating Problems (7), Cake
+  Fillings (8), Mousses (3), Frostings General (6)
+- **Ingredients** (104): Gelatin (7), Pectin & Agar (17), Sugar & Honey (13), Eggs (7), Flour
+  & Starch (11), Dairy (13), Butter & Fats (9), Chocolate (11), Salt (6), Flavorings &
+  Colorings (11)
+- **Techniques** (15): Whipping & Meringue (4), Tempering (7 — crème anglaise series + egg
+  tempering kept together as one technique), Infusion (4)
+- **Flavor Pairing** (10) — flat, no subcategories
+- **Sponge, Honey Cake & Puff Pastry** (16) — flat
+- **Troubleshooting** (2) — flat, deliberately small; general technique-choice questions
+  (e.g. "Whisk, Paddle or Dough Hook") went to Sponge/Honey/Puff instead, since
+  Troubleshooting's own members are specifically about unresolved/curdling-type problems
+
+**Classification judgment calls worth knowing before extending this** (if a future tip is
+added, or a borderline case needs re-checking): a tip about a technique applied to a specific
+ingredient goes with the INGREDIENT if the technique is ingredient-specific (e.g. "Tempering
+Gelatin" → Ingredients/Gelatin, not Techniques/Tempering, because gelatin tempering isn't the
+same mechanism as chocolate/egg tempering); it goes with the TECHNIQUE group if the same
+technique spans multiple ingredients (e.g. crème anglaise + egg-tempering tips share one
+mechanism → Techniques/Tempering). A tip mentioning multiple ingredients gets the one its
+own text treats as the PRIMARY subject, not every ingredient it names in passing.
+
+Live site rendering: a custom dropdown component (`.topic-dropdown` in `app.js`/`app.css`)
+replaced a native `<select>`, because the native grouped-`<optgroup>` popup with 24 options
+rendered starting above the browser viewport regardless of trigger position — an
+uncontrollable-via-CSS native-select limitation on long option lists, not a bug in this
+project's markup.
