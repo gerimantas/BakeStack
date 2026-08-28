@@ -57,8 +57,16 @@ tips.json revision — now works, rendered as a custom grouped dropdown
 with this many options). Recipe pages' "Related tips" block now matches on
 exact `topicGroup` only (was noisy tag-overlap scoring).
 
-**LT tips are NOT swapped.** `tips_lt.json` still holds the old 310-entry
-set in the old order — same translation gap as LT recipes.
+**LT tips translation in progress: 100/207 done (S18), committed, live on site.**
+`site/data/tips_lt.json` is now a full 207-entry structure (EN base, matching live
+`tips.json`'s index order) with tip-001 through tip-100's `title`+`text` overwritten with
+verified LT translations. Method: reuse+resplit from the old 310-entry LT set (archived to
+`.audit/archive/tips_LT_pre_S18.json`), never re-translated from scratch — confirmed every
+new tip's content already exists somewhere in the old LT text, just merged/split differently.
+`.audit/rebuild/tips_export_lt.json` holds the 100 done translations in export schema, the
+growing target for the remaining 107. `tags`/`topicGroup`/`topic` stay EN-sourced on every LT
+tip (deliberately out of scope this pass). See Archive S18 for the full method and entry
+point to continue.
 
 **LT recipe translation is 79/79 done (S17), committed, LT toggle LIVE.**
 S16 left 5 untranslated (recipe-076 through recipe-080); S17 translated
@@ -454,6 +462,21 @@ before investing in that.
   S16 for the exact resume point.
 
 ## Done Log
+- 2026-08-28 (S18): LT tips translation started, 100/207 done (tip-001
+  through tip-100). Old 310-entry `tips_lt.json` archived to
+  `.audit/archive/tips_LT_pre_S18.json` before being overwritten. Method:
+  reuse+resplit from the archived old content, hand-verified per tip, not
+  re-translated from scratch. Live `site/data/tips_lt.json` rebuilt as a
+  full 207-entry EN-base structure with done tips' title+text overwritten
+  in place (LT toggle still shows correct EN text for untranslated tips).
+  First use this session of a local preview loop (`python -m http.server`
+  + Playwright screenshot) — caught a stale server serving the wrong root
+  page and confirmed correct SPA hash-route + localStorage-lang format
+  before trusting the live preview. One false "bug" report caught and
+  retracted before any fix (screenshot misread, not a real data bug).
+  Updated `recipes-audit` and (global) `playwright` skills with this
+  session's confirmed lessons. Not pushed to GitHub. Full detail in
+  Archive entry above.
 - 2026-08-28 (S17): LT recipe translation finished, 79/79 (recipe-076
   through -080, the ones S16 left), structurally verified against EN.
   Deleted the unused root-level `recipes_lt.json` duplicate. Added a
@@ -559,33 +582,114 @@ audit + 13 bugs fixed, S6 LT translation redo + GitHub Pages deploy live,
 and further back.)
 
 ## Next tasks
-1. **User spot-check LT recipe translations (3rd QA layer).** All 79 are
-   now translated and structurally verified (S17), but never read by a
+1. **Continue LT tips translation — tip-101 through tip-207 (107 remaining).**
+   Method and exact entry point: Archive S18 ("Entry point" line). Live file
+   is `site/data/tips_lt.json`; working export is
+   `.audit/rebuild/tips_export_lt.json`; old-content source is
+   `.audit/archive/tips_LT_pre_S18.json`.
+2. **User spot-check LT recipe translations (3rd QA layer).** All 79 are
+   translated and structurally verified (S17), but never read by a
    native speaker — pick ~5-10 recipes across different categories and
-   read them normally as a user, not diffing JSON.
-2. `tips_lt.json` is still the old 310-entry file, out of sync with the
-   live 207-entry `tips.json` (swapped S15) — same translation gap
-   recipes just closed, not started for tips.
-3. Once LT tips (task 2) are done, archive the old error-filled
-   `tips_lt.json` the way S13 archived the old EN `recipes.json` —
-   `.audit/archive/recipes_EN_pre_S13.json` is the pattern; recipes_lt.json
-   was already archived (S16: `.audit/archive/recipes_LT_pre_S16_preview.json`).
-4. Strengthen QA Compare to do a real content diff (ingredients/steps/body
+   read them normally as a user, not diffing JSON. Same gap will apply to
+   LT tips once task 1 finishes.
+3. Strengthen QA Compare to do a real content diff (ingredients/steps/body
    text) — `FIX_PLAN.md` step 0, still not done. Would catch this class of
    bug automatically going forward.
-5. Not yet scoped: whether/how to insert the `series_index.json` cross-
+4. Not yet scoped: whether/how to insert the `series_index.json` cross-
    reference data as reader-visible "Part X of Y" navigation text — into
    `MASTER_rebuilt_tips.md` body content, into the eventual tips export, or
    both. Format/scope decision deferred by user (S9) — see
    `.audit/DECISIONS_review.md` section 10.
-6. Optional: add real photos later (`image` field already reserved
+5. Optional: add real photos later (`image` field already reserved
    null on every recipe/tip record per the original plan).
-7. Known limitation, not yet fixed: shopping-list "bought" checkboxes are
+6. Known limitation, not yet fixed: shopping-list "bought" checkboxes are
    keyed by ingredient name, so they reset (silently, no data loss — just
    unchecked) if the user switches EN/LT while mid-shop. Low priority
    unless it's reported as confusing in practice.
 
 ## Archive
+
+### Session 2026-08-28 (S18) — LT tips translation started fresh (100/207 done), live-preview method established, two skills updated with this session's lessons
+
+**Confirmed LT tips are stale, not just incomplete.** `site/data/tips.json` (EN, live) was
+swapped to the verified 207-tip export on 2026-08-28 (same day, earlier commit). `tips_lt.json`
+(LT) was last touched 2026-08-26 and still held the old 310-entry structure — index-misaligned
+with the new EN file, not just missing translations. Confirmed by git log timestamp comparison,
+not by trusting `## Status`.
+
+**Translation method: reuse+resplit, not re-translate.** A read-only mapping script
+(`.audit/rebuild/tips_export.json` vs `.audit/archive/tips_EN_pre_S15.json`, 10 sample points
+per tip against the full old 310-entry corpus) showed all 207 new tips have at least partial
+content already translated in the old 310-entry LT set — new tips are old ones merged,
+resplit, or lightly edited, never wholesale new text. Confirmed the script's own known
+false-negative/false-positive failure modes twice this session (missed an intermediate old
+index for tip-023's first sub-point; wrongly matched a short common phrase for tip-087/088's
+"chocolate type" section, which is genuinely new text found by full-corpus search, not
+mapping-table trust). Every one of the 100 done so far was hand-verified against the actual
+old LT text before writing, per `tips-audit` skill's core method — no exceptions taken on the
+script's word.
+
+**Old 310-entry LT file archived before it left the working tree.** It only existed live in
+`site/data/tips_lt.json`, about to be overwritten — recovered via
+`git show 124ce36:site/data/tips_lt.json` (the last commit touching it) and saved to
+`.audit/archive/tips_LT_pre_S18.json`, matching the `..._pre_S15/S13/S16` archive pattern
+already used for EN/recipe swaps.
+
+**Live file structure: EN base + progressive LT overwrite, matching the recipes_lt.json
+pattern.** `site/data/tips_lt.json` was rebuilt as a full 207-entry copy of live `tips.json`
+(title/text/tags/topicGroup/topic), then each translated tip's `title`+`text` fields are
+overwritten in place as it's finished — so the live site shows LT for done tips and EN
+(readable, not broken) for the rest, exactly like the recipes translation looked mid-progress
+in earlier sessions. `tags`/`topicGroup`/`topic` stay EN-sourced for all 207 (translating
+those is out of scope for this pass).
+
+**Local preview server used for the first time this session.** `python -m http.server` from
+`site/` on a free port, Playwright screenshot to confirm the live page actually renders
+correctly — caught two real bugs before they shipped: (1) a stale server process on port 8791
+was silently serving `tools/qa-compare.html` as root instead of `index.html` — killed and
+restarted on 8792; (2) SPA hash routing needs the real route segment (`#/recipe/<slug>`, not
+`#/recipes/<id>` — singular, and by slug not the JSON `id` field) plus the correct localStorage
+key (`bakestack:lang`, JSON-stringified value) — verified by reading `app.js`/`state.js`
+directly rather than guessing, after a first guess loaded the wrong page.
+
+**One false "bug" reported and retracted.** Read a screenshot's rendered ingredient list as
+missing the "(1)"/"(2)" duplicate-ingredient markers seen in the source; the live JSON field
+actually had them — narrow-column text rendering, not a data bug. Caught before any fix was
+applied, but only after already telling the user "found a bug." `recipes-audit` skill amended
+with an explicit rule: never assert a bug from a screenshot without confirming the underlying
+field value first.
+
+**Two skills updated with this session's confirmed lessons** (see Code below) —
+`recipes-audit` (screenshot-vs-JSON verification rule) and `playwright` (no-venv-here
+fallback to system Python, Windows terminal cp1252 crash on Lithuanian characters printed via
+scraped-text `print()`, SPA hash-routing pitfalls).
+
+**Code:**
+- `site/data/tips_lt.json` — full 207-entry rebuild (EN base), 100 tips' title+text
+  overwritten with verified LT translations (tip-001 through tip-100)
+- `.audit/rebuild/tips_export_lt.json` (new) — the 100 done translations in the same schema
+  as `tips_export.json`, built one tip at a time via hand-verified Edit calls, growing target
+  for the remaining 107
+- `.audit/archive/tips_LT_pre_S18.json` (new) — the old 310-entry LT file, recovered from git
+  history before being overwritten
+- `.claude/skills/recipes-audit/SKILL.md` — added "Verifying against the live site" section
+- `C:\Users\retco\.ai-skills\playwright\SKILL.md` — added 3 pitfalls rows (global skill file,
+  outside this repo, not in `git status` here)
+
+**Entry point:** to continue the translation, read `.audit/rebuild/tips_export.json` for the
+next untranslated tip (tip-101 onward), find its old-index mapping the same way (multi-sample
+phrase search against `.audit/archive/tips_EN_pre_S15.json`, cross-checked by hand against
+`.audit/archive/tips_LT_pre_S18.json`), write the LT text, append to
+`.audit/rebuild/tips_export_lt.json`, then sync `site/data/tips_lt.json`'s matching index's
+title+text fields. To preview: `python -m http.server <port>` from `site/`, force LT via
+`localStorage.setItem('bakestack:lang', JSON.stringify('lt'))`, screenshot with Playwright.
+
+**Not measured:** LT translation for tip-101 through tip-207 (107 remaining). Whether the
+`tags` array should eventually be translated too (currently EN-sourced on every LT tip,
+deliberately out of scope this pass — the site already resolves EN tag slugs through
+`tags_lt.json` for display, same as the recipes side). No native-speaker spot-check has been
+done on any of the 100 LT tips written this session (parallel to the recipes 3rd-QA-layer gap
+already tracked below).
 
 ### Session 2026-08-28 (S17) — LT recipe translation finished (79/79), source-audit link added to every recipe, shopping list's data model fixed, two real EN/LT-switch bugs fixed in favorites and shopping-list state
 

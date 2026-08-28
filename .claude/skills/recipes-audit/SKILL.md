@@ -110,6 +110,20 @@ batches — add to this list when found, don't assume it's complete):
   can repeat for reposts, pick the occurrence in that recipe's expected document-order
   position) and taking the next recipe's start line minus 1 as this one's end.
 
+## Verifying against the live site (not the export pipeline)
+
+If the check is "does the LIVE `site/data/recipes_lt.json` match source" (not the
+export-building workflow above), the same no-script-shortcut rule applies one level higher:
+**never call something a bug because a screenshot looks wrong. Read the actual JSON field
+value first.** Confirmed failure (2026-08-28, S18): a screenshot of a rendered recipe card
+appeared to be missing the "(1)"/"(2)" markers next to duplicated ingredient names (narrow
+column, text truncated visually) — reported as a translation bug before checking the source
+JSON, which had the markers correctly in place. The screenshot was never wrong evidence of
+rendering; it was insufficient evidence of content. A rendered page can visually truncate,
+wrap, or omit text no bug in the data. Always `Read`/`Grep` the exact JSON entry's field
+values as the last step before asserting a discrepancy — a visual read is a lead, not a
+verdict, exactly as the mechanical-check rule above already says.
+
 ## Known state as of the session that built this skill (2026-08-27, S12)
 
 - Batch 1 (recipes #1–16) exported and fully manually verified against source, twice — once
