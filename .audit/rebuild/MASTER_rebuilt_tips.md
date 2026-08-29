@@ -1,6 +1,15 @@
 # MASTER Rebuilt Tips — Merged & De-duplicated
 
-**FINAL TOTAL TIP COUNT: 207** (Tip 001 through Tip 207, contiguous, no gaps or duplicate numbers)
+**FINAL TOTAL TIP COUNT: 206** (numbered Tip 001 through Tip 207, contiguous, no duplicate numbers)
+
+**Tip 174 is not a tip — it is a de-duplication pointer to Tip 167**, so 207 numbers hold 206
+distinct tips. The numbering deliberately keeps the slot rather than renumbering, so every tip
+number stays stable across this document, the batch files and the exports. On the site the tip
+numbering therefore runs ...172, 173, 175... — the gap at 174 is intentional and is not a lost
+tip. `tips_export.json` / `tips_export_lt.json` and `site/data/tips.json` / `tips_lt.json` each
+hold 206 records and contain no `tip-174`; it was exported as a real tip by mistake and removed
+once the duplicate surfaced on the live site (identical text under two ids, both pointing at
+`source_tips.html#L5592`).
 
 This is the merged, de-duplicated master list built from six independent batch re-derivations
 (`batch1_rebuilt.md` through `batch6_rebuilt.md`) of tips found in the original source document
@@ -6746,7 +6755,7 @@ It's like with zefir – everyone has their own preferences. First of all, YOU s
 
 **Source:** merged B5-38-position-duplicate + B6-05 (identical content in both; see also Tip 167 which independently captured this same post from Batch 5's numbering — this is the SAME underlying source post as Tip 167, redundantly captured again at the B5/B6 seam)
 
-**Notes:** ⚠️ **DE-DUPLICATION NOTE:** This post's full text is identical to Tip 167 above ("What You Need to Know About Gelatin — What Gelatin Is; Sources; Powdered Gelatin Prep"). Batch 5 captured it once as B5-38 (well inside its core range, already placed as Tip 167) and Batch 6 captured it again as B6-05 at the start of its range (a natural seam overlap). Per this document's numbering scheme, it is not repeated as its own tip here — refer to **Tip 167** for the full text. This entry exists only to document the seam correspondence (B5-38 = B6-05) for the human reconciliation pass; no new tip number is consumed. Title previously read "Part 1" — removed: source has no such numbering. The source reuses the identical heading "WHAT YOU NEED TO KNOW ABOUT GELATIN" for at least 4 separate, unrelated posts (Tips 166, 167/174, 180, each a distinct topic) with no part-numbering anywhere; Tip 167's own title correctly uses no number, so this pointer now matches that convention.
+**Notes:** ⚠️ **DE-DUPLICATION NOTE:** This post's full text is identical to Tip 167 above ("What You Need to Know About Gelatin — What Gelatin Is; Sources; Powdered Gelatin Prep"). Batch 5 captured it once as B5-38 (well inside its core range, already placed as Tip 167) and Batch 6 captured it again as B6-05 at the start of its range (a natural seam overlap). Per this document's numbering scheme, it is not repeated as its own tip here — refer to **Tip 167** for the full text. This entry exists only to document the seam correspondence (B5-38 = B6-05) for the human reconciliation pass; no new tip number is consumed. **The export did not honour that:** `tip-174` was written into `tips_export*.json` and shipped to `site/data/tips*.json` as a real record, so the live site showed the same gelatin text twice under two ids, both citing `source_tips.html#L5592`. It was removed from all four files; the tip count is 206, and `tip-174` must never be re-emitted — any future export has to skip pointer entries, not just the numbering. Title previously read "Part 1" — removed: source has no such numbering. The source reuses the identical heading "WHAT YOU NEED TO KNOW ABOUT GELATIN" for at least 4 separate, unrelated posts (Tips 166, 167/174, 180, each a distinct topic) with no part-numbering anywhere; Tip 167's own title correctly uses no number, so this pointer now matches that convention.
 
 ---
 

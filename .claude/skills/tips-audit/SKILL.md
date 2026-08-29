@@ -11,6 +11,15 @@ built and fully verified a ground-truth file to fix this from. This skill exists
 session doesn't have to re-derive the file map, the checking method, or the hard-won lessons
 about what goes wrong when checking this kind of data.
 
+> **Count correction (S20): the live tip count is 206, not 207.** MASTER numbers Tip 001–207,
+> but **Tip 174 is a de-duplication pointer to Tip 167, not a tip** — 207 numbers, 206 distinct
+> tips. The export treated the pointer as a record, so `tip-174` shipped to the live site as a
+> second copy of the gelatin text (both ids citing `source_tips.html#L5592`); it was removed
+> from `site/data/tips*.json` and `.audit/rebuild/tips_export*.json`. Site numbering therefore
+> runs ...172, 173, 175... and the gap is intentional. **Any future export must skip pointer
+> entries.** The "207" in the sections below is the historical figure those sessions worked
+> with — accurate as a record, one too high as a live count.
+
 ## File map — what each file is and whether you may edit it
 
 | File | Role | Editable? |

@@ -9,8 +9,15 @@ S7-era content.** Everything below is committed locally and visible only in
 local preview.
 
 **Both languages are fully translated and live: 79/79 recipes (S17) and
-207/207 tips (S19).** No native speaker has read either set end to end — that
-3rd QA layer is still open for both.
+206/206 tips (S19, translated as 207).** No native speaker has read either set
+end to end — that 3rd QA layer is still open for both.
+
+**Tips are 206, not 207 (S20).** MASTER numbers Tip 001–207, but Tip 174 is a
+de-duplication pointer to Tip 167, not a tip. The export shipped it as a real
+record, so the live site carried the gelatin text twice under two ids; it was
+removed from `site/data/tips*.json` and `.audit/rebuild/tips_export*.json`.
+Site tip numbering runs ...172, 173, 175... and that gap is intentional. Any
+future export must skip pointer entries.
 
 **Tips and recipes now key off a stable `id` in their JSON** (`tip-001`…,
 `recipe-001`…, identical across EN and LT). Until S19, `data.js` overwrote
@@ -46,7 +53,7 @@ links, shopping-list data model, and further back.)
    translations, incomplete-recipe warnings, source links, all UI work) exists
    only locally. `git push origin master` triggers `.github/workflows/deploy.yml`.
 2. **Native-speaker read of the LT translations (3rd QA layer), both sets.**
-   79 recipes and 207 tips are translated and structurally verified, but never
+   79 recipes and 206 tips are translated and structurally verified, but never
    read as a reader would. Pick ~5-10 of each across categories and read them
    normally, not diffing JSON.
 3. Strengthen QA Compare to do a real content diff (ingredients/steps/body
