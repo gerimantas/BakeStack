@@ -36,7 +36,11 @@ const STRINGS = {
     // Tip topicGroup/topic values are stored in English in tips.json (they are data, not
     // display text) — these dictionaries translate them for the Topic filter. Keys must
     // match the JSON values verbatim; an unlisted key falls back to showing the key itself.
-    topicLabels: {},
+    // Only overrides: an English key is normally its own label. "Tempering" holds 5 crème anglaise
+    // tips alongside its 2 on egg tempering, so the bare key undersells what the filter contains.
+    topicLabels: {
+      "Tempering": "Tempering & Crème Anglaise",
+    },
     recipesCount: (n) => `${n} recipes`,
     tipsCount: (n) => `${n} tips`,
     topics: {
@@ -162,7 +166,7 @@ const STRINGS = {
       "Salt": "Druska",
       "Flavorings & Colorings": "Aromatai ir dažikliai",
       "Whipping & Meringue": "Plakimas ir bezė",
-      "Tempering": "Temperavimas",
+      "Tempering": "Temperavimas ir angliškasis kremas",
       "Infusion": "Aromatinimas",
     },
     recipesCount: (n) => `${n} receptai`,
