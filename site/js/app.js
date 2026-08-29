@@ -937,7 +937,10 @@ function wireJumpNav() {
     const slack = doc.scrollHeight - window.innerHeight;
     const shown = nav.dataset.visible === "true";
     const scrollable = shown ? slack > 120 : slack > 320;
-    nav.dataset.visible = String(scrollable);
+    // Only write when the value actually changes. This runs on every scroll and every mutation of
+    // #main, and re-assigning the same value still restarts the CSS opacity transition — which is
+    // what made the buttons flicker.
+    if (scrollable !== shown) nav.dataset.visible = String(scrollable);
     if (!scrollable) return;
     const y = window.scrollY;
     // Labels and disabled states are cosmetic; the buttons must never be left hidden because one
@@ -956,10 +959,18 @@ function wireJumpNav() {
     } catch (e) { /* labelling is optional — the buttons stay usable either way */ }
   };
 
-  window.addEventListener("scroll", update, { passive: true });
-  window.addEventListener("resize", update);
-  // Content height changes on every render, so re-measure after the DOM settles.
-  new MutationObserver(update).observe(document.getElementById("main"), { childList: true, subtree: true });
+  // A single render fires hundreds of mutations; coalesce them into one measurement per frame so
+  // the height is read after the DOM has settled rather than mid-render.
+  let queued = false;
+  const schedule = () => {
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(() => { queued = false; update(); });
+  };
+
+  window.addEventListener("scroll", schedule, { passive: true });
+  window.addEventListener("resize", schedule);
+  new MutationObserver(schedule).observe(document.getElementById("main"), { childList: true, subtree: true });
   update();
 }
 
