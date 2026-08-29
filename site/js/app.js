@@ -976,27 +976,24 @@ function wireJumpNav() {
 
 function wireNavEvents() {
   document.querySelectorAll("[data-lang]").forEach((btn) => {
-    btn.addEventListener("click", () => {
+    btn.addEventListener("click", async () => {
       const newLang = btn.dataset.lang;
-      const { route } = parseHash();
-      // recipe/tip ids are derived per-language from each title (see data.js loadAll),
-      // so the same recipe has a different id in EN vs LT — switching language while on
-      // a detail page must remap the hash by array position, or the new language's id
-      // lookup finds nothing ("Nothing found").
-      if (route.name === "recipe" || route.name === "tip") {
-        const oldList = route.name === "recipe" ? getRecipes(appState.lang) : getTips(appState.lang);
-        const idx = oldList.findIndex((x) => x.id === route.id);
-        if (idx !== -1) {
-          const newList = route.name === "recipe" ? getRecipes(newLang) : getTips(newLang);
-          const newItem = newList[idx];
-          if (newItem) location.hash = `#/${route.name}/${newItem.id}`;
+      if (newLang === appState.lang) return;
+      // Only the language on screen is fetched at boot, so the other one may not be in the
+      // store yet. Ids are stable and identical across EN and LT, so the hash and every
+      // stored favorite/pick stay valid across the switch — nothing needs remapping, only
+      // the data needs to be present before the first render in the new language.
+      if (!getRecipes(newLang).length) {
+        btn.dataset.loading = "true";
+        try {
+          await loadLang(newLang);
+        } catch {
+          showToast(t(appState.lang, "langSwitchFailed"));
+          return;
+        } finally {
+          delete btn.dataset.loading;
         }
       }
-      // Same id-mismatch problem as above, but for ids parked in localStorage (favorites,
-      // shopping-list picks) rather than the URL — remap every stored recipe id from the
-      // old language's array position to the new language's id before switching, or a
-      // favorited/picked recipe silently disappears from its list in the new language.
-      remapStoredRecipeIdsForLangSwitch(appState.lang, newLang);
       setLang(newLang);
       render();
     });
@@ -1216,13 +1213,18 @@ function wireShoppingView() {
 async function init() {
   applyTheme();
   try {
-    await loadAll();
+    await loadAll(appState.lang);
   } catch (err) {
     document.getElementById("main").innerHTML = `<div class="container empty-state"><h2>Failed to load data</h2><p>${esc(err.message)}</p></div>`;
     return;
   }
   window.addEventListener("hashchange", render);
   render();
+  // The first paint is done; pull the other language in the background so switching is
+  // instant, without having made the initial load wait for data no one is looking at.
+  const other = appState.lang === "lt" ? "en" : "lt";
+  if ("requestIdleCallback" in window) requestIdleCallback(() => prefetchLang(other), { timeout: 4000 });
+  else setTimeout(() => prefetchLang(other), 1500);
 }
 
 document.addEventListener("DOMContentLoaded", init);

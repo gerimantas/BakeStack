@@ -31,26 +31,51 @@ async function fetchJSON(url) {
   return res.json();
 }
 
-async function loadAll() {
-  const [recipesEn, recipesLt, tipsEn, tipsLt, tags, tagsLt, tagsEn, prices, density] = await Promise.all([
-    fetchJSON(DATA_URLS.en.recipes),
-    fetchJSON(DATA_URLS.lt.recipes),
-    fetchJSON(DATA_URLS.en.tips),
-    fetchJSON(DATA_URLS.lt.tips),
+/* Loads the recipes+tips pair for ONE language, and only once — a second call for a
+   language already in the store resolves immediately. Both languages used to be fetched
+   on every visit (1.5 MB for a page that only ever shows one), which was safe back when
+   ids were derived per-language from titles and cross-language lookups needed both
+   arrays present. Ids are now stable and identical across EN and LT, so nothing reads
+   the language that is not on screen. In-flight promises are cached alongside the data
+   so two near-simultaneous calls share one fetch instead of racing. */
+const inflight = {};
+
+function loadLang(lang) {
+  if (store.recipes[lang] && store.tips[lang]) return Promise.resolve();
+  if (inflight[lang]) return inflight[lang];
+  const p = Promise.all([
+    fetchJSON(DATA_URLS[lang].recipes),
+    fetchJSON(DATA_URLS[lang].tips),
+  ]).then(([recipes, tips]) => {
+    // Recipes and tips each carry a stable `id` ("recipe-001…", "tip-001…") in their JSON —
+    // it is the primary key, identical across EN and LT, and must never be re-derived
+    // from the title.
+    store.recipes[lang] = recipes;
+    store.tips[lang] = tips;
+    delete inflight[lang];
+  }).catch((err) => {
+    delete inflight[lang];
+    throw err;
+  });
+  inflight[lang] = p;
+  return p;
+}
+
+/** Warms the other language's data in the background, so a language switch is instant.
+ * Failure is deliberately silent: this is a prefetch, and the switch itself re-requests. */
+function prefetchLang(lang) {
+  loadLang(lang).catch(() => {});
+}
+
+async function loadAll(lang) {
+  const [, tags, tagsLt, tagsEn, prices, density] = await Promise.all([
+    loadLang(lang),
     fetchJSON(DATA_URLS.tags),
     fetchJSON(DATA_URLS.tagsLt).catch(() => ({ category: {}, flavor_theme: {} })),
     fetchJSON(DATA_URLS.tagsEn).catch(() => ({ category: {}, flavor_theme: {} })),
     fetchJSON(DATA_URLS.prices).catch(() => ({})),
     fetchJSON(DATA_URLS.density).catch(() => ({})),
   ]);
-  // Recipes carry a stable `id` ("recipe-001"…) in their JSON — it is the primary key,
-  // identical across EN and LT, and must never be re-derived from the title.
-  store.recipes.en = recipesEn;
-  store.recipes.lt = recipesLt;
-  // Tips carry a stable `id` ("tip-001"…) in their JSON — it is the primary key,
-  // identical across EN and LT, and must never be re-derived from the title.
-  store.tips.en = tipsEn;
-  store.tips.lt = tipsLt;
   store.tags = tags;
   store.tagsLt = tagsLt;
   store.tagsEn = tagsEn;

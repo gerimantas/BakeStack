@@ -20,12 +20,6 @@ function writeLS(key, value) {
   try { localStorage.setItem(key, JSON.stringify(value)); } catch { /* storage unavailable — ignore */ }
 }
 
-// TEMPORARY (S16 preview): LT toggle re-enabled for visual QA of the in-progress
-// 79-recipe LT translation (10/79 done). recipes_lt.json now matches the new
-// 79-recipe id/field structure; untranslated entries carry EN text with
-// `_needs_translation: true` so they're visually obvious in LT mode. Revert this
-// force-en override until the full 79-recipe LT set is done — tips_lt.json is
-// still the old 310-entry file, unrelated to this preview.
 const appState = {
   lang: readLS(LS_KEYS.lang, "en"),
   theme: readLS(LS_KEYS.theme, null), // null = follow system
@@ -94,38 +88,3 @@ function toggleChecked(nameKey) {
   return appState.shoppingChecked.has(nameKey);
 }
 
-/** Recipe/tip ids are derived per-language from each title (see data.js loadAll), so the
- * same recipe has a different id in EN vs LT. favorites and shoppingPicks store those ids
- * directly in localStorage, so switching language leaves them pointing at an id that only
- * existed in the old language — the recipe silently vanishes from Favorites/Shopping list.
- * Remap every stored id from the old language's array position to the new language's id,
- * for both recipes and tips, right before the language actually switches. */
-function remapStoredRecipeIdsForLangSwitch(oldLang, newLang) {
-  if (oldLang === newLang) return;
-  const remapKind = (kind, oldList, newList) => {
-    const oldIds = [...appState.favorites].filter((k) => k.startsWith(`${kind}:`));
-    oldIds.forEach((key) => {
-      const id = key.slice(kind.length + 1);
-      const idx = oldList.findIndex((x) => x.id === id);
-      if (idx === -1) return;
-      const newItem = newList[idx];
-      if (!newItem || newItem.id === id) return;
-      appState.favorites.delete(key);
-      appState.favorites.add(`${kind}:${newItem.id}`);
-    });
-  };
-  remapKind("recipe", getRecipes(oldLang), getRecipes(newLang));
-  remapKind("tip", getTips(oldLang), getTips(newLang));
-  writeLS(LS_KEYS.favorites, [...appState.favorites]);
-
-  const oldRecipes = getRecipes(oldLang);
-  const newRecipes = getRecipes(newLang);
-  const remappedPicks = {};
-  for (const [id, multiplier] of Object.entries(appState.shoppingPicks)) {
-    const idx = oldRecipes.findIndex((x) => x.id === id);
-    const newItem = idx !== -1 ? newRecipes[idx] : null;
-    remappedPicks[newItem ? newItem.id : id] = multiplier;
-  }
-  appState.shoppingPicks = remappedPicks;
-  writeLS(LS_KEYS.shoppingPicks, appState.shoppingPicks);
-}
