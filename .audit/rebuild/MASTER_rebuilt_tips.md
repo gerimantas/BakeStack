@@ -4329,7 +4329,7 @@ This is a special variety of butter that has been softened to a pliable state, a
 
 ---
 
-## Tip 113 — Alt. Pastry Chef's Notes — Varieties of Salt: Table Salt [Part 1]
+## Tip 113 — Salt Varieties — Table Salt [Part 1]
 
 **Source:** from B4-13
 
@@ -8082,12 +8082,18 @@ decide whether/how this kind of real-world content should be handled anywhere it
 original source material, and confirm no trace of it is present in site data (tips.json /
 tips_lt.json).**
 
-A second, much briefer reference of the same kind appears at **Tip 113 (source B4-13, "Alt.
-Pastry Chef's Notes — Varieties of Salt: Table Salt")**: the post opens with a two-paragraph thank-
-you to readers who participated in a Ukraine charity fundraiser, before pivoting to salt content.
-This one is less disruptive (it's a normal social-media-style acknowledgment, not graphic content)
-and has been LEFT IN Tip 113's body since it is brief and clearly severable, but is flagged here
-for the same human review.
+A second, much briefer reference of the same kind appears at **Tip 113 (source B4-13, now titled
+"Salt Varieties — Table Salt [Part 1]")**: the post opens with a two-paragraph thank-you to readers
+who participated in a Ukraine charity fundraiser, before pivoting to salt content. This one is less
+disruptive (it's a normal social-media-style acknowledgment, not graphic content) and was LEFT IN
+Tip 113's body here, but is flagged for the same human review.
+
+**Resolved for the site (S20):** the acknowledgment is not in the exports or the live site data —
+only the salt content is. The tip's title, however, was still the source post's own column heading,
+"ALT. PASTRY CHEF'S NOTES" (that heading appears exactly once in the whole source document, at line
+3610, and belongs to the charity post rather than to the salt series). It read as a typo above the
+tip on the site, so the title is now "Salt Varieties — Table Salt [Part 1]", matching its own
+sibling Tip 114, "Salt Varieties — Rock Salt and Sea Salt … [Part 2]".
 
 ## Numbering / sequencing inconsistencies in the original document
 
