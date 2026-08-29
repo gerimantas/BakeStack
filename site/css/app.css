@@ -607,6 +607,17 @@ img { max-width: 100%; display: block; }
   color: var(--color-muted);
 }
 .empty-state h2 { font-size: var(--text-lg); color: var(--color-ink-2); margin-bottom: var(--space-xs); }
+/* Favorites is the only empty state with an icon, and an inline SVG with no width stretches to
+   the container -- 1300px tall, pushing its own heading off the screen so the page looked blank. */
+.empty-state svg {
+  width: 3rem;
+  height: 3rem;
+  margin: 0 auto var(--space-md);
+  stroke: currentColor;
+  stroke-width: 1.5;
+  fill: none;
+  opacity: 0.5;
+}
 
 /* ==================== Buttons ==================== */
 
