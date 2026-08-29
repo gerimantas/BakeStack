@@ -80,16 +80,6 @@ function anyTagLabel(lang, slug) {
   return slug;
 }
 
-function slugify(title, fallbackIndex) {
-  const base = (title || "")
-    .toLowerCase()
-    .normalize("NFKD")
-    .replace(/[̀-ͯ]/g, "")
-    .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "");
-  return base ? `${base}-${fallbackIndex}` : `recipe-${fallbackIndex}`;
-}
-
 function getRecipes(lang) { return store.recipes[lang] || []; }
 function getTips(lang) { return store.tips[lang] || []; }
 function getRecipeById(lang, id) { return getRecipes(lang).find((r) => r.id === id); }

@@ -95,19 +95,6 @@ img { max-width: 100%; display: block; }
   .nav__bar { gap: var(--space-lg); }
 }
 
-.nav__wordmark {
-  font-family: var(--font-display);
-  font-weight: 800;
-  font-size: var(--text-md);
-  letter-spacing: -0.02em;
-  white-space: nowrap;
-  text-decoration: none;
-  display: flex;
-  align-items: baseline;
-  gap: var(--space-2xs);
-}
-.nav__wordmark-dot { color: var(--color-accent); }
-
 .nav__search {
   flex: 1;
   min-width: 3.5rem;
@@ -671,9 +658,6 @@ img { max-width: 100%; display: block; }
   color: var(--color-accent-ink);
 }
 .btn--primary:hover { filter: brightness(1.05); }
-
-.btn--ghost { border-color: transparent; background: transparent; }
-.btn--ghost:hover { background: var(--color-paper-2); }
 
 .btn[disabled] { opacity: 0.45; cursor: not-allowed; }
 
