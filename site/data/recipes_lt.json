@@ -42,7 +42,8 @@
       "heavy-whipping-cream",
       "chocolate",
       "baileys",
-      "mascarpone"
+      "mascarpone",
+      "dark-chocolate"
     ],
     "image": null,
     "source_docx_lines": "1-21",
@@ -559,7 +560,9 @@
       "white-chocolate",
       "cocoa-butter",
       "heavy-whipping-cream",
-      "mascarpone"
+      "mascarpone",
+      "passionfruit",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "144-205",
@@ -639,7 +642,8 @@
     ],
     "tags": [
       "cream-cheese",
-      "salt"
+      "salt",
+      "pumpkin"
     ],
     "image": null,
     "source_docx_lines": "206-237",
@@ -763,7 +767,8 @@
       "baking-soda",
       "salt",
       "cinnamon",
-      "cocoa-powder"
+      "cocoa-powder",
+      "pumpkin"
     ],
     "image": null,
     "source_docx_lines": "238-277",
@@ -1492,7 +1497,8 @@
       "vanilla",
       "savoiardi-ladyfingers",
       "espresso-instant-coffee",
-      "cocoa-powder"
+      "cocoa-powder",
+      "coffee-espresso"
     ],
     "image": null,
     "source_docx_lines": "449-510",
@@ -1872,7 +1878,8 @@
       "nut-paste",
       "hazelnut",
       "caramel",
-      "cream-cheese"
+      "cream-cheese",
+      "salted-caramel"
     ],
     "image": null,
     "source_docx_lines": "569-629",
@@ -2058,7 +2065,8 @@
       "cinnamon",
       "mascarpone",
       "heavy-whipping-cream",
-      "vanilla"
+      "vanilla",
+      "coffee-espresso"
     ],
     "image": null,
     "source_docx_lines": "630-679",
@@ -2511,7 +2519,8 @@
       "sugar",
       "eggs",
       "hazelnut",
-      "chocolate"
+      "chocolate",
+      "dark-chocolate"
     ],
     "image": null,
     "source_docx_lines": "809-854",
@@ -2595,7 +2604,8 @@
       "gelatin",
       "white-chocolate",
       "mascarpone",
-      "vanilla"
+      "vanilla",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "855-883",
@@ -2805,7 +2815,8 @@
       "savoiardi-ladyfingers",
       "espresso-instant-coffee",
       "baileys",
-      "cocoa-powder"
+      "cocoa-powder",
+      "coffee-espresso"
     ],
     "image": null,
     "source_docx_lines": "941-991",
@@ -2869,7 +2880,8 @@
       "glucose-syrup",
       "inverted-sugar-trimoline",
       "white-chocolate",
-      "cocoa-butter"
+      "cocoa-butter",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "992-1000",
@@ -3081,7 +3093,8 @@
       "butter",
       "cream-cheese",
       "mascarpone",
-      "peanut-butter"
+      "peanut-butter",
+      "coffee-espresso"
     ],
     "image": null,
     "source_docx_lines": "1001-1061",
@@ -3284,7 +3297,10 @@
       "heavy-whipping-cream",
       "butter",
       "baileys",
-      "mascarpone"
+      "mascarpone",
+      "coffee-espresso",
+      "dark-chocolate",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "1062-1113",
@@ -3490,7 +3506,8 @@
       "pectin-nh",
       "heavy-whipping-cream",
       "white-chocolate",
-      "mascarpone"
+      "mascarpone",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "1114-1166",
@@ -3744,7 +3761,9 @@
       "sour-cream",
       "orange",
       "chocolate",
-      "cream-cheese"
+      "cream-cheese",
+      "passionfruit",
+      "cointreau"
     ],
     "image": null,
     "source_docx_lines": "1238-1293",
@@ -4017,7 +4036,8 @@
       "pectin-nh",
       "heavy-whipping-cream",
       "white-chocolate",
-      "mascarpone"
+      "mascarpone",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "1321-1370",
@@ -4109,7 +4129,8 @@
       "salt",
       "vanilla",
       "flour-all-purpose",
-      "cocoa-powder"
+      "cocoa-powder",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "1371-1399",
@@ -4340,7 +4361,8 @@
       "espresso-instant-coffee",
       "mascarpone",
       "heavy-whipping-cream",
-      "amaretto"
+      "amaretto",
+      "coffee-espresso"
     ],
     "image": null,
     "source_docx_lines": "1428-1471",
@@ -4734,7 +4756,8 @@
       "gelatin",
       "milk",
       "glucose-syrup",
-      "heavy-whipping-cream"
+      "heavy-whipping-cream",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "1597-1639",
@@ -4858,7 +4881,8 @@
       "espresso-instant-coffee",
       "baking-powder",
       "salt",
-      "amaretto"
+      "amaretto",
+      "coffee-espresso"
     ],
     "image": null,
     "source_docx_lines": "1640-1693",
@@ -5469,7 +5493,8 @@
     "tags": [
       "white-chocolate",
       "mycryo-tempering",
-      "food-coloring"
+      "food-coloring",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "1889-1921",
@@ -5644,7 +5669,8 @@
     ],
     "tags": [
       "dark-chocolate",
-      "making-couverture-drip"
+      "making-couverture-drip",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "1967-2001",
@@ -5985,7 +6011,8 @@
       "cocoa-powder",
       "baking-powder",
       "salt",
-      "heavy-whipping-cream"
+      "heavy-whipping-cream",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "2101-2142",
@@ -6026,7 +6053,8 @@
     ],
     "tags": [
       "dark-chocolate",
-      "heavy-whipping-cream"
+      "heavy-whipping-cream",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "2143-2173",
@@ -6204,7 +6232,8 @@
       "yeast",
       "eggs",
       "orange",
-      "butter"
+      "butter",
+      "mandarin-orange"
     ],
     "image": null,
     "source_docx_lines": "2174-2229",
@@ -6428,7 +6457,8 @@
     "tags": [
       "coconut",
       "heavy-whipping-cream",
-      "white-chocolate"
+      "white-chocolate",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "2290-2317",
@@ -6590,7 +6620,8 @@
       "pectin-nh",
       "coconut",
       "heavy-whipping-cream",
-      "white-chocolate"
+      "white-chocolate",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "2318-2367",
@@ -6750,7 +6781,9 @@
       "baking-powder",
       "glucose-syrup",
       "heavy-whipping-cream",
-      "cream-cheese"
+      "cream-cheese",
+      "salted-caramel",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "2368-2421",
@@ -7001,7 +7034,8 @@
       "white-chocolate",
       "cream-cheese",
       "milk",
-      "butter"
+      "butter",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "2422-2493",
@@ -7232,7 +7266,9 @@
       "orange",
       "lemon",
       "flour-all-purpose",
-      "baking-powder"
+      "baking-powder",
+      "rum",
+      "apricot"
     ],
     "image": null,
     "source_docx_lines": "2566-2618",
@@ -7971,7 +8007,8 @@
       "salt",
       "white-chocolate",
       "mascarpone",
-      "food-coloring"
+      "food-coloring",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "2852-2903",
@@ -8149,7 +8186,8 @@
       "baking-powder",
       "milk-chocolate",
       "heavy-whipping-cream",
-      "mascarpone"
+      "mascarpone",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "2904-2956",
@@ -8597,7 +8635,8 @@
       "lemon",
       "heavy-whipping-cream",
       "white-chocolate",
-      "mascarpone"
+      "mascarpone",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "3054-3115",
@@ -9371,7 +9410,8 @@
       "mascarpone",
       "baileys",
       "dark-chocolate",
-      "heavy-whipping-cream"
+      "heavy-whipping-cream",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "3316-3370",
@@ -9509,7 +9549,8 @@
       "heavy-whipping-cream",
       "vanilla",
       "dark-chocolate",
-      "milk-chocolate"
+      "milk-chocolate",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "3371-3424",
@@ -9874,7 +9915,8 @@
       "glucose-syrup",
       "white-chocolate",
       "coconut",
-      "almond"
+      "almond",
+      "chocolate"
     ],
     "image": null,
     "source_docx_lines": "3515-3557",
