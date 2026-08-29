@@ -48,10 +48,12 @@ links, shopping-list data model, and further back.)
 
 
 ## Next tasks
-1. **Push to GitHub — 28 commits are unpushed and the live site is on S7-era
-   content.** Everything from S13 onward (verified EN exports, both LT
-   translations, incomplete-recipe warnings, source links, all UI work) exists
-   only locally. `git push origin master` triggers `.github/workflows/deploy.yml`.
+1. **Push to GitHub — the user decides when, do not prompt for it.** 47 commits
+   are unpushed and the live site is still on S7-era content: everything from
+   S13 onward (verified EN exports, both LT translations, incomplete-recipe
+   warnings, source links, all UI work) exists only locally. `git push origin
+   master` triggers `.github/workflows/deploy.yml`. State the count if asked;
+   otherwise wait to be told.
 2. **Native-speaker read of the LT translations (3rd QA layer), both sets.**
    79 recipes and 206 tips are translated and structurally verified, but never
    read as a reader would. Pick ~5-10 of each across categories and read them
