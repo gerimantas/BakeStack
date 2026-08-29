@@ -47,6 +47,29 @@ with a ⚠ badge and the legend doubles as a filter for just those 32.
 in `index.html` whenever css/ or js/ changes** (at `?v=28`). A plain reload is
 enough locally; Firefox may need Ctrl+Shift+R for a changed favicon.
 
+**Only the language in use is loaded** (S21). Both languages used to be
+fetched on every visit; the constraint that required it — ids derived
+per-language from titles, so favourites and detail hashes needed remapping
+across a switch — has not applied since ids became stable and identical in EN
+and LT. `loadAll(lang)` now fetches one pair, the other is prefetched at idle
+after first paint, and `remapStoredRecipeIdsForLangSwitch` is deleted. Also
+removed: the `@import` chaining tokens.css behind app.css, and the Space
+Grotesk webfont, which no font stack referenced. Measured on the live site at
+~1.6 Mbps: first paint 9420 ms → ~5100 ms, data before paint 1522 KB → 754 KB
+raw (204 KB gzipped as GitHub Pages serves it).
+
+**`site/source.html` and `site/source_tips.html` are NOT dead weight — do not
+delete them.** They look unreferenced because nothing in `js/`, `css/` or
+`index.html` mentions them, but all 79 recipes and all 206 tips carry a
+`source_url` (`source.html#L…`, `source_tips.html#L…`) that the detail pages
+render as "View original source" — 285 links, verified live. They cost visitors
+nothing: they are fetched only when that link is clicked.
+
+**A `<link rel=preload>` for the data files makes things worse, not better.**
+`fetchJSON` sends `cache: "no-cache"`, which will not reuse a preloaded
+response, so each file downloaded twice and first paint regressed 5694 ms →
+8993 ms. Reverted; do not retry without changing the cache mode first.
+
 (Earlier sessions S1–S19: full detail in `## Archive` below.)
 
 
@@ -56,11 +79,12 @@ enough locally; Firefox may need Ctrl+Shift+R for a changed favicon.
    read as a reader would. Pick ~5-10 of each across categories and read them
    normally, not diffing JSON. Include a few of the 31 tips whose
    cross-reference sentences S20 rewrote by hand.
-2. **Load only the language in use.** All four data files (1.5 MB) are fetched
-   on every visit though one language is ever shown — 735 KB wasted, felt on a
-   phone. Not a one-line change: `remapStoredRecipeIdsForLangSwitch` compares
-   both datasets to keep favourites across a language switch, so that path
-   needs rework first. See `js/data.js` `loadAll()`.
+2. **Optional next perf step: defer `tips.json` off the boot path.** It is the
+   single biggest file left (140 KB gzipped) and is fetched before first paint,
+   but only the Tips list needs it in full. Not free: `searchAll` matches
+   against tip body text and `findRelatedTips` runs on every recipe detail
+   page, so deferring it degrades search and empties the related-tips block
+   until a second fetch lands. Scope that behaviour change before starting.
 3. Strengthen QA Compare to do a real content diff (ingredients/steps/body
    text) — `FIX_PLAN.md` step 0, still not done.
 4. Not yet scoped: whether/how to surface `series_index.json`'s cross-reference
