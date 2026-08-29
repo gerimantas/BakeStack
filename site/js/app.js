@@ -643,9 +643,10 @@ function renderTipsView(lang, params) {
     const q = query.toLowerCase();
     filtered = filtered.filter((tp) => tp.title.toLowerCase().includes(q) || tp.text.toLowerCase().includes(q) || (tp.tags || []).some((tg) => tg.includes(q)));
   }
-  // topic param matches either a subcategory (tp.topic) or, for groups with no
-  // subcategories, the topicGroup itself.
-  if (topic) filtered = filtered.filter((tp) => tp.topic === topic || (!tp.topic && tp.topicGroup === topic));
+  // topic param matches either a subcategory (tp.topic) or a whole topicGroup. Group names and
+  // subcategory names never collide, so one param covers both. Matching the group only when a tip
+  // had no subcategory made `?topic=Ingredients` render empty despite the group holding 104 tips.
+  if (topic) filtered = filtered.filter((tp) => tp.topic === topic || tp.topicGroup === topic);
 
   const countFor = (matchFn) => all.filter(matchFn).length;
   // topicGroup/topic are stored in English in the data and stay English in the URL and in
@@ -660,8 +661,18 @@ function renderTipsView(lang, params) {
     }
     return topicLabel(topic);
   })();
+  // Groups with subcategories come first, then the standalone ones as a block at the bottom —
+  // mixing them put a long single-line heading between two indented lists, where it read as a
+  // subcategory of the group above it. Within each block, most tips first; TOPIC_GROUP_ORDER breaks
+  // ties so equal-sized groups keep a stable order. (It was hand-written and had put Ingredients —
+  // 104, half the collection — third and Troubleshooting, 2, last purely by accident.)
+  // Subcategories keep their curated order: within Ingredients they run gelling agents, sweeteners,
+  // then base ingredients, a reading order worth more than size when nothing is truncated.
   const groupsHtml = TOPIC_GROUP_ORDER
     .filter((g) => all.some((r) => r.topicGroup === g))
+    .sort((a, b) => Number(!TOPIC_GROUP_SUBCATEGORY_ORDER[a]) - Number(!TOPIC_GROUP_SUBCATEGORY_ORDER[b])
+      || countFor((r) => r.topicGroup === b) - countFor((r) => r.topicGroup === a)
+      || TOPIC_GROUP_ORDER.indexOf(a) - TOPIC_GROUP_ORDER.indexOf(b))
     .map((g) => {
       const subs = TOPIC_GROUP_SUBCATEGORY_ORDER[g];
       const groupCount = countFor((r) => r.topicGroup === g);
@@ -675,7 +686,9 @@ function renderTipsView(lang, params) {
           return `<button type="button" class="topic-dropdown__item topic-dropdown__item--sub" data-topic-value="${esc(s)}" aria-pressed="${topic === s}">${esc(topicLabel(s))} <span class="topic-dropdown__count">(${count})</span></button>`;
         })
         .join("");
-      return `<div class="topic-dropdown__group"><div class="topic-dropdown__group-label">${esc(topicLabel(g))} <span class="topic-dropdown__count">(${groupCount})</span></div>${subItems}</div>`;
+      // The group label is a filter too, not just a heading — picking it shows the whole group. It
+      // carries the same class as a standalone group so both render identically.
+      return `<div class="topic-dropdown__group"><button type="button" class="topic-dropdown__item topic-dropdown__item--group" data-topic-value="${esc(g)}" aria-pressed="${topic === g}">${esc(topicLabel(g))} <span class="topic-dropdown__count">(${groupCount})</span></button>${subItems}</div>`;
     })
     .join("");
 
@@ -1010,8 +1023,32 @@ function wireEvents(route) {
   document.querySelectorAll("[data-topic-dropdown]").forEach((wrap) => {
     const trigger = wrap.querySelector("[data-topic-trigger]");
     const panel = wrap.querySelector("[data-topic-panel]");
+    // The panel drops below the trigger, so its ceiling is the room left down to the viewport
+    // bottom — measured on open rather than fixed, so a tall window shows the whole topic list and
+    // a short one still fits. Re-measured on resize/scroll while open because both move the trigger.
+    const sizePanel = () => {
+      const gap = 16;
+      const space = window.innerHeight - trigger.getBoundingClientRect().bottom - gap;
+      panel.style.setProperty("--dropdown-space", `${Math.max(space, 160)}px`);
+    };
+    // wireEvents() runs on every render and replaces the panel, so the window listeners live only
+    // while this panel is open — otherwise each render would leave another pair attached for a node
+    // that is no longer in the document.
+    const resize = () => {
+      if (!panel.isConnected || panel.hidden) {
+        window.removeEventListener("resize", resize);
+        window.removeEventListener("scroll", resize);
+        return;
+      }
+      sizePanel();
+    };
     trigger.addEventListener("click", () => {
       const isOpen = !panel.hidden;
+      if (!isOpen) {
+        sizePanel();
+        window.addEventListener("resize", resize);
+        window.addEventListener("scroll", resize, { passive: true });
+      }
       panel.hidden = isOpen;
       trigger.setAttribute("aria-expanded", String(!isOpen));
     });
