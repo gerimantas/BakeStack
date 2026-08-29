@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="BakeStack">
+  <title>BakeStack</title>
+  <!-- A stacked cake: three layers, which is both what the site is about and what its name says.
+       Colours are the site's own tokens resolved to hex, since an SVG file cannot read CSS
+       variables from the page: accent oklch(62% 0.16 50) and ink oklch(20% 0.012 50).
+       Sized for a 16px favicon first — thick layers with a full dark gap between them, because
+       thin bands and fine detail merge into a smudge at that size. -->
+  <rect width="64" height="64" rx="14" fill="#2b1c14"/>
+
+  <!-- Layers, bottom to top: each narrower, alternating shade so the stack reads as separate
+       tiers even when the gaps are only a pixel or two on screen. -->
+  <rect x="9"  y="41" width="46" height="12" rx="3" fill="#e8763a"/>
+  <rect x="14" y="27" width="36" height="12" rx="3" fill="#f5a473"/>
+  <rect x="19" y="13" width="26" height="12" rx="3" fill="#e8763a"/>
+
+  <!-- Flame only, no candle stick: at 16px a 4px-wide stick disappears, while the dot survives
+       and still reads as "cake". -->
+  <circle cx="32" cy="7" r="4" fill="#ffc46b"/>
+</svg>
