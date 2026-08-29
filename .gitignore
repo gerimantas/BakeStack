@@ -1,2 +1,9 @@
 __pycache__/
 *.pyc
+
+# Original Word sources. Kept locally, not in the repo: the pipeline works from the
+# extracted text (.audit/Patarimai_docx_source.txt, .audit/rebuild_recipes/
+# Receptai_docx_source.txt), which is tracked and is what every audit checks against.
+# Both .docx remain on disk for the rare case of re-extracting at the raw XML level.
+Patarimai.docx
+Receptai.docx
