@@ -70,15 +70,34 @@ nothing: they are fetched only when that link is clicked.
 response, so each file downloaded twice and first paint regressed 5694 ms →
 8993 ms. Reverted; do not retry without changing the cache mode first.
 
+**The LT translations have had a first reader pass** (S21): 11 recipes, one
+per categoryGroup, and 10 tips including 5 that S20 rewrote by hand. The prose
+is sound — fluent, terms correct (kremjė, ganašas, temperavimas), nothing
+invented or dropped. Three mechanical defects surfaced and are fixed file-wide:
+
+- 69 quoted phrases in 37 tips closed with a straight `"` instead of `“`. The
+  EN files contain no `„` at all, so it entered in translation.
+- crème anglaise written "anglus/anglaus kremas" in tip-050 and tip-086, while
+  tip-050 used the correct "angliškas kremas" four times in the same text.
+- 66 durations in the genitive where Lithuanian wants the accusative
+  ("kepkite 20–25 minutes", not "minučių"). recipe-002 and recipe-017
+  translated the same English sentence both ways. **The file had no usable
+  internal precedent** — the split held even after apie (14/22) and bent
+  (2/12) — so this was fixed against the rule, not the file's majority.
+  **`po/per/kas` + genitive is correct and is deliberately preserved**
+  (recipe-042 step 2 keeps "po 10–15 minučių" while the same sentence's span
+  changes).
+
 (Earlier sessions S1–S19: full detail in `## Archive` below.)
 
 
 ## Next tasks
-1. **Native-speaker read of the LT translations (3rd QA layer), both sets.**
-   79 recipes and 206 tips are translated and structurally verified, but never
-   read as a reader would. Pick ~5-10 of each across categories and read them
-   normally, not diffing JSON. Include a few of the 31 tips whose
-   cross-reference sentences S20 rewrote by hand.
+1. **Finish the native-speaker read of the LT translations.** S21 read 11
+   recipes (one per categoryGroup) and 10 tips (5 of them hand-rewritten in
+   S20) and fixed the three defects that pass found — see Status. The prose
+   itself read well throughout, so the remaining ~68 recipes and ~196 tips are
+   likely fine, but they have still not been read; the three fixes were applied
+   file-wide by pattern, not by reading every record.
 2. **Optional next perf step: defer `tips.json` off the boot path.** It is the
    single biggest file left (140 KB gzipped) and is fetched before first paint,
    but only the Tips list needs it in full. Not free: `searchAll` matches
