@@ -1,4 +1,6 @@
-@import url("tokens.css?v=15");
+/* tokens.css is loaded by a <link> in index.html, before this file. An @import here
+   would hide it from the browser until app.css had been fetched and parsed, turning two
+   parallel downloads into a serial chain. Keep the <link> order: tokens first. */
 
 *, *::before, *::after { box-sizing: border-box; }
 /* No `overflow-x` on <html> or <body>. In Firefox an overflow value other than `visible` on the

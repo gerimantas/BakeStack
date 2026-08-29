@@ -10,16 +10,21 @@
        variants and no separate .ico. Drawn to stay legible at 16px — see the file's own notes. -->
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="icon.svg">
+  <!-- Four font hosts are involved: two stylesheet origins and the two CDNs the faces
+       themselves come from. Without preconnect the browser only discovers the CDNs after
+       parsing each stylesheet, paying DNS + TLS again mid-load. Fontshare serves one family
+       per request (a combined f[]= URL silently returns only the first), so the two
+       Fontshare links cannot be merged. -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="preconnect" href="https://cdn.fontshare.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet">
   <!-- ?v= is a cache-buster: bump it whenever css/ or js/ changes, so browsers fetch the
        new file instead of serving a stale cached copy. Data files handle this themselves
        (see fetchJSON in js/data.js). -->
+  <link rel="stylesheet" href="css/tokens.css?v=29">
   <link rel="stylesheet" href="css/app.css?v=29">
-  <style>
-    /* Cabinet Grotesk and Switzer are Fontshare faces (not on Google Fonts) — loaded via Fontshare's CDN below. Space Grotesk above is the safety fallback while Fontshare loads. */
-  </style>
   <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
   <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet">
 </head>
