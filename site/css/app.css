@@ -1,7 +1,12 @@
 @import url("tokens.css?v=15");
 
 *, *::before, *::after { box-sizing: border-box; }
-html, body { overflow-x: clip; }
+/* No `overflow-x` on <html> or <body>. In Firefox an overflow value other than `visible` on the
+   root makes it the containing block for position:fixed descendants, so the fixed jump buttons
+   were laid out against the full document (x≈2400, and scrolling with the page) rather than the
+   viewport. Nothing on the site overflows horizontally, so the clip was guarding against nothing
+   — verified across every page at 390px and 1280px. Add `overflow-x: clip` to the offending
+   element if something ever does, never to the root. */
 html { -webkit-text-size-adjust: 100%; }
 
 body {
