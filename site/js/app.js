@@ -940,11 +940,20 @@ function wireJumpNav() {
     nav.dataset.visible = String(scrollable);
     if (!scrollable) return;
     const y = window.scrollY;
-    top.disabled = y < 40;
-    bottom.disabled = y + window.innerHeight >= doc.scrollHeight - 40;
-    const lang = appState.lang;
-    top.title = top.ariaLabel = t(lang, "jumpTop");
-    bottom.title = bottom.ariaLabel = t(lang, "jumpBottom");
+    // Labels and disabled states are cosmetic; the buttons must never be left hidden because one
+    // of them failed. This ran unguarded once and an unsupported property took the whole thing out.
+    // setAttribute rather than the .ariaLabel property: that property is a newer reflection some
+    // browsers lack, and assigning to it threw there — which aborted this function before the
+    // buttons were ever shown. The try/catch keeps any future slip here cosmetic too.
+    try {
+      const lang = appState.lang;
+      top.disabled = y < 40;
+      bottom.disabled = y + window.innerHeight >= doc.scrollHeight - 40;
+      top.title = t(lang, "jumpTop");
+      top.setAttribute("aria-label", t(lang, "jumpTop"));
+      bottom.title = t(lang, "jumpBottom");
+      bottom.setAttribute("aria-label", t(lang, "jumpBottom"));
+    } catch (e) { /* labelling is optional — the buttons stay usable either way */ }
   };
 
   window.addEventListener("scroll", update, { passive: true });
