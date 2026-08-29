@@ -4,60 +4,63 @@
 active — static site in `site/`, live on GitHub Pages:
 **https://gerimantas.github.io/BakeStack/** (public repo, deploy via
 `.github/workflows/deploy.yml`, auto-updates on every push to master that
-touches `site/**`). **28 commits are unpushed — the live site is still on
-S7-era content.** Everything below is committed locally and visible only in
-local preview.
+touches `site/**`). **Everything is pushed and deployed as of S20** — the live
+site matches local, verified after the deploy: 206 tips, no leftover hashtags,
+corrected tip-113 title, icon served.
 
 **Both languages are fully translated and live: 79/79 recipes (S17) and
-206/206 tips (S19, translated as 207).** No native speaker has read either set
-end to end — that 3rd QA layer is still open for both.
+206/206 tips (S19–S20).** No native speaker has read either set end to end —
+that 3rd QA layer is still open for both, and now also covers the 31 sentences
+S20 rewrote by hand.
 
-**Tips are 206, not 207 (S20).** MASTER numbers Tip 001–207, but Tip 174 is a
-de-duplication pointer to Tip 167, not a tip. The export shipped it as a real
-record, so the live site carried the gelatin text twice under two ids; it was
-removed from `site/data/tips*.json` and `.audit/rebuild/tips_export*.json`.
-Site tip numbering runs ...172, 173, 175... and that gap is intentional. Any
-future export must skip pointer entries.
+**Tips are 206, not 207.** MASTER numbers Tip 001–207, but Tip 174 is a
+de-duplication pointer to Tip 167, not a tip; the export shipped it as a real
+record and the live site carried the gelatin text twice. Removed from all four
+data files. **Site tip numbering runs …172, 173, 175… and that gap is
+intentional.** Any future export must skip pointer entries, not just their
+numbers.
 
-**Tips and recipes now key off a stable `id` in their JSON** (`tip-001`…,
-`recipe-001`…, identical across EN and LT). Until S19, `data.js` overwrote
-every id at load with `slugify(title, index)`, which made ids differ between
-languages and produced visibly wrong card numbers. Data files are the source
-of truth for ids now; `slugify` is unused but left in place.
+**Tip bodies no longer carry their Instagram origins** (S20): all 89
+`#marusya_*` hashtags gone, cross-references rewritten to "ankstesnėse šios
+serijos dalyse", and the leading "part N" markers dropped (the titles already
+carry them). EN and LT now agree on those markers, which they did not before.
 
-**32 recipes are incomplete, and the site now says so.** Verified against the
-raw source in S19: in all 32 the ingredients are complete and only method
-steps are missing (they existed only in the original posts' photo carousels).
-Each carries an `incomplete_note` naming what is absent, shown on the recipe
-page; the list marks them with a ⚠ badge and a tinted card, and the legend
-above the list doubles as a filter for just those 32. Recovering the missing
-steps would mean going back to the original post images — the text source does
-not contain them.
+**Recipe/tip filter counts are correct** (S20): every chip row was counting
+with its own filter applied, which drove non-selected chips to 0 while their
+links had matches. Fixed in the Flavor row, the Type row and the
+incomplete-recipes legend. `chocolate` is now an umbrella tag (5 → 27 recipes)
+alongside dark/milk/white, matching how wild-berry and caramel already worked.
+**Filters replace rather than combine**, so an umbrella cannot be narrowed —
+accepted deliberately.
+
+**Tips and recipes key off a stable `id` in their JSON** (`tip-001`…,
+`recipe-001`…, identical across EN and LT). Data files are the source of truth
+for ids; they must never be re-derived from titles.
+
+**32 recipes are incomplete, and the site says so** (S19): ingredients are
+complete, only method steps are missing (they existed only in the original
+posts' photo carousels). Each carries an `incomplete_note`; the list marks them
+with a ⚠ badge and the legend doubles as a filter for just those 32.
 
 **Browser-cache staleness is fixed at the root** (S19): `site/serve.py` sends
-`no-store`, `fetchJSON` revalidates, and css/js carry a `?v=` query. A plain
-reload is enough — do not ask for a hard refresh.
+`no-store`, `fetchJSON` revalidates, and css/js carry a `?v=` query — **bump it
+in `index.html` whenever css/ or js/ changes** (at `?v=28`). A plain reload is
+enough locally; Firefox may need Ctrl+Shift+R for a changed favicon.
 
-**Prior (S18):** LT tips translation started, 100/207, using the
-reuse+resplit method from the archived 310-entry LT corpus rather than
-re-translating; that method carried through to completion in S19.
-
-(Earlier sessions S1–S17: full detail in `## Archive` below — verified 79-recipe
-and 207-tip EN exports swapped live, topicGroup/topic taxonomy, source-audit
-links, shopping-list data model, and further back.)
+(Earlier sessions S1–S19: full detail in `## Archive` below.)
 
 
 ## Next tasks
-1. **Push to GitHub — the user decides when, do not prompt for it.** 47 commits
-   are unpushed and the live site is still on S7-era content: everything from
-   S13 onward (verified EN exports, both LT translations, incomplete-recipe
-   warnings, source links, all UI work) exists only locally. `git push origin
-   master` triggers `.github/workflows/deploy.yml`. State the count if asked;
-   otherwise wait to be told.
-2. **Native-speaker read of the LT translations (3rd QA layer), both sets.**
+1. **Native-speaker read of the LT translations (3rd QA layer), both sets.**
    79 recipes and 206 tips are translated and structurally verified, but never
    read as a reader would. Pick ~5-10 of each across categories and read them
-   normally, not diffing JSON.
+   normally, not diffing JSON. Include a few of the 31 tips whose
+   cross-reference sentences S20 rewrote by hand.
+2. **Load only the language in use.** All four data files (1.5 MB) are fetched
+   on every visit though one language is ever shown — 735 KB wasted, felt on a
+   phone. Not a one-line change: `remapStoredRecipeIdsForLangSwitch` compares
+   both datasets to keep favourites across a language switch, so that path
+   needs rework first. See `js/data.js` `loadAll()`.
 3. Strengthen QA Compare to do a real content diff (ingredients/steps/body
    text) — `FIX_PLAN.md` step 0, still not done.
 4. Not yet scoped: whether/how to surface `series_index.json`'s cross-reference
@@ -68,23 +71,135 @@ links, shopping-list data model, and further back.)
 6. Known limitation: shopping-list "bought" checkboxes are keyed by ingredient
    name, so they reset (silently, no data loss) on an EN/LT switch mid-shop.
    Low priority unless reported as confusing.
-7. Optional cleanup: `slugify` in `data.js` is now unused, and
-   `remapStoredRecipeIdsForLangSwitch` is a no-op for tips (ids match across
-   languages); recipes still need it.
+7. GitHub warns the deploy actions target Node.js 20, now deprecated and forced
+   onto Node 24. Working today; `.github/workflows/deploy.yml` will need its
+   action versions bumped eventually.
 
 ## Done Log
-- **S19** — LT tips translation finished 207/207; JSON `id` made the real
-  primary key for tips and recipes; 32 incomplete recipes audited against
-  source and surfaced to readers with per-recipe notes; tips got source links;
-  topic filter translated; About rewritten; browser-cache staleness fixed at
-  the root.
+- **S20** — all four filter-count bugs fixed; 20 missing flavour tags added and
+  `chocolate` made an umbrella tag; duplicate tip-174 removed (206 tips);
+  Instagram hashtags and "part N" markers stripped from every tip body;
+  tip-113 retitled; topic filters audited by reading all 206; jump-to-top/bottom
+  buttons added (four browser-specific bugs fixed behind them); Favorites empty
+  state made visible; mobile nav sheet made compact; site icon added; dead code
+  removed; `.docx` untracked; **50 commits pushed and deployed**.
+- **S19** — LT tips translation finished; JSON `id` made the real primary key;
+  32 incomplete recipes audited and surfaced; tips got source links; topic
+  filter translated; About rewritten; browser-cache staleness fixed at the root.
 - **S18** — LT tips translation started (100/207), live-preview method
   established, `recipes-audit` and `playwright` skills updated.
-- **S17** — LT recipe translation finished 79/79, source-audit link added to
-  every recipe, shopping-list data model fixed, two EN/LT-switch bugs fixed.
 
 
 ## Archive
+
+### Session 2026-08-29 (S20) — every filter count was wrong in the same way; tip data cleaned of its Instagram origins; 50 commits finally shipped to the live site
+
+**Filter counts — one bug shape in four places.** The user noticed the recipe
+flavour row showing "citrina 0" next to "šokoladas 5" when lemon actually has
+10 recipes. Each chip row was computing its counts using *its own* filter, so
+selecting any chip drove every other chip in that row to 0 while its link
+would still have shown matches. The comment above the code already stated the
+correct rule ("not the chip's own filter") — the Flavor row violated it, and
+so, unnoticed, did the Type row, which counted on `category` instead of `tag`
+and therefore never responded to an active flavour filter at all. The
+incomplete-recipes legend had the same defect, always reading the global 32.
+Fixed all three, plus flavour chips now sort by count instead of an
+alphabetical slice that surfaced one-recipe flavours while hiding vanilla (40).
+
+**Flavour tags — 20 missing across 17 recipes.** Audited all 79 against their
+own title and ingredient text. The largest gap: 7 recipes carried
+`espresso-instant-coffee` in the *ingredient* namespace while the filter reads
+`coffee-espresso` in the *flavour* namespace, so "coffee / espresso" matched
+nothing though every tiramisu contains it. Also pumpkin (2, named in the
+titles), salted-caramel (2), dark-chocolate (3), passionfruit (2), rum,
+apricot, mandarin-orange, cointreau. All 42 flavour tags now match ≥1 recipe.
+
+**`chocolate` made an umbrella tag: 5 → 27 recipes.** Recipes tagged only
+dark/milk/white were invisible to it. This follows the pattern the data already
+used elsewhere (recipe-056 carries wild-berry alongside raspberry/bilberry;
+recipe-012 carries caramel alongside salted-caramel) — chocolate was the
+inconsistent case. Note the filters *replace* rather than combine, so the
+umbrella cannot be narrowed down; accepted deliberately at 27 recipes.
+
+**tip-174 was never a tip — the export invented it.** Reading all 206 tips to
+check the topic filters turned up two byte-identical gelatin entries. MASTER
+already knew: its Tip 174 entry is a **de-duplication pointer** to Tip 167
+stating "no new tip number is consumed". The export did not honour that and
+emitted it as a record. Removed from all four data files; MASTER's header
+("FINAL TOTAL TIP COUNT: 207") was itself counting the pointer and is corrected
+to 206. **Site tip numbering now runs …172, 173, 175… and that gap is
+intentional** — renumbering would shift 33 stable ids for nothing.
+
+**Instagram residue removed from every tip body.** 89 `#marusya_*` hashtags in
+three shapes, each handled differently and none by blanket substitution: 55
+standalone lines dropped; 15 paragraphs whose entire content was a dead
+cross-reference ("Pradžią rasite čia #marusya_about_ganache") dropped whole;
+31 sitting inside live sentences rewritten by hand to point at "ankstesnėse
+šios serijos dalyse". A trial automated removal was **rejected after seeing its
+output** — it produced "from our earlier. Crème…", "previous posts — — we have
+covered", and "about gelatin - pectin" with the conjunction lost. Also dropped
+70 EN / 44 LT leading "part N" markers already present in the titles; the LT
+translation had removed 25 of these already, so the two languages now agree.
+
+**tip-113 was named after the wrong post.** Titled "Alt. Pastry Chef's Notes —
+Varieties of Salt". "ALT. PASTRY CHEF'S NOTES" appears exactly once in the
+source (line 3610) and heads a Ukraine charity acknowledgment preceding the
+salt content, not the salt series. **I first told the user this was the
+author's column name and should not be touched — that was wrong**, and checking
+the source rather than restating the claim is what settled it. Retitled to
+match its sibling tip-114.
+
+**Topic filters audited by reading, not scripting.** All 22 subcategories across
+7 groups check out as coherent; no series split across subcategories; no tag
+without textual basis. One rename: "Tempering" held 2 egg-tempering tips and a
+5-part crème anglaise series, so it is now "Tempering & Crème Anglaise". This
+also required the first entry in the EN `topicLabels` dictionary, which was
+empty because an English key is normally its own label.
+
+**UI: jump-to-top/bottom buttons, and four browser-specific bugs behind them.**
+(1) `element.ariaLabel` is unimplemented in older Firefox; assigning to it threw
+*inside* the update function, before the buttons were ever shown — so they were
+invisible in Firefox and fine in Chrome. (2) `html, body { overflow-x: clip }`
+made the root the containing block for `position: fixed` in Firefox, laying the
+buttons out against the document (x≈2400, scrolling with the page). Removing it
+from `body` alone was not enough — the same rule on `html` does the same thing.
+(3) A centred vertical position drifted on phones as the address bar collapsed;
+now bottom-anchored, with hysteresis on the show/hide threshold because that
+~100px viewport change flipped a single threshold repeatedly. (4) The buttons
+flickered because `data-visible` was re-assigned on every call even when
+unchanged, restarting the CSS transition; a scroll run plus four navigations
+went from 10 writes to 2.
+
+**Also:** the Favorites empty state was invisible — its icon, the only one in
+any empty state, had no width and stretched to 1316px, pushing its own heading
+to y=1248 on an 800px viewport. Mobile nav sheet made compact (fixed 2.75rem
+rows instead of padding that grew with the reader's font: 28% of a 390×844
+screen at default, 41% at 1.5×, versus over half before). Nav glow
+strengthened. Site icon added (three-layer cake SVG, drawn for 16px first).
+Dead code removed (`slugify`, `.nav__wordmark`, `.btn--ghost`) — `densityFor`,
+`recipePrice` and `.price-summary` deliberately kept as the unfinished pricing
+feature. `.docx` sources untracked and gitignored (they remain on disk and in
+pushed history; a rewrite was considered and declined as not worth it).
+
+**Shipped.** 50 commits pushed, deploy succeeded, live site verified: 206 tips,
+zero hashtags, corrected tip-113 title, icon served. The site is no longer on
+S7-era content.
+
+**Code:** `site/js/app.js` (filter counts, jump nav, dropdown sizing),
+`site/css/app.css` (jump nav, empty state, mobile sheet, nav glow, overflow),
+`site/js/i18n.js`, `site/js/data.js`, `site/index.html`, `site/icon.svg` (new),
+`site/data/{recipes,recipes_lt,tips,tips_lt}.json`,
+`.audit/rebuild/{tips_export,tips_export_lt}.json`,
+`.audit/rebuild/MASTER_rebuilt_tips.md`, `.audit/rebuild/series_index.json`,
+`.claude/skills/tips-audit/SKILL.md`, `.gitignore`
+**Entry point:** `python site/serve.py` → http://localhost:8792/ · live:
+https://gerimantas.github.io/BakeStack/
+**Not measured:** all four data files (1.5 MB) load on every visit though only
+one language is ever shown — 735 KB wasted. Not a one-line fix: the language
+switch compares both datasets to remap favourites. Firefox was never tested
+directly (not installed for Playwright here); its two bugs were diagnosed from
+user-supplied console output and confirmed by the user. The 31 rewritten
+sentences and the umbrella-tag decision have not been read by a native speaker.
 
 ### Session 2026-08-29 (S19) — LT tips translation finished 207/207; the tips/recipes `id` field was never the primary key the data claimed; 32 incomplete recipes audited against source and surfaced to readers; browser-cache class of false bug eliminated
 
