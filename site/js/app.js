@@ -411,7 +411,13 @@ function renderRecipesView(lang, params) {
   // curated display order, not alphabetical or by count — biggest/most-searched-for types first
   const groupOrder = ["cupcake", "cheesecake", "cakes-loaf", "cinnamon-roll", "tea-cake", "tiramisu-zephyr", "cookies-brownies", "pies-pastry", "savory", "ganache", "components-fillings"];
   const categoryGroups = groupOrder.filter((g) => all.some((r) => r.categoryGroup === g));
-  const flavorTags = (store.tags?.flavor_theme || []).filter((tg) => all.some((r) => r.tags?.includes(tg)));
+  // Only flavours some recipe actually carries, most-used first — an alphabetical slice showed
+  // one-recipe flavours while hiding vanilla (40) and white chocolate (13) past the cutoff.
+  const flavorTags = (store.tags?.flavor_theme || [])
+    .map((tg) => [tg, all.filter((r) => (r.tags || []).includes(tg)).length])
+    .filter(([, n]) => n > 0)
+    .sort((a, b) => b[1] - a[1])
+    .map(([tg]) => tg);
   const hasTechniques = all.some((r) => r.is_technique);
 
   let filtered = all;
@@ -425,11 +431,14 @@ function renderRecipesView(lang, params) {
   if (tag) filtered = filtered.filter((r) => (r.tags || []).includes(tag));
   if (incompleteOnly) filtered = filtered.filter((r) => r.is_complete === false);
 
-  // Counts reflect the OTHER active filters (so picking a Type doesn't hide Flavor counts, and vice
-  // versa), but not the chip's own filter — that would collapse every non-selected chip to a same/lower count.
+  // Every count reflects the OTHER active filters but never the chip's own — including that chip's
+  // own filter would collapse each non-selected chip in the row to 0 while its link still had
+  // matches behind it. Kind row: Category + Flavor. Type row: Kind + Flavor. Flavor row: Kind + Category.
   const byOtherKind = all.filter((r) => (!category || r.categoryGroup === category) && (!tag || (r.tags || []).includes(tag)));
-  const byOtherTag = all.filter((r) => (!kind || (kind === "technique" ? r.is_technique : !r.is_technique)) && (!category || r.categoryGroup === category));
-  const byOtherCategory = all.filter((r) => (!kind || (kind === "technique" ? r.is_technique : !r.is_technique)) && (!tag || (r.tags || []).includes(tag)));
+  const byOtherTag = all.filter((r) => (!kind || (kind === "technique" ? r.is_technique : !r.is_technique)) && (!tag || (r.tags || []).includes(tag)));
+  const byOtherCategory = all.filter((r) => (!kind || (kind === "technique" ? r.is_technique : !r.is_technique)) && (!category || r.categoryGroup === category));
+  // Same rule for the incomplete toggle: everything the other filters allow, minus its own.
+  const byOtherIncomplete = all.filter((r) => (!kind || (kind === "technique" ? r.is_technique : !r.is_technique)) && (!category || r.categoryGroup === category) && (!tag || (r.tags || []).includes(tag)));
 
   const chip = (label, count, active, href) =>
     `<button class="chip" data-nav="${href}" aria-pressed="${active}">${esc(label)} <span class="chip__count">${count}</span></button>`;
@@ -460,10 +469,10 @@ function renderRecipesView(lang, params) {
       <span class="filter-label">${t(lang, "filterFlavor")}</span>
       <div class="filters"><div class="filter-group">
         ${chip(t(lang, "allTypes"), byOtherCategory.length, !tag, `#/recipes?${withParam(params, "tag", "")}`)}
-        ${flavorTags.slice(0, 14).map((tg) => chip(tagLabel(lang, "flavor_theme", tg), byOtherCategory.filter((r) => (r.tags || []).includes(tg)).length, tag === tg, `#/recipes?${withParam(params, "tag", tg)}`)).join("")}
+        ${(flavorTags.slice(0, 14).includes(tag) || !tag ? flavorTags.slice(0, 14) : [...flavorTags.slice(0, 14), tag]).map((tg) => chip(tagLabel(lang, "flavor_theme", tg), byOtherCategory.filter((r) => (r.tags || []).includes(tg)).length, tag === tg, `#/recipes?${withParam(params, "tag", tg)}`)).join("")}
       </div></div>
     </div>` : ""}
-    ${all.some((r) => r.is_complete === false) ? `<button type="button" class="incomplete-legend" data-nav="#/recipes?${withParam(params, "incomplete", incompleteOnly ? "" : "1")}" aria-pressed="${incompleteOnly}"><span class="incomplete-legend__mark">⚠</span> ${esc(t(lang, "incompleteLegend"))} <span class="incomplete-legend__count">(${all.filter((r) => r.is_complete === false).length})</span></button>` : ""}
+    ${byOtherIncomplete.some((r) => r.is_complete === false) ? `<button type="button" class="incomplete-legend" data-nav="#/recipes?${withParam(params, "incomplete", incompleteOnly ? "" : "1")}" aria-pressed="${incompleteOnly}"><span class="incomplete-legend__mark">⚠</span> ${esc(t(lang, "incompleteLegend"))} <span class="incomplete-legend__count">(${byOtherIncomplete.filter((r) => r.is_complete === false).length})</span></button>` : ""}
     ${filtered.length ? `<div class="recipe-grid">${filtered.map((r) => recipeCard(r, lang, query)).join("")}</div>`
       : `<div class="empty-state"><h2>${t(lang, "noResults")}</h2><p>${t(lang, "noResultsHint")}</p></div>`}
   </div>`;
