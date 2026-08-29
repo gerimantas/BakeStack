@@ -12,7 +12,7 @@
   <!-- ?v= is a cache-buster: bump it whenever css/ or js/ changes, so browsers fetch the
        new file instead of serving a stale cached copy. Data files handle this themselves
        (see fetchJSON in js/data.js). -->
-  <link rel="stylesheet" href="css/app.css?v=19">
+  <link rel="stylesheet" href="css/app.css?v=23">
   <style>
     /* Cabinet Grotesk and Switzer are Fontshare faces (not on Google Fonts) — loaded via Fontshare's CDN below. Space Grotesk above is the safety fallback while Fontshare loads. */
   </style>
@@ -30,11 +30,20 @@
     <div id="footer-slot"></div>
   </div>
   <div class="toast" id="toast" role="status" aria-live="polite" data-visible="false"></div>
+  <!-- Outside .app-shell so a re-render never replaces them; labels are set per language in JS. -->
+  <div class="jump-nav" id="jump-nav" data-visible="false">
+    <button type="button" class="jump-nav__btn" id="jump-top">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 15l6-6 6 6"/></svg>
+    </button>
+    <button type="button" class="jump-nav__btn" id="jump-bottom">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+    </button>
+  </div>
 
   <script src="js/density.js?v=15"></script>
   <script src="js/data.js?v=15"></script>
-  <script src="js/i18n.js?v=15"></script>
+  <script src="js/i18n.js?v=21"></script>
   <script src="js/state.js?v=15"></script>
-  <script src="js/app.js?v=19"></script>
+  <script src="js/app.js?v=23"></script>
 </body>
 </html>

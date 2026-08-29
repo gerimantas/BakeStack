@@ -916,6 +916,44 @@ function pageTitle(lang, route) {
 /** Wires nav-level events (lang, theme, hamburger, search dropdown) — called ONCE from render()
  * the first time the nav is created. These elements are never re-created, so their listeners
  * never need to be re-attached. */
+/** Side buttons that jump to the top/bottom of the page. Wired once — the element lives outside
+ * .app-shell, so a re-render never replaces it. Hidden entirely when the page fits the viewport,
+ * and each button is disabled once you are already at that end. */
+function wireJumpNav() {
+  const nav = document.getElementById("jump-nav");
+  const top = document.getElementById("jump-top");
+  const bottom = document.getElementById("jump-bottom");
+  if (!nav || !top || !bottom) return;
+
+  const scrollTo = (y) => window.scrollTo({ top: y, behavior: "smooth" });
+  top.addEventListener("click", () => scrollTo(0));
+  bottom.addEventListener("click", () => scrollTo(document.documentElement.scrollHeight));
+
+  const update = () => {
+    const doc = document.documentElement;
+    // Hysteresis: a phone's address bar collapsing changes innerHeight by ~100px, and a single
+    // threshold made the buttons flicker in and out as it did. Once shown they stay until the
+    // page is clearly too short, and vice versa.
+    const slack = doc.scrollHeight - window.innerHeight;
+    const shown = nav.dataset.visible === "true";
+    const scrollable = shown ? slack > 120 : slack > 320;
+    nav.dataset.visible = String(scrollable);
+    if (!scrollable) return;
+    const y = window.scrollY;
+    top.disabled = y < 40;
+    bottom.disabled = y + window.innerHeight >= doc.scrollHeight - 40;
+    const lang = appState.lang;
+    top.title = top.ariaLabel = t(lang, "jumpTop");
+    bottom.title = bottom.ariaLabel = t(lang, "jumpBottom");
+  };
+
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+  // Content height changes on every render, so re-measure after the DOM settles.
+  new MutationObserver(update).observe(document.getElementById("main"), { childList: true, subtree: true });
+  update();
+}
+
 function wireNavEvents() {
   document.querySelectorAll("[data-lang]").forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -968,6 +1006,7 @@ function wireNavEvents() {
   });
   window.addEventListener("hashchange", closeSheet);
   wireSearchDropdown();
+  wireJumpNav();
 
   document.addEventListener("click", (e) => {
     document.querySelectorAll("[data-topic-dropdown]").forEach((wrap) => {
