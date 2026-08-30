@@ -9,7 +9,12 @@
   <!-- One SVG at every size; it carries its own dark background, so it needs no light/dark
        variants and no separate .ico. Drawn to stay legible at 16px — see the file's own notes. -->
   <link rel="icon" href="icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.svg">
+  <link rel="apple-touch-icon" href="icon-192.png">
+  <!-- Makes the site installable: Android reads this to offer "Install app" and to decide the
+       icon, splash colours and orientation. orientation:"any" is deliberate — the reader's
+       rotation lock should win, and nothing in the layout needs a fixed orientation. -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#e8763a">
   <!-- Four font hosts are involved: two stylesheet origins and the two CDNs the faces
        themselves come from. Without preconnect the browser only discovers the CDNs after
        parsing each stylesheet, paying DNS + TLS again mid-load. Fontshare serves one family
@@ -23,8 +28,8 @@
   <!-- ?v= is a cache-buster: bump it whenever css/ or js/ changes, so browsers fetch the
        new file instead of serving a stale cached copy. Data files handle this themselves
        (see fetchJSON in js/data.js). -->
-  <link rel="stylesheet" href="css/tokens.css?v=29">
-  <link rel="stylesheet" href="css/app.css?v=29">
+  <link rel="stylesheet" href="css/tokens.css?v=30">
+  <link rel="stylesheet" href="css/app.css?v=30">
   <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
   <link href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap" rel="stylesheet">
 </head>
@@ -49,10 +54,10 @@
     </button>
   </div>
 
-  <script src="js/density.js?v=29"></script>
-  <script src="js/data.js?v=29"></script>
-  <script src="js/i18n.js?v=29"></script>
-  <script src="js/state.js?v=29"></script>
-  <script src="js/app.js?v=29"></script>
+  <script src="js/density.js?v=30"></script>
+  <script src="js/data.js?v=30"></script>
+  <script src="js/i18n.js?v=30"></script>
+  <script src="js/state.js?v=30"></script>
+  <script src="js/app.js?v=30"></script>
 </body>
 </html>

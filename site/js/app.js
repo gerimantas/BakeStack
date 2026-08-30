@@ -841,6 +841,8 @@ function renderAboutView(lang) {
       <li style="margin-bottom:var(--space-2xs)">${esc(t(lang, "aboutHomeScreenAndroid"))}</li>
       <li>${esc(t(lang, "aboutHomeScreenIos"))}</li>
     </ul>
+    <h2 style="font-size:var(--text-lg);margin:var(--space-xl) 0 var(--space-2xs)">${esc(t(lang, "aboutOfflineHeading"))}</h2>
+    <p style="max-width:42rem;color:var(--color-ink-2)">${esc(t(lang, "aboutOfflineText"))}</p>
   </div>`;
 }
 
@@ -1225,6 +1227,48 @@ async function init() {
   const other = appState.lang === "lt" ? "en" : "lt";
   if ("requestIdleCallback" in window) requestIdleCallback(() => prefetchLang(other), { timeout: 4000 });
   else setTimeout(() => prefetchLang(other), 1500);
+  registerServiceWorker();
+}
+
+/* Registers the offline worker and, when a new one is ready, offers the reader the update
+ * rather than taking it. A worker that called skipWaiting on its own would swap the page's
+ * code mid-recipe; instead the new worker sits in `waiting` until the reader accepts, which
+ * is the whole reason sw.js does not skipWaiting in its own install handler.
+ *
+ * Registration is deliberately last in init: it must never delay first paint, and on a fresh
+ * visit the worker's install downloads the whole precache list. */
+function registerServiceWorker() {
+  if (!("serviceWorker" in navigator)) return;
+  // file:// has no service-worker support and throws on register.
+  if (location.protocol !== "https:" && location.hostname !== "localhost" && location.hostname !== "127.0.0.1") return;
+
+  navigator.serviceWorker.register("sw.js").then((reg) => {
+    const offer = (worker) => {
+      showToast(t(appState.lang, "updateReady"), {
+        label: t(appState.lang, "updateNow"),
+        run: () => worker.postMessage("SKIP_WAITING"),
+      });
+    };
+    // Already waiting when the page loaded (the update landed on a previous visit).
+    if (reg.waiting && navigator.serviceWorker.controller) offer(reg.waiting);
+    reg.addEventListener("updatefound", () => {
+      const nw = reg.installing;
+      if (!nw) return;
+      nw.addEventListener("statechange", () => {
+        // `controller` is null on the very first install — that is a first-time cache fill,
+        // not an update, and prompting there would be nonsense.
+        if (nw.state === "installed" && navigator.serviceWorker.controller) offer(nw);
+      });
+    });
+  }).catch(() => { /* offline support is optional; the site works without it */ });
+
+  // The new worker took over: reload once so the page runs the code it just cached.
+  let reloading = false;
+  navigator.serviceWorker.addEventListener("controllerchange", () => {
+    if (reloading) return;
+    reloading = true;
+    location.reload();
+  });
 }
 
 document.addEventListener("DOMContentLoaded", init);
