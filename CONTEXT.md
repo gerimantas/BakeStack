@@ -43,9 +43,27 @@ posts' photo carousels). Each carries an `incomplete_note`; the list marks them
 with a ⚠ badge and the legend doubles as a filter for just those 32.
 
 **Browser-cache staleness is fixed at the root** (S19): `site/serve.py` sends
-`no-store`, `fetchJSON` revalidates, and css/js carry a `?v=` query — **bump it
-in `index.html` whenever css/ or js/ changes** (at `?v=28`). A plain reload is
-enough locally; Firefox may need Ctrl+Shift+R for a changed favicon.
+`no-store`, `fetchJSON` revalidates, and css/js carry a `?v=` query. **Bump the
+`?v=` in `index.html` AND `BUILD` in `site/sw.js` together whenever anything
+under `site/` changes** (both at v30). They are one version, split across two
+files: `BUILD` names the cache, so changing it is what makes the browser install
+a new worker and drop the old cache, while `?v=` is what makes the page request
+the new assets. Bumping only one ships an update nobody receives — or a prompt
+that changes nothing. A plain reload is enough locally; Firefox may need
+Ctrl+Shift+R for a changed favicon.
+
+**The site is an installable offline app** (S21). `site/sw.js` + `manifest.json`
++ three PNG icons: it installs from Chrome's "Install app", opens with no
+connection, and uninstalls like any app. Caching differs per type — HTML network
+first (the shell carries the `?v=`), data cache-first with background refresh,
+css/js cache-first (already versioned). **`source.html`/`source_tips.html` are
+deliberately never cached** (~1.4 MB for a page most readers never open), so
+"View original source" needs a connection. **Updates are offered, never taken:**
+`sw.js` does not `skipWaiting()` on install, so a new worker waits and the page
+prompts; accepting posts `SKIP_WAITING` and reloads. Do not "simplify" that into
+an automatic swap — it exists so a reader is not moved onto new code mid-recipe.
+The About page documents the ~2 MB copy, the update prompt, uninstalling, and
+that favourites/shopping list/language live only on the device.
 
 **Only the language in use is loaded** (S21). Both languages used to be
 fetched on every visit; the constraint that required it — ids derived
