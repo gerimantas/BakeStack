@@ -4,14 +4,14 @@
 active — static site in `site/`, live on GitHub Pages:
 **https://gerimantas.github.io/BakeStack/** (public repo, deploy via
 `.github/workflows/deploy.yml`, auto-updates on every push to master that
-touches `site/**`). **Everything is pushed and deployed as of S20** — the live
-site matches local, verified after the deploy: 206 tips, no leftover hashtags,
-corrected tip-113 title, icon served.
+touches `site/**`). **Everything is pushed and deployed as of S21** — verified
+against the live site after the deploy: the app installs and runs offline
+(79 recipes, 206 tips with the network off), and the LT text fixes are served.
 
 **Both languages are fully translated and live: 79/79 recipes (S17) and
-206/206 tips (S19–S20).** No native speaker has read either set end to end —
-that 3rd QA layer is still open for both, and now also covers the 31 sentences
-S20 rewrote by hand.
+206/206 tips (S19–S20).** A first reader pass ran in S21 over a sample — see
+"The LT translations have had a first reader pass" below for what it covered
+and what it found; the rest has still not been read as prose.
 
 **Tips are 206, not 207.** MASTER numbers Tip 001–207, but Tip 174 is a
 de-duplication pointer to Tip 167, not a tip; the export shipped it as a real
@@ -110,12 +110,9 @@ invented or dropped. Three mechanical defects surfaced and are fixed file-wide:
 
 
 ## Next tasks
-1. **Finish the native-speaker read of the LT translations.** S21 read 11
-   recipes (one per categoryGroup) and 10 tips (5 of them hand-rewritten in
-   S20) and fixed the three defects that pass found — see Status. The prose
-   itself read well throughout, so the remaining ~68 recipes and ~196 tips are
-   likely fine, but they have still not been read; the three fixes were applied
-   file-wide by pattern, not by reading every record.
+1. **Finish the LT reader pass: ~68 recipes and ~196 tips still unread.** S21
+   read a sample and fixed three defects file-wide by pattern, not by reading
+   every record — method and findings in Status and the S21 Archive entry.
 2. **Optional next perf step: defer `tips.json` off the boot path.** It is the
    single biggest file left (140 KB gzipped) and is fetched before first paint,
    but only the Tips list needs it in full. Not free: `searchAll` matches
@@ -137,6 +134,14 @@ invented or dropped. Three mechanical defects surfaced and are fixed file-wide:
    action versions bumped eventually.
 
 ## Done Log
+- **S21** — first paint halved (9420 → ~5100 ms at 1.6 Mbps) by loading only the
+  language in use, unchaining tokens.css and dropping the unused Space Grotesk;
+  `remapStoredRecipeIdsForLangSwitch` deleted as a no-op; LT reader pass over 11
+  recipes and 10 tips fixed 69 broken quote pairs, 5 "anglus kremas" and 65
+  genitive durations; site turned into an installable offline app (`sw.js`,
+  `manifest.json`, PNG icons) with an offer-don't-take update prompt and an
+  About section explaining storage and uninstall; a data `rel=preload` and a
+  transparent icon were both tried and reverted.
 - **S20** — all four filter-count bugs fixed; 20 missing flavour tags added and
   `chocolate` made an umbrella tag; duplicate tip-174 removed (206 tips);
   Instagram hashtags and "part N" markers stripped from every tip body;
@@ -152,6 +157,108 @@ invented or dropped. Three mechanical defects surfaced and are fixed file-wide:
 
 
 ## Archive
+
+### Session 2026-08-30 (S21) — first paint halved by loading one language, three LT defects found by reading, and the site turned into an installable offline app
+
+**Loading both languages was dead weight, and the thing that required it was
+already gone.** Every visit fetched all four data files (1.5 MB) although one
+language is ever shown. The blocker recorded in Next Tasks was
+`remapStoredRecipeIdsForLangSwitch`, which compared both datasets to keep
+favourites across a language switch. Checked it against the data rather than
+trusting the note: ids are identical in EN and LT across all 79 recipes and 206
+tips, so the function was a no-op and nothing reads the off-screen language.
+`loadAll(lang)` now fetches one pair; the other is prefetched at idle after
+first paint; the remap function is deleted rather than left unused.
+
+**Measured, not estimated.** Chromium at ~1.6 Mbps / 150 ms RTT, first content
+paint 9420 ms -> 5694 ms, data before paint 1522 KB -> 754 KB. On the live site
+(GitHub Pages gzips) that is 204 KB transferred, down from ~390 KB.
+
+**Two smaller costs on the same path.** `tokens.css` was pulled in by an
+`@import` at the top of `app.css`, so the browser could not discover it until
+app.css had been fetched and parsed — now a `<link>` ahead of app.css, landing
+at 747 ms instead of 1422 ms. Space Grotesk was loaded from Google Fonts as a
+"fallback while Fontshare loads" but no stack in tokens.css names it, and
+`document.fonts` confirmed the browser never loaded it; dropped. Added
+preconnects for both Fontshare hosts.
+
+**A `<link rel=preload>` for the data files makes things WORSE — do not retry
+it.** `fetchJSON` sends `cache: "no-cache"`, which will not reuse a preloaded
+response, so each file downloaded twice and first paint regressed
+5694 -> 8993 ms. Reverted the same session it was tried.
+
+**`site/source.html` and `site/source_tips.html` look unused and are not.** I
+proposed deleting them as 1.4 MB of dead weight in the deploy, having grepped
+only `js/`, `css/` and `index.html`. All 79 recipes and all 206 tips carry a
+`source_url` into them, rendered as "View original source" on both detail pages
+— 285 links, verified live before anything was touched. They cost visitors
+nothing: fetched only when that link is clicked. Recorded in Status so the next
+reader does not repeat the mistake.
+
+**LT reader pass — 11 recipes (one per categoryGroup) and 10 tips (5 of them
+hand-rewritten in S20).** The prose is sound: fluent, terms right (kremjė,
+ganašas, temperavimas), nothing invented or dropped. Three mechanical defects
+surfaced and were fixed file-wide:
+
+- 69 quoted phrases in 37 tips closed with a straight `"` instead of `“`. The
+  EN files contain no `„` at all, so it entered in translation. The two
+  digit-adjacent cases were checked by hand — quoted vote options („1", „2"),
+  not inch marks.
+- crème anglaise written "anglus/anglaus kremas" in tip-050 and tip-086, while
+  tip-050 used the correct "angliškas kremas" four times in the same text.
+- 66 durations in the genitive where Lithuanian wants the accusative.
+  recipe-002 and recipe-017 translated the identical English sentence both
+  ways. **The file had no usable internal precedent** — the split held after
+  apie (14/22) and bent (2/12) — so this was fixed against the grammar rule,
+  not the file's majority. 65 changed; recipe-042's "po 10–15 minučių" (a
+  moment, not a span) is correct and preserved, with the same sentence's span
+  changed.
+
+**The site is now an installable offline app.** `sw.js` + `manifest.json` +
+three PNG icons rendered from `icon.svg` via Chromium. Caching differs per type:
+HTML network-first (the shell carries the `?v=`), data cache-first with
+background refresh, css/js cache-first (already versioned by `?v=`). The two
+source archives are deliberately never cached — ~1.4 MB for a page most readers
+never open — so "View original source" needs a connection. **Updates are
+offered, never taken:** `sw.js` does not `skipWaiting()` on install, so a new
+worker waits and the page prompts; accepting posts SKIP_WAITING and reloads.
+Verified end to end against a real install: prompt appears on a new build while
+the page stays on the old one, and after accepting, v31 runs with the v30 cache
+deleted.
+
+**Transparent icon: built, reviewed, reverted at the user's request.** The plate
+was removed and the middle tier darkened (it vanished on white), published as an
+artifact for review, then reverted on request — dropped as the last unpushed
+commit, so the icons are byte-identical to the version shipped with the PWA
+work. The icon keeps its dark plate.
+
+**A rotation complaint turned out not to be ours.** Landscape was reported
+broken; nothing in css/js locks orientation and both 390x844 and 844x390 lay out
+without overflow. It was the phone's system rotation lock. manifest
+`orientation` is `"any"` so the reader's own lock decides.
+
+**Code:** `site/sw.js` (new), `site/manifest.json` (new), `site/icon-192.png`,
+`site/icon-512.png`, `site/icon-512-maskable.png` (new), `site/js/data.js`
+(loadLang/prefetchLang/loadAll(lang)), `site/js/app.js` (async lang switch,
+registerServiceWorker, About offline section), `site/js/state.js`
+(remapStoredRecipeIdsForLangSwitch deleted), `site/js/i18n.js` (updateReady,
+updateNow, aboutOffline* in EN+LT), `site/index.html` (manifest link,
+tokens.css link, fonts trimmed, ?v=30), `site/css/app.css` (@import removed),
+`site/data/recipes_lt.json` (durations), `site/data/tips_lt.json` (quotes,
+anglaise).
+
+**Entry point:** `cd site && python serve.py 8799` — but the service worker
+needs https or localhost, and `serve.py` sends `no-store`, so PWA behaviour must
+be tested against `http://localhost:8799/`, not a file:// path. Live:
+https://gerimantas.github.io/BakeStack/
+
+**Not measured:** the remaining 68 recipes and 196 tips were never read as
+prose — the three fixes were applied file-wide by pattern. `tips.json`
+(140 KB gzipped) is still fetched before first paint; deferring it is scoped in
+Next Tasks and would degrade search and related-tips until a second fetch lands.
+No iOS device was tested — Safari's PWA behaviour (no install prompt, different
+storage eviction) is unverified.
+
 
 ### Session 2026-08-29 (S20) — every filter count was wrong in the same way; tip data cleaned of its Instagram origins; 50 commits finally shipped to the live site
 
