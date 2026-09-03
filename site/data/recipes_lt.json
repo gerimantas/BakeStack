@@ -45,7 +45,7 @@
       "mascarpone",
       "dark-chocolate"
     ],
-    "image": null,
+    "image": "images/recipe-001.jpg",
     "source_docx_lines": "1-21",
     "is_complete": true,
     "is_technique": false,
@@ -157,7 +157,7 @@
       "salt",
       "sugar"
     ],
-    "image": null,
+    "image": "images/recipe-002.jpg",
     "source_docx_lines": "22-74",
     "is_complete": true,
     "is_technique": false,
@@ -374,7 +374,7 @@
       "heavy-whipping-cream",
       "cornstarch"
     ],
-    "image": null,
+    "image": "images/recipe-003.jpg",
     "source_docx_lines": "75-143",
     "is_complete": true,
     "is_technique": false,
@@ -564,7 +564,7 @@
       "passionfruit",
       "chocolate"
     ],
-    "image": null,
+    "image": "images/recipe-004.jpg",
     "source_docx_lines": "144-205",
     "is_complete": true,
     "is_technique": false,
@@ -1321,7 +1321,7 @@
       "baileys",
       "mascarpone"
     ],
-    "image": null,
+    "image": "images/recipe-009.jpg",
     "source_docx_lines": "396-448",
     "is_complete": true,
     "is_technique": false,
@@ -1500,7 +1500,7 @@
       "cocoa-powder",
       "coffee-espresso"
     ],
-    "image": null,
+    "image": "images/recipe-010.jpg",
     "source_docx_lines": "449-510",
     "is_complete": true,
     "is_technique": false,
@@ -1690,7 +1690,7 @@
       "cream-cheese",
       "dark-chocolate"
     ],
-    "image": null,
+    "image": "images/recipe-011.jpg",
     "source_docx_lines": "511-568",
     "is_complete": true,
     "is_technique": false,
@@ -1881,7 +1881,7 @@
       "cream-cheese",
       "salted-caramel"
     ],
-    "image": null,
+    "image": "images/recipe-012.jpg",
     "source_docx_lines": "569-629",
     "is_complete": true,
     "is_technique": false,
@@ -2068,7 +2068,7 @@
       "vanilla",
       "coffee-espresso"
     ],
-    "image": null,
+    "image": "images/recipe-013.jpg",
     "source_docx_lines": "630-679",
     "is_complete": true,
     "is_technique": false,
@@ -2216,7 +2216,7 @@
       "raspberry",
       "mascarpone"
     ],
-    "image": null,
+    "image": "images/recipe-014.jpg",
     "source_docx_lines": "680-745",
     "is_complete": true,
     "is_technique": false,
@@ -2329,7 +2329,7 @@
       "flour-all-purpose",
       "baking-powder"
     ],
-    "image": null,
+    "image": "images/recipe-015.jpg",
     "source_docx_lines": "746-778",
     "is_complete": true,
     "is_technique": false,
@@ -2522,7 +2522,7 @@
       "chocolate",
       "dark-chocolate"
     ],
-    "image": null,
+    "image": "images/recipe-017.jpg",
     "source_docx_lines": "809-854",
     "is_complete": true,
     "is_technique": false,
@@ -2607,7 +2607,7 @@
       "vanilla",
       "chocolate"
     ],
-    "image": null,
+    "image": "images/recipe-018.jpg",
     "source_docx_lines": "855-883",
     "is_complete": true,
     "is_technique": false,
@@ -2721,7 +2721,7 @@
       "milk",
       "strawberry"
     ],
-    "image": null,
+    "image": "images/recipe-019.jpg",
     "source_docx_lines": "884-940",
     "is_complete": true,
     "is_technique": false,
@@ -2883,7 +2883,7 @@
       "cocoa-butter",
       "chocolate"
     ],
-    "image": null,
+    "image": "images/recipe-021.jpg",
     "source_docx_lines": "992-1000",
     "is_complete": true,
     "is_technique": false,
@@ -3096,7 +3096,7 @@
       "peanut-butter",
       "coffee-espresso"
     ],
-    "image": null,
+    "image": "images/recipe-022.jpg",
     "source_docx_lines": "1001-1061",
     "is_complete": true,
     "is_technique": false,
@@ -3509,7 +3509,7 @@
       "mascarpone",
       "chocolate"
     ],
-    "image": null,
+    "image": "images/recipe-024.jpg",
     "source_docx_lines": "1114-1166",
     "is_complete": true,
     "is_technique": false,
@@ -3765,7 +3765,7 @@
       "passionfruit",
       "cointreau"
     ],
-    "image": null,
+    "image": "images/recipe-027.jpg",
     "source_docx_lines": "1238-1293",
     "is_complete": true,
     "is_technique": false,
@@ -3844,7 +3844,7 @@
       "pectin-nh",
       "gelatin"
     ],
-    "image": null,
+    "image": "images/recipe-028.jpg",
     "source_docx_lines": "1294-1320",
     "is_complete": true,
     "is_technique": false,
@@ -4039,7 +4039,7 @@
       "mascarpone",
       "chocolate"
     ],
-    "image": null,
+    "image": "images/recipe-029.jpg",
     "source_docx_lines": "1321-1370",
     "is_complete": true,
     "is_technique": false,
@@ -4132,7 +4132,7 @@
       "cocoa-powder",
       "chocolate"
     ],
-    "image": null,
+    "image": "images/recipe-030.jpg",
     "source_docx_lines": "1371-1399",
     "is_complete": true,
     "is_technique": false,
@@ -4204,7 +4204,7 @@
       "flour-all-purpose",
       "hazelnut"
     ],
-    "image": null,
+    "image": "images/recipe-031.jpg",
     "source_docx_lines": "1400-1427",
     "is_complete": true,
     "is_technique": false,
@@ -4364,7 +4364,7 @@
       "amaretto",
       "coffee-espresso"
     ],
-    "image": null,
+    "image": "images/recipe-032.jpg",
     "source_docx_lines": "1428-1471",
     "is_complete": true,
     "is_technique": false,
@@ -4478,7 +4478,7 @@
       "heavy-whipping-cream",
       "gelatin"
     ],
-    "image": null,
+    "image": "images/recipe-034.jpg",
     "source_docx_lines": "1500-1522",
     "is_complete": true,
     "is_technique": true,
@@ -4759,7 +4759,7 @@
       "heavy-whipping-cream",
       "chocolate"
     ],
-    "image": null,
+    "image": "images/recipe-037.jpg",
     "source_docx_lines": "1597-1639",
     "is_complete": true,
     "is_technique": true,
@@ -10034,7 +10034,7 @@
       "sour-cream",
       "salt"
     ],
-    "image": null,
+    "image": "images/recipe-079.jpg",
     "source_docx_lines": "3558-3599",
     "is_complete": true,
     "is_technique": false,
