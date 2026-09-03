@@ -6,6 +6,7 @@ const LS_KEYS = {
   shoppingChecked: "bakestack:shopping-checked",
   lang: "bakestack:lang",
   theme: "bakestack:theme",
+  showPhotos: "bakestack:show-photos",
 };
 
 function readLS(key, fallback) {
@@ -22,11 +23,17 @@ function writeLS(key, value) {
 
 const appState = {
   lang: readLS(LS_KEYS.lang, "en"),
-  theme: readLS(LS_KEYS.theme, null), // null = follow system
+  theme: readLS(LS_KEYS.theme, "dark"), // default dark for first-time visitors; null would mean "follow system"
   favorites: new Set(readLS(LS_KEYS.favorites, [])), // set of "recipe:<id>" / "tip:<id>"
   shoppingPicks: readLS(LS_KEYS.shoppingPicks, {}), // { "recipe:<id>": multiplier }
   shoppingChecked: new Set(readLS(LS_KEYS.shoppingChecked, [])), // set of ingredient nameKey, marked as bought
+  showPhotos: readLS(LS_KEYS.showPhotos, true),
 };
+
+function setShowPhotos(value) {
+  appState.showPhotos = value;
+  writeLS(LS_KEYS.showPhotos, value);
+}
 
 function setLang(lang) {
   appState.lang = lang;

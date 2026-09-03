@@ -29,10 +29,13 @@ function iconCheck() { return `<svg viewBox="0 0 24 24" aria-hidden="true"><path
 function iconBack() { return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>`; }
 function iconChef() { return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21h12M8 21V13a4 4 0 018 0v8M4 10a4 4 0 014-4c.3-1.7 1.8-3 3.8-3S15.7 4.3 16 6a4 4 0 014 4c0 1.5-.9 2.7-2.1 3.3"/></svg>`; }
 
-/** Recipe card image slot — shows the photo when the recipe has one, otherwise
- * a placeholder in the same slot so every card keeps the same top-of-card
- * layout instead of the empty space drifting to the card's vertical center. */
+/** Recipe card image slot — shows the photo when the recipe has one, otherwise a
+ * placeholder in the same slot so every card keeps the same top-of-card layout
+ * instead of the empty space drifting to the card's vertical center. Returns ""
+ * when photos are toggled off site-wide, so the card collapses to just its text
+ * (the favorite button is placed separately by the caller in that case). */
 function recipeCardMedia(recipe, extra, lang) {
+  if (!appState.showPhotos) return "";
   if (!recipe.image) {
     return `<div class="recipe-card__media recipe-card__media--empty">${esc(t(lang || "lt", "noPhoto"))}${extra || ""}</div>`;
   }
@@ -123,8 +126,13 @@ const NAV_LINKS = [
   { href: "#/about", key: "navAbout", match: (r) => r.name === "about" },
 ];
 
+/** Icon shows what a click will switch TO the opposite of what's actually on screen right
+ * now, not the literal appState.theme value — theme can be null ("follow system"), and when
+ * the system is dark that still LOOKS dark, so the icon must check the resolved appearance,
+ * not just the explicit "dark"/"light" states. */
 function themeIconSvg(theme) {
-  return theme === "dark"
+  const isDark = theme === "dark" || (theme == null && window.matchMedia?.("(prefers-color-scheme: dark)").matches);
+  return isDark
     ? `<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>`
     : `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1111.2 3a7 7 0 009.8 9.8z"/></svg>`;
 }
@@ -375,6 +383,7 @@ function recipeCard(recipe, lang, query) {
   return `
   <a class="recipe-card${incomplete ? " recipe-card--incomplete" : ""}" href="#/recipe/${recipe.id}">
     ${recipeCardMedia(recipe, favBtn, lang)}
+    ${appState.showPhotos ? "" : favBtn}
     ${incomplete ? `<span class="recipe-card__incomplete-badge" title="${esc(t(lang, "incompleteTitle"))}" aria-label="${esc(t(lang, "incompleteTitle"))}">⚠</span>` : ""}
     <div class="recipe-card__body">
       <span class="recipe-card__cat">${esc(tagLabel(lang, "category", recipe.category))}${recipe.is_technique ? `<span class="recipe-card__kind-badge">${t(lang, "kindTechnique")}</span>` : ""}</span>
@@ -446,7 +455,10 @@ function renderRecipesView(lang, params) {
   return `
   <div class="container">
     <div class="page-head">
-      <h1>${t(lang, "navRecipes")}</h1>
+      <div class="page-head__title-row">
+        <h1>${t(lang, "navRecipes")}</h1>
+        <button type="button" class="photo-filter" id="photo-toggle" aria-pressed="${appState.showPhotos}">${esc(t(lang, appState.showPhotos ? "photoFilterOn" : "photoFilterOff"))}</button>
+      </div>
     </div>
     ${hasTechniques ? `<div class="filter-block">
       <span class="filter-label">${t(lang, "filterKind")}</span>
@@ -1002,7 +1014,11 @@ function wireNavEvents() {
   });
   const themeBtn = document.getElementById("theme-btn");
   themeBtn?.addEventListener("click", () => {
-    const next = appState.theme === "dark" ? "light" : appState.theme === "light" ? null : "dark";
+    // Cycle by what's actually on screen (dark/light), not the raw stored value — appState.theme
+    // can be null ("follow system"), and if the system is dark that still looks dark, so a click
+    // must flip away from dark even though the stored value isn't literally "dark".
+    const isDark = appState.theme === "dark" || (appState.theme == null && window.matchMedia?.("(prefers-color-scheme: dark)").matches);
+    const next = isDark ? "light" : appState.theme === "light" ? null : "dark";
     setTheme(next);
     updateNavState(appState.lang, parseHash().route);
   });
@@ -1067,6 +1083,11 @@ function wireEvents(route) {
 
   document.querySelectorAll("[data-nav]").forEach((el) => {
     el.addEventListener("click", () => { location.hash = el.dataset.nav; });
+  });
+
+  document.getElementById("photo-toggle")?.addEventListener("click", () => {
+    setShowPhotos(!appState.showPhotos);
+    render();
   });
 
   document.querySelectorAll("[data-nav-select]").forEach((el) => {

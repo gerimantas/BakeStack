@@ -91,7 +91,7 @@
     --color-ink-2:     oklch(80% 0.010 55);
 
     --color-accent:      oklch(70% 0.15 50);
-    --color-accent-ink:  oklch(16% 0.012 50);
+    --color-accent-ink:  oklch(99% 0.010 60);
     --color-focus:       oklch(74% 0.19 50);
 
     --color-success: oklch(68% 0.14 145);
@@ -116,7 +116,7 @@
   --color-ink-2:     oklch(80% 0.010 55);
 
   --color-accent:      oklch(70% 0.15 50);
-  --color-accent-ink:  oklch(16% 0.012 50);
+  --color-accent-ink:  oklch(99% 0.010 60);
   --color-focus:       oklch(74% 0.19 50);
 
   --color-success: oklch(68% 0.14 145);

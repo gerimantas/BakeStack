@@ -343,11 +343,39 @@ img { max-width: 100%; display: block; }
   gap: var(--space-md);
   margin-bottom: var(--space-lg);
 }
+.page-head__title-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+  flex-wrap: wrap;
+}
 .page-head h1 {
   font-size: var(--text-display);
   overflow-wrap: anywhere;
   min-width: 0;
 }
+.photo-filter {
+  display: inline-flex;
+  gap: var(--space-2xs);
+  align-items: baseline;
+  padding: var(--space-2xs) var(--space-sm);
+  border: 1px solid var(--color-rule);
+  border-radius: var(--radius-md);
+  background: transparent;
+  color: var(--color-ink-2);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: background var(--dur-short) var(--ease-out), border-color var(--dur-short) var(--ease-out), color var(--dur-short) var(--ease-out);
+}
+.photo-filter:hover { border-color: var(--color-neutral); }
+.photo-filter[aria-pressed="true"] {
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  color: var(--color-accent-ink);
+}
+.photo-filter__count { font-weight: 400; opacity: 0.8; }
 .page-head__count {
   font-family: var(--font-mono);
   font-size: var(--text-sm);
@@ -558,6 +586,9 @@ img { max-width: 100%; display: block; }
   gap: var(--space-2xs);
   flex: 1;
 }
+/* No media block at all (photos toggled off site-wide): the fav button sits directly on the
+ * card, so the body needs headroom under it instead of the image providing that space. */
+.recipe-card:not(:has(.recipe-card__media)) .recipe-card__body { padding-top: 3rem; }
 .recipe-card__cat {
   font-size: var(--text-xs);
   text-transform: uppercase;
