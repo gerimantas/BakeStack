@@ -144,16 +144,22 @@ invented or dropped. Three mechanical defects surfaced and are fixed file-wide:
    every record — method and findings in Status and the S21 Archive entry.
 2. **Photos for the remaining 53 recipes.** 26 are done (S22); the rest still
    carry `image: null` and show the placeholder. Same drill: drop the file in
-   `site/images/` as `recipe-NNN.jpg`, set `image` in all three recipe JSONs,
-   bump the version.
+   `site/images/` as `recipe-NNN.jpg`, set `image` in both
+   `site/data/recipes.json` and `site/data/recipes_lt.json`, bump the version.
+   (The root-level copies no longer exist — deleted in S23.)
 3. **Optional next perf step: defer `tips.json` off the boot path.** It is the
    single biggest file left (140 KB gzipped) and is fetched before first paint,
    but only the Tips list needs it in full. Not free: `searchAll` matches
    against tip body text and `findRelatedTips` runs on every recipe detail
    page, so deferring it degrades search and empties the related-tips block
    until a second fetch lands. Scope that behaviour change before starting.
-4. Strengthen QA Compare to do a real content diff (ingredients/steps/body
-   text) — `FIX_PLAN.md` step 0, still not done.
+4. ~~Strengthen QA Compare to do a real content diff.~~ **Dropped in S23 — the
+   tool is deleted.** It only ever compared titles, its inputs had gone stale
+   (it read the superseded 310-entry root `tips.json`, not the live 206), and
+   it had already produced one false "all clear" (see the S6 entry). Removed
+   with `scripts/build-qa-compare.js`, both `qa-compare.html` copies and their
+   data files. Content-level verification stays a manual job under the
+   `recipes-audit` / `tips-audit` skills.
 5. Not yet scoped: whether/how to surface `series_index.json`'s cross-reference
    data as reader-visible "Part X of Y" navigation. Format/scope decision
    deferred by user (S9) — see `.audit/DECISIONS_review.md` section 10.

@@ -1,5 +1,12 @@
 # BakeStack — Data Fix Plan
 
+> **Historical document (S6). Kept for the decision record, not as a live plan.**
+> The 13 issues were fixed across S6–S15. Every reference below to the "QA Compare"
+> tool is obsolete: the tool was deleted in S23 and step 0 was dropped — see the
+> note on step 0 for why. Content-level verification is now a manual job under the
+> `recipes-audit` / `tips-audit` skills. Counts here (73 recipes, 312 tips) are the
+> S6 figures; the live data is 79 recipes and 206 tips.
+
 Source: full audit of all 73 recipes + sample of 312 tips against `Receptai.md`/`Patarimai.md`.
 13 confirmed issues. Nothing fixed yet — this is the decision document.
 
@@ -147,8 +154,8 @@ Source wrote the range high-to-low; parser didn't reorder it, so min > max in th
 - One recipe (Wild Berry Cake) has zero method steps for 4 of its 5 parts — likely true of other
   recipes too, not yet counted how many.
 - QA Compare tool only checks that recipe/tip **titles** match between source and JSON — it does
-  not compare actual content, which is why none of the 13 issues above were caught by it. Worth
-  strengthening later so this class of bug gets caught automatically next time.
+  not compare actual content, which is why none of the 13 issues above were caught by it.
+  (S23: the tool was deleted rather than strengthened — see step 0.)
 
 ---
 
@@ -190,17 +197,20 @@ session already made once (see the LT tag corruption entry in git history, commi
 
 ## Order of operations
 
-**0. Strengthen QA Compare first, before fixing anything.**
-Today it only checks that recipe/tip titles match between source and JSON — that's why all 13
-issues above went unnoticed. Add a real content diff: ingredient/step text comparison, a check
-for the stray-glyph characters, a check for section-heading loss. Do this before step 1 so
-every fix below gets verified by the tool, not just by eye again.
+**0. ~~Strengthen QA Compare first, before fixing anything.~~ DROPPED (S23) — the tool is deleted.**
+The intent was a real content diff: ingredient/step text comparison, a stray-glyph check, a
+section-heading-loss check. It was never built, and by S23 the tool had rotted: it still read
+the superseded 310-entry root `tips.json` rather than the live 206-entry `site/data/tips.json`,
+so it was comparing against data the site no longer served. `scripts/build-qa-compare.js`, both
+`qa-compare.html` copies and their generated data files were removed. The steps below were in
+fact verified by hand, under the `recipes-audit` / `tips-audit` skills, which is where
+content-level checking stays.
 
-**1. Fix EN in 3 grouped batches, each its own commit, each re-checked with QA Compare before
-moving to the next:**
+**1. Fix EN in 3 grouped batches, each its own commit, each re-checked before moving to the
+next** (written as "re-checked with QA Compare"; done by hand, the tool is gone)**:**
    - **Batch A — structural** (items #1, #2, #12, #13): parser changes, `section` field,
-     recipe move/exclusion. Highest risk, touches the most data — verify with QA Compare
-     before touching anything else.
+     recipe move/exclusion. Highest risk, touches the most data — verify before touching
+     anything else.
    - **Batch B — text corrections** (items #3, #4, #5, #11): typo fixes in JSON + source .md
      files.
    - **Batch C — glyph cleanup** (items #6, #7, #8, #9, #10): one script that strips the stray
@@ -212,7 +222,8 @@ moving to the next:**
 cleanup and deletions are mechanical; the item #1 section-label copy only after its alignment
 check passes.
 
-**3. Re-check EN one more time with the strengthened QA Compare — confirm 0 findings.**
+**3. Re-check EN one more time — confirm 0 findings.** (Originally "with the strengthened
+QA Compare"; that tool was dropped, see step 0.)
 
 **4. Only if EN changed further after step 3, do a full LT re-pass — otherwise the LT patches
 from step 2 are the last LT work needed.**
