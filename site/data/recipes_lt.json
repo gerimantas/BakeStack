@@ -10108,5 +10108,755 @@
     "_needs_translation": false,
     "_translation_source": "fresh",
     "source_url": "source.html#L3600"
+  },
+  {
+    "id": "recipe-081",
+    "title": "Limoncello tiramisu",
+    "category": "tiramisu",
+    "description": "Gaivus vasariškas desertas su ryškiu citrusų rūgštumu, subtiliu itališko Limoncello likerio kartumu ir žoliniu baziliko gaivumu.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "kiaušinių trynių (apie 6 trynius)",
+        "section": "Kremas"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "citrinų sulčių",
+        "section": "Kremas"
+      },
+      {
+        "amount": 20,
+        "unit": "g",
+        "name": "baziliko arba rozmarino lapelių",
+        "section": "Kremas"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "citrinos žievelė",
+        "section": "Kremas"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Kremas"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "sviesto",
+        "section": "Kremas"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "mascarpone",
+        "section": "Kremas"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "riebios grietinėlės (33–35%)",
+        "section": "Kremas"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "350–400 g Savoiardi sausainių",
+        "section": "Kremas"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "citrinų sulčių",
+        "section": "Mirkymo sirupas"
+      },
+      {
+        "amount": 20,
+        "unit": "g",
+        "name": "baziliko arba rozmarino lapelių",
+        "section": "Mirkymo sirupas"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "citrinos žievelė",
+        "section": "Mirkymo sirupas"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Mirkymo sirupas"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "100–150 g Limoncello likerio",
+        "section": "Mirkymo sirupas"
+      }
+    ],
+    "steps": [
+      "Kiaušinių trynius sudėkite į puodą. Supilkite citrinų sultis, sudėkite baziliko arba rozmarino lapelius, citrinos žievelę, cukrų ir sviestą. Išmaišykite ir pastatykite ant vidutinės ugnies.",
+      "Virkite nuolat maišydami mentele ir grandydami puodo dugną, kol masė sutirštės.",
+      "Perkoškite per sietelį, uždenkite maistine plėvele, priglaudę ją prie paviršiaus, ir šaldytuve laikykite bent 5–6 valandas, geriausia per naktį.",
+      "Atšaldytą masę perkelkite į plakiklio dubenį, suberkite mascarpone ir išplakite iki vientisumo.",
+      "Atskirame dubenyje šaltą riebią grietinėlę išplakite iki vidutinio standumo. Sudėkite ją į mascarpone masę ir atsargiai įmaišykite mentele.",
+      "Mirkymo sirupas: puode sumaišykite citrinų sultis, cukrų, lapelius ir žievelę ir užvirkite. Perkoškite, atvėsinkite, tada pagal skonį įpilkite Limoncello. Gerai išmaišykite.",
+      "Ant indo dugno paskleiskite šiek tiek kremo. Sausainius lengvai pamirkykite (apie 180–190 g) ir sudėkite pirmą sluoksnį.",
+      "Ant sausainių tolygiai paskleiskite pusę kremo. Ant kremo smulkiai nutarkuokite šviežios citrinos žievelės.",
+      "Likusius sausainius pamirkykite ir sudėkite antrą sluoksnį.",
+      "Viršų tolygiai padenkite likusiu kremu ir vėl užtarkuokite citrinos žievelės.",
+      "Šaldytuve laikykite bent 6–8 valandas, kad tiramisu sustingtų ir susigertų skoniai."
+    ],
+    "tags": [
+      "lemon",
+      "limoncello",
+      "basil",
+      "mascarpone",
+      "savoiardi-ladyfingers",
+      "heavy-whipping-cream",
+      "egg-yolks"
+    ],
+    "image": "images/recipe-081.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "tiramisu-zephyr",
+    "source_url": "https://www.instagram.com/marusya.manko/reel/DZ41rfPqKZB/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
+  },
+  {
+    "id": "recipe-082",
+    "title": "Citrinų ir imbiero medaus tortas",
+    "category": "honey-cake",
+    "description": "Medaus tortas tiems, kurie mėgsta gaivų citrusų rūgštumą ir subtilų imbiero aštrumą.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "didelių kiaušinių (~115 g)",
+        "section": "Medaus ir citrinos paplotėliai"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Medaus ir citrinos paplotėliai"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "sviesto (82,5%)",
+        "section": "Medaus ir citrinos paplotėliai"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "medaus",
+        "section": "Medaus ir citrinos paplotėliai"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "8–10 g (1 arb. š.) sodos",
+        "section": "Medaus ir citrinos paplotėliai"
+      },
+      {
+        "amount": 10,
+        "unit": "g",
+        "name": "citrinų sulčių (1 v. š.)",
+        "section": "Medaus ir citrinos paplotėliai"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "druskos",
+        "amount_conv": 3,
+        "unit_conv": "g",
+        "section": "Medaus ir citrinos paplotėliai"
+      },
+      {
+        "amount": 15,
+        "unit": "g",
+        "name": "citrinos žievelės",
+        "section": "Medaus ir citrinos paplotėliai"
+      },
+      {
+        "amount": 450,
+        "unit": "g",
+        "name": "miltų",
+        "section": "Medaus ir citrinos paplotėliai"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "citrinų sulčių",
+        "section": "Citrinų ir imbiero kurdas"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "imbiero",
+        "section": "Citrinų ir imbiero kurdas"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "citrinos žievelė",
+        "section": "Citrinų ir imbiero kurdas"
+      },
+      {
+        "amount": 75,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Citrinų ir imbiero kurdas"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "sviesto (82,5%)",
+        "section": "Citrinų ir imbiero kurdas"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "kiaušinių trynių (~6 tryniai)",
+        "section": "Citrinų ir imbiero kurdas"
+      },
+      {
+        "amount": 5,
+        "unit": "g",
+        "name": "kukurūzų krakmolo",
+        "section": "Citrinų ir imbiero kurdas"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "citrina",
+        "section": "Citrinų pasta"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Citrinų pasta"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "medaus",
+        "section": "Citrinų pasta"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "grietinės (25–35%)",
+        "section": "Citrinų kremas"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "riebios grietinėlės (33–36%)",
+        "section": "Citrinų kremas"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "kreminio sūrio (60–70%)",
+        "section": "Citrinų kremas"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "cukraus pudros",
+        "section": "Citrinų kremas"
+      },
+      {
+        "amount": 2,
+        "unit": "tbsp",
+        "name": "citrinų pastos",
+        "amount_conv": 32.6,
+        "unit_conv": "g",
+        "section": "Citrinų kremas"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "sviesto (82,5%)",
+        "section": "Apdailos kremas"
+      },
+      {
+        "amount": 450,
+        "unit": "g",
+        "name": "kreminio sūrio (60–70%)",
+        "section": "Apdailos kremas"
+      },
+      {
+        "amount": 40,
+        "unit": "g",
+        "name": "cukraus pudros",
+        "section": "Apdailos kremas"
+      },
+      {
+        "amount": 2,
+        "unit": "tbsp",
+        "name": "citrinų pastos",
+        "amount_conv": 32.6,
+        "unit_conv": "g",
+        "section": "Apdailos kremas"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "lašai geltonų maistinių dažų",
+        "section": "Apdailos kremas"
+      }
+    ],
+    "steps": [
+      "Paplotėliai: kiaušinius su cukrumi išplakite iki šviesios, purios putos.",
+      "Paplotėliai: dideliame karščiui atspariame dubenyje sumaišykite su cukrumi išplaktus kiaušinius, gabalėliais supjaustytą sviestą, medų, druską, sodą, citrinos žievelę ir citrinų sultis.",
+      "Paplotėliai: dubenį pastatykite ant puodo su vos verdančiu vandeniu, ant vidutinės ugnies, ir retkarčiais pamaišydami palaukite, kol sviestas ir medus visiškai ištirps.",
+      "Paplotėliai: persijokite 200 g miltų ir suberkite juos į masę ant vandens vonelės. Gerai išmaišykite ir virkite nuolat maišydami, kol masė taps karamelės konsistencijos. Iš pradžių ji šiek tiek putos (soda reaguoja su medumi), paskui nusės ir taps tiršta bei tąsi, iš šviesios pavirs tamsios karamelės spalvos — priklausomai nuo medaus. Tai trunka nuo 7–8 iki 10–12 minučių, priklausomai nuo ugnies stiprumo ir dubens skersmens.",
+      "Paplotėliai: nuimkite dubenį nuo vandens vonelės ir leiskite masei kiek atvėsti 5–10 minučių. Tada persijokite likusius 250 g miltų, suberkite į išvirtą masę ir šaukštu užminkykite tešlą. Palikite pastovėti apie 15–20 minučių, kad tešla sutvirtėtų.",
+      "Paplotėliai: greitai suformuokite tešlos rutulį. Paruošta tešla bus labai minkšta, elastinga ir gali šiek tiek lipti.",
+      "Paplotėliai: tešlą padalykite į 8 lygias dalis (apie 110 g kiekviena). Kiekvieną iškočiokite ant kepimo popieriaus lapo į 2–3 mm storio, apie 22 cm skersmens paplotėlį. Gerai subadykite šakute ir kepkite iki 200°C įkaitintoje orkaitėje apie 6–7 minutes, kol taps sodrios karamelės spalvos.",
+      "Paplotėliai: iškart po kepimo, dar karštus, apipjaukite paplotėlius torto žiedu arba lėkšte iki 20 cm skersmens.",
+      "Kurdas: į puodą supilkite citrinų sultis, sudėkite citrinos žievelę, smulkiai tarkuotą imbiero šaknį, kiaušinių trynius, smulkiais gabalėliais supjaustytus 100 g sviesto ir 75 g cukraus.",
+      "Kurdas: kukurūzų krakmolą sumaišykite su 1–2 v. š. vandens arba citrinų sulčių ir supilkite į puodą, atsargiai sujungdami su kitais produktais.",
+      "Kurdas: puodą pastatykite ant vidutinės ugnies ir virkite atsargiai maišydami mentele, kol kurdas sutirštės.",
+      "Kurdas: perkoškite per sietelį, perkelkite į tinkamą indą ir uždenkite maistine plėvele, priglaudę ją prie paviršiaus. Greitai atvėsinkite ir šaldytuve laikykite 5–6 valandas, geriausia per naktį.",
+      "Citrinų pasta: citriną nuplaukite ir virkite vandenyje kartu su žievele 30–40 minučių.",
+      "Citrinų pasta: citriną išimkite iš vandens ir atvėsinkite. Supjaustykite gabalėliais, išimkite sėklas ir sublenderiuokite su cukrumi ir medumi iki vientisumo.",
+      "Citrinų pasta: masę pertrinkite per smulkų sietelį, kad taptų lygi ir vienalytė.",
+      "Citrinų kremas: gerai atšaldytą grietinę, riebią grietinėlę ir kreminį sūrį sudėkite į plakiklio dubenį. Suberkite cukraus pudrą ir 2 v. š. citrinų pastos.",
+      "Citrinų kremas: plakite, kol taps purus, lengvas ir vientisas.",
+      "Apdailos kremas: kambario temperatūros sviestą sudėkite į plakiklio dubenį ir suberkite cukraus pudrą. Mentele plakite dideliu greičiu, kol masė taps šviesi ir puri.",
+      "Apdailos kremas: sumažinkite greitį ir palaipsniui, keliomis dalimis, sudėkite šaltą kreminį sūrį. Maišykite iki vientisumo.",
+      "Apdailos kremas: išjunkite plakiklį ir kremą permaišykite silikonine mentele, gerai nugrandydami dubens šonus ir dugną. Įdėkite citrinų pastos ir kelis lašus geltonų maistinių dažų, tada dar kartą mažu greičiu išmaišykite iki vientisumo."
+    ],
+    "tags": [
+      "lemon",
+      "ginger",
+      "honey",
+      "cream-cheese",
+      "sour-cream",
+      "egg-yolks",
+      "butter",
+      "heavy-whipping-cream"
+    ],
+    "image": "images/recipe-082.jpg",
+    "source_docx_lines": null,
+    "is_complete": false,
+    "incomplete_note": "Trūksta torto sudėjimo žingsnių — šaltinyje aprašytas kiekvieno komponento gaminimas, bet nepasakyta, kaip sluoksniuojami paplotėliai, kurdas ir kremai ir kiek laiko tortas turi stovėti.",
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://www.instagram.com/marusya.manko/reel/Da-e5nnKwHx/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
+  },
+  {
+    "id": "recipe-083",
+    "title": "Vištienos kepenėlių paštetas su vyšnių mostarda",
+    "category": "pate",
+    "description": "Švelnus, minkšto ledų tirštumo vištienos kepenėlių paštetas su keptų daržovių saldumu, patiekiamas su ryškia vyšnių mostarda.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 600,
+        "unit": "g",
+        "name": "vištienos kepenėlių",
+        "section": "Vištienos kepenėlių paštetas"
+      },
+      {
+        "amount": 3,
+        "unit": null,
+        "name": "svogūnai",
+        "section": "Vištienos kepenėlių paštetas"
+      },
+      {
+        "amount": 3,
+        "unit": null,
+        "name": "morkos",
+        "section": "Vištienos kepenėlių paštetas"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "druskos",
+        "section": "Vištienos kepenėlių paštetas"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "juodųjų pipirų",
+        "section": "Vištienos kepenėlių paštetas"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "50–60 g sviesto",
+        "section": "Vištienos kepenėlių paštetas"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "100–200 g riebios grietinėlės (kuo daugiau grietinėlės, tuo švelnesnis ir subtilesnis paštetas)",
+        "section": "Vištienos kepenėlių paštetas"
+      },
+      {
+        "amount": 1000,
+        "unit": "g",
+        "name": "baltųjų vyšnių",
+        "section": "Vyšnių mostarda"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "baltojo vyno arba obuolių acto",
+        "section": "Vyšnių mostarda"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Vyšnių mostarda"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "garstyčių sėklų",
+        "section": "Vyšnių mostarda"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "malto kardamono",
+        "amount_conv": 1,
+        "unit_conv": "g",
+        "section": "Vyšnių mostarda"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "maltos ciberžolės",
+        "amount_conv": 3,
+        "unit_conv": "g",
+        "section": "Vyšnių mostarda"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "druskos",
+        "amount_conv": 5.9,
+        "unit_conv": "g",
+        "section": "Vyšnių mostarda"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "apelsino žievelė",
+        "section": "Vyšnių mostarda"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "citrinos žievelė",
+        "section": "Vyšnių mostarda"
+      }
+    ],
+    "steps": [
+      "Paštetas: vištienos kepenėles sudėkite į kepimo indą. Ant viršaus sudėkite supjaustytas morkas ir svogūnus.",
+      "Paštetas: pagardinkite druska ir pipirais, įdėkite sviesto ir grietinėlės ir kepkite 180°C temperatūroje 60 minučių.",
+      "Paštetas: sublenderiuokite iki visiško vientisumo.",
+      "Paštetas: perkelkite į patiekimo indą, atvėsinkite, uždenkite ir laikykite šaldytuve, kol visiškai sustings.",
+      "Mostarda: vyšnias nuplaukite ir išimkite kauliukus. Sumaišykite jas su actu ir cukrumi.",
+      "Mostarda: užvirkite, tada ant mažos ugnies patroškinkite 12–15 minučių.",
+      "Mostarda: suberkite garstyčių sėklas, druską, prieskonius ir citrusų žieveles.",
+      "Mostarda: patroškinkite dar 2–3 minutes, nukelkite nuo ugnies ir supilstykite į sterilizuotus stiklainius.",
+      "Paštetą patiekite su skrudinta duona ar brioche, prie mėsos patiekalų ar brandintų sūrių — ypač gorgonzolos — arba kaip užkandį. Vietoje mostardos puikiai tinka ir juodųjų serbentų konfitiūras."
+    ],
+    "tags": [
+      "chicken-liver",
+      "cherry",
+      "mustard-seed",
+      "orange",
+      "lemon",
+      "butter",
+      "heavy-whipping-cream"
+    ],
+    "image": "images/recipe-083.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "savory",
+    "source_url": "https://www.instagram.com/marusya.manko/reel/DbTREtFKG77/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
+  },
+  {
+    "id": "recipe-084",
+    "title": "Raudonųjų serbentų bezės vyniotinis",
+    "category": "roulade",
+    "description": "Lengvas, subtilus bezės vyniotinis, gaivinantis dėl saldžios purios bezės ir ryškaus raudonųjų serbentų rūgštumo derinio.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "kiaušinių baltymų",
+        "section": "Bezė"
+      },
+      {
+        "amount": 15,
+        "unit": "g",
+        "name": "citrinų sulčių",
+        "section": "Bezė"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "cukraus pudros (1)",
+        "section": "Bezė"
+      },
+      {
+        "amount": 25,
+        "unit": "g",
+        "name": "kukurūzų krakmolo",
+        "section": "Bezė"
+      },
+      {
+        "amount": 65,
+        "unit": "g",
+        "name": "cukraus pudros (2)",
+        "section": "Bezė"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "druskos",
+        "amount_conv": 1.5,
+        "unit_conv": "g",
+        "section": "Bezė"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės ekstrakto",
+        "amount_conv": 4.4,
+        "unit_conv": "g",
+        "section": "Bezė"
+      },
+      {
+        "amount": 25,
+        "unit": "g",
+        "name": "migdolų drožlių",
+        "section": "Bezė"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "mascarpone",
+        "section": "Plaktas mascarpone kremas"
+      },
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "riebios grietinėlės (33–35%)",
+        "section": "Plaktas mascarpone kremas"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "amount_conv": 5.4,
+        "unit_conv": "g",
+        "section": "Plaktas mascarpone kremas"
+      },
+      {
+        "amount": 275,
+        "unit": "g",
+        "name": "raudonųjų serbentų",
+        "section": "Raudonųjų serbentų kulis"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Raudonųjų serbentų kulis"
+      },
+      {
+        "amount": 3,
+        "unit": "g",
+        "name": "NH Nappage pektino",
+        "section": "Raudonųjų serbentų kulis"
+      }
+    ],
+    "steps": [
+      "Bezė: orkaitę įkaitinkite iki 150°C, kepimo skardą išklokite kepimo popieriumi.",
+      "Bezė: kambario temperatūros kiaušinių baltymus sudėkite į plakiklio dubenį ir pradėkite plakti vidutiniu greičiu.",
+      "Bezė: įpilkite pusę citrinų sulčių ir plakite, kol susidarys lengva, puri masė.",
+      "Bezė: pamažu, mažomis dalimis, suberkite cukraus pudrą (1). Plakdami supilkite likusias citrinų sultis ir vanilės ekstraktą. Plakite, kol bezė pasieks standžias smailes su vos linkstančiu galiuku.",
+      "Bezė: gerai sumaišykite cukraus pudrą (2) su kukurūzų krakmolu ir atsargiai suberkite mišinį į bezę. Įberkite druskos ir mažu greičiu maišykite tik tiek, kad viskas susijungtų.",
+      "Bezė: paruoštą bezę tolygiai paskleiskite ant paruoštos skardos ir apibarstykite migdolų drožlėmis.",
+      "Bezė: kepkite apie 30–35 minutes, kol vos paauksuos, naudodami įprastą viršutinį ir apatinį kaitinimą.",
+      "Kremas: mascarpone, riebią grietinėlę ir vanilės pastą sudėkite į plakiklio dubenį ir plakite, kol gausite lygų, stabilų, formą išlaikantį kremą.",
+      "Kulis: raudonuosius serbentus sudėkite į puodą ir kaitinkite ant vidutinės ugnies. Prireikus įpilkite šiek tiek vandens.",
+      "Kulis: gerai sumaišykite cukrų su NH pektinu. Nuolat maišydami pamažu suberkite mišinį į puodą.",
+      "Kulis: nuolat maišydami užvirkite ir virkite apie 1 minutę. Uždenkite maistine plėvele, priglaudę ją prie paviršiaus, ir šaldykite, kol visiškai atvės ir sustings.",
+      "Sudėjimas: ant atvėsusios bezės mentele tolygiai paskleiskite plaktą mascarpone kremą.",
+      "Sudėjimas: ant kremo šaukštu uždėkite raudonųjų serbentų kulio ir atsargiai paskleiskite tolygiu sluoksniu.",
+      "Sudėjimas: naudodamiesi kepimo popieriumi atsargiai suvyniokite vyniotinį.",
+      "Sudėjimas: šaldytuve laikykite 2–3 valandas, kad vyniotinis sustingtų. Prieš patiekiant galima papuošti likusiu kremu ir šviežiomis uogomis."
+    ],
+    "tags": [
+      "redcurrant",
+      "mascarpone",
+      "almond",
+      "vanilla",
+      "pectin-nh",
+      "egg-whites",
+      "heavy-whipping-cream"
+    ],
+    "image": "images/recipe-084.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "pies-pastry",
+    "source_url": "https://www.instagram.com/marusya.manko/reel/DbvYHPrKwPF/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
+  },
+  {
+    "id": "recipe-085",
+    "title": "„Dubajaus šokolado“ brownie",
+    "category": "brownie",
+    "description": "Itin šokoladinis brownie su traškiu, sodriu kataifi tešlos ir pistacijų pastos sluoksniu, užlietas švelniu juodojo šokolado ganašu.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "juodojo šokolado",
+        "section": "Brownie"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "sviesto",
+        "section": "Brownie"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "kiaušiniai",
+        "section": "Brownie"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Brownie"
+      },
+      {
+        "amount": 20,
+        "unit": "g",
+        "name": "stiprios kavos",
+        "section": "Brownie"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "miltų",
+        "section": "Brownie"
+      },
+      {
+        "amount": 10,
+        "unit": "g",
+        "name": "kakavos miltelių",
+        "section": "Brownie"
+      },
+      {
+        "amount": 0.333,
+        "unit": "tsp",
+        "name": "dribsninės jūros druskos",
+        "amount_conv": 2,
+        "unit_conv": "g",
+        "section": "Brownie"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "kataifi tešlos",
+        "section": "„Dubajaus šokolado“ sluoksnis"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "pistacijų pastos",
+        "section": "„Dubajaus šokolado“ sluoksnis"
+      },
+      {
+        "amount": 90,
+        "unit": "g",
+        "name": "juodojo šokolado",
+        "section": "Ganašas"
+      },
+      {
+        "amount": 90,
+        "unit": "g",
+        "name": "riebios grietinėlės (33–36%)",
+        "section": "Ganašas"
+      }
+    ],
+    "steps": [
+      "Brownie: šokoladą ir sviestą atskirai ištirpinkite mikrobangų krosnelėje.",
+      "Brownie: kiaušinius su cukrumi išplakite iki šviesios, purios masės.",
+      "Brownie: supilkite šiltą šokolado ir sviesto mišinį ir išmaišykite.",
+      "Brownie: supilkite kavą ir gerai išmaišykite.",
+      "Brownie: suberkite persijotus miltus, kakavos miltelius ir druską. Maišykite, kol susijungs.",
+      "Brownie: tešlą supilkite į 18 cm žiedą. Kepkite 15–20 minučių 175°C temperatūroje. Jei mėgstate tirštą, tąsų brownie, kepkite dar 5–10 minučių ilgiau.",
+      "„Dubajaus šokolado“ sluoksnis: kataifi tešlą gerai sumaišykite su pistacijų pasta.",
+      "„Dubajaus šokolado“ sluoksnis: paskleiskite ant atvėsusio brownie, užpildydami įdubimą viduryje.",
+      "Ganašas: grietinėlę įkaitinkite beveik iki virimo, bet neužvirkite.",
+      "Ganašas: užpilkite ant smulkiai sukapoto šokolado arba šokolado lašelių. Palikite 1–2 minutėms, tada gerai išmaišykite iki lygaus ir blizgaus.",
+      "Ganašas: ganašą užpilkite ant kataifi sluoksnio.",
+      "Šaldytuve laikykite 2–3 valandas, kol ganašas sustings."
+    ],
+    "tags": [
+      "dark-chocolate",
+      "chocolate",
+      "pistachio",
+      "kataifi",
+      "nut-paste",
+      "coffee-espresso",
+      "cocoa-powder",
+      "heavy-whipping-cream"
+    ],
+    "image": "images/recipe-085.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cookies-brownies",
+    "source_url": "https://www.instagram.com/marusya.manko/reel/DcgQjYrq1HT/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
   }
 ]

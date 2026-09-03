@@ -29,7 +29,8 @@
     "stollen": "stollen",
     "tea-cake": "tea cake",
     "tiramisu": "tiramisu",
-    "zephyr": "zephyr"
+    "zephyr": "zephyr",
+    "pate": "pâté"
   },
   "flavor_theme": {
     "almond": "almond",
@@ -73,7 +74,13 @@
     "vanilla": "vanilla",
     "walnut": "walnut",
     "white-chocolate": "white chocolate",
-    "wild-berry": "wild berry"
+    "wild-berry": "wild berry",
+    "redcurrant": "redcurrant",
+    "cherry": "sweet cherry",
+    "ginger": "ginger",
+    "limoncello": "limoncello",
+    "basil": "basil",
+    "chicken-liver": "chicken liver"
   },
   "ingredient": {
     "flour-all-purpose": "all-purpose flour",
@@ -139,7 +146,9 @@
     "apple": "apple",
     "coconut": "coconut",
     "raisins": "raisins",
-    "creme-fraiche": "crème fraîche (soured cream)"
+    "creme-fraiche": "crème fraîche (soured cream)",
+    "kataifi": "kataifi",
+    "mustard-seed": "mustard seed"
   },
   "technique": {
     "tempering-chocolate": "tempering chocolate",

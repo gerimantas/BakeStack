@@ -30,7 +30,8 @@
     "custard-cream",
     "pastry-base",
     "component",
-    "mousse"
+    "mousse",
+    "pate"
   ],
 
   "flavor_theme": [
@@ -75,7 +76,13 @@
     "poppy-seed",
     "amaretto",
     "blackberry",
-    "bilberry"
+    "bilberry",
+    "redcurrant",
+    "cherry",
+    "ginger",
+    "limoncello",
+    "basil",
+    "chicken-liver"
   ],
 
   "ingredient": [
@@ -142,7 +149,9 @@
     "apple",
     "coconut",
     "raisins",
-    "creme-fraiche"
+    "creme-fraiche",
+    "kataifi",
+    "mustard-seed"
   ],
 
   "technique": [

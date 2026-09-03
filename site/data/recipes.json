@@ -9950,5 +9950,745 @@
     "variant_label": "Variant 3 of 3",
     "categoryGroup": "cheesecake",
     "source_url": "source.html#L3600"
+  },
+  {
+    "id": "recipe-081",
+    "title": "Limoncello Tiramisu",
+    "category": "tiramisu",
+    "description": "A refreshing summer dessert with a bright citrus tang, the subtle bitterness of Italian Limoncello liqueur and the herbal freshness of basil.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "egg yolks (about 6 yolks)",
+        "section": "Cream"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "lemon juice",
+        "section": "Cream"
+      },
+      {
+        "amount": 20,
+        "unit": "g",
+        "name": "basil or rosemary leaves",
+        "section": "Cream"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "lemon, zest of",
+        "section": "Cream"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Cream"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "butter",
+        "section": "Cream"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "mascarpone",
+        "section": "Cream"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "heavy cream (33–35%)",
+        "section": "Cream"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "350–400 g Savoiardi (ladyfingers)",
+        "section": "Cream"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "lemon juice",
+        "section": "Soaking syrup"
+      },
+      {
+        "amount": 20,
+        "unit": "g",
+        "name": "basil or rosemary leaves",
+        "section": "Soaking syrup"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "lemon, zest of",
+        "section": "Soaking syrup"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Soaking syrup"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "100–150 g Limoncello liqueur",
+        "section": "Soaking syrup"
+      }
+    ],
+    "steps": [
+      "Place the egg yolks in a saucepan. Add the lemon juice, basil or rosemary leaves, lemon zest, sugar and butter. Stir to combine and place over medium heat.",
+      "Cook, stirring constantly with a spatula and scraping the bottom of the saucepan, until the mixture thickens.",
+      "Strain through a sieve, cover with plastic wrap touching the surface, and refrigerate for at least 5–6 hours, preferably overnight.",
+      "Transfer the chilled mixture to a mixer bowl, add the mascarpone, and beat until smooth.",
+      "In a separate bowl, whip the cold heavy cream to medium peaks. Add it to the mascarpone mixture and gently fold together using a spatula.",
+      "Soaking syrup: combine the lemon juice, sugar, leaves and zest in a saucepan and bring to a boil. Strain, let cool, then add the Limoncello to taste. Stir well.",
+      "Spread a small amount of cream over the bottom of your dish. Lightly soak the ladyfingers (about 180–190 g) and arrange them in the first layer.",
+      "Spread half of the cream evenly over the ladyfingers. Finely grate fresh lemon zest over the cream.",
+      "Soak the remaining ladyfingers and arrange them as the second layer.",
+      "Spread the remaining cream evenly on top and finish with another layer of lemon zest.",
+      "Refrigerate for at least 6–8 hours to allow the tiramisu to set and absorb the flavors."
+    ],
+    "tags": [
+      "lemon",
+      "limoncello",
+      "basil",
+      "mascarpone",
+      "savoiardi-ladyfingers",
+      "heavy-whipping-cream",
+      "egg-yolks"
+    ],
+    "image": "images/recipe-081.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "tiramisu-zephyr",
+    "source_url": "https://www.instagram.com/marusya.manko/reel/DZ41rfPqKZB/"
+  },
+  {
+    "id": "recipe-082",
+    "title": "Lemon & Ginger Honey Cake",
+    "category": "honey-cake",
+    "description": "A honey cake for those who love a refreshing citrus tang and the subtle spiciness of ginger.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "large eggs (~115 g)",
+        "section": "Honey and lemon cake layers"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Honey and lemon cake layers"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "butter (82.5%)",
+        "section": "Honey and lemon cake layers"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "honey",
+        "section": "Honey and lemon cake layers"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "8–10 g (1 tsp) baking soda",
+        "section": "Honey and lemon cake layers"
+      },
+      {
+        "amount": 10,
+        "unit": "g",
+        "name": "lemon juice (1 tbsp)",
+        "section": "Honey and lemon cake layers"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "amount_conv": 3,
+        "unit_conv": "g",
+        "section": "Honey and lemon cake layers"
+      },
+      {
+        "amount": 15,
+        "unit": "g",
+        "name": "lemon zest",
+        "section": "Honey and lemon cake layers"
+      },
+      {
+        "amount": 450,
+        "unit": "g",
+        "name": "flour",
+        "section": "Honey and lemon cake layers"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "lemon juice",
+        "section": "Lemon and ginger curd"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "ginger",
+        "section": "Lemon and ginger curd"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "lemon, zest of",
+        "section": "Lemon and ginger curd"
+      },
+      {
+        "amount": 75,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Lemon and ginger curd"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "butter (82.5%)",
+        "section": "Lemon and ginger curd"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "egg yolks (~6 yolks)",
+        "section": "Lemon and ginger curd"
+      },
+      {
+        "amount": 5,
+        "unit": "g",
+        "name": "cornstarch",
+        "section": "Lemon and ginger curd"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "lemon",
+        "section": "Lemon paste"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Lemon paste"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "honey",
+        "section": "Lemon paste"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "sour cream (25–35%)",
+        "section": "Lemon cream"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "heavy cream (33–36%)",
+        "section": "Lemon cream"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "cream cheese (60–70%)",
+        "section": "Lemon cream"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "powdered sugar",
+        "section": "Lemon cream"
+      },
+      {
+        "amount": 2,
+        "unit": "tbsp",
+        "name": "lemon paste",
+        "amount_conv": 32.6,
+        "unit_conv": "g",
+        "section": "Lemon cream"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "butter (82.5%)",
+        "section": "Frosting"
+      },
+      {
+        "amount": 450,
+        "unit": "g",
+        "name": "cream cheese (60–70%)",
+        "section": "Frosting"
+      },
+      {
+        "amount": 40,
+        "unit": "g",
+        "name": "powdered sugar",
+        "section": "Frosting"
+      },
+      {
+        "amount": 2,
+        "unit": "tbsp",
+        "name": "lemon paste",
+        "amount_conv": 32.6,
+        "unit_conv": "g",
+        "section": "Frosting"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "drops of yellow food coloring",
+        "section": "Frosting"
+      }
+    ],
+    "steps": [
+      "Cake layers: beat the eggs and sugar until a light, pale foam forms.",
+      "Cake layers: in a large heatproof bowl, combine the eggs beaten with sugar, the butter cut into pieces, honey, salt, baking soda, lemon zest and lemon juice.",
+      "Cake layers: place the bowl over a saucepan of simmering water over medium heat and, stirring occasionally, wait until the butter and honey have completely melted.",
+      "Cake layers: sift 200 g of the flour and add it to the mixture over the water bath. Mix thoroughly and cook, stirring constantly, until the mixture reaches a caramel-like consistency. It should first foam slightly as the baking soda reacts with the honey, then settle and become thick and stretchy, turning from light to dark caramel in color depending on the honey. This takes anywhere from 7–8 to 10–12 minutes, depending on the heat and the diameter of the bowl.",
+      "Cake layers: remove the bowl from the water bath and let the mixture cool slightly for 5–10 minutes. Sift in the remaining 250 g of flour, add it to the cooked mixture, and knead the dough with a spoon. Leave it to rest for about 15–20 minutes so that the dough becomes firmer.",
+      "Cake layers: quickly shape the dough into a ball. The finished dough will be very soft, elastic and may be slightly sticky.",
+      "Cake layers: divide the dough into 8 equal portions (about 110 g each). Roll out each piece on a sheet of parchment paper into a 2–3 mm thick circle approximately 22 cm in diameter. Prick well with a fork and bake in a preheated oven at 200°C for about 6–7 minutes, until deep caramel in color.",
+      "Cake layers: while still hot, trim the layers immediately after baking using a cake ring or a plate to a diameter of 20 cm.",
+      "Curd: pour the lemon juice into a saucepan and add the lemon zest, finely grated ginger root, egg yolks, 100 g of butter cut into small pieces and 75 g of sugar.",
+      "Curd: mix the cornstarch with 1–2 tbsp of water or lemon juice and pour it into the saucepan, gently combining it with the other ingredients.",
+      "Curd: place the saucepan over medium heat and cook, stirring carefully with a spatula, until the curd thickens.",
+      "Curd: strain through a sieve, transfer to a suitable container and cover with plastic wrap directly on the surface. Cool quickly and refrigerate for 5–6 hours, preferably overnight.",
+      "Lemon paste: wash the lemon and boil it in water, together with the peel, for 30–40 minutes.",
+      "Lemon paste: remove the lemon from the water and let it cool. Cut it into pieces, remove the seeds, and blend it with the sugar and honey until smooth.",
+      "Lemon paste: pass the mixture through a fine sieve until it reaches a smooth, uniform consistency.",
+      "Lemon cream: place the well-chilled sour cream, heavy cream and cream cheese into the bowl of a stand mixer. Add the powdered sugar and 2 tbsp of lemon paste.",
+      "Lemon cream: whip until light, fluffy and smooth.",
+      "Frosting: place the room-temperature butter in the bowl of a stand mixer and add the powdered sugar. Using the paddle attachment, beat on high speed until light and fluffy.",
+      "Frosting: reduce the mixer speed and gradually add the cold cream cheese in several additions. Mix until smooth.",
+      "Frosting: turn off the mixer and stir the frosting with a silicone spatula, scraping down the sides and bottom of the bowl thoroughly. Add the lemon paste and a few drops of yellow food coloring, then mix once again on low speed until smooth."
+    ],
+    "tags": [
+      "lemon",
+      "ginger",
+      "honey",
+      "cream-cheese",
+      "sour-cream",
+      "egg-yolks",
+      "butter",
+      "heavy-whipping-cream"
+    ],
+    "image": "images/recipe-082.jpg",
+    "source_docx_lines": null,
+    "is_complete": false,
+    "incomplete_note": "Missing the assembly of the cake — the source gives the method for every component but never says how the layers, curd and creams are stacked, or how long the cake should set.",
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://www.instagram.com/marusya.manko/reel/Da-e5nnKwHx/"
+  },
+  {
+    "id": "recipe-083",
+    "title": "Chicken Liver Pâté with Cherry Mostarda",
+    "category": "pate",
+    "description": "A silky-smooth chicken liver pâté with the texture of soft ice cream and the sweetness of roasted vegetables, served with a vibrant cherry mostarda.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 600,
+        "unit": "g",
+        "name": "chicken livers",
+        "section": "Chicken liver pâté"
+      },
+      {
+        "amount": 3,
+        "unit": null,
+        "name": "onions",
+        "section": "Chicken liver pâté"
+      },
+      {
+        "amount": 3,
+        "unit": null,
+        "name": "carrots",
+        "section": "Chicken liver pâté"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "salt",
+        "section": "Chicken liver pâté"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "black pepper",
+        "section": "Chicken liver pâté"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "50–60 g butter",
+        "section": "Chicken liver pâté"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "100–200 g heavy cream (the more cream, the silkier and more delicate the pâté)",
+        "section": "Chicken liver pâté"
+      },
+      {
+        "amount": 1000,
+        "unit": "g",
+        "name": "white cherries",
+        "section": "Cherry mostarda"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "white wine vinegar or apple cider vinegar",
+        "section": "Cherry mostarda"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Cherry mostarda"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "mustard seeds",
+        "section": "Cherry mostarda"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground cardamom",
+        "amount_conv": 1,
+        "unit_conv": "g",
+        "section": "Cherry mostarda"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "ground turmeric",
+        "amount_conv": 3,
+        "unit_conv": "g",
+        "section": "Cherry mostarda"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "salt",
+        "amount_conv": 5.9,
+        "unit_conv": "g",
+        "section": "Cherry mostarda"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "orange, zest of",
+        "section": "Cherry mostarda"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "lemon, zest of",
+        "section": "Cherry mostarda"
+      }
+    ],
+    "steps": [
+      "Pâté: place the chicken livers in a baking dish. Add the chopped carrots and onions.",
+      "Pâté: season with salt and pepper, add the butter and cream, and bake at 180°C for 60 minutes.",
+      "Pâté: blend until completely smooth.",
+      "Pâté: transfer to a serving container, let cool, cover, and refrigerate until fully set.",
+      "Mostarda: wash and pit the cherries. Combine them with the vinegar and sugar.",
+      "Mostarda: bring to a boil, then simmer over low heat for 12–15 minutes.",
+      "Mostarda: add the mustard seeds, salt, spices and citrus zest.",
+      "Mostarda: simmer for another 2–3 minutes, remove from the heat, and transfer to sterilized jars.",
+      "Serve the pâté with toasted bread or brioche, alongside meat dishes or aged cheeses — especially Gorgonzola — or as an appetizer. A blackcurrant confit works just as well as the mostarda."
+    ],
+    "tags": [
+      "chicken-liver",
+      "cherry",
+      "mustard-seed",
+      "orange",
+      "lemon",
+      "butter",
+      "heavy-whipping-cream"
+    ],
+    "image": "images/recipe-083.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "savory",
+    "source_url": "https://www.instagram.com/marusya.manko/reel/DbTREtFKG77/"
+  },
+  {
+    "id": "recipe-084",
+    "title": "Redcurrant Meringue Roulade",
+    "category": "roulade",
+    "description": "A light, delicate meringue roulade, refreshing thanks to the combination of sweet airy meringue and the vibrant tartness of redcurrants.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "egg whites",
+        "section": "Meringue"
+      },
+      {
+        "amount": 15,
+        "unit": "g",
+        "name": "lemon juice",
+        "section": "Meringue"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "powdered sugar (1)",
+        "section": "Meringue"
+      },
+      {
+        "amount": 25,
+        "unit": "g",
+        "name": "cornstarch",
+        "section": "Meringue"
+      },
+      {
+        "amount": 65,
+        "unit": "g",
+        "name": "powdered sugar (2)",
+        "section": "Meringue"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "salt",
+        "amount_conv": 1.5,
+        "unit_conv": "g",
+        "section": "Meringue"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla extract",
+        "amount_conv": 4.4,
+        "unit_conv": "g",
+        "section": "Meringue"
+      },
+      {
+        "amount": 25,
+        "unit": "g",
+        "name": "sliced almonds",
+        "section": "Meringue"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "mascarpone",
+        "section": "Whipped mascarpone cream"
+      },
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "heavy cream (33–35%)",
+        "section": "Whipped mascarpone cream"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "amount_conv": 5.4,
+        "unit_conv": "g",
+        "section": "Whipped mascarpone cream"
+      },
+      {
+        "amount": 275,
+        "unit": "g",
+        "name": "redcurrants",
+        "section": "Redcurrant coulis"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Redcurrant coulis"
+      },
+      {
+        "amount": 3,
+        "unit": "g",
+        "name": "NH Nappage pectin",
+        "section": "Redcurrant coulis"
+      }
+    ],
+    "steps": [
+      "Meringue: preheat the oven to 150°C and line a baking tray with parchment paper.",
+      "Meringue: place the room-temperature egg whites into the bowl of a stand mixer and begin whisking on medium speed.",
+      "Meringue: add half of the lemon juice and whisk until a light, foamy consistency forms.",
+      "Meringue: gradually add the powdered sugar (1) in small portions. While whisking, add the remaining lemon juice and the vanilla extract. Continue whisking until the meringue reaches stiff peaks with a slightly curved tip.",
+      "Meringue: thoroughly combine the powdered sugar (2) with the cornstarch, then gently add the mixture to the meringue. Add the salt and mix on low speed just until fully incorporated.",
+      "Meringue: spread the finished meringue evenly over the prepared baking tray and sprinkle with the sliced almonds.",
+      "Meringue: bake for about 30–35 minutes until lightly golden, using conventional top-and-bottom heat.",
+      "Cream: place the mascarpone, heavy cream and vanilla bean paste into the bowl of a stand mixer and whip until you achieve a smooth, stable cream that holds its shape.",
+      "Coulis: place the redcurrants in a saucepan and cook over medium heat. Add a small amount of water if necessary.",
+      "Coulis: thoroughly combine the sugar with the NH pectin. While continuously stirring, gradually sprinkle the mixture into the saucepan.",
+      "Coulis: bring to a boil, stirring constantly, then cook for about 1 minute. Cover with plastic wrap directly on the surface and refrigerate until fully chilled and set.",
+      "Assembly: spread the whipped mascarpone cream evenly over the cooled meringue using an offset spatula.",
+      "Assembly: spoon the redcurrant coulis over the cream and gently spread it into an even layer.",
+      "Assembly: using the parchment paper, carefully roll the roulade into shape.",
+      "Assembly: refrigerate for 2–3 hours to allow the roulade to set. If desired, decorate with additional cream and fresh berries before serving."
+    ],
+    "tags": [
+      "redcurrant",
+      "mascarpone",
+      "almond",
+      "vanilla",
+      "pectin-nh",
+      "egg-whites",
+      "heavy-whipping-cream"
+    ],
+    "image": "images/recipe-084.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "pies-pastry",
+    "source_url": "https://www.instagram.com/marusya.manko/reel/DbvYHPrKwPF/"
+  },
+  {
+    "id": "recipe-085",
+    "title": "Dubai Chocolate Brownie",
+    "category": "brownie",
+    "description": "An ultra-chocolatey brownie with a crispy, rich layer of kataifi pastry mixed with pistachio paste, topped with a silky dark chocolate ganache.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "dark chocolate",
+        "section": "Brownie"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "butter",
+        "section": "Brownie"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "eggs",
+        "section": "Brownie"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Brownie"
+      },
+      {
+        "amount": 20,
+        "unit": "g",
+        "name": "strong coffee",
+        "section": "Brownie"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "flour",
+        "section": "Brownie"
+      },
+      {
+        "amount": 10,
+        "unit": "g",
+        "name": "cocoa powder",
+        "section": "Brownie"
+      },
+      {
+        "amount": 0.333,
+        "unit": "tsp",
+        "name": "flaky sea salt",
+        "amount_conv": 2,
+        "unit_conv": "g",
+        "section": "Brownie"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "kataifi pastry",
+        "section": "\"Dubai chocolate\" layer"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "pistachio paste",
+        "section": "\"Dubai chocolate\" layer"
+      },
+      {
+        "amount": 90,
+        "unit": "g",
+        "name": "dark chocolate",
+        "section": "Ganache"
+      },
+      {
+        "amount": 90,
+        "unit": "g",
+        "name": "heavy cream (33–36%)",
+        "section": "Ganache"
+      }
+    ],
+    "steps": [
+      "Brownie: melt the chocolate and butter separately in the microwave.",
+      "Brownie: whip the eggs with the sugar until light and foamy.",
+      "Brownie: add the warm chocolate and butter mixture, and combine.",
+      "Brownie: pour in the coffee and mix well.",
+      "Brownie: add the sifted flour, cocoa powder and salt. Mix until combined.",
+      "Brownie: pour the batter into an 18 cm ring. Bake for 15–20 minutes at 175°C. For a fudgy, gooey brownie, bake it for an additional 5–10 minutes.",
+      "\"Dubai chocolate\" layer: mix the kataifi pastry thoroughly with the pistachio paste.",
+      "\"Dubai chocolate\" layer: spread it over the cooled brownie, filling the dip in the center.",
+      "Ganache: bring the cream to a simmer, but do not boil.",
+      "Ganache: pour it over finely chopped chocolate or chocolate callets. Leave for 1–2 minutes, then mix thoroughly until smooth and glossy.",
+      "Ganache: pour the ganache over the kataifi layer.",
+      "Refrigerate for 2–3 hours until the ganache is set."
+    ],
+    "tags": [
+      "dark-chocolate",
+      "chocolate",
+      "pistachio",
+      "kataifi",
+      "nut-paste",
+      "coffee-espresso",
+      "cocoa-powder",
+      "heavy-whipping-cream"
+    ],
+    "image": "images/recipe-085.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cookies-brownies",
+    "source_url": "https://www.instagram.com/marusya.manko/reel/DcgQjYrq1HT/"
   }
 ]

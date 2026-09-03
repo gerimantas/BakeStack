@@ -29,7 +29,8 @@
     "stollen": "štolenas",
     "tea-cake": "arbatinis keksas",
     "tiramisu": "tiramisu",
-    "zephyr": "zefyras"
+    "zephyr": "zefyras",
+    "pate": "paštetas"
   },
   "flavor_theme": {
     "almond": "migdolai",
@@ -73,7 +74,13 @@
     "vanilla": "vanilė",
     "walnut": "graikinis riešutas",
     "white-chocolate": "baltasis šokoladas",
-    "wild-berry": "miško uoga"
+    "wild-berry": "miško uoga",
+    "redcurrant": "raudonasis serbentas",
+    "cherry": "saldžioji vyšnia",
+    "ginger": "imbieras",
+    "limoncello": "limoncello",
+    "basil": "bazilikas",
+    "chicken-liver": "vištienos kepenėlės"
   },
   "ingredient": {
     "flour-all-purpose": "kvietiniai miltai",
@@ -139,7 +146,9 @@
     "apple": "obuolys",
     "coconut": "kokosas",
     "raisins": "razinos",
-    "creme-fraiche": "grietinėlė creme fraiche"
+    "creme-fraiche": "grietinėlė creme fraiche",
+    "kataifi": "kataifi tešla",
+    "mustard-seed": "garstyčių sėklos"
   },
   "technique": {
     "tempering-chocolate": "šokolado temperavimas",
