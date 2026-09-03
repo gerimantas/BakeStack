@@ -4,15 +4,27 @@
 active — static site in `site/`, live on GitHub Pages:
 **https://gerimantas.github.io/BakeStack/** (public repo, deploy via
 `.github/workflows/deploy.yml`, auto-updates on every push to master that
-touches `site/**`). **Everything is pushed and deployed as of S22** —
-verified against the live site: it serves v48, the photos load, and
-`js/density.js` is a 404 as intended.
+touches `site/**`). **Everything is pushed and deployed as of S23** —
+verified against the live site: it serves v49, 84 recipes in both languages,
+the new photos load, and the LT tag labels resolve.
 
-**26 recipes now have photos** (S22). `site/images/*.jpg`, 780 KB total,
-~28 KB average — small enough that WebP is not worth the conversion. `image`
-is wired in `recipes.json`, `recipes_lt.json` and the root copy; every path
-was checked against the files on disk. The other 53 recipes still have
+**31 of 84 recipes now have photos** (26 in S22, 5 in S23).
+`site/images/*.jpg`, ~28 KB average — small enough that WebP is not worth the
+conversion. `image` is wired in `recipes.json` and `recipes_lt.json`; every
+path was checked against the files on disk. The other 53 recipes still have
 `image: null` and render a "no photo yet" placeholder at the top of the card.
+
+**The recipe set is 84, not 79** (S23): five from @marusya.manko merged from a
+prepared package, ids `recipe-081`…`085`. 33 of the 84 are `is_complete: false`.
+**A tag-vocabulary addition touches four files, not two** — `site/data/tags.json`,
+the root `tags.json`, and the display-label files `tags_en.json` / `tags_lt.json`.
+Miss the label files and `tagLabel()` silently renders the raw slug
+(`chicken-liver`) instead of breaking.
+
+**Known gap: `unit_conv` is never translated.** LT detail pages render
+"0.5 tsp" and "2 tbsp" instead of "0,5 arb. š." and "2 v. š.". `name` and
+`unit` are translated; `unit_conv` is emitted raw. Affects every recipe
+carrying the field, not only the new five.
 
 **A "Show/hide photos" toggle sits next to the Recipes heading** (S22). Off,
 cards drop the media slot entirely and collapse to text, with the favourite
@@ -64,7 +76,7 @@ with a ⚠ badge and the legend doubles as a filter for just those 32.
 **Browser-cache staleness is fixed at the root** (S19): `site/serve.py` sends
 `no-store`, `fetchJSON` revalidates, and css/js carry a `?v=` query. **Bump the
 `?v=` in `index.html` AND `BUILD` in `site/sw.js` together whenever anything
-under `site/` changes** (both at v48). They are one version, split across two
+under `site/` changes** (both at v49). They are one version, split across two
 files: `BUILD` names the cache, so changing it is what makes the browser install
 a new worker and drop the old cache, while `?v=` is what makes the page request
 the new assets. Bumping only one ships an update nobody receives — or a prompt
@@ -139,27 +151,25 @@ invented or dropped. Three mechanical defects surfaced and are fixed file-wide:
 
 
 ## Next tasks
-1. **Finish the LT reader pass: ~68 recipes and ~196 tips still unread.** S21
-   read a sample and fixed three defects file-wide by pattern, not by reading
-   every record — method and findings in Status and the S21 Archive entry.
-2. **Photos for the remaining 53 recipes.** 26 are done (S22); the rest still
-   carry `image: null` and show the placeholder. Same drill: drop the file in
+1. **Photos for the remaining 53 recipes.** 31 of 84 are done (S22, S23); the
+   rest carry `image: null` and show the placeholder. Drop the file in
    `site/images/` as `recipe-NNN.jpg`, set `image` in both
-   `site/data/recipes.json` and `site/data/recipes_lt.json`, bump the version.
-   (The root-level copies no longer exist — deleted in S23.)
-3. **Optional next perf step: defer `tips.json` off the boot path.** It is the
+   `site/data/recipes.json` and `site/data/recipes_lt.json`, bump the version
+   in `site/index.html` and `site/sw.js`.
+2. **Translate `unit_conv` on the LT side.** Detail pages render "0.5 tsp" and
+   "2 tbsp" where LT wants "0,5 arb. š." and "2 v. š.". Found in S23, not
+   attempted — decide whether to translate at render time in `js/` or store a
+   translated field, then apply across every recipe carrying it.
+3. **Finish the LT reader pass: ~68 recipes and ~196 tips still unread.** S21
+   read a sample and fixed three defects file-wide by pattern, not by reading
+   every record; S23 read the five new recipes in full and found three more.
+   Method and findings in the S21 and S23 Archive entries.
+4. **Optional next perf step: defer `tips.json` off the boot path.** It is the
    single biggest file left (140 KB gzipped) and is fetched before first paint,
    but only the Tips list needs it in full. Not free: `searchAll` matches
    against tip body text and `findRelatedTips` runs on every recipe detail
    page, so deferring it degrades search and empties the related-tips block
    until a second fetch lands. Scope that behaviour change before starting.
-4. ~~Strengthen QA Compare to do a real content diff.~~ **Dropped in S23 — the
-   tool is deleted.** It only ever compared titles, its inputs had gone stale
-   (it read the superseded 310-entry root `tips.json`, not the live 206), and
-   it had already produced one false "all clear" (see the S6 entry). Removed
-   with `scripts/build-qa-compare.js`, both `qa-compare.html` copies and their
-   data files. Content-level verification stays a manual job under the
-   `recipes-audit` / `tips-audit` skills.
 5. Not yet scoped: whether/how to surface `series_index.json`'s cross-reference
    data as reader-visible "Part X of Y" navigation. Format/scope decision
    deferred by user (S9) — see `.audit/DECISIONS_review.md` section 10.
@@ -169,8 +179,18 @@ invented or dropped. Three mechanical defects surfaced and are fixed file-wide:
 7. Undecided: `site/data/glossary.json` (8.6 KB) is referenced by no code and
    fetched by nothing. Either a feature nobody built or a leftover — decide and
    act, rather than leaving it to be rediscovered a third time.
+8. Unanswered since S23: the recipe photos are the author's own stills from her
+   reels, and the site is public. Applies to all 31, not only the new five.
 
 ## Done Log
+- **S23** — QA Compare tool and the stale root data files deleted, `CLAUDE.md`
+  added; five @marusya.manko recipes merged from a prepared `instagram_new/`
+  package (79 to 84 recipes, 5 new photos, 9 new tag slugs); the handoff's
+  missing `tags_en.json` / `tags_lt.json` labels supplied; all 85 ingredients
+  and 67 steps read in both languages, three LT wording defects fixed (and two
+  more that the first fixes introduced); an alphabetical re-sort of the label
+  files reverted as unreviewable diff noise; `unit_conv` found untranslated on
+  the LT side and left for a later session; v49 pushed and verified live.
 - **S22** — the `sw.js` PRECACHE version bug found and fixed (every `BUILD`
   bump since the offline-app commit had been shipping v30 assets); a stray
   `opacity: 0.35` that was dimming the favourite heart tracked down by reading
@@ -188,17 +208,127 @@ invented or dropped. Three mechanical defects surfaced and are fixed file-wide:
   `manifest.json`, PNG icons) with an offer-don't-take update prompt and an
   About section explaining storage and uninstall; a data `rel=preload` and a
   transparent icon were both tried and reverted.
-- **S20** — all four filter-count bugs fixed; 20 missing flavour tags added and
-  `chocolate` made an umbrella tag; duplicate tip-174 removed (206 tips);
-  Instagram hashtags and "part N" markers stripped from every tip body;
-  tip-113 retitled; topic filters audited by reading all 206; jump-to-top/bottom
-  buttons added (four browser-specific bugs fixed behind them); Favorites empty
-  state made visible; mobile nav sheet made compact; site icon added; dead code
-  removed; `.docx` untracked; **50 commits pushed and deployed**.
-(S19 and earlier: see `## Archive`.)
+(S20 and earlier: see `## Archive`.)
 
 
 ## Archive
+
+### Session 2026-09-04 (S23) — five Instagram recipes merged after reading every line in both languages; the QA Compare tool deleted; a tag-label gap the handoff had missed
+
+Two halves. The first (commit `bf51684`, earlier in the same session) removed
+the QA Compare tool and the stale root-level data files, and added `CLAUDE.md`.
+The second merged a prepared five-recipe package into the live data.
+
+**The package arrived as `instagram_new/`, prepared but not merged.** Five
+recipes from @marusya.manko with EN and LT JSON, 335 px photos, an extended
+tag vocabulary, verbatim source texts, and two documents (`AGENT_HANDOFF.md`,
+`MERGE_README.md`) recording every decision. Nothing in `site/` had been
+touched. The handoff's own "what has been verified" list covered structure —
+field sets, ingredient and step counts, EN/LT amount parity, id collisions —
+and explicitly deferred four questions to a human.
+
+**What the handoff verified held up.** 5 recipes, ids `recipe-081`…`085` with
+no collision against the existing 79; field sets identical to the live files
+(LT carrying `_needs_translation` and `_translation_source`); ingredient and
+step counts equal across EN and LT; `tags_updated.json` additive only, nothing
+removed; photos real JPEGs matching the `image` paths. All confirmed before
+merging.
+
+**What the handoff missed: `tags_en.json` and `tags_lt.json`.** It listed
+`tags.json` (the vocabulary) and both its copies, but not the two display-label
+files beside them. `tagLabel()` in `js/data.js:84` falls through to the raw
+slug when a label is absent, so the site would not have broken — it would have
+rendered `chicken-liver` and `pate` verbatim in both languages. Nine labels
+added. **A vocabulary addition is a four-file change, not two:** `tags.json`,
+the root copy, and both label files.
+
+**`cherry` needed a distinct LT label.** The mostarda takes sweet white
+cherries, so the slug is deliberately separate from the existing `sour-cherry`
+/ `tart-cherry`. But `tart-cherry` is already labelled "vyšnia" in LT, so the
+obvious label would have put two different slugs under one name. Chose
+"saldžioji vyšnia".
+
+**Sorting the label dictionaries alphabetically was a mistake, reverted.** The
+first edit re-sorted each `kind` block, which turned a 9-line addition into a
+~100-line diff of pure reordering. Redone append-only: +15 lines per file, and
+what changed is readable at a glance. **Do not tidy an unrelated axis inside a
+content change** — the diff is the review surface.
+
+**The LT text had never been read.** `_needs_translation: false` and
+`_translation_source: "fresh"` were set on all five, and the handoff's checks
+were structural — counts and amounts, not prose. Read all 85 ingredients and
+67 steps against the EN side. The translation is sound: terminology matches
+the live files (kurdas, ganašas, kulis, bezė, paplotėliai for honey cake
+layers), decimals are LT-style (82,5%), ranges left unaveraged. Three wording
+defects found and fixed:
+
+- "maltų kardamonų" to "malto kardamono" (singular, matching the turmeric line
+  directly beside it)
+- recipe-083 step 1: "Suberkite supjaustytas morkas" — `suberti` applies to dry
+  goods, not chopped vegetables
+- recipe-081 step 1: "Suberkite citrinų sultis" — the same verb was governing
+  juice and leaves in one clause
+
+**The first two fixes each created a second defect, caught by re-reading.**
+Replacing the verb in 083 produced "sudėkite … Sudėkite" in consecutive
+sentences; in 081 it left "Įpilkite … lapelius", pouring leaves. A single-word
+substitution is not a safe edit in running prose.
+
+**recipe-082 ships incomplete on purpose.** The source describes every
+component but never the assembly. `is_complete: false` plus an
+`incomplete_note` in both languages — the same treatment as the three other
+honey cakes (042, 063, 071) and 29 more, now 33 of 84. Verified in the browser
+that the warning renders with both the site's generic explanation and the
+recipe-specific note.
+
+**Missing base-ingredient tags on 082 turned out not to be a defect.** `tags`
+omits `flour-all-purpose` and `sugar-powdered` while both are in the
+ingredients. Checked against the live data before "fixing" it: 44 of the 53
+recipes containing flour carry the tag, and 0 of the 4 containing powdered
+sugar do. **The convention tags characteristic ingredients, not every
+ingredient.** Separately, `egg-yolks` and `egg-whites` had 0 uses across 79
+recipes but 12 and 11 across tips — valid slugs, first used on the recipe side
+by this batch.
+
+**The preview server serves its own working directory.** `site/serve.py` uses
+`SimpleHTTPRequestHandler` with no directory argument, so running it from the
+repo root served a directory listing and 404'd every asset. Two listeners also
+bound port 8792 simultaneously — Windows permits this, and the older process
+won every request, so restarting "correctly" changed nothing until both PIDs
+were killed. **Run it as `cd site && python serve.py`.**
+
+**Verified against the live site, not the local copy.** After the push and a
+12-second Pages deploy: 84 recipes in both files, `?v=49` and `BUILD = "v49"`
+in agreement, the new photos 200, and the LT labels serving the three new
+category and flavour names.
+
+**Found but not fixed: `unit_conv` is never translated.** The LT detail pages
+render "0.5 tsp" and "2 tbsp" where they should read "0,5 arb. š." and
+"2 v. š.". The ingredient `name` and `unit` fields are translated; `unit_conv`
+is emitted raw. This predates this session and affects every recipe carrying
+the field, not only the new five.
+
+**`instagram_new/` deleted at the user's instruction after the merge**, along
+with the Playwright scratch output. The originals (720–1284 px) are gone and
+cannot be re-fetched — the environment has no Instagram network access. The
+335 px copies in `site/images/` are what remains. The decisions those documents
+recorded are preserved in the commit message and in this entry.
+
+**Code:**
+- `site/data/recipes.json`, `site/data/recipes_lt.json` — +5 recipes each (79 to 84)
+- `site/data/tags.json`, `tags.json` — +9 vocabulary entries, both copies identical
+- `site/data/tags_en.json`, `site/data/tags_lt.json` — +9 display labels each
+- `site/images/recipe-081.jpg` … `recipe-085.jpg` — new, 28–55 KB (31 of 84 recipes now have photos)
+- `site/index.html`, `site/sw.js` — v48 to v49
+
+**Entry point:** `cd site && python serve.py` then http://localhost:8792/
+
+**Not measured:**
+- The LT prose of the other 79 recipes and 206 tips — still only S21's sample.
+- `unit_conv` translation — found, scoped, not attempted.
+- Whether publishing the author's own reel stills on a public site is
+  acceptable — it applies to all 31 photos, not just these five, and was
+  raised by the handoff without an answer.
 
 ### Session 2026-09-03 (S22) — the version bump was a no-op for six sessions, 26 photos went live, and dark became the default
 
