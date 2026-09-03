@@ -4,9 +4,28 @@
 active — static site in `site/`, live on GitHub Pages:
 **https://gerimantas.github.io/BakeStack/** (public repo, deploy via
 `.github/workflows/deploy.yml`, auto-updates on every push to master that
-touches `site/**`). **Everything is pushed and deployed as of S21** — verified
-against the live site after the deploy: the app installs and runs offline
-(79 recipes, 206 tips with the network off), and the LT text fixes are served.
+touches `site/**`). **Everything is pushed and deployed as of S22** —
+verified against the live site: it serves v48, the photos load, and
+`js/density.js` is a 404 as intended.
+
+**26 recipes now have photos** (S22). `site/images/*.jpg`, 780 KB total,
+~28 KB average — small enough that WebP is not worth the conversion. `image`
+is wired in `recipes.json`, `recipes_lt.json` and the root copy; every path
+was checked against the files on disk. The other 53 recipes still have
+`image: null` and render a "no photo yet" placeholder at the top of the card.
+
+**A "Show/hide photos" toggle sits next to the Recipes heading** (S22). Off,
+cards drop the media slot entirely and collapse to text, with the favourite
+button moving onto the card itself. Persisted per browser as
+`bakestack:show-photos`. **New visitors default to the dark theme** rather
+than following the system setting.
+
+**The theme state has three values and code must resolve, not compare.**
+`appState.theme` is `"dark"`, `"light"` or `null` (follow system). Anything
+deciding what the user is *looking at* must check
+`matchMedia("(prefers-color-scheme: dark)")` when the value is `null` — S22
+fixed both the toggle icon and the click cycle, which compared the raw value
+and so needed two clicks to leave a system-dark page.
 
 **Both languages are fully translated and live: 79/79 recipes (S17) and
 206/206 tips (S19–S20).** A first reader pass ran in S21 over a sample — see
@@ -45,12 +64,22 @@ with a ⚠ badge and the legend doubles as a filter for just those 32.
 **Browser-cache staleness is fixed at the root** (S19): `site/serve.py` sends
 `no-store`, `fetchJSON` revalidates, and css/js carry a `?v=` query. **Bump the
 `?v=` in `index.html` AND `BUILD` in `site/sw.js` together whenever anything
-under `site/` changes** (both at v30). They are one version, split across two
+under `site/` changes** (both at v48). They are one version, split across two
 files: `BUILD` names the cache, so changing it is what makes the browser install
 a new worker and drop the old cache, while `?v=` is what makes the page request
 the new assets. Bumping only one ships an update nobody receives — or a prompt
 that changes nothing. A plain reload is enough locally; Firefox may need
 Ctrl+Shift+R for a changed favicon.
+
+**That mechanism was broken from the day it was written until S22, and the
+symptom was maddening.** `sw.js` PRECACHE listed each css/js file with a
+hardcoded `?v=30` while `BUILD` lived in its own constant. Bumping `BUILD`
+renamed the cache and evicted the old one, then refilled the new cache with
+the *same v30 assets* — so every bump between commit 83e6dde and S22 shipped
+nothing, and CSS edits kept "not showing up" in the browser. PRECACHE now
+derives its version from `BUILD.slice(1)`. **If a change ever fails to appear
+again, check that PRECACHE and `BUILD` still agree before blaming the
+browser** — and prefer reading `getComputedStyle` over guessing at CSS.
 
 **The site is an installable offline app** (S21). `site/sw.js` + `manifest.json`
 + three PNG icons: it installs from Chrome's "Install app", opens with no
@@ -113,27 +142,38 @@ invented or dropped. Three mechanical defects surfaced and are fixed file-wide:
 1. **Finish the LT reader pass: ~68 recipes and ~196 tips still unread.** S21
    read a sample and fixed three defects file-wide by pattern, not by reading
    every record — method and findings in Status and the S21 Archive entry.
-2. **Optional next perf step: defer `tips.json` off the boot path.** It is the
+2. **Photos for the remaining 53 recipes.** 26 are done (S22); the rest still
+   carry `image: null` and show the placeholder. Same drill: drop the file in
+   `site/images/` as `recipe-NNN.jpg`, set `image` in all three recipe JSONs,
+   bump the version.
+3. **Optional next perf step: defer `tips.json` off the boot path.** It is the
    single biggest file left (140 KB gzipped) and is fetched before first paint,
    but only the Tips list needs it in full. Not free: `searchAll` matches
    against tip body text and `findRelatedTips` runs on every recipe detail
    page, so deferring it degrades search and empties the related-tips block
    until a second fetch lands. Scope that behaviour change before starting.
-3. Strengthen QA Compare to do a real content diff (ingredients/steps/body
+4. Strengthen QA Compare to do a real content diff (ingredients/steps/body
    text) — `FIX_PLAN.md` step 0, still not done.
-4. Not yet scoped: whether/how to surface `series_index.json`'s cross-reference
+5. Not yet scoped: whether/how to surface `series_index.json`'s cross-reference
    data as reader-visible "Part X of Y" navigation. Format/scope decision
    deferred by user (S9) — see `.audit/DECISIONS_review.md` section 10.
-5. Optional: add real photos (`image` is reserved null on every record; the
-   About page already tells readers photos are coming).
 6. Known limitation: shopping-list "bought" checkboxes are keyed by ingredient
    name, so they reset (silently, no data loss) on an EN/LT switch mid-shop.
    Low priority unless reported as confusing.
-7. GitHub warns the deploy actions target Node.js 20, now deprecated and forced
-   onto Node 24. Working today; `.github/workflows/deploy.yml` will need its
-   action versions bumped eventually.
+7. Undecided: `site/data/glossary.json` (8.6 KB) is referenced by no code and
+   fetched by nothing. Either a feature nobody built or a leftover — decide and
+   act, rather than leaving it to be rediscovered a third time.
 
 ## Done Log
+- **S22** — the `sw.js` PRECACHE version bug found and fixed (every `BUILD`
+  bump since the offline-app commit had been shipping v30 assets); a stray
+  `opacity: 0.35` that was dimming the favourite heart tracked down by reading
+  the computed style after three failed colour guesses; theme toggle taught to
+  resolve `null` against the system preference, and dark made the default;
+  26 recipe photos added and wired; "show/hide photos" toggle built; dead code
+  removed (`density.js` + `density.json` + their fetch, `iconChef`, the
+  `topics` table, two orphan CSS rules); Pages actions bumped to Node 24;
+  5 commits pushed and deployed, live site verified.
 - **S21** — first paint halved (9420 → ~5100 ms at 1.6 Mbps) by loading only the
   language in use, unchaining tokens.css and dropping the unused Space Grotesk;
   `remapStoredRecipeIdsForLangSwitch` deleted as a no-op; LT reader pass over 11
@@ -149,14 +189,87 @@ invented or dropped. Three mechanical defects surfaced and are fixed file-wide:
   buttons added (four browser-specific bugs fixed behind them); Favorites empty
   state made visible; mobile nav sheet made compact; site icon added; dead code
   removed; `.docx` untracked; **50 commits pushed and deployed**.
-- **S19** — LT tips translation finished; JSON `id` made the real primary key;
-  32 incomplete recipes audited and surfaced; tips got source links; topic
-  filter translated; About rewritten; browser-cache staleness fixed at the root.
-- **S18** — LT tips translation started (100/207), live-preview method
-  established, `recipes-audit` and `playwright` skills updated.
+(S19 and earlier: see `## Archive`.)
 
 
 ## Archive
+
+### Session 2026-09-03 (S22) — the version bump was a no-op for six sessions, 26 photos went live, and dark became the default
+
+**The service worker had been shipping stale assets since it was written.**
+`sw.js` PRECACHE hardcoded `?v=30` on every css/js entry while `BUILD` was a
+separate constant. Bumping `BUILD` renamed the cache (`bakestack-v31`,
+`v32`, …) and `activate` dutifully deleted the old one — but `install` then
+refilled the new cache with the *same v30 files*. Every version bump since
+commit 83e6dde (the offline-app commit) was theatre. This is why several CSS
+fixes this session "did not show up" in the browser and were re-attempted.
+PRECACHE now derives from `BUILD.slice(1)`, so the two cannot drift again.
+
+**A CSS rule was dimming the favourite heart to 35% and I blamed the cache
+for it.** `.recipe-card__media svg { opacity: 0.35 }` was written for an old
+placeholder icon. Earlier the same session I moved the favourite button
+*inside* `.recipe-card__media`, so the rule started matching the heart. Three
+colour "fixes" (accent → yellow → white → accent) failed before measuring
+instead of guessing: `getComputedStyle` reported `svg_opacity = 0.35`, and a
+PIL pixel read confirmed RGB (238, 201, 171) where the CSS asked for
+(207, 99, 13). Rule deleted. **Lesson: read the computed style before
+changing a colour value a second time.**
+
+**The theme toggle needed two clicks and neither the icon nor the cycle knew
+it.** `appState.theme` has three states — `"dark"`, `"light"`, `null`
+(follow system). Both `themeIconSvg()` and the click handler tested the raw
+value, so with `theme === null` on a dark system the page *looked* dark while
+the code thought it was not: the icon showed a moon, and the first click only
+wrote `null → "dark"` with no visible change. Both now resolve the actual
+appearance via `matchMedia("(prefers-color-scheme: dark)")`. Separately,
+`--color-accent-ink` was a dark colour in dark mode, so every accent-filled
+button had dark-on-orange text; now white in all three theme blocks.
+
+**Dead code, verified dead before deleting.** `densityFor()` was never
+called, yet `density.json` was fetched on every boot into
+`window.INGREDIENT_DENSITY`. Unit conversions are precomputed into the recipe
+data as `amount_conv`/`unit_conv` at authoring time — `data.js:173` says so
+explicitly. Deleted the function, the data file, the script tag and the
+PRECACHE entry. Also removed `iconChef()`, the `topics` string table (EN+LT),
+`recipesCount`/`tipsCount` (superseded by `totalResults`), and two orphan CSS
+rules. **Kept `recipePrice()` and `prices.json`** — `app.js` explains cost
+estimates are suppressed until the price table has real entries; that is an
+unfinished feature, not litter.
+
+**Photos are live.** 26 JPEGs (780 KB total, ~28 KB average) added under
+`site/images/`, with `image` wired on 26 recipes across `recipes.json`,
+`recipes_lt.json` and the root copy. Checked: no `image` path points at a
+missing file. Considered WebP, not worth it at this size.
+
+**Two visible additions.** Cards with no photo now render a placeholder at the
+top of the card instead of letting the empty space drift to the middle. A
+"Show/hide photos" toggle sits next to the Recipes heading — off, cards drop
+the media slot entirely and collapse to text, with the favourite button
+moving onto the card; persisted in `localStorage` as
+`bakestack:show-photos`. New visitors now default to dark rather than
+following the system.
+
+**CI.** The four Pages actions targeted Node 20 (deprecated, already forced
+onto Node 24). Bumped to `checkout@v7`, `configure-pages@v6`,
+`upload-pages-artifact@v5`, `deploy-pages@v5` — all Node 24 native, no
+breaking changes for this workflow. Deploy re-run: 16 s, clean, no warning.
+
+**Code:** `site/sw.js` (precache version bug, density entry), `site/js/app.js`
+(theme resolution, photo toggle, card media, `iconChef` gone),
+`site/js/state.js` (`showPhotos` + `setShowPhotos`, dark default),
+`site/js/data.js` (density fetch gone), `site/js/i18n.js` (photo-toggle
+strings, dead tables gone), `site/css/app.css` (opacity rule, fav button size,
+title row, orphan rules), `site/css/tokens.css` (`--color-accent-ink` white in
+dark), `site/index.html` (v48, density script gone), `site/images/*.jpg` (26
+new), `recipes.json` + `site/data/recipes*.json` (image fields),
+`.github/workflows/deploy.yml`. Deleted: `site/js/density.js`,
+`site/data/density.json`.
+**Entry point:** `cd site && python -m http.server 8000` → http://localhost:8000
+**Not measured:** whether removing the density fetch moved first paint (the
+file was only ~1 KB, so any gain is noise). The photo toggle was not tested on
+a real phone, only at 1440×900 in Chromium. `site/data/glossary.json` (8.6 KB)
+is referenced by nothing and loaded by nothing — left in place, costs nothing,
+but it is either a future feature or litter and nobody has decided which.
 
 ### Session 2026-08-30 (S21) — first paint halved by loading one language, three LT defects found by reading, and the site turned into an installable offline app
 
