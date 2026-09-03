@@ -36,7 +36,8 @@ const STRINGS = {
     allTypes: "All",
     incompleteLegend: "Incomplete recipes",
     incompleteTitle: "This recipe is incomplete",
-    incompleteBody: "The ingredient list is complete, but some cooking steps are missing from the original source — they existed only in the post's photos, never in the text.",
+    incompleteBody: "The ingredient list is complete, but some cooking steps are missing from the original source — they existed only in the post's photos, never in the text. The full recipe appears to be sold as a paid recipe/course on the author's own site (marusyamanko.com), not published for free.",
+    noPhoto: "No photo yet",
     // Tip topicGroup/topic values are stored in English in tips.json (they are data, not
     // display text) — these dictionaries translate them for the Topic filter. Keys must
     // match the JSON values verbatim; an unlisted key falls back to showing the key itself.
@@ -146,7 +147,8 @@ const STRINGS = {
     allTypes: "Visi",
     incompleteLegend: "Nepilni receptai",
     incompleteTitle: "Šis receptas nepilnas",
-    incompleteBody: "Ingredientai surašyti visi, bet dalies gaminimo žingsnių originaliame šaltinyje nėra — jie buvo tik įrašo nuotraukose, ne tekste.",
+    incompleteBody: "Ingredientai surašyti visi, bet dalies gaminimo žingsnių originaliame šaltinyje nėra — jie buvo tik įrašo nuotraukose, ne tekste. Panašu, kad pilnas receptas parduodamas kaip atskiras produktas/kursas autorės svetainėje (marusyamanko.com), o ne skelbiamas nemokamai.",
+    noPhoto: "Nuotraukos dar nėra",
     topicLabels: {
       // groups
       "Cheesecake": "Sūrio pyragas",

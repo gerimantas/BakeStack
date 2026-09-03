@@ -29,13 +29,14 @@ function iconCheck() { return `<svg viewBox="0 0 24 24" aria-hidden="true"><path
 function iconBack() { return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>`; }
 function iconChef() { return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21h12M8 21V13a4 4 0 018 0v8M4 10a4 4 0 014-4c.3-1.7 1.8-3 3.8-3S15.7 4.3 16 6a4 4 0 014 4c0 1.5-.9 2.7-2.1 3.3"/></svg>`; }
 
-/** Recipe card image slot — omitted entirely when the recipe has no photo yet
- * (the `image` field is reserved but not yet populated for any recipe), so
- * cards render compact instead of reserving empty placeholder space. Once a
- * recipe gets a real `image`, only that card switches to the photo layout. */
-function recipeCardMedia(recipe, extra) {
-  if (!recipe.image) return "";
-  return `<div class="recipe-card__media">${iconChef()}${extra || ""}</div>`;
+/** Recipe card image slot — shows the photo when the recipe has one, otherwise
+ * a placeholder in the same slot so every card keeps the same top-of-card
+ * layout instead of the empty space drifting to the card's vertical center. */
+function recipeCardMedia(recipe, extra, lang) {
+  if (!recipe.image) {
+    return `<div class="recipe-card__media recipe-card__media--empty">${esc(t(lang || "lt", "noPhoto"))}${extra || ""}</div>`;
+  }
+  return `<div class="recipe-card__media"><img src="${recipe.image}" alt="" loading="lazy">${extra || ""}</div>`;
 }
 
 function esc(s) {
@@ -372,9 +373,8 @@ function recipeCard(recipe, lang, query) {
   const favBtn = `<button class="fav-btn recipe-card__fav" data-fav-recipe="${recipe.id}" aria-pressed="${fav}" aria-label="${t(lang, fav ? "unsaveFavorite" : "saveFavorite")}">${iconHeart(fav)}</button>`;
   const incomplete = recipe.is_complete === false;
   return `
-  <a class="recipe-card ${recipe.image ? "" : "recipe-card--no-media"}${incomplete ? " recipe-card--incomplete" : ""}" href="#/recipe/${recipe.id}">
-    ${recipeCardMedia(recipe, favBtn)}
-    ${!recipe.image ? favBtn : ""}
+  <a class="recipe-card${incomplete ? " recipe-card--incomplete" : ""}" href="#/recipe/${recipe.id}">
+    ${recipeCardMedia(recipe, favBtn, lang)}
     ${incomplete ? `<span class="recipe-card__incomplete-badge" title="${esc(t(lang, "incompleteTitle"))}" aria-label="${esc(t(lang, "incompleteTitle"))}">⚠</span>` : ""}
     <div class="recipe-card__body">
       <span class="recipe-card__cat">${esc(tagLabel(lang, "category", recipe.category))}${recipe.is_technique ? `<span class="recipe-card__kind-badge">${t(lang, "kindTechnique")}</span>` : ""}</span>
@@ -799,10 +799,10 @@ function renderShoppingView(lang) {
       ${all.length ? `<div class="recipe-grid">
         ${all.map((r) => {
           const picked = isPicked(r.id);
-          return `<div class="recipe-card ${r.image ? "" : "recipe-card--no-media"}" style="position:relative">
+          return `<div class="recipe-card" style="position:relative">
             <button class="pick-checkbox" data-pick="${r.id}" role="checkbox" aria-checked="${picked}" aria-label="${esc(r.title)}">${iconCheck()}</button>
             <a href="#/recipe/${r.id}" style="text-decoration:none;color:inherit;display:contents">
-              ${recipeCardMedia(r)}
+              ${recipeCardMedia(r, "", lang)}
               <div class="recipe-card__body">
                 <span class="recipe-card__cat">${esc(tagLabel(lang, "category", r.category))}</span>
                 <h3 class="recipe-card__title">${esc(r.title)}</h3>
