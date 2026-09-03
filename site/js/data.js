@@ -7,7 +7,6 @@ const DATA_URLS = {
   tagsLt: "data/tags_lt.json",
   tagsEn: "data/tags_en.json",
   prices: "data/prices.json",
-  density: "data/density.json",
 };
 
 const store = {
@@ -17,7 +16,6 @@ const store = {
   tagsLt: null,
   tagsEn: null,
   prices: null,
-  density: null,
 };
 
 /* The data files are edited far more often than the page is deployed, and a browser will
@@ -68,21 +66,17 @@ function prefetchLang(lang) {
 }
 
 async function loadAll(lang) {
-  const [, tags, tagsLt, tagsEn, prices, density] = await Promise.all([
+  const [, tags, tagsLt, tagsEn, prices] = await Promise.all([
     loadLang(lang),
     fetchJSON(DATA_URLS.tags),
     fetchJSON(DATA_URLS.tagsLt).catch(() => ({ category: {}, flavor_theme: {} })),
     fetchJSON(DATA_URLS.tagsEn).catch(() => ({ category: {}, flavor_theme: {} })),
     fetchJSON(DATA_URLS.prices).catch(() => ({})),
-    fetchJSON(DATA_URLS.density).catch(() => ({})),
   ]);
   store.tags = tags;
   store.tagsLt = tagsLt;
   store.tagsEn = tagsEn;
   store.prices = prices;
-  delete density._comment;
-  store.density = density;
-  window.INGREDIENT_DENSITY = density;
   return store;
 }
 

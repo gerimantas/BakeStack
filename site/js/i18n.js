@@ -48,18 +48,6 @@ const STRINGS = {
     topicLabels: {
       "Tempering": "Tempering & Crème Anglaise",
     },
-    recipesCount: (n) => `${n} recipes`,
-    tipsCount: (n) => `${n} tips`,
-    topics: {
-      ingredients: "Ingredients & Substitutes",
-      techniques: "Techniques",
-      "flavor-pairing": "Flavor Pairing",
-      cheesecake: "Cheesecake",
-      "frostings-ganache": "Frostings, Ganache & Fillings",
-      "sponge-pastry": "Sponge, Honey Cake & Puff Pastry",
-      troubleshooting: "Troubleshooting",
-      storage: "Storage & Shelf Life",
-    },
     categoryGroups: {
       cupcake: "Cupcakes",
       cheesecake: "Cheesecakes",
@@ -185,18 +173,6 @@ const STRINGS = {
       "Whipping & Meringue": "Plakimas ir bezė",
       "Tempering": "Temperavimas ir angliškasis kremas",
       "Infusion": "Aromatinimas",
-    },
-    recipesCount: (n) => `${n} receptai`,
-    tipsCount: (n) => `${n} patarimai`,
-    topics: {
-      ingredients: "Ingredientai ir pakaitalai",
-      techniques: "Technikos",
-      "flavor-pairing": "Skonių deriniai",
-      cheesecake: "Cheesecake",
-      "frostings-ganache": "Kremai, ganašas ir įdarai",
-      "sponge-pastry": "Biskvitas, medaus pyragas ir sluoksniuota tešla",
-      troubleshooting: "Klaidų sprendimas",
-      storage: "Laikymas ir galiojimas",
     },
     categoryGroups: {
       cupcake: "Keksiukai",

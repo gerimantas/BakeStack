@@ -27,7 +27,6 @@ function iconHeart(filled) {
 }
 function iconCheck() { return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>`; }
 function iconBack() { return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>`; }
-function iconChef() { return `<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 21h12M8 21V13a4 4 0 018 0v8M4 10a4 4 0 014-4c.3-1.7 1.8-3 3.8-3S15.7 4.3 16 6a4 4 0 014 4c0 1.5-.9 2.7-2.1 3.3"/></svg>`; }
 
 /** Recipe card image slot — shows the photo when the recipe has one, otherwise a
  * placeholder in the same slot so every card keeps the same top-of-card layout

@@ -375,7 +375,6 @@ img { max-width: 100%; display: block; }
   border-color: var(--color-accent);
   color: var(--color-accent-ink);
 }
-.photo-filter__count { font-weight: 400; opacity: 0.8; }
 .page-head__count {
   font-family: var(--font-mono);
   font-size: var(--text-sm);
@@ -821,23 +820,6 @@ img { max-width: 100%; display: block; }
   color: var(--color-accent);
 }
 .ingredient-list .ingredient-section:first-child { padding-top: 0; }
-
-.price-summary {
-  margin-top: var(--space-lg);
-  padding-top: var(--space-lg);
-  border-top: 1px solid var(--color-rule);
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  font-size: var(--text-sm);
-  color: var(--color-muted);
-}
-.price-summary strong {
-  font-family: var(--font-mono);
-  font-size: var(--text-lg);
-  color: var(--color-ink);
-  font-variant-numeric: tabular-nums;
-}
 
 .yield-note {
   font-size: var(--text-xs);

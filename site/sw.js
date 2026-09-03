@@ -22,7 +22,7 @@
  * through to the network and are simply unavailable offline.
  */
 
-const BUILD = "v47";
+const BUILD = "v48";
 const CACHE = `bakestack-${BUILD}`;
 
 // Everything needed to render the app offline in the language most visitors use. The other
@@ -33,7 +33,6 @@ const PRECACHE = [
   "./index.html",
   `./css/tokens.css?v=${BUILD.slice(1)}`,
   `./css/app.css?v=${BUILD.slice(1)}`,
-  `./js/density.js?v=${BUILD.slice(1)}`,
   `./js/data.js?v=${BUILD.slice(1)}`,
   `./js/i18n.js?v=${BUILD.slice(1)}`,
   `./js/state.js?v=${BUILD.slice(1)}`,
@@ -45,7 +44,6 @@ const PRECACHE = [
   "./data/tags_en.json",
   "./data/tags_lt.json",
   "./data/prices.json",
-  "./data/density.json",
 ];
 
 self.addEventListener("install", (event) => {
