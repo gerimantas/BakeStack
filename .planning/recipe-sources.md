@@ -18,7 +18,7 @@ why third-party recipes and photos are imported at all.
 - Source slips are fixed and named in the commit message (wrong in→cm pan conversions
   recur: "9x13 in = 20x30 cm" appeared twice; the right value is 23 × 33 cm).
 
-## Cloudy Kitchen (cloudykitchen.com) — 39 imported, ~340 left
+## Cloudy Kitchen (cloudykitchen.com) — 47 imported, ~330 left
 
 - Full post list with categories: WordPress REST API,
   `https://cloudykitchen.com/wp-json/wp/v2/posts?per_page=100&page=N&_fields=id,slug,title,categories,featured_media,link,date`
@@ -35,6 +35,11 @@ why third-party recipes and photos are imported at all.
 - The ld+json `image` is sometimes a pre-bake shot (raw babka twist, unbaked rolls). Look at
   the photo; if it is not the finished bake, pick one from the post body instead;
   if the post has none, import with `image: null` (recipe-121).
+- Layer cakes (S25, categories 37/1366/136): 8 imported (recipe-127..134). Read and not
+  taken: Vanilla Cake (cake only, frosting in another post: incomplete) and Lavender
+  Blackberry Cake (complete; needs culinary lavender and a piped flower wreath). Unread:
+  the 2016 layer cakes, Mini Chocolate/Carrot, Devil's Food, the 2025-26 cakes and all
+  six bundt cakes. Marusya's 7 layer cakes are all incomplete, so these do not overlap.
 - `source_url` containing `cloudykitchen.com` is what puts a recipe under the Source
   filter's "Cloudy Kitchen" chip (`RECIPE_SOURCES` in `site/js/data.js`).
 

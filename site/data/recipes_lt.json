@@ -17606,5 +17606,1515 @@
     "variant_label": null,
     "categoryGroup": "cinnamon-roll",
     "source_url": "https://cloudykitchen.com/blog/soft-hot-cross-buns/"
+  },
+  {
+    "id": "recipe-127",
+    "title": "Trigubas citrinų tortas",
+    "category": "cake",
+    "description": "Trys citrininio jogurtinio biskvito sluoksniai su citrinų kurdu, padengti šveicarišku bezė sviestiniu kremu su citrinų kurdu. Išeina vienas trijų sluoksnių 20 cm (8 in) tortas; kurdą galima išvirti prieš savaitę.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 600,
+        "unit": "g",
+        "name": "kvietinių miltų",
+        "section": "Citrininis biskvitas"
+      },
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Citrininis biskvitas"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tsp",
+        "name": "kepimo miltelių",
+        "section": "Citrininis biskvitas",
+        "amount_conv": 6.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "valgomosios sodos",
+        "section": "Citrininis biskvitas",
+        "amount_conv": 8.9,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Citrininis biskvitas",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 6,
+        "unit": null,
+        "name": "kiaušiniai",
+        "section": "Citrininis biskvitas"
+      },
+      {
+        "amount": 320,
+        "unit": "g",
+        "name": "beskonio aliejaus, pvz., rapsų",
+        "section": "Citrininis biskvitas"
+      },
+      {
+        "amount": 320,
+        "unit": "g",
+        "name": "citrinų sulčių",
+        "section": "Citrininis biskvitas"
+      },
+      {
+        "amount": 360,
+        "unit": "g",
+        "name": "graikiško jogurto (kambario temperatūros)",
+        "section": "Citrininis biskvitas"
+      },
+      {
+        "amount": 160,
+        "unit": "g",
+        "name": "citrinų sulčių",
+        "section": "Citrinų kurdas"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tbsp",
+        "name": "smulkiai tarkuotos citrinų žievelės",
+        "section": "Citrinų kurdas"
+      },
+      {
+        "amount": 135,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Citrinų kurdas"
+      },
+      {
+        "amount": 8,
+        "unit": null,
+        "name": "kiaušinių tryniai",
+        "section": "Citrinų kurdas"
+      },
+      {
+        "amount": 90,
+        "unit": "g",
+        "name": "sviesto",
+        "section": "Citrinų kurdas"
+      },
+      {
+        "amount": 285,
+        "unit": "g",
+        "name": "kiaušinių baltymų",
+        "section": "Citrininis šveicariškas bezė kremas"
+      },
+      {
+        "amount": 285,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Citrininis šveicariškas bezė kremas"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės ekstrakto arba pastos",
+        "section": "Citrininis šveicariškas bezė kremas",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Citrininis šveicariškas bezė kremas",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 900,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Citrininis šveicariškas bezė kremas"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "pusė citrinų kurdo (aukščiau)",
+        "section": "Citrininis šveicariškas bezė kremas"
+      }
+    ],
+    "steps": [
+      "Biskvitas: įkaitinkite orkaitę iki 180°C (350°F). Tris 20 cm (8 in) tortų formas ištepkite riebalais ir išklokite kepimo popieriumi.",
+      "Dideliame dubenyje gerai išmaišykite miltus, cukrų, kepimo miltelius, sodą ir druską. Įmuškite kiaušinius, supilkite citrinų sultis ir aliejų ir plakite iki vientisumo, tada sudėkite jogurtą ir maišykite, kol masė taps vientisa.",
+      "Paskirstykite į formas ir kepkite 35–40 minučių, kol lengvai paauksės, o į vidurį įbestas iešmelis bus sausas. Jei biskvitai iškilo kupolu, vos išėmę uždenkite kiekvieną švariu rankšluosčiu ir švelniai prispauskite. Palikite formose 15 minučių, tada išverskite ant grotelių ir visiškai atvėsinkite.",
+      "Kurdas: visus kurdo ingredientus sudėkite į karščiui atsparų dubenį virš vos verdančio vandens (dubuo neturi liesti vandens) ir nuolat maišykite, stebėdami kraštus, kad masė neprikeptų ir nesusitrauktų gumuliukais.",
+      "Kaitinkite, kol kurdas taip sutirštės, kad perbraukus pirštu per šaukšto nugarėlę liks aiškus takelis. Perkelkite į indą ir atvėsinkite. Kurdas išsilaiko iki savaitės.",
+      "Kremas: planetinio maišytuvo dubenyje trumpai išplakite baltymus, cukrų ir vanilę. Dubenį pastatykite virš nedidelio puodo su vandeniu ant vidutinės ugnies (neturi liesti vandens) ir šildykite iki 65°C (150°F), retkarčiais paplakdami, kad baltymai neiškeptų.",
+      "Perkelkite dubenį į maišytuvą ir plakite su šluotele didžiausiu greičiu, kol masė padvigubės ir visiškai atvės — dubens šonas turi būti vėsus; tai gali užtrukti iki 20 minučių. Tai svarbu: šilta bezė masė ištirpdys sviestą.",
+      "Maišytuvui veikiant, po gabalėlį dėkite sviestą. Jei masė atrodo sutraukusi ar skysta, plakite toliau — ji susijungs. Suberkite druską, sudėkite pusę kurdo ir gerai išplakite.",
+      "Sudėjimas: duonos peiliu nulyginkite biskvitų viršų. Pirmą sluoksnį padėkite ant sukamo padėklo arba torto lėkštės, aptepkite storu kremo sluoksniu, kraštą padarydami šiek tiek aukštesnį nei vidurį (arba išspauskite kremo žiedą aplink kraštą), kad kurdas neišbėgtų. Paskleiskite maždaug pusę likusio kurdo.",
+      "Uždėkite antrą sluoksnį ir pakartokite su kremu bei likusiu kurdu, tada uždėkite trečią sluoksnį.",
+      "Pirminis sluoksnis: visą tortą aptepkite plonu kremo sluoksniu ir nulyginkite kremo lygintuvu, tada 30 minučių–1 valandą palaikykite šaldytuve, kad sustingtų.",
+      "Padenkite paskutiniu kremo sluoksniu ir suformuokite norimą raštą (tinka kremo šukos). Jei norite, papuoškite tarkuota citrinų žievele. Jei tortą vešite, palaikykite šaldytuve, kol kremas visiškai sustings."
+    ],
+    "tags": [
+      "lemon",
+      "vanilla",
+      "greek-yogurt",
+      "egg-yolks",
+      "egg-whites",
+      "baking-powder",
+      "baking-soda",
+      "whipping-meringue",
+      "water-bath-bain-marie"
+    ],
+    "image": "images/recipe-127.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://cloudykitchen.com/blog/2017-1-11-triple-lemon-cake/"
+  },
+  {
+    "id": "recipe-128",
+    "title": "Morkų tortas su kreminio sūrio kremu",
+    "category": "cake",
+    "description": "Trijų sluoksnių 15 cm (6 in) prieskoningas morkų tortas su viso grūdo miltais, padengtas citrininiu kreminio sūrio kremu ir apipaustas spalvotais kremo „lašais“ — velykinis tortas, jei norite, su mažais šokoladiniais kiaušinukais.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "nerafinuoto cukraus",
+        "section": "Morkų biskvitas"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "neutralaus skonio aliejaus, pvz., rapsų",
+        "section": "Morkų biskvitas"
+      },
+      {
+        "amount": 4,
+        "unit": null,
+        "name": "kiaušiniai (kambario temperatūros)",
+        "section": "Morkų biskvitas"
+      },
+      {
+        "amount": 140,
+        "unit": "g",
+        "name": "viso grūdo miltų",
+        "section": "Morkų biskvitas"
+      },
+      {
+        "amount": 140,
+        "unit": "g",
+        "name": "kvietinių miltų",
+        "section": "Morkų biskvitas"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Morkų biskvitas",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "valgomosios sodos",
+        "section": "Morkų biskvitas",
+        "amount_conv": 8.9,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "malto cinamono",
+        "section": "Morkų biskvitas",
+        "amount_conv": 2.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "prieskonių mišinio (mixed spice)",
+        "section": "Morkų biskvitas"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "maltų imbierų",
+        "section": "Morkų biskvitas",
+        "amount_conv": 2.6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 360,
+        "unit": "g",
+        "name": "tarkuotų morkų (apie 3 vidutinės morkos)",
+        "section": "Morkų biskvitas"
+      },
+      {
+        "amount": 340,
+        "unit": "g",
+        "name": "nesūdyto sviesto, 30 minučių palaikyto kambario temperatūroje",
+        "section": "Kreminio sūrio kremas"
+      },
+      {
+        "amount": 675,
+        "unit": "g",
+        "name": "riebaus kreminio sūrio, šalto",
+        "section": "Kreminio sūrio kremas"
+      },
+      {
+        "amount": 1350,
+        "unit": "g",
+        "name": "cukraus pudros",
+        "section": "Kreminio sūrio kremas"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "1½ citrinos sultys",
+        "section": "Kreminio sūrio kremas"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "gelinių maistinių dažų",
+        "section": "Kreminio sūrio kremas"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "mažų šokoladinių ar kitų velykinių kiaušinukų (neprivaloma)",
+        "section": "Papuošimui"
+      }
+    ],
+    "steps": [
+      "Biskvitas: įkaitinkite orkaitę iki 180°C (350°F). Tris 15 cm (6 in) tortų formas ištepkite riebalais ir pabarstykite miltais.",
+      "Planetiniu maišytuvu arba elektriniu plaktuvu gerai sumaišykite cukrų, kiaušinius ir aliejų. Įsijokite abiejų rūšių miltus, sodą, druską ir prieskonius ir maišykite mažu greičiu 1–2 minutes, kol susijungs. Sudėkite morkas ir gerai išmaišykite.",
+      "Paskirstykite į formas ir kepkite 35–40 minučių, kol lengvai paspaustas vidurys atsities, o iešmelis bus sausas. Palikite formose 15 minučių, tada išverskite ant grotelių ir visiškai atvėsinkite. Jei kepate iš anksto, gerai suvyniokite į maistinę plėvelę ir laikykite šaldytuve.",
+      "Kremas: su mentės formos maišikliu (arba dideliame dubenyje) didžiausiu greičiu plakite sviestą su kreminiu sūriu, kol pabals ir taps purus, 3–4 minutes. Suberkite cukraus pudrą ir mažu greičiu išmaišykite, tada plakite didžiausiu greičiu dar 3–4 minutes, kol kremas taps lengvas ir purus. Įplakite citrinų sultis. Laikykite šaldytuve, o prieš naudodami dar kartą išplakite arba gerai išmaišykite.",
+      "Jei norite lygaus paviršiaus be kremo „lašų“, kremo reikia mažiau: 225 g sviesto, 450 g kreminio sūrio, 900 g cukraus pudros ir vienos citrinos sulčių.",
+      "Sudėjimas: jei reikia, nulyginkite biskvitus. Pirmą sluoksnį padėkite ant sukamo padėklo arba torto lėkštės, aptepkite kremu ir išlyginkite lenkta mentele. Taip pat sudėkite kitus du sluoksnius.",
+      "Tolygiai aptepkite viršų ir šonus: pirmiausia išlyginkite viršų, tada lygintuvu — šonus. Lygintuvu arba mentele nulyginkite viršutinį kraštą, kad tortas būtų tolygiai ir lygiai padengtas. Palaikykite šaldytuve 30 minučių.",
+      "Likusį kremą padalinkite į keturis dubenėlius ir tris iš jų nudažykite trupučiu gelinių dažų, vieną palikite baltą. Kiekvieną sudėkite į konditerinį maišelį su skirtingo dydžio prancūziškos žvaigždutės antgaliu.",
+      "Išspauskite kremo „lašus“ ant torto: pirmiausia keletą didelių vienos spalvos, tada tarpus užpildykite kitomis spalvomis, kol viršus ir šonai bus padengti. Kur norite, įsmeikite velykinių kiaušinukų.",
+      "Prieš pjaustydami ir patiekdami palaikykite šaldytuve bent 30 minučių."
+    ],
+    "tags": [
+      "cinnamon",
+      "ginger",
+      "lemon",
+      "cream-cheese",
+      "food-coloring",
+      "baking-soda"
+    ],
+    "image": "images/recipe-128.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://cloudykitchen.com/blog/2017-4-14-carrot-cake-with-cream-cheese-icing-the-perfect-easter-cake/"
+  },
+  {
+    "id": "recipe-129",
+    "title": "Earl Grey tortas su avietėmis ir vaniliniu vokišku kremu",
+    "category": "cake",
+    "description": "Švelnus trijų sluoksnių 20 cm (8 in) tortas su Earl Grey arbata, įdarytas rūgštokomis avietėmis ir pusiau atvirai padengtas kreminiu vaniliniu vokišku kremu (sviestinis kremas su plikytu vaniliniu kremu).",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "nenugriebto pieno",
+        "section": "Earl Grey biskvitas"
+      },
+      {
+        "amount": 12,
+        "unit": null,
+        "name": "Earl Grey arbatos pakelių",
+        "section": "Earl Grey biskvitas"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "vanilės pastos",
+        "section": "Earl Grey biskvitas",
+        "amount_conv": 16.3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 675,
+        "unit": "g",
+        "name": "kvietinių miltų",
+        "section": "Earl Grey biskvitas"
+      },
+      {
+        "amount": 3.75,
+        "unit": "tsp",
+        "name": "kepimo miltelių",
+        "section": "Earl Grey biskvitas",
+        "amount_conv": 16.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 5,
+        "unit": "tsp",
+        "name": "Earl Grey arbatos lapelių, smulkiai sumaltų",
+        "section": "Earl Grey biskvitas"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Earl Grey biskvitas",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 340,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Earl Grey biskvitas"
+      },
+      {
+        "amount": 600,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Earl Grey biskvitas"
+      },
+      {
+        "amount": 6,
+        "unit": null,
+        "name": "kiaušiniai (kambario temperatūros)",
+        "section": "Earl Grey biskvitas"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "3 puodeliai šaldytų aviečių",
+        "section": "Aviečių įdaras"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Aviečių įdaras"
+      },
+      {
+        "amount": 375,
+        "unit": "g",
+        "name": "nenugriebto pieno",
+        "section": "Vanilinis vokiškas kremas"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "vanilės pastos, ekstrakto arba vienos vanilės ankšties sėklų",
+        "section": "Vanilinis vokiškas kremas",
+        "amount_conv": 16.3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Vanilinis vokiškas kremas"
+      },
+      {
+        "amount": 3,
+        "unit": "tbsp",
+        "name": "kukurūzų krakmolo",
+        "section": "Vanilinis vokiškas kremas",
+        "amount_conv": 24,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "kiaušinis",
+        "section": "Vanilinis vokiškas kremas"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "kiaušinių tryniai",
+        "section": "Vanilinis vokiškas kremas"
+      },
+      {
+        "amount": 675,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Vanilinis vokiškas kremas"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "žiupsnelis druskos",
+        "section": "Vanilinis vokiškas kremas"
+      }
+    ],
+    "steps": [
+      "Biskvitas: įkaitinkite orkaitę iki 180°C (350°F). Tris 20 cm (8 in) tortų formas ištepkite riebalais ir išklokite kepimo popieriumi.",
+      "Vidutiniame puode įkaitinkite pieną, kol beveik ims virti. Įdėkite arbatos pakelius ir palikite 20 minučių, tada juos išimkite, išspausdami kuo daugiau skonio. Atmatuokite 360 ml (1½ puodelio) užplikyto pieno, jei trūksta, papildykite paprastu pienu. Įdėkite vanilę ir atvėsinkite iki kambario temperatūros.",
+      "Į vidutinį dubenį persijokite miltus, kepimo miltelius, maltą arbatą ir druską.",
+      "Planetinio maišytuvo dubenyje su mentės formos maišikliu didžiausiu greičiu išsukite sviestą su cukrumi, kol masė taps lengva ir puri, maždaug 5 minutes. Po vieną įmuškite kiaušinius, po kiekvieno gerai nubraukdami dubens sieneles.",
+      "Miltų mišinį dėkite trimis dalimis, pakaitomis su pienu dviem dalimis, pradėdami ir baigdami miltais. Maišykite, kol vos susijungs.",
+      "Paskirstykite į formas ir kepkite 40–50 minučių, kol į vidurį įbestas iešmelis bus sausas. Palikite formose 10 minučių, tada ant grotelių visiškai atvėsinkite. Nulyginkite viršų. Jei nenaudojate iš karto, sandariai suvyniokite ir laikykite šaldytuve.",
+      "Aviečių įdaras: vidutiniame puode ant vidutinės ugnies užvirinkite šaldytas avietes, retkarčiais pamaišydami, ir 1 minutę smarkiai pavirkite. Suberkite cukrų ir virkite dar 3 minutes, dažnai maišydami. Perkelkite į stiklainį ir visiškai atvėsinkite.",
+      "Kremas: dubenyje išplakite cukrų, krakmolą, kiaušinį, trynius ir druską. Vidutiniame nepridegančiame puode įkaitinkite pieną su vanile, kol beveik ims virti, tada nukelkite nuo ugnies.",
+      "Nuolat plakdami, pusę karšto pieno supilkite į kiaušinių masę, kad ją pašildytumėte, tada viską supilkite atgal į puodą. Virkite ant vidutinės ugnies nuolat plakdami, kol ims burbuliuoti ir sutirštės; pavirkite dar 1 minutę.",
+      "Supilkite į negilų indą arba maišytuvo dubenį, maistinę plėvelę priglauskite prie paviršiaus ir laikykite šaldytuve, kol atšals. Norėdami paspartinti, dubenį pastatykite į ledinį vandenį ir dažnai maišykite.",
+      "Šluotele vidutiniu greičiu plakite šaltą kremą, kol taps kreminis ir be gumuliukų. Po kelis kubelius dėkite sviestą, kol visas įsimaišys, tada pakeiskite šluotelę mentės formos maišikliu ir kelias minutes plakite, kol kremas taps glotnus ir šilkinis.",
+      "Sudėjimas: į konditerinį maišelį su apvaliu antgaliu (arba nukirptu galu) sudėkite kelis šaukštus kremo užtvarai. Pirmą sluoksnį padėkite ant sukamo padėklo, aptepkite plonu kremo sluoksniu ir aplink kraštą išspauskite kremo žiedą. Žiedo viduje paskleiskite maždaug ⅓ puodelio (80 ml) aviečių įdaro.",
+      "Uždėkite antrą sluoksnį, pakartokite užtvarą ir įdarą, tada uždėkite trečią sluoksnį.",
+      "Tolygiai aptepkite viršų ir šonus kremu ir šonus nulyginkite lygintuvu, kur reikia, pridėdami kremo. Pusiau atviram vaizdui kremą nubraukite ir pridėkite, kol patiks. Lenkta mentele suformuokite aštrų viršutinį kraštą.",
+      "Palaikykite šaldytuve apie valandą, kad sustingtų, tada perkelkite ant torto lėkštės ir papuoškite pagal norą. Likučius laikykite sandariame inde."
+    ],
+    "tags": [
+      "raspberry",
+      "vanilla",
+      "butter",
+      "cornstarch",
+      "egg-yolks",
+      "baking-powder",
+      "hot-infusion",
+      "creaming-method",
+      "tempering-eggs"
+    ],
+    "image": "images/recipe-129.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://cloudykitchen.com/blog/earl-grey-layer-cake/"
+  },
+  {
+    "id": "recipe-130",
+    "title": "Šokoladinis braunio tortas su lazdyno riešutų įdaru ir mokos kremu",
+    "category": "cake",
+    "description": "Trijų sluoksnių 15 cm (6 in) tortas iš drėgnų braunio sluoksnių, įdarytas naminiu šokoladiniu lazdyno riešutų kremu ir padengtas mokos vokišku kremu, jei norite — su kavos kremo juostomis. 8–10 porcijų.",
+    "servings": 8,
+    "ingredients": [
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "nesūdyto sviesto",
+        "section": "Braunio biskvitas"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "juodojo šokolado (bent 70%), stambiai supjaustyto",
+        "section": "Braunio biskvitas"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Braunio biskvitas"
+      },
+      {
+        "amount": 135,
+        "unit": "g",
+        "name": "tamsaus rudojo cukraus",
+        "section": "Braunio biskvitas"
+      },
+      {
+        "amount": 5,
+        "unit": null,
+        "name": "kiaušiniai (kambario temperatūros)",
+        "section": "Braunio biskvitas"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės ekstrakto arba pastos",
+        "section": "Braunio biskvitas",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "neutralaus skonio aliejaus",
+        "section": "Braunio biskvitas"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "kvietinių miltų",
+        "section": "Braunio biskvitas"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "kakavos miltelių",
+        "section": "Braunio biskvitas"
+      },
+      {
+        "amount": 0.75,
+        "unit": "tsp",
+        "name": "kepimo miltelių",
+        "section": "Braunio biskvitas",
+        "amount_conv": 3.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Braunio biskvitas",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 280,
+        "unit": "g",
+        "name": "neskrudintų lazdyno riešutų",
+        "section": "Šokoladinis lazdyno riešutų įdaras"
+      },
+      {
+        "amount": 424,
+        "unit": "g",
+        "name": "juodojo šokolado (bent 70%), ištirpinto",
+        "section": "Šokoladinis lazdyno riešutų įdaras"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Šokoladinis lazdyno riešutų įdaras"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "stambiosios (košerinės) druskos",
+        "section": "Šokoladinis lazdyno riešutų įdaras",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 375,
+        "unit": "g",
+        "name": "nenugriebto pieno",
+        "section": "Mokos vokiškas kremas"
+      },
+      {
+        "amount": 35,
+        "unit": "g",
+        "name": "stambiai maltos kavos",
+        "section": "Mokos vokiškas kremas"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Mokos vokiškas kremas",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 24,
+        "unit": "g",
+        "name": "kukurūzų krakmolo",
+        "section": "Mokos vokiškas kremas"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Mokos vokiškas kremas"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "kiaušinis",
+        "section": "Mokos vokiškas kremas"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "kiaušinių tryniai",
+        "section": "Mokos vokiškas kremas"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "žiupsnelis druskos",
+        "section": "Mokos vokiškas kremas"
+      },
+      {
+        "amount": 675,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Mokos vokiškas kremas"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "juodojo šokolado (70%), ištirpinto ir atvėsinto",
+        "section": "Mokos vokiškas kremas"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "valgomo aukso lapelių (neprivaloma)",
+        "section": "Papuošimui"
+      }
+    ],
+    "steps": [
+      "Biskvitas: įkaitinkite orkaitę iki 180°C (350°F). Tris 15 cm (6 in) tortų formas ištepkite riebalais ir išklokite kepimo popieriumi.",
+      "Mažame puode ant vidutinės ugnies nuolat maišydami ištirpinkite sviestą su šokoladu iki vientisumo. Atidėkite atvėsti. Mažame dubenyje sumaišykite miltus, kakavą, kepimo miltelius ir druską.",
+      "Dideliame dubenyje išplakite abiejų rūšių cukrų, kiaušinius, vanilę ir aliejų. Įmaišykite atvėsusį šokoladą, tada atsargiai įmaišykite sausus ingredientus.",
+      "Paskirstykite į formas ir kartą ar du stuktelėkite jomis į stalą, kad masė nusėstų. Kepkite 25–30 minučių (tikrinti pradėkite po 20), kol viršus sustings, o iešmelis išeis su keliais trupiniais.",
+      "Palikite formose 10 minučių, tada ant grotelių visiškai atvėsinkite. Jei kepate iš anksto, atvėsusius sandariai suvyniokite ir laikykite šaldytuve.",
+      "Įdaras: lazdyno riešutus skrudinkite 180°C (350°F) orkaitėje 8–10 minučių, retkarčiais pakratydami ir dažnai tikrindami, kol paauksės. Visiškai atvėsinkite, nutrinkite luobeles (dėl užsispyrusių nesijaudinkite) ir virtuviniu kombainu trumpais impulsais susmulkinkite.",
+      "Supilkite ištirpintą šokoladą, suberkite cukrų ir druską, impulsais sumaišykite, tada malkite didžiausiu greičiu bent 5 minutes, jei reikia — ilgiau. Iki naudojimo laikykite kambario temperatūroje.",
+      "Kremas: vidutiniame puode įkaitinkite pieną, kol beveik ims virti. Nukėlę įmaišykite kavą ir palikite 20 minučių. Perkoškite per labai smulkų sietelį, pasverkite ir papildykite pienu iki 375 g, tada vėl įkaitinkite, kol beveik ims virti. Tuo metu dubenyje išplakite vanilę, krakmolą, cukrų, kiaušinį, trynius ir druską.",
+      "Nuolat plakdami, pusę karšto pieno supilkite į kiaušinių masę, tada viską supilkite atgal į puodą. Virkite ant vidutinės ugnies nuolat plakdami, kol ims burbuliuoti ir sutirštės; pavirkite dar 1 minutę.",
+      "Supilkite į negilų indą arba maišytuvo dubenį, maistinę plėvelę priglauskite prie paviršiaus ir laikykite šaldytuve, kol atšals, — bent 4 valandas, geriausia per naktį. Paspartinti galima ledinio vandens vonele, dažnai maišant.",
+      "Šluotele vidutiniu greičiu plakite šaltą kremą, kol taps kreminis ir be gumuliukų. Po kelis kubelius dėkite sviestą, kol įsimaišys; masė gali atrodyti sutraukusi, bet plakite toliau. Plakite dar 2 minutes.",
+      "Juostoms atidėkite 250 g šio kavos kremo į konditerinį maišelį (galo dar nekirpkite). Į likusį kremą įmaišykite atvėsusį ištirpintą šokoladą — gausite mokos kremą.",
+      "Sudėjimas: jei biskvitai iškilo, nulyginkite. Į konditerinį maišelį su vidutiniu apvaliu antgaliu įdėkite mokos kremo užtvarai. Pirmą sluoksnį pritvirtinkite prie sukamo padėklo trupučiu kremo, aptepkite maždaug ½ puodelio (120 ml) mokos kremo, aplink kraštą išspauskite žiedą ir užpildykite jį maždaug ⅓ puodelio (80 ml) lazdyno riešutų įdaro.",
+      "Uždėkite antrą sluoksnį, lengvai prispausdami ir sujungimą užtepdami trupučiu kremo, ir pakartokite. Trečią sluoksnį uždėkite apverstą, kad viršus būtų lygus.",
+      "Pirminis sluoksnis: visą tortą aptepkite plonu kremo sluoksniu ir nulyginkite kremo lygintuvu, tada 30–45 minutes palaikykite šaldytuve, kad sustingtų.",
+      "Be juostų: padenkite antru, storesniu mokos kremo sluoksniu, išlyginkite ir papuoškite pagal norą.",
+      "Su juostomis: užtepkite storą, visiškai lygų mokos kremo sluoksnį be skylučių ir palaikykite šaldytuve 15 minučių. Pašildytomis kremo šukomis (perplautomis karštu vandeniu ir nusausintomis) apveskite aplink tortą, kad liktų aštrūs, gilūs grioveliai; jei reikia, apveskite kelis kartus.",
+      "Palaikykite šaldiklyje 30 minučių. Maišelyje su kavos kremu nukirpkite mažą skylutę ir užpildykite griovelius, šiek tiek perpildydami. Nulyginkite pašildytu lygintuvu, tarp braukimų jį nuvalydami, tada palaikykite šaldytuve 10–20 minučių.",
+      "Likusius kremus (mokos, kavos ir marmurinį nubrauktą) sudėkite į konditerinius maišelius su prancūziškos žvaigždutės antgaliais. Kur norite, uždėkite aukso lapelių, tada atsitiktinai išspauskite kremo „lašų“ ant torto.",
+      "Iki patiekimo laikykite šaldytuve, o maždaug valandą prieš patiekdami išimkite, kad sušiltų iki kambario temperatūros. Likučius laikykite sandariame inde šaldytuve."
+    ],
+    "tags": [
+      "chocolate",
+      "dark-chocolate",
+      "hazelnut",
+      "coffee-espresso",
+      "cocoa-powder",
+      "cornstarch",
+      "egg-yolks",
+      "hot-infusion",
+      "tempering-eggs"
+    ],
+    "image": "images/recipe-130.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://cloudykitchen.com/blog/chocolate-brownie-cake-with-chocolate-hazelnut-filling-and-mocha-german-buttercream/"
+  },
+  {
+    "id": "recipe-131",
+    "title": "Šokolado ir žemės riešutų sviesto tortas",
+    "category": "cake",
+    "description": "Keturių sluoksnių 20 cm (8 in) tortas, kuriame kaitaliojasi šokoladiniai ir žemės riešutų sviesto biskvitai, įdarytas šokoladiniu ir žemės riešutų sviesto kremais ir apipaustas abiejų kremų „lašais“.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 133,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Šokoladinis biskvitas"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "šviesaus rudojo cukraus",
+        "section": "Šokoladinis biskvitas"
+      },
+      {
+        "amount": 55,
+        "unit": "g",
+        "name": "rapsų aliejaus",
+        "section": "Šokoladinis biskvitas"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "didelis kiaušinis (kambario temperatūros)",
+        "section": "Šokoladinis biskvitas"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "didelio kiaušinio trynys (kambario temperatūros)",
+        "section": "Šokoladinis biskvitas"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tsp",
+        "name": "vanilės ekstrakto",
+        "section": "Šokoladinis biskvitas",
+        "amount_conv": 6.6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 210,
+        "unit": "g",
+        "name": "kvietinių miltų",
+        "section": "Šokoladinis biskvitas"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "nesaldintų kakavos miltelių",
+        "section": "Šokoladinis biskvitas"
+      },
+      {
+        "amount": 1.75,
+        "unit": "tsp",
+        "name": "kepimo miltelių",
+        "section": "Šokoladinis biskvitas",
+        "amount_conv": 7.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.75,
+        "unit": "tsp",
+        "name": "stambiosios (košerinės) druskos",
+        "section": "Šokoladinis biskvitas",
+        "amount_conv": 2.3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "valgomosios sodos",
+        "section": "Šokoladinis biskvitas",
+        "amount_conv": 2.2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 240,
+        "unit": "g",
+        "name": "nenugriebto pieno (kambario temperatūros)",
+        "section": "Šokoladinis biskvitas"
+      },
+      {
+        "amount": 160,
+        "unit": "g",
+        "name": "karštos kavos",
+        "section": "Šokoladinis biskvitas"
+      },
+      {
+        "amount": 220,
+        "unit": "g",
+        "name": "šviesaus rudojo cukraus",
+        "section": "Žemės riešutų sviesto biskvitas"
+      },
+      {
+        "amount": 85,
+        "unit": "g",
+        "name": "žemės riešutų sviesto (įprasto, glotnaus; natūralus atsiskirs)",
+        "section": "Žemės riešutų sviesto biskvitas"
+      },
+      {
+        "amount": 75,
+        "unit": "g",
+        "name": "augalinio ar kito neutralaus skonio aliejaus",
+        "section": "Žemės riešutų sviesto biskvitas"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "dideli kiaušiniai (kambario temperatūros)",
+        "section": "Žemės riešutų sviesto biskvitas"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės ekstrakto",
+        "section": "Žemės riešutų sviesto biskvitas",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 185,
+        "unit": "g",
+        "name": "kvietinių miltų",
+        "section": "Žemės riešutų sviesto biskvitas"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "kepimo miltelių",
+        "section": "Žemės riešutų sviesto biskvitas",
+        "amount_conv": 8.9,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.625,
+        "unit": "tsp",
+        "name": "valgomosios sodos (½ arb. š. ir ⅛ arb. š.)",
+        "section": "Žemės riešutų sviesto biskvitas",
+        "amount_conv": 2.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "stambiosios (košerinės) druskos",
+        "section": "Žemės riešutų sviesto biskvitas",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 240,
+        "unit": "g",
+        "name": "pasukų (kambario temperatūros)",
+        "section": "Žemės riešutų sviesto biskvitas"
+      },
+      {
+        "amount": 350,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Šokoladinis kremas"
+      },
+      {
+        "amount": 130,
+        "unit": "g",
+        "name": "nesaldintos kakavos (olandiškos)",
+        "section": "Šokoladinis kremas"
+      },
+      {
+        "amount": 720,
+        "unit": "g",
+        "name": "cukraus pudros, persijotos",
+        "section": "Šokoladinis kremas"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "vanilės",
+        "section": "Šokoladinis kremas",
+        "amount_conv": 8.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "stambiosios (košerinės) druskos",
+        "section": "Šokoladinis kremas",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 90,
+        "unit": "g",
+        "name": "riebios grietinėlės (ir daugiau, jei reikia)",
+        "section": "Šokoladinis kremas"
+      },
+      {
+        "amount": 255,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Žemės riešutų sviesto kremas"
+      },
+      {
+        "amount": 130,
+        "unit": "g",
+        "name": "glotnaus žemės riešutų sviesto",
+        "section": "Žemės riešutų sviesto kremas"
+      },
+      {
+        "amount": 810,
+        "unit": "g",
+        "name": "cukraus pudros, persijotos",
+        "section": "Žemės riešutų sviesto kremas"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Žemės riešutų sviesto kremas",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 135,
+        "unit": "g",
+        "name": "riebios grietinėlės (ir daugiau, jei reikia)",
+        "section": "Žemės riešutų sviesto kremas"
+      }
+    ],
+    "steps": [
+      "Šokoladinis biskvitas: įkaitinkite orkaitę iki 180°C (350°F). Dvi 20 cm (8 in) apvalias formas ištepkite sviestu, pabarstykite miltais ir dugnus išklokite kepimo popieriumi.",
+      "Dideliame dubenyje išmaišykite abiejų rūšių cukrų su aliejumi. Įmuškite kiaušinį, įdėkite trynį bei vanilę ir išmaišykite.",
+      "Į vidutinį dubenį persijokite miltus, kakavą, kepimo miltelius, druską ir sodą. Dėkite į cukraus masę pakaitomis su pienu, pradėdami ir baigdami miltais ir kaskart maišydami, kol vos susijungs. Įmaišykite karštą kavą, kol vos susijungs, tada paskirstykite į formas.",
+      "Kepkite 25–30 minučių, kol į vidurį įbestas dantų krapštukas bus sausas. Palikite formose 10 minučių, tada ant grotelių visiškai atvėsinkite. Jei kepate iš anksto, atvėsusius sandariai suvyniokite ir per naktį užšaldykite.",
+      "Žemės riešutų sviesto biskvitas: taip pat paruoškite dar dvi 20 cm (8 in) formas. Dideliame dubenyje išmaišykite rudąjį cukrų, žemės riešutų sviestą ir aliejų, kol masė taps kreminė. Įmuškite kiaušinius, įdėkite vanilę ir maišykite, kol vos susijungs.",
+      "Į vidutinį dubenį persijokite miltus, kepimo miltelius, sodą ir druską. Dėkite į cukraus masę pakaitomis su pasukomis, pradėdami ir baigdami miltais ir maišydami, kol vos susijungs. Paskirstykite į formas (paprasčiausia sveriant).",
+      "Kepkite 25–30 minučių, kol dantų krapštukas bus sausas. Palikite formose 10 minučių, tada ant grotelių visiškai atvėsinkite. Jei kepate iš anksto, sandariai suvyniokite ir per naktį užšaldykite.",
+      "Šokoladinis kremas: su mentės formos maišikliu mažu greičiu gerai išmaišykite sviestą su kakava. Po maždaug 125 g (1 puodelį) dėkite cukraus pudrą pakaitomis su grietinėle po šaukštą, kaskart išmaišydami. Įdėkite vanilę, druską ir plakite vidutiniu–dideliu greičiu, kol kremas taps glotnus, maždaug 1 minutę.",
+      "Jei reikia, įpilkite daugiau grietinėlės ir plakite didžiausiu greičiu, kol kremas taps minkštas ir lengvai tepamas, tada 1–2 minutes plakite mažu greičiu, kad išeitų oro burbuliukai. Naudokite iš karto arba iki naudojimo priglauskite maistinę plėvelę prie paviršiaus.",
+      "Žemės riešutų sviesto kremas: su mentės formos maišikliu vidutiniu greičiu išplakite sviestą su žemės riešutų sviestu iki glotnumo. Mažu greičiu palaipsniui suberkite cukraus pudrą ir druską, tada įpilkite grietinėlės, kol kremas taps tepamas. Jei reikia, įpilkite daugiau grietinėlės, plakite didžiausiu greičiu, kol suminkštės, tada 1–2 minutes mažu greičiu, kad išeitų oras. Iki naudojimo uždenkite, kaip nurodyta aukščiau.",
+      "Sudėjimas: žemės riešutų sviesto biskvitą pritvirtinkite prie sukamo padėklo trupučiu kremo. Aptepkite maždaug ¾ puodelio (180 ml) šokoladinio kremo. Uždėkite šokoladinį biskvitą ir ¾ puodelio žemės riešutų sviesto kremo. Pakartokite su antru žemės riešutų sviesto biskvitu ir šokoladiniu kremu, tada uždėkite antrą šokoladinį biskvitą apverstą, kad viršus būtų lygus.",
+      "Pirminis sluoksnis: sukdami padėklą, aplink tortą išspauskite abiejų kremų (tarpai nesvarbu), tada nulyginkite lygintuvu, nubrauktą kremą rinkdami į atskirą dubenėlį. Palaikykite šaldytuve apie 20 minučių.",
+      "Į tris konditerinius maišelius įstatykite prancūziškos žvaigždutės antgalius. Nubrauktą kremą gerai išmaišykite, pridėdami šokoladinio arba žemės riešutų sviesto kremo, kol spalva taps tolygiai šviesiai ruda, ir sudėkite į vieną maišelį; likusius du kremus — į kitus.",
+      "Atsitiktinai išspauskite kremo „lašų“ per visą tortą, kartkartėmis keisdami spalvą, kol jis bus visiškai padengtas.",
+      "Iki patiekimo laikykite šaldytuve. Supjaustytą laikykite sandariame inde šaldytuve."
+    ],
+    "tags": [
+      "chocolate",
+      "peanut-butter",
+      "coffee-espresso",
+      "cocoa-powder",
+      "heavy-whipping-cream",
+      "baking-powder",
+      "baking-soda"
+    ],
+    "image": "images/recipe-131.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://cloudykitchen.com/blog/chocolate-and-peanut-butter-layer-cake-with-chocolate-and-peanut-butter-buttercream/"
+  },
+  {
+    "id": "recipe-132",
+    "title": "Šokoladinis braškių tortas",
+    "category": "cake",
+    "description": "Aukštas trijų sluoksnių 20 cm (8 in) šokoladinis tortas su uogiene, padengtas rausvu braškių šveicarišku bezė kremu su liofilizuotomis braškėmis ir papuoštas išspaustu kriauklelių apvadu.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 420,
+        "unit": "g",
+        "name": "kvietinių miltų",
+        "section": "Šokoladinis biskvitas"
+      },
+      {
+        "amount": 615,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Šokoladinis biskvitas"
+      },
+      {
+        "amount": 112,
+        "unit": "g",
+        "name": "kakavos miltelių",
+        "section": "Šokoladinis biskvitas"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "kepimo miltelių",
+        "section": "Šokoladinis biskvitas",
+        "amount_conv": 8.9,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "valgomosios sodos",
+        "section": "Šokoladinis biskvitas",
+        "amount_conv": 10,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Šokoladinis biskvitas",
+        "amount_conv": 13.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "tirpios espreso kavos",
+        "section": "Šokoladinis biskvitas",
+        "amount_conv": 4.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 345,
+        "unit": "g",
+        "name": "nenugriebto pieno (kambario temperatūros)",
+        "section": "Šokoladinis biskvitas"
+      },
+      {
+        "amount": 157,
+        "unit": "g",
+        "name": "augalinio arba neutralaus skonio aliejaus",
+        "section": "Šokoladinis biskvitas"
+      },
+      {
+        "amount": 3,
+        "unit": null,
+        "name": "kiaušiniai (kambario temperatūros)",
+        "section": "Šokoladinis biskvitas"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "vanilės ekstrakto",
+        "section": "Šokoladinis biskvitas",
+        "amount_conv": 13.3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 345,
+        "unit": "g",
+        "name": "verdančio vandens",
+        "section": "Šokoladinis biskvitas"
+      },
+      {
+        "amount": 190,
+        "unit": "g",
+        "name": "kiaušinių baltymų",
+        "section": "Braškių šveicariškas bezė kremas"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Braškių šveicariškas bezė kremas"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Braškių šveicariškas bezė kremas",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Braškių šveicariškas bezė kremas",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 700,
+        "unit": "g",
+        "name": "nesūdyto sviesto, vėsaus, kubeliais",
+        "section": "Braškių šveicariškas bezė kremas"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "liofilizuotų braškių, sumaltų ir persijotų (arba liofilizuotų braškių miltelių)",
+        "section": "Braškių šveicariškas bezė kremas"
+      },
+      {
+        "amount": 240,
+        "unit": "g",
+        "name": "uogienės (miško uogų, braškių — kokios turite)",
+        "section": "Uogienės įdaras"
+      }
+    ],
+    "steps": [
+      "Biskvitas: įkaitinkite orkaitę iki 180°C (350°F). Tris 20 cm (8 in) skersmens ir 7,5 cm (3 in) gylio apvalias formas ištepkite sviestu ir pabarstykite kakava arba apipurkškite kepimo aliejumi ir išklokite kepimo popieriumi.",
+      "Planetinio maišytuvo dubenyje su šluotele sumaišykite visus sausus ingredientus. Supilkite pieną, aliejų, įmuškite kiaušinius, įdėkite vanilę ir plakite pirmiausia mažu, tada 30 sekundžių vidutiniu greičiu.",
+      "Supilkite verdantį vandenį, maišytuvą uždenkite rankšluosčiu, kad netikštų, ir maišykite vidutiniu–dideliu greičiu dar 30 sekundžių.",
+      "Paskirstykite į formas, maždaug po 675 g. Kepkite apie 35 minutes, kol lengvai paspausti biskvitai atsities ir ims atšokti nuo formos kraštų.",
+      "Palikite formose 5 minutes, tada išverskite ir visiškai atvėsinkite, prieš lygindami ir tepdami. Sandariai suvyniokite ir iki naudojimo laikykite šaldiklyje.",
+      "Kremas: kiaušinių baltymus, cukrų ir druską sudėkite į planetinio maišytuvo arba karščiui atsparų dubenį, pastatytą virš puodo su vos verdančiu vandeniu (dubuo neturi liesti vandens). Nuolat plakite, kol masė pasieks 70°C (160°F), o cukrus ištirps.",
+      "Perkelkite dubenį į maišytuvą ir plakite su šluotele didžiausiu greičiu, kol masė taps sniego baltumo ir puri, 8–10 minučių. Po gabalėlį dėkite sviestą — masė gali atrodyti sutraukusi, bet plakite toliau. Įdėję visą sviestą, plakite didžiausiu greičiu dar 10 minučių.",
+      "Įdėkite vanilę. Kai kremas taps glotnus ir šilkinis, suberkite braškių miltelius, pakeiskite šluotelę mentės formos maišikliu ir maišykite vidutiniu greičiu, kol įsimaišys, tada 1 minutę mažu greičiu, kad išeitų oras. Naudokite iš karto; likučius laikykite šaldytuve.",
+      "Sudėjimas: nulyginkite biskvitus. Į konditerinį maišelį su dideliu atviros žvaigždutės antgaliu (Wilton 1M) įdėkite kremo užtvaroms ir viršaus apvadui.",
+      "Pirmą sluoksnį pritvirtinkite prie sukamo padėklo trupučiu kremo. Aptepkite maždaug 1 puodeliu (240 ml) kremo, aplink kraštą išspauskite žiedą ir užpildykite jį maždaug 6 šaukštais uogienės.",
+      "Uždėkite antrą sluoksnį, lengvai prispausdami ir sujungimą užtepdami trupučiu kremo, ir pakartokite. Trečią sluoksnį uždėkite apverstą, kad viršus būtų lygus. Kremą iš maišelio grąžinkite į dubenį.",
+      "Pirminis sluoksnis: visą tortą aptepkite plonu kremo sluoksniu ir nulyginkite kremo lygintuvu, tada 20–30 minučių palaikykite šaldytuve, kad sustingtų.",
+      "Viršų ir šonus padenkite lygiu kremo sluoksniu. Šonuose suformuokite spiralinį raštą: prispauskite lenktą mentelę prie torto, sukite padėklą ir lėtai kelkite mentelę aukštyn. Nulyginkite viršutinį kraštą.",
+      "Vėl pripildykite maišelį ir torto viršuje išspauskite kriauklelių apvadą.",
+      "Iki patiekimo laikykite šaldytuve, o maždaug valandą prieš patiekdami išimkite, kad sušiltų iki kambario temperatūros. Likučius laikykite sandariame inde šaldytuve."
+    ],
+    "tags": [
+      "chocolate",
+      "strawberry",
+      "espresso-instant-coffee",
+      "cocoa-powder",
+      "egg-whites",
+      "whipping-meringue",
+      "water-bath-bain-marie"
+    ],
+    "image": "images/recipe-132.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://cloudykitchen.com/blog/chocolate-layer-cake-with-jam-filling-and-strawberry-swiss-meringue-buttercream/"
+  },
+  {
+    "id": "recipe-133",
+    "title": "Bananų tortas su sūdyta karamele ir žemės riešutų sviesto kremu",
+    "category": "cake",
+    "description": "Trys drėgno bananų biskvito sluoksniai 20 cm (8 in) torte, sluoksniuoti su glotnia sūdyta karamele ir žemės riešutų sviesto šveicarišku bezė kremu, papuošti vanilinio kremo juostomis — klasikinis kepyklos vaizdas.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 315,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Bananų biskvitas"
+      },
+      {
+        "amount": 440,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Bananų biskvitas"
+      },
+      {
+        "amount": 520,
+        "unit": "g",
+        "name": "labai prinokusių bananų (apie 5), gerai sutrintų",
+        "section": "Bananų biskvitas"
+      },
+      {
+        "amount": 5,
+        "unit": null,
+        "name": "kiaušiniai (kambario temperatūros)",
+        "section": "Bananų biskvitas"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės pastos arba ekstrakto",
+        "section": "Bananų biskvitas",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 75,
+        "unit": "g",
+        "name": "nenugriebto pieno",
+        "section": "Bananų biskvitas"
+      },
+      {
+        "amount": 2.5,
+        "unit": "tsp",
+        "name": "valgomosios sodos",
+        "section": "Bananų biskvitas",
+        "amount_conv": 11.2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 600,
+        "unit": "g",
+        "name": "kvietinių miltų",
+        "section": "Bananų biskvitas"
+      },
+      {
+        "amount": 2.5,
+        "unit": "tsp",
+        "name": "kepimo miltelių",
+        "section": "Bananų biskvitas",
+        "amount_conv": 11.2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "stambiosios (košerinės) druskos",
+        "section": "Bananų biskvitas",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Sūdytos karamelės įdaras"
+      },
+      {
+        "amount": 90,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Sūdytos karamelės įdaras"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "riebios grietinėlės, pašildytos",
+        "section": "Sūdytos karamelės įdaras"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Sūdytos karamelės įdaras",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "jūros druskos dribsnių",
+        "section": "Sūdytos karamelės įdaras"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "kiaušinių baltymų",
+        "section": "Žemės riešutų sviesto šveicariškas bezė kremas"
+      },
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Žemės riešutų sviesto šveicariškas bezė kremas"
+      },
+      {
+        "amount": 0.75,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Žemės riešutų sviesto šveicariškas bezė kremas",
+        "amount_conv": 4.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Žemės riešutų sviesto šveicariškas bezė kremas",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 900,
+        "unit": "g",
+        "name": "nesūdyto sviesto, kubeliais",
+        "section": "Žemės riešutų sviesto šveicariškas bezė kremas"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "glotnaus žemės riešutų sviesto",
+        "section": "Žemės riešutų sviesto šveicariškas bezė kremas"
+      }
+    ],
+    "steps": [
+      "Biskvitas: įkaitinkite orkaitę iki 180°C (350°F). Tris 20 cm (8 in) tortų formas ištepkite riebalais ir dugnus išklokite kepimo popieriumi.",
+      "Su mentės formos maišikliu arba elektriniu plaktuvu išsukite sviestą su cukrumi, kol masė taps lengva ir puri. Įplakite bananus, tada po vieną kiaušinius, gerai nubraukdami dubens sieneles. Įdėkite vanilę.",
+      "Pieną įkaitinkite iki virimo, įmaišykite sodą ir supilkite į masę, gerai išmaišydami.",
+      "Įsijokite miltus, kepimo miltelius ir druską ir trumpai išmaišykite, kol vos susijungs. Paskirstykite į formas (paprasčiausia sveriant).",
+      "Kepkite 35–45 minutes (tikrinti pradėkite po 35), kol į vidurį įbestas iešmelis bus sausas. Palikite formose 15 minučių, tada išverskite ant grotelių ir visiškai atvėsinkite.",
+      "Karamelė: vidutiniame storadugniame puode ant vidutinės ugnies nuolat maišydami kaitinkite cukrų. Jis sukibs gumulėliais, tada išsilydys. Kaitinkite, kol taps gintarinės spalvos.",
+      "Nukelkite nuo ugnies ir iš karto sudėkite visą sviestą — masė smarkiai suputos. Sviestui įsimaišius, įplakite grietinėlę, tada įmaišykite druską ir vanilę. Supilkite į stiklinį indą ir visiškai atvėsinkite.",
+      "Kremas: kiaušinių baltymus, cukrų ir druską sudėkite į planetinio maišytuvo arba karščiui atsparų dubenį, pastatytą virš puodo su vos verdančiu vandeniu (dubuo neturi liesti vandens). Nuolat plakite, kol masė pasieks 70°C (160°F), o cukrus ištirps.",
+      "Perkelkite dubenį į maišytuvą ir plakite su šluotele didžiausiu greičiu, kol masė taps sniego baltumo ir puri, 8–10 minučių. Po gabalėlį dėkite sviestą — masė gali atrodyti sutraukusi, bet plakite toliau. Įdėję visą sviestą, plakite didžiausiu greičiu dar 10 minučių.",
+      "Įdėkite vanilę ir plakite dar 2–3 minutes, kol kremas taps glotnus ir šilkinis, tada pakeiskite šluotelę mentės formos maišikliu ir 1 minutę maišykite mažu greičiu, kad išeitų oras.",
+      "Juostoms atidėkite maždaug 350 g šio vanilinio kremo. Į likusį įmaišykite žemės riešutų sviestą. (Be juostų žemės riešutų sviestą įmaišykite į visą kremą.)",
+      "Sudėjimas: nulyginkite biskvitus. Į konditerinį maišelį su vidutiniu apvaliu antgaliu įdėkite žemės riešutų sviesto kremo užtvaroms. Pirmą sluoksnį pritvirtinkite prie torto padėklo arba sukamo padėklo trupučiu kremo, aptepkite maždaug ½ puodelio (120 ml) kremo, aplink kraštą išspauskite žiedą ir užpildykite jį karamele, paskleisdami iki kraštų.",
+      "Uždėkite antrą sluoksnį, lengvai prispausdami ir sujungimą užtepdami kremu, ir pakartokite. Trečią sluoksnį uždėkite apverstą, kad viršus būtų lygus. Kremą iš maišelio grąžinkite į dubenį.",
+      "Pirminis sluoksnis: visą tortą aptepkite plonu kremo sluoksniu ir nulyginkite kremo lygintuvu, tada 30–45 minutes palaikykite šaldytuve, kad sustingtų.",
+      "Be juostų: padenkite antru, storesniu žemės riešutų sviesto kremo sluoksniu, išlyginkite ir papuoškite pagal norą.",
+      "Su juostomis: užtepkite storą, visiškai lygų žemės riešutų sviesto kremo sluoksnį be skylučių ir palaikykite šaldytuve 15 minučių. Pašildytomis kremo šukomis apveskite aplink tortą, kad liktų aštrūs, gilūs grioveliai; jei reikia, apveskite kelis kartus.",
+      "Palaikykite šaldiklyje 30 minučių. Atidėtą vanilinį kremą sudėkite į konditerinį maišelį, nukirpkite galą ir užpildykite griovelius, šiek tiek perpildydami. Nulyginkite pašildytu lygintuvu, tarp braukimų jį nuvalydami. Tortas sušalęs, todėl kremo perteklių viršuje nupjaukite mentele, o ne braukite į vidurį. Palaikykite šaldytuve 10–20 minučių.",
+      "Pabaigai likusiu kremu dideliu atviros žvaigždutės antgaliu (Wilton 1M) išspauskite kriauklelių apvadą.",
+      "Likučius laikykite šaldytuve uždengtus arba sandariame inde. Norėdami užšaldyti, palaikykite šaldytuve, kol kremas sustings (apie 30 minučių), tada labai sandariai suvyniokite ir užšaldykite."
+    ],
+    "tags": [
+      "banana",
+      "salted-caramel",
+      "caramel",
+      "peanut-butter",
+      "vanilla",
+      "egg-whites",
+      "creaming-method",
+      "whipping-meringue",
+      "caramelizing-sugar"
+    ],
+    "image": "images/recipe-133.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://cloudykitchen.com/blog/banana-layer-cake-with-salted-caramel-filling-and-peanut-butter-swiss-meringue-buttercream/"
+  },
+  {
+    "id": "recipe-134",
+    "title": "Vanilinis pasukų tortas su vyšnių kompotu",
+    "category": "cake",
+    "description": "Nedidelis dviejų sluoksnių 15 cm (6 in) vanilinis pasukų tortas, kurio biskvitas švelnus dėl atvirkštinio sviesto įmaišymo būdo, įdarytas vyšnių kompotu ir laisvai padengtas vaniliniu šveicarišku bezė kremu. 8 porcijos.",
+    "servings": 8,
+    "ingredients": [
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "dideli kiaušiniai (kambario temperatūros)",
+        "section": "Vanilinis pasukų biskvitas"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Vanilinis pasukų biskvitas",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 130,
+        "unit": "g",
+        "name": "pasukų (kambario temperatūros)",
+        "section": "Vanilinis pasukų biskvitas"
+      },
+      {
+        "amount": 40,
+        "unit": "g",
+        "name": "riebaus graikiško jogurto",
+        "section": "Vanilinis pasukų biskvitas"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "kvietinių miltų",
+        "section": "Vanilinis pasukų biskvitas"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Vanilinis pasukų biskvitas"
+      },
+      {
+        "amount": 1.25,
+        "unit": "tsp",
+        "name": "kepimo miltelių",
+        "section": "Vanilinis pasukų biskvitas",
+        "amount_conv": 5.6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Vanilinis pasukų biskvitas",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 115,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Vanilinis pasukų biskvitas"
+      },
+      {
+        "amount": 450,
+        "unit": "g",
+        "name": "vyšnių be kauliukų, supjaustytų",
+        "section": "Vyšnių kompotas"
+      },
+      {
+        "amount": 75,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Vyšnių kompotas"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Vyšnių kompotas",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "citrinos sulčių",
+        "section": "Vyšnių kompotas"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilės pastos (neprivaloma)",
+        "section": "Vyšnių kompotas",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "kiaušinių baltymų",
+        "section": "Vanilinis šveicariškas bezė kremas"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Vanilinis šveicariškas bezė kremas"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Vanilinis šveicariškas bezė kremas",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Vanilinis šveicariškas bezė kremas",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 450,
+        "unit": "g",
+        "name": "nesūdyto sviesto, vėsaus, kubeliais",
+        "section": "Vanilinis šveicariškas bezė kremas"
+      }
+    ],
+    "steps": [
+      "Biskvitas: įkaitinkite orkaitę iki 180°C (350°F). Dvi 15 cm (6 in) tortų formas ištepkite riebalais ir dugnus išklokite kepimo popieriumi.",
+      "Vidutiniame dubenyje išplakite kiaušinius, vanilę, pasukas ir jogurtą.",
+      "Planetinio maišytuvo dubenyje su mentės formos maišikliu trumpai sumaišykite miltus, cukrų, kepimo miltelius ir druską. Mažu greičiu po kubelį dėkite sviestą, kol visas įsimaišys, o masė atrodys kaip smėlis.",
+      "Supilkite pusę skystų ingredientų ir maišykite, kol vos susijungs, tada supilkite likusius ir maišykite vidutiniu greičiu, kol vos susijungs. Nuimkite dubenį ir keletą kartų pamaišykite gumine mentele, kad neliktų sausų miltų.",
+      "Paskirstykite į formas (paprasčiausia sveriant) ir kepkite 25–30 minučių, kol biskvitai taps spyruokliuojantys, o iešmelis — sausas. Palikite formose 15 minučių, tada ant grotelių visiškai atvėsinkite.",
+      "Kompotas: vidutiniame puode sumaišykite vyšnias, cukrų ir druską ir ant vidutinės ugnies užvirinkite. Virkite dažnai maišydami 10–15 minučių, kol vaisiai šiek tiek suminkštės, o skystis taps sirupiškas.",
+      "Nukėlę nuo ugnies įmaišykite vanilę ir citrinos sultis, tada perkelkite į sandarų indą ir visiškai atvėsinkite.",
+      "Kremas: kiaušinių baltymus, cukrų ir druską sudėkite į planetinio maišytuvo arba karščiui atsparų dubenį, pastatytą virš puodo su vos verdančiu vandeniu (dubuo neturi liesti vandens). Nuolat plakite, kol masė pasieks 70°C (160°F), o cukrus ištirps.",
+      "Perkelkite dubenį į maišytuvą ir plakite su šluotele didžiausiu greičiu, kol masė taps sniego baltumo ir puri, 6–7 minučių. Po gabalėlį dėkite sviestą — masė gali atrodyti sutraukusi, bet plakite toliau. Įdėję visą sviestą, plakite didžiausiu greičiu dar 10 minučių.",
+      "Įdėkite vanilę ir įmaišykite, tada pakeiskite šluotelę mentės formos maišikliu ir 1 minutę maišykite mažu greičiu, kad išeitų oras.",
+      "Sudėjimas: į konditerinį maišelį su vidutiniu apvaliu antgaliu (arba nukirptu galu) įdėkite kremo užtvarai. Pirmą sluoksnį pritvirtinkite prie sukamo padėklo trupučiu kremo ir aptepkite maždaug ½ puodelio (120 ml) kremo.",
+      "Aplink kraštą išspauskite žiedą ir užpildykite jį vyšnių kompotu, perteklinių sulčių nepildami — viso kompoto gali neprireikti.",
+      "Uždėkite antrą sluoksnį apverstą, kad viršus būtų lygus, lengvai prispausdami ir sujungimą užtepdami kremu.",
+      "Aptepkite plonu pirminiu kremo sluoksniu ir nulyginkite kremo lygintuvu. Jei norite lygaus paviršiaus, dabar palaikykite šaldytuve; laisvam, kaimiškam paviršiui galite tęsti iš karto.",
+      "Padenkite kremo sluoksniu, trumpai išlyginkite lenkta mentele ir lygintuvu, tada mentele suformuokite bangeles. Nulyginkite viršutinį kraštą arba užbaikite pagal norą.",
+      "Iki patiekimo laikykite šaldytuve, o prieš patiekdami palikite 20–30 minučių kambario temperatūroje. Likučius laikykite šaldytuve."
+    ],
+    "tags": [
+      "cherry",
+      "vanilla",
+      "greek-yogurt",
+      "egg-whites",
+      "whipping-meringue",
+      "water-bath-bain-marie"
+    ],
+    "image": "images/recipe-134.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://cloudykitchen.com/blog/vanilla-buttermilk-cake/"
   }
 ]

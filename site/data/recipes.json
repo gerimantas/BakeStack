@@ -17388,5 +17388,1515 @@
     "variant_label": null,
     "categoryGroup": "cinnamon-roll",
     "source_url": "https://cloudykitchen.com/blog/soft-hot-cross-buns/"
+  },
+  {
+    "id": "recipe-127",
+    "title": "Triple Lemon Cake",
+    "category": "cake",
+    "description": "Three layers of lemon yoghurt cake filled with lemon curd and covered in a lemon curd Swiss meringue buttercream. Makes one three-layer 20 cm (8 in) cake; the curd can be made a week ahead.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 600,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Lemon cake"
+      },
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Lemon cake"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tsp",
+        "name": "baking powder",
+        "section": "Lemon cake",
+        "amount_conv": 6.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "baking soda",
+        "section": "Lemon cake",
+        "amount_conv": 8.9,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Lemon cake",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 6,
+        "unit": null,
+        "name": "eggs",
+        "section": "Lemon cake"
+      },
+      {
+        "amount": 320,
+        "unit": "g",
+        "name": "flavourless oil, such as canola",
+        "section": "Lemon cake"
+      },
+      {
+        "amount": 320,
+        "unit": "g",
+        "name": "lemon juice",
+        "section": "Lemon cake"
+      },
+      {
+        "amount": 360,
+        "unit": "g",
+        "name": "Greek yoghurt, at room temperature",
+        "section": "Lemon cake"
+      },
+      {
+        "amount": 160,
+        "unit": "g",
+        "name": "lemon juice",
+        "section": "Lemon curd"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tbsp",
+        "name": "finely grated lemon zest",
+        "section": "Lemon curd"
+      },
+      {
+        "amount": 135,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Lemon curd"
+      },
+      {
+        "amount": 8,
+        "unit": null,
+        "name": "egg yolks",
+        "section": "Lemon curd"
+      },
+      {
+        "amount": 90,
+        "unit": "g",
+        "name": "butter",
+        "section": "Lemon curd"
+      },
+      {
+        "amount": 285,
+        "unit": "g",
+        "name": "egg whites",
+        "section": "Lemon Swiss meringue buttercream"
+      },
+      {
+        "amount": 285,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Lemon Swiss meringue buttercream"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla extract or paste",
+        "section": "Lemon Swiss meringue buttercream",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Lemon Swiss meringue buttercream",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 900,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Lemon Swiss meringue buttercream"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "half of the lemon curd (above)",
+        "section": "Lemon Swiss meringue buttercream"
+      }
+    ],
+    "steps": [
+      "Cake: preheat the oven to 180°C (350°F). Grease and line three 20 cm (8 in) cake tins.",
+      "In a large bowl, whisk the flour, sugar, baking powder, baking soda and salt until well combined. Add the eggs, lemon juice and oil and whisk until smooth, then add the yoghurt and mix until smooth and even.",
+      "Divide between the tins and bake for 35–40 minutes, until lightly golden and a skewer in the middle comes out clean. If the cakes have domed, lay a clean tea towel over each straight from the oven and press gently to flatten. Cool in the tins for 15 minutes, then turn out onto a wire rack and cool completely.",
+      "Curd: put all the curd ingredients in a heatproof bowl over simmering water (the bowl must not touch the water) and stir continuously, watching the edges so it does not catch and go lumpy.",
+      "Cook until thick enough that a finger drawn through the curd on the back of a spoon leaves a clear track. Transfer to a container to cool. The curd keeps for up to a week.",
+      "Buttercream: in the bowl of a stand mixer, briefly whisk the egg whites, sugar and vanilla. Set the bowl over a small pan of water on medium heat (not touching the water) and heat to 65°C (150°F), whisking now and then so the whites do not cook.",
+      "Move the bowl to the mixer and whip on high with the whisk until doubled and completely cool — the outside of the bowl should feel cold, up to 20 minutes. This matters: warm meringue melts the butter.",
+      "With the motor running, add the butter a piece at a time. If it looks curdled or runny, keep whipping — it will come together. Add the salt and half the curd and beat well.",
+      "Assembly: level the cakes with a bread knife. Put the first layer on a turntable or cake stand, spread with a thick layer of buttercream and make the edge slightly higher than the middle (or pipe a ring of buttercream around the edge) to hold the curd in. Spread with about half the remaining curd.",
+      "Add the second layer and repeat with buttercream and the rest of the curd, then top with the third layer.",
+      "Crumb coat: spread a thin layer of buttercream over the whole cake and smooth it with a bench scraper, then chill for 30 minutes to 1 hour to set.",
+      "Cover with a final layer of buttercream and finish with any texture you like (a frosting comb works well). Decorate with more lemon zest if you like. If transporting the cake, chill it long enough for the buttercream to set completely."
+    ],
+    "tags": [
+      "lemon",
+      "vanilla",
+      "greek-yogurt",
+      "egg-yolks",
+      "egg-whites",
+      "baking-powder",
+      "baking-soda",
+      "whipping-meringue",
+      "water-bath-bain-marie"
+    ],
+    "image": "images/recipe-127.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://cloudykitchen.com/blog/2017-1-11-triple-lemon-cake/"
+  },
+  {
+    "id": "recipe-128",
+    "title": "Carrot Cake with Cream Cheese Icing",
+    "category": "cake",
+    "description": "A three-layer 15 cm (6 in) spiced carrot cake with wholemeal flour, covered in lemony cream cheese icing and piped all over with coloured 'blobs' of icing — an Easter cake, with mini eggs if you like.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "raw sugar",
+        "section": "Carrot cake"
+      },
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "neutral oil, such as canola",
+        "section": "Carrot cake"
+      },
+      {
+        "amount": 4,
+        "unit": null,
+        "name": "eggs, at room temperature",
+        "section": "Carrot cake"
+      },
+      {
+        "amount": 140,
+        "unit": "g",
+        "name": "wholemeal flour",
+        "section": "Carrot cake"
+      },
+      {
+        "amount": 140,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Carrot cake"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Carrot cake",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "baking soda",
+        "section": "Carrot cake",
+        "amount_conv": 8.9,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "ground cinnamon",
+        "section": "Carrot cake",
+        "amount_conv": 2.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "mixed spice",
+        "section": "Carrot cake"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "ground ginger",
+        "section": "Carrot cake",
+        "amount_conv": 2.6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 360,
+        "unit": "g",
+        "name": "grated carrot (about 3 medium carrots)",
+        "section": "Carrot cake"
+      },
+      {
+        "amount": 340,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature for 30 minutes",
+        "section": "Cream cheese icing"
+      },
+      {
+        "amount": 675,
+        "unit": "g",
+        "name": "full-fat cream cheese, cold",
+        "section": "Cream cheese icing"
+      },
+      {
+        "amount": 1350,
+        "unit": "g",
+        "name": "powdered sugar",
+        "section": "Cream cheese icing"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "juice of 1½ lemons",
+        "section": "Cream cheese icing"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "gel food colouring",
+        "section": "Cream cheese icing"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "mini eggs or other Easter eggs (optional)",
+        "section": "To decorate"
+      }
+    ],
+    "steps": [
+      "Cake: preheat the oven to 180°C (350°F). Grease and flour three 15 cm (6 in) cake tins.",
+      "With a stand mixer or electric beater, mix the sugar, eggs and oil until well combined. Sift in both flours, the baking soda, salt and spices and mix on low for 1–2 minutes until combined. Add the carrot and mix well.",
+      "Divide between the tins and bake for 35–40 minutes, until the centre springs back when lightly pressed and a skewer comes out clean. Cool in the tins for 15 minutes, then turn out onto a wire rack and cool completely. To make ahead, wrap well in plastic wrap and refrigerate.",
+      "Icing: with the paddle attachment (or in a large bowl), beat the butter and cream cheese on high until pale and fluffy, 3–4 minutes. Add the powdered sugar and mix on low to combine, then beat on high for another 3–4 minutes until light and fluffy. Beat in the lemon juice. Keep in the fridge and beat again or stir well before using.",
+      "For a plain smooth finish without the piped blobs, you need less icing: 225 g butter, 450 g cream cheese, 900 g powdered sugar and the juice of 1 lemon.",
+      "Assembly: level the cakes if needed. Put the first layer on a turntable or cake stand, spread with icing and smooth with an offset spatula. Repeat with the other two layers.",
+      "Spread icing evenly over the top and sides, smoothing the top first, then the sides with a scraper. Level the top edge with the scraper or spatula so the cake is evenly and smoothly coated. Chill for 30 minutes.",
+      "Divide the remaining icing between four bowls and tint three of them with a little gel colouring, leaving one white. Put each into a piping bag fitted with a different-sized French star tip.",
+      "Pipe blobs over the cake — start with a few big blobs of one colour, then fill the gaps with each of the others until the top and sides are covered. Add Easter eggs wherever you like.",
+      "Chill for at least 30 minutes before slicing and serving."
+    ],
+    "tags": [
+      "cinnamon",
+      "ginger",
+      "lemon",
+      "cream-cheese",
+      "food-coloring",
+      "baking-soda"
+    ],
+    "image": "images/recipe-128.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://cloudykitchen.com/blog/2017-4-14-carrot-cake-with-cream-cheese-icing-the-perfect-easter-cake/"
+  },
+  {
+    "id": "recipe-129",
+    "title": "Earl Grey Layer Cake with Raspberry Filling and Vanilla German Buttercream",
+    "category": "cake",
+    "description": "A delicate Earl Grey infused three-layer 20 cm (8 in) cake, filled with a tart raspberry filling and finished semi-naked with a creamy vanilla bean German buttercream (a custard-based buttercream).",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "whole milk",
+        "section": "Earl Grey cake"
+      },
+      {
+        "amount": 12,
+        "unit": null,
+        "name": "Earl Grey tea bags",
+        "section": "Earl Grey cake"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "vanilla bean paste",
+        "section": "Earl Grey cake",
+        "amount_conv": 16.3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 675,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Earl Grey cake"
+      },
+      {
+        "amount": 3.75,
+        "unit": "tsp",
+        "name": "baking powder",
+        "section": "Earl Grey cake",
+        "amount_conv": 16.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 5,
+        "unit": "tsp",
+        "name": "Earl Grey tea leaves, finely ground",
+        "section": "Earl Grey cake"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Earl Grey cake",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 340,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Earl Grey cake"
+      },
+      {
+        "amount": 600,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Earl Grey cake"
+      },
+      {
+        "amount": 6,
+        "unit": null,
+        "name": "eggs, at room temperature",
+        "section": "Earl Grey cake"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "3 cups frozen raspberries",
+        "section": "Raspberry filling"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Raspberry filling"
+      },
+      {
+        "amount": 375,
+        "unit": "g",
+        "name": "whole milk",
+        "section": "Vanilla bean German buttercream"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "vanilla bean paste, extract, or the seeds of one vanilla bean",
+        "section": "Vanilla bean German buttercream",
+        "amount_conv": 16.3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Vanilla bean German buttercream"
+      },
+      {
+        "amount": 3,
+        "unit": "tbsp",
+        "name": "cornstarch",
+        "section": "Vanilla bean German buttercream",
+        "amount_conv": 24,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg",
+        "section": "Vanilla bean German buttercream"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "egg yolks",
+        "section": "Vanilla bean German buttercream"
+      },
+      {
+        "amount": 675,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Vanilla bean German buttercream"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Vanilla bean German buttercream"
+      }
+    ],
+    "steps": [
+      "Cake: preheat the oven to 180°C (350°F). Grease and line three 20 cm (8 in) cake pans.",
+      "Heat the milk in a medium saucepan until just short of a simmer. Add the tea bags and steep for 20 minutes, then remove them, squeezing out as much flavour as you can. Measure 360 ml (1½ cups) of the infused milk, topping up with plain milk if needed. Add the vanilla and cool to room temperature.",
+      "Sift the flour, baking powder, ground tea and salt into a medium bowl.",
+      "In a stand mixer fitted with the paddle, cream the butter and sugar on high until light and fluffy, about 5 minutes. Add the eggs one at a time, scraping the bowl well after each.",
+      "Add the flour mixture in three additions, alternating with the milk in two, starting and ending with flour. Mix until just combined.",
+      "Divide between the pans and bake for 40–50 minutes, until a skewer in the middle comes out clean. Cool in the tins for 10 minutes, then on a wire rack completely. Level the tops. If not using straight away, wrap tightly and refrigerate.",
+      "Raspberry filling: bring the frozen raspberries to a boil in a medium pan over medium heat, stirring occasionally, and boil hard for 1 minute. Add the sugar and boil for another 3 minutes, stirring often. Transfer to a jar and cool completely.",
+      "Buttercream: whisk the sugar, cornstarch, egg, egg yolks and salt in a bowl. Heat the milk and vanilla in a medium non-stick saucepan until just short of a simmer, then take it off the heat.",
+      "Whisking constantly, pour half the hot milk into the egg mixture to temper it, then pour everything back into the pan. Cook over medium heat, whisking constantly, until it starts to bubble and thickens; cook for 1 more minute.",
+      "Pour into a shallow dish or the mixer bowl, press plastic wrap onto the surface and refrigerate until cold. To hurry it, set the bowl in an ice bath and stir often.",
+      "With the whisk, beat the cold custard on medium until creamy and lump-free. Add the butter a few cubes at a time until fully incorporated, then switch to the paddle and beat for a few minutes until smooth and silky.",
+      "Assembly: fill a piping bag with a round tip (or snipped end) with a few scoops of buttercream for the dam. Put the first layer on a turntable, spread with a thin layer of buttercream and pipe a ring around the edge. Spread about ⅓ cup (80 ml) of raspberry filling inside the ring.",
+      "Add the second layer and repeat the dam and filling, then top with the third layer.",
+      "Spread an even layer of buttercream over the top and sides and smooth the sides with a scraper, adding buttercream where needed. For a semi-naked look, keep scraping off and adding buttercream until you like it. Sharpen the top edge with the offset spatula.",
+      "Chill for about 1 hour to firm up, then move to a cake stand and decorate as you like. Store leftovers in an airtight container."
+    ],
+    "tags": [
+      "raspberry",
+      "vanilla",
+      "butter",
+      "cornstarch",
+      "egg-yolks",
+      "baking-powder",
+      "hot-infusion",
+      "creaming-method",
+      "tempering-eggs"
+    ],
+    "image": "images/recipe-129.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://cloudykitchen.com/blog/earl-grey-layer-cake/"
+  },
+  {
+    "id": "recipe-130",
+    "title": "Chocolate Brownie Cake with Hazelnut Filling and Mocha Buttercream",
+    "category": "cake",
+    "description": "A three-layer 15 cm (6 in) cake of fudgy brownie layers, filled with homemade chocolate hazelnut spread and covered in a mocha German buttercream, with optional coffee buttercream stripes. Serves 8–10.",
+    "servings": 8,
+    "ingredients": [
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "unsalted butter",
+        "section": "Chocolate brownie cake"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "dark chocolate (at least 70%), roughly chopped",
+        "section": "Chocolate brownie cake"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Chocolate brownie cake"
+      },
+      {
+        "amount": 135,
+        "unit": "g",
+        "name": "dark brown sugar",
+        "section": "Chocolate brownie cake"
+      },
+      {
+        "amount": 5,
+        "unit": null,
+        "name": "eggs, at room temperature",
+        "section": "Chocolate brownie cake"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla extract or vanilla bean paste",
+        "section": "Chocolate brownie cake",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "neutral oil",
+        "section": "Chocolate brownie cake"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Chocolate brownie cake"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "cocoa powder",
+        "section": "Chocolate brownie cake"
+      },
+      {
+        "amount": 0.75,
+        "unit": "tsp",
+        "name": "baking powder",
+        "section": "Chocolate brownie cake",
+        "amount_conv": 3.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Chocolate brownie cake",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 280,
+        "unit": "g",
+        "name": "raw hazelnuts",
+        "section": "Chocolate hazelnut filling"
+      },
+      {
+        "amount": 424,
+        "unit": "g",
+        "name": "dark chocolate (at least 70%), melted",
+        "section": "Chocolate hazelnut filling"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Chocolate hazelnut filling"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "kosher salt",
+        "section": "Chocolate hazelnut filling",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 375,
+        "unit": "g",
+        "name": "whole milk",
+        "section": "Mocha German buttercream"
+      },
+      {
+        "amount": 35,
+        "unit": "g",
+        "name": "coarsely ground coffee",
+        "section": "Mocha German buttercream"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Mocha German buttercream",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 24,
+        "unit": "g",
+        "name": "cornstarch",
+        "section": "Mocha German buttercream"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Mocha German buttercream"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg",
+        "section": "Mocha German buttercream"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "egg yolks",
+        "section": "Mocha German buttercream"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Mocha German buttercream"
+      },
+      {
+        "amount": 675,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Mocha German buttercream"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "dark chocolate (70%), melted and cooled",
+        "section": "Mocha German buttercream"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "gold leaf (optional)",
+        "section": "To decorate"
+      }
+    ],
+    "steps": [
+      "Cake: preheat the oven to 180°C (350°F). Grease three 15 cm (6 in) cake pans and line with parchment.",
+      "Melt the butter and chocolate in a small saucepan over medium heat, stirring constantly, until smooth. Set aside to cool. Whisk the flour, cocoa, baking powder and salt in a small bowl.",
+      "In a large bowl, whisk both sugars, the eggs, vanilla and oil. Mix in the cooled chocolate, then gently fold in the dry ingredients.",
+      "Divide between the pans and bang them on the counter once or twice to settle. Bake for 25–30 minutes, checking from 20, until the tops are set and a skewer comes out with a few crumbs attached.",
+      "Cool in the tins for 10 minutes, then on a wire rack completely. To make ahead, wrap tightly once cool and refrigerate.",
+      "Filling: roast the hazelnuts at 180°C (350°F) for 8–10 minutes, shaking occasionally and checking often, until golden. Cool completely, rub off the skins (do not worry about stubborn ones) and pulse briefly in a food processor to chop.",
+      "Add the melted chocolate, sugar and salt, pulse to combine, then blend on high for at least 5 minutes, longer if needed. Keep at room temperature until needed.",
+      "Buttercream: heat the milk in a medium saucepan until just short of a simmer. Off the heat, stir in the coffee and steep for 20 minutes. Strain through a very fine sieve, weigh and top up with milk to 375 g, then bring back to just short of a simmer. Meanwhile, whisk the vanilla, cornstarch, sugar, egg, egg yolks and salt in a bowl.",
+      "Whisking constantly, pour half the hot milk into the egg mixture, then pour everything back into the pan. Cook over medium heat, whisking constantly, until it bubbles and thickens; cook for 1 more minute.",
+      "Pour into a shallow container or the mixer bowl, press plastic wrap onto the surface and refrigerate until cold — at least 4 hours, ideally overnight. An ice bath, stirring often, speeds this up.",
+      "With the whisk, beat the cold custard on medium until creamy and lump-free. Add the butter a few cubes at a time until incorporated; it may look curdled, but keep whipping. Whip for 2 more minutes.",
+      "Take out 250 g of this coffee buttercream and put it in a piping bag (do not cut the tip yet) for the stripes. Mix the cooled melted chocolate into the rest to make the mocha buttercream.",
+      "Assembly: level the cakes if they domed. Fill a piping bag with a medium round tip with some mocha buttercream for the dam. Fix the first layer to a turntable with a dab of buttercream, spread with about ½ cup (120 ml) mocha buttercream, pipe a ring around the edge and fill it with about ⅓ cup (80 ml) hazelnut filling.",
+      "Add the second layer, pressing lightly and sealing the join with a little buttercream, and repeat. Top with the third layer upside down for a flat top.",
+      "Crumb coat: spread a thin layer of buttercream over the whole cake and smooth it with a bench scraper, then chill for 30–45 minutes to set.",
+      "Without stripes: cover with a second, thicker layer of mocha buttercream, smooth, and decorate as you like.",
+      "With stripes: apply a thick, completely smooth layer of mocha buttercream with no holes and chill for 15 minutes. Run a warmed icing comb (rinsed under hot water and dried) around the cake to make sharp, deep grooves, going round a few times if needed.",
+      "Freeze for 30 minutes. Snip a small hole in the bag of coffee buttercream and pipe it into the grooves, overfilling slightly. Smooth with a warmed scraper, wiping it between passes, then chill for 10–20 minutes.",
+      "Put the remaining buttercreams (mocha, coffee and the marbled scrapings) into piping bags with French star tips. Add gold leaf where you like, then pipe blobs of buttercream at random over the cake.",
+      "Chill until ready to serve, then take out about 1 hour before serving to come to room temperature. Store leftovers in an airtight container in the fridge."
+    ],
+    "tags": [
+      "chocolate",
+      "dark-chocolate",
+      "hazelnut",
+      "coffee-espresso",
+      "cocoa-powder",
+      "cornstarch",
+      "egg-yolks",
+      "hot-infusion",
+      "tempering-eggs"
+    ],
+    "image": "images/recipe-130.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://cloudykitchen.com/blog/chocolate-brownie-cake-with-chocolate-hazelnut-filling-and-mocha-german-buttercream/"
+  },
+  {
+    "id": "recipe-131",
+    "title": "Chocolate and Peanut Butter Layer Cake",
+    "category": "cake",
+    "description": "A four-layer 20 cm (8 in) cake alternating chocolate and peanut butter layers, filled with chocolate and peanut butter buttercreams and covered in piped blobs of both.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 133,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Chocolate cake"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "light brown sugar",
+        "section": "Chocolate cake"
+      },
+      {
+        "amount": 55,
+        "unit": "g",
+        "name": "canola oil",
+        "section": "Chocolate cake"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "large egg, at room temperature",
+        "section": "Chocolate cake"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "large egg yolk, at room temperature",
+        "section": "Chocolate cake"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tsp",
+        "name": "vanilla extract",
+        "section": "Chocolate cake",
+        "amount_conv": 6.6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 210,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Chocolate cake"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "unsweetened cocoa powder",
+        "section": "Chocolate cake"
+      },
+      {
+        "amount": 1.75,
+        "unit": "tsp",
+        "name": "baking powder",
+        "section": "Chocolate cake",
+        "amount_conv": 7.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.75,
+        "unit": "tsp",
+        "name": "kosher salt",
+        "section": "Chocolate cake",
+        "amount_conv": 2.3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "baking soda",
+        "section": "Chocolate cake",
+        "amount_conv": 2.2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 240,
+        "unit": "g",
+        "name": "whole milk, at room temperature",
+        "section": "Chocolate cake"
+      },
+      {
+        "amount": 160,
+        "unit": "g",
+        "name": "hot coffee",
+        "section": "Chocolate cake"
+      },
+      {
+        "amount": 220,
+        "unit": "g",
+        "name": "light brown sugar",
+        "section": "Peanut butter cake"
+      },
+      {
+        "amount": 85,
+        "unit": "g",
+        "name": "peanut butter (regular smooth packaged; natural will separate)",
+        "section": "Peanut butter cake"
+      },
+      {
+        "amount": 75,
+        "unit": "g",
+        "name": "vegetable or other neutral oil",
+        "section": "Peanut butter cake"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "large eggs, at room temperature",
+        "section": "Peanut butter cake"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla extract",
+        "section": "Peanut butter cake",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 185,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Peanut butter cake"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "baking powder",
+        "section": "Peanut butter cake",
+        "amount_conv": 8.9,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.625,
+        "unit": "tsp",
+        "name": "baking soda (½ tsp plus ⅛ tsp)",
+        "section": "Peanut butter cake",
+        "amount_conv": 2.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "kosher salt",
+        "section": "Peanut butter cake",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 240,
+        "unit": "g",
+        "name": "buttermilk, at room temperature",
+        "section": "Peanut butter cake"
+      },
+      {
+        "amount": 350,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Chocolate buttercream"
+      },
+      {
+        "amount": 130,
+        "unit": "g",
+        "name": "unsweetened cocoa (Dutch-process)",
+        "section": "Chocolate buttercream"
+      },
+      {
+        "amount": 720,
+        "unit": "g",
+        "name": "powdered sugar, sifted",
+        "section": "Chocolate buttercream"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "vanilla",
+        "section": "Chocolate buttercream",
+        "amount_conv": 8.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "kosher salt",
+        "section": "Chocolate buttercream",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 90,
+        "unit": "g",
+        "name": "heavy whipping cream, plus more as needed",
+        "section": "Chocolate buttercream"
+      },
+      {
+        "amount": 255,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Peanut butter buttercream"
+      },
+      {
+        "amount": 130,
+        "unit": "g",
+        "name": "smooth peanut butter",
+        "section": "Peanut butter buttercream"
+      },
+      {
+        "amount": 810,
+        "unit": "g",
+        "name": "powdered sugar, sifted",
+        "section": "Peanut butter buttercream"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Peanut butter buttercream",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 135,
+        "unit": "g",
+        "name": "heavy cream, plus more as needed",
+        "section": "Peanut butter buttercream"
+      }
+    ],
+    "steps": [
+      "Chocolate cake: preheat the oven to 180°C (350°F). Butter and flour two 20 cm (8 in) round pans and line the bottoms with parchment.",
+      "In a large bowl, stir the sugars and oil together. Add the egg, egg yolk and vanilla and stir to combine.",
+      "Sift the flour, cocoa, baking powder, salt and baking soda into a medium bowl. Add to the sugar mixture alternately with the milk, starting and ending with flour and stirring just until combined each time. Stir in the hot coffee just until combined, then divide between the pans.",
+      "Bake for 25–30 minutes, until a toothpick in the centre comes out clean. Cool in the pans for 10 minutes, then on a wire rack completely. To make ahead, wrap tightly once cool and freeze overnight.",
+      "Peanut butter cake: prepare two more 20 cm (8 in) pans the same way. In a large bowl, stir the brown sugar, peanut butter and oil until creamy. Add the eggs and vanilla and stir until just combined.",
+      "Sift the flour, baking powder, baking soda and salt into a medium bowl. Add to the sugar mixture alternately with the buttermilk, starting and ending with flour and stirring just until combined. Divide between the pans (weighing is easiest).",
+      "Bake for 25–30 minutes, until a toothpick comes out clean. Cool in the pans for 10 minutes, then on wire racks completely. To make ahead, wrap tightly and freeze overnight.",
+      "Chocolate buttercream: with the paddle, beat the butter and cocoa on low until well combined. Add the powdered sugar about 125 g (1 cup) at a time, alternating with the cream a tablespoon at a time, beating until combined. Add the vanilla and salt and beat on medium-high until smooth, about 1 minute.",
+      "Add more cream if needed and beat on high until soft and spreadable, then beat on low for 1–2 minutes to knock out air bubbles. Use straight away, or press plastic wrap onto the surface until needed.",
+      "Peanut butter buttercream: with the paddle, beat the butter and peanut butter on medium until smooth. On low, gradually add the powdered sugar and salt, then the cream, until spreadable. Add more cream if needed, beat on high until soft, then on low for 1–2 minutes to knock out air. Cover as above until needed.",
+      "Assembly: fix a peanut butter layer to a turntable with a little buttercream. Spread with about ¾ cup (180 ml) chocolate buttercream. Top with a chocolate layer and ¾ cup peanut butter buttercream. Repeat with the second peanut butter layer and chocolate buttercream, then finish with the second chocolate layer, upside down for a flat top.",
+      "Crumb coat: pipe both buttercreams around the outside of the cake while spinning the turntable (gaps are fine), then smooth with a scraper, collecting the scrapings in a separate bowl. Chill for about 20 minutes.",
+      "Fit three piping bags with French star tips. Mix the scrapings well, adding chocolate or peanut butter buttercream until they are an even light brown, and put in one bag; put the two remaining buttercreams in the others.",
+      "Pipe blobs of buttercream at random over the whole cake, switching colours now and then, until it is completely covered.",
+      "Keep in the fridge until ready to serve. Once cut, store in an airtight container in the fridge."
+    ],
+    "tags": [
+      "chocolate",
+      "peanut-butter",
+      "coffee-espresso",
+      "cocoa-powder",
+      "heavy-whipping-cream",
+      "baking-powder",
+      "baking-soda"
+    ],
+    "image": "images/recipe-131.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://cloudykitchen.com/blog/chocolate-and-peanut-butter-layer-cake-with-chocolate-and-peanut-butter-buttercream/"
+  },
+  {
+    "id": "recipe-132",
+    "title": "Chocolate Strawberry Cake",
+    "category": "cake",
+    "description": "A tall three-layer 20 cm (8 in) chocolate cake filled with jam and covered in a pink strawberry Swiss meringue buttercream flavoured with freeze-dried strawberries, finished with a piped shell border.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 420,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Chocolate layer cake"
+      },
+      {
+        "amount": 615,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Chocolate layer cake"
+      },
+      {
+        "amount": 112,
+        "unit": "g",
+        "name": "cocoa powder",
+        "section": "Chocolate layer cake"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "baking powder",
+        "section": "Chocolate layer cake",
+        "amount_conv": 8.9,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "baking soda",
+        "section": "Chocolate layer cake",
+        "amount_conv": 10,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Chocolate layer cake",
+        "amount_conv": 13.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "espresso powder",
+        "section": "Chocolate layer cake",
+        "amount_conv": 4.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 345,
+        "unit": "g",
+        "name": "whole milk, at room temperature",
+        "section": "Chocolate layer cake"
+      },
+      {
+        "amount": 157,
+        "unit": "g",
+        "name": "vegetable or neutral oil",
+        "section": "Chocolate layer cake"
+      },
+      {
+        "amount": 3,
+        "unit": null,
+        "name": "eggs, at room temperature",
+        "section": "Chocolate layer cake"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "vanilla extract",
+        "section": "Chocolate layer cake",
+        "amount_conv": 13.3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 345,
+        "unit": "g",
+        "name": "boiling water",
+        "section": "Chocolate layer cake"
+      },
+      {
+        "amount": 190,
+        "unit": "g",
+        "name": "egg whites",
+        "section": "Strawberry Swiss meringue buttercream"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Strawberry Swiss meringue buttercream"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Strawberry Swiss meringue buttercream",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Strawberry Swiss meringue buttercream",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 700,
+        "unit": "g",
+        "name": "unsalted butter, cool, cubed",
+        "section": "Strawberry Swiss meringue buttercream"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "freeze-dried strawberries, ground and sifted (or freeze-dried strawberry powder)",
+        "section": "Strawberry Swiss meringue buttercream"
+      },
+      {
+        "amount": 240,
+        "unit": "g",
+        "name": "jam (mixed berry or strawberry — whatever you have)",
+        "section": "Jam filling"
+      }
+    ],
+    "steps": [
+      "Cake: preheat the oven to 180°C (350°F). Prepare three 20 cm (8 in) round pans, 7.5 cm (3 in) deep, with butter and cocoa, or baking spray and parchment.",
+      "In a stand mixer fitted with the whisk, combine all the dry ingredients. Add the milk, oil, eggs and vanilla and whisk, first on low, then on medium for 30 seconds.",
+      "Add the boiling water, cover the mixer with a tea towel against splashes and mix on medium-high for another 30 seconds.",
+      "Divide between the pans, about 675 g each. Bake for about 35 minutes, until the cakes spring back when gently poked and start to pull away from the sides.",
+      "Cool in the pans for 5 minutes, then turn out and cool completely before levelling and frosting. Wrap tightly and freeze until ready to use.",
+      "Buttercream: put the egg whites, sugar and salt in the bowl of a stand mixer or a heatproof bowl set over a pot of simmering water (the bowl must not touch the water). Whisk constantly until the mixture reaches 70°C (160°F) and the sugar has dissolved.",
+      "Move the bowl to the mixer and whip with the whisk on high until snowy white and fluffy, 8–10 minutes. Add the butter one piece at a time — it may look curdled, but keep mixing. Once all the butter is in, mix on high for another 10 minutes.",
+      "Add the vanilla. Once smooth and silky, add the strawberry powder, switch to the paddle and mix on medium until incorporated, then on low for 1 minute to knock out air. Use straight away; keep leftovers in the fridge.",
+      "Assembly: level the cakes. Put some buttercream in a piping bag with a large open star tip (Wilton 1M) for the dams and the top border.",
+      "Fix the first layer to a turntable with a dab of buttercream. Spread with about 1 cup (240 ml) buttercream, pipe a ring around the edge and fill it with about 6 tablespoons of jam.",
+      "Add the second layer, pressing lightly and sealing the join with a little buttercream, and repeat. Top with the third layer upside down for a flat top. Return the buttercream from the piping bag to the bowl.",
+      "Crumb coat: spread a thin layer of buttercream over the whole cake and smooth it with a bench scraper, then chill for 20–30 minutes to set.",
+      "Cover the top and sides with a smooth layer of buttercream. Make a spiral pattern on the sides by holding an offset spatula against the cake while turning the turntable and slowly moving the spatula upward. Smooth the top edge.",
+      "Refill the piping bag and pipe a shell border on top of the cake.",
+      "Chill until ready to serve, then take out about 1 hour before serving to come to room temperature. Store leftovers in an airtight container in the fridge."
+    ],
+    "tags": [
+      "chocolate",
+      "strawberry",
+      "espresso-instant-coffee",
+      "cocoa-powder",
+      "egg-whites",
+      "whipping-meringue",
+      "water-bath-bain-marie"
+    ],
+    "image": "images/recipe-132.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://cloudykitchen.com/blog/chocolate-layer-cake-with-jam-filling-and-strawberry-swiss-meringue-buttercream/"
+  },
+  {
+    "id": "recipe-133",
+    "title": "Banana Layer Cake with Salted Caramel and Peanut Butter Buttercream",
+    "category": "cake",
+    "description": "Three layers of moist banana cake in a 20 cm (8 in) cake, stacked with smooth salted caramel and a peanut butter Swiss meringue buttercream, finished with vanilla buttercream stripes for a classic bakery look.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 315,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Banana layer cake"
+      },
+      {
+        "amount": 440,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Banana layer cake"
+      },
+      {
+        "amount": 520,
+        "unit": "g",
+        "name": "very ripe bananas (about 5), well mashed",
+        "section": "Banana layer cake"
+      },
+      {
+        "amount": 5,
+        "unit": null,
+        "name": "eggs, at room temperature",
+        "section": "Banana layer cake"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste or extract",
+        "section": "Banana layer cake",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 75,
+        "unit": "g",
+        "name": "whole milk",
+        "section": "Banana layer cake"
+      },
+      {
+        "amount": 2.5,
+        "unit": "tsp",
+        "name": "baking soda",
+        "section": "Banana layer cake",
+        "amount_conv": 11.2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 600,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Banana layer cake"
+      },
+      {
+        "amount": 2.5,
+        "unit": "tsp",
+        "name": "baking powder",
+        "section": "Banana layer cake",
+        "amount_conv": 11.2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "kosher salt",
+        "section": "Banana layer cake",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Salted caramel filling"
+      },
+      {
+        "amount": 90,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Salted caramel filling"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "heavy cream, warmed",
+        "section": "Salted caramel filling"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Salted caramel filling",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "flaky sea salt",
+        "section": "Salted caramel filling"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "egg whites",
+        "section": "Peanut butter Swiss meringue buttercream"
+      },
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Peanut butter Swiss meringue buttercream"
+      },
+      {
+        "amount": 0.75,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Peanut butter Swiss meringue buttercream",
+        "amount_conv": 4.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Peanut butter Swiss meringue buttercream",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 900,
+        "unit": "g",
+        "name": "unsalted butter, cubed",
+        "section": "Peanut butter Swiss meringue buttercream"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "smooth peanut butter",
+        "section": "Peanut butter Swiss meringue buttercream"
+      }
+    ],
+    "steps": [
+      "Cake: preheat the oven to 180°C (350°F). Grease three 20 cm (8 in) cake pans and line the bottoms with parchment.",
+      "With the paddle or an electric mixer, cream the butter and sugar until light and fluffy. Beat in the bananas, then the eggs one at a time, scraping the bowl down well. Add the vanilla.",
+      "Heat the milk until boiling, stir in the baking soda and add to the mixture, mixing until well combined.",
+      "Sift in the flour, baking powder and salt and mix briefly until just combined. Divide between the pans (weighing is easiest).",
+      "Bake for 35–45 minutes, checking from 35, until a skewer in the centre comes out clean. Cool in the pans for 15 minutes, then turn out onto a wire rack and cool completely.",
+      "Caramel: heat the sugar in a medium heavy-bottomed saucepan over medium heat, stirring constantly. It clumps, then melts. Cook until amber.",
+      "Take off the heat and immediately add all the butter — it will bubble up hard. Once the butter is in, whisk in the cream, then stir in the salt and vanilla. Pour into a glass jar and cool completely.",
+      "Buttercream: put the egg whites, sugar and salt in the bowl of a stand mixer or a heatproof bowl set over a pot of simmering water (the bowl must not touch the water). Whisk constantly until the mixture reaches 70°C (160°F) and the sugar has dissolved.",
+      "Move the bowl to the mixer and whip with the whisk on high until snowy white and fluffy, 8–10 minutes. Add the butter one piece at a time — it may look curdled, but keep mixing. Once all the butter is in, mix on high for another 10 minutes.",
+      "Add the vanilla and mix for another 2–3 minutes until smooth and silky, then switch to the paddle and mix on low for 1 minute to knock out air.",
+      "For stripes, take out about 350 g of this vanilla buttercream. Mix the peanut butter into the rest. (Without stripes, mix the peanut butter into all of it.)",
+      "Assembly: level the cakes. Put some peanut butter buttercream in a piping bag with a medium round tip for the dams. Fix the first layer to a cake board or turntable with a dab of buttercream, spread with about ½ cup (120 ml) buttercream, pipe a ring around the edge and fill it with caramel, spreading to the edges.",
+      "Add the second layer, pressing lightly and sealing the join with buttercream, and repeat. Top with the third layer upside down for a flat top. Return the buttercream from the piping bag to the bowl.",
+      "Crumb coat: spread a thin layer of buttercream over the whole cake and smooth it with a bench scraper, then chill for 30–45 minutes to set.",
+      "Without stripes: cover with a second, thicker layer of peanut butter buttercream, smooth, and decorate as you like.",
+      "With stripes: apply a thick, completely smooth layer of peanut butter buttercream with no holes and chill for 15 minutes. Run a warmed icing comb around the cake to make sharp, deep grooves, going round a few times if needed.",
+      "Freeze for 30 minutes. Put the reserved vanilla buttercream in a piping bag, snip the end and pipe it into the grooves, overfilling slightly. Smooth with a warmed scraper, wiping between passes. The cake is frozen, so trim the excess off the top with the spatula rather than scraping inward. Chill for 10–20 minutes.",
+      "To finish, pipe a shell border with the remaining buttercream using a large open star tip (Wilton 1M).",
+      "Store leftovers in the fridge, covered or in an airtight container. To freeze, chill until the buttercream sets (about 30 minutes), then wrap very tightly and freeze."
+    ],
+    "tags": [
+      "banana",
+      "salted-caramel",
+      "caramel",
+      "peanut-butter",
+      "vanilla",
+      "egg-whites",
+      "creaming-method",
+      "whipping-meringue",
+      "caramelizing-sugar"
+    ],
+    "image": "images/recipe-133.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://cloudykitchen.com/blog/banana-layer-cake-with-salted-caramel-filling-and-peanut-butter-swiss-meringue-buttercream/"
+  },
+  {
+    "id": "recipe-134",
+    "title": "Vanilla Buttermilk Cake with Cherry Compote",
+    "category": "cake",
+    "description": "A small two-layer 15 cm (6 in) vanilla bean buttermilk cake, made tender by the reverse creaming method, filled with cherry compote and swooped with vanilla Swiss meringue buttercream. Serves 8.",
+    "servings": 8,
+    "ingredients": [
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "large eggs, at room temperature",
+        "section": "Vanilla bean buttermilk cake"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Vanilla bean buttermilk cake",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 130,
+        "unit": "g",
+        "name": "buttermilk, at room temperature",
+        "section": "Vanilla bean buttermilk cake"
+      },
+      {
+        "amount": 40,
+        "unit": "g",
+        "name": "full-fat Greek yoghurt",
+        "section": "Vanilla bean buttermilk cake"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Vanilla bean buttermilk cake"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Vanilla bean buttermilk cake"
+      },
+      {
+        "amount": 1.25,
+        "unit": "tsp",
+        "name": "baking powder",
+        "section": "Vanilla bean buttermilk cake",
+        "amount_conv": 5.6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Vanilla bean buttermilk cake",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 115,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Vanilla bean buttermilk cake"
+      },
+      {
+        "amount": 450,
+        "unit": "g",
+        "name": "pitted cherries, diced",
+        "section": "Cherry compote"
+      },
+      {
+        "amount": 75,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Cherry compote"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Cherry compote",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "lemon juice",
+        "section": "Cherry compote"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilla bean paste (optional)",
+        "section": "Cherry compote",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "egg whites",
+        "section": "Vanilla bean Swiss meringue buttercream"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Vanilla bean Swiss meringue buttercream"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Vanilla bean Swiss meringue buttercream",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Vanilla bean Swiss meringue buttercream",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 450,
+        "unit": "g",
+        "name": "unsalted butter, cool, cubed",
+        "section": "Vanilla bean Swiss meringue buttercream"
+      }
+    ],
+    "steps": [
+      "Cake: preheat the oven to 180°C (350°F). Grease two 15 cm (6 in) cake pans and line the bottoms with parchment.",
+      "In a medium bowl, whisk the eggs, vanilla, buttermilk and yoghurt.",
+      "In a stand mixer fitted with the paddle, briefly mix the flour, sugar, baking powder and salt. On low, add the butter a cube at a time until it is fully worked in and the mixture looks like sand.",
+      "Add half the wet ingredients and mix until just combined, then add the rest and mix on medium until just combined. Take the bowl off and fold a few times with a rubber spatula so no dry flour remains.",
+      "Divide between the pans (weighing is easiest) and bake for 25–30 minutes, until springy and a skewer comes out clean. Cool in the pans for 15 minutes, then on a wire rack completely.",
+      "Compote: mix the cherries, sugar and salt in a medium saucepan and bring to a boil over medium heat. Cook, stirring often, for 10–15 minutes, until the fruit softens a little and the liquid turns syrupy.",
+      "Off the heat, stir in the vanilla and lemon juice, then transfer to an airtight container and cool completely.",
+      "Buttercream: put the egg whites, sugar and salt in the bowl of a stand mixer or a heatproof bowl set over a pot of simmering water (the bowl must not touch the water). Whisk constantly until the mixture reaches 70°C (160°F) and the sugar has dissolved.",
+      "Move the bowl to the mixer and whip with the whisk on high until snowy white and fluffy, 6–7 minutes. Add the butter one piece at a time — it may look curdled, but keep mixing. Once all the butter is in, mix on high for another 10 minutes.",
+      "Add the vanilla and mix in, then switch to the paddle and mix on low for 1 minute to knock out air.",
+      "Assembly: put some buttercream in a piping bag with a medium round tip (or snipped end) for the dam. Fix the first layer to a turntable with a dab of buttercream and spread with about ½ cup (120 ml) buttercream.",
+      "Pipe a ring around the edge and fill it with the cherry compote, leaving any extra juice behind — you may not need it all.",
+      "Add the second layer upside down for a flat top, pressing lightly and sealing the join with buttercream.",
+      "Crumb coat with a thin layer of buttercream, smoothing with a bench scraper. Chill now if you want a smooth finish; for a rustic finish you can carry on.",
+      "Cover with a layer of buttercream, smooth briefly with an offset spatula and scraper, then make swoops with the spatula. Smooth the top edge, or finish as you like.",
+      "Keep in the fridge until serving and let stand at room temperature for 20–30 minutes before serving. Store leftovers in the fridge."
+    ],
+    "tags": [
+      "cherry",
+      "vanilla",
+      "greek-yogurt",
+      "egg-whites",
+      "whipping-meringue",
+      "water-bath-bain-marie"
+    ],
+    "image": "images/recipe-134.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cakes-loaf",
+    "source_url": "https://cloudykitchen.com/blog/vanilla-buttermilk-cake/"
   }
 ]
