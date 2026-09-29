@@ -140,11 +140,6 @@ function themeIconSvg(theme) {
  * The search input and its dropdown must never be re-created — that's what breaks focus mid-keystroke. */
 function renderNav(lang, route) {
   return `
-    <div class="butterfly" aria-hidden="true">
-      <img class="butterfly__wing butterfly__wing--l" src="images/butterfly/left.webp" alt="" width="216" height="143">
-      <img class="butterfly__wing butterfly__wing--r" src="images/butterfly/right.webp" alt="" width="216" height="143">
-      <img class="butterfly__body" src="images/butterfly/body.webp" alt="" width="216" height="143">
-    </div>
     <div class="container nav__bar">
       <button class="icon-btn nav__hamburger" id="hamburger-btn" aria-label="Menu" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
@@ -158,9 +153,16 @@ function renderNav(lang, route) {
         <ul class="nav__links" id="nav-links">${NAV_LINKS.map((l) => `<li><a class="nav__link" href="${l.href}"${l.match(route) ? ' aria-current="page"' : ""}>${t(lang, l.key)}</a></li>`).join("")}</ul>
       </nav>
       <div class="nav__actions">
-        <div class="lang-toggle" role="group" aria-label="${t(lang, "langToggle")}">
-          <button class="lang-toggle__btn" data-lang="en" aria-pressed="${String(lang === "en")}">EN</button>
-          <button class="lang-toggle__btn" data-lang="lt" aria-pressed="${String(lang === "lt")}">LT</button>
+        <div class="lang-perch">
+          <div class="lang-toggle" role="group" aria-label="${t(lang, "langToggle")}">
+            <button class="lang-toggle__btn" data-lang="en" aria-pressed="${String(lang === "en")}">EN</button>
+            <button class="lang-toggle__btn" data-lang="lt" aria-pressed="${String(lang === "lt")}">LT</button>
+          </div>
+          <div class="butterfly" aria-hidden="true">
+            <img class="butterfly__wing butterfly__wing--l" src="images/butterfly/left.webp" alt="" width="216" height="143">
+            <img class="butterfly__wing butterfly__wing--r" src="images/butterfly/right.webp" alt="" width="216" height="143">
+            <img class="butterfly__body" src="images/butterfly/body.webp" alt="" width="216" height="143">
+          </div>
         </div>
         <button class="icon-btn" id="theme-btn" aria-label="${t(lang, "themeToggle")}">${themeIconSvg(appState.theme)}</button>
       </div>
@@ -168,6 +170,32 @@ function renderNav(lang, route) {
     <div class="nav__sheet" id="nav-sheet" data-open="false">
       ${NAV_LINKS.map((l) => `<a class="nav__link" href="${l.href}"${l.match(route) ? ' aria-current="page"' : ""}>${t(lang, l.key)}</a>`).join("")}
     </div>`;
+}
+
+/** Makes the header butterfly flap now and then. Every stroke draws a fresh amplitude, pace
+ * and rest, and some are double beats with a weaker second stroke, so the motion never settles
+ * into a visible loop the way a fixed CSS cycle does. Wings hinge in 3D; left opens positive. */
+function startButterfly() {
+  if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  const wings = document.querySelectorAll(".butterfly__wing");
+  if (wings.length !== 2) return;
+  const flap = () => {
+    const amp = 15 + Math.random() * 65;            // 15-80deg: a twitch up to a near-full close
+    const stroke = 260 + amp * 9;                   // bigger strokes are slower
+    const double = Math.random() < 0.35;
+    const peaks = double ? [amp, amp * (0.4 + Math.random() * 0.4)] : [amp];
+    const duration = stroke * peaks.length;
+    wings.forEach((wing, i) => {
+      const sign = i === 0 ? 1 : -1;
+      const frames = [{ transform: "rotateY(0deg)", easing: "ease-in-out" }];
+      peaks.forEach((p) => frames.push(
+        { transform: `rotateY(${sign * p}deg)`, easing: "ease-in-out" },
+        { transform: "rotateY(0deg)", easing: "ease-in-out" }));
+      wing.animate(frames, { duration });
+    });
+    setTimeout(flap, duration + 500 + Math.random() * 2500);
+  };
+  setTimeout(flap, 1200);
 }
 
 /** Updates nav state (active link, theme icon, lang buttons) without touching the search input's DOM node. */
@@ -909,6 +937,7 @@ function render() {
   if (!navRendered) {
     document.getElementById("nav-slot").innerHTML = renderNav(lang, route);
     wireNavEvents();
+    startButterfly();
     navRendered = true;
   }
   const navSheet = document.getElementById("nav-sheet");
