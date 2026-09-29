@@ -174,25 +174,31 @@ function renderNav(lang, route) {
 
 /** Makes the header butterfly flap now and then. Every stroke draws a fresh amplitude, pace
  * and rest, and some are double beats with a weaker second stroke, so the motion never settles
- * into a visible loop the way a fixed CSS cycle does. Wings hinge in 3D; left opens positive. */
+ * into a visible loop the way a fixed CSS cycle does. About one move in four is instead a slow
+ * near-full close (82-88deg, wings almost edge-on) held for a moment before reopening.
+ * Wings hinge in 3D; left opens positive. */
 function startButterfly() {
   if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
   const wings = document.querySelectorAll(".butterfly__wing");
   if (wings.length !== 2) return;
+  const ease = "ease-in-out";
+  const at = (deg, extra) => (sign) => ({ transform: `rotateY(${sign * deg}deg)`, easing: ease, ...extra });
   const flap = () => {
-    const amp = 15 + Math.random() * 65;            // 15-80deg: a twitch up to a near-full close
-    const stroke = 260 + amp * 9;                   // bigger strokes are slower
-    const double = Math.random() < 0.35;
-    const peaks = double ? [amp, amp * (0.4 + Math.random() * 0.4)] : [amp];
-    const duration = stroke * peaks.length;
-    wings.forEach((wing, i) => {
-      const sign = i === 0 ? 1 : -1;
-      const frames = [{ transform: "rotateY(0deg)", easing: "ease-in-out" }];
-      peaks.forEach((p) => frames.push(
-        { transform: `rotateY(${sign * p}deg)`, easing: "ease-in-out" },
-        { transform: "rotateY(0deg)", easing: "ease-in-out" }));
-      wing.animate(frames, { duration });
-    });
+    let duration;
+    let frames;                                     // each entry: sign -> keyframe (right wing mirrors)
+    if (Math.random() < 0.25) {
+      const amp = 82 + Math.random() * 6;
+      const hold = 250 + Math.random() * 600;
+      duration = 1300 + hold;
+      frames = [at(0), at(amp, { offset: 650 / duration }), at(amp, { offset: (650 + hold) / duration }), at(0)];
+    } else {
+      const amp = 15 + Math.random() * 60;          // 15-75deg: a twitch up to a deep stroke
+      const stroke = 260 + amp * 9;                 // bigger strokes are slower
+      const peaks = Math.random() < 0.35 ? [amp, amp * (0.4 + Math.random() * 0.4)] : [amp];
+      duration = stroke * peaks.length;
+      frames = [at(0), ...peaks.flatMap((p) => [at(p), at(0)])];
+    }
+    wings.forEach((wing, i) => wing.animate(frames.map((f) => f(i === 0 ? 1 : -1)), { duration }));
     setTimeout(flap, duration + 500 + Math.random() * 2500);
   };
   setTimeout(flap, 1200);

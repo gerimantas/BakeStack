@@ -22,7 +22,7 @@
  * through to the network and are simply unavailable offline.
  */
 
-const BUILD = "v63";
+const BUILD = "v64";
 const CACHE = `bakestack-${BUILD}`;
 
 // Everything needed to render the app offline in the language most visitors use. The other
