@@ -6,13 +6,14 @@ active — static site in `site/`, live on GitHub Pages:
 `.github/workflows/deploy.yml`, auto-updates on every push to master that
 touches `site/**`). The site is used only by the family (user, S24).
 
-**Local master is 3 commits ahead of the live site (S24).** Live serves v53
-(91 recipes, Source filter) — pushed by mistake in S24. Local is v56 with 109
-recipes; the user asked to keep v54–v56 local until they say "push".
+**Local master is well ahead of the live site (S25).** Live serves v53
+(91 recipes) — pushed by mistake in S24. Local is v59 with 133 recipes; the
+user asked to keep v54–v59 local until they say "push".
 
-**109 recipes: 86 Marusya Manko, 23 Cloudy Kitchen** (S24). 56 have photos
-(`site/images/recipe-NNN.jpg`, 335 px, ~35 KB); 53 still carry `image: null`
-and render a placeholder. 33 are `is_complete: false` (all Marusya). How new
+**133 recipes: 86 Marusya Manko, 47 Cloudy Kitchen** (S25). 79 have photos
+(`site/images/recipe-NNN.jpg`, 335 px, ~35 KB); 54 carry `image: null` and
+render a placeholder (53 Marusya + recipe-121). 33 are `is_complete: false`
+(all Marusya, including all 7 of her layer cakes). How new
 recipes are sourced and imported — rules, Cloudy Kitchen's API, the Instagram
 method via BrowserOS neo and where its last pass stopped:
 `.planning/recipe-sources.md`. **Only complete recipes are imported.**
@@ -45,9 +46,14 @@ deciding what the user is *looking at* must check
 fixed both the toggle icon and the click cycle, which compared the raw value
 and so needed two clicks to leave a system-dark page.
 
-**Both languages are fully translated: all 109 recipes and 206 tips.** Only
+**Both languages are fully translated: all 133 recipes and 206 tips.** Only
 samples have been read back as prose (S21: 11 recipes + 10 tips; S23: 5
 recipes) — see those Archive entries for the defects found.
+
+**Local preview: run `python serve.py` from inside `site/`** (S25). Started from
+the repo root it serves the whole repo and the site sits at `/site/`. A browser
+that visited earlier shows the old service worker's data until the update
+prompt is accepted.
 
 **Tips are 206, not 207.** MASTER numbers Tip 001–207, but Tip 174 is a
 de-duplication pointer to Tip 167, not a tip; the export shipped it as a real
@@ -79,7 +85,7 @@ for ids; they must never be re-derived from titles.
 **Browser-cache staleness is fixed at the root** (S19): `site/serve.py` sends
 `no-store`, `fetchJSON` revalidates, and css/js carry a `?v=` query. **Bump the
 `?v=` in `index.html` AND `BUILD` in `site/sw.js` together whenever anything
-under `site/` changes** (both at v56). They are one version, split across two
+under `site/` changes** (both at v59). They are one version, split across two
 files: `BUILD` names the cache, so changing it is what makes the browser install
 a new worker and drop the old cache, while `?v=` is what makes the page request
 the new assets. Bumping only one ships an update nobody receives — or a prompt
@@ -124,11 +130,12 @@ response, so each file downloaded twice and first paint regressed 5694 ms →
 
 
 ## Next tasks
-1. **Push v54–v56 when the user says so.** Three local commits (18 Cloudy
-   Kitchen recipes) sit ahead of the live v53; the user asked to keep them
-   local. After pushing, verify the live site serves v56 and 109 recipes.
-2. **More recipes, if wanted: ~360 Cloudy Kitchen left; Instagram past
-   `Dd1KkBYin6t`.** Rules, API and method: `.planning/recipe-sources.md`.
+1. **Push v54–v59 when the user says so.** Local commits with 42 Cloudy Kitchen
+   recipes sit ahead of the live v53. After pushing, verify the live site
+   serves v59 and 133 recipes.
+2. **More recipes, if wanted: ~330 Cloudy Kitchen left (next: more layer cakes,
+   bundt cakes); Instagram past `Dd1KkBYin6t`.** What is left per group, rules,
+   API and method: `.planning/recipe-sources.md`.
 3. **Photos for the remaining 53 recipes** (all Marusya, `image: null`). Drop
    `recipe-NNN.jpg` in `site/images/`, set `image` in both recipe files, bump
    the version in `site/index.html` and `site/sw.js`.
@@ -156,34 +163,38 @@ response, so each file downloaded twice and first paint regressed 5694 ms →
    act, rather than leaving it to be rediscovered a third time.
 
 ## Done Log
+- **S25** — 24 Cloudy Kitchen recipes added (16 sweet buns and babkas, 8 layer
+  cakes), 109 → 133, v57–v59 committed locally; `recipe-sources.md` records
+  what is left per group.
 - **S24** — 25 recipes added (23 Cloudy Kitchen, 2 new Instagram posts via
   BrowserOS neo), 84 → 109, all with photos; Source filter row added and
   zero-count chips hidden; recipe sources evaluated and recorded in
   `.planning/recipe-sources.md`; photo-publishing question closed (family-only
   site); v53 pushed by mistake, v54–v56 committed locally.
-- **S23** — QA Compare tool and the stale root data files deleted, `CLAUDE.md`
-  added; five @marusya.manko recipes merged from a prepared `instagram_new/`
-  package (79 to 84 recipes, 5 new photos, 9 new tag slugs); the handoff's
-  missing `tags_en.json` / `tags_lt.json` labels supplied; all 85 ingredients
-  and 67 steps read in both languages, three LT wording defects fixed (and two
-  more that the first fixes introduced); an alphabetical re-sort of the label
-  files reverted as unreviewable diff noise; `unit_conv` found untranslated on
-  the LT side and left for a later session; v49 pushed and verified live.
-- **S22** — the `sw.js` PRECACHE version bug found and fixed (every `BUILD`
-  bump since the offline-app commit had been shipping v30 assets); a stray
-  `opacity: 0.35` that was dimming the favourite heart tracked down by reading
-  the computed style after three failed colour guesses; theme toggle taught to
-  resolve `null` against the system preference, and dark made the default;
-  26 recipe photos added and wired; "show/hide photos" toggle built; dead code
-  removed (`density.js` + `density.json` + their fetch, `iconChef`, the
-  `topics` table, two orphan CSS rules); Pages actions bumped to Node 24;
-  5 commits pushed and deployed, live site verified.
-(S21 and earlier: see `## Archive`.)
+(S23 and earlier: see `## Archive`.)
 
 
 ## Archive
 
 Older entries live in `CONTEXT-ARCHIVE.md` (moved there by session-end rotation, newest first). This section keeps the most recent 10 sessions.
+
+### Session 2026-09-29 (S25) — 24 more Cloudy Kitchen recipes: sweet buns nearly exhausted, first layer cakes
+
+- **Done:** recipe-111..134 added in EN and LT (8 buns + 2 babkas, 6 buns, 8 layer
+  cakes), 109 → 133 recipes (47 Cloudy Kitchen); 23 photos, recipe-121 has none (post
+  shows only unbaked rolls); v57, v58, v59 committed locally, not pushed.
+- **Decided / overturned:** cakes go under `category: "cake"`, `categoryGroup:
+  "cakes-loaf"`; a pre-bake ld+json photo is replaced from the post body, else `image:
+  null`; skipped: sourdough rolls (no starter), Vanilla Cake (frosting elsewhere).
+- **Code:** `site/data/recipes.json`, `site/data/recipes_lt.json`,
+  `site/images/recipe-111..134.jpg` (not 121), `site/index.html`, `site/sw.js`,
+  `.planning/recipe-sources.md` (what is left per group), plus the S24 follow-up
+  commit `2d7b304` (`CLAUDE.md` push rule, `recipes-audit` skill, `.gitignore`).
+- **Entry point:** `python serve.py` run from `site/` (from the repo root it serves the
+  repo, and the site is at `/site/`); a stale count in the browser is the old service
+  worker — accept the update prompt.
+- **Not measured:** LT text of the 24 new recipes was written, not read back as a
+  reader; Marusya's 7 layer cakes are all incomplete, so no duplicate check was needed.
 
 ### Session 2026-09-29 (S24) — two recipe sources opened up: 23 Cloudy Kitchen recipes and 2 new Instagram posts, plus a Source filter
 
@@ -953,79 +964,3 @@ Lithuanian speaker beyond the translator's own read-through — no separate spot
 done this session (CONTEXT.md's 3-layer QA plan for translations — structural diff, glossary,
 user spot-check — has only the structural-diff-equivalent layer done so far, via the
 `_needs_translation` flag and JSON validation).
-
-### Session 2026-08-28 (S15) — tips.json swapped live to the verified 207-tip export; two-level topicGroup/topic taxonomy built for all 207 tips; recipe→tip related-tips logic fixed; tips filter UI rebuilt as a custom dropdown
-
-**Live swap done.** `site/data/tips.json` (was 310 error-filled entries) replaced with the
-S9-S14 verified 207-tip export (title/text/tags only — `id`/`is_complete`/`source_docx_lines`
-dropped, since the live site generates its own slug ids and doesn't need the audit metadata).
-Old file archived to `.audit/archive/tips_EN_pre_S15.json`. `state.js`'s LT force-English
-comment updated to name both recipes and tips as the reason (tips_lt.json is now also out of
-sync — still the old 310-entry set in the old order, no translation for the new 207 yet).
-
-**Found and fixed one real defect during the swap cross-check**: Tip 113 in
-`tips_export.json` had its war/charity passage already silently removed with no recorded
-decision — a mapping drift against `MASTER_rebuilt_tips.md` (which still had it). User decided
-to strip it (same treatment as Tip 155, already decided S14). Applied to
-`MASTER_rebuilt_tips.md` and logged as DECISIONS_review.md section 29; `tips_export.json`
-needed no further edit since it already matched the decided outcome.
-
-**Built a two-level category system (`topicGroup` + `topic`) for all 207 tips** — the live
-site's tips dropdown filter had been silently broken since launch (`tip.topic` was read by
-`app.js` but never existed in any tips.json revision, old or new). Classified every tip by
-manually reading its full body text (not just title — title-only guessing produced at least
-one wrong call, caught and corrected: Tip 100 "Buttercream on Napoleon cake" was initially
-guessed into Cheesecake by title-adjacency, actual content is Frostings). Worked in 11 batches
-of ~20, each batch diffed field-by-field against a pre-change snapshot to confirm zero
-title/text/tags drift before moving on — 0 mismatches across all 207.
-
-**Final structure (207/207, verified by script — every subcategory sum equals its group
-total, all groups sum to 207):**
-- Cheesecake (25): Crust & Shortbread (4), Baking/Water Bath/Temperature (10), Cream Cheese
-  vs. Mascarpone (5), General (6)
-- Ganache, Frostings & Fillings (35): Ganache (11), Cake Coating Problems (7), Cake Fillings
-  (8), Mousses (3), Frostings General (6)
-- Ingredients (104): Gelatin (7), Pectin & Agar (17), Sugar & Honey (13), Eggs (7), Flour &
-  Starch (11), Dairy (13), Butter & Fats (9), Chocolate (11), Salt (6), Flavorings & Colorings
-  (11) — note some batch-time subcounts drifted slightly from batch-announcement counts as
-  later reads corrected earlier guesses (e.g. Tip 26 "Tempering Gelatin" ended in Gelatin, not
-  Techniques/Tempering); the numbers above are the final, script-verified ones, not the
-  running totals quoted mid-session
-- Techniques (15): Whipping & Meringue (4), Tempering (7 — crème anglaise series + egg
-  tempering, kept together as one technique), Infusion (4)
-- Flavor Pairing (10) — flat, no subcategories
-- Sponge, Honey Cake & Puff Pastry (16) — flat
-- Troubleshooting (2) — flat, deliberately small; several borderline tips (e.g. "Whisk, Paddle
-  or Dough Hook") were placed in Sponge/Honey/Puff instead since Troubleshooting's own 2
-  members are specifically about unresolved/curdling problems, not general technique choice
-
-**`findRelatedTips` (recipe detail page's "Related tips" block) rewritten**: was tag-overlap
-scoring with a `CATEGORY_GROUP_TO_TOPICS` fallback that produced misleading matches (e.g. any
-tip sharing "butter" or "sugar" tags with a recipe, regardless of actual relevance) — user
-explicitly asked for **exact topicGroup match only, no fallback**. `CATEGORY_GROUP_TO_TOPIC_GROUPS`
-maps each recipe `categoryGroup` to the one relevant tip `topicGroup`; a recipe with no mapped
-group now shows zero related tips rather than a tag-overlap guess.
-
-**Tips filter UI rebuilt from a native `<select>` to a custom dropdown.** The grouped
-`<optgroup>` select (24 options across 7 groups) rendered its native popup starting near the
-viewport top regardless of button position — browsers position/size native select popups
-themselves, uncontrollable via CSS, and with this many options the popup routinely overflowed
-above the page. Replaced with a button+absolutely-positioned-panel component
-(`.topic-dropdown`, `data-topic-trigger`/`data-topic-panel`/`data-topic-value` wiring in
-`app.js`), `max-height: 22rem` + internal scroll, closes on outside click (listener attached
-once in `wireNavEvents()`, not per-render, to avoid listener accumulation). Iterated on
-visual feedback across several rounds: group headers and flat (no-subcategory) groups now
-render with identical bold/uppercase/accent-colored styling (previously a flat group like
-"Flavor Pairing" looked like a plain subcategory item); group and subcategory counts now
-inherit their parent's text color instead of a mismatched `--color-muted` gray; group header
-now shows the group's total count, not just each subcategory's own count.
-
-**Verified end-to-end in a headless Chromium (Playwright) at every stage** — dropdown
-rendering (light + dark theme), filter correctness (spot-checked several group/subcategory
-counts against the live page), and the recipe→tips related block (confirmed a cheesecake
-recipe shows only the one Cheesecake/Cream-Cheese-vs-Mascarpone tip, no tag-overlap noise).
-
-**Committed in two commits** (`d9cb021` — the tips.json swap + taxonomy + related-tips fix;
-`5e425cd` — the custom dropdown UI rebuild + formatting fixes). **Neither pushed to GitHub** —
-live site (`https://gerimantas.github.io/BakeStack/`) still shows the old 310-entry tips.json;
-user has not yet confirmed the push.
