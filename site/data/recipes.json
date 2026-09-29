@@ -12289,5 +12289,923 @@
     "variant_label": null,
     "categoryGroup": "cheesecake",
     "source_url": "https://cloudykitchen.com/blog/2016-12-29-lemon-lime-no-bake-cheesecake/"
+  },
+  {
+    "id": "recipe-098",
+    "title": "Vanilla Bean Cupcakes with Chocolate Peanut Butter Buttercream",
+    "category": "cupcake",
+    "description": "Easy, fluffy vanilla bean cupcakes topped with a swirl of chocolate peanut butter American buttercream and plenty of sprinkles. Makes 12–14 cupcakes.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "large eggs, at room temperature",
+        "section": "Vanilla bean cupcakes"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg yolk, at room temperature",
+        "section": "Vanilla bean cupcakes"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Vanilla bean cupcakes",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 165,
+        "unit": "g",
+        "name": "whole milk",
+        "section": "Vanilla bean cupcakes"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "full-fat Greek yoghurt or sour cream",
+        "section": "Vanilla bean cupcakes"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Vanilla bean cupcakes"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Vanilla bean cupcakes"
+      },
+      {
+        "amount": 1.75,
+        "unit": "tsp",
+        "name": "baking powder",
+        "section": "Vanilla bean cupcakes",
+        "amount_conv": 7.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Vanilla bean cupcakes",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 175,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Vanilla bean cupcakes"
+      },
+      {
+        "amount": 265,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Chocolate peanut butter buttercream"
+      },
+      {
+        "amount": 230,
+        "unit": "g",
+        "name": "smooth peanut butter",
+        "section": "Chocolate peanut butter buttercream"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "Dutch-processed cocoa powder",
+        "section": "Chocolate peanut butter buttercream"
+      },
+      {
+        "amount": 540,
+        "unit": "g",
+        "name": "powdered sugar, sifted",
+        "section": "Chocolate peanut butter buttercream"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Chocolate peanut butter buttercream",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.75,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Chocolate peanut butter buttercream",
+        "amount_conv": 4.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 105,
+        "unit": "g",
+        "name": "heavy cream, plus more as needed",
+        "section": "Chocolate peanut butter buttercream"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "sprinkles, to finish",
+        "section": "Chocolate peanut butter buttercream"
+      }
+    ],
+    "steps": [
+      "Cupcakes: preheat the oven to 180°C (350°F). Line 1–2 muffin pans with paper liners — the recipe makes 12–14 cupcakes.",
+      "In a medium bowl, whisk together the eggs, yolk, vanilla, milk and yoghurt.",
+      "In a stand mixer fitted with the paddle, briefly mix the flour, sugar, baking powder and salt.",
+      "With the mixer on low, add the butter a cube at a time until fully incorporated and the mixture looks like wet sand.",
+      "Add half of the wet ingredients and mix until just combined, then add the rest and mix on medium until just combined. Take the bowl off the mixer and fold a few times with a rubber spatula so no dry flour remains.",
+      "Fill each liner with about ¼ cup of batter, about ¾ full.",
+      "Bake for 20–25 minutes, until lightly golden and the tops spring back when pressed; a toothpick inserted into the middle should come out without crumbs.",
+      "Cool in the pans for 10 minutes, then transfer to a wire rack and cool completely.",
+      "Buttercream: in a stand mixer fitted with the paddle, cream the butter, peanut butter and cocoa on medium speed until well combined. Add the powdered sugar, vanilla bean paste and salt and mix to combine.",
+      "Add the cream and mix until incorporated, then increase the speed and whip until fluffy. Reduce to low and mix for a few minutes to knock out air bubbles.",
+      "Assembly: transfer the buttercream to a piping bag fitted with a closed star tip (such as Ateco #846). Pipe a spiral onto each cupcake and top with sprinkles. Store in an airtight container at room temperature."
+    ],
+    "tags": [
+      "vanilla",
+      "peanut-butter",
+      "chocolate",
+      "cocoa-powder",
+      "sugar-powdered"
+    ],
+    "image": "images/recipe-098.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cupcake",
+    "source_url": "https://cloudykitchen.com/blog/vanilla-bean-cupcakes-with-chocolate-and-peanut-butter-buttercream/"
+  },
+  {
+    "id": "recipe-099",
+    "title": "Galaxy Mini Cupcakes",
+    "category": "cupcake",
+    "description": "Easy mini vanilla cupcakes topped with galaxy-style American buttercream in several colours and a black cocoa buttercream, flicked with 'stars' — perfect space-themed cupcakes. The cupcake recipe is adapted from Magnolia Bakery.",
+    "servings": 24,
+    "ingredients": [
+      {
+        "amount": 95,
+        "unit": "g",
+        "name": "self-raising flour",
+        "section": "Vanilla cupcakes"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Vanilla cupcakes"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Vanilla cupcakes"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "whole milk",
+        "section": "Vanilla cupcakes"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla extract",
+        "section": "Vanilla cupcakes",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "large eggs",
+        "section": "Vanilla cupcakes"
+      },
+      {
+        "amount": 115,
+        "unit": "g",
+        "name": "unsalted butter, cubed, at room temperature",
+        "section": "Vanilla cupcakes"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Coloured buttercream"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla extract",
+        "section": "Coloured buttercream",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 440,
+        "unit": "g",
+        "name": "powdered sugar",
+        "section": "Coloured buttercream"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "30–45 g whole milk",
+        "section": "Coloured buttercream"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "gel food colouring",
+        "section": "Coloured buttercream"
+      },
+      {
+        "amount": 115,
+        "unit": "g",
+        "name": "butter, at room temperature",
+        "section": "Black buttercream"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilla extract",
+        "section": "Black buttercream",
+        "amount_conv": 2.2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 190,
+        "unit": "g",
+        "name": "powdered sugar",
+        "section": "Black buttercream"
+      },
+      {
+        "amount": 25,
+        "unit": "g",
+        "name": "black cocoa",
+        "section": "Black buttercream"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "1–2 tablespoons milk",
+        "section": "Black buttercream"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "edible glitter, to finish",
+        "section": "Black buttercream"
+      }
+    ],
+    "steps": [
+      "Cupcakes: preheat the oven to 180°C (350°F). Line a 24-hole mini cupcake tin with liners.",
+      "Put the flours and sugar in a stand mixer fitted with the paddle and mix on low for 2 minutes. Add the butter a cube at a time — do not rush — and mix until the mixture looks like sand. Add half the milk and the vanilla and mix for about 1 minute, until combined.",
+      "Add the eggs one at a time, scraping down the bowl after each. Add the rest of the milk and mix on low for 2–3 minutes, until well incorporated.",
+      "Put about 1 tablespoon of batter in each liner. Bake for 14–16 minutes, until the cupcakes spring back when pressed lightly. Cool completely on a wire rack.",
+      "Coloured buttercream: beat the butter in a stand mixer fitted with the paddle on high until pale. Add the sifted powdered sugar and vanilla and beat on high until well incorporated. Add the milk a tablespoon at a time and beat until smooth and spreadable.",
+      "Divide the buttercream between three bowls and tint each with a 'galaxy' colour of your choice using gel food colouring.",
+      "Black buttercream: beat the butter on high until pale. Add the sifted powdered sugar, black cocoa and vanilla and beat on high until well incorporated. Add the milk a tablespoon at a time until smooth and spreadable.",
+      "Assembly: fit a large piping bag with a closed star tip (Wilton 1M or 2D). Fill the bag a tablespoon at a time, alternating the colours, until full, then pipe onto each cupcake.",
+      "Put a little gel food colouring in a bowl, thinned with water if needed, and flick small amounts onto the cupcakes with your finger to look like stars. Finish with a small sprinkle of edible glitter."
+    ],
+    "tags": [
+      "vanilla",
+      "cocoa-powder",
+      "food-coloring",
+      "sugar-powdered"
+    ],
+    "image": "images/recipe-099.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cupcake",
+    "source_url": "https://cloudykitchen.com/blog/2016-8-27-galaxy-cupcakes/"
+  },
+  {
+    "id": "recipe-100",
+    "title": "Carrot Cake Tea Cakes with Blood Orange Glaze and Meringue Kisses",
+    "category": "tea-cake",
+    "description": "Moist miniature carrot cakes, spiced with cinnamon, cardamom and ginger, finished with a thick blood orange glaze and crunchy, sweet Swiss meringue kisses. Makes 12–14 mini cakes.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "egg whites",
+        "section": "Swiss meringue kisses"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Swiss meringue kisses"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Swiss meringue kisses",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "sprinkles, to finish (optional)",
+        "section": "Swiss meringue kisses"
+      },
+      {
+        "amount": 340,
+        "unit": "g",
+        "name": "raw (turbinado) sugar",
+        "section": "Carrot cake tea cakes"
+      },
+      {
+        "amount": 190,
+        "unit": "g",
+        "name": "neutral oil or light olive oil",
+        "section": "Carrot cake tea cakes"
+      },
+      {
+        "amount": 3,
+        "unit": null,
+        "name": "eggs, at room temperature",
+        "section": "Carrot cake tea cakes"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Carrot cake tea cakes",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 115,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Carrot cake tea cakes"
+      },
+      {
+        "amount": 115,
+        "unit": "g",
+        "name": "whole wheat (wholemeal) flour",
+        "section": "Carrot cake tea cakes"
+      },
+      {
+        "amount": 0.75,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Carrot cake tea cakes",
+        "amount_conv": 4.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.75,
+        "unit": "tsp",
+        "name": "cinnamon",
+        "section": "Carrot cake tea cakes",
+        "amount_conv": 2.1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground cardamom",
+        "section": "Carrot cake tea cakes",
+        "amount_conv": 1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground ginger",
+        "section": "Carrot cake tea cakes",
+        "amount_conv": 1.3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1.25,
+        "unit": "tsp",
+        "name": "baking soda",
+        "section": "Carrot cake tea cakes",
+        "amount_conv": 5.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 270,
+        "unit": "g",
+        "name": "grated carrot",
+        "section": "Carrot cake tea cakes"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "powdered sugar, sifted",
+        "section": "Blood orange glaze"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "blood orange juice, plus a few drops more if needed",
+        "section": "Blood orange glaze"
+      }
+    ],
+    "steps": [
+      "Meringue kisses: preheat the oven to 100°C (210°F). Line two baking sheets with parchment paper and fit a large piping bag with a tip of your choice (such as Ateco #865).",
+      "Put the egg whites and sugar in a stand mixer bowl or other heatproof bowl set over a pot of simmering water, without the water touching the bowl. Heat, whisking often and watching the edges, until the mixture no longer feels gritty between your fingers and reaches at least 70°C (160°F).",
+      "Transfer to a stand mixer fitted with the whisk and add the vanilla. Whip on high until stiff peaks just start to form — the meringue should be glossy and still flow slightly; if it dries out too much it will not pipe nicely.",
+      "Stick the parchment to the sheets with small blobs of meringue. Pipe kisses (or blobs or nests) with a little space between them — they do not spread. Scatter with sprinkles if using.",
+      "Bake for 1½–2 hours, until firm, no longer sticky, and they peel cleanly off the paper; they should not colour. Turn off the oven and leave them inside for at least another hour to dry and crisp. Store in an airtight container.",
+      "Tea cakes: heat the oven to 180°C (350°F). Grease 1–2 non-stick muffin pans with baking spray (the recipe makes 12–14). If your pan is not very non-stick, use baking spray with flour, or dust the greased pan with flour and tap out the excess.",
+      "In a stand mixer fitted with the paddle, beat the raw sugar, oil and eggs on medium for 2–3 minutes, until well combined and slightly paler. Add the vanilla and mix.",
+      "In a medium bowl, combine both flours, the salt, cinnamon, cardamom, ginger and baking soda. Add to the mixer and mix until just combined, then add the carrot and mix on low until just combined.",
+      "Put about 3 tablespoons of batter in each muffin cup — less than for a regular muffin, so the cakes stay below the rim and sit flat.",
+      "Bake for 20–25 minutes, until the centres spring back when lightly touched and a skewer comes out clean; start checking at 20 minutes.",
+      "Let stand in the pans for 5 minutes, then turn out onto a wire rack and cool completely.",
+      "Glaze: stir the powdered sugar and blood orange juice together, adding more juice a few drops at a time until you have a thick glaze — thicker than you think, or it will run everywhere. Test on one cake if unsure. Use immediately.",
+      "Assembly: set the cakes on a wire rack over a baking sheet. Spoon glaze over each top and let it drip down the sides. Once set, top with a few meringue kisses.",
+      "Store leftovers in an airtight container at room temperature. Keep the meringue kisses in their own airtight container until serving so they stay crisp."
+    ],
+    "tags": [
+      "orange",
+      "cinnamon",
+      "vanilla",
+      "meringue",
+      "egg-whites",
+      "whipping-meringue",
+      "sugar-powdered"
+    ],
+    "image": "images/recipe-100.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "tea-cake",
+    "source_url": "https://cloudykitchen.com/blog/carrot-cake-tea-cakes-with-blood-orange-glaze-and-swiss-meringue-kisses/"
+  },
+  {
+    "id": "recipe-101",
+    "title": "Braided Lemon Buns",
+    "category": "roll",
+    "description": "Soft, fluffy buns made from an easy enriched dough and filled with lemon sugar. The braiding is simple: cut into strips, braid, and roll into buns. Serve plain, or finish with powdered sugar or a lemon glaze.",
+    "servings": 16,
+    "ingredients": [
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Lemon sugar"
+      },
+      {
+        "amount": 10,
+        "unit": "g",
+        "name": "freshly grated lemon zest",
+        "section": "Lemon sugar"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "whole milk, lukewarm",
+        "section": "Dough"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "large eggs (about 100 g without shells), at room temperature",
+        "section": "Dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste or vanilla extract",
+        "section": "Dough",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 565,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Dough"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "lemon sugar (from above)",
+        "section": "Dough"
+      },
+      {
+        "amount": 7,
+        "unit": "g",
+        "name": "instant dry yeast",
+        "section": "Dough"
+      },
+      {
+        "amount": 3,
+        "unit": "g",
+        "name": "salt (kosher)",
+        "section": "Dough"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Dough"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "unsalted butter, melted",
+        "section": "Filling"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "the remaining lemon sugar",
+        "section": "Filling"
+      }
+    ],
+    "steps": [
+      "Lemon sugar: put the sugar in a medium bowl, add the lemon zest and rub it into the sugar with your fingers to release the lemon's oils. Keep in an airtight container until needed.",
+      "Dough: put all the dough ingredients except the butter into a mixer bowl fitted with the dough hook, in the order listed — liquids at the bottom means fewer flour lumps.",
+      "Mix on low for 2–3 minutes, until the dough comes together, then on medium for another 5 minutes, until smooth and elastic.",
+      "Add the butter a little at a time, letting each piece incorporate before adding the next. Then mix for another 3–4 minutes, until smooth and soft.",
+      "Shape the dough into a ball (no flour needed), place in a greased bowl and cover with plastic wrap. Leave on the counter for 10 minutes to kick-start the rise, then refrigerate for at least 4 hours or overnight.",
+      "Assembly: grease 8 cups in each of two non-stick muffin pans with baking spray or butter, leaving gaps between buns where you can.",
+      "Turn the chilled dough out onto a lightly floured surface and pat or press it into a rectangle, squaring the edges with a bench scraper. Roll it out to 36 × 64 cm (14 × 25 in). If it springs back, rest it for a few minutes and keep rolling, squaring the edges as you go. (You can also divide the dough in two and roll each half separately.)",
+      "Brush the dough right to the edges with the melted butter, sprinkle evenly with the lemon sugar and press it down lightly.",
+      "Fold the dough into thirds along its length like a business letter — one long edge two-thirds of the way over, then the other edge over it — to make one long folded strip. Pat gently to remove any air bubbles.",
+      "Cut the strip into two 32 cm pieces, then cut each piece into 8 strips 4 cm (1.5 in) wide and about 12 cm long — 16 strips in total. Arrange them on a parchment-lined sheet pan (touching is fine).",
+      "Cover lightly with plastic wrap and refrigerate for 15 minutes to firm up, which makes shaping easier.",
+      "Working with one strip at a time, cut it lengthwise into 2 pieces, leaving one end joined. Braid the two pieces, then roll the braid up into a ball starting from the joined end. Place in a muffin cup. Repeat with the rest, 8 per pan; messy ones even out as they rise.",
+      "Cover lightly with plastic wrap and leave in a warm place until puffy and a gentle press leaves a dent that slowly springs back, 45 minutes to 1½ hours depending on your kitchen.",
+      "Towards the end of proofing, preheat the oven to 180°C (350°F). Remove the plastic wrap.",
+      "Bake for 15–20 minutes, until golden brown. Transfer from the pans to a wire rack soon after baking so they do not stick, and let cool. Finish with powdered sugar or a lemon glaze if you like.",
+      "Store leftovers in an airtight container at room temperature; refresh them in the microwave the next day."
+    ],
+    "tags": [
+      "lemon",
+      "vanilla",
+      "yeast",
+      "butter",
+      "eggs",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-101.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/lemon-buns/"
+  },
+  {
+    "id": "recipe-102",
+    "title": "Chocolate Orange Rolls",
+    "category": "roll",
+    "description": "A twist on the classic cinnamon roll: soft, fluffy sweet rolls filled with a chocolate orange filling and finished with an orange cream cheese icing. A small batch of 6, with an overnight option.",
+    "servings": 6,
+    "ingredients": [
+      {
+        "amount": 290,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "instant yeast",
+        "section": "Brioche dough",
+        "amount_conv": 3.1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Brioche dough",
+        "amount_conv": 2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "whole milk, lukewarm",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste or vanilla extract",
+        "section": "Brioche dough",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "large egg (50 g without shell), lightly whisked",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 175,
+        "unit": "g",
+        "name": "dark chocolate, chopped",
+        "section": "Chocolate orange filling"
+      },
+      {
+        "amount": 75,
+        "unit": "g",
+        "name": "unsalted butter, cold from the fridge is fine",
+        "section": "Chocolate orange filling"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Chocolate orange filling"
+      },
+      {
+        "amount": 10,
+        "unit": "g",
+        "name": "orange zest",
+        "section": "Chocolate orange filling"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "powdered sugar, sifted",
+        "section": "Chocolate orange filling"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "cream cheese, at room temperature",
+        "section": "Orange icing"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Orange icing"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "powdered sugar, sifted",
+        "section": "Orange icing"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "orange juice",
+        "section": "Orange icing"
+      },
+      {
+        "amount": 5,
+        "unit": "g",
+        "name": "orange zest",
+        "section": "Orange icing"
+      }
+    ],
+    "steps": [
+      "Dough: put all the ingredients except the butter in a medium bowl and bring together into a rough dough, then turn out onto a work surface (do not add more flour). A stand mixer with the dough hook works the same way. If using active dry yeast instead of instant, use the same amount but first leave it in the lukewarm milk with the sugar until foamy.",
+      "Knead for 8–10 minutes. The dough starts very rough, then becomes smooth and elastic and springs back slightly when pressed.",
+      "Flatten the dough into a rough rectangle and put the butter on top. Squeeze and knead the butter in, scraping any that escapes back onto the dough with a bench scraper — it gets messy, but it will come together.",
+      "Once the butter is incorporated, knead for another 2–3 minutes.",
+      "Shape into a ball and place in a lightly buttered bowl. Cover with plastic wrap and leave on the counter for about 20 minutes to kick-start the rise, then refrigerate for at least 2 hours or overnight.",
+      "Filling: melt the chocolate and butter in a heatproof bowl over simmering water (the bowl should not touch the water), stirring often, until smooth — or microwave in 30-second bursts, stirring between each.",
+      "Take off the heat, add the salt, orange zest and powdered sugar and whisk until smooth. Let cool slightly, stirring occasionally.",
+      "Assembly: grease and line a 24 × 16 cm (9 × 6.5 in) pan. (Alternatively, roll the dough to a 35 cm / 14 in square, cut 9 rolls and bake in a 20 cm square pan.)",
+      "Turn the dough out onto a lightly floured surface, pat into a rectangle and roll out to 30 × 35 cm (12 × 14 in).",
+      "Spread the chocolate orange filling over the dough.",
+      "Starting from a short side, roll the dough up into a tight log and trim the ends if you like. Cut into 6 equal rolls with unflavoured dental floss or a bread knife — cut the log in half, then each half into 3 — and arrange in the pan.",
+      "Leave in a warm place until puffy and a light press leaves a dent that springs back slightly, about 45 minutes to 1 hour.",
+      "Meanwhile, preheat the oven to 180°C (350°F).",
+      "Bake for 25–30 minutes, until deeply golden brown. Let stand for about 15 minutes before icing.",
+      "Icing: beat the butter and cream cheese with an electric hand mixer until creamy. Add the powdered sugar, orange juice and orange zest and mix to combine. Spread over the warm rolls."
+    ],
+    "tags": [
+      "orange",
+      "chocolate",
+      "dark-chocolate",
+      "cream-cheese",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-102.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/orange-rolls/"
+  },
+  {
+    "id": "recipe-103",
+    "title": "Caramel Pecan Sticky Buns",
+    "category": "cinnamon-roll",
+    "description": "A twist on classic cinnamon rolls: the buns bake on a bed of caramel and pecans, then are turned out so the gooey pecan caramel ends up on top. Overnight option included.",
+    "servings": 12,
+    "ingredients": [
+      {
+        "amount": 10,
+        "unit": "g",
+        "name": "instant yeast",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "whole milk, lukewarm",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 565,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Brioche dough",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "eggs, at room temperature",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla extract or vanilla bean paste",
+        "section": "Brioche dough",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "pecan halves",
+        "section": "Pecan topping"
+      },
+      {
+        "amount": 190,
+        "unit": "g",
+        "name": "golden syrup",
+        "section": "Pecan topping"
+      },
+      {
+        "amount": 65,
+        "unit": "g",
+        "name": "unsalted butter, cold from the fridge is fine",
+        "section": "Pecan topping"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "brown sugar",
+        "section": "Pecan topping"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilla extract or vanilla bean paste",
+        "section": "Pecan topping",
+        "amount_conv": 2.2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Pecan topping"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Cinnamon filling"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "brown sugar",
+        "section": "Cinnamon filling"
+      },
+      {
+        "amount": 2,
+        "unit": "tbsp",
+        "name": "ground cinnamon",
+        "section": "Cinnamon filling",
+        "amount_conv": 16.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "ground cardamom",
+        "section": "Cinnamon filling",
+        "amount_conv": 4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "vanilla extract or vanilla bean paste",
+        "section": "Cinnamon filling",
+        "amount_conv": 1.1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Cinnamon filling"
+      }
+    ],
+    "steps": [
+      "Dough: put all the ingredients except the butter into a stand mixer fitted with the dough hook.",
+      "Mix on medium for 8–10 minutes, until the dough has come together and is smooth and soft.",
+      "Add the butter a little at a time, letting each piece incorporate before adding the next. Mix for another 5 minutes, until smooth and soft.",
+      "Shape the dough into a ball, place in a greased bowl and cover with plastic wrap.",
+      "Refrigerate for at least 2 hours, or overnight, until doubled. Alternatively, do the first rise in a warm spot at room temperature until doubled.",
+      "Pecan topping (start when you are ready to assemble): preheat the oven to 180°C (350°F). Toast the pecans on a baking sheet for 8–10 minutes, until golden brown all the way through (snap one open to check). Cool, then chop coarsely.",
+      "In a medium pot, melt the golden syrup, butter and brown sugar over medium heat, then bring to a boil and cook for about 1 minute, stirring constantly. Take off the heat, stir in the vanilla and salt, and pour the caramel into a high-sided 23 × 33 cm (9 × 13 in) baking pan. Scatter the pecans over it.",
+      "Assembly: mix all the cinnamon filling ingredients in a medium bowl until well combined.",
+      "Turn the dough out onto a lightly floured surface and roll into a 60 × 40 cm (24 × 16 in) rectangle, squaring off the edges often as you roll. Spread the filling evenly over the surface.",
+      "Starting from a long side, roll up into a tight spiral. Cut the log in half and place both pieces side by side on a sheet pan lined with parchment and lightly greased with cooking spray. Cover loosely with plastic wrap and freeze for 20 minutes to firm up, which gives neater cuts. If the dough rose overnight in the fridge and the logs hold together well, you can skip this.",
+      "Slice each log into 6 equal pieces (a ruler helps), 12 buns in total, and arrange them, evenly spaced, on the caramel pecan layer in the pan.",
+      "Cover loosely with plastic wrap and leave to rise for 45 minutes to 1 hour, until puffy and a gentle poke leaves a small dent.",
+      "Meanwhile, preheat the oven to 180°C (350°F).",
+      "Bake for 35–40 minutes, until deeply golden brown. Let stand for 5–10 minutes, then run a knife or offset spatula around the edge and turn out onto a serving tray.",
+      "Serve slightly warm. Store leftovers in an airtight container at room temperature and rewarm as needed."
+    ],
+    "tags": [
+      "cinnamon",
+      "caramel",
+      "vanilla",
+      "butter",
+      "sugar-brown",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-103.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/pecan-sticky-buns/"
   }
 ]
