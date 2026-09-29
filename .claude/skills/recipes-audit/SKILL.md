@@ -1,6 +1,6 @@
 ---
 name: recipes-audit
-description: Audit, export, and verify BakeStack's recipes.json data-quality pipeline — the manual conversion of .audit/rebuild_recipes/MASTER_rebuilt_recipes.md into .audit/rebuild_recipes/recipes_export.json, and the checking method for it. Use this whenever the user asks to export recipes to JSON, check/verify/compare a recipe against the source, mentions MASTER_rebuilt_recipes.md, recipes_export.json, Receptai_docx_source.txt, or asks "ar sutampa su originalu" / "patikrink receptą" / "tikrink json" style questions about recipes. Also load this before writing any script that touches recipe data — it documents why scripted checks were banned for this file.
+description: Audit, export, and verify BakeStack's recipes.json data-quality pipeline — the manual conversion of .audit/rebuild_recipes/MASTER_rebuilt_recipes.md into .audit/rebuild_recipes/recipes_export.json, and the checking method for it. Use this whenever the user asks to export recipes to JSON, check/verify/compare a recipe against the source, mentions MASTER_rebuilt_recipes.md, recipes_export.json, Receptai_docx_source.txt, or asks "ar sutampa su originalu" / "patikrink receptą" / "tikrink json" style questions about recipes. Also load this when adding new recipes from outside sources (Cloudy Kitchen, new Instagram posts — "pridėk receptus", "įtraukiam naujus receptus"), and before writing any script that touches recipe data — it documents why scripted checks were banned for this file.
 ---
 
 # BakeStack recipes.json export & audit workflow
@@ -124,7 +124,18 @@ wrap, or omit text no bug in the data. Always `Read`/`Grep` the exact JSON entry
 values as the last step before asserting a discrepancy — a visual read is a lead, not a
 verdict, exactly as the mechanical-check rule above already says.
 
-## Known state as of the session that built this skill (2026-08-27, S12)
+## Importing new recipes from outside sources (since S24)
+
+The docx pipeline above is finished; new recipes now come from Cloudy Kitchen and new
+@marusya.manko Instagram posts. **Read `.planning/recipe-sources.md` before importing** —
+it holds the import rules (complete recipes only, duplicate check against Marusya, EN/LT
+parity check, photo size), each source's access method, and where the last pass stopped.
+The no-script rule above still holds: fetching a source card by script is fine, writing
+the BakeStack entry is done by reading it.
+
+## Known state as of the session that built this skill (2026-08-27, S12) — historical
+
+Superseded: all 79 docx recipes were exported and went live in S13. Kept for the method.
 
 - Batch 1 (recipes #1–16) exported and fully manually verified against source, twice — once
   via 5-recipe spot check, once via a complete pass after the two bugs above were found. All

@@ -4,6 +4,10 @@ Static site (no build step, no framework, no npm). Vanilla JS + CSS in `site/`,
 served straight from disk. Live at https://gerimantas.github.io/BakeStack/ —
 `.github/workflows/deploy.yml` deploys on every push to `master` touching `site/**`.
 
+**A push is a deploy — never push without an explicit "push" / "į internetą".** Commit
+locally unless told otherwise. "Įkelkim" is ambiguous here: in S24 it meant *add the
+recipes*, was read as *deploy*, and v53 went live unasked.
+
 ## Commands
 
 - `python site/serve.py` — local preview on http://localhost:8792 (sends `no-store`;

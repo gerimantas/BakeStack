@@ -7,3 +7,6 @@ __pycache__/
 # Both .docx remain on disk for the rare case of re-extracting at the raw XML level.
 Patarimai.docx
 Receptai.docx
+
+# Personal VS Code workspace (opens BakeStack next to ../webparser); not part of the project.
+BakeStack.code-workspace
