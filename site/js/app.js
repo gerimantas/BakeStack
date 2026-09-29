@@ -140,6 +140,34 @@ function themeIconSvg(theme) {
  * The search input and its dropdown must never be re-created — that's what breaks focus mid-keystroke. */
 function renderNav(lang, route) {
   return `
+    <div class="nav__sky" aria-hidden="true">
+      <div class="butterfly">
+        <div class="butterfly__bob">
+          <svg class="butterfly__svg" viewBox="0 0 40 40">
+            <defs>
+              <linearGradient id="bf-upper" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#ff4fa3"/><stop offset=".5" stop-color="#ff8a3d"/><stop offset="1" stop-color="#ffd23f"/>
+              </linearGradient>
+              <linearGradient id="bf-lower" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#7b5cff"/><stop offset="1" stop-color="#2ec5ff"/>
+              </linearGradient>
+            </defs>
+            <g class="butterfly__wings">
+              <path fill="url(#bf-upper)" d="M20 17C14 5 3 4 4 12c0 6 8 9 16 8z"/>
+              <path fill="url(#bf-upper)" d="M20 17c6-12 17-13 16-5 0 6-8 9-16 8z"/>
+              <path fill="url(#bf-lower)" d="M20 21c-8 0-13 6-10 11 3 3 8-2 10-8z"/>
+              <path fill="url(#bf-lower)" d="M20 21c8 0 13 6 10 11-3 3-8-2-10-8z"/>
+              <circle cx="10" cy="11" r="1.6"/><circle cx="30" cy="11" r="1.6"/>
+              <circle cx="13" cy="28" r="1.1"/><circle cx="27" cy="28" r="1.1"/>
+            </g>
+            <g class="butterfly__body">
+              <ellipse cx="20" cy="21" rx="1.4" ry="8"/><circle cx="20" cy="12.5" r="1.8"/>
+              <path d="M19.5 11Q17 6 15 5M20.5 11Q23 6 25 5"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
     <div class="container nav__bar">
       <button class="icon-btn nav__hamburger" id="hamburger-btn" aria-label="Menu" aria-expanded="false">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
