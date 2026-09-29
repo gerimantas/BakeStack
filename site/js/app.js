@@ -414,6 +414,7 @@ function renderRecipesView(lang, params) {
   const category = params.get("cat") || "";
   const tag = params.get("tag") || "";
   const incompleteOnly = params.get("incomplete") === "1";
+  const source = params.get("src") || "";
 
   const groupDict = STRINGS[lang]?.categoryGroups || STRINGS.en.categoryGroups;
   // curated display order, not alphabetical or by count — biggest/most-searched-for types first
@@ -427,6 +428,7 @@ function renderRecipesView(lang, params) {
     .sort((a, b) => b[1] - a[1])
     .map(([tg]) => tg);
   const hasTechniques = all.some((r) => r.is_technique);
+  const sources = RECIPE_SOURCES.filter((s) => all.some((r) => recipeSource(r) === s.id));
 
   let filtered = all;
   if (query) {
@@ -438,18 +440,30 @@ function renderRecipesView(lang, params) {
   if (category) filtered = filtered.filter((r) => r.categoryGroup === category);
   if (tag) filtered = filtered.filter((r) => (r.tags || []).includes(tag));
   if (incompleteOnly) filtered = filtered.filter((r) => r.is_complete === false);
+  if (source) filtered = filtered.filter((r) => recipeSource(r) === source);
 
   // Every count reflects the OTHER active filters but never the chip's own — including that chip's
   // own filter would collapse each non-selected chip in the row to 0 while its link still had
-  // matches behind it. Kind row: Category + Flavor. Type row: Kind + Flavor. Flavor row: Kind + Category.
-  const byOtherKind = all.filter((r) => (!category || r.categoryGroup === category) && (!tag || (r.tags || []).includes(tag)));
-  const byOtherTag = all.filter((r) => (!kind || (kind === "technique" ? r.is_technique : !r.is_technique)) && (!tag || (r.tags || []).includes(tag)));
-  const byOtherCategory = all.filter((r) => (!kind || (kind === "technique" ? r.is_technique : !r.is_technique)) && (!category || r.categoryGroup === category));
+  // matches behind it. Each row applies every filter except its own.
+  const matchKind = (r) => !kind || (kind === "technique" ? r.is_technique : !r.is_technique);
+  const matchCategory = (r) => !category || r.categoryGroup === category;
+  const matchTag = (r) => !tag || (r.tags || []).includes(tag);
+  const matchSource = (r) => !source || recipeSource(r) === source;
+  const byOtherKind = all.filter((r) => matchCategory(r) && matchTag(r) && matchSource(r));
+  const byOtherTag = all.filter((r) => matchKind(r) && matchTag(r) && matchSource(r));
+  const byOtherCategory = all.filter((r) => matchKind(r) && matchCategory(r) && matchSource(r));
+  const byOtherSource = all.filter((r) => matchKind(r) && matchCategory(r) && matchTag(r));
   // Same rule for the incomplete toggle: everything the other filters allow, minus its own.
-  const byOtherIncomplete = all.filter((r) => (!kind || (kind === "technique" ? r.is_technique : !r.is_technique)) && (!category || r.categoryGroup === category) && (!tag || (r.tags || []).includes(tag)));
+  const byOtherIncomplete = all.filter((r) => matchKind(r) && matchCategory(r) && matchTag(r) && matchSource(r));
 
-  const chip = (label, count, active, href) =>
-    `<button class="chip" data-nav="${href}" aria-pressed="${active}">${esc(label)} <span class="chip__count">${count}</span></button>`;
+  // A chip with no matches is a dead end, so it is hidden — unless it is the active one, which
+  // must stay visible so it can still be switched off.
+  const chip = (label, count, active, href) => (count === 0 && !active ? "" :
+    `<button class="chip" data-nav="${href}" aria-pressed="${active}">${esc(label)} <span class="chip__count">${count}</span></button>`);
+  // Top 14 flavours among those the other filters leave, rather than the global top 14 with
+  // the empty ones hidden — otherwise a narrow filter shows a few chips where 14 would fit.
+  const visibleFlavors = flavorTags.filter((tg) => byOtherCategory.some((r) => (r.tags || []).includes(tg))).slice(0, 14);
+  if (tag && !visibleFlavors.includes(tag)) visibleFlavors.push(tag);
 
   return `
   <div class="container">
@@ -467,6 +481,13 @@ function renderRecipesView(lang, params) {
         ${chip(t(lang, "kindTechnique"), byOtherKind.filter((r) => r.is_technique).length, kind === "technique", `#/recipes?${withParam(params, "kind", "technique")}`)}
       </div></div>
     </div>` : ""}
+    ${sources.length > 1 ? `<div class="filter-block">
+      <span class="filter-label">${t(lang, "filterSource")}</span>
+      <div class="filters"><div class="filter-group">
+        ${chip(t(lang, "allTypes"), byOtherSource.length, !source, `#/recipes?${withParam(params, "src", "")}`)}
+        ${sources.map((s) => chip(s.label, byOtherSource.filter((r) => recipeSource(r) === s.id).length, source === s.id, `#/recipes?${withParam(params, "src", s.id)}`)).join("")}
+      </div></div>
+    </div>` : ""}
     <div class="filter-block">
       <span class="filter-label">${t(lang, "filterType")}</span>
       <div class="filters">
@@ -480,7 +501,7 @@ function renderRecipesView(lang, params) {
       <span class="filter-label">${t(lang, "filterFlavor")}</span>
       <div class="filters"><div class="filter-group">
         ${chip(t(lang, "allTypes"), byOtherCategory.length, !tag, `#/recipes?${withParam(params, "tag", "")}`)}
-        ${(flavorTags.slice(0, 14).includes(tag) || !tag ? flavorTags.slice(0, 14) : [...flavorTags.slice(0, 14), tag]).map((tg) => chip(tagLabel(lang, "flavor_theme", tg), byOtherCategory.filter((r) => (r.tags || []).includes(tg)).length, tag === tg, `#/recipes?${withParam(params, "tag", tg)}`)).join("")}
+        ${visibleFlavors.map((tg) => chip(tagLabel(lang, "flavor_theme", tg), byOtherCategory.filter((r) => (r.tags || []).includes(tg)).length, tag === tg, `#/recipes?${withParam(params, "tag", tg)}`)).join("")}
       </div></div>
     </div>` : ""}
     ${byOtherIncomplete.some((r) => r.is_complete === false) ? `<button type="button" class="incomplete-legend" data-nav="#/recipes?${withParam(params, "incomplete", incompleteOnly ? "" : "1")}" aria-pressed="${incompleteOnly}"><span class="incomplete-legend__mark">⚠</span> ${esc(t(lang, "incompleteLegend"))} <span class="incomplete-legend__count">(${byOtherIncomplete.filter((r) => r.is_complete === false).length})</span></button>` : ""}

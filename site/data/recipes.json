@@ -10690,5 +10690,939 @@
     "variant_label": null,
     "categoryGroup": "cookies-brownies",
     "source_url": "https://www.instagram.com/marusya.manko/reel/DcgQjYrq1HT/"
+  },
+  {
+    "id": "recipe-086",
+    "title": "One-Bowl Chocolate Cupcakes with Sour Cream Ganache",
+    "category": "cupcake",
+    "description": "Chocolate cupcakes mixed in a single bowl and topped with a two-ingredient dark chocolate and sour cream ganache, piped in ruffles.",
+    "servings": 14,
+    "ingredients": [
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Cupcakes"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Cupcakes"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "Dutch-processed cocoa powder",
+        "section": "Cupcakes"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "espresso powder",
+        "section": "Cupcakes",
+        "amount_conv": 4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Cupcakes",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "baking soda",
+        "section": "Cupcakes",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tsp",
+        "name": "baking powder",
+        "section": "Cupcakes",
+        "amount_conv": 6.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "eggs",
+        "section": "Cupcakes"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg yolk",
+        "section": "Cupcakes"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Cupcakes",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "neutral oil",
+        "section": "Cupcakes"
+      },
+      {
+        "amount": 220,
+        "unit": "g",
+        "name": "whole milk, at room temperature",
+        "section": "Cupcakes"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "boiling water",
+        "section": "Cupcakes"
+      },
+      {
+        "amount": 560,
+        "unit": "g",
+        "name": "good-quality dark chocolate (70%), chopped",
+        "section": "Dark chocolate sour cream ganache"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "full-fat sour cream, at room temperature",
+        "section": "Dark chocolate sour cream ganache"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "crispy pearls or flaky sea salt, to finish (optional)",
+        "section": "Dark chocolate sour cream ganache"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 180°C (350°F). Line a muffin pan with cupcake liners. The recipe makes 14–16 cupcakes, so you may need two pans or two batches.",
+      "In a large bowl, whisk together the flour, sugar, cocoa, espresso powder, salt, baking soda and baking powder. Add the eggs, yolk, vanilla bean paste, oil and milk, and mix well. Add the boiling water and whisk until incorporated.",
+      "Scoop about ¼ cup plus 2 tablespoons of batter into each liner — a cookie scoop makes this easy.",
+      "Bake for 19–20 minutes, until the cupcakes spring back when touched or a toothpick inserted into the centre comes out clean.",
+      "Cool on a wire rack.",
+      "Ganache: place the sour cream and chopped chocolate in a heatproof bowl and stir to combine.",
+      "Microwave in 30-second bursts, stirring well after each one (it usually takes about a minute — watch carefully). Once the chocolate has melted, switch to a whisk and whisk until the ganache is smooth and shiny. Scrape down the sides of the bowl with a spatula.",
+      "Press plastic wrap onto the surface of the ganache and leave at room temperature for 2–3 hours, until it has thickened to a pipeable consistency.",
+      "Assembly: transfer the ganache to a piping bag fitted with a large open star tip (such as Ateco #826). Hold the tip directly above each cupcake and pipe a ruffled mound. Finish with sprinkles, crispy pearls or flaky sea salt, as desired."
+    ],
+    "tags": [
+      "chocolate",
+      "dark-chocolate",
+      "coffee-espresso",
+      "cocoa-powder",
+      "sour-cream"
+    ],
+    "image": "images/recipe-086.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cupcake",
+    "source_url": "https://cloudykitchen.com/blog/one-bowl-chocolate-cupcakes-with-sour-cream-ganache/"
+  },
+  {
+    "id": "recipe-087",
+    "title": "Passionfruit No-Bake Cheesecake",
+    "category": "cheesecake",
+    "description": "A no-bake cheesecake with a graham cracker crust, a passionfruit cream cheese filling, and passionfruit curd swirled through the top.",
+    "servings": 16,
+    "ingredients": [
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "passionfruit pulp or juice (no seeds)",
+        "section": "Passionfruit curd"
+      },
+      {
+        "amount": 140,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Passionfruit curd"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "unsalted butter, cold from the fridge is fine",
+        "section": "Passionfruit curd"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "egg yolks",
+        "section": "Passionfruit curd"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Passionfruit curd"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "vanilla bean paste (optional)",
+        "section": "Passionfruit curd",
+        "amount_conv": 1.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 45,
+        "unit": "g",
+        "name": "reserved passionfruit seeds (optional)",
+        "section": "Passionfruit curd"
+      },
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "graham crackers",
+        "section": "Graham cracker crust"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Graham cracker crust"
+      },
+      {
+        "amount": 175,
+        "unit": "g",
+        "name": "unsalted butter, melted and cooled",
+        "section": "Graham cracker crust"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Graham cracker crust",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "cream, for whipping",
+        "section": "Cheesecake filling"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "cream, for the gelatine",
+        "section": "Cheesecake filling"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "powdered gelatine",
+        "section": "Cheesecake filling",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 450,
+        "unit": "g",
+        "name": "cream cheese, at room temperature",
+        "section": "Cheesecake filling"
+      },
+      {
+        "amount": 130,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Cheesecake filling"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Cheesecake filling",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Cheesecake filling",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      }
+    ],
+    "steps": [
+      "Passionfruit curd: place all the curd ingredients except the seeds in a medium saucepan. Cook over low to medium heat for 10–15 minutes, stirring constantly, until the curd coats the back of a spoon and a finger run through it leaves a clear track.",
+      "Remove from the heat, strain through a sieve, then stir in the reserved seeds. Press plastic wrap directly onto the surface, cover with a lid and chill in the fridge until completely cool.",
+      "Crust: grease a 23 cm (9 in) square pan and line it with two strips of parchment paper that overhang the sides to form a sling. Pulse the graham crackers and sugar in a food processor to fine crumbs, then transfer to a medium bowl. Add the salt and melted butter and mix — it should look like wet sand.",
+      "Tip the crumbs into the pan and press them down into an even layer with the bottom of a flat glass or measuring cup. Place in the freezer while you make the filling.",
+      "Filling: in a small pot over low heat, combine the 120 g of cream and the gelatine. Stir until the gelatine dissolves, then set aside to cool slightly.",
+      "Whip the 300 g of cream to soft peaks with a stand mixer or electric mixer and transfer to a bowl (no need to wash the mixer bowl). Beat the cream cheese and sugar with the paddle attachment until smooth. Add the vanilla and salt and beat to incorporate, then add the gelatine-cream mixture and mix well.",
+      "Take the bowl off the mixer, add 200 g of the cooled passionfruit curd and fold it in. Then gently fold in the softly whipped cream.",
+      "Spoon the filling over the crust, tap the pan to release any bubbles and smooth the top with an offset spatula. Spread the remaining curd over the surface and swirl it into the upper part of the filling with a spoon, then bang the pan on the counter to level the top.",
+      "Refrigerate for at least 3 hours, until set. Lift the cheesecake out using the parchment sling and cut into squares with a knife dipped in hot water and wiped dry before each cut.",
+      "Store leftovers in an airtight container in the fridge."
+    ],
+    "tags": [
+      "passionfruit",
+      "cream-cheese",
+      "heavy-whipping-cream",
+      "gelatin",
+      "egg-yolks"
+    ],
+    "image": "images/recipe-087.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cheesecake",
+    "source_url": "https://cloudykitchen.com/blog/passionfruit-no-bake-cheesecake/"
+  },
+  {
+    "id": "recipe-088",
+    "title": "Brown Butter Cinnamon Rolls with Brown Butter Cream Cheese Frosting",
+    "category": "cinnamon-roll",
+    "description": "Soft brioche filled with spiced brown sugar and brown butter, rolled up, baked, and spread with a brown butter cream cheese frosting flecked with vanilla bean. More work than a standard cinnamon roll, and worth it.",
+    "servings": 12,
+    "ingredients": [
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "active dry yeast",
+        "section": "Brioche dough",
+        "amount_conv": 7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "whole milk, lukewarm",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 4,
+        "unit": "tbsp",
+        "name": "sugar",
+        "section": "Brioche dough",
+        "amount_conv": 50,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 565,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Brioche dough",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "eggs, at room temperature",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Brioche dough",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "unsalted butter, cold from the fridge is fine",
+        "section": "Brown butter"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "brown butter (made above), soft and spreadable",
+        "section": "Filling"
+      },
+      {
+        "amount": 375,
+        "unit": "g",
+        "name": "dark brown sugar",
+        "section": "Filling"
+      },
+      {
+        "amount": 3,
+        "unit": "tbsp",
+        "name": "ground cinnamon",
+        "section": "Filling",
+        "amount_conv": 25.2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "all-purpose flour",
+        "section": "Filling",
+        "amount_conv": 7.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Filling"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Filling",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "brown butter (made above), soft and spreadable",
+        "section": "Brown butter cream cheese frosting"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "cream cheese, at room temperature",
+        "section": "Brown butter cream cheese frosting"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "powdered sugar, sifted",
+        "section": "Brown butter cream cheese frosting"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Brown butter cream cheese frosting",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Brown butter cream cheese frosting",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      }
+    ],
+    "steps": [
+      "Brioche dough: stir together the lukewarm milk, 1 tablespoon of the sugar and the yeast in a medium bowl. Leave for 10–15 minutes, until foamy.",
+      "In the bowl of a stand mixer fitted with the dough hook, briefly mix the flour, salt and remaining sugar.",
+      "Add the milk mixture, eggs and vanilla and mix on low for 2–3 minutes, then on medium for a further 5 minutes. Add the butter a little at a time, letting each piece incorporate before adding the next. Mix for another 7–10 minutes, until the dough is smooth and soft.",
+      "Cover the bowl with plastic wrap and leave in a warm place until doubled in size, 45 minutes to 1 hour. Alternatively, do the first rise overnight in the fridge.",
+      "Brown butter: melt the butter in a medium saucepan over medium heat, then keep cooking, swirling the pan often, until it foams and turns golden brown and nutty, 3–4 minutes. Transfer to a bowl, cool slightly, then chill in the freezer until solid. Bring back to room temperature, stirring often, until soft and spreadable. Browning cooks off moisture, which is why 500 g of butter is needed for the 350 g of brown butter used in the filling and frosting.",
+      "Filling and assembly: line a 23 × 33 cm (9 × 13 in) baking dish or quarter sheet pan with parchment paper. In a small bowl, mix the brown butter, brown sugar, cinnamon, flour, salt and vanilla bean paste.",
+      "Turn the dough out onto a lightly floured surface and roll it into a 60 × 40 cm (24 × 16 in) rectangle, squaring off the edges often as you roll. Spread the filling evenly over the whole surface.",
+      "Starting from a long side, roll the dough into a tight spiral. Cut the log in half and place both pieces side by side on a sheet pan lined with parchment and lightly greased with cooking spray. Cover loosely with plastic wrap and freeze for 20 minutes to firm up, which gives neater cuts. If the dough rose overnight in the fridge and the logs hold together well, you can skip this.",
+      "Slice each chilled log into 6 equal pieces (a ruler helps) and arrange them, evenly spaced, in the prepared dish.",
+      "Cover loosely with plastic wrap and leave to rise for 45 minutes to 1 hour, until puffy and a gentle poke with a finger leaves a small dent.",
+      "Meanwhile, preheat the oven to 180°C (350°F).",
+      "Bake for 35–40 minutes, until deeply golden brown. Let stand for about 15 minutes before frosting.",
+      "Frosting: beat the spreadable brown butter and the cream cheese with the paddle attachment on medium speed until combined. Add the powdered sugar, salt and vanilla bean paste and whip until light and fluffy.",
+      "Spread the frosting over the rolls while they are still slightly warm. Store leftovers in an airtight container at room temperature and rewarm in the microwave before serving."
+    ],
+    "tags": [
+      "cinnamon",
+      "vanilla",
+      "butter-brown-beurre-noisette",
+      "cream-cheese",
+      "sugar-brown",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-088.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/brown-butter-cinnamon-rolls-with-brown-butter-cream-cheese-frosting/"
+  },
+  {
+    "id": "recipe-089",
+    "title": "Tiramisu Sheet Cake",
+    "category": "tiramisu",
+    "description": "A homemade vanilla sheet cake brushed with coffee and topped with an espresso mascarpone whipped cream frosting and a dusting of cocoa.",
+    "servings": 16,
+    "ingredients": [
+      {
+        "amount": 260,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Vanilla cake"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "baking powder",
+        "section": "Vanilla cake",
+        "amount_conv": 8.9,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "kosher salt",
+        "section": "Vanilla cake",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 220,
+        "unit": "g",
+        "name": "buttermilk, at room temperature",
+        "section": "Vanilla cake"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Vanilla cake",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Vanilla cake"
+      },
+      {
+        "amount": 160,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Vanilla cake"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "large eggs, at room temperature",
+        "section": "Vanilla cake"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "strong coffee, cold",
+        "section": "Coffee soak"
+      },
+      {
+        "amount": 230,
+        "unit": "g",
+        "name": "mascarpone, cold",
+        "section": "Espresso mascarpone frosting"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tsp",
+        "name": "espresso powder or fine instant coffee",
+        "section": "Espresso mascarpone frosting",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 110,
+        "unit": "g",
+        "name": "powdered sugar, sifted",
+        "section": "Espresso mascarpone frosting"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Espresso mascarpone frosting",
+        "amount_conv": 1.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Espresso mascarpone frosting"
+      },
+      {
+        "amount": 240,
+        "unit": "g",
+        "name": "heavy cream, cold from the fridge",
+        "section": "Espresso mascarpone frosting"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "cocoa powder, for dusting",
+        "section": "Espresso mascarpone frosting"
+      }
+    ],
+    "steps": [
+      "Preheat the oven to 180°C (350°F). Grease a 23 × 33 cm (9 × 13 in) pan or quarter sheet pan and line it with parchment paper.",
+      "In a medium bowl, combine the flour, baking powder and salt. In a small bowl, combine the buttermilk and vanilla.",
+      "In another bowl, cream the butter and sugar with an electric mixer until light and fluffy, scraping down the sides as needed. Add the eggs and mix until incorporated, then scrape down the bowl with a spatula.",
+      "With the mixer on low, add the dry and wet ingredients alternately: a third of the dry, half of the wet, another third of the dry, the rest of the wet, then the last of the dry. Mix until just combined, scraping down the sides as needed.",
+      "Spread the batter in the prepared pan, smooth the top and tap the pan on the counter a few times to settle it.",
+      "Bake for 25–30 minutes, until the top is golden, springs back when lightly pressed, and a skewer inserted into the middle comes out clean.",
+      "Cool in the pan for 10–15 minutes, then transfer the cake to a serving plate. Brush generously with the coffee and leave to cool completely.",
+      "Frosting: whip the mascarpone and espresso powder with an electric hand mixer on high until smooth and the coffee is incorporated. Add the powdered sugar, salt and vanilla and mix to combine.",
+      "With the mixer running, stream in the heavy cream, then keep whipping. The frosting will seem quite thin at first — keep going until it has the consistency of thick whipped cream. Take care not to over-whip; it comes together quickly.",
+      "Transfer the frosting to a piping bag fitted with a French star tip and pipe blobs all over the cake, or spread it on with an offset spatula.",
+      "Dust the top with cocoa powder. Keep in the fridge until serving, and store leftovers in an airtight container in the fridge."
+    ],
+    "tags": [
+      "coffee-espresso",
+      "vanilla",
+      "mascarpone",
+      "heavy-whipping-cream",
+      "espresso-instant-coffee",
+      "creaming-method"
+    ],
+    "image": "images/recipe-089.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "tiramisu-zephyr",
+    "source_url": "https://cloudykitchen.com/blog/tiramisu-cake/"
+  },
+  {
+    "id": "recipe-090",
+    "title": "Lemon Curd",
+    "category": "component",
+    "description": "A thick, stable five-ingredient lemon curd made in one pot — no tempering or double boiler needed. Use it as a spread or as a filling for cakes and cookies. Makes about 320 g.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "granulated sugar"
+      },
+      {
+        "amount": 6,
+        "unit": "g",
+        "name": "fresh lemon zest (from about 2 lemons)"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "freshly squeezed lemon juice"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "egg yolks (from about 6 eggs)"
+      },
+      {
+        "amount": 70,
+        "unit": "g",
+        "name": "unsalted butter, cold, cut into cubes"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt"
+      }
+    ],
+    "steps": [
+      "Put the sugar in a medium non-reactive saucepan (stainless steel works). Add the lemon zest and rub it into the sugar with your fingers to release its oils.",
+      "Add all the remaining ingredients and stir to combine — the butter will still be in chunks.",
+      "Cook over medium-low heat, stirring occasionally with a whisk or silicone spatula, until the butter has melted and the mixture is smooth (small bits of zest will remain).",
+      "Keep cooking, stirring frequently, until the curd reaches 76°C (170°F), or until it coats the back of a spatula and a finger drawn through it leaves a clear line.",
+      "Pour the curd through a sieve into the jar or container you will store it in, to remove the zest and any bits of cooked egg. Skip straining if you prefer the zest left in. The curd will still look a little runny but will set as it cools; to cool it faster, pour it into something shallow.",
+      "Press plastic wrap directly onto the surface and refrigerate until completely cool. Store in an airtight container in the fridge and use within 2 weeks."
+    ],
+    "tags": [
+      "lemon",
+      "egg-yolks",
+      "butter",
+      "straining-sieve"
+    ],
+    "image": "images/recipe-090.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "components-fillings",
+    "source_url": "https://cloudykitchen.com/blog/lemon-curd/"
+  },
+  {
+    "id": "recipe-091",
+    "title": "Blackcurrant–Coffee–Cardamom Buns",
+    "category": "roll",
+    "description": "Officially my new favourite version of these soft, fluffy buns — the gentle tartness of blackcurrants, rich coffee and warm notes of cardamom. What could be better with a cup of hot cocoa on a day like this?",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "warm milk",
+        "section": "Dough"
+      },
+      {
+        "amount": 7,
+        "unit": "g",
+        "name": "yeast",
+        "section": "Dough"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Dough"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "melted butter",
+        "section": "Dough"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "instant espresso powder",
+        "section": "Dough",
+        "amount_conv": 4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg + 1 egg yolk",
+        "section": "Dough"
+      },
+      {
+        "amount": 335,
+        "unit": "g",
+        "name": "strong bread flour",
+        "section": "Dough"
+      },
+      {
+        "amount": 25,
+        "unit": "g",
+        "name": "cocoa powder",
+        "section": "Dough"
+      },
+      {
+        "amount": 4,
+        "unit": "g",
+        "name": "salt",
+        "section": "Dough"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "blackcurrants",
+        "section": "Blackcurrant jam"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Blackcurrant jam"
+      },
+      {
+        "amount": 9,
+        "unit": "g",
+        "name": "cornstarch",
+        "section": "Blackcurrant jam"
+      },
+      {
+        "amount": 22,
+        "unit": "g",
+        "name": "lemon or lime juice",
+        "section": "Blackcurrant jam"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "softened butter",
+        "section": "Coffee filling"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Coffee filling"
+      },
+      {
+        "amount": 5,
+        "unit": "g",
+        "name": "instant espresso powder",
+        "section": "Coffee filling"
+      },
+      {
+        "amount": 4,
+        "unit": "g",
+        "name": "ground cardamom",
+        "section": "Coffee filling"
+      },
+      {
+        "amount": 2,
+        "unit": "g",
+        "name": "salt",
+        "section": "Coffee filling"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "cream cheese",
+        "section": "Coffee frosting"
+      },
+      {
+        "amount": 130,
+        "unit": "g",
+        "name": "mascarpone",
+        "section": "Coffee frosting"
+      },
+      {
+        "amount": 20,
+        "unit": "g",
+        "name": "powdered sugar",
+        "section": "Coffee frosting"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "instant espresso powder",
+        "section": "Coffee frosting",
+        "amount_conv": 4,
+        "unit_conv": "g"
+      }
+    ],
+    "steps": [
+      "Combine the milk, sugar, melted butter and yeast. Add the egg, egg yolk, salt and espresso powder. Sift the flour and cocoa powder together, add them to the mixture, and knead until you have a soft, smooth dough.",
+      "Cover the dough and leave it to rise for about 1–2 hours.",
+      "Blackcurrant jam: combine the blackcurrants and sugar in a saucepan. Mix the cornstarch with the lemon or lime juice, add it to the berries, and bring to a boil, stirring constantly.",
+      "Coffee filling: combine the softened butter with the remaining filling ingredients until smooth.",
+      "Roll the dough out thinly into a rectangle and spread the coffee filling evenly over the surface.",
+      "Spread a thin layer of blackcurrant jam on top. Roll the dough up tightly into a log and cut it into 8 pieces. Arrange the buns in a baking dish generously greased with butter and lightly sprinkled with sugar.",
+      "Leave the buns to rise for another hour. Bake at 175°C (350°F) for 25–35 minutes.",
+      "Frosting: combine the cream cheese, mascarpone, powdered sugar and instant espresso powder until smooth. Spread over the buns while they are still warm."
+    ],
+    "tags": [
+      "yeast",
+      "sugar",
+      "butter",
+      "eggs",
+      "salt",
+      "flour-bread-strong",
+      "cocoa-powder",
+      "espresso-instant-coffee",
+      "cornstarch",
+      "cream-cheese",
+      "mascarpone",
+      "sugar-powdered",
+      "coffee-espresso"
+    ],
+    "image": "images/recipe-091.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://www.instagram.com/marusya.manko/reel/DdlrF8-qeMy/"
+  },
+  {
+    "id": "recipe-092",
+    "title": "Chocoholic's Brownie",
+    "category": "brownie",
+    "description": "A quick, easy brownie for true chocoholics — rich and intensely chocolatey, with dark chocolate callets mixed through. Bake it for less time for a moist, tender brownie, or longer for a dense, chewy one.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "butter"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "white sugar"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "brown sugar"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "large eggs (~110 g)"
+      },
+      {
+        "amount": 2,
+        "unit": "g",
+        "name": "fleur de sel"
+      },
+      {
+        "amount": 65,
+        "unit": "g",
+        "name": "flour"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "cocoa powder"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "dark chocolate callets"
+      }
+    ],
+    "steps": [
+      "Melt the butter and add the sugar.",
+      "Add the eggs and beat with a mixer until the sugar has dissolved.",
+      "Add the flour, sifted together with the cocoa powder and salt. Mix by hand with a spatula.",
+      "Add the dark chocolate callets and mix until combined.",
+      "Bake in an 18 cm cake ring in a convection oven at 175°C (350°F): 15–20 minutes for a moist, tender brownie, or 25–30 minutes for a dense, chewy one.",
+      "The brownie can be served as soon as 3 hours after baking."
+    ],
+    "tags": [
+      "chocolate",
+      "dark-chocolate",
+      "cocoa-powder",
+      "butter",
+      "sugar",
+      "sugar-brown",
+      "eggs",
+      "salt"
+    ],
+    "image": "images/recipe-092.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cookies-brownies",
+    "source_url": "https://www.instagram.com/marusya.manko/reel/Dc3ZL6VKV8p/"
   }
 ]

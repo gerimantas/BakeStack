@@ -104,6 +104,21 @@ function getTips(lang) { return store.tips[lang] || []; }
 function getRecipeById(lang, id) { return getRecipes(lang).find((r) => r.id === id); }
 function getTipById(lang, id) { return getTips(lang).find((t) => t.id === id); }
 
+/** Recipe authors, in filter-row order. Derived from `source_url` rather than stored: every
+ * recipe already links its original, so a separate field would be a second copy that can drift.
+ * A new source needs one entry here, placed before the catch-all. Names are proper nouns, so
+ * they are not translated. */
+const RECIPE_SOURCES = [
+  { id: "marusya-manko", label: "Marusya Manko", match: () => true },
+  { id: "cloudy-kitchen", label: "Cloudy Kitchen", match: (url) => url.includes("cloudykitchen.com") },
+];
+
+function recipeSource(recipe) {
+  const url = recipe.source_url || "";
+  // Specific sources first; Marusya Manko (docx archive and Instagram) is the catch-all.
+  return (RECIPE_SOURCES.slice(1).find((s) => s.match(url)) || RECIPE_SOURCES[0]).id;
+}
+
 /** Scales a single ingredient amount by the multiplier. Handles null, number, and {min,max} ranges. */
 function scaleAmount(amount, multiplier) {
   if (amount == null) return null;
