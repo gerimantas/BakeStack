@@ -22,7 +22,7 @@
  * through to the network and are simply unavailable offline.
  */
 
-const BUILD = "v60";
+const BUILD = "v61";
 const CACHE = `bakestack-${BUILD}`;
 
 // Everything needed to render the app offline in the language most visitors use. The other
@@ -38,6 +38,9 @@ const PRECACHE = [
   `./js/state.js?v=${BUILD.slice(1)}`,
   `./js/app.js?v=${BUILD.slice(1)}`,
   "./icon.svg",
+  "./images/butterfly/left.webp",
+  "./images/butterfly/right.webp",
+  "./images/butterfly/body.webp",
   "./data/recipes.json",
   "./data/tips.json",
   "./data/tags.json",

@@ -85,72 +85,54 @@ img { max-width: 100%; display: block; }
     0 4px 40px color-mix(in oklch, var(--color-accent) 22%, transparent);
 }
 
-/* Decorative butterfly crossing the header. The sky layer clips it to the bar and never takes
-   clicks; the search dropdown (z-dropdown) still stacks above it. Three nested layers so each
-   motion has its own clock: .butterfly carries it across, __bob drifts it up and down, and
-   __wings flaps. .butterfly spans the bar and __bob sits just off its right edge, so a
-   translateX of 100% + its own width takes the butterfly from off-left to off-right. */
-.nav__sky {
-  position: absolute;
-  inset: 0;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: var(--z-base);
-}
-
+/* Decorative monarch perched on the header's bottom edge, now and then slowly closing and
+   reopening its wings. A real photo (Danaus plexippus, public domain, Wikimedia Commons:
+   File:Danaus_plexippus-transparent.png) split into three same-size layers: each wing hinges
+   in 3D on the body axis (49.1% across the image), and the body with antennae sits on top
+   unmoved so the hinge never shows. Never takes clicks; the search dropdown stacks above it.
+   Under reduced motion it simply sits with wings open. */
 .butterfly {
   position: absolute;
-  inset: 0;
-  animation: bf-fly 24s linear 3s infinite backwards;
+  left: 62%;
+  bottom: -1.35rem;
+  width: 4rem;
+  aspect-ratio: 216 / 143;
+  z-index: var(--z-base);
+  pointer-events: none;
+  perspective: 12rem;
+  transform: rotate(-9deg);
 }
 
-.butterfly__bob {
+.butterfly img {
   position: absolute;
-  right: 100%;
-  top: 0.75rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  animation: bf-bob 2.6s ease-in-out infinite alternate;
-}
-
-.butterfly__svg {
-  display: block;
+  inset: 0;
   width: 100%;
   height: 100%;
-  overflow: visible;
-  animation: bf-hue 12s linear infinite;
 }
 
-.butterfly__wings {
-  transform-box: fill-box;
-  transform-origin: 50% 50%;
-  animation: bf-flap 0.22s ease-in-out infinite alternate;
+.butterfly__wing {
+  transform-origin: 49.1% 55%;
+  filter: drop-shadow(0 1px 1.5px oklch(10% 0.01 50 / 0.55));
+  animation: bf-wing-l 17s ease-in-out 2s infinite;
 }
-.butterfly__wings path { stroke: oklch(25% 0.02 300 / 0.55); stroke-width: 0.6; }
-.butterfly__wings circle { fill: oklch(99% 0.01 90 / 0.85); }
+.butterfly__wing--r { animation-name: bf-wing-r; }
+.butterfly__body { filter: drop-shadow(0 1px 1px oklch(10% 0.01 50 / 0.5)); }
 
-.butterfly__body { fill: oklch(22% 0.02 300); stroke: oklch(22% 0.02 300); stroke-width: 0; }
-.butterfly__body path { fill: none; stroke-width: 0.7; stroke-linecap: round; }
-
-@keyframes bf-fly {
-  from { transform: translateX(0); }
-  60%, to { transform: translateX(calc(100% + 2.5rem)); }
+/* One slow full close-and-open, a long rest, then a small half-hearted twitch — irregular
+   enough over 17s that the cycle does not read as a loop. */
+@keyframes bf-wing-l {
+  0%, 30%   { transform: rotateY(0deg); }
+  37%, 39%  { transform: rotateY(74deg); }
+  48%, 78%  { transform: rotateY(0deg); }
+  80.5%     { transform: rotateY(32deg); }
+  84%, 100% { transform: rotateY(0deg); }
 }
-@keyframes bf-bob {
-  from { transform: translateY(-0.45rem) rotate(62deg); }
-  to   { transform: translateY(0.45rem) rotate(80deg); }
-}
-@keyframes bf-flap {
-  from { transform: scaleX(1); }
-  to   { transform: scaleX(0.3); }
-}
-@keyframes bf-hue {
-  from { filter: drop-shadow(0 1px 2px oklch(20% 0.02 300 / 0.35)) hue-rotate(0deg); }
-  to   { filter: drop-shadow(0 1px 2px oklch(20% 0.02 300 / 0.35)) hue-rotate(360deg); }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .nav__sky { display: none; }
+@keyframes bf-wing-r {
+  0%, 30%   { transform: rotateY(0deg); }
+  37%, 39%  { transform: rotateY(-74deg); }
+  48%, 78%  { transform: rotateY(0deg); }
+  80.5%     { transform: rotateY(-32deg); }
+  84%, 100% { transform: rotateY(0deg); }
 }
 
 .nav__bar {
