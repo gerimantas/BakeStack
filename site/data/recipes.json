@@ -15908,5 +15908,1485 @@
     "variant_label": null,
     "categoryGroup": "cinnamon-roll",
     "source_url": "https://cloudykitchen.com/blog/dulce-de-leche-carrot-cake-cinnamon-rolls/"
+  },
+  {
+    "id": "recipe-119",
+    "title": "Earl Grey Buns",
+    "category": "roll",
+    "description": "Soft sweet buns made with Earl Grey infused milk and Earl Grey sugar, rolled up with brown sugar and butter, and finished with an Earl Grey glaze. Makes 9–10 buns.",
+    "servings": 9,
+    "ingredients": [
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Earl Grey sugar"
+      },
+      {
+        "amount": 2,
+        "unit": "tbsp",
+        "name": "loose-leaf Earl Grey tea",
+        "section": "Earl Grey sugar"
+      },
+      {
+        "amount": 400,
+        "unit": "ml",
+        "name": "whole milk",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 3,
+        "unit": "tbsp",
+        "name": "loose-leaf Earl Grey tea",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 6,
+        "unit": "tbsp",
+        "name": "Earl Grey sugar",
+        "section": "Bun dough",
+        "amount_conv": 75,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "active dry yeast (1 envelope)",
+        "section": "Bun dough",
+        "amount_conv": 7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 435,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tsp",
+        "name": "baking powder",
+        "section": "Bun dough",
+        "amount_conv": 6.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Bun dough",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg, lightly beaten",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 90,
+        "unit": "g",
+        "name": "unsalted butter, melted",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "bergamot extract (optional)",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "brown sugar",
+        "section": "Filling"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "½ cup Earl Grey sugar",
+        "section": "Filling"
+      },
+      {
+        "amount": 113,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Filling"
+      },
+      {
+        "amount": 3,
+        "unit": "tbsp",
+        "name": "Earl Grey infused milk (reserved from the dough)",
+        "section": "Glaze"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "Earl Grey sugar",
+        "section": "Glaze",
+        "amount_conv": 12.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "powdered sugar",
+        "section": "Glaze"
+      }
+    ],
+    "steps": [
+      "Earl Grey sugar: pulse the sugar and tea in a food processor or blender until the tea is finely ground and evenly mixed through. Or grind the tea in a mortar and pestle first, then briefly with the sugar. Set aside.",
+      "Dough: heat the milk in a small pan until just short of a simmer. Add the tea and steep for 2 minutes, then strain well, squeezing as much milk as possible from the leaves.",
+      "Measure out 240 ml (1 cup) of the infused milk for the dough and keep the rest for the glaze. Rewarm the 240 ml to about 45°C (110°F), then stir in 2 tablespoons of the Earl Grey sugar and the yeast. Leave for 5–10 minutes, until foamy.",
+      "In a stand mixer fitted with the dough hook, briefly mix the flour, baking powder, salt and remaining 4 tablespoons of Earl Grey sugar. Add the yeast mixture and the egg and mix on low for 2–3 minutes.",
+      "Add the melted butter and the bergamot extract and mix on low–medium for 10 minutes, stopping now and then to clear the dough off the hook, until smooth and soft. By hand: add the ingredients in the same order, then knead on a lightly floured surface for 10–15 minutes, adding as little flour as possible.",
+      "Place in a lightly greased bowl, cover with plastic wrap and leave in a warm, draught-free place until doubled, 1½–2 hours.",
+      "Roll the dough out on a lightly floured surface to about 53 × 40 cm (21 × 16 in). Spread the soft butter over it with an offset spatula, leaving a 2.5 cm (1 in) border. Mix the brown sugar and Earl Grey sugar, sprinkle evenly over the butter and press down lightly.",
+      "Starting from a long side, roll up tightly, pausing now and then to tighten the roll. Cut into 9–10 even slices and arrange in a lightly greased 25 cm (10 in) skillet or cake tin, or a 23 × 33 cm (9 × 13 in) tin, with a little space between them.",
+      "Cover lightly with plastic wrap and leave in a warm place for about 1 hour, until risen and the dough springs back slightly when pressed. Or do this second rise in the fridge overnight. Preheat the oven to 180°C (350°F) for the last 20 minutes.",
+      "Bake for 30–35 minutes, until golden and the sugar starts to bubble. Cool for 10 minutes before glazing.",
+      "Glaze: mix the powdered sugar, Earl Grey sugar and infused milk until smooth and drizzle over the buns — you may not need it all. Serve straight away; leftovers keep in an airtight container and are best warmed slightly."
+    ],
+    "tags": [
+      "sugar-brown",
+      "baking-powder",
+      "yeast",
+      "butter",
+      "hot-infusion",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-119.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/2017-4-7-earl-grey-buns/"
+  },
+  {
+    "id": "recipe-120",
+    "title": "Boston Bun (Raisin Brioche Bun with Coconut Icing)",
+    "category": "roll",
+    "description": "One large round raisin brioche bun spread with vanilla bean buttercream and covered in desiccated coconut, an Australian and New Zealand bakery classic. Serves 6–8, sliced and eaten with butter.",
+    "servings": 8,
+    "ingredients": [
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "whole milk, lukewarm",
+        "section": "Bread dough"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "sugar, divided",
+        "section": "Bread dough"
+      },
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "active dry yeast",
+        "section": "Bread dough",
+        "amount_conv": 7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Bread dough"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Bread dough",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg, at room temperature",
+        "section": "Bread dough"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "butter, melted and cooled",
+        "section": "Bread dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Bread dough",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 175,
+        "unit": "g",
+        "name": "raisins or sultanas",
+        "section": "Bread dough"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg, whisked with 1 tablespoon water",
+        "section": "Egg wash"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Vanilla bean frosting with coconut"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Vanilla bean frosting with coconut",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Vanilla bean frosting with coconut",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 375,
+        "unit": "g",
+        "name": "powdered sugar, sifted",
+        "section": "Vanilla bean frosting with coconut"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "2–4 tablespoons whole milk",
+        "section": "Vanilla bean frosting with coconut"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "desiccated coconut, to finish (fine tastes better than shredded)",
+        "section": "Vanilla bean frosting with coconut"
+      }
+    ],
+    "steps": [
+      "Dough: stir the lukewarm milk, 1 tablespoon of the sugar and the yeast in a medium bowl. Leave for 10–15 minutes, until foamy.",
+      "In a stand mixer fitted with the dough hook, briefly mix the flour, salt and remaining sugar.",
+      "Add the yeast mixture, egg, butter and vanilla and mix on low for 2–3 minutes, then on medium for 10 minutes, until soft and smooth. Add the raisins and mix for about a minute, then turn out and finish kneading them in by hand.",
+      "Shape into a ball, place in a lightly buttered bowl, cover with plastic wrap and leave in a warm spot until doubled, about 1 hour.",
+      "Turn the dough out onto a very lightly floured surface and knock it back. Grease a 20 cm (8 in) ring, such as the ring of a springform pan, and set it on a parchment-lined sheet pan.",
+      "Pat the dough into a disc inside the ring, gently pressing it out to the edges to make a flat round. Cover with plastic wrap and leave in a warm spot for 45 minutes to 1 hour, until puffy. Preheat the oven to 180°C (350°F) for the last 20 minutes.",
+      "Brush with egg wash and bake for 30–35 minutes, until golden brown and 95°C (200°F) inside; the bottom should sound hollow when tapped.",
+      "Cool for 10 minutes, then remove the ring and cool completely on a wire rack.",
+      "Frosting: in a stand mixer fitted with the paddle, beat the butter, vanilla and salt until pale and creamy. Sift in the powdered sugar and mix on medium until combined. Add milk a tablespoon at a time until the frosting is light, fluffy and spreadable.",
+      "Spread the frosting over the cooled bun and cover generously with coconut. Slice and serve, with butter if you like. Best on the day it is made; leftovers keep in an airtight container at room temperature."
+    ],
+    "tags": [
+      "coconut",
+      "raisins",
+      "vanilla",
+      "sugar-powdered",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-120.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/boston-bun-raisin-brioche-bun-with-coconut-icing/"
+  },
+  {
+    "id": "recipe-121",
+    "title": "Overnight Cinnamon Buns with Cream Cheese Frosting",
+    "category": "cinnamon-roll",
+    "description": "A very wet brioche dough mixed one evening and left in the fridge overnight, then rolled up with brown sugar, cinnamon and toasted pecans, baked in a springform pan and spread with cream cheese frosting.",
+    "servings": 8,
+    "ingredients": [
+      {
+        "amount": 250,
+        "unit": "ml",
+        "name": "whole milk, lukewarm",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "sugar, divided",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tsp",
+        "name": "active dry yeast",
+        "section": "Brioche dough",
+        "amount_conv": 4.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 113,
+        "unit": "g",
+        "name": "unsalted butter, melted and cooled",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 500,
+        "unit": "g",
+        "name": "bread flour",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Brioche dough",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Brioche dough",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "large eggs, at room temperature",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 113,
+        "unit": "g",
+        "name": "unsalted butter, melted",
+        "section": "Filling"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "brown sugar",
+        "section": "Filling"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Filling",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2.5,
+        "unit": "tbsp",
+        "name": "ground cinnamon",
+        "section": "Filling",
+        "amount_conv": 21,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "1 cup toasted pecans, roughly chopped",
+        "section": "Filling"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg, whisked with 1 tablespoon water",
+        "section": "Egg wash"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "powdered sugar, sifted",
+        "section": "Cream cheese frosting"
+      },
+      {
+        "amount": 227,
+        "unit": "g",
+        "name": "cream cheese (one 8 oz package), at room temperature",
+        "section": "Cream cheese frosting"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Cream cheese frosting",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      }
+    ],
+    "steps": [
+      "Dough: whisk the warm milk, 2 tablespoons of the sugar and the yeast in a small bowl. Leave for 5–10 minutes, until foamy. Meanwhile, melt the butter and let it cool.",
+      "In a large bowl or a stand mixer fitted with the dough hook, briefly mix the flour, remaining 2 tablespoons of sugar, salt and vanilla. Add the yeast mixture, cooled butter and eggs.",
+      "Mix on low for 8–10 minutes, until smooth, glossy and pulling away from the sides of the bowl. By hand, beat hard with a wooden spoon for 10–12 minutes. The dough will be very wet — that is expected.",
+      "Cover the bowl tightly with plastic wrap and refrigerate overnight.",
+      "Next day: preheat the oven to 180°C (350°F) and line a 23 or 25 cm (9 or 10 in) springform pan with parchment. Melt the filling butter and let it cool slightly. Mix the brown sugar, salt and cinnamon.",
+      "Turn the dough out onto a lightly floured surface and roll into a 40 × 60 cm (16 × 24 in) rectangle, flipping it once or twice and dusting with a little more flour as needed. Turn it so a long side faces you.",
+      "Brush the dough all over with most of the melted butter, sprinkle evenly with the sugar mixture and pat it down so it sticks. Scatter over the pecans, then drizzle with the remaining butter.",
+      "Starting from the long side, roll up into a tight spiral. Cut into 8 even pieces with a serrated knife and arrange in the prepared tin.",
+      "Cover lightly with plastic wrap and leave in a warm place while the oven finishes heating, about 15 minutes, until slightly puffy.",
+      "Brush with egg wash and bake for 35–40 minutes, until golden brown and the middle bun holds up on its own. Let stand for 10 minutes.",
+      "Frosting: while the buns bake, beat the powdered sugar and cream cheese on high for 1–2 minutes, until light and fluffy. Add the vanilla and beat well. Spread generously over the warm buns.",
+      "Serve straight away. Leftovers are best warmed slightly in the microwave."
+    ],
+    "tags": [
+      "cinnamon",
+      "vanilla",
+      "cream-cheese",
+      "sugar-brown",
+      "flour-bread-strong",
+      "yeast",
+      "proofing-rising-dough"
+    ],
+    "image": null,
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/2017-9-4-overnight-cinnamon-buns-with-cream-cheese-frosting/"
+  },
+  {
+    "id": "recipe-122",
+    "title": "Mixed Nut and Dulce de Leche Brioche Knot",
+    "category": "roll",
+    "description": "A muscovado and vanilla bean brioche spread with dulce de leche, sprinkled with roasted pecans, hazelnuts, walnuts and flaky salt, then split, twisted and tied into one large knot. Serves 8.",
+    "servings": 8,
+    "ingredients": [
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "active dry yeast (1 envelope)",
+        "section": "Brioche dough",
+        "amount_conv": 7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "whole milk, lukewarm",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 4,
+        "unit": "tbsp",
+        "name": "muscovado sugar or dark brown sugar",
+        "section": "Brioche dough",
+        "amount_conv": 50,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 565,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Brioche dough",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "eggs, at room temperature",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Brioche dough",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 115,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 65,
+        "unit": "g",
+        "name": "pecan halves",
+        "section": "Filling"
+      },
+      {
+        "amount": 65,
+        "unit": "g",
+        "name": "hazelnuts",
+        "section": "Filling"
+      },
+      {
+        "amount": 65,
+        "unit": "g",
+        "name": "walnut halves",
+        "section": "Filling"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "dulce de leche",
+        "section": "Filling"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "flaky sea salt",
+        "section": "Filling",
+        "amount_conv": 12,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg, whisked with 1 tablespoon water, for egg wash",
+        "section": "Filling"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "flaky sea salt, to finish (optional)",
+        "section": "Filling"
+      }
+    ],
+    "steps": [
+      "Dough: in a small bowl, mix the yeast, milk and 2 tablespoons of the sugar. Leave for 10–15 minutes, until foamy.",
+      "In a stand mixer fitted with the dough hook, briefly mix the flour, salt and remaining 2 tablespoons of sugar. Add the eggs, vanilla and the foamy yeast. Mix on low for 2–3 minutes, until the dough starts to come together — it may look a little dry, but it will come together. Increase to medium and mix for another 10 minutes, until soft and smooth.",
+      "Reduce to low and add the butter a little at a time, letting each piece fully incorporate before adding the next; this takes 3–4 minutes. Then mix on medium for another 5 minutes, until very soft and smooth.",
+      "Transfer to an oiled bowl, cover tightly with plastic wrap and leave in a warm spot until doubled, about 1–1½ hours.",
+      "Filling: preheat the oven to 180°C (350°F). Roast the pecans, hazelnuts and walnuts on a sheet pan for 10 minutes, shaking the tray often. Cool, rub the hazelnuts together to remove their skins if needed, then chop all the nuts roughly.",
+      "Roll the dough out on a lightly floured surface to 40 × 60 cm (16 × 24 in). Spread with the dulce de leche using an offset spatula, then sprinkle with the nuts and flaky salt.",
+      "Starting from a long side, roll up into a tight spiral. Place on a parchment-lined baking sheet, curving it a little if needed, cover with plastic wrap and chill for 1 hour.",
+      "Line a 23 cm (9 in) cake tin, springform pan or skillet with parchment. Straighten the chilled log on a lightly floured surface and cut it in half lengthwise with a sharp knife, leaving about 4 cm (1½ in) joined at one end. Turn the halves cut side up, then cross them over each other repeatedly into a long twist.",
+      "Cross one end of the twist over the other and tuck the ends under to form a knot, shaping it gently into a round. (A rolled-up tea towel is good for practising.) Transfer to the prepared tin.",
+      "Cover lightly with plastic wrap and leave in a warm place for 1–1½ hours, until puffy. Meanwhile, preheat the oven to 180°C (350°F).",
+      "Brush with egg wash and sprinkle with flaky salt. Bake for 35–45 minutes, until golden brown, baked through and 95°C (200°F) inside; tent with foil for the last 10 minutes if it browns too fast.",
+      "Cool slightly and serve warm or at room temperature. Reheat leftovers in the microwave."
+    ],
+    "tags": [
+      "walnut",
+      "hazelnut",
+      "caramel",
+      "vanilla",
+      "sugar-brown",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-122.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/mixed-nut-and-dulce-de-leche-brioche-knot/"
+  },
+  {
+    "id": "recipe-123",
+    "title": "Chocolate Cardamom Hot Cross Buns",
+    "category": "roll",
+    "description": "Cocoa and cardamom hot cross buns full of dark chocolate, with a chocolate pastry cream cross and a cardamom vanilla syrup glaze.",
+    "servings": 12,
+    "ingredients": [
+      {
+        "amount": 340,
+        "unit": "g",
+        "name": "whole milk, lukewarm",
+        "section": "Cardamom dark chocolate dough"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "sugar, divided",
+        "section": "Cardamom dark chocolate dough"
+      },
+      {
+        "amount": 3,
+        "unit": "tsp",
+        "name": "active dry yeast",
+        "section": "Cardamom dark chocolate dough",
+        "amount_conv": 9.3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 520,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Cardamom dark chocolate dough"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "Dutch-process cocoa",
+        "section": "Cardamom dark chocolate dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Cardamom dark chocolate dough",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2.5,
+        "unit": "tsp",
+        "name": "ground cardamom",
+        "section": "Cardamom dark chocolate dough",
+        "amount_conv": 5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "ground cinnamon",
+        "section": "Cardamom dark chocolate dough",
+        "amount_conv": 2.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Cardamom dark chocolate dough",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 115,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Cardamom dark chocolate dough"
+      },
+      {
+        "amount": 275,
+        "unit": "g",
+        "name": "dark chocolate chips, chunks or callets",
+        "section": "Cardamom dark chocolate dough"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "cornstarch",
+        "section": "Chocolate pastry cream cross"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Chocolate pastry cream cross"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "eggs",
+        "section": "Chocolate pastry cream cross"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Chocolate pastry cream cross",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Chocolate pastry cream cross",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "whole milk",
+        "section": "Chocolate pastry cream cross"
+      },
+      {
+        "amount": 15,
+        "unit": "g",
+        "name": "cocoa powder",
+        "section": "Chocolate pastry cream cross"
+      },
+      {
+        "amount": 40,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Chocolate pastry cream cross"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "water",
+        "section": "Cardamom vanilla bean syrup"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Cardamom vanilla bean syrup"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Cardamom vanilla bean syrup",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "ground cardamom",
+        "section": "Cardamom vanilla bean syrup",
+        "amount_conv": 0.5,
+        "unit_conv": "g"
+      }
+    ],
+    "steps": [
+      "Dough: stir the lukewarm milk, 15 g of the sugar and the yeast in a medium bowl. Leave for 10–15 minutes, until foamy.",
+      "In a stand mixer fitted with the dough hook, put the remaining 105 g sugar, the flour, cocoa, salt, cardamom and cinnamon.",
+      "Add the yeast mixture and vanilla and mix on low for 2–3 minutes, then on medium for 5 minutes. Add the butter a little at a time, letting each piece incorporate before adding the next, then mix for another 7–10 minutes, until smooth and soft.",
+      "Turn the dough out (flour is rarely needed) and knead in the chocolate by hand. It takes longer than you expect, but it will work in.",
+      "Shape into a ball and place in a lightly oiled bowl. Cover with plastic wrap and leave in a warm spot until doubled, 1–1½ hours, or refrigerate overnight.",
+      "Pastry cream: while the dough rises, whisk the cornstarch and sugar in a medium bowl. Add the eggs, salt and vanilla and whisk well.",
+      "Whisk the milk and cocoa together in a medium saucepan and warm over low heat until just short of a simmer. Whisking constantly, pour about half into the egg mixture and whisk until smooth, then pour everything back into the pan. Cook, whisking constantly, until thick, then whisk in the butter.",
+      "Transfer to a piping bag fitted with a round tip, with a clip just above the tip so it does not leak. Twist the bag closed or clip it, and refrigerate until needed.",
+      "Assembly: lightly grease a 28 × 34 cm (11 × 13.5 in) baking pan or roasting dish. Weigh the dough, divide it into 12 equal pieces, roll each into a tight ball and arrange evenly in the pan.",
+      "Cover lightly with plastic wrap and leave in a warm place for about 45 minutes, until puffy and the dough springs back when lightly pressed.",
+      "Preheat the oven to 180°C (350°F). Score a cross in each bun with a sharp paring knife or razor blade.",
+      "Bake for 20 minutes, then take the buns out and pipe the chocolate pastry cream into the scored crosses. Return to the oven for another 10–15 minutes, until 90°C (200°F) on an instant-read thermometer — colour is hard to judge with cocoa in the dough.",
+      "Syrup: while the buns bake, bring all the syrup ingredients to a boil in a small saucepan, boil for 1–2 minutes and set aside.",
+      "Let the buns cool, then brush with the syrup.",
+      "Store leftovers in an airtight container at room temperature. Rewarm briefly in the microwave and serve with butter."
+    ],
+    "tags": [
+      "chocolate",
+      "dark-chocolate",
+      "cinnamon",
+      "vanilla",
+      "cocoa-powder",
+      "cornstarch",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough",
+      "tempering-eggs"
+    ],
+    "image": "images/recipe-123.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/dark-chocolate-and-cardamom-hot-cross-buns-with-chocolate-pastry-cream-cross/"
+  },
+  {
+    "id": "recipe-124",
+    "title": "Laminated Cinnamon Buns with Spiced Apple and Oaty Streusel",
+    "category": "cinnamon-roll",
+    "description": "A spiced brioche folded and rolled twice with cinnamon sugar for extra layers, then filled with cooked spiced apple and a chewy oat streusel and finished with a vanilla bean glaze.",
+    "servings": 12,
+    "ingredients": [
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "active dry yeast (1 envelope)",
+        "section": "Brioche dough",
+        "amount_conv": 7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 220,
+        "unit": "g",
+        "name": "whole milk, lukewarm",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 4,
+        "unit": "tbsp",
+        "name": "dark brown sugar",
+        "section": "Brioche dough",
+        "amount_conv": 50,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 565,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Brioche dough",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "ground cinnamon",
+        "section": "Brioche dough",
+        "amount_conv": 2.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground cardamom",
+        "section": "Brioche dough",
+        "amount_conv": 1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "eggs, at room temperature",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Brioche dough",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 115,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 900,
+        "unit": "g",
+        "name": "apples, peeled, cored and cut into small cubes",
+        "section": "Apple filling"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "brown sugar",
+        "section": "Apple filling"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tsp",
+        "name": "ground cinnamon",
+        "section": "Apple filling",
+        "amount_conv": 4.2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "kosher salt",
+        "section": "Apple filling",
+        "amount_conv": 0.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla extract",
+        "section": "Apple filling",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "almond flour (or more all-purpose flour)",
+        "section": "Oaty streusel"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Oaty streusel"
+      },
+      {
+        "amount": 40,
+        "unit": "g",
+        "name": "old-fashioned rolled oats",
+        "section": "Oaty streusel"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "brown sugar",
+        "section": "Oaty streusel"
+      },
+      {
+        "amount": 25,
+        "unit": "g",
+        "name": "raw (turbinado) sugar (or more brown sugar)",
+        "section": "Oaty streusel"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Oaty streusel",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 65,
+        "unit": "g",
+        "name": "unsalted butter, cold, cubed",
+        "section": "Oaty streusel"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "unsalted butter, melted and cooled",
+        "section": "Cinnamon bun filling"
+      },
+      {
+        "amount": 180,
+        "unit": "g",
+        "name": "dark brown sugar",
+        "section": "Cinnamon bun filling"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tsp",
+        "name": "ground cinnamon",
+        "section": "Cinnamon bun filling",
+        "amount_conv": 4.2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground cardamom",
+        "section": "Cinnamon bun filling",
+        "amount_conv": 1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Cinnamon bun filling"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "powdered sugar, sifted",
+        "section": "Vanilla bean glaze"
+      },
+      {
+        "amount": 3,
+        "unit": "tbsp",
+        "name": "heavy cream",
+        "section": "Vanilla bean glaze"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Vanilla bean glaze",
+        "amount_conv": 1.4,
+        "unit_conv": "g"
+      }
+    ],
+    "steps": [
+      "Dough: in a small bowl, mix the yeast, milk and 2 tablespoons of the sugar. Leave for 10–15 minutes, until foamy.",
+      "In a stand mixer fitted with the dough hook, briefly mix the flour, salt, cinnamon, cardamom and remaining 2 tablespoons of sugar. Add the eggs, vanilla and the foamy yeast. Mix on low for 2–3 minutes, until the dough starts to come together — it may look a little dry, but it will come together. Increase to medium and mix for another 10 minutes, until soft and smooth.",
+      "Reduce to low and add the butter a little at a time, letting each piece fully incorporate before adding the next; this takes 3–4 minutes. Then mix on medium for another 5 minutes, until very soft and smooth.",
+      "Transfer to an oiled bowl, cover tightly with plastic wrap and leave in a warm spot until doubled, about 1–1½ hours — or refrigerate for at least 2½ hours or overnight.",
+      "Apple filling: cook the apples, brown sugar, cinnamon, salt and vanilla in a medium heavy-bottomed saucepan over medium heat, stirring often, until the apples are tender, 10–12 minutes. It looks dry at first, but the apples release their juice. Cool completely and refrigerate.",
+      "Streusel: mix the almond flour, flour, oats, both sugars and salt. Rub in the butter with your fingertips until crumbly. Keep in an airtight container in the fridge.",
+      "Assembly: mix the dark brown sugar, cinnamon, cardamom and salt for the cinnamon filling. Tip the apple filling into a sieve to drain while you roll out the dough.",
+      "Roll the dough out on a lightly floured surface to 40 × 66 cm (16 × 26 in). Brush lightly with melted butter and sprinkle with half the cinnamon sugar. Fold into thirds like a letter, then roll out again to 40 × 66 cm.",
+      "Brush again with butter and sprinkle with the rest of the cinnamon sugar. Spread the drained apple evenly over the dough, then scatter over the streusel.",
+      "Starting from a SHORT side, roll up into a log. Place on a parchment-lined baking sheet, cover lightly with plastic wrap and freeze for 20 minutes, or chill for about 1 hour, for a tidier spiral. Skip this if the dough is still cold from an overnight rest.",
+      "Line a baking sheet with parchment. Trim the ends of the log, cut it into 12 even pieces with a very sharp knife and arrange them on the sheet.",
+      "Cover lightly with plastic wrap and leave in a warm spot for 45 minutes to 1 hour, until puffy. Meanwhile, preheat the oven to 180°C (350°F).",
+      "Bake for 30–35 minutes, until golden brown, then cool.",
+      "Glaze: mix the powdered sugar, cream and vanilla, adjusting the cream until it drizzles. Drizzle over the buns.",
+      "Store leftovers lightly covered at room temperature and rewarm briefly in the microwave if you like."
+    ],
+    "tags": [
+      "apple",
+      "cinnamon",
+      "vanilla",
+      "sugar-brown",
+      "flour-almond",
+      "yeast",
+      "laminating-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-124.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/laminated-brioche-cinnamon-buns-with-spiced-apple-and-oaty-streusel/"
+  },
+  {
+    "id": "recipe-125",
+    "title": "Vegan Olive Oil Cinnamon Rolls",
+    "category": "cinnamon-roll",
+    "description": "Soft, gooey dairy-free cinnamon rolls made with olive or neutral oil instead of vegan butter and a tangzhong for a tender dough, filled with candied pecans and finished with a vanilla glaze.",
+    "servings": 9,
+    "ingredients": [
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "pecans",
+        "section": "Candied pecans"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "light or dark brown sugar",
+        "section": "Candied pecans"
+      },
+      {
+        "amount": 15,
+        "unit": "g",
+        "name": "olive oil or neutral oil",
+        "section": "Candied pecans"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "kosher salt",
+        "section": "Candied pecans",
+        "amount_conv": 0.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 20,
+        "unit": "g",
+        "name": "bread flour",
+        "section": "Tangzhong"
+      },
+      {
+        "amount": 95,
+        "unit": "g",
+        "name": "oat milk",
+        "section": "Tangzhong"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "oat milk or other plant-based milk, cold",
+        "section": "Dough"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "light or dark brown sugar",
+        "section": "Dough"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tsp",
+        "name": "instant yeast",
+        "section": "Dough",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 270,
+        "unit": "g",
+        "name": "bread flour",
+        "section": "Dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste or extract",
+        "section": "Dough",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "kosher salt",
+        "section": "Dough",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "ground cinnamon",
+        "section": "Dough",
+        "amount_conv": 0.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 35,
+        "unit": "g",
+        "name": "olive oil or neutral oil",
+        "section": "Dough"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "brown sugar",
+        "section": "Filling"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "ground cinnamon",
+        "section": "Filling",
+        "amount_conv": 10,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "ground cardamom",
+        "section": "Filling",
+        "amount_conv": 2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "olive oil or neutral oil",
+        "section": "Filling"
+      },
+      {
+        "amount": 10,
+        "unit": "g",
+        "name": "bread flour",
+        "section": "Filling"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Filling"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "all of the candied pecans, finely chopped",
+        "section": "Filling"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "powdered sugar, sifted if lumpy",
+        "section": "Glaze"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilla bean paste or extract",
+        "section": "Glaze",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "15–30 g plant-based milk, to the consistency you like",
+        "section": "Glaze"
+      }
+    ],
+    "steps": [
+      "Candied pecans: preheat the oven to 180°C (350°F). Toast the pecans on a baking sheet for 8–10 minutes, until golden brown throughout (snap one to check). Let cool. Line a small baking sheet with a silicone mat or parchment.",
+      "In a medium saucepan over medium heat, combine the sugar, oil and salt. Add the toasted pecans and cook, stirring often and adjusting the heat, until the sugar melts and coats the nuts evenly. Tip onto the lined sheet and spread out so they do not clump.",
+      "Once cool, chop very finely with a knife or in a food processor until like coarse crumbs. Keep in an airtight container; they can be made ahead.",
+      "Tangzhong: combine the oat milk and bread flour in a medium saucepan. Cook over medium heat, stirring continuously, until it thickens into a paste. Transfer to the bowl of a stand mixer.",
+      "Dough: add the cold milk and mix, checking with a finger that it is no warmer than lukewarm. Add the sugar, yeast, flour, vanilla, salt, cinnamon and oil, and fit the mixer with the dough hook.",
+      "Mix on medium–high for 10–12 minutes, until the dough is soft, smooth, stretchy and clearing the sides of the bowl. It is sticky; only if it really will not clear the bowl, add flour a teaspoon at a time.",
+      "With lightly oiled hands (or a floured surface), shape the dough into a ball and place in a lightly oiled bowl. Cover tightly with plastic wrap and leave in a warm spot for 60–90 minutes, until doubled and very puffy.",
+      "Assembly: line a 25 cm (10 in) round or 23 cm (9 in) square pan with parchment. Mix all the filling ingredients except the pecans into a rough paste.",
+      "Turn the dough out onto a lightly floured surface, pat into a rough square, then roll out to 30 × 30 cm (12 × 12 in), squaring the sides with a bench scraper as you go.",
+      "Spread the filling evenly over the dough, patting it out with your hands, then sprinkle with the chopped pecans. Starting from one edge, roll up into a tight log and lay it seam side down.",
+      "Trim the ends if you like, then cut into 9 even rolls with unflavoured dental floss: slide the floss under the log, cross the ends over the top and pull. It is easiest to cut the log into thirds first, then each third into three.",
+      "Arrange the rolls evenly in the pan. Cover lightly with plastic wrap and leave in a warm spot for 30–45 minutes, until puffy and a light press leaves an indentation that does not spring all the way back. Meanwhile, preheat the oven to 180°C (350°F).",
+      "Bake for 25–30 minutes, until golden brown on top; the dough (not the filling) should read about 90°C (190°F). Let stand for 15–20 minutes.",
+      "Glaze: put the powdered sugar and vanilla in a medium bowl, mix in 15 g plant milk, then add more until the glaze is as thick as you like. Drizzle over the rolls.",
+      "Store leftovers in an airtight container at room temperature and refresh briefly in the microwave if you like. To keep them strictly vegan, check that your sugar is vegan — not all brands are."
+    ],
+    "tags": [
+      "cinnamon",
+      "vanilla",
+      "sugar-brown",
+      "sugar-powdered",
+      "flour-bread-strong",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-125.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/vegan-cinnamon-rolls/"
+  },
+  {
+    "id": "recipe-126",
+    "title": "Soft Hot Cross Buns",
+    "category": "roll",
+    "description": "Extra-soft spiced, fruit-filled hot cross buns made with a tangzhong, with a traditional flour-paste cross piped on before baking and a vanilla syrup glaze.",
+    "servings": 9,
+    "ingredients": [
+      {
+        "amount": 20,
+        "unit": "g",
+        "name": "bread flour",
+        "section": "Tangzhong"
+      },
+      {
+        "amount": 90,
+        "unit": "g",
+        "name": "whole milk",
+        "section": "Tangzhong"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "raisins or sultanas",
+        "section": "Soaked fruit"
+      },
+      {
+        "amount": 25,
+        "unit": "g",
+        "name": "dried currants",
+        "section": "Soaked fruit"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "strongly brewed Earl Grey tea, hot",
+        "section": "Soaked fruit"
+      },
+      {
+        "amount": 130,
+        "unit": "g",
+        "name": "whole milk",
+        "section": "Hot cross bun dough"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "light or dark brown sugar",
+        "section": "Hot cross bun dough"
+      },
+      {
+        "amount": 275,
+        "unit": "g",
+        "name": "bread flour",
+        "section": "Hot cross bun dough"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "instant yeast",
+        "section": "Hot cross bun dough",
+        "amount_conv": 6.2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "large egg, lightly beaten",
+        "section": "Hot cross bun dough"
+      },
+      {
+        "amount": 15,
+        "unit": "g",
+        "name": "milk powder",
+        "section": "Hot cross bun dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "kosher salt",
+        "section": "Hot cross bun dough",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Hot cross bun dough",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tsp",
+        "name": "ground cinnamon",
+        "section": "Hot cross bun dough",
+        "amount_conv": 4.2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.75,
+        "unit": "tsp",
+        "name": "ground nutmeg",
+        "section": "Hot cross bun dough",
+        "amount_conv": 1.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground ginger",
+        "section": "Hot cross bun dough",
+        "amount_conv": 1.3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground cardamom",
+        "section": "Hot cross bun dough",
+        "amount_conv": 1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "ground allspice",
+        "section": "Hot cross bun dough",
+        "amount_conv": 0.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "ground cloves",
+        "section": "Hot cross bun dough"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "ground coriander",
+        "section": "Hot cross bun dough"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a few turns of black pepper (optional)",
+        "section": "Hot cross bun dough"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Hot cross bun dough"
+      },
+      {
+        "amount": 40,
+        "unit": "g",
+        "name": "all-purpose or bread flour",
+        "section": "For the crosses"
+      },
+      {
+        "amount": 40,
+        "unit": "g",
+        "name": "water",
+        "section": "For the crosses"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "water",
+        "section": "Sugar syrup"
+      },
+      {
+        "amount": 25,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Sugar syrup"
+      },
+      {
+        "amount": 0.125,
+        "unit": "tsp",
+        "name": "vanilla bean paste (optional)",
+        "section": "Sugar syrup",
+        "amount_conv": 0.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a tiny pinch of salt",
+        "section": "Sugar syrup"
+      }
+    ],
+    "steps": [
+      "Read the whole recipe before starting. Tangzhong: cook the bread flour and milk in a small saucepan over medium heat, stirring constantly, until it forms a thick paste, 2–3 minutes. Transfer to the bowl of a stand mixer, cover the surface with plastic wrap and cool to room temperature.",
+      "Fruit: while the tangzhong cools, cover the raisins and currants with the hot tea, leave for 30 minutes, then drain well.",
+      "Dough: add all the remaining dough ingredients except the butter and fruit to the tangzhong. Mix with the dough hook on medium–high for 10–12 minutes, until soft, smooth and clearing the sides of the bowl. It looks hopelessly sticky at first but will come together; go by the look of the dough, not the clock. Only if it truly will not come together, add flour a teaspoon at a time.",
+      "Add the butter and mix on medium for another 3–5 minutes until incorporated.",
+      "Turn the dough out onto an unfloured surface and press it into a rectangle. Put the drained fruit on top, fold the dough over it and knead with the help of a bench scraper until the fruit is evenly mixed in — it is squishy at first. Shape into a ball, using a little flour if needed, and place in a lightly oiled or buttered bowl.",
+      "Cover with plastic wrap and leave in a warm spot until roughly doubled, 2–3 hours. It will not get very puffy; marking the dough line on a clear container helps.",
+      "Turn the dough out onto a lightly floured surface, weigh it and divide into 9 equal pieces. Shape each into a tight ball and rest under lightly greased plastic wrap for 10 minutes. Meanwhile, grease and line a 23 cm (9 in) baking pan with parchment.",
+      "Reshape each ball tightly (a little flour helps tuck the fruit inside) and place in the pan. Cover with plastic wrap and leave in a warm spot for 1–2 hours, until puffy and a light press leaves a small indentation that starts to spring back.",
+      "Toward the end of the rise, preheat the oven to 180°C (350°F). Mix the flour and water for the crosses until smooth and spoon into a piping bag.",
+      "Snip the tip off the bag and pipe the crosses in continuous lines across all the buns — all the vertical lines first, then the horizontal ones. Practise the pressure on parchment first if you like.",
+      "Bake for about 30 minutes, until golden brown and 90°C (190°F) inside; test in a few places so the thermometer is not in a raisin. Make the syrup toward the end of baking: bring all the syrup ingredients to a boil, boil for 1–2 minutes and set aside.",
+      "Brush the buns with syrup as soon as they come out of the oven. Cool slightly and serve warm or at room temperature with butter.",
+      "Store leftovers in an airtight container at room temperature and refresh briefly in the microwave or oven — they are very good toasted."
+    ],
+    "tags": [
+      "cinnamon",
+      "ginger",
+      "vanilla",
+      "raisins",
+      "flour-bread-strong",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-126.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/soft-hot-cross-buns/"
   }
 ]

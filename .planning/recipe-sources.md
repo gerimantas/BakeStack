@@ -18,7 +18,7 @@ why third-party recipes and photos are imported at all.
 - Source slips are fixed and named in the commit message (wrong in→cm pan conversions
   recur: "9x13 in = 20x30 cm" appeared twice; the right value is 23 × 33 cm).
 
-## Cloudy Kitchen (cloudykitchen.com) — 31 imported, ~350 left
+## Cloudy Kitchen (cloudykitchen.com) — 39 imported, ~340 left
 
 - Full post list with categories: WordPress REST API,
   `https://cloudykitchen.com/wp-json/wp/v2/posts?per_page=100&page=N&_fields=id,slug,title,categories,featured_media,link,date`
@@ -26,15 +26,15 @@ why third-party recipes and photos are imported at all.
 - Recipe card: the `tasty-recipes` block holds section headings; the ld+json `Recipe`
   holds a flat ingredient list and the full-size `image` (last entry of the list).
 - Remaining by BakeStack group (S24 count, sweet only): cookies/brownies ~122, pies and
-  pastry ~67, cakes ~57, other sweets (doughnuts, macarons, ice cream) ~56, buns ~30,
+  pastry ~67, cakes ~57, other sweets (doughnuts, macarons, ice cream) ~56, buns (see below),
   fillings ~19. Cheesecakes and cupcakes are exhausted.
-- Buns (S25): the sweet buns left in categories 255/412/426/1540 are Earl Grey Buns and
-  Boston Bun (both read, complete, not yet imported), Overnight Cinnamon Buns,
-  Mixed Nut Brioche Knot, Roasted Apple Hot Cross Buns, Chocolate Hot Cross Buns, Soft Hot
-  Cross Buns, Sourdough, Vegan and Laminated Apple Cinnamon Rolls. The rest of those
-  categories are doughnuts and savoury rolls.
+- Buns (S25): sweet buns are nearly exhausted. Left in categories 255/412/426/1540:
+  Roasted Apple Hot Cross Buns (unread; a third hot cross bun variant) and Sourdough
+  Cinnamon Rolls (skipped: needs a sourdough starter the card does not give). The rest of
+  those categories are doughnuts and savoury rolls.
 - The ld+json `image` is sometimes a pre-bake shot (raw babka twist, unbaked rolls). Look at
-  the photo; if it is not the finished bake, pick one from the post body instead.
+  the photo; if it is not the finished bake, pick one from the post body instead;
+  if the post has none, import with `image: null` (recipe-121).
 - `source_url` containing `cloudykitchen.com` is what puts a recipe under the Source
   filter's "Cloudy Kitchen" chip (`RECIPE_SOURCES` in `site/js/data.js`).
 
