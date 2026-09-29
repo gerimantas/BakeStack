@@ -175,7 +175,7 @@ function renderNav(lang, route) {
 /** Makes the header butterfly flap now and then. Every stroke draws a fresh amplitude, pace
  * and rest, and some are double beats with a weaker second stroke, so the motion never settles
  * into a visible loop the way a fixed CSS cycle does. About one move in four is instead a slow
- * near-full close (82-88deg, wings almost edge-on) held for a moment before reopening.
+ * near-full close (82-88deg, wings almost edge-on) held for 1-2s before reopening.
  * Wings hinge in 3D; left opens positive. */
 function startButterfly() {
   if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
@@ -188,7 +188,7 @@ function startButterfly() {
     let frames;                                     // each entry: sign -> keyframe (right wing mirrors)
     if (Math.random() < 0.25) {
       const amp = 82 + Math.random() * 6;
-      const hold = 250 + Math.random() * 600;
+      const hold = 1000 + Math.random() * 1000;      // 1-2s held closed
       duration = 1300 + hold;
       frames = [at(0), at(amp, { offset: 650 / duration }), at(amp, { offset: (650 + hold) / duration }), at(0)];
     } else {
