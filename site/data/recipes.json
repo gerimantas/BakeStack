@@ -14484,5 +14484,1429 @@
     "variant_label": null,
     "categoryGroup": "cinnamon-roll",
     "source_url": "https://cloudykitchen.com/blog/chocolate-espresso-and-rye-babka-2/"
+  },
+  {
+    "id": "recipe-111",
+    "title": "Chocolate Hazelnut Babka",
+    "category": "roll",
+    "description": "Fluffy brioche rolled out, spread with a homemade chocolate hazelnut spread, sprinkled with toasted hazelnuts and twisted into two swirly loaves. Good for a coffee break or an indulgent breakfast.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "active dry yeast (1 envelope)",
+        "section": "Brioche dough",
+        "amount_conv": 7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 180,
+        "unit": "ml",
+        "name": "whole milk, lukewarm",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 4,
+        "unit": "tbsp",
+        "name": "sugar",
+        "section": "Brioche dough",
+        "amount_conv": 50,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 565,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Brioche dough",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "eggs, at room temperature",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Brioche dough",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 115,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 280,
+        "unit": "g",
+        "name": "raw hazelnuts",
+        "section": "Chocolate hazelnut spread"
+      },
+      {
+        "amount": 424,
+        "unit": "g",
+        "name": "dark chocolate (at least 70%), melted",
+        "section": "Chocolate hazelnut spread"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Chocolate hazelnut spread"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "kosher salt",
+        "section": "Chocolate hazelnut spread",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "1 ¼ cups chocolate hazelnut spread (recipe above) or Nutella",
+        "section": "Filling"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "1 cup chopped toasted hazelnuts",
+        "section": "Filling"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg, whisked with 1 tablespoon water",
+        "section": "Egg wash"
+      }
+    ],
+    "steps": [
+      "Spread: preheat the oven to 180°C (350°F). Spread the hazelnuts on a baking sheet and roast for 8–10 minutes, shaking occasionally and checking often, until golden brown.",
+      "Cool completely, then rub the nuts between your hands to remove the skins; do not worry about stubborn skins. Transfer to a food processor and pulse briefly to chop.",
+      "Add the melted chocolate, sugar and salt. Pulse to combine, then blend on high for at least 5 minutes, longer if needed. Transfer to a container and keep at room temperature until needed.",
+      "Dough: in a small bowl, mix the yeast, milk and 2 tablespoons of the sugar. Leave for 10–15 minutes, until foamy.",
+      "In a stand mixer fitted with the dough hook, briefly mix the flour, salt and remaining 2 tablespoons of sugar. Add the eggs, vanilla and the foamy yeast. Mix on low for 2–3 minutes, until the dough starts to come together — it may look a little dry, but it will come together. Increase to medium and mix for another 10 minutes, until soft and smooth.",
+      "Reduce to low and add the butter a little at a time, letting each piece fully incorporate before adding the next; this takes 3–4 minutes. Then mix on medium for another 5 minutes, until very soft and smooth.",
+      "Transfer to an oiled bowl, cover tightly with plastic wrap and leave in a warm spot until doubled, about 1–1½ hours.",
+      "Assembly: lightly grease two loaf pans and line them with parchment.",
+      "Roll the dough out on a lightly floured surface to 40 × 64 cm (16 × 25 in). Spread with the chocolate hazelnut spread and sprinkle with the hazelnuts. Starting from a long side, roll up into a tight spiral, then cut the log in half.",
+      "Place both pieces side by side on a parchment-lined baking sheet, cover with plastic wrap and chill for 1 hour.",
+      "Cut the first log in half lengthwise with a sharp knife, then cross the two halves over each other three times to form a twist. Place in a loaf pan, tucking the ends under slightly if needed. Repeat with the second log.",
+      "Cover lightly with plastic wrap and leave in a warm place for 45 minutes to 1 hour, until the dough springs back lightly when pressed. Meanwhile, preheat the oven to 180°C (350°F).",
+      "Brush the loaves lightly with egg wash and bake for 40–45 minutes, until golden brown. Cool completely before slicing.",
+      "Store leftovers in an airtight container, or wrap tightly and freeze."
+    ],
+    "tags": [
+      "chocolate",
+      "dark-chocolate",
+      "hazelnut",
+      "vanilla",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-111.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/chocolate-hazelnut-babka/"
+  },
+  {
+    "id": "recipe-112",
+    "title": "Apple and Cardamom Babka",
+    "category": "roll",
+    "description": "A cardamom and cinnamon spiced brioche, spread with a brown sugar cardamom butter and diced apple, twisted into two loaves and finished with pearl sugar.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "active dry yeast (1 envelope)",
+        "section": "Bread dough",
+        "amount_conv": 7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "whole milk, lukewarm",
+        "section": "Bread dough"
+      },
+      {
+        "amount": 4,
+        "unit": "tbsp",
+        "name": "sugar",
+        "section": "Bread dough",
+        "amount_conv": 50,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 565,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Bread dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Bread dough",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "ground cardamom",
+        "section": "Bread dough",
+        "amount_conv": 4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "ground cinnamon",
+        "section": "Bread dough",
+        "amount_conv": 2.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "eggs, at room temperature",
+        "section": "Bread dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Bread dough",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 115,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Bread dough"
+      },
+      {
+        "amount": 115,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Filling"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "dark brown sugar",
+        "section": "Filling"
+      },
+      {
+        "amount": 3,
+        "unit": "tsp",
+        "name": "ground cardamom",
+        "section": "Filling",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "ground cinnamon",
+        "section": "Filling",
+        "amount_conv": 2.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Filling",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "medium apple, peeled, cored and finely diced",
+        "section": "Filling"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg, whisked with 1 tablespoon water",
+        "section": "Egg wash"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "Swedish pearl sugar, to finish (optional)",
+        "section": "Egg wash"
+      }
+    ],
+    "steps": [
+      "Dough: in a small bowl, mix the yeast, milk and 2 tablespoons of the sugar. Leave for 10–15 minutes, until foamy.",
+      "In a stand mixer fitted with the dough hook, briefly mix the flour, salt, cardamom, cinnamon and remaining 2 tablespoons of sugar. Add the eggs, vanilla and the foamy yeast. Mix on low for 2–3 minutes, until the dough starts to come together — it may look a little dry, but it will come together. Increase to medium and mix for another 10 minutes, until soft and smooth.",
+      "Reduce to low and add the butter a little at a time, letting each piece fully incorporate before adding the next; this takes 3–4 minutes. Then mix on medium for another 5 minutes, until very soft and smooth.",
+      "Transfer to an oiled bowl, cover tightly with plastic wrap and leave in a warm spot until doubled, about 1–1½ hours.",
+      "Filling and assembly: line a baking sheet with parchment. In a small bowl, mix all the filling ingredients except the apple.",
+      "Turn the dough out onto a lightly floured surface and roll it into a 40 × 61 cm (16 × 24 in) rectangle, squaring the edges with a bench scraper as you go. Spread the filling over it with an offset spatula, then sprinkle with the apple.",
+      "Starting from a long side, roll up into a tight spiral, then cut the log in half. Place both pieces side by side on the lined baking sheet, cover with plastic wrap and chill for 1 hour.",
+      "Line two loaf pans with a parchment sling. Working with one log at a time, cut it in half lengthwise with a sharp knife, then cross the two halves over each other three times to form a twist. Place in a loaf pan, tucking the ends under slightly if needed. Repeat with the second log.",
+      "Cover lightly with plastic wrap and leave in a warm place for 1 hour to 90 minutes, until the dough springs back lightly when pressed. Meanwhile, preheat the oven to 180°C (350°F).",
+      "Brush the loaves lightly with egg wash and sprinkle with pearl sugar if using. Bake for 40–45 minutes, until golden brown and an instant-read thermometer reads 90°C (200°F). Cool completely before slicing.",
+      "Store leftovers in an airtight container, or wrap tightly and freeze."
+    ],
+    "tags": [
+      "apple",
+      "cinnamon",
+      "vanilla",
+      "sugar-brown",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-112.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/apple-and-cardamom-babka/"
+  },
+  {
+    "id": "recipe-113",
+    "title": "Cinnamon Bun Twists",
+    "category": "cinnamon-roll",
+    "description": "A small batch of brioche made without a mixer, folded around a cinnamon cardamom filling, cut into strips, braided and rolled up, then baked in a muffin pan for neatly shaped twists.",
+    "servings": 8,
+    "ingredients": [
+      {
+        "amount": 290,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "instant yeast",
+        "section": "Brioche dough",
+        "amount_conv": 3.1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground cardamom (optional)",
+        "section": "Brioche dough",
+        "amount_conv": 1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Brioche dough",
+        "amount_conv": 2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "whole milk",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla",
+        "section": "Brioche dough",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "large egg (60 g), lightly whisked",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 70,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Cinnamon cardamom filling"
+      },
+      {
+        "amount": 105,
+        "unit": "g",
+        "name": "light or dark brown sugar",
+        "section": "Cinnamon cardamom filling"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "all-purpose flour",
+        "section": "Cinnamon cardamom filling",
+        "amount_conv": 7.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "ground cinnamon",
+        "section": "Cinnamon cardamom filling",
+        "amount_conv": 5.6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "ground cardamom",
+        "section": "Cinnamon cardamom filling",
+        "amount_conv": 4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Cinnamon cardamom filling"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg, whisked with 1 tablespoon water, for egg wash",
+        "section": "To finish"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "powdered sugar, to finish (optional)",
+        "section": "To finish"
+      }
+    ],
+    "steps": [
+      "Dough: put all the dough ingredients except the butter in a medium bowl. Bring together into a rough dough, then turn out onto a work surface (do not add more flour).",
+      "Knead for 8–10 minutes. It starts very rough, then becomes smooth and elastic, and springs back slightly when pressed with a finger.",
+      "Flatten the dough into a rough rectangle and put the butter on top. Work it in by squeezing and kneading, scraping any escaped butter back onto the dough with a bench scraper. It gets messy but will come together. Once the butter is incorporated, knead for another 2–3 minutes.",
+      "Shape into a ball and place in a lightly buttered bowl. Cover with plastic wrap, leave on the counter for about 20 minutes, then refrigerate for at least 2 hours or overnight.",
+      "Filling: mix all the filling ingredients in a bowl until well combined. Brush 8 cups of a 12-cup muffin pan with melted butter, leaving gaps between buns where you can. A small square of parchment in each cup helps if you are worried about sticking.",
+      "Turn the chilled dough out onto a lightly floured surface, pat it into a rectangle and square the edges with a bench scraper. Roll out to 32 × 36 cm (12.5 × 14 in). Spread the filling evenly all the way to the edges with an offset spatula.",
+      "Holding a short end, fold the dough into thirds like a letter: fold one end two-thirds of the way across, then fold the other third over it. You now have a rectangle about 12 cm (4.7 in) wide and 32 cm long. Pat it gently to push out any air bubbles.",
+      "With a short side facing you, cut the dough into 8 strips, each 4 × 12 cm (1.5 × 4.7 in). Place the strips on a parchment-lined sheet pan, cover lightly with plastic wrap and chill for 15 minutes to firm up.",
+      "Working with one strip at a time, cut it lengthwise into 3 pieces, leaving one end joined. Braid the pieces, then, starting from the joined end, roll the braid up into a ball and place it in a muffin cup. Repeat to make 8 buns.",
+      "Cover lightly with plastic wrap and leave in a warm spot until puffy and a light press leaves an indentation that slowly springs back, about 45 minutes to 1 hour.",
+      "Toward the end of the rise, preheat the oven to 190°C (375°F). Brush the tops with egg wash, taking care not to drip it down the sides or smear filling onto the dough.",
+      "Bake for 15–20 minutes, until golden brown; a probe thermometer in the dough should read about 90°C (190°F). Transfer the buns to a wire rack soon after baking so they do not stick, and let cool. Dust with powdered sugar to serve.",
+      "Store leftovers in an airtight container at room temperature; rewarm briefly in the microwave if you like."
+    ],
+    "tags": [
+      "cinnamon",
+      "vanilla",
+      "sugar-brown",
+      "yeast",
+      "butter",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-113.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/cinnamon-bun-twists/"
+  },
+  {
+    "id": "recipe-114",
+    "title": "Raspberry Iced Buns",
+    "category": "roll",
+    "description": "A New Zealand bakery classic: super soft tangzhong bread rolls filled with raspberry jam and topped with sweet pink icing.",
+    "servings": 12,
+    "ingredients": [
+      {
+        "amount": 25,
+        "unit": "g",
+        "name": "bread flour",
+        "section": "Tangzhong"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "whole milk",
+        "section": "Tangzhong"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "cold milk",
+        "section": "Buns"
+      },
+      {
+        "amount": 20,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Buns"
+      },
+      {
+        "amount": 7,
+        "unit": "g",
+        "name": "instant yeast (2 tsp)",
+        "section": "Buns"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "milk powder",
+        "section": "Buns"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tsp",
+        "name": "kosher salt",
+        "section": "Buns",
+        "amount_conv": 4.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg, at room temperature",
+        "section": "Buns"
+      },
+      {
+        "amount": 360,
+        "unit": "g",
+        "name": "bread flour",
+        "section": "Buns"
+      },
+      {
+        "amount": 45,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Buns"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg, whisked with 1 tablespoon water, for egg wash",
+        "section": "Buns"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "jam of your choice, to fill (raspberry in the original)",
+        "section": "Buns"
+      },
+      {
+        "amount": 260,
+        "unit": "g",
+        "name": "powdered sugar",
+        "section": "Icing"
+      },
+      {
+        "amount": 20,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Icing"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt (leave out if using salted butter)",
+        "section": "Icing"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Icing",
+        "amount_conv": 1.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 20,
+        "unit": "g",
+        "name": "boiling water",
+        "section": "Icing"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a tiny bit of pink or red food colouring",
+        "section": "Icing"
+      }
+    ],
+    "steps": [
+      "Tangzhong: combine the milk and bread flour in a medium saucepan. Cook over medium heat, stirring continuously, until it thickens into a paste. Transfer to the bowl of a stand mixer.",
+      "Dough: add the cold milk and mix, checking with a finger that the mixture is no warmer than lukewarm. Add the sugar, yeast, milk powder, salt, egg and flour, and fit the mixer with the dough hook.",
+      "Mix on medium until the dough is smooth, elastic and clearing the sides of the bowl, about 12–15 minutes. It is sticky — if you weighed everything it will be fine. Only if it really will not come together, add flour a teaspoon at a time until it just does.",
+      "Add the butter and mix for another 5 minutes until incorporated. The dough should be smooth, elastic and pass the windowpane test.",
+      "Turn the dough out, flouring very lightly if needed, and shape into a tight ball with a bench scraper. Place in a greased bowl, cover with plastic wrap and leave in a warm spot until doubled, about 1½ hours.",
+      "Grease and line a 23 × 33 cm (9 × 13 in) pan. Turn the dough out onto a lightly floured surface and divide into 12 equal pieces of about 67 g.",
+      "Flatten each piece, tuck it up into a ball, then turn it seam side down and roll it tight under a cupped hand, using the counter's grip for tension. Set aside under plastic wrap, keeping the balls slightly apart.",
+      "Rest the balls for 10 minutes, then roll each briefly again to tighten. Arrange evenly in the pan, or space them out individually.",
+      "Cover with a lid, lightly greased plastic wrap or an upturned sheet pan and leave to rise for about 45 minutes to 1 hour, until doubled and a light press leaves a small indentation that does not quite spring back. Go by how the dough looks rather than the clock.",
+      "About 20 minutes before the end of the rise, preheat the oven to 185°C (360°F). Brush the buns with egg wash and bake for 15–20 minutes, until deep golden brown. Cool in the pan; the buns wrinkle slightly as they cool, which is normal.",
+      "Filling: put the jam in a piping bag with a round tip or the end snipped off. Poke a hole in the top of each bun with a chopstick and wiggle it to make room, then pipe in the jam.",
+      "Icing: mix all the icing ingredients in a medium bowl into a thick, smooth icing, adjusting with boiling water or powdered sugar until thick enough to spread. Divide between the buns and smooth with an offset spatula or the back of a spoon. Let set until a slight crust forms, or eat straight away.",
+      "Store leftovers in an airtight container at room temperature."
+    ],
+    "tags": [
+      "raspberry",
+      "vanilla",
+      "sugar-powdered",
+      "flour-bread-strong",
+      "food-coloring",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-114.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/iced-buns/"
+  },
+  {
+    "id": "recipe-115",
+    "title": "Rhubarb Custard Buns",
+    "category": "roll",
+    "description": "Small-batch brioche made without a mixer, rolled up with a creamy custard, baked in a muffin pan and topped with rhubarb compote and a cinnamon streusel. Any fruit compote or purée works in place of the rhubarb.",
+    "servings": 7,
+    "ingredients": [
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "fresh rhubarb, chopped",
+        "section": "Rhubarb compote"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Rhubarb compote"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilla bean paste (optional)",
+        "section": "Rhubarb compote",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Rhubarb compote"
+      },
+      {
+        "amount": 55,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Custard filling"
+      },
+      {
+        "amount": 23,
+        "unit": "g",
+        "name": "custard powder",
+        "section": "Custard filling"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "egg yolks",
+        "section": "Custard filling"
+      },
+      {
+        "amount": 205,
+        "unit": "g",
+        "name": "whole milk",
+        "section": "Custard filling"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Custard filling",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Custard filling",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 10,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Custard filling"
+      },
+      {
+        "amount": 290,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "instant yeast",
+        "section": "Brioche dough",
+        "amount_conv": 3.1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Brioche dough",
+        "amount_conv": 2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "whole milk",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla",
+        "section": "Brioche dough",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "large egg (60 g), lightly whisked",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Brioche dough"
+      },
+      {
+        "amount": 25,
+        "unit": "g",
+        "name": "raw (turbinado) sugar",
+        "section": "Streusel topping"
+      },
+      {
+        "amount": 25,
+        "unit": "g",
+        "name": "light or dark brown sugar",
+        "section": "Streusel topping"
+      },
+      {
+        "amount": 65,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Streusel topping"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground cinnamon",
+        "section": "Streusel topping",
+        "amount_conv": 1.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Streusel topping"
+      },
+      {
+        "amount": 35,
+        "unit": "g",
+        "name": "unsalted butter, melted and cooled",
+        "section": "Streusel topping"
+      }
+    ],
+    "steps": [
+      "Compote: put the rhubarb, sugar, vanilla and salt in a medium saucepan. Cook over medium heat, stirring often, until the rhubarb breaks down and the mixture is thick and jammy, about 6–8 minutes. Transfer to an airtight container and chill completely.",
+      "Custard: in a medium bowl, whisk the sugar and custard powder, then whisk in the egg yolks.",
+      "In a medium pot, warm the milk, vanilla and salt until the milk just starts to move at the edges — do not boil.",
+      "Off the heat, whisk half the milk into the yolk mixture to temper it and whisk briskly for 30 seconds. Pour everything back into the pot and cook over medium heat, whisking constantly, until very thick.",
+      "Off the heat, whisk in the butter until fully combined. Transfer to an airtight container, press plastic wrap directly onto the surface and chill completely, ideally overnight.",
+      "Dough: put all the dough ingredients except the butter in a medium bowl. Bring together into a rough dough, then turn out onto a work surface (do not add more flour) and knead for 8–10 minutes, until smooth, elastic and springing back slightly when pressed.",
+      "Flatten the dough into a rough rectangle and put the butter on top. Work it in by squeezing and kneading, scraping any escaped butter back onto the dough with a bench scraper. It gets messy but will come together. Once the butter is incorporated, knead for another 2–3 minutes.",
+      "Shape into a ball and place in a lightly buttered bowl. Cover with plastic wrap, leave on the counter for about 20 minutes, then refrigerate for at least 2 hours or overnight.",
+      "Streusel: mix the dry ingredients in a medium bowl, add the melted butter and mix until clumps form. Keep in an airtight container in the fridge until needed.",
+      "Assembly: brush 7 cups of a 12-cup muffin pan with melted butter, leaving gaps between buns where you can. A small square of parchment in each cup helps if you are worried about sticking. Stir the cold custard well to remove any lumps.",
+      "Turn the dough out onto a lightly floured surface, press it into a rectangle with the rolling pin, then roll out to 30 × 35 cm (12 × 14 in), squaring the edges as you go. Spread the custard evenly over it with an offset spatula.",
+      "Starting from a long side, roll up into a tight log. Cut into 7 rolls of 5 cm (2 in) and place each in a muffin cup.",
+      "Cover lightly with plastic wrap or a plastic bag and leave in a warm spot until puffy and a light press leaves an indentation that springs back slightly, about 45 minutes to 1 hour. Meanwhile, preheat the oven to 180°C (350°F).",
+      "Press down the centre of each risen roll with your fingers or the back of a spoon — it feels wrong, but it makes room for the topping. Fill each hollow with about 1 tablespoon of compote and top with about 1 tablespoon of streusel.",
+      "Bake for 20–25 minutes, until golden brown and a thermometer in the dough (not the rhubarb) reads about 90°C (190°F). Cool in the pan for about 10 minutes, then move to a wire rack to cool completely.",
+      "Store leftovers in an airtight container at room temperature."
+    ],
+    "tags": [
+      "vanilla",
+      "cinnamon",
+      "egg-yolks",
+      "sugar-brown",
+      "yeast",
+      "butter",
+      "kneading-dough",
+      "proofing-rising-dough",
+      "tempering-eggs"
+    ],
+    "image": "images/recipe-115.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/rhubarb-custard-buns/"
+  },
+  {
+    "id": "recipe-116",
+    "title": "Classic Hot Cross Buns with a Pastry Cream Cross",
+    "category": "roll",
+    "description": "Traditional spiced, fruit-filled hot cross buns with a simple twist: the cross is piped vanilla bean pastry cream instead of flour paste, and the fruit is soaked in Earl Grey tea.",
+    "servings": 12,
+    "ingredients": [
+      {
+        "amount": 20,
+        "unit": "g",
+        "name": "cornstarch",
+        "section": "Pastry cream cross"
+      },
+      {
+        "amount": 45,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Pastry cream cross"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg",
+        "section": "Pastry cream cross"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Pastry cream cross",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Pastry cream cross",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "whole milk",
+        "section": "Pastry cream cross"
+      },
+      {
+        "amount": 20,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Pastry cream cross"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "strongly brewed Earl Grey tea, hot",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "raisins, golden raisins or sultanas",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "dried currants",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 360,
+        "unit": "g",
+        "name": "whole milk, lukewarm",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 12,
+        "unit": "g",
+        "name": "instant yeast (3 tsp)",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 290,
+        "unit": "g",
+        "name": "bread flour",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Bun dough",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 3.25,
+        "unit": "tsp",
+        "name": "ground cinnamon",
+        "section": "Bun dough",
+        "amount_conv": 9.1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tsp",
+        "name": "ground nutmeg",
+        "section": "Bun dough",
+        "amount_conv": 3.6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1.25,
+        "unit": "tsp",
+        "name": "ground ginger",
+        "section": "Bun dough",
+        "amount_conv": 3.3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.75,
+        "unit": "tsp",
+        "name": "ground allspice",
+        "section": "Bun dough",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground cloves",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground cardamom",
+        "section": "Bun dough",
+        "amount_conv": 1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground coriander",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Bun dough",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 130,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Bun dough"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "water",
+        "section": "Sugar syrup"
+      },
+      {
+        "amount": 25,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Sugar syrup"
+      },
+      {
+        "amount": 0.125,
+        "unit": "tsp",
+        "name": "vanilla bean paste (optional)",
+        "section": "Sugar syrup",
+        "amount_conv": 0.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a tiny pinch of salt",
+        "section": "Sugar syrup"
+      }
+    ],
+    "steps": [
+      "Pastry cream: in a medium bowl, whisk the cornstarch and sugar. Add the egg, salt and vanilla and whisk well.",
+      "Warm the milk in a medium saucepan over low heat until just short of a simmer. Whisking constantly, pour about half into the egg mixture and whisk until smooth, then pour everything back into the pan. Cook, whisking constantly, until thick, then whisk in the butter.",
+      "Transfer to a piping bag fitted with a round tip, with a clip just above the tip so it does not leak. Twist the bag closed or clip it, and refrigerate until needed.",
+      "Dough: cover the raisins and currants with the hot tea and soak for 30 minutes, then drain thoroughly in a sieve while you make the dough.",
+      "In a stand mixer fitted with the dough hook, mix the sugar, yeast, both flours, salt and all the spices.",
+      "Add the milk and vanilla and mix on low for 2–3 minutes, then on medium for 5 minutes. Add the butter a little at a time, letting each piece incorporate before adding the next, then mix for another 7–10 minutes, until the dough is smooth and soft.",
+      "Turn the dough out and knead in the drained fruit by hand. It takes longer than you expect and feels squishy, but the fruit will work in.",
+      "Shape into a ball and place in a lightly oiled bowl. Cover with plastic wrap and leave in a warm spot until doubled, 1–1½ hours, or refrigerate overnight.",
+      "Assembly: line a baking sheet or pan with parchment. Weigh the dough and divide it into 12 equal pieces.",
+      "Roll each piece into a tight ball — a little bench flour helps keep the fruit inside — and arrange on the pan with a little space between. Keep them close if you want them to join in the oven for the classic look.",
+      "Cover lightly with plastic wrap and leave in a warm place for 1–2 hours, until puffy and the dough springs back when lightly pressed.",
+      "Preheat the oven to 180°C (350°F). Score a cross in each bun with a sharp paring knife or razor blade.",
+      "Bake for 20 minutes, then take the buns out and pipe the pastry cream into the scored crosses. Return to the oven for another 10–15 minutes, until lightly golden or 90°C (200°F) on an instant-read thermometer.",
+      "Syrup: while the buns bake, bring all the syrup ingredients to a boil in a small saucepan, boil for 1–2 minutes and set aside.",
+      "Let the buns cool, then brush with the syrup.",
+      "Store leftovers in an airtight container at room temperature. Rewarm briefly in the microwave and serve with butter.",
+      "In New Zealand, use all high-grade flour in place of both flours: it is weaker than the US bread flour the recipe was tested with."
+    ],
+    "tags": [
+      "cinnamon",
+      "ginger",
+      "vanilla",
+      "raisins",
+      "flour-bread-strong",
+      "cornstarch",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough",
+      "tempering-eggs"
+    ],
+    "image": "images/recipe-116.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/hot-cross-buns/"
+  },
+  {
+    "id": "recipe-117",
+    "title": "Baked Cream Buns with Jam",
+    "category": "roll",
+    "description": "A baked take on the New Zealand bakery jam doughnut: soft brioche buns split and filled with sweetened vanilla whipped cream and raspberry jam.",
+    "servings": 12,
+    "ingredients": [
+      {
+        "amount": 280,
+        "unit": "g",
+        "name": "whole milk, lukewarm",
+        "section": "Brioche buns"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Brioche buns"
+      },
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "active dry yeast",
+        "section": "Brioche buns",
+        "amount_conv": 7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 565,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Brioche buns"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Brioche buns",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "eggs, at room temperature",
+        "section": "Brioche buns"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Brioche buns",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 90,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Brioche buns"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "egg, whisked with 1 teaspoon water, for egg wash",
+        "section": "Brioche buns"
+      },
+      {
+        "amount": 700,
+        "unit": "g",
+        "name": "heavy cream",
+        "section": "Whipped cream filling"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "powdered sugar, sifted",
+        "section": "Whipped cream filling"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Whipped cream filling",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Whipped cream filling"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "raspberry jam or jam of your choice, to finish",
+        "section": "Whipped cream filling"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "powdered sugar, for dusting",
+        "section": "Whipped cream filling"
+      }
+    ],
+    "steps": [
+      "Buns: stir the lukewarm milk, 25 g (2 tablespoons) of the sugar and the yeast in a medium bowl. Leave for 10–15 minutes, until foamy.",
+      "In a stand mixer fitted with the dough hook, mix the remaining 25 g sugar, the flour, salt and vanilla.",
+      "Add the yeast mixture and the eggs and mix on low for 2–3 minutes, then on medium for 10 minutes. Add the butter a little at a time, letting each piece incorporate before adding the next, then mix for another 10–15 minutes, until smooth and soft.",
+      "Shape into a ball and return it to the bowl. Cover with plastic wrap and refrigerate for at least 3 hours or overnight. Alternatively, do the first rise at room temperature, about 45 minutes.",
+      "Turn the dough out, flouring only if needed, weigh it and divide into 12 equal pieces. Shape each into a ball and cover with plastic wrap or a tea towel so they do not dry out. Line two baking sheets with parchment.",
+      "Flatten a ball slightly and roll it into an even sausage about 10 cm (4 in) long with rounded ends. Place on a baking sheet and repeat, spacing the buns well apart.",
+      "Cover lightly with plastic wrap and leave to rise for 30–45 minutes (a little longer if the dough is cold), until puffy and a gentle poke leaves a small indentation. Meanwhile, preheat the oven to 180°C (350°F).",
+      "Brush with egg wash and bake for 18–20 minutes, rotating the trays halfway, until golden brown. Cool completely on a wire rack.",
+      "Filling: whip the cream, powdered sugar, vanilla and salt to medium peaks. Transfer to a piping bag with a closed star tip. The filling can be halved for 6 buns.",
+      "Cut each bun vertically down the centre without cutting all the way through. Dust the tops with powdered sugar, pipe the cream into the middle, then pipe or spoon blobs of jam onto the cream.",
+      "Best served the day they are made."
+    ],
+    "tags": [
+      "raspberry",
+      "vanilla",
+      "heavy-whipping-cream",
+      "sugar-powdered",
+      "yeast",
+      "whipping-cream",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-117.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/baked-cream-buns-with-vanilla-bean-cream-and-jam/"
+  },
+  {
+    "id": "recipe-118",
+    "title": "Carrot Cake Cinnamon Rolls with Dulce de Leche",
+    "category": "cinnamon-roll",
+    "description": "Fluffy spiced carrot brioche rolled up with a spiced dulce de leche and toasted walnuts into large bakery-style rolls, finished with cream cheese frosting.",
+    "servings": 12,
+    "ingredients": [
+      {
+        "amount": 220,
+        "unit": "g",
+        "name": "whole milk, lukewarm",
+        "section": "Carrot cake brioche"
+      },
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "active dry yeast",
+        "section": "Carrot cake brioche",
+        "amount_conv": 7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 4,
+        "unit": "tbsp",
+        "name": "dark brown sugar",
+        "section": "Carrot cake brioche",
+        "amount_conv": 50,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 565,
+        "unit": "g",
+        "name": "all-purpose flour",
+        "section": "Carrot cake brioche"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Carrot cake brioche",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1.5,
+        "unit": "tsp",
+        "name": "ground cinnamon",
+        "section": "Carrot cake brioche",
+        "amount_conv": 4.2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground ginger",
+        "section": "Carrot cake brioche",
+        "amount_conv": 1.3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground cardamom",
+        "section": "Carrot cake brioche",
+        "amount_conv": 1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "fresh carrot, finely shredded, gently wrung out in a paper towel or patted dry",
+        "section": "Carrot cake brioche"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Carrot cake brioche",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "eggs, at room temperature, lightly beaten",
+        "section": "Carrot cake brioche"
+      },
+      {
+        "amount": 90,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Carrot cake brioche"
+      },
+      {
+        "amount": 395,
+        "unit": "g",
+        "name": "sweetened condensed milk (1 can)",
+        "section": "Dulce de leche filling"
+      },
+      {
+        "amount": 2.5,
+        "unit": "tsp",
+        "name": "ground cinnamon",
+        "section": "Dulce de leche filling",
+        "amount_conv": 7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "ground cardamom",
+        "section": "Dulce de leche filling",
+        "amount_conv": 2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground ginger",
+        "section": "Dulce de leche filling",
+        "amount_conv": 1.3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Dulce de leche filling"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Dulce de leche filling",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "toasted walnuts, chopped",
+        "section": "Dulce de leche filling"
+      },
+      {
+        "amount": 115,
+        "unit": "g",
+        "name": "unsalted butter, at room temperature",
+        "section": "Cream cheese frosting"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "cream cheese, at room temperature",
+        "section": "Cream cheese frosting"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "powdered sugar, sifted",
+        "section": "Cream cheese frosting"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Cream cheese frosting",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Cream cheese frosting",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      }
+    ],
+    "steps": [
+      "Dough: stir the lukewarm milk, 2 tablespoons of the sugar and the yeast in a medium bowl. Leave for 10–15 minutes, until foamy.",
+      "In a stand mixer fitted with the dough hook, briefly mix the flour, salt, cinnamon, ginger, cardamom, carrot and remaining 2 tablespoons of sugar.",
+      "Add the yeast mixture, eggs and vanilla and mix on low for 2–3 minutes, then on medium for 5 minutes. Add the butter a little at a time, letting each piece incorporate before adding the next, then mix for another 7–10 minutes, until the dough is smooth and soft.",
+      "Cover the bowl with plastic wrap and leave in a warm place until doubled, 45 minutes to 1 hour. Or rise it for at least 2–3 hours or overnight in the fridge — cold dough is easier to work with.",
+      "Dulce de leche: preheat the oven to 220°C (425°F). Pour the condensed milk into a glass or metal pie plate, cover with foil and set it in a larger shallow dish. Pour water into the dish, keeping it below the rim of the pie plate.",
+      "Bake for 2 hours, topping up the water as needed, until thick and caramel-coloured. Transfer to a container and chill completely.",
+      "Filling and assembly: line a quarter sheet pan or 23 × 33 cm (9 × 13 in) baking dish with parchment. Mix the chilled dulce de leche with the cinnamon, cardamom, ginger, salt and vanilla.",
+      "Roll the dough out on a lightly floured surface to 60 × 40 cm (24 × 16 in), squaring the edges often. Spread the dulce de leche mixture evenly over it and sprinkle with the walnuts.",
+      "Starting from a long side, roll up into a tight spiral. Cut the log in two and place both pieces side by side on a parchment-lined sheet pan lightly sprayed with oil. Cover lightly with plastic wrap and freeze for 20 minutes to firm up for neater cuts (skip this if the dough was chilled).",
+      "Take the logs out of the freezer and cut each into 6 equal pieces with a sharp knife. Arrange in the prepared pan, spacing them evenly.",
+      "Cover lightly with plastic wrap and leave to rise for 45 minutes to 1 hour, until puffy and a gentle poke leaves a small indentation. Meanwhile, preheat the oven to 180°C (350°F).",
+      "Bake for 35–40 minutes, until deeply golden brown. Let stand for about 15 minutes before frosting.",
+      "Frosting: in a stand mixer fitted with the paddle, beat the butter and cream cheese on medium until combined. Add the powdered sugar, salt and vanilla and whip until light and fluffy. Spread over the rolls while they are still slightly warm.",
+      "Store leftovers in an airtight container at room temperature and rewarm in the microwave before serving."
+    ],
+    "tags": [
+      "cinnamon",
+      "ginger",
+      "walnut",
+      "caramel",
+      "vanilla",
+      "cream-cheese",
+      "sugar-brown",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough",
+      "water-bath-bain-marie"
+    ],
+    "image": "images/recipe-118.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/dulce-de-leche-carrot-cake-cinnamon-rolls/"
   }
 ]
