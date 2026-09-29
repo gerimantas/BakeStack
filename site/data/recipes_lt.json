@@ -13411,5 +13411,1296 @@
     "source_url": "https://cloudykitchen.com/blog/pecan-sticky-buns/",
     "_needs_translation": false,
     "_translation_source": "fresh"
+  },
+  {
+    "id": "recipe-104",
+    "title": "Cinamono bandelės (maža porcija)",
+    "category": "cinnamon-roll",
+    "description": "Devynios cinamono bandelės, pagamintos visiškai rankomis — maišytuvo nereikia — iš paprastos, universalios mažos porcijos brioche tešlos, su cinamono ir kardamono įdaru ir kreminio sūrio kremu.",
+    "servings": 9,
+    "ingredients": [
+      {
+        "amount": 290,
+        "unit": "g",
+        "name": "kvietinių miltų",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "greitai veikiančių mielių",
+        "section": "Brioche tešla",
+        "amount_conv": 3.1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Brioche tešla",
+        "amount_conv": 2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "nenugriebto pieno",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės",
+        "section": "Brioche tešla",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "didelis kiaušinis (60 g), lengvai išplaktas",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 95,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Cinamono įdaras"
+      },
+      {
+        "amount": 140,
+        "unit": "g",
+        "name": "šviesaus arba tamsaus rudojo cukraus",
+        "section": "Cinamono įdaras"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "cinamono",
+        "section": "Cinamono įdaras",
+        "amount_conv": 8.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "kardamono (arba dar 1 arb. šaukštelio cinamono)",
+        "section": "Cinamono įdaras",
+        "amount_conv": 2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "žiupsnelis druskos",
+        "section": "Cinamono įdaras"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Kreminio sūrio kremas"
+      },
+      {
+        "amount": 110,
+        "unit": "g",
+        "name": "kreminio sūrio (kambario temperatūros)",
+        "section": "Kreminio sūrio kremas"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "cukraus pudros",
+        "section": "Kreminio sūrio kremas"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "vanilės (neprivaloma)",
+        "section": "Kreminio sūrio kremas",
+        "amount_conv": 1.1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "žiupsnelis druskos",
+        "section": "Kreminio sūrio kremas"
+      }
+    ],
+    "steps": [
+      "Tešla: visus ingredientus, išskyrus sviestą, sudėkite į vidutinį dubenį ir suminkykite grubią tešlą, tada išverskite ją ant darbo paviršiaus (miltų nebedėkite).",
+      "Minkykite 8–10 minučių. Iš pradžių tešla bus labai grubi, bet paskui taps glotni, elastinga ir, lengvai paspaudus pirštu, šiek tiek atsitiesia.",
+      "Tešlą suplokite į apytikslį stačiakampį ir ant viršaus sudėkite sviestą. Spausdami ir minkydami įminkykite sviestą, tešlos grandikliu grąžindami ištrūkusį sviestą atgal ant tešlos — bus netvarkinga, bet viskas susijungs.",
+      "Kai sviestas įsiminkys, minkykite dar 2–3 minutes.",
+      "Suformuokite rutulį ir įdėkite į lengvai sviestu išteptą dubenį. Uždenkite maistine plėvele ir palikite ant stalo apie 20 minučių, kad prasidėtų kilimas, tada padėkite į šaldytuvą bent 2 valandoms arba per naktį.",
+      "Formavimas: 20 cm (8 in) kvadratinę arba 23 cm (9 in) apvalią formą ištepkite riebalais ir išklokite kepimo popieriumi. Sviestą, rudąjį cukrų, cinamoną, kardamoną ir druską sumaišykite į pastą.",
+      "Šaltą tešlą ant lengvai miltais pabarstyto paviršiaus iškočiokite 35 cm (14 in) kvadratu, dažnai ištiesindami kraštus. Tolygiai paskleiskite įdarą.",
+      "Standžiai susukite tešlą į ritinį ir, jei norite, nupjaukite galus. Aštriu peiliu supjaustykite į 9 vienodas bandeles — ritinį padalykite į tris dalis, o kiekvieną dalį dar į tris — ir sudėkite į formą.",
+      "Lengvai uždenkite maistine plėvele ir palikite šiltoje vietoje 45 minutėms–1 valandai, kol bandelės išpurs, o švelniai paspaudus liks nedidelė duobutė.",
+      "Tuo metu įkaitinkite orkaitę iki 180°C (350°F).",
+      "Kepkite 25–30 minučių, kol bandelės taps sodriai auksinės rudos spalvos. Prieš tepdami kremu, palikite pastovėti apie 15 minučių.",
+      "Kremas: sviestą ir kreminį sūrį elektriniu rankiniu plakikliu išsukite iki kreminės konsistencijos. Suberkite cukraus pudrą ir druską, įdėkite vanilę ir išmaišykite. Paskleiskite ant šiltų bandelių.",
+      "Likučius laikykite sandariame inde kambario temperatūroje; prieš valgydami, jei norite, trumpai pašildykite."
+    ],
+    "tags": [
+      "cinnamon",
+      "cream-cheese",
+      "sugar-brown",
+      "yeast",
+      "butter",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-104.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/small-batch-cinnamon-rolls/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
+  },
+  {
+    "id": "recipe-105",
+    "title": "Chelsea bandelės su kremu ir razinomis",
+    "category": "roll",
+    "description": "Naujosios Zelandijos stiliaus Chelsea bandelės: minkšta brioche tešla, susukta su tirštu vaniliniu kremu ir razinomis, iškepta auksinė ir aplieta paprastu vaniliniu glajumi. Naujosios Zelandijos klasika.",
+    "servings": 12,
+    "ingredients": [
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "nenugriebto pieno, drungno",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "greitai veikiančių mielių",
+        "section": "Brioche tešla",
+        "amount_conv": 7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 560,
+        "unit": "g",
+        "name": "kvietinių miltų",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Brioche tešla",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "kiaušinių (apie 100 g be lukštų, kambario temperatūros)",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Brioche tešla",
+        "amount_conv": 5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 110,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Vanilinis kremas"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "vanilinio pudingo (custard) miltelių",
+        "section": "Vanilinis kremas"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "kiaušinių trynių",
+        "section": "Vanilinis kremas"
+      },
+      {
+        "amount": 410,
+        "unit": "g",
+        "name": "nenugriebto pieno",
+        "section": "Vanilinis kremas"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Vanilinis kremas",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Vanilinis kremas",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 20,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Vanilinis kremas"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "rudojo cukraus (neprivaloma; mažiau saldžioms bandelėms nedėkite)",
+        "section": "Įdaras"
+      },
+      {
+        "amount": 85,
+        "unit": "g",
+        "name": "razinų",
+        "section": "Įdaras"
+      },
+      {
+        "amount": 315,
+        "unit": "g",
+        "name": "cukraus pudros, persijotos",
+        "section": "Glajus"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "vanilės",
+        "section": "Glajus",
+        "amount_conv": 1.1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "3–4 šaukštai nenugriebto pieno",
+        "section": "Glajus"
+      }
+    ],
+    "steps": [
+      "Tešla: planetinio maišytuvo dubenyje su tešlos kabliu sudėkite pieną, mieles, cukrų, miltus, druską, kiaušinius ir vanilę.",
+      "Maišykite vidutiniu greičiu 6–7 minutes, kol tešla susijungs.",
+      "Sviestą dėkite po nedaug, kiekvieną gabalėlį dėdami, kai ankstesnis beveik įsimaišė. Tada minkykite dar 6–7 minutes, kol tešla taps glotni ir elastinga.",
+      "Suformuokite rutulį ir įdėkite į lengvai riebalais išteptą dubenį. Uždenkite maistine plėvele, palikite ant stalo 20 minučių, tada padėkite į šaldytuvą bent 3 valandoms arba per naktį.",
+      "Kremas: vidutiniame dubenyje šluotele sumaišykite cukrų su pudingo milteliais, tada įplakite trynius.",
+      "Vidutiniame puode šildykite pieną su vanile ir druska, kol pienas ims judėti prie kraštų — neužvirinkite.",
+      "Nukelkite nuo ugnies ir, nuolat plakdami, pusę pieno supilkite į trynių masę, kad ją pašildytumėte. Energingai plakite 30 sekundžių. Viską supilkite atgal į puodą ir virkite ant vidutinės ugnies nuolat plakdami, kol kremas labai sutirštės.",
+      "Nukelkite nuo ugnies ir įplakite sviestą, kol visiškai susijungs.",
+      "Perkelkite į sandarų indą ir maistinę plėvelę priglauskite tiesiai prie paviršiaus. Visiškai atšaldykite, geriausia per naktį; greičiau atvės, jei paskleisite ant skardos ir priglausite plėvelę.",
+      "Formavimas: 23 × 33 cm (9 × 13 in) kepimo indą lengvai ištepkite riebalais ir išklokite kepimo popieriumi.",
+      "Tešlą išverskite ant lengvai miltais pabarstyto paviršiaus ir iškočiokite 60 × 40 cm (24 × 16 in) stačiakampį. Jei tešla priešinasi, leiskite jai pailsėti apie 5 minutes ir kočiokite toliau.",
+      "Išmaišykite šaltą kremą — jis gali atrodyti gumuliuotas, nes yra tirštas, bet išsilygins. Lenkta mentele tolygiai paskleiskite jį ant tešlos ir pabarstykite rudu cukrumi bei razinomis. Pradėdami nuo ilgosios kraštinės, standžiai susukite, supjaustykite į 12 vienodų riekių ir sudėkite į indą.",
+      "Palikite šiltoje vietoje, kol bandelės išpurs, o lengvai paspaudus liks šiek tiek atsitiesianti duobutė — apie 45 minutes–1 valandą.",
+      "Tuo metu įkaitinkite orkaitę iki 180°C (350°F).",
+      "Kepkite 30–35 minutes, kol iškeps ir paauksės; tikrinti pradėkite po 30 minučių. Jei per greitai ruduoja, po 20 minučių laisvai uždenkite folija. Įdaras gali nuspalvinti viršų anksčiau, nei iškepa tešla, todėl pravers termometras: tešla (ne įdaras) turi rodyti apie 95°C (200°F). Tarpai tarp vijų — normalu: juos sukelia kremo drėgmė, o juose puikiai susirenka glajus.",
+      "Palikite pastovėti 10 minučių. Tuo metu sumaišykite cukraus pudrą, vanilę ir 3 šaukštus pieno, po arbatinį šaukštelį pildami daugiau pieno, kol gausite norimą konsistenciją. Lenkta mentele paskleiskite ant šiltų bandelių.",
+      "Patiekite šiltas arba kambario temperatūros. Skaniausios kepimo dieną arba kitą dieną."
+    ],
+    "tags": [
+      "vanilla",
+      "raisins",
+      "egg-yolks",
+      "yeast",
+      "butter",
+      "kneading-dough",
+      "proofing-rising-dough",
+      "tempering-eggs"
+    ],
+    "image": "images/recipe-105.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/chelsea-buns/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
+  },
+  {
+    "id": "recipe-106",
+    "title": "Cinamono ir kardamono rytinės bandelės",
+    "category": "roll",
+    "description": "Sluoksniuotos, saldžios rytinės bandelės iš laminuotos mielinės daniškos tešlos su cinamono ir kardamono rudojo cukraus įdaru, apvoliotos prieskoniniame cukruje. Įdomus, bet įveikiamas projektas. Tešlos išeina dvigubai daugiau nei reikia 9 bandelėms — antrą pusę užšaldykite. Receptas su leidimu perspausdintas Cloudy Kitchen iš knygos „Bake From Scratch, Vol. 4“.",
+    "servings": 9,
+    "ingredients": [
+      {
+        "amount": 240,
+        "unit": "g",
+        "name": "nenugriebto pieno (kambario temperatūros)",
+        "section": "Daniška tešla"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "didelis kiaušinis (kambario temperatūros)",
+        "section": "Daniška tešla"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "didelio kiaušinio trynys (kambario temperatūros)",
+        "section": "Daniška tešla"
+      },
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "greitai veikiančių mielių",
+        "section": "Daniška tešla",
+        "amount_conv": 7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 520,
+        "unit": "g",
+        "name": "duoninių (stiprių) miltų",
+        "section": "Daniška tešla"
+      },
+      {
+        "amount": 65,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Daniška tešla"
+      },
+      {
+        "amount": 45,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Daniška tešla"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "druskos",
+        "section": "Daniška tešla",
+        "amount_conv": 18,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Daniška tešla",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Sviesto plokštė"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "duoninių (stiprių) miltų",
+        "section": "Sviesto plokštė"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Įdaras"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "tamsaus rudojo cukraus",
+        "section": "Įdaras"
+      },
+      {
+        "amount": 3,
+        "unit": "tsp",
+        "name": "cinamono",
+        "section": "Įdaras",
+        "amount_conv": 8.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.75,
+        "unit": "tsp",
+        "name": "kardamono",
+        "section": "Įdaras",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Įdaras",
+        "amount_conv": 1.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "žiupsnelis druskos",
+        "section": "Įdaras"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "ištirpinto sviesto ir cukraus keksiukų formai",
+        "section": "Įdaras"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Apvoliojimo cukrus"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "cinamono",
+        "section": "Apvoliojimo cukrus",
+        "amount_conv": 5.6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.75,
+        "unit": "tsp",
+        "name": "kardamono",
+        "section": "Apvoliojimo cukrus",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      }
+    ],
+    "steps": [
+      "Daniška tešla: planetinio maišytuvo dubenyje su tešlos kabliu šluotele sumaišykite pieną, kiaušinį, trynį ir mieles. Suberkite miltus, cukrų, sviestą, druską ir vanilę ir maišykite mažu greičiu apie 1 minutę, kol tešla susijungs. Padidinkite greitį iki vidutinio ir minkykite 8–10 minučių, kol tešla taps glotni ir elastinga.",
+      "Suformuokite rutulį, įdėkite į lengvai riebalais išteptą dubenį, uždenkite maistine plėvele ir palikite šiltoje vietoje apie 2 valandoms, kol padvigubės.",
+      "Suspauskite tešlą ir ant kepimo popieriumi išklotos, lengvai miltais pabarstytos skardos suformuokite 20 × 25 cm (8 × 10 in) stačiakampį. Sandariai apvyniokite maistine plėvele (dėl viso pikto visą skardą įdėkite į didelį plastikinį maišą) ir laikykite šaldytuve per naktį.",
+      "Sviesto plokštė: sumaišykite sviestą su miltais. Ant apatinės didelio kepimo popieriaus lapo pusės suformuokite 15 × 23 cm (6 × 9 in) stačiakampį, užlenkite popierių ant viršaus ir tešlos grandikliu ištiesinkite kraštus. Laikykite šaldytuve per naktį.",
+      "Laminavimo apžvalga: įvyniokite sviestą; iškočiokite 30 × 45 cm (12 × 18 in) ir sulenkite kaip laišką; vėl iškočiokite ir sulenkite; atšaldykite 15 minučių; iškočiokite ir sulenkite trečią kartą; atšaldykite 90 minučių. Jei tešla suminkštėja ir tampa glebi, apvyniokite ją ir prieš kitą lenkimą palaikykite šaldiklyje apie 10 minučių; jei sviestas per kietas, palikite tešlą kambario temperatūroje apie 5 minutes. Galima vis perkelti tarp šaldiklio ir stalo, kad tešla būtų patogi dirbti.",
+      "Tešlą iš šaldytuvo perkelkite į šaldiklį 15 minučių. Praėjus 5 minutėms, sviesto plokštę padėkite ant stalo, kad taptų lanksti.",
+      "Sviesto įvyniojimas: tešlą ant lengvai miltais pabarstyto paviršiaus iškočiokite 25 × 30 cm (10 × 12 in), trumpąja kraštine į save. Išvyniotą sviesto plokštę padėkite ant apatinės tešlos pusės, iš trijų pusių palikdami apie 1 cm (½ in) laisvos tešlos. Viršutinę tešlos pusę užlenkite ant sviesto ir pirštais užspauskite kraštus, išspausdami orą.",
+      "Pasukite tešlą 90 laipsnių ir iškart iškočiokite 30 × 45 cm (12 × 18 in) stačiakampį. Trumpąja kraštine į save sulenkite trečdaliais kaip laišką: apatinę dalį per du trečdalius aukštyn, viršutinę — ant jos. Pasukite 90 laipsnių, vėl iškočiokite 30 × 45 cm ir vėl sulenkite.",
+      "Sandariai apvyniokite tešlą, padėkite ant skardos ir 15 minučių palaikykite šaldiklyje.",
+      "Paskutinį kartą iškočiokite 30 × 45 cm (12 × 18 in) ir dar kartą sulenkite kaip laišką. Tešlą perpjaukite pusiau. Vieną pusę sandariai apvyniokite ir užšaldykite kitam kartui (atšildykite per naktį šaldytuve). Kitą pusę apvyniokite ir 90 minučių palaikykite šaldytuve.",
+      "Formavimas: tešlą 15 minučių palaikykite šaldiklyje, kad sutvirtėtų. Tuo metu visus įdaro ingredientus išmaišykite iki vientisumo.",
+      "12 vietų keksiukų formos akutes patepkite ištirpintu sviestu, pabarstykite cukrumi ir iškratykite perteklių.",
+      "Tešlą ant lengvai miltais pabarstyto paviršiaus iškočiokite maždaug 20 × 30 cm (8 × 12 in). Griežtai laikykitės 20 cm pločio, kitaip bandelės bus per storos keksiukų formai.",
+      "Tolygiai paskleiskite įdarą, palei vieną ilgąjį kraštą palikdami 1 cm (½ in) laisvos tešlos. Pradėdami nuo priešingo ilgojo krašto, standžiai susukite ir, jei reikia, nupjaukite galus. Supjaustykite 2,5 cm (1 in) bandelėmis ir sudėkite pjūviu į viršų į paruoštas akutes, švelniai prispausdami, kad užpildytų akutes.",
+      "Lengvai uždenkite (tinka didelis skaidrus maišas) ir palikite šiltoje vietoje be skersvėjų 45 minutėms–1 valandai, kol bandelės išpurs, o lengvai paspaudus liks nedidelė duobutė.",
+      "Likus 15 minučių kilimo, įkaitinkite orkaitę iki 190°C (375°F).",
+      "Kepkite 20–25 minutes, kol bandelės taps auksinės rudos, o termometras centre rodys 95°C (200°F); tikrinti pradėkite po 18 minučių, o jei per greitai ruduoja, įpusėjus uždenkite folija. Tuo metu negiliame dubenyje sumaišykite apvoliojimo cukraus ingredientus.",
+      "Palaikykite bandeles formoje apie 10 minučių, kol galėsite paimti, tada išimkite ir apvoliokite prieskoniniame cukruje. Visiškai atvėsinkite.",
+      "Likučius laikykite lengvai uždengtus kambario temperatūroje; jei reikia, atgaivinkite mikrobangų krosnelėje."
+    ],
+    "tags": [
+      "cinnamon",
+      "vanilla",
+      "sugar-brown",
+      "yeast",
+      "butter",
+      "laminating-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-106.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/cinnamon-and-cardamom-morning-buns/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
+  },
+  {
+    "id": "recipe-107",
+    "title": "Moliūgų cinamono bandelės su kavos ir klevų sirupo glajumi",
+    "category": "cinnamon-roll",
+    "description": "Moliūgas ir tešloje, ir įdare: minkšta moliūgų brioche tešla, susukta su moliūgų ir rudojo cukraus įdaru, iškepta ir aptepta kavos ir klevų sirupo kreminio sūrio glajumi.",
+    "servings": 12,
+    "ingredients": [
+      {
+        "amount": 425,
+        "unit": "g",
+        "name": "konservuotos moliūgų tyrės (viena skardinė)",
+        "section": "Nugarinta moliūgų tyrė"
+      },
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "aktyvių sausų mielių",
+        "section": "Moliūgų brioche",
+        "amount_conv": 7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "nenugriebto pieno, drungno",
+        "section": "Moliūgų brioche"
+      },
+      {
+        "amount": 4,
+        "unit": "tbsp",
+        "name": "rudojo cukraus",
+        "section": "Moliūgų brioche",
+        "amount_conv": 50,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 565,
+        "unit": "g",
+        "name": "kvietinių miltų",
+        "section": "Moliūgų brioche"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Moliūgų brioche",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "cinamono",
+        "section": "Moliūgų brioche",
+        "amount_conv": 2.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "malto kardamono",
+        "section": "Moliūgų brioche",
+        "amount_conv": 1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 140,
+        "unit": "g",
+        "name": "nugarintos moliūgų tyrės (paruoštos anksčiau)",
+        "section": "Moliūgų brioche"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "kiaušinių, lengvai išplaktų (kambario temperatūros)",
+        "section": "Moliūgų brioche"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Moliūgų brioche",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Moliūgų brioche"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Moliūgų ir rudojo cukraus įdaras"
+      },
+      {
+        "amount": 360,
+        "unit": "g",
+        "name": "šviesaus arba tamsaus rudojo cukraus",
+        "section": "Moliūgų ir rudojo cukraus įdaras"
+      },
+      {
+        "amount": 115,
+        "unit": "g",
+        "name": "nugarintos moliūgų tyrės (paruoštos anksčiau)",
+        "section": "Moliūgų ir rudojo cukraus įdaras"
+      },
+      {
+        "amount": 2,
+        "unit": "tbsp",
+        "name": "malto cinamono",
+        "section": "Moliūgų ir rudojo cukraus įdaras",
+        "amount_conv": 16.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "malto kardamono",
+        "section": "Moliūgų ir rudojo cukraus įdaras",
+        "amount_conv": 4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "žiupsnelis druskos",
+        "section": "Moliūgų ir rudojo cukraus įdaras"
+      },
+      {
+        "amount": 165,
+        "unit": "g",
+        "name": "kreminio sūrio (kambario temperatūros)",
+        "section": "Kavos ir klevų sirupo glajus"
+      },
+      {
+        "amount": 75,
+        "unit": "g",
+        "name": "sviesto (kambario temperatūros)",
+        "section": "Kavos ir klevų sirupo glajus"
+      },
+      {
+        "amount": 275,
+        "unit": "g",
+        "name": "cukraus pudros, persijotos",
+        "section": "Kavos ir klevų sirupo glajus"
+      },
+      {
+        "amount": 75,
+        "unit": "g",
+        "name": "klevų sirupo",
+        "section": "Kavos ir klevų sirupo glajus"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "tirpios espreso kavos",
+        "section": "Kavos ir klevų sirupo glajus",
+        "amount_conv": 4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "stambiosios (košerinės) druskos",
+        "section": "Kavos ir klevų sirupo glajus",
+        "amount_conv": 0.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Kavos ir klevų sirupo glajus",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      }
+    ],
+    "steps": [
+      "Nugarinta tyrė: moliūgų tyrę virkite vidutiniame puode ant vidutinės ugnies nuolat maišydami 4–5 minutes, kol šiek tiek nugaruos. Atvėsinkite ir iki naudojimo laikykite sandariame inde.",
+      "Tešla: mažame dubenyje sumaišykite mieles, pieną ir 2 šaukštus cukraus. Palikite 10–15 minučių, kol suputos.",
+      "Planetinio maišytuvo dubenyje su tešlos kabliu trumpai sumaišykite likusius 2 šaukštus cukraus, miltus, druską, cinamoną ir kardamoną. Sudėkite nugarintą tyrę, kiaušinius, vanilę ir suputojusias mieles. Maišykite mažu greičiu 2–3 minutes, kol tešla ims jungtis — ji gali atrodyti kiek sausoka, bet susijungs. Padidinkite greitį iki vidutinio ir minkykite dar 5 minutes, kol tešla taps minkšta ir glotni.",
+      "Sumažinkite greitį ir dėkite sviestą po nedaug, kiekvienam gabalėliui leisdami visiškai įsimaišyti prieš dėdami kitą; tai užtrunka 3–4 minutes. Tada minkykite vidutiniu greičiu dar 5 minutes, kol tešla taps labai minkšta ir glotni.",
+      "Perkelkite į aliejumi išteptą dubenį, sandariai uždenkite maistine plėvele ir laikykite šaldytuve bent 3 valandas arba per naktį. Pirmąjį kildinimą galima atlikti ir kambario temperatūroje.",
+      "Formavimas: 23 × 33 cm (9 × 13 in) kepimo indą išklokite kepimo popieriumi. Sumaišykite sviestą, rudąjį cukrų, nugarintą tyrę, cinamoną, kardamoną ir druską. Jei nerimaujate, kad įdaras bus per skystas — tai priklauso nuo to, kiek nugarinote tyrę, — pradėkite nuo 175 g sviesto ir dėkite daugiau, kol įdaras bus gerai tepamas.",
+      "Tešlą išverskite ant lengvai miltais pabarstyto paviršiaus ir iškočiokite 60 × 40 cm (24 × 16 in) stačiakampį, dažnai ištiesindami kraštus. Tolygiai paskleiskite įdarą per visą paviršių.",
+      "Pradėdami nuo ilgosios kraštinės, standžiai susukite į ritinį. Ritinį perpjaukite pusiau ir abi dalis padėkite greta ant kepimo popieriumi išklotos ir aliejumi lengvai apipurkštos skardos. Laisvai uždenkite maistine plėvele ir 20 minučių palaikykite šaldiklyje, kad pjūviai būtų tvarkingesni (jei tešla buvo šaldyta, galite praleisti).",
+      "Kiekvieną ritinį supjaustykite į 6 vienodas dalis (padeda liniuotė) ir tolygiais tarpais sudėkite į indą.",
+      "Laisvai uždenkite maistine plėvele ir leiskite kilti 45 minutes–1 valandą, kol bandelės išpurs, o švelniai paspaudus liks nedidelė duobutė.",
+      "Tuo metu įkaitinkite orkaitę iki 180°C (350°F).",
+      "Kepkite 35–40 minučių, kol bandelės taps sodriai auksinės rudos spalvos. Prieš tepdami glajumi, palikite pastovėti apie 15 minučių.",
+      "Glajus: kreminį sūrį ir sviestą plakite mentės formos antgaliu vidutiniu greičiu, kol gerai susimaišys. Suberkite cukraus pudrą, supilkite klevų sirupą, suberkite kavą, druską, įdėkite vanilės pastą ir plakite, kol glajus taps lengvas ir purus.",
+      "Paskleiskite ant dar šiek tiek šiltų bandelių. Likučius laikykite sandariame inde kambario temperatūroje, o prieš patiekdami pašildykite mikrobangų krosnelėje."
+    ],
+    "tags": [
+      "pumpkin",
+      "cinnamon",
+      "coffee-espresso",
+      "espresso-instant-coffee",
+      "cream-cheese",
+      "sugar-brown",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-107.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/pumpkin-cinnamon-rolls/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
+  },
+  {
+    "id": "recipe-108",
+    "title": "Obuolių ir pekano riešutų cinamono bandelės",
+    "category": "cinnamon-roll",
+    "description": "Labai lipnios cinamono bandelės su rudojo cukraus ir cinamono įdaru, virtu obuolių įdaru ir skrudintais pekano riešutais, aptepamos glotniu kreminio sūrio kremu. Komponentus galima paruošti iš anksto, tad ryte belieka suformuoti bandeles.",
+    "servings": 12,
+    "ingredients": [
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "nenugriebto pieno, drungno",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "aktyvių sausų mielių",
+        "section": "Brioche tešla",
+        "amount_conv": 7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "didelių kiaušinių (kambario temperatūros)",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "stambiosios (košerinės) druskos",
+        "section": "Brioche tešla",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 565,
+        "unit": "g",
+        "name": "kvietinių miltų",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 850,
+        "unit": "g",
+        "name": "obuolių (apie 4 vidutinius), nuluptų, be sėklalizdžių, smulkiais kubeliais",
+        "section": "Obuolių įdaras"
+      },
+      {
+        "amount": 30,
+        "unit": "g",
+        "name": "nesūdyto sviesto",
+        "section": "Obuolių įdaras"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Obuolių įdaras"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "malto cinamono arba obuolių pyrago prieskonių",
+        "section": "Obuolių įdaras",
+        "amount_conv": 1.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "stambiosios (košerinės) druskos",
+        "section": "Obuolių įdaras",
+        "amount_conv": 0.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "kukurūzų krakmolo",
+        "section": "Obuolių įdaras",
+        "amount_conv": 8.9,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "pekano riešutų puselių",
+        "section": "Skrudinti pekano riešutai"
+      },
+      {
+        "amount": 190,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Rudojo cukraus ir cinamono įdaras"
+      },
+      {
+        "amount": 280,
+        "unit": "g",
+        "name": "rudojo cukraus",
+        "section": "Rudojo cukraus ir cinamono įdaras"
+      },
+      {
+        "amount": 7,
+        "unit": "tsp",
+        "name": "malto cinamono (2 v. šaukštai + 1 arb. šaukštelis)",
+        "section": "Rudojo cukraus ir cinamono įdaras",
+        "amount_conv": 19.6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.125,
+        "unit": "tsp",
+        "name": "stambiosios (košerinės) druskos",
+        "section": "Rudojo cukraus ir cinamono įdaras",
+        "amount_conv": 0.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 115,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Kreminio sūrio kremas"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "kreminio sūrio (kambario temperatūros)",
+        "section": "Kreminio sūrio kremas"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "cukraus pudros, persijotos",
+        "section": "Kreminio sūrio kremas"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "1–2 šaukštai riebios grietinėlės",
+        "section": "Kreminio sūrio kremas"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "stambiosios (košerinės) druskos",
+        "section": "Kreminio sūrio kremas",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      }
+    ],
+    "steps": [
+      "Tešla: vidutiniame dubenyje sumaišykite drungną pieną, 25 g cukraus ir mieles. Palikite 10–15 minučių, kol suputos.",
+      "Planetinio maišytuvo dubenyje su tešlos kabliu trumpai sumaišykite miltus, druską ir likusį cukrų.",
+      "Supilkite pieno mišinį, sudėkite kiaušinius ir maišykite mažu greičiu 2–3 minutes, tada vidutiniu dar 5 minutes. Sviestą dėkite po nedaug, kiekvienam gabalėliui leisdami įsimaišyti prieš dėdami kitą. Minkykite dar 7–10 minučių, kol tešla taps glotni ir minkšta.",
+      "Suformuokite rutulį, įdėkite į dubenį ir uždenkite maistine plėvele. Laikykite šaldytuve bent 2 valandas arba per naktį, kol padvigubės, — arba šiltoje vietoje 45 minutes–1 valandą, kol padvigubės.",
+      "Obuolių įdaras: didelėje keptuvėje ant vidutinės ugnies ištirpinkite sviestą. Sudėkite obuolius, cukrų, cinamoną ir druską ir kepkite dažnai maišydami 3–5 minutes, kol obuoliai suminkštės.",
+      "Įmaišykite krakmolą ir kaitinkite toliau, kol masė sutirštės ir apgaubs obuolius. Perkelkite į sandarų indą ir iki naudojimo laikykite šaldytuve.",
+      "Riešutai: įkaitinkite orkaitę iki 180°C (350°F). Pekano riešutus paskleiskite ant kepimo popieriumi išklotos skardos ir skrudinkite apie 10 minučių, retkarčiais pakratydami, kol lengvai paruduos ir kiaurai (perlaužkite vieną patikrinti). Laikykite sandariame inde kambario temperatūroje.",
+      "Cinamono įdaras: mažame dubenyje sumaišykite sviestą, rudąjį cukrų, cinamoną ir druską.",
+      "Formavimas: 23 × 33 cm (9 × 13 in) kepimo indą ištepkite riebalais arba išklokite kepimo popieriumi.",
+      "Tešlą išverskite ant lengvai miltais pabarstyto paviršiaus ir iškočiokite 60 × 40 cm (24 × 16 in) stačiakampį, dažnai ištiesindami kraštus. Tolygiai paskleiskite cinamono įdarą.",
+      "Ant viršaus tolygiai paskleiskite obuolių įdarą. Skrudintus riešutus stambiai susmulkinkite ir pabarstykite ant obuolių.",
+      "Pradėdami nuo ilgosios kraštinės, standžiai susukite į ritinį. Ritinį perpjaukite pusiau ir abi dalis padėkite greta ant kepimo popieriumi išklotos ir aliejumi lengvai apipurkštos skardos. Laisvai uždenkite maistine plėvele ir 20 minučių palaikykite šaldiklyje (neprivaloma, bet pjūviai bus tvarkingesni).",
+      "Kiekvieną ritinį supjaustykite į 6 vienodas dalis (padeda liniuotė) ir tolygiais tarpais sudėkite į indą.",
+      "Laisvai uždenkite maistine plėvele ir leiskite kilti 45 minutes–1 valandą, kol bandelės išpurs, o švelniai paspaudus liks nedidelė duobutė.",
+      "Tuo metu įkaitinkite orkaitę iki 180°C (350°F).",
+      "Kepkite 35–40 minučių, kol bandelės taps sodriai auksinės rudos spalvos. Prieš tepdami kremu, palikite pastovėti apie 15 minučių.",
+      "Kremas: sviestą ir kreminį sūrį plakite mentės formos antgaliu vidutiniu greičiu, kol gerai susimaišys. Suberkite cukraus pudrą, supilkite grietinėlę, suberkite druską ir plakite, kol kremas taps lengvas ir purus.",
+      "Paskleiskite ant dar šiek tiek šiltų bandelių. Likučius laikykite sandariame inde kambario temperatūroje, o prieš patiekdami pašildykite mikrobangų krosnelėje."
+    ],
+    "tags": [
+      "cinnamon",
+      "apple",
+      "cream-cheese",
+      "sugar-brown",
+      "cornstarch",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-108.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/apple-cinnamon-rolls/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
+  },
+  {
+    "id": "recipe-109",
+    "title": "Nutella, bananų ir lazdyno riešutų bandelės",
+    "category": "roll",
+    "description": "Minkšta, puri brioche tešla, ištepta Nutella, su bananų gabalėliais ir lazdyno riešutais, susukta į saldžias bandeles ir aptepta glotniu šokoladiniu kreminio sūrio kremu. Puikus būdas sunaudoti prinokusius bananus.",
+    "servings": 12,
+    "ingredients": [
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "aktyvių sausų mielių",
+        "section": "Brioche tešla",
+        "amount_conv": 7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 230,
+        "unit": "g",
+        "name": "nenugriebto pieno, drungno",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 4,
+        "unit": "tbsp",
+        "name": "cukraus",
+        "section": "Brioche tešla",
+        "amount_conv": 50,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 565,
+        "unit": "g",
+        "name": "kvietinių miltų",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Brioche tešla",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "kiaušinių (kambario temperatūros)",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Brioche tešla",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Brioche tešla"
+      },
+      {
+        "amount": 220,
+        "unit": "g",
+        "name": "šokoladinio lazdyno riešutų kremo (Nutella arba naminio)",
+        "section": "Įdaras"
+      },
+      {
+        "amount": 70,
+        "unit": "g",
+        "name": "skrudintų lazdyno riešutų, susmulkintų",
+        "section": "Įdaras"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "dideli prinokę bananai (apie 280 g), supjaustyti kubeliais",
+        "section": "Įdaras"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Šokoladinis kreminio sūrio kremas"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "kreminio sūrio (kambario temperatūros)",
+        "section": "Šokoladinis kreminio sūrio kremas"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "cukraus pudros, persijotos",
+        "section": "Šokoladinis kreminio sūrio kremas"
+      },
+      {
+        "amount": 25,
+        "unit": "g",
+        "name": "alkalizuotų (Dutch-processed) kakavos miltelių",
+        "section": "Šokoladinis kreminio sūrio kremas"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Šokoladinis kreminio sūrio kremas",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Šokoladinis kreminio sūrio kremas",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "šokolado drožlių arba smulkintų riešutų apdailai (neprivaloma)",
+        "section": "Šokoladinis kreminio sūrio kremas"
+      }
+    ],
+    "steps": [
+      "Tešla: vidutiniame dubenyje sumaišykite drungną pieną, 1 šaukštą cukraus ir mieles. Palikite 10–15 minučių, kol suputos.",
+      "Planetinio maišytuvo dubenyje su tešlos kabliu trumpai sumaišykite miltus, druską ir likusį cukrų.",
+      "Supilkite pieno mišinį, sudėkite kiaušinius ir vanilę ir maišykite mažu greičiu 2–3 minutes, tada vidutiniu dar 5 minutes.",
+      "Sviestą dėkite po nedaug, kiekvienam gabalėliui leisdami įsimaišyti prieš dėdami kitą. Minkykite dar 7–10 minučių, kol tešla taps glotni ir minkšta.",
+      "Uždenkite dubenį maistine plėvele ir palikite šiltoje vietoje, kol tešla padvigubės, 45 minutes–1 valandą — arba kildinkite šaldytuve 2–3 valandas ar per naktį; šalta tešla lengviau dirbti.",
+      "Formavimas: 23 × 33 cm (9 × 13 in) kepimo indą arba skardą išklokite kepimo popieriumi arba gerai ištepkite riebalais.",
+      "Tešlą išverskite ant lengvai miltais pabarstyto paviršiaus ir iškočiokite 60 × 40 cm (24 × 16 in) stačiakampį, dažnai ištiesindami kraštus.",
+      "Tolygiai ištepkite šokoladiniu lazdyno riešutų kremu, išbarstykite bananus ir pabarstykite riešutais.",
+      "Pradėdami nuo ilgosios kraštinės, standžiai susukite į ritinį. Ritinį perpjaukite pusiau ir abi dalis padėkite greta ant kepimo popieriumi išklotos ir aliejumi lengvai apipurkštos skardos. Laisvai uždenkite maistine plėvele ir 20 minučių palaikykite šaldiklyje, kad pjūviai būtų tvarkingesni.",
+      "Aštriu dantytu peiliu kiekvieną ritinį supjaustykite į 6 vienodas dalis (padeda liniuotė) ir tolygiais tarpais sudėkite į indą.",
+      "Laisvai uždenkite maistine plėvele ir leiskite kilti 45 minutes–1 valandą, kol bandelės išpurs, o švelniai paspaudus liks nedidelė duobutė.",
+      "Tuo metu įkaitinkite orkaitę iki 180°C (350°F).",
+      "Kepkite 35–40 minučių, kol bandelės taps sodriai auksinės rudos spalvos. Prieš tepdami kremu, palikite pastovėti apie 15 minučių.",
+      "Kremas: sviestą ir kreminį sūrį plakite mentės formos antgaliu vidutiniu greičiu, kol gerai susimaišys. Suberkite cukraus pudrą, kakavą, druską, įdėkite vanilės pastą ir plakite, kol kremas taps lengvas ir purus.",
+      "Paskleiskite ant dar šiek tiek šiltų bandelių ir, jei norite, papuoškite šokolado drožlėmis ar riešutais. Likučius laikykite sandariame inde kambario temperatūroje, o prieš patiekdami pašildykite mikrobangų krosnelėje."
+    ],
+    "tags": [
+      "hazelnut",
+      "banana",
+      "chocolate",
+      "cocoa-powder",
+      "cream-cheese",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-109.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/nutella-banana-and-hazelnut-sweet-rolls-with-chocolate-cream-cheese-buttercream/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
+  },
+  {
+    "id": "recipe-110",
+    "title": "Šokoladinė espreso babka su ruginiais miltais",
+    "category": "roll",
+    "description": "Sodri šokolado ir espreso babka iš minkštos, purios brioche tešlos su ruginiais miltais, suteikiančiais skrudinto grūdo skonį, supinta ir aptepta cukraus sirupu blizgesiui ir drėgmei. Išeina du kepalai — ir iš jų puikūs prancūziški skrebučiai.",
+    "servings": null,
+    "ingredients": [
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "nenugriebto pieno, drungno",
+        "section": "Ruginė babkos tešla"
+      },
+      {
+        "amount": 2.25,
+        "unit": "tsp",
+        "name": "aktyvių sausų mielių",
+        "section": "Ruginė babkos tešla",
+        "amount_conv": 7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 4,
+        "unit": "tbsp",
+        "name": "cukraus",
+        "section": "Ruginė babkos tešla",
+        "amount_conv": 50,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 85,
+        "unit": "g",
+        "name": "ruginių miltų",
+        "section": "Ruginė babkos tešla"
+      },
+      {
+        "amount": 480,
+        "unit": "g",
+        "name": "kvietinių miltų",
+        "section": "Ruginė babkos tešla"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Ruginė babkos tešla",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "kiaušinių (kambario temperatūros)",
+        "section": "Ruginė babkos tešla"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Ruginė babkos tešla",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 115,
+        "unit": "g",
+        "name": "nesūdyto sviesto (kambario temperatūros)",
+        "section": "Ruginė babkos tešla"
+      },
+      {
+        "amount": 350,
+        "unit": "g",
+        "name": "juodojo šokolado (70%)",
+        "section": "Šokolado ir espreso įdaras"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "nesūdyto sviesto (gali būti tiesiai iš šaldytuvo)",
+        "section": "Šokolado ir espreso įdaras"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "stambiosios (košerinės) druskos",
+        "section": "Šokolado ir espreso įdaras",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Šokolado ir espreso įdaras",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 4,
+        "unit": "tsp",
+        "name": "tirpios espreso kavos (arba smulkiai maltos tirpios kavos)",
+        "section": "Šokolado ir espreso įdaras",
+        "amount_conv": 8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "cukraus pudros, persijotos",
+        "section": "Šokolado ir espreso įdaras"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "vandens",
+        "section": "Cukraus sirupas"
+      },
+      {
+        "amount": 50,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Cukraus sirupas"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Cukraus sirupas",
+        "amount_conv": 1.4,
+        "unit_conv": "g"
+      }
+    ],
+    "steps": [
+      "Tešla: mažame dubenyje sumaišykite mieles, pieną ir 2 šaukštus cukraus. Palikite 10–15 minučių, kol suputos.",
+      "Planetinio maišytuvo dubenyje su tešlos kabliu trumpai sumaišykite likusius 2 šaukštus cukraus, abiejų rūšių miltus ir druską. Sudėkite kiaušinius, vanilę ir suputojusias mieles. Maišykite mažu greičiu 2–3 minutes, kol tešla ims jungtis — ji gali atrodyti kiek sausoka, bet susijungs. Padidinkite greitį iki vidutinio ir minkykite dar 10 minučių, kol tešla taps minkšta ir glotni.",
+      "Sumažinkite greitį ir dėkite sviestą po nedaug, kiekvienam gabalėliui leisdami visiškai įsimaišyti prieš dėdami kitą; tai užtrunka 3–4 minutes.",
+      "Tada minkykite vidutiniu greičiu dar 5 minutes, kol tešla taps labai minkšta ir glotni.",
+      "Perkelkite į aliejumi išteptą dubenį, sandariai uždenkite maistine plėvele ir laikykite šaldytuve bent 3 valandas arba per naktį.",
+      "Įdaras: šokoladą ir sviestą sudėkite į karščiui atsparų dubenį virš puodo su vos verdančiu vandeniu (dubuo neturi liesti vandens) ir dažnai maišydami ištirpinkite iki vientisumo.",
+      "Nukelkite nuo ugnies, suberkite druską, kavą, cukraus pudrą, įdėkite vanilės pastą ir išplakite iki vientisumo. Leiskite šiek tiek atvėsti, retkarčiais pamaišydami.",
+      "Formavimas: dvi keksines formas lengvai ištepkite riebalais ir išklokite kepimo popieriumi.",
+      "Tešlą ant lengvai miltais pabarstyto paviršiaus iškočiokite 40 × 64 cm (16 × 25 in) stačiakampį. Paskleiskite šokoladinį įdarą. Pradėdami nuo ilgosios kraštinės, standžiai susukite į ritinį, tada perpjaukite jį pusiau.",
+      "Abi dalis padėkite greta ant kepimo popieriumi išklotos skardos, uždenkite maistine plėvele ir valandą palaikykite šaldytuve.",
+      "Aštriu peiliu pirmą ritinį perpjaukite išilgai pusiau, tada tris kartus sukryžiuokite abi puses, kad susidarytų pynė.",
+      "Įdėkite į keksinę formą, jei reikia, galus šiek tiek pakišdami apačion. Taip pat suformuokite ir antrą ritinį.",
+      "Lengvai uždenkite maistine plėvele ir palikite šiltoje vietoje 45 minutėms–1 valandai, kol lengvai paspausta tešla atsitiesia. Tuo metu įkaitinkite orkaitę iki 180°C (350°F).",
+      "Kepkite 40–45 minutes, kol kepalai taps auksinės rudos spalvos, o greitai rodantis termometras rodys 90°C (190°F). Kol kepa, sirupo ingredientus užvirinkite mažame puode, pavirkite 1–2 minutes ir atidėkite.",
+      "Vos išėmę iš orkaitės, abu karštus kepalus aptepkite sirupu. Palaikykite formose 15 minučių, tada perkelkite ant grotelių ir prieš pjaustydami visiškai atvėsinkite.",
+      "Likučius laikykite sandariame inde arba sandariai suvyniokite ir užšaldykite."
+    ],
+    "tags": [
+      "chocolate",
+      "dark-chocolate",
+      "coffee-espresso",
+      "espresso-instant-coffee",
+      "yeast",
+      "kneading-dough",
+      "proofing-rising-dough"
+    ],
+    "image": "images/recipe-110.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cinnamon-roll",
+    "source_url": "https://cloudykitchen.com/blog/chocolate-espresso-and-rye-babka-2/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
   }
 ]
