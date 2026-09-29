@@ -11624,5 +11624,670 @@
     "variant_label": null,
     "categoryGroup": "cookies-brownies",
     "source_url": "https://www.instagram.com/marusya.manko/reel/Dc3ZL6VKV8p/"
+  },
+  {
+    "id": "recipe-093",
+    "title": "No-Bake Rhubarb Cheesecake",
+    "category": "cheesecake",
+    "description": "An easy no-bake cheesecake set in a loaf pan: a graham cracker crust, a smooth rhubarb cream cheese filling, and swirls of rhubarb purée on top. Cut into bars once chilled. The filling works with other fruit purées too.",
+    "servings": 6,
+    "ingredients": [
+      {
+        "amount": 350,
+        "unit": "g",
+        "name": "chopped rhubarb",
+        "section": "Rhubarb purée"
+      },
+      {
+        "amount": 175,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Rhubarb purée"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilla bean paste (optional)",
+        "section": "Rhubarb purée",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Rhubarb purée"
+      },
+      {
+        "amount": 135,
+        "unit": "g",
+        "name": "graham crackers, processed to crumbs",
+        "section": "Graham cracker crust"
+      },
+      {
+        "amount": 15,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Graham cracker crust"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Graham cracker crust"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "melted butter (weighed after melting)",
+        "section": "Graham cracker crust"
+      },
+      {
+        "amount": 55,
+        "unit": "g",
+        "name": "heavy cream, for the gelatine",
+        "section": "Cheesecake filling"
+      },
+      {
+        "amount": 130,
+        "unit": "g",
+        "name": "heavy cream, for whipping",
+        "section": "Cheesecake filling"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "powdered gelatine",
+        "section": "Cheesecake filling",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "cream cheese, at room temperature",
+        "section": "Cheesecake filling"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Cheesecake filling"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilla",
+        "section": "Cheesecake filling",
+        "amount_conv": 2.2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Cheesecake filling",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "rhubarb purée (made above), for the filling",
+        "section": "Cheesecake filling"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "50–60 g rhubarb purée (made above), for the topping",
+        "section": "Cheesecake filling"
+      }
+    ],
+    "steps": [
+      "Rhubarb purée: place the rhubarb, sugar, vanilla and salt in a medium saucepan.",
+      "Cook over medium heat, stirring often, until the rhubarb has broken down and the mixture is thick and jammy.",
+      "Remove from the heat, cool slightly, then purée in a blender or with a stick blender — carefully, as it is hot. Transfer to an airtight container and chill.",
+      "Crust: grease a 23 × 13 cm (9 × 5 in) loaf pan and line it with two strips of parchment paper that overhang the sides to form a sling. Put the graham cracker crumbs and sugar in a medium bowl.",
+      "Add the salt and butter and mix — it should look like wet sand.",
+      "Tip the crumbs into the pan and press them into an even layer with the bottom of a flat glass or measuring cup. Place in the freezer while you make the filling.",
+      "Filling: in a small pot over low heat, combine the 55 g of cream and the gelatine. Stir until the gelatine dissolves, then set aside to cool slightly.",
+      "In a medium bowl, whip the 130 g of cream to soft peaks with an electric mixer or by hand. Set aside.",
+      "In a second bowl (no need to wash the beaters), beat the cream cheese and sugar until smooth. Add the vanilla and salt and beat to incorporate, then add the gelatine-cream mixture and mix well.",
+      "Gently fold in the whipped cream, then mix in 150 g of the rhubarb purée.",
+      "Spoon the filling over the crust, tap the pan to release any bubbles and smooth with an offset spatula. Dot about 50 g of rhubarb purée over the surface with a spoon, swirl it with a toothpick or knife, then bang the pan on the counter to flatten slightly. Add a little more purée and swirl again if you like.",
+      "Refrigerate for at least 3 hours, until set. Lift the cheesecake out using the parchment sling and cut into bars with a knife dipped in hot water and wiped dry before each cut.",
+      "Store leftovers in an airtight container in the fridge."
+    ],
+    "tags": [
+      "vanilla",
+      "cream-cheese",
+      "heavy-whipping-cream",
+      "gelatin"
+    ],
+    "image": "images/recipe-093.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cheesecake",
+    "source_url": "https://cloudykitchen.com/blog/rhubarb-cheesecake/"
+  },
+  {
+    "id": "recipe-094",
+    "title": "Pumpkin Cheesecake with Gingersnap Crust",
+    "category": "cheesecake",
+    "description": "A baked cheesecake with a smooth, creamy pumpkin filling on a buttery gingersnap crust, topped with piped whipped cream. Easy to make ahead. The recipe is from “The Farmer's Daughter Bakes” by Kelsey Siemens, reprinted with permission on Cloudy Kitchen.",
+    "servings": 8,
+    "ingredients": [
+      {
+        "amount": 335,
+        "unit": "g",
+        "name": "gingersnap cookies (homemade or store-bought), crushed",
+        "section": "Gingersnap crust"
+      },
+      {
+        "amount": 85,
+        "unit": "g",
+        "name": "unsalted butter, melted",
+        "section": "Gingersnap crust"
+      },
+      {
+        "amount": 0.125,
+        "unit": "tsp",
+        "name": "kosher salt",
+        "section": "Gingersnap crust",
+        "amount_conv": 0.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 465,
+        "unit": "g",
+        "name": "full-fat cream cheese, at room temperature",
+        "section": "Pumpkin cheesecake"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Pumpkin cheesecake"
+      },
+      {
+        "amount": 245,
+        "unit": "g",
+        "name": "pumpkin purée",
+        "section": "Pumpkin cheesecake"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla extract or paste",
+        "section": "Pumpkin cheesecake",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": "tbsp",
+        "name": "all-purpose flour",
+        "section": "Pumpkin cheesecake",
+        "amount_conv": 15.6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "cinnamon",
+        "section": "Pumpkin cheesecake",
+        "amount_conv": 1.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "ground allspice",
+        "section": "Pumpkin cheesecake",
+        "amount_conv": 1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "large eggs, at room temperature",
+        "section": "Pumpkin cheesecake"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "large egg yolk, at room temperature",
+        "section": "Pumpkin cheesecake"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "heavy cream, cold",
+        "section": "Whipped cream topping"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilla bean paste (optional)",
+        "section": "Whipped cream topping",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      }
+    ],
+    "steps": [
+      "Crust: preheat the oven to 180°C (350°F). Blend the gingersnaps to fine crumbs in a food processor or blender.",
+      "In a medium bowl, stir together the crumbs, butter and salt. Press firmly into the bottom and up the sides of a greased 20 cm (8 in) springform pan. Bake for 8–10 minutes, until fragrant, then set aside to cool.",
+      "Filling: reduce the oven to 130°C (260°F). In a stand mixer fitted with the paddle, beat the cream cheese and sugar on low for 1–2 minutes, until completely smooth. The cream cheese must be at room temperature or the batter will have small lumps.",
+      "Add the pumpkin purée, vanilla, flour, cinnamon and allspice and beat on low for 2 minutes, until smooth. Scrape down the bowl and gently run the spatula through the batter to press out some of the air.",
+      "Add the eggs one at a time, mixing until barely combined, then add the yolk and beat on low until just incorporated. Scrape down the bowl and press out any air bubbles. Try not to over-mix once the eggs are in.",
+      "Pour the batter into the cooled crust and slam the pan firmly on the counter several times so the air bubbles pop on the surface rather than rising through the batter during baking and making it bumpy.",
+      "Bake for 55 minutes, then turn off the oven, crack the door and leave the cheesecake inside for 15–20 minutes. Remove from the oven, run a thin knife around the edge and leave in the pan for at least 1 hour.",
+      "Carefully remove the springform ring and let the cheesecake come to room temperature before refrigerating it in an airtight container. Chill thoroughly before topping.",
+      "Whipped cream: whip the cream and vanilla bean paste to medium peaks — not stiff, or it may split and pipe poorly.",
+      "Pipe the cream over the chilled cheesecake with a tip of your choice (such as an Ateco #826 open star), or swirl it on with a spoon. Sprinkle with cinnamon if you like.",
+      "Store leftovers in an airtight container in the fridge for 2–3 days."
+    ],
+    "tags": [
+      "pumpkin",
+      "cinnamon",
+      "vanilla",
+      "cream-cheese",
+      "heavy-whipping-cream",
+      "eggs"
+    ],
+    "image": "images/recipe-094.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cheesecake",
+    "source_url": "https://cloudykitchen.com/blog/pumpkin-cheesecake-with-gingersnap-crust/"
+  },
+  {
+    "id": "recipe-095",
+    "title": "No-Bake Snickers Chocolate Cheesecake",
+    "category": "cheesecake",
+    "description": "A smooth, creamy no-bake chocolate cheesecake full of chopped Snickers bars on a buttery graham cracker base. No cracking, no water bath, no fuss.",
+    "servings": 16,
+    "ingredients": [
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "graham crackers, processed to crumbs",
+        "section": "Graham cracker crust"
+      },
+      {
+        "amount": 3,
+        "unit": "tbsp",
+        "name": "sugar",
+        "section": "Graham cracker crust",
+        "amount_conv": 37.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "kosher salt",
+        "section": "Graham cracker crust",
+        "amount_conv": 0.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 260,
+        "unit": "g",
+        "name": "unsalted butter, melted and cooled",
+        "section": "Graham cracker crust"
+      },
+      {
+        "amount": 375,
+        "unit": "g",
+        "name": "heavy cream, for whipping",
+        "section": "Chocolate cheesecake filling"
+      },
+      {
+        "amount": 450,
+        "unit": "g",
+        "name": "cream cheese, at room temperature",
+        "section": "Chocolate cheesecake filling"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "granulated sugar",
+        "section": "Chocolate cheesecake filling"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla",
+        "section": "Chocolate cheesecake filling",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "dark chocolate (72%), melted and cooled slightly",
+        "section": "Chocolate cheesecake filling"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "Snickers bars, chopped",
+        "section": "Chocolate cheesecake filling"
+      },
+      {
+        "amount": 175,
+        "unit": "g",
+        "name": "heavy cream, liquid (unwhipped)",
+        "section": "Chocolate cheesecake filling"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "roasted salted peanuts",
+        "section": "To finish"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "extra chopped Snickers",
+        "section": "To finish"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "flaky sea salt",
+        "section": "To finish"
+      }
+    ],
+    "steps": [
+      "Crust: grease a 23 cm (9 in) square pan and line it with two strips of parchment paper that overhang the sides to form a sling. Put the graham cracker crumbs and sugar in a medium bowl, add the salt and butter, and mix — it should look like wet sand.",
+      "Tip the crumbs into the pan and press them into an even layer with the bottom of a flat glass or measuring cup. Place in the freezer while you make the filling.",
+      "Filling: in a stand mixer fitted with the whisk, whip the 375 g of cream just until stiff peaks start to form. Transfer to a large bowl; no need to wash the mixer bowl.",
+      "Beat the cream cheese, sugar, vanilla and salt on medium-high speed for 2–3 minutes, until light, fluffy and well combined.",
+      "Add the melted, cooled chocolate and mix to combine. Add the 175 g of liquid cream and beat until incorporated.",
+      "Add the chocolate mixture to the bowl of whipped cream and fold carefully to combine without deflating it too much. Mix in the chopped Snickers.",
+      "Spoon the filling over the crust and spread it smooth with an offset spatula. Bang the pan on the counter a few times to remove large air bubbles. For an extra-smooth top, run the spatula under warm water, dry it, and smooth again.",
+      "Cover loosely with plastic wrap, making sure it does not touch the filling. Refrigerate for at least 4 hours, or overnight.",
+      "To finish: lift the cheesecake out using the sling and peel off the parchment. Scatter the top with chopped Snickers, roasted salted peanuts and flaky sea salt.",
+      "Cut into squares with a knife run under water and dried. Keep in the fridge until serving."
+    ],
+    "tags": [
+      "chocolate",
+      "dark-chocolate",
+      "cream-cheese",
+      "heavy-whipping-cream"
+    ],
+    "image": "images/recipe-095.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cheesecake",
+    "source_url": "https://cloudykitchen.com/blog/no-bake-snickers-cheesecake/"
+  },
+  {
+    "id": "recipe-096",
+    "title": "No-Bake Mixed Berry Cheesecake Bars",
+    "category": "cheesecake",
+    "description": "Easy no-bake cheesecake bars: a graham cracker crust, a silky vanilla bean filling, and a marbled swirl of mixed berry coulis on top. A low-effort dessert for any time of year.",
+    "servings": 16,
+    "ingredients": [
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "raspberries, fresh or frozen",
+        "section": "Mixed berry coulis"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "blueberries, fresh or frozen",
+        "section": "Mixed berry coulis"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "blackberries, fresh or frozen",
+        "section": "Mixed berry coulis"
+      },
+      {
+        "amount": 65,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Mixed berry coulis"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "water",
+        "section": "Mixed berry coulis",
+        "amount_conv": 15,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "a pinch of salt",
+        "section": "Mixed berry coulis"
+      },
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "graham crackers",
+        "section": "Graham cracker crust"
+      },
+      {
+        "amount": 3,
+        "unit": "tbsp",
+        "name": "sugar",
+        "section": "Graham cracker crust",
+        "amount_conv": 37.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "butter, melted",
+        "section": "Graham cracker crust"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Graham cracker crust",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "cream, for whipping",
+        "section": "Cheesecake filling"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "cream, for the gelatine",
+        "section": "Cheesecake filling"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "powdered gelatine",
+        "section": "Cheesecake filling",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 450,
+        "unit": "g",
+        "name": "cream cheese, at room temperature",
+        "section": "Cheesecake filling"
+      },
+      {
+        "amount": 130,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Cheesecake filling"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilla bean paste",
+        "section": "Cheesecake filling",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "salt",
+        "section": "Cheesecake filling",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      }
+    ],
+    "steps": [
+      "Coulis: put all the coulis ingredients in a pan over medium heat. Cook, stirring often and occasionally mashing the berries against the side with a fork, until soft. Blend until smooth in a high-speed blender or food processor — carefully, as it is hot.",
+      "Clean the pan and return it to the stove. Strain the berry mixture into the pan, bring to a boil and cook over medium heat, stirring constantly, for 2–3 minutes, until slightly thickened and reduced. Transfer to a container and cool completely.",
+      "Crust: grease a 23 cm (9 in) square pan and line it with two strips of parchment paper that overhang the sides to form a sling. Pulse the graham crackers and sugar in a food processor to fine crumbs, then transfer to a medium bowl. Add the salt and butter and mix — it should look like wet sand.",
+      "Tip the crumbs into the pan and press them into an even layer with the bottom of a flat glass or measuring cup. Place in the freezer while you make the filling.",
+      "Filling: in a small pot over low heat, combine the 120 g of cream and the gelatine. Stir until the gelatine dissolves, then set aside to cool slightly.",
+      "Whip the 300 g of cream to soft peaks with a stand mixer or electric mixer and transfer to a bowl (no need to wash the mixer bowl). Beat the cream cheese and sugar until smooth. Add the vanilla and salt and beat to incorporate, then add the gelatine-cream mixture and mix well.",
+      "Take the bowl off the mixer and gently fold in the softly whipped cream with a spatula.",
+      "Spoon the filling over the crust, tap the pan to release any bubbles and smooth with an offset spatula. Spread 3–4 tablespoons of the cooled coulis over the surface, swirl it into the upper part of the filling with a spoon, and smooth again.",
+      "Drizzle a little more coulis over the top (less than you think you need) and drag a chopstick or skewer through it to marble. Add more coulis and marble again if you like.",
+      "Refrigerate for at least 3 hours, until set. Lift out using the parchment sling and cut into squares with a knife dipped in hot water and wiped dry before each cut.",
+      "Store leftovers in the fridge."
+    ],
+    "tags": [
+      "raspberry",
+      "blueberry",
+      "blackberry",
+      "vanilla",
+      "cream-cheese",
+      "heavy-whipping-cream",
+      "gelatin"
+    ],
+    "image": "images/recipe-096.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cheesecake",
+    "source_url": "https://cloudykitchen.com/blog/no-bake-mixed-berry-cheesecake-bars/"
+  },
+  {
+    "id": "recipe-097",
+    "title": "Lemon and Lime No-Bake Cheesecake",
+    "category": "cheesecake",
+    "description": "A simple no-bake cheesecake bright with lemon and lime zest and juice, on a buttery biscuit base with more citrus zest.",
+    "servings": 10,
+    "ingredients": [
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "sweet biscuits, such as graham crackers",
+        "section": "Base"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "melted butter",
+        "section": "Base"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "lemon, zest of",
+        "section": "Base"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "lime, zest of",
+        "section": "Base"
+      },
+      {
+        "amount": 450,
+        "unit": "g",
+        "name": "full-fat cream cheese, at room temperature",
+        "section": "Filling"
+      },
+      {
+        "amount": 135,
+        "unit": "g",
+        "name": "sugar",
+        "section": "Filling"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "lemon, zest of",
+        "section": "Filling"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "lime, zest of",
+        "section": "Filling"
+      },
+      {
+        "amount": 60,
+        "unit": "ml",
+        "name": "lemon juice",
+        "section": "Filling"
+      },
+      {
+        "amount": 60,
+        "unit": "ml",
+        "name": "lime juice",
+        "section": "Filling"
+      },
+      {
+        "amount": 3,
+        "unit": "tsp",
+        "name": "powdered gelatine",
+        "section": "Filling",
+        "amount_conv": 9,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 300,
+        "unit": "ml",
+        "name": "heavy cream",
+        "section": "Filling"
+      }
+    ],
+    "steps": [
+      "Base: grease a 20 cm (8 in) springform tin.",
+      "Pulse the biscuits to fine crumbs in a food processor. Add the lemon and lime zest and the melted butter and pulse until combined. Press into the bottom of the tin and refrigerate while you make the filling.",
+      "Filling: in a small pot over low heat, combine the lemon juice, lime juice and gelatine. Stir until the gelatine dissolves, then set aside to cool slightly.",
+      "Whip the cream to soft peaks with a stand mixer or electric mixer and transfer to a bowl (no need to wash the mixer bowl). Beat the cream cheese and sugar until smooth, then beat in the lemon and lime zest. Add the cooled juice and gelatine and mix until well combined. Take the bowl off the mixer and gently fold in the cream with a spatula.",
+      "Spread the filling over the base. Refrigerate for 4–6 hours, until set, or overnight.",
+      "Take the cheesecake out of the fridge about 45 minutes before serving. Run a small offset spatula or knife around the inside of the tin, unclip the springform and remove carefully. Decorate with extra zest if you like."
+    ],
+    "tags": [
+      "lemon",
+      "cream-cheese",
+      "heavy-whipping-cream",
+      "gelatin"
+    ],
+    "image": "images/recipe-097.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cheesecake",
+    "source_url": "https://cloudykitchen.com/blog/2016-12-29-lemon-lime-no-bake-cheesecake/"
   }
 ]

@@ -11806,5 +11806,680 @@
     "source_url": "https://www.instagram.com/marusya.manko/reel/Dc3ZL6VKV8p/",
     "_needs_translation": false,
     "_translation_source": "fresh"
+  },
+  {
+    "id": "recipe-093",
+    "title": "Rabarbarų sūrio pyragas be kepimo",
+    "category": "cheesecake",
+    "description": "Paprastas nekeptas sūrio pyragas keksinėje formoje: Graham sausainių pagrindas, glotnus rabarbarų ir kreminio sūrio įdaras ir rabarbarų tyrės raštai viršuje. Atvėsusį pyragą supjaustykite batonėliais. Įdarui tinka ir kitų vaisių tyrės.",
+    "servings": 6,
+    "ingredients": [
+      {
+        "amount": 350,
+        "unit": "g",
+        "name": "supjaustytų rabarbarų",
+        "section": "Rabarbarų tyrė"
+      },
+      {
+        "amount": 175,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Rabarbarų tyrė"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilės pastos (neprivaloma)",
+        "section": "Rabarbarų tyrė",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "žiupsnelis druskos",
+        "section": "Rabarbarų tyrė"
+      },
+      {
+        "amount": 135,
+        "unit": "g",
+        "name": "Graham sausainių, sumaltų į trupinius",
+        "section": "Graham sausainių pagrindas"
+      },
+      {
+        "amount": 15,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Graham sausainių pagrindas"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "žiupsnelis druskos",
+        "section": "Graham sausainių pagrindas"
+      },
+      {
+        "amount": 80,
+        "unit": "g",
+        "name": "ištirpinto sviesto (sverti ištirpinus)",
+        "section": "Graham sausainių pagrindas"
+      },
+      {
+        "amount": 55,
+        "unit": "g",
+        "name": "riebios grietinėlės želatinai",
+        "section": "Sūrio pyrago įdaras"
+      },
+      {
+        "amount": 130,
+        "unit": "g",
+        "name": "riebios grietinėlės plakimui",
+        "section": "Sūrio pyrago įdaras"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "želatinos miltelių",
+        "section": "Sūrio pyrago įdaras",
+        "amount_conv": 3,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 200,
+        "unit": "g",
+        "name": "kreminio sūrio (kambario temperatūros)",
+        "section": "Sūrio pyrago įdaras"
+      },
+      {
+        "amount": 60,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Sūrio pyrago įdaras"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilės",
+        "section": "Sūrio pyrago įdaras",
+        "amount_conv": 2.2,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Sūrio pyrago įdaras",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "rabarbarų tyrės (paruoštos anksčiau) įdarui",
+        "section": "Sūrio pyrago įdaras"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "50–60 g rabarbarų tyrės (paruoštos anksčiau) viršui",
+        "section": "Sūrio pyrago įdaras"
+      }
+    ],
+    "steps": [
+      "Rabarbarų tyrė: rabarbarus, cukrų, vanilę ir druską sudėkite į vidutinį puodą.",
+      "Virkite ant vidutinės ugnies dažnai maišydami, kol rabarbarai suirs, o masė taps tiršta kaip uogienė.",
+      "Nukelkite nuo ugnies, šiek tiek atvėsinkite ir sutrinkite trintuvu arba panardinamuoju trintuvu — atsargiai, masė karšta. Perkelkite į sandarų indą ir atšaldykite.",
+      "Pagrindas: 23 × 13 cm (9 × 5 in) keksinę formą ištepkite riebalais ir išklokite dviem kepimo popieriaus juostomis taip, kad jų galai kyšotų per formos šonus — už jų bus patogu ištraukti pyragą. Graham sausainių trupinius ir cukrų sudėkite į vidutinį dubenį.",
+      "Suberkite druską, supilkite sviestą ir išmaišykite — masė turi būti kaip drėgnas smėlis.",
+      "Trupinius suberkite į formą ir plokščiu stiklinės ar matavimo puodelio dugnu suspauskite į lygų sluoksnį. Kol ruošiate įdarą, laikykite šaldiklyje.",
+      "Įdaras: mažame puode ant silpnos ugnies sumaišykite 55 g grietinėlės ir želatiną. Maišykite, kol želatina ištirps, tada atidėkite šiek tiek atvėsti.",
+      "Vidutiniame dubenyje 130 g grietinėlės elektriniu plakikliu arba rankine šluotele išplakite iki minkštų smailių. Atidėkite.",
+      "Kitame dubenyje (plakiklio antgalių plauti nereikia) kreminį sūrį su cukrumi išplakite iki vientisumo. Sudėkite vanilę ir druską, išplakite, tada supilkite želatinos ir grietinėlės mišinį ir gerai išmaišykite.",
+      "Atsargiai įmaišykite išplaktą grietinėlę, tada įmaišykite 150 g rabarbarų tyrės.",
+      "Įdarą šaukštu sudėkite ant pagrindo, pastuksenkite formą, kad pasišalintų oro burbuliukai, ir išlyginkite lenkta mentele. Šaukštu ant paviršiaus sudėliokite apie 50 g rabarbarų tyrės, dantų krapštuku ar peiliu išpieškite raštus, tada stuktelėkite formą į stalą, kad viršus šiek tiek išsilygintų. Jei norite, pridėkite dar šiek tiek tyrės ir pakartokite.",
+      "Šaldytuve laikykite bent 3 valandas, kol sustings. Už popieriaus galų ištraukite pyragą iš formos ir supjaustykite batonėliais peiliu, kurį prieš kiekvieną pjūvį pamerkite į karštą vandenį ir nušluostykite.",
+      "Likučius laikykite sandariame inde šaldytuve."
+    ],
+    "tags": [
+      "vanilla",
+      "cream-cheese",
+      "heavy-whipping-cream",
+      "gelatin"
+    ],
+    "image": "images/recipe-093.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cheesecake",
+    "source_url": "https://cloudykitchen.com/blog/rhubarb-cheesecake/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
+  },
+  {
+    "id": "recipe-094",
+    "title": "Moliūgų sūrio pyragas su imbierinių sausainių pagrindu",
+    "category": "cheesecake",
+    "description": "Keptas sūrio pyragas su glotniu, kreminiu moliūgų įdaru ant sviestinio imbierinių sausainių pagrindo, papuoštas plakta grietinėle. Patogu pasigaminti iš anksto. Receptas iš Kelsey Siemens knygos „The Farmer's Daughter Bakes“, su leidimu perspausdintas Cloudy Kitchen.",
+    "servings": 8,
+    "ingredients": [
+      {
+        "amount": 335,
+        "unit": "g",
+        "name": "imbierinių sausainių (naminių arba pirktinių), sutrupintų",
+        "section": "Imbierinių sausainių pagrindas"
+      },
+      {
+        "amount": 85,
+        "unit": "g",
+        "name": "nesūdyto sviesto, ištirpinto",
+        "section": "Imbierinių sausainių pagrindas"
+      },
+      {
+        "amount": 0.125,
+        "unit": "tsp",
+        "name": "stambiosios (košerinės) druskos",
+        "section": "Imbierinių sausainių pagrindas",
+        "amount_conv": 0.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 465,
+        "unit": "g",
+        "name": "riebaus kreminio sūrio (kambario temperatūros)",
+        "section": "Moliūgų sūrio pyragas"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Moliūgų sūrio pyragas"
+      },
+      {
+        "amount": 245,
+        "unit": "g",
+        "name": "moliūgų tyrės",
+        "section": "Moliūgų sūrio pyragas"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės ekstrakto arba pastos",
+        "section": "Moliūgų sūrio pyragas",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": "tbsp",
+        "name": "kvietinių miltų",
+        "section": "Moliūgų sūrio pyragas",
+        "amount_conv": 15.6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "cinamono",
+        "section": "Moliūgų sūrio pyragas",
+        "amount_conv": 1.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "maltų kvapiųjų pipirų",
+        "section": "Moliūgų sūrio pyragas",
+        "amount_conv": 1,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 2,
+        "unit": null,
+        "name": "didelių kiaušinių (kambario temperatūros)",
+        "section": "Moliūgų sūrio pyragas"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "didelio kiaušinio trynys (kambario temperatūros)",
+        "section": "Moliūgų sūrio pyragas"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "riebios grietinėlės, šaltos",
+        "section": "Plakta grietinėlė viršui"
+      },
+      {
+        "amount": 0.5,
+        "unit": "tsp",
+        "name": "vanilės pastos (neprivaloma)",
+        "section": "Plakta grietinėlė viršui",
+        "amount_conv": 2.7,
+        "unit_conv": "g"
+      }
+    ],
+    "steps": [
+      "Pagrindas: įkaitinkite orkaitę iki 180°C (350°F). Imbierinius sausainius virtuviniu kombainu arba trintuvu sumalkite į smulkius trupinius.",
+      "Vidutiniame dubenyje sumaišykite trupinius, sviestą ir druską. Tvirtai suspauskite ant riebalais išteptos 20 cm (8 in) išardomos formos dugno ir šonų. Kepkite 8–10 minučių, kol pasklis aromatas, tada atidėkite atvėsti.",
+      "Įdaras: sumažinkite orkaitės temperatūrą iki 130°C (260°F). Planetiniu maišytuvu su mentės formos antgaliu mažu greičiu 1–2 minutes plakite kreminį sūrį su cukrumi, kol masė taps visiškai vientisa. Kreminis sūris turi būti kambario temperatūros, kitaip masėje liks gumuliukų.",
+      "Sudėkite moliūgų tyrę, vanilę, miltus, cinamoną ir kvapiuosius pipirus ir plakite mažu greičiu 2 minutes iki vientisumo. Nugramdykite dubens šonus ir atsargiai perbraukite mentele per masę, kad išspaustumėte dalį oro.",
+      "Kiaušinius įmuškite po vieną, maišydami tik tiek, kad vos susijungtų, tada įdėkite trynį ir plakite mažu greičiu, kol tik įsimaišys. Nugramdykite šonus ir išspauskite oro burbuliukus. Įdėję kiaušinius, stenkitės neperplakti.",
+      "Masę supilkite ant atvėsusio pagrindo ir kelis kartus stipriai stuktelėkite formą į stalą, kad oro burbuliukai sprogtų paviršiuje, o ne kiltų per masę kepant ir nepadarytų viršaus nelygaus.",
+      "Kepkite 55 minutes, tada išjunkite orkaitę, praverkite dureles ir palikite pyragą viduje 15–20 minučių. Išėmę perbraukite plonu peiliu palei kraštą ir palikite formoje bent 1 valandai.",
+      "Atsargiai nuimkite išardomos formos žiedą ir leiskite pyragui atvėsti iki kambario temperatūros, tada sandariame inde padėkite į šaldytuvą. Prieš puošdami, gerai atšaldykite.",
+      "Plakta grietinėlė: grietinėlę su vanilės pasta išplakite iki vidutinių smailių — ne iki standžių, nes gali atsiskirti ir bus sunku išspausti.",
+      "Grietinėlę išspauskite ant atšaldyto pyrago pasirinktu antgaliu (pvz., Ateco #826 atviros žvaigždutės) arba paskleiskite šaukštu. Jei norite, pabarstykite cinamonu.",
+      "Likučius laikykite sandariame inde šaldytuve 2–3 dienas."
+    ],
+    "tags": [
+      "pumpkin",
+      "cinnamon",
+      "vanilla",
+      "cream-cheese",
+      "heavy-whipping-cream",
+      "eggs"
+    ],
+    "image": "images/recipe-094.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cheesecake",
+    "source_url": "https://cloudykitchen.com/blog/pumpkin-cheesecake-with-gingersnap-crust/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
+  },
+  {
+    "id": "recipe-095",
+    "title": "Šokoladinis Snickers sūrio pyragas be kepimo",
+    "category": "cheesecake",
+    "description": "Glotnus, kreminis nekeptas šokoladinis sūrio pyragas su gausybe susmulkintų Snickers batonėlių ant sviestinio Graham sausainių pagrindo. Jokių įtrūkimų, jokios vandens vonelės, jokio vargo.",
+    "servings": 16,
+    "ingredients": [
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "Graham sausainių, sumaltų į trupinius",
+        "section": "Graham sausainių pagrindas"
+      },
+      {
+        "amount": 3,
+        "unit": "tbsp",
+        "name": "cukraus",
+        "section": "Graham sausainių pagrindas",
+        "amount_conv": 37.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "stambiosios (košerinės) druskos",
+        "section": "Graham sausainių pagrindas",
+        "amount_conv": 0.8,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 260,
+        "unit": "g",
+        "name": "nesūdyto sviesto, ištirpinto ir atvėsinto",
+        "section": "Graham sausainių pagrindas"
+      },
+      {
+        "amount": 375,
+        "unit": "g",
+        "name": "riebios grietinėlės plakimui",
+        "section": "Šokoladinis sūrio pyrago įdaras"
+      },
+      {
+        "amount": 450,
+        "unit": "g",
+        "name": "kreminio sūrio (kambario temperatūros)",
+        "section": "Šokoladinis sūrio pyrago įdaras"
+      },
+      {
+        "amount": 100,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Šokoladinis sūrio pyrago įdaras"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės",
+        "section": "Šokoladinis sūrio pyrago įdaras",
+        "amount_conv": 4.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "juodojo šokolado (72%), ištirpinto ir šiek tiek atvėsinto",
+        "section": "Šokoladinis sūrio pyrago įdaras"
+      },
+      {
+        "amount": 225,
+        "unit": "g",
+        "name": "Snickers batonėlių, susmulkintų",
+        "section": "Šokoladinis sūrio pyrago įdaras"
+      },
+      {
+        "amount": 175,
+        "unit": "g",
+        "name": "riebios grietinėlės, skystos (neplaktos)",
+        "section": "Šokoladinis sūrio pyrago įdaras"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "skrudintų sūdytų žemės riešutų",
+        "section": "Apdailai"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "papildomai susmulkintų Snickers",
+        "section": "Apdailai"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "jūros druskos dribsnių",
+        "section": "Apdailai"
+      }
+    ],
+    "steps": [
+      "Pagrindas: 23 cm (9 in) kvadratinę formą ištepkite riebalais ir išklokite dviem kepimo popieriaus juostomis taip, kad jų galai kyšotų per formos šonus — už jų bus patogu ištraukti pyragą. Graham sausainių trupinius ir cukrų sudėkite į vidutinį dubenį, suberkite druską, supilkite sviestą ir išmaišykite — masė turi būti kaip drėgnas smėlis.",
+      "Trupinius suberkite į formą ir plokščiu stiklinės ar matavimo puodelio dugnu suspauskite į lygų sluoksnį. Kol ruošiate įdarą, laikykite šaldiklyje.",
+      "Įdaras: planetiniu maišytuvu su plakimo šluotele 375 g grietinėlės plakite, kol tik ims formuotis standžios smailės. Perkelkite į didelį dubenį; maišytuvo dubens plauti nereikia.",
+      "Kreminį sūrį, cukrų, vanilę ir druską plakite vidutiniu–dideliu greičiu 2–3 minutes, kol masė taps puri ir gerai susimaišys.",
+      "Supilkite ištirpintą atvėsintą šokoladą ir išmaišykite. Supilkite 175 g skystos grietinėlės ir plakite, kol įsimaišys.",
+      "Šokoladinę masę sudėkite į dubenį su plakta grietinėle ir atsargiai įmaišykite, stengdamiesi per daug nesuslėgti. Įmaišykite susmulkintus Snickers.",
+      "Įdarą šaukštu sudėkite ant pagrindo ir lenkta mentele išlyginkite paviršių. Kelis kartus stuktelėkite formą į stalą, kad pasišalintų dideli oro burbuliukai. Kad paviršius būtų ypač lygus, mentelę perbraukite po šiltu vandeniu, nusausinkite ir išlyginkite dar kartą.",
+      "Laisvai uždenkite maistine plėvele taip, kad ji neliestų įdaro. Šaldytuve laikykite bent 4 valandas arba per naktį.",
+      "Apdaila: už popieriaus galų ištraukite pyragą iš formos ir nuimkite popierių. Viršų apibarstykite susmulkintais Snickers, skrudintais sūdytais žemės riešutais ir jūros druskos dribsniais.",
+      "Supjaustykite kvadratėliais peiliu, perbrauktu po vandeniu ir nusausintu. Iki patiekimo laikykite šaldytuve."
+    ],
+    "tags": [
+      "chocolate",
+      "dark-chocolate",
+      "cream-cheese",
+      "heavy-whipping-cream"
+    ],
+    "image": "images/recipe-095.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cheesecake",
+    "source_url": "https://cloudykitchen.com/blog/no-bake-snickers-cheesecake/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
+  },
+  {
+    "id": "recipe-096",
+    "title": "Miško uogų sūrio pyrago batonėliai be kepimo",
+    "category": "cheesecake",
+    "description": "Paprasti nekepti sūrio pyrago batonėliai: Graham sausainių pagrindas, šilkinis vanilinis įdaras ir marmurinis miško uogų kulio raštas viršuje. Nedaug pastangų reikalaujantis desertas bet kuriam metų laikui.",
+    "servings": 16,
+    "ingredients": [
+      {
+        "amount": 250,
+        "unit": "g",
+        "name": "aviečių, šviežių arba šaldytų",
+        "section": "Miško uogų kulis"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "mėlynių, šviežių arba šaldytų",
+        "section": "Miško uogų kulis"
+      },
+      {
+        "amount": 125,
+        "unit": "g",
+        "name": "gervuogių, šviežių arba šaldytų",
+        "section": "Miško uogų kulis"
+      },
+      {
+        "amount": 65,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Miško uogų kulis"
+      },
+      {
+        "amount": 1,
+        "unit": "tbsp",
+        "name": "vandens",
+        "section": "Miško uogų kulis",
+        "amount_conv": 15,
+        "unit_conv": "g"
+      },
+      {
+        "amount": null,
+        "unit": null,
+        "name": "žiupsnelis druskos",
+        "section": "Miško uogų kulis"
+      },
+      {
+        "amount": 400,
+        "unit": "g",
+        "name": "Graham sausainių",
+        "section": "Graham sausainių pagrindas"
+      },
+      {
+        "amount": 3,
+        "unit": "tbsp",
+        "name": "cukraus",
+        "section": "Graham sausainių pagrindas",
+        "amount_conv": 37.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "sviesto, ištirpinto",
+        "section": "Graham sausainių pagrindas"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Graham sausainių pagrindas",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "riebios grietinėlės plakimui",
+        "section": "Sūrio pyrago įdaras"
+      },
+      {
+        "amount": 120,
+        "unit": "g",
+        "name": "riebios grietinėlės želatinai",
+        "section": "Sūrio pyrago įdaras"
+      },
+      {
+        "amount": 2,
+        "unit": "tsp",
+        "name": "želatinos miltelių",
+        "section": "Sūrio pyrago įdaras",
+        "amount_conv": 6,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 450,
+        "unit": "g",
+        "name": "kreminio sūrio (kambario temperatūros)",
+        "section": "Sūrio pyrago įdaras"
+      },
+      {
+        "amount": 130,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Sūrio pyrago įdaras"
+      },
+      {
+        "amount": 1,
+        "unit": "tsp",
+        "name": "vanilės pastos",
+        "section": "Sūrio pyrago įdaras",
+        "amount_conv": 5.4,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 0.25,
+        "unit": "tsp",
+        "name": "druskos",
+        "section": "Sūrio pyrago įdaras",
+        "amount_conv": 1.5,
+        "unit_conv": "g"
+      }
+    ],
+    "steps": [
+      "Kulis: visus kulio ingredientus sudėkite į puodą ant vidutinės ugnies. Virkite dažnai maišydami ir retkarčiais šakute prispausdami uogas prie puodo šono, kol suminkštės. Sutrinkite iki vientisumo galingu trintuvu arba virtuviniu kombainu — atsargiai, masė karšta.",
+      "Išplaukite puodą ir vėl pastatykite ant viryklės. Perkoškite uogų masę į puodą, užvirinkite ir virkite ant vidutinės ugnies nuolat maišydami 2–3 minutes, kol šiek tiek sutirštės ir nugaruos. Perkelkite į indą ir visiškai atvėsinkite.",
+      "Pagrindas: 23 cm (9 in) kvadratinę formą ištepkite riebalais ir išklokite dviem kepimo popieriaus juostomis taip, kad jų galai kyšotų per formos šonus — už jų bus patogu ištraukti pyragą. Graham sausainius su cukrumi virtuviniu kombainu sumalkite į smulkius trupinius ir perkelkite į vidutinį dubenį. Suberkite druską, supilkite sviestą ir išmaišykite — masė turi būti kaip drėgnas smėlis.",
+      "Trupinius suberkite į formą ir plokščiu stiklinės ar matavimo puodelio dugnu suspauskite į lygų sluoksnį. Kol ruošiate įdarą, laikykite šaldiklyje.",
+      "Įdaras: mažame puode ant silpnos ugnies sumaišykite 120 g grietinėlės ir želatiną. Maišykite, kol želatina ištirps, tada atidėkite šiek tiek atvėsti.",
+      "300 g grietinėlės plakikliu išplakite iki minkštų smailių ir perkelkite į kitą dubenį (plakiklio dubens plauti nereikia). Kreminį sūrį su cukrumi išplakite iki vientisumo. Sudėkite vanilę ir druską, išplakite, tada supilkite želatinos ir grietinėlės mišinį ir gerai išmaišykite.",
+      "Nuimkite dubenį nuo plakiklio ir mentele atsargiai įmaišykite lengvai išplaktą grietinėlę.",
+      "Įdarą šaukštu sudėkite ant pagrindo, pastuksenkite formą, kad pasišalintų oro burbuliukai, ir išlyginkite lenkta mentele. Ant paviršiaus paskleiskite 3–4 šaukštus atvėsusio kulio, šaukštu įmaišykite jį į viršutinę įdaro dalį ir vėl išlyginkite.",
+      "Ant viršaus užlašinkite dar šiek tiek kulio (mažiau, nei atrodo, kad reikia) ir perbraukite per jį kiniška lazdele ar mediniu iešmeliu, kad susidarytų marmurinis raštas. Jei norite, pridėkite daugiau kulio ir pakartokite.",
+      "Šaldytuve laikykite bent 3 valandas, kol sustings. Už popieriaus galų ištraukite pyragą iš formos ir supjaustykite kvadratėliais peiliu, kurį prieš kiekvieną pjūvį pamerkite į karštą vandenį ir nušluostykite.",
+      "Likučius laikykite šaldytuve."
+    ],
+    "tags": [
+      "raspberry",
+      "blueberry",
+      "blackberry",
+      "vanilla",
+      "cream-cheese",
+      "heavy-whipping-cream",
+      "gelatin"
+    ],
+    "image": "images/recipe-096.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cheesecake",
+    "source_url": "https://cloudykitchen.com/blog/no-bake-mixed-berry-cheesecake-bars/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
+  },
+  {
+    "id": "recipe-097",
+    "title": "Citrinų ir laimų sūrio pyragas be kepimo",
+    "category": "cheesecake",
+    "description": "Paprastas nekeptas sūrio pyragas, gaivus nuo citrinų ir laimų žievelės bei sulčių, ant sviestinio sausainių pagrindo su dar daugiau citrusų žievelės.",
+    "servings": 10,
+    "ingredients": [
+      {
+        "amount": 300,
+        "unit": "g",
+        "name": "saldžių sausainių, pvz., Graham",
+        "section": "Pagrindas"
+      },
+      {
+        "amount": 150,
+        "unit": "g",
+        "name": "ištirpinto sviesto",
+        "section": "Pagrindas"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "citrinos žievelė",
+        "section": "Pagrindas"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "laimo žievelė",
+        "section": "Pagrindas"
+      },
+      {
+        "amount": 450,
+        "unit": "g",
+        "name": "riebaus kreminio sūrio (kambario temperatūros)",
+        "section": "Įdaras"
+      },
+      {
+        "amount": 135,
+        "unit": "g",
+        "name": "cukraus",
+        "section": "Įdaras"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "citrinos žievelė",
+        "section": "Įdaras"
+      },
+      {
+        "amount": 1,
+        "unit": null,
+        "name": "laimo žievelė",
+        "section": "Įdaras"
+      },
+      {
+        "amount": 60,
+        "unit": "ml",
+        "name": "citrinų sulčių",
+        "section": "Įdaras"
+      },
+      {
+        "amount": 60,
+        "unit": "ml",
+        "name": "laimų sulčių",
+        "section": "Įdaras"
+      },
+      {
+        "amount": 3,
+        "unit": "tsp",
+        "name": "želatinos miltelių",
+        "section": "Įdaras",
+        "amount_conv": 9,
+        "unit_conv": "g"
+      },
+      {
+        "amount": 300,
+        "unit": "ml",
+        "name": "riebios grietinėlės",
+        "section": "Įdaras"
+      }
+    ],
+    "steps": [
+      "Pagrindas: 20 cm (8 in) išardomą formą ištepkite riebalais.",
+      "Sausainius virtuviniu kombainu sumalkite į smulkius trupinius. Suberkite citrinos ir laimo žievelę, supilkite ištirpintą sviestą ir trumpai pamaišykite, kol susijungs. Suspauskite ant formos dugno ir, kol ruošiate įdarą, laikykite šaldytuve.",
+      "Įdaras: mažame puode ant silpnos ugnies sumaišykite citrinų sultis, laimų sultis ir želatiną. Maišykite, kol želatina ištirps, tada atidėkite šiek tiek atvėsti.",
+      "Grietinėlę plakikliu išplakite iki minkštų smailių ir perkelkite į kitą dubenį (plakiklio dubens plauti nereikia). Kreminį sūrį su cukrumi išplakite iki vientisumo, tada įplakite citrinos ir laimo žievelę. Supilkite atvėsusias sultis su želatina ir gerai išmaišykite. Nuimkite dubenį nuo plakiklio ir mentele atsargiai įmaišykite grietinėlę.",
+      "Įdarą paskleiskite ant pagrindo. Šaldytuve laikykite 4–6 valandas, kol sustings, arba per naktį.",
+      "Likus maždaug 45 minutėms iki patiekimo, išimkite pyragą iš šaldytuvo. Mažą lenktą mentelę ar peilį perbraukite palei formos vidų, atsekite išardomą formą ir atsargiai ją nuimkite. Jei norite, papuoškite papildoma žievele."
+    ],
+    "tags": [
+      "lemon",
+      "cream-cheese",
+      "heavy-whipping-cream",
+      "gelatin"
+    ],
+    "image": "images/recipe-097.jpg",
+    "source_docx_lines": null,
+    "is_complete": true,
+    "is_technique": false,
+    "variant_of": null,
+    "variant_label": null,
+    "categoryGroup": "cheesecake",
+    "source_url": "https://cloudykitchen.com/blog/2016-12-29-lemon-lime-no-bake-cheesecake/",
+    "_needs_translation": false,
+    "_translation_source": "fresh"
   }
 ]
