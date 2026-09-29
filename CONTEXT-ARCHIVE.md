@@ -2,6 +2,88 @@
 
 Older session entries moved out of `CONTEXT.md`.
 
+## Session 2026-08-28 (S16) — LT translation for the 79-recipe set: method decided via brainstorm, glossary.json corrected, 74/79 recipes translated into a preview file, one real EN/LT ID-mismatch bug found and fixed in the language toggle
+
+**Method decided before any translation work, via a brainstorm session (not the recipes-audit
+skill's usual flow).** User asked to pair each of the 79 new EN recipes against the old
+73-recipe `recipes_lt.json` (index-aligned to `.audit/archive/recipes_EN_pre_S13.json`) by
+eye — a naive title-string match only found 39/79 because S13 rewrote titles during cleanup.
+Manually diffed a first batch of 10 "identical" candidates field-by-field (not just
+`ingredients`, which a script had wrongly flagged as sufficient) — **found that 0 of 79
+recipes are byte-identical between old and new EN**: S13's steps rewrite (merging Instagram
+fragments, dropping "P.S." engagement lines, removing carousel references) touched nearly
+every recipe's `steps` array, even when `ingredients` matched exactly. Decision, confirmed by
+user: **abandon the "reuse old LT + patch diffs" plan — translate all 79 fresh from the new
+EN export**, using the old LT file only as terminology/style reference where a paired recipe
+existed. This reversed the plan two brainstorm turns earlier in the same session; the old
+plan's reasoning is superseded, not preserved, in `## Decisions` below.
+
+**`glossary.json` (LT baking-term dictionary) audited against `tags.json` and actual usage in
+both recipes and tips, and corrected — a data-integrity check the translation depended on.**
+Found and fixed: 4 missing terms real content needed (`crumble`, `apple`, `raisins`,
+`creme-fraiche`), 2 stale terms removed (`sugar-granulated`, `creaming-butter`, no longer in
+`tags.json`). `site/data/glossary.json` kept byte-identical to the root copy (verified with a
+diff after each edit, not by inspection).
+
+**74 of 79 recipes translated into `.audit/preview_recipes_lt_10.json`**, a new file — not
+written directly to `recipes_lt.json` during the session, only synced there after each
+validated batch (JSON-parse check + `_needs_translation` flag count) to keep the localhost
+preview live for the user throughout. Old `recipes_lt.json` (the pre-session 73-recipe file)
+preserved at `.audit/archive/recipes_LT_pre_S16_preview.json` before the first overwrite.
+Each recipe was translated directly from the new EN `recipes_export.json` content — title,
+description, every ingredient name/section, every step — not just the fields that differed
+from a matched old-LT counterpart. `_translation_source` tagged `"fresh"` on every entry (no
+`"old_lt_adjusted"` entries survived once the fresh-translation decision was made — the 10
+recipes translated before that point were later left as `fresh` too, since by the time the
+full diff was measured their content had already been rewritten from EN, not reused).
+
+**One real bug found and fixed in `site/js/app.js`, independent of the translation content
+itself: switching language while on a recipe or tip detail page showed "Nothing found."**
+Root cause: `data.js`'s `loadAll()` derives each language's `id` from its own title
+(`slugify(title, i)`, an S13 decision to stop pairing EN/LT by array position) — so the same
+recipe has a different URL slug in EN vs LT once the LT title is actually translated (this
+was invisible before S16 because untranslated LT titles equaled EN titles, giving identical
+slugs by coincidence). Fixed by remapping the hash by array position inside the
+`[data-lang]` click handler in `wireNavEvents()` — verified both directions (LT→EN, EN→LT)
+with Playwright, no console errors, content confirmed correct after each switch.
+
+**LT toggle re-enabled for this preview** (`state.js`'s force-`"en"` override replaced with
+`readLS(LS_KEYS.lang, "en")`, comment updated to state this is temporary), and the nav lang
+buttons restored in `app.js` (`site/css/app.css` already had `.lang-toggle` styles from
+before S13 hid them — no new CSS needed). This is a **visible, live change to the running
+site** while translation is incomplete: untranslated recipes show EN content in LT mode,
+`_needs_translation: true` in the data flags which ones. Not yet reverted or pushed.
+
+**Not done — 5 recipes remain untranslated in `.audit/preview_recipes_lt_10.json`**:
+`recipe-076` (Blueberry, Lemon and Almond Teacakes — ingredients section was mid-edit when the
+session's context ran out, steps not yet touched), `recipe-077`, `recipe-078`, `recipe-079`,
+`recipe-080`. All still carry `_needs_translation: true` and original EN content, so the next
+session can find them with the same query used throughout this session:
+```
+node -e "const d=require('./.audit/preview_recipes_lt_10.json'); console.log(d.filter(r=>r._needs_translation).map(r=>r.id))"
+```
+
+**Code:** `CONTEXT.md` (this entry + Decisions), `glossary.json` + `site/data/glossary.json`
+(4 terms added, 2 removed), `recipes_lt.json` + `site/data/recipes_lt.json` (74/79 translated,
+overwritten from the preview file after each batch), `site/js/app.js` (+25/-? — lang-switch
+hash remap fix, nav lang-toggle HTML restored), `site/js/state.js` (+13/-? — force-English
+override lifted). New untracked: `.audit/preview_recipes_lt_10.json` (working file, 79
+entries, 74 done), `.audit/archive/recipes_LT_pre_S16_preview.json` (old 73-recipe LT file,
+preserved before first overwrite).
+
+**Entry point:** to resume translation, read `.audit/preview_recipes_lt_10.json`, find the
+first entry with `_needs_translation: true`, translate `title`/`description`/every
+`ingredients[].name`/every `steps[]` from the matching entry in
+`.audit/rebuild_recipes/recipes_export.json`, set `_needs_translation: false` and
+`_translation_source: "fresh"`, then re-validate (JSON parse + flag count) and copy to both
+`recipes_lt.json` and `site/data/recipes_lt.json` before moving to the next recipe. Localhost
+preview server (if still running) was started with `python -m http.server 8420` from `site/`.
+
+**Not measured:** whether the 74 already-translated recipes read naturally to a native
+Lithuanian speaker beyond the translator's own read-through — no separate spot-check pass was
+done this session (CONTEXT.md's 3-layer QA plan for translations — structural diff, glossary,
+user spot-check — has only the structural-diff-equivalent layer done so far, via the
+`_needs_translation` flag and JSON validation).
 ## Session 2026-08-28 (S15) — tips.json swapped live to the verified 207-tip export; two-level topicGroup/topic taxonomy built for all 207 tips; recipe→tip related-tips logic fixed; tips filter UI rebuilt as a custom dropdown
 
 **Live swap done.** `site/data/tips.json` (was 310 error-filled entries) replaced with the

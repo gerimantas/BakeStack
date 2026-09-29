@@ -6,9 +6,11 @@ active — static site in `site/`, live on GitHub Pages:
 `.github/workflows/deploy.yml`, auto-updates on every push to master that
 touches `site/**`). The site is used only by the family (user, S24).
 
-**Local master is well ahead of the live site (S25).** Live serves v53
-(91 recipes) — pushed by mistake in S24. Local is v59 with 133 recipes; the
-user asked to keep v54–v59 local until they say "push".
+**Live = local = v65 with 133 recipes** (S26, pushed on the user's "push").
+
+**A photo monarch butterfly sits on the header's bottom edge beside EN/LT**
+(S26): three layered webp files hinged in 3D, flapped by `startButterfly()` in
+`site/js/app.js` at random amplitudes, sometimes closing almost fully for 1–2 s.
 
 **133 recipes: 86 Marusya Manko, 47 Cloudy Kitchen** (S25). 79 have photos
 (`site/images/recipe-NNN.jpg`, 335 px, ~35 KB); 54 carry `image: null` and
@@ -85,7 +87,7 @@ for ids; they must never be re-derived from titles.
 **Browser-cache staleness is fixed at the root** (S19): `site/serve.py` sends
 `no-store`, `fetchJSON` revalidates, and css/js carry a `?v=` query. **Bump the
 `?v=` in `index.html` AND `BUILD` in `site/sw.js` together whenever anything
-under `site/` changes** (both at v59). They are one version, split across two
+under `site/` changes** (both at v65), and only after the last edit (S26). They are one version, split across two
 files: `BUILD` names the cache, so changing it is what makes the browser install
 a new worker and drop the old cache, while `?v=` is what makes the page request
 the new assets. Bumping only one ships an update nobody receives — or a prompt
@@ -130,53 +132,67 @@ response, so each file downloaded twice and first paint regressed 5694 ms →
 
 
 ## Next tasks
-1. **Push v54–v59 when the user says so.** Local commits with 42 Cloudy Kitchen
-   recipes sit ahead of the live v53. After pushing, verify the live site
-   serves v59 and 133 recipes.
-2. **More recipes, if wanted: ~330 Cloudy Kitchen left (next: more layer cakes,
+1. **More recipes, if wanted: ~330 Cloudy Kitchen left (next: more layer cakes,
    bundt cakes); Instagram past `Dd1KkBYin6t`.** What is left per group, rules,
    API and method: `.planning/recipe-sources.md`.
-3. **Photos for the remaining 53 recipes** (all Marusya, `image: null`). Drop
+2. **Photos for the remaining 53 recipes** (all Marusya, `image: null`). Drop
    `recipe-NNN.jpg` in `site/images/`, set `image` in both recipe files, bump
    the version in `site/index.html` and `site/sw.js`.
-4. **Translate `unit_conv` on the LT side.** Detail pages render "0.5 tsp" and
+3. **Translate `unit_conv` on the LT side.** Detail pages render "0.5 tsp" and
    "2 tbsp" where LT wants "0,5 arb. š." and "2 v. š.". Found in S23, not
    attempted — decide whether to translate at render time in `js/` or store a
    translated field, then apply across every recipe carrying it.
-5. **Finish the LT reader pass: ~68 docx-era recipes and ~196 tips unread**,
+4. **Finish the LT reader pass: ~68 docx-era recipes and ~196 tips unread**,
    plus a second read of the 25 recipes written in S24. Method and findings in
    the S21 and S23 Archive entries.
-6. **Optional next perf step: defer `tips.json` off the boot path.** It is the
+5. **Optional next perf step: defer `tips.json` off the boot path.** It is the
    single biggest file left (140 KB gzipped) and is fetched before first paint,
    but only the Tips list needs it in full. Not free: `searchAll` matches
    against tip body text and `findRelatedTips` runs on every recipe detail
    page, so deferring it degrades search and empties the related-tips block
    until a second fetch lands. Scope that behaviour change before starting.
-7. Not yet scoped: whether/how to surface `series_index.json`'s cross-reference
+6. Not yet scoped: whether/how to surface `series_index.json`'s cross-reference
    data as reader-visible "Part X of Y" navigation. Format/scope decision
    deferred by user (S9) — see `.audit/DECISIONS_review.md` section 10.
-8. Known limitation: shopping-list "bought" checkboxes are keyed by ingredient
+7. Known limitation: shopping-list "bought" checkboxes are keyed by ingredient
    name, so they reset (silently, no data loss) on an EN/LT switch mid-shop.
    Low priority unless reported as confusing.
-9. Undecided: `site/data/glossary.json` (8.6 KB) is referenced by no code and
+8. Undecided: `site/data/glossary.json` (8.6 KB) is referenced by no code and
    fetched by nothing. Either a feature nobody built or a leftover — decide and
    act, rather than leaving it to be rediscovered a third time.
 
 ## Done Log
+- **S26** — photo monarch butterfly perched on the header beside EN/LT with
+  random flaps (v60–v65); v54–v65 pushed and verified live (v65, 133 recipes).
 - **S25** — 24 Cloudy Kitchen recipes added (16 sweet buns and babkas, 8 layer
   cakes), 109 → 133, v57–v59 committed locally; `recipe-sources.md` records
   what is left per group.
-- **S24** — 25 recipes added (23 Cloudy Kitchen, 2 new Instagram posts via
-  BrowserOS neo), 84 → 109, all with photos; Source filter row added and
-  zero-count chips hidden; recipe sources evaluated and recorded in
-  `.planning/recipe-sources.md`; photo-publishing question closed (family-only
-  site); v53 pushed by mistake, v54–v56 committed locally.
-(S23 and earlier: see `## Archive`.)
+(S24 and earlier: see `## Archive`.)
 
 
 ## Archive
 
 Older entries live in `CONTEXT-ARCHIVE.md` (moved there by session-end rotation, newest first). This section keeps the most recent 10 sessions.
+
+### Session 2026-09-30 (S26) — a real monarch butterfly perched on the header, and v54–v65 pushed live
+
+- **Done:** header butterfly added and iterated four times (flying cartoon SVG → perched
+  photo monarch → beside the EN/LT toggle → random flaps with near-full 1–2 s closes);
+  v60–v65 committed; all of v54–v65 pushed, deploy run succeeded.
+- **Decided / overturned:** cartoon SVG rejected by the user ("maksimaliai realus");
+  a public-domain Commons photo (`File:Danaus_plexippus-transparent.png`) split into
+  left wing / right wing / body+antennae layers, wings hinged with 3D `rotateY`. A fixed
+  CSS cycle replaced by JS so each stroke has its own amplitude and pace. **Bump the
+  version only after the last edit** — v62 was bumped mid-edit, the user's browser
+  cached the intermediate CSS under that URL, and v63 was needed just to evict it.
+- **Code:** `site/js/app.js` (`renderNav` markup in `.lang-perch`, `startButterfly()`),
+  `site/css/app.css` (`.lang-perch`, `.butterfly*`, `.nav__actions` stretched over the
+  bar), `site/images/butterfly/{left,right,body}.webp`, `site/sw.js` (PRECACHE + v65),
+  `site/index.html`.
+- **Entry point:** `python serve.py` from `site/`; live check: `sw.js` BUILD = v65,
+  133 recipes in both files, three butterfly files return 200 (all measured).
+- **Not measured:** light theme and Firefox/Safari rendering of the 3D wings; the
+  butterfly overlaps the search box's bottom-right on narrow phones (accepted, not asked).
 
 ### Session 2026-09-29 (S25) — 24 more Cloudy Kitchen recipes: sweet buns nearly exhausted, first layer cakes
 
@@ -881,86 +897,3 @@ numbering/summary/checkbox styles, tip-card fav button). Root `recipes_lt.json` 
 **Entry point:** `python -m http.server 8899` from `site/`, then `http://127.0.0.1:8899`.
 **Not measured:** native-speaker read-through of the 5 newly-translated recipes (task 1, Next
 tasks) — only structural/JSON checks were run this session.
-
-### Session 2026-08-28 (S16) — LT translation for the 79-recipe set: method decided via brainstorm, glossary.json corrected, 74/79 recipes translated into a preview file, one real EN/LT ID-mismatch bug found and fixed in the language toggle
-
-**Method decided before any translation work, via a brainstorm session (not the recipes-audit
-skill's usual flow).** User asked to pair each of the 79 new EN recipes against the old
-73-recipe `recipes_lt.json` (index-aligned to `.audit/archive/recipes_EN_pre_S13.json`) by
-eye — a naive title-string match only found 39/79 because S13 rewrote titles during cleanup.
-Manually diffed a first batch of 10 "identical" candidates field-by-field (not just
-`ingredients`, which a script had wrongly flagged as sufficient) — **found that 0 of 79
-recipes are byte-identical between old and new EN**: S13's steps rewrite (merging Instagram
-fragments, dropping "P.S." engagement lines, removing carousel references) touched nearly
-every recipe's `steps` array, even when `ingredients` matched exactly. Decision, confirmed by
-user: **abandon the "reuse old LT + patch diffs" plan — translate all 79 fresh from the new
-EN export**, using the old LT file only as terminology/style reference where a paired recipe
-existed. This reversed the plan two brainstorm turns earlier in the same session; the old
-plan's reasoning is superseded, not preserved, in `## Decisions` below.
-
-**`glossary.json` (LT baking-term dictionary) audited against `tags.json` and actual usage in
-both recipes and tips, and corrected — a data-integrity check the translation depended on.**
-Found and fixed: 4 missing terms real content needed (`crumble`, `apple`, `raisins`,
-`creme-fraiche`), 2 stale terms removed (`sugar-granulated`, `creaming-butter`, no longer in
-`tags.json`). `site/data/glossary.json` kept byte-identical to the root copy (verified with a
-diff after each edit, not by inspection).
-
-**74 of 79 recipes translated into `.audit/preview_recipes_lt_10.json`**, a new file — not
-written directly to `recipes_lt.json` during the session, only synced there after each
-validated batch (JSON-parse check + `_needs_translation` flag count) to keep the localhost
-preview live for the user throughout. Old `recipes_lt.json` (the pre-session 73-recipe file)
-preserved at `.audit/archive/recipes_LT_pre_S16_preview.json` before the first overwrite.
-Each recipe was translated directly from the new EN `recipes_export.json` content — title,
-description, every ingredient name/section, every step — not just the fields that differed
-from a matched old-LT counterpart. `_translation_source` tagged `"fresh"` on every entry (no
-`"old_lt_adjusted"` entries survived once the fresh-translation decision was made — the 10
-recipes translated before that point were later left as `fresh` too, since by the time the
-full diff was measured their content had already been rewritten from EN, not reused).
-
-**One real bug found and fixed in `site/js/app.js`, independent of the translation content
-itself: switching language while on a recipe or tip detail page showed "Nothing found."**
-Root cause: `data.js`'s `loadAll()` derives each language's `id` from its own title
-(`slugify(title, i)`, an S13 decision to stop pairing EN/LT by array position) — so the same
-recipe has a different URL slug in EN vs LT once the LT title is actually translated (this
-was invisible before S16 because untranslated LT titles equaled EN titles, giving identical
-slugs by coincidence). Fixed by remapping the hash by array position inside the
-`[data-lang]` click handler in `wireNavEvents()` — verified both directions (LT→EN, EN→LT)
-with Playwright, no console errors, content confirmed correct after each switch.
-
-**LT toggle re-enabled for this preview** (`state.js`'s force-`"en"` override replaced with
-`readLS(LS_KEYS.lang, "en")`, comment updated to state this is temporary), and the nav lang
-buttons restored in `app.js` (`site/css/app.css` already had `.lang-toggle` styles from
-before S13 hid them — no new CSS needed). This is a **visible, live change to the running
-site** while translation is incomplete: untranslated recipes show EN content in LT mode,
-`_needs_translation: true` in the data flags which ones. Not yet reverted or pushed.
-
-**Not done — 5 recipes remain untranslated in `.audit/preview_recipes_lt_10.json`**:
-`recipe-076` (Blueberry, Lemon and Almond Teacakes — ingredients section was mid-edit when the
-session's context ran out, steps not yet touched), `recipe-077`, `recipe-078`, `recipe-079`,
-`recipe-080`. All still carry `_needs_translation: true` and original EN content, so the next
-session can find them with the same query used throughout this session:
-```
-node -e "const d=require('./.audit/preview_recipes_lt_10.json'); console.log(d.filter(r=>r._needs_translation).map(r=>r.id))"
-```
-
-**Code:** `CONTEXT.md` (this entry + Decisions), `glossary.json` + `site/data/glossary.json`
-(4 terms added, 2 removed), `recipes_lt.json` + `site/data/recipes_lt.json` (74/79 translated,
-overwritten from the preview file after each batch), `site/js/app.js` (+25/-? — lang-switch
-hash remap fix, nav lang-toggle HTML restored), `site/js/state.js` (+13/-? — force-English
-override lifted). New untracked: `.audit/preview_recipes_lt_10.json` (working file, 79
-entries, 74 done), `.audit/archive/recipes_LT_pre_S16_preview.json` (old 73-recipe LT file,
-preserved before first overwrite).
-
-**Entry point:** to resume translation, read `.audit/preview_recipes_lt_10.json`, find the
-first entry with `_needs_translation: true`, translate `title`/`description`/every
-`ingredients[].name`/every `steps[]` from the matching entry in
-`.audit/rebuild_recipes/recipes_export.json`, set `_needs_translation: false` and
-`_translation_source: "fresh"`, then re-validate (JSON parse + flag count) and copy to both
-`recipes_lt.json` and `site/data/recipes_lt.json` before moving to the next recipe. Localhost
-preview server (if still running) was started with `python -m http.server 8420` from `site/`.
-
-**Not measured:** whether the 74 already-translated recipes read naturally to a native
-Lithuanian speaker beyond the translator's own read-through — no separate spot-check pass was
-done this session (CONTEXT.md's 3-layer QA plan for translations — structural diff, glossary,
-user spot-check — has only the structural-diff-equivalent layer done so far, via the
-`_needs_translation` flag and JSON validation).
